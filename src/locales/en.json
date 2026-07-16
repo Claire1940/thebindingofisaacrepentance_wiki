@@ -52,696 +52,2154 @@
     }
   },
   "gameFeature": {
-    "title": "Lucid Blocks Gameplay",
-    "description": "Explore surreal biomes, fuse items with Apotheosis, and survive strange creatures in this dreamlike voxel sandbox on Steam."
+    "title": "The Binding of Isaac: Repentance",
+    "description": "A dark roguelike dungeon shooter where every run reshuffles floors, items, bosses, and rooms. Combine over 700 items, unlock 17 normal characters and 17 Tainted variants, defeat branching superbosses, and master challenges, alternate paths, seeds, and four-player Repentance+ online co-op."
   },
   "tools": {
-    "title": "Lucid Blocks",
-    "titleHighlight": "Resources",
-    "subtitle": "Everything you need to explore, craft, and survive in Lucid Blocks",
+    "title": "The Binding of Isaac",
+    "titleHighlight": "Repentance Hub",
+    "subtitle": "Everything you need for The Binding of Isaac: Repentance items, characters, unlocks, bosses, challenges, mods, and online co-op",
     "cards": [
       {
         "icon": "BookOpen",
         "title": "Beginner Guide",
-        "description": "First steps, exploration, and early progression"
+        "description": "Room-clearing loop, stats, pickups, and the route to Mom and Mom's Heart"
       },
       {
-        "icon": "Sparkles",
-        "title": "Apotheosis Crafting",
-        "description": "Freeform fusion system and early recipes"
+        "icon": "Layers",
+        "title": "Item Tier List",
+        "description": "S to D rankings for passives, actives, familiars, trinkets, cards, and runes"
       },
       {
-        "icon": "Hammer",
-        "title": "Tools and Weapons",
-        "description": "Frost Pick, Azrael, Hookshot, and more"
-      },
-      {
-        "icon": "Package",
-        "title": "Storage and Inventory",
-        "description": "Cache Cubes, Cabinets, and Qualia storage"
-      },
-      {
-        "icon": "Home",
-        "title": "Qualia and Base Building",
-        "description": "Personal Qualia and home base setup"
-      },
-      {
-        "icon": "Eye",
-        "title": "World Regions",
-        "description": "Fog Meadow, Essence Morass, and more"
-      },
-      {
-        "icon": "AlertTriangle",
-        "title": "Creatures and Enemies",
-        "description": "Manikins, spiders, and how to survive"
-      },
-      {
-        "icon": "ArrowRight",
-        "title": "Mobility Gear",
-        "description": "Hookshot, Glider Glove, Bee Glider"
-      },
-      {
-        "icon": "TrendingUp",
-        "title": "Farming and Growth",
-        "description": "Seed progression and material farming"
-      },
-      {
-        "icon": "Star",
-        "title": "Best Early Unlocks",
-        "description": "Priority upgrades for the first hour"
+        "icon": "Users",
+        "title": "Characters",
+        "description": "Every normal and Tainted character ranked with strengths and unlocks"
       },
       {
         "icon": "ClipboardCheck",
-        "title": "Achievement Tracker",
-        "description": "All 19 Steam achievements and conditions"
+        "title": "Unlock Guide",
+        "description": "A full progression roadmap from Mom to Dead God"
       },
       {
-        "icon": "MessageCircle",
-        "title": "Singleplayer FAQ",
-        "description": "Platform, price, co-op, and language questions"
+        "icon": "Skull",
+        "title": "Bosses & Endings",
+        "description": "Routes, attack patterns, and endings for Mom's Heart through The Beast"
+      },
+      {
+        "icon": "Swords",
+        "title": "Challenges",
+        "description": "All 45 challenges with starting setups, restrictions, and rewards"
+      },
+      {
+        "icon": "Puzzle",
+        "title": "Best Mods",
+        "description": "Steam Workshop mods for interface, practice, music, and content"
       },
       {
         "icon": "Gamepad2",
-        "title": "Steam Deck and Controller",
-        "description": "Proton 9.0.4 setup and controller tips"
-      },
-      {
-        "icon": "Settings",
-        "title": "Settings and Accessibility",
-        "description": "Hide hands, Vulkan, and display options"
-      },
-      {
-        "icon": "Clock",
-        "title": "Updates and Patch Notes",
-        "description": "Recent fixes and roadmap notes"
-      },
-      {
-        "icon": "Shield",
-        "title": "Crash Fix",
-        "description": "Vulkan check, logs path, and bug reporting"
+        "title": "Online Co-op",
+        "description": "Repentance+ online multiplayer setup, rules, and patch notes"
       }
     ]
   },
   "modules": {
-    "lucidBlocksBeginnerGuide": {
-      "title": "Lucid Blocks Beginner Guide",
+    "isaacBeginnerGuide": {
+      "title": "The Binding of Isaac Repentance Beginner Guide",
+      "eyebrow": "START HERE",
+      "subtitle": "Learn the room-clearing loop, protect your health, spend pickups wisely, and follow a proven path from Basement to Mom and Mom's Heart in The Binding of Isaac: Repentance.",
+      "intro": "Each run in The Binding of Isaac: Repentance is a chain of randomly generated floors. Clear combat rooms, collect resources, improve your build through special rooms, defeat the floor boss, and descend. Early success depends more on avoiding damage and making consistent decisions than on finding one perfect item.",
       "displayType": "steps",
-      "intro": "Start by learning how exploration, fusion, and progression connect. Lucid Blocks rewards experimentation, so early progress comes from gathering unusual materials, testing combinations, and unlocking your personal Qualia.",
       "steps": [
         {
-          "title": "Explore Before You Commit",
-          "description": "Walk outward, mine common blocks, and keep any strange drops you find. Early progress is less about fixed quests and more about discovering what materials can become."
+          "step": 1,
+          "title": "Learn Movement, Shooting, and Room Control",
+          "goal": "Move and fire independently while preserving a safe escape path.",
+          "details": [
+            "Movement and firing use separate directional controls. Bombs, active items, cards, pills, and trinket drops have their own inputs, which can be remapped in the options menu.",
+            "Most enemies aim at Isaac's current position. Use short, deliberate movements instead of circling the room without watching projectiles.",
+            "Destroy chargers, projectile-heavy enemies, and enemy spawners before slow melee enemies."
+          ],
+          "checklist": [
+            "Practice moving in one direction while firing in another.",
+            "Keep at least one open lane for dodging.",
+            "Do not stand against a wall unless the attack pattern requires it."
+          ]
         },
         {
-          "title": "Unlock Your Personal Qualia Early",
-          "description": "Your personal Qualia is one of the most important early milestones. It gives you a reliable place to regroup and build around."
+          "step": 2,
+          "title": "Understand Health and Core Stats",
+          "goal": "Recognize whether an item improves offense, survival, or consistency.",
+          "details": [
+            "Red Heart containers can be refilled and are commonly used to pay for Devil Deals. Soul and Black Hearts protect health and help preserve deal-room chances.",
+            "Damage controls how hard tears hit. Fire Rate controls shooting frequency. Range controls travel distance, Shot Speed controls projectile speed, Speed controls movement, and Luck affects many chance-based effects.",
+            "Enable Found HUD in the options menu to display numerical stats during a run."
+          ],
+          "checklist": [
+            "Prioritize an early damage or fire-rate upgrade.",
+            "Keep enough movement speed to dodge comfortably.",
+            "Treat Soul and Black Hearts as both health and deal protection."
+          ]
         },
         {
-          "title": "Use Osmium for Fast Early Progress",
-          "description": "Osmium is one of the most useful early materials. A popular early route is combining Osmium with sticks to make a Frost Pick for fast mining."
+          "step": 3,
+          "title": "Clear Rooms in the Right Order",
+          "goal": "Remove immediate threats before chasing pickups or breaking objects.",
+          "details": [
+            "Most combat rooms remain locked until all required enemies are defeated. Clearing a room may create a pickup and recharge active items.",
+            "Use rocks and pits as cover against grounded enemies, but remember that flying enemies and spectral projectiles can ignore some obstacles.",
+            "Save bombs during easy rooms unless using one prevents more damage than the bomb is worth."
+          ],
+          "checklist": [
+            "Identify the fastest or most dangerous enemy immediately.",
+            "Move before firing when a room begins crowded.",
+            "Finish slow enemies only after the room is under control."
+          ]
         },
         {
-          "title": "Record Good Fusions",
-          "description": "Keep track of successful combinations in your journal. Lucid Blocks has many possible fusion paths, so writing down useful results saves a lot of time."
+          "step": 4,
+          "title": "Spend Keys, Bombs, and Coins by Priority",
+          "goal": "Turn limited resources into dependable upgrades.",
+          "details": [
+            "Treasure Rooms contain a free pedestal item. Most Treasure Room doors after the first floor require one key.",
+            "Shops require a key and sell items, health, batteries, cards, and other pickups. Donating spare coins improves future shops.",
+            "Bombs reveal hidden rooms, open tinted rocks, damage bosses, and destroy obstacles. Keys also open locked chests and special doors."
+          ],
+          "checklist": [
+            "Reserve an early key for the Treasure Room unless another door has clearly higher value.",
+            "Look for tinted rocks with a faint cross and different color.",
+            "Keep a bomb for a strong Secret Room location or a dangerous boss."
+          ]
+        },
+        {
+          "step": 5,
+          "title": "Recognize Valuable Special Rooms",
+          "goal": "Know what a room offers before paying its entry cost.",
+          "details": [
+            "Treasure Rooms are the main source of build-changing items. Shops provide controlled purchases and utility.",
+            "Libraries contain books, Arcades trade money or health for rewards, and Curse Rooms may contain Red Chests, Devil items, pickups, or enemies.",
+            "Sacrifice Rooms provide increasingly powerful rewards after repeated spike damage, but beginners should use them only with spare healing."
+          ],
+          "checklist": [
+            "Visit the Treasure Room on most early floors.",
+            "Check the Shop when you have a key and at least 15 coins.",
+            "Do not enter a paid-health room when the cost could prevent you from surviving the boss."
+          ]
+        },
+        {
+          "step": 6,
+          "title": "Choose Between Devil Deals and Angel Rooms",
+          "goal": "Take premium items without destroying your survivability.",
+          "details": [
+            "Devil Rooms can appear after bosses from the second floor onward and usually sell powerful items for health.",
+            "Taking Red Heart damage reduces the current floor's deal chance, especially during the boss fight. Soul and Black Heart damage does not apply the same penalty.",
+            "In Repentance, refusing to enter the first available Devil Room guarantees that the next successful deal-room spawn will be an Angel Room. Entering the room but refusing its items keeps a mixed Devil and Angel route."
+          ],
+          "checklist": [
+            "Take a Devil Deal only when the reward clearly outweighs the lost health.",
+            "Skip the first Devil Room completely when targeting free Angel items.",
+            "After Angel battles are unlocked, bomb two Angel statues to assemble the key for Mega Satan."
+          ]
+        },
+        {
+          "step": 7,
+          "title": "Find Secret Rooms Efficiently",
+          "goal": "Use floor geometry to make high-value bomb checks.",
+          "details": [
+            "A regular Secret Room usually touches several ordinary rooms. Each connecting wall needs a valid doorway position without rocks, pits, or obstacles blocking it.",
+            "A Super Secret Room normally connects to only one room and is frequently found near the later portion of the floor or the route toward the boss.",
+            "Place the bomb at the center of the suspected wall. Test strong three-room connections before uncertain two-room locations."
+          ],
+          "checklist": [
+            "Check whether every adjacent wall has a clear doorway position.",
+            "Test locations touching three normal rooms first.",
+            "Stop searching when the remaining bombs are more valuable for tinted rocks or combat."
+          ]
+        },
+        {
+          "step": 8,
+          "title": "Follow the First-Playthrough Route",
+          "goal": "Reach Mom with a stable build instead of rushing.",
+          "details": [
+            "Start as Isaac on Normal Mode and progress through Basement I-II, Caves I-II, and Depths I-II.",
+            "On each floor, find the Treasure Room, consider the Shop, then defeat the boss. Full-clear only when you still need health, keys, bombs, coins, charges, or a special room.",
+            "Mom is the fixed boss of Depths II on the first route. Keep moving away from the stomping foot, watch all four doors for attacks, and use bombs when she is exposed."
+          ],
+          "checklist": [
+            "Find at least one meaningful offensive upgrade before Depths.",
+            "Enter Mom's room with spare health and one or two bombs.",
+            "Defeating Mom unlocks the Womb and the first ending."
+          ]
+        },
+        {
+          "step": 9,
+          "title": "Defeat Mom's Heart and Open the Endgame",
+          "goal": "Turn early victories into permanent routes and characters.",
+          "details": [
+            "After defeating Mom once, later runs continue through Womb I-II. Most damage in the Womb and later chapters removes a full heart.",
+            "Mom's Heart becomes protected while summoned enemies remain alive. Clear the summons quickly, then damage the Heart while moving carefully through bullet patterns.",
+            "The tenth Mom's Heart defeat unlocks ???. The eleventh defeat changes the boss into It Lives!, providing regular access to Cathedral and Sheol."
+          ],
+          "checklist": [
+            "Save defensive active items for dense projectile patterns.",
+            "Destroy summoned enemies before focusing on the Heart.",
+            "After unlocking It Lives!, work toward five Isaac wins for The Polaroid and five Satan wins for The Negative."
+          ]
         }
       ],
       "quickTips": [
-        "Apotheosis does not require a fixed recipe list.",
-        "Infinite world generation means moving higher or deeper can reveal completely different materials.",
-        "Movement tools and utility gear become a major quality-of-life boost once you start unlocking them.",
-        "Getting lost early is normal, but useful tools, storage, and movement options snowball fast once your first good fusions start working."
+        "Enable Found HUD early so you can read your damage, tears, range, and luck at a glance.",
+        "Keep a bomb for a strong Secret Room location or a dangerous boss instead of spending it freely.",
+        "Skip the first Devil Room to guarantee an Angel Room when you want free items and Mega Satan access.",
+        "Look for tinted rocks with a faint cross for guaranteed pickups, hearts, or items."
       ]
     },
-    "lucidBlocksApotheosisCrafting": {
-      "title": "Lucid Blocks Apotheosis Crafting",
-      "displayType": "cards",
-      "intro": "Apotheosis is the game's unrestricted fusion system. Instead of memorizing a traditional recipe book, you combine materials, watch the result, and build your own crafting knowledge over time.",
-      "cards": [
+    "isaacItemTierList": {
+      "title": "The Binding of Isaac Repentance Item Tier List",
+      "eyebrow": "ITEM RANKINGS",
+      "subtitle": "Compare high-impact items and consumables by consistency, item pool, unlock requirement, synergy value, and potential downside in The Binding of Isaac: Repentance.",
+      "intro": "This tier list favors items that perform reliably across many characters and builds. Lower-tier entries are not always weak: several become exceptional with the correct synergy, but they require more planning or create greater risk than universally strong upgrades.",
+      "displayType": "tiers",
+      "tiers": [
         {
-          "name": "Freeform Fusion",
-          "description": "Apotheosis lets you fuse together different items without needing to follow a fixed recipe list."
+          "tier": "S",
+          "label": "Run-Defining",
+          "description": "Items that can transform an average run into a winning one with little additional setup.",
+          "entries": [
+            {
+              "name": "Sacred Heart",
+              "type": "Passive",
+              "pool": "Angel Room",
+              "effect": "Provides a massive damage multiplier, homing tears, one Red Heart container, healing, and additional tear changes.",
+              "best_use": "Take on nearly any conventional tear build; homing makes slow or easily missed projectiles far more consistent.",
+              "caution": "It lowers fire rate, but the damage and homing usually outweigh the penalty.",
+              "unlock": "Available in the Angel Room pool."
+            },
+            {
+              "name": "C Section",
+              "type": "Passive Tear Replacement",
+              "pool": "Treasure Room",
+              "effect": "Replaces tears with homing fetus projectiles that repeatedly damage enemies and inherit many tear effects.",
+              "best_use": "Combine with damage, multishot, homing support, and compatible tear effects.",
+              "caution": "Some tear replacements override or significantly change its behavior.",
+              "unlock": "Defeat The Beast as Lilith."
+            },
+            {
+              "name": "Glitched Crown",
+              "type": "Passive",
+              "pool": "Secret Room",
+              "effect": "Most item pedestals rapidly cycle through several possible items, creating repeated chances to choose a premium result.",
+              "best_use": "Watch the full cycle and time the pickup deliberately.",
+              "caution": "Poor timing can select the wrong item, while blind pedestals remove much of its control.",
+              "unlock": "Defeat The Beast as Tainted Isaac."
+            },
+            {
+              "name": "Spindown Dice",
+              "type": "Active",
+              "pool": "Secret Room",
+              "effect": "Rerolls a pedestal into the item with the previous internal item ID, allowing predictable transformations.",
+              "best_use": "Save charges for known conversions into premium items and combine it with batteries or charge generation.",
+              "caution": "Its strongest use requires learning conversion chains.",
+              "unlock": "Defeat Delirium as Tainted Isaac."
+            },
+            {
+              "name": "R Key",
+              "type": "One-Use Active",
+              "pool": "Secret Room",
+              "effect": "Restarts the run at Basement I while preserving collected items and achievement eligibility.",
+              "best_use": "Complete one late-game target, then restart with the existing build to pursue another route or collect more completion marks.",
+              "caution": "The timer does not reset, so missed Boss Rush and Hush limits remain missed.",
+              "unlock": "No character completion unlock is required."
+            },
+            {
+              "name": "Twisted Pair",
+              "type": "Familiar",
+              "pool": "Devil Room",
+              "effect": "Adds two familiars that copy the player's firing direction and scale with player damage.",
+              "best_use": "Provides immediate damage and benefits from many global tear effects.",
+              "caution": "The separated firing positions can miss small enemies at unusual angles.",
+              "unlock": "Defeat The Beast as Tainted Lilith."
+            },
+            {
+              "name": "Sacred Orb",
+              "type": "Passive",
+              "pool": "Angel Room",
+              "effect": "Filters many weak item results and rerolls some lower-quality pedestals into better options.",
+              "best_use": "Take it early so later Treasure, Boss, Angel, Devil, and Secret Room rewards benefit.",
+              "caution": "It improves future item quality rather than providing immediate combat power.",
+              "unlock": "Defeat The Beast as Tainted Lost."
+            }
+          ]
         },
         {
-          "name": "Multiple Useful Outcomes",
-          "description": "Different materials often push toward certain results. Community discoveries show that similar inputs can still lead to practical tools, storage, or combat upgrades."
+          "tier": "A",
+          "label": "Excellent",
+          "description": "Powerful options that consistently improve most builds but fall slightly below the most dominant run-defining items.",
+          "entries": [
+            {
+              "name": "Brimstone",
+              "type": "Passive Tear Replacement",
+              "pool": "Devil Room",
+              "effect": "Replaces tears with a charged, piercing blood laser.",
+              "best_use": "Excellent against groups and bosses, especially with homing, split-shot, or multishot effects.",
+              "caution": "Charge time changes the firing rhythm and some tear effects behave differently.",
+              "unlock": "Available in the Devil Room pool."
+            },
+            {
+              "name": "Mom's Knife",
+              "type": "Passive Tear Replacement",
+              "pool": "Devil Room",
+              "effect": "Replaces tears with a chargeable knife that deals very high repeated contact damage.",
+              "best_use": "Release the knife through bosses and use its return path for additional hits.",
+              "caution": "It overrides many tear combinations and often requires closer positioning.",
+              "unlock": "Defeat Satan as Isaac."
+            },
+            {
+              "name": "Tech X",
+              "type": "Passive Tear Replacement",
+              "pool": "Treasure Room",
+              "effect": "Fires chargeable laser rings that pierce enemies and cover large areas.",
+              "best_use": "Use medium or large rings to control rooms; damage, homing, and multishot scale it well.",
+              "caution": "Very small rings can underperform when released too quickly.",
+              "unlock": "Available in the Treasure Room pool."
+            },
+            {
+              "name": "Godhead",
+              "type": "Passive",
+              "pool": "Angel Room",
+              "effect": "Adds homing, a damaging aura around tears, and a major damage increase.",
+              "best_use": "Especially powerful with slow, large, piercing, or lingering projectiles.",
+              "caution": "Obtaining the unlock requires completing The Lost's Hard Mode marks.",
+              "unlock": "Earn every required Hard Mode completion mark as The Lost."
+            },
+            {
+              "name": "D Infinity",
+              "type": "Active",
+              "pool": "Secret Room",
+              "effect": "Cycles between several dice effects for rerolling items, pickups, stats, or the full build.",
+              "best_use": "Select the die that solves the current room instead of carrying separate reroll tools.",
+              "caution": "The wrong die can destroy a strong build or valuable room.",
+              "unlock": "Defeat Delirium as Isaac."
+            },
+            {
+              "name": "The Stairway",
+              "type": "Passive",
+              "pool": "Angel Room",
+              "effect": "Creates a ladder in the starting room of later floors leading to a shop that sells Angel Room items.",
+              "best_use": "Maintain a coin reserve and buy repeated Angel items over multiple floors.",
+              "caution": "The ladder disappears after leaving the starting room.",
+              "unlock": "Defeat Isaac as Jacob and Esau."
+            },
+            {
+              "name": "Birthright",
+              "type": "Passive",
+              "pool": "Shop",
+              "effect": "Provides a unique character-specific improvement.",
+              "best_use": "Its effects can add item slots, health, familiars, damage, or major mechanic upgrades depending on the character.",
+              "caution": "Value varies greatly between characters.",
+              "unlock": "Defeat ??? as Jacob and Esau."
+            },
+            {
+              "name": "Incubus",
+              "type": "Familiar",
+              "pool": "Devil Room",
+              "effect": "Copies the player's tears and most tear effects from the familiar's position.",
+              "best_use": "Acts as a large damage multiplier for conventional tear builds.",
+              "caution": "Offset positioning can make shots miss in narrow rooms.",
+              "unlock": "Defeat Hush as Lilith."
+            },
+            {
+              "name": "Curved Horn",
+              "type": "Trinket",
+              "pool": "Trinket Pool",
+              "effect": "Provides a flat damage increase while held.",
+              "best_use": "A simple early-game power increase with no health or charge cost.",
+              "caution": "It competes with defensive and utility trinkets.",
+              "unlock": "Defeat The Lamb as Judas."
+            },
+            {
+              "name": "Jera",
+              "type": "Rune",
+              "pool": "Rune Pickup",
+              "effect": "Duplicates pickups and unopened chests in the current room.",
+              "best_use": "Save it for battery rooms, chest-heavy endgame floors, or rooms containing several valuable pickups.",
+              "caution": "It does not directly duplicate pedestal items.",
+              "unlock": "Complete Challenge #2, High Brow."
+            },
+            {
+              "name": "Chaos Card",
+              "type": "Card",
+              "pool": "Card Pickup",
+              "effect": "Throws a card that instantly defeats many enemies and bosses it touches.",
+              "best_use": "Reserve it for a difficult boss or a room that threatens the run.",
+              "caution": "The card must be aimed, can miss, and does not bypass every final-boss phase.",
+              "unlock": "Complete Challenge #9, Demo Man."
+            }
+          ]
         },
         {
-          "name": "Journal-First Crafting",
-          "description": "The best way to learn Apotheosis is to track your successful combinations. Your journal quickly becomes your own crafting reference."
+          "tier": "B",
+          "label": "Dependable and Flexible",
+          "description": "Strong tools that improve many runs but usually require charges, health management, positioning, or a compatible route.",
+          "entries": [
+            {
+              "name": "Satanic Bible",
+              "type": "Active",
+              "pool": "Devil Room and Library",
+              "effect": "Grants a Black Heart and changes the current floor's boss reward into a purchasable Devil item.",
+              "best_use": "Generate defense while replacing weak boss rewards with potentially stronger Devil items.",
+              "caution": "Repeated purchases can consume too many heart containers.",
+              "unlock": "Defeat Isaac as Azazel."
+            },
+            {
+              "name": "Book of Virtues",
+              "type": "Active-Passive",
+              "pool": "Angel Room and Library",
+              "effect": "Creates orbiting wisps and combines with most active items to create unique wisp effects.",
+              "best_use": "Pair with a low-charge active item to build offense and projectile protection.",
+              "caution": "Wisps can be destroyed by enemy shots and contact.",
+              "unlock": "Defeat Isaac as Bethany."
+            },
+            {
+              "name": "The Pact",
+              "type": "Passive",
+              "pool": "Devil Room",
+              "effect": "Provides damage, fire rate, and Soul Hearts.",
+              "best_use": "A dependable all-purpose offensive and defensive upgrade.",
+              "caution": "The Devil Deal price may still be unsafe on low-health characters.",
+              "unlock": "Available in the Devil Room pool."
+            },
+            {
+              "name": "Rotten Baby",
+              "type": "Familiar",
+              "pool": "Devil Room",
+              "effect": "Spawns blue flies while the player fires.",
+              "best_use": "Scales with player damage and adds automatic burst damage.",
+              "caution": "Flies may be wasted on weak targets before reaching a boss.",
+              "unlock": "Defeat The Lamb as Lilith."
+            },
+            {
+              "name": "Holy Mantle",
+              "type": "Passive",
+              "pool": "Treasure Room and Angel Room",
+              "effect": "Blocks the first hit of damage in each room.",
+              "best_use": "Excellent for Curse Rooms, difficult rooms, and characters with one-hit health mechanics.",
+              "caution": "After the shield breaks, it provides no further protection until the next room.",
+              "unlock": "Available as an item; The Lost starts with it after 879 Greed Donation Machine coins."
+            },
+            {
+              "name": "Diplopia",
+              "type": "One-Use Active",
+              "pool": "Shop",
+              "effect": "Duplicates pedestal items and pickups in the current room.",
+              "best_use": "Copy an Angel item, Devil selection, shop inventory, or room with several valuable pickups.",
+              "caution": "Using it early can waste a stronger later duplication opportunity.",
+              "unlock": "Available in the Shop pool."
+            },
+            {
+              "name": "Credit Card",
+              "type": "Card",
+              "pool": "Card Pickup",
+              "effect": "Makes purchases in the current Shop or Devil Room free.",
+              "best_use": "Use in a room containing several expensive items.",
+              "caution": "Holding it for too long risks never finding a premium room.",
+              "unlock": "Complete Challenge #10, Cursed!."
+            },
+            {
+              "name": "Perthro",
+              "type": "Rune",
+              "pool": "Rune Pickup",
+              "effect": "Rerolls pedestal items in the current room.",
+              "best_use": "Replace weak Treasure, Boss, Angel, or Devil items.",
+              "caution": "The original item cannot be recovered after rerolling.",
+              "unlock": "Complete Challenge #6, Solar System."
+            },
+            {
+              "name": "Soul of Isaac",
+              "type": "Soul Stone",
+              "pool": "Soul Stone Pickup",
+              "effect": "Makes pedestals alternate between the original item and a rerolled option.",
+              "best_use": "Gain a second choice without immediately losing the original result.",
+              "caution": "Stepping onto the pedestal at the wrong moment selects the wrong item.",
+              "unlock": "Complete Boss Rush and defeat Hush as Tainted Isaac."
+            },
+            {
+              "name": "Cracked Crown",
+              "type": "Trinket",
+              "pool": "Trinket Pool",
+              "effect": "Improves several stats that are already above their base values.",
+              "best_use": "Strong on balanced builds containing several small stat upgrades.",
+              "caution": "It provides less value when few base stats have been improved.",
+              "unlock": "Win five Daily Challenges consecutively."
+            }
+          ]
         },
         {
-          "name": "Community-Tested Early Fusions",
-          "description": "Popular early examples include Osmium plus Stick for a Frost Pick, Stick plus Tungsten Appendage for Azrael, and Azrael plus Magnetite for the Tendril Rapier."
+          "tier": "C",
+          "label": "Build-Dependent",
+          "description": "These items can become excellent, but their drawbacks or control changes can damage an incompatible build.",
+          "entries": [
+            {
+              "name": "Soy Milk",
+              "type": "Passive Tear Modifier",
+              "pool": "Treasure Room",
+              "effect": "Greatly increases fire rate while applying a severe damage multiplier.",
+              "best_use": "Combine with flat damage additions, homing, and effects that trigger per tear.",
+              "caution": "Weak individual hits can create excessive knockback and poor enemy control."
+            },
+            {
+              "name": "Almond Milk",
+              "type": "Passive Tear Modifier",
+              "pool": "Treasure Room",
+              "effect": "Greatly increases fire rate, lowers damage, and applies changing worm-style tear patterns.",
+              "best_use": "Works with powerful effects that benefit from producing many projectiles.",
+              "caution": "Random trajectories reduce accuracy."
+            },
+            {
+              "name": "Tiny Planet",
+              "type": "Passive Tear Modifier",
+              "pool": "Treasure Room",
+              "effect": "Makes tears orbit around the player with spectral behavior and increased range.",
+              "best_use": "Combine with piercing, lasers, homing, or large projectiles.",
+              "caution": "Normal tears may miss nearby targets and require a different aiming style."
+            },
+            {
+              "name": "Ludovico Technique",
+              "type": "Passive Tear Replacement",
+              "pool": "Treasure Room",
+              "effect": "Creates one controllable tear that moves independently from the player.",
+              "best_use": "Very strong with Brimstone, Technology effects, homing, or large damaging auras.",
+              "caution": "A weak or slow tear can leave the player unable to answer threats from several directions."
+            },
+            {
+              "name": "Ipecac",
+              "type": "Passive Tear Replacement",
+              "pool": "Treasure Room",
+              "effect": "Fires arcing explosive tears with a very large damage increase.",
+              "best_use": "Clears rooms and bosses quickly while providing unlimited rock destruction.",
+              "caution": "Close-range enemies and unusual tear paths can cause self-damage."
+            },
+            {
+              "name": "Dr. Fetus",
+              "type": "Passive Tear Replacement",
+              "pool": "Treasure Room",
+              "effect": "Replaces tears with fired bombs that inherit many bomb effects.",
+              "best_use": "Powerful with bomb upgrades, homing, and explosion immunity.",
+              "caution": "Explosion timing and knockback can cause self-damage or slow clears."
+            },
+            {
+              "name": "Cursed Eye",
+              "type": "Passive Tear Modifier",
+              "pool": "Treasure Room",
+              "effect": "Charges and releases a burst of tears.",
+              "best_use": "Provides strong burst damage when fully charged from a safe position.",
+              "caution": "Taking damage while charging can teleport the player out of the room and reset boss progress."
+            },
+            {
+              "name": "Bob's Brain",
+              "type": "Familiar",
+              "pool": "Treasure Room",
+              "effect": "Launches an explosive familiar when firing toward an enemy.",
+              "best_use": "Offers strong early damage when spacing is controlled.",
+              "caution": "The explosion can damage the player, especially at short range."
+            },
+            {
+              "name": "Magic Skin",
+              "type": "Active",
+              "pool": "Curse Room",
+              "effect": "Creates an item from the current room's pool while adding a Broken Heart.",
+              "best_use": "Use sparingly in premium pools such as Angel or Secret Rooms.",
+              "caution": "Repeated use reduces maximum health, and abandoned Magic Skin can replace later pedestals."
+            },
+            {
+              "name": "Missing No.",
+              "type": "Passive",
+              "pool": "Secret Room",
+              "effect": "Rerolls passive items at the start of each floor.",
+              "best_use": "Can rescue a losing build or create unusual high-roll combinations.",
+              "caution": "A winning build can be destroyed on the next floor without player control."
+            }
+          ]
+        },
+        {
+          "tier": "D",
+          "label": "Reroll or Handle Carefully",
+          "description": "Items with severe aiming, positioning, self-damage, or randomness risks unless a specific synergy removes the drawback.",
+          "entries": [
+            {
+              "name": "The Wiz",
+              "type": "Passive Tear Modifier",
+              "pool": "Treasure Room",
+              "effect": "Adds double shots fired diagonally.",
+              "best_use": "Can work with homing, Tractor Beam, or wide laser effects.",
+              "caution": "Directly hitting enemies becomes difficult without a corrective synergy."
+            },
+            {
+              "name": "Strange Attractor",
+              "type": "Passive Tear Modifier",
+              "pool": "Treasure Room",
+              "effect": "Tears create a magnetic force that pulls enemies and objects toward their path.",
+              "best_use": "Can group enemies for piercing and area damage.",
+              "caution": "Dangerous enemies may be pulled directly into the player."
+            },
+            {
+              "name": "Guillotine",
+              "type": "Passive",
+              "pool": "Treasure Room",
+              "effect": "Detaches Isaac's head as an orbital while increasing damage and fire rate.",
+              "best_use": "The orbital blocks projectiles and deals contact damage.",
+              "caution": "The visible head no longer represents the player's body hitbox, making dodging harder."
+            },
+            {
+              "name": "Isaac's Heart",
+              "type": "Passive",
+              "pool": "Treasure Room",
+              "effect": "Makes the player's body invulnerable while a following heart becomes the damageable hitbox.",
+              "best_use": "Supports aggressive contact strategies and selected self-damage interactions.",
+              "caution": "The trailing heart is difficult to position and can be hit by attacks the body avoids."
+            },
+            {
+              "name": "Curse of the Tower",
+              "type": "Passive",
+              "pool": "Treasure Room",
+              "effect": "Spawns multiple troll bombs whenever the player takes damage.",
+              "best_use": "Can deal heavy room damage with explosion immunity and bomb upgrades.",
+              "caution": "Without immunity, one hit may cause additional damage or destroy useful pickups."
+            },
+            {
+              "name": "TMTRAINER",
+              "type": "Passive",
+              "pool": "Secret Room",
+              "effect": "Replaces future items with randomized glitched effects.",
+              "best_use": "Designed for chaotic runs and can create extremely powerful combinations.",
+              "caution": "Effects may be useless, disruptive, or dangerous, making normal item planning impossible.",
+              "unlock": "Defeat The Beast as Tainted Eden."
+            }
+          ]
         }
-      ],
-      "milestones": [
-        "Fuse an item",
-        "Fuse a vermin",
-        "Fuse a divine artifact"
       ]
     },
-    "lucidBlocksToolsAndWeapons": {
-      "title": "Lucid Blocks Tools and Weapons",
-      "displayType": "itemCards",
-      "intro": "Lucid Blocks mixes official utility gear with community-discovered early weapons. The best setup is usually a blend of fast mining, safe traversal, and one dependable combat option.",
-      "items": [
+    "isaacCharacters": {
+      "title": "The Binding of Isaac Repentance Characters and Tainted Characters",
+      "eyebrow": "34 PLAYSTYLES",
+      "subtitle": "Compare all 17 normal characters and 17 Tainted variants in The Binding of Isaac: Repentance by unlock method, starting tools, core mechanic, strengths, weaknesses, and difficulty.",
+      "intro": "These tiers measure general consistency and accessibility rather than the quality of each character's unlock rewards. Permanent upgrades such as Isaac's D6, The Lost's Holy Mantle, and Keeper's Wooden Nickel can substantially improve a character after they are obtained.",
+      "displayType": "charTiers",
+      "tiers": [
         {
-          "name": "Frost Pick",
-          "type": "Mining Tool",
-          "description": "A fast and affordable early pick made from Osmium and Stick. Players use it to speed up early material gathering."
+          "tier": "S",
+          "label": "Beginner-Friendly Powerhouses",
+          "description": "Characters with strong starting tools, forgiving health, or mechanics that consistently create winning runs.",
+          "entries": [
+            {
+              "name": "Isaac",
+              "variant": "Normal",
+              "unlock": "Available from the start.",
+              "starts_with": "Three Red Hearts and one bomb; The D6 becomes his starting active after defeating Isaac as ???.",
+              "core_mechanic": "A balanced character whose D6 rerolls pedestal items.",
+              "strengths": [
+                "Balanced health and stats",
+                "Excellent item control with The D6",
+                "No restrictive mechanic"
+              ],
+              "weaknesses": [
+                "Base Isaac has no special offensive advantage",
+                "D6 value depends on charge management"
+              ],
+              "difficulty": "Easy"
+            },
+            {
+              "name": "Magdalene",
+              "variant": "Normal",
+              "unlock": "Have seven or more Red Heart containers at one time.",
+              "starts_with": "Four Red Hearts and Yum Heart; completing Aprils Fool adds a Full Health pill.",
+              "core_mechanic": "Large starting health and repeatable healing make mistakes easier to recover from.",
+              "strengths": [
+                "Very forgiving health pool",
+                "Dependable healing",
+                "Good for learning bosses"
+              ],
+              "weaknesses": [
+                "Low starting speed",
+                "Healing cannot fix weak late-game damage"
+              ],
+              "difficulty": "Very Easy"
+            },
+            {
+              "name": "Cain",
+              "variant": "Normal",
+              "unlock": "Hold 55 coins at one time.",
+              "starts_with": "Two Red Hearts, Lucky Foot, one key, and a pill; Paper Clip is added after 68 Greed Donation Machine coins.",
+              "core_mechanic": "Strong damage and speed combine with favorable pill and gambling outcomes.",
+              "strengths": [
+                "Strong starting damage",
+                "Good movement speed",
+                "Safer pill usage"
+              ],
+              "weaknesses": [
+                "Only two starting Red Hearts",
+                "Reduced firing angle and effective range"
+              ],
+              "difficulty": "Easy"
+            },
+            {
+              "name": "Azazel",
+              "variant": "Normal",
+              "unlock": "Take three Devil Deal items in one run.",
+              "starts_with": "Three Black Hearts, flight, and a short-range Brimstone beam.",
+              "core_mechanic": "Extremely high early damage and permanent flight at the cost of short range.",
+              "strengths": [
+                "Powerful early damage",
+                "Permanent flight",
+                "Fast boss clears"
+              ],
+              "weaknesses": [
+                "Very short base range",
+                "No starting Red Heart containers",
+                "Close positioning can be dangerous"
+              ],
+              "difficulty": "Very Easy"
+            },
+            {
+              "name": "Tainted Judas",
+              "variant": "Tainted",
+              "unlock": "Use Red Key or Cracked Key on the hidden closet in Home while playing as Judas.",
+              "starts_with": "Two Black Hearts, three coins, and Dark Arts in the pocket active slot.",
+              "core_mechanic": "Dark Arts makes Judas intangible and converts enemies and shots passed through into a powerful ending slash.",
+              "strengths": [
+                "Offense and defense in one ability",
+                "Strong room clearing",
+                "Can bypass projectile waves"
+              ],
+              "weaknesses": [
+                "Cannot gain Red Heart containers",
+                "Poor timing can end inside a threat"
+              ],
+              "difficulty": "Easy"
+            },
+            {
+              "name": "Tainted Lilith",
+              "variant": "Tainted",
+              "unlock": "Use Red Key or Cracked Key on the hidden closet in Home while playing as Lilith.",
+              "starts_with": "One Red Heart, two Black Hearts, and an attached fetus familiar used as her main attack.",
+              "core_mechanic": "Firing launches the fetus like a whip, dealing contact damage before it fires tears.",
+              "strengths": [
+                "High starting damage",
+                "Wide attack coverage",
+                "Strong familiar scaling"
+              ],
+              "weaknesses": [
+                "Unusual aiming takes practice",
+                "Narrow rooms can restrict the attack"
+              ],
+              "difficulty": "Easy"
+            }
+          ]
         },
         {
-          "name": "Azrael",
-          "type": "Starter Weapon",
-          "description": "A practical early weapon route crafted from Stick and Tungsten Appendage."
+          "tier": "A",
+          "label": "Strong and Consistent",
+          "description": "Powerful characters that remain dependable once their central mechanic is understood.",
+          "entries": [
+            {
+              "name": "Judas",
+              "variant": "Normal",
+              "unlock": "Defeat Satan.",
+              "starts_with": "One Red Heart, three coins, and Book of Belial.",
+              "core_mechanic": "High base damage combined with a repeatable boss-room damage boost.",
+              "strengths": [
+                "High starting damage",
+                "Dependable active item",
+                "Fast early clears"
+              ],
+              "weaknesses": [
+                "Only one starting Red Heart",
+                "Early mistakes are heavily punished"
+              ],
+              "difficulty": "Moderate"
+            },
+            {
+              "name": "Eve",
+              "variant": "Normal",
+              "unlock": "Complete two consecutive floors without picking up hearts.",
+              "starts_with": "Two Red Hearts, Dead Bird, and Whore of Babylon; Razor Blade is added after 439 Greed Donation Machine coins.",
+              "core_mechanic": "Whore of Babylon grants major offensive bonuses while Eve remains at one Red Heart or lower.",
+              "strengths": [
+                "Strong low-health offense",
+                "Excellent Soul Heart builds",
+                "Good Devil Deal routing"
+              ],
+              "weaknesses": [
+                "Weak damage outside Whore of Babylon",
+                "Maintaining the bonus limits Red Heart protection"
+              ],
+              "difficulty": "Moderate"
+            },
+            {
+              "name": "Lilith",
+              "variant": "Normal",
+              "unlock": "Defeat Ultra Greed as Azazel.",
+              "starts_with": "One Red Heart, two Black Hearts, Incubus, Box of Friends, and Cambion Conception.",
+              "core_mechanic": "Lilith fires through Incubus, while Box of Friends temporarily duplicates her familiars.",
+              "strengths": [
+                "Excellent familiar scaling",
+                "Powerful active item",
+                "Cambion Conception adds familiars over time"
+              ],
+              "weaknesses": [
+                "Offset aiming is harder",
+                "Her starting active competes with other actives"
+              ],
+              "difficulty": "Moderate"
+            },
+            {
+              "name": "Bethany",
+              "variant": "Normal",
+              "unlock": "Defeat Mom's Heart or It Lives! on Hard Mode as Lazarus without using his extra life.",
+              "starts_with": "Three Red Hearts and Book of Virtues.",
+              "core_mechanic": "Soul and Black Hearts become active-item charges instead of health, while Book of Virtues creates item-linked wisps.",
+              "strengths": [
+                "Powerful active-item synergies",
+                "Wisps provide offense and protection",
+                "Flexible charge storage"
+              ],
+              "weaknesses": [
+                "Cannot use Soul or Black Hearts as health",
+                "Red Heart damage is especially costly"
+              ],
+              "difficulty": "Moderate"
+            },
+            {
+              "name": "Tainted Isaac",
+              "variant": "Tainted",
+              "unlock": "Use Red Key or Cracked Key on the hidden closet in Home while playing as Isaac.",
+              "starts_with": "Three Red Hearts and an eight-slot passive-item limit.",
+              "core_mechanic": "Most pedestals alternate between two choices, but only eight passive items can be held; Birthright raises the limit to twelve.",
+              "strengths": [
+                "Built-in item choices",
+                "Can discard weak passives",
+                "High average build quality"
+              ],
+              "weaknesses": [
+                "Strict item-slot limit",
+                "Bad timing can select the wrong pedestal option"
+              ],
+              "difficulty": "Moderate"
+            },
+            {
+              "name": "Tainted Azazel",
+              "variant": "Tainted",
+              "unlock": "Use Red Key or Cracked Key on the hidden closet in Home while playing as Azazel.",
+              "starts_with": "Three Black Hearts, flight, a long-range narrow Brimstone beam, and The Fool.",
+              "core_mechanic": "A short-range sneeze damages and marks enemies, causing the Brimstone beam to deal amplified damage.",
+              "strengths": [
+                "Flight and long-range Brimstone",
+                "Sneeze supplies crowd control",
+                "Strong early consistency"
+              ],
+              "weaknesses": [
+                "No starting Red Heart containers",
+                "Maximum damage requires close-range setup",
+                "Narrow beam requires accurate aim"
+              ],
+              "difficulty": "Easy"
+            },
+            {
+              "name": "Tainted Apollyon",
+              "variant": "Tainted",
+              "unlock": "Use Red Key or Cracked Key on the hidden closet in Home while playing as Apollyon.",
+              "starts_with": "Two Red Hearts and Abyss in the pocket active slot.",
+              "core_mechanic": "Abyss converts unwanted pedestal items into permanent attacking locusts.",
+              "strengths": [
+                "Every pedestal retains value",
+                "Locust army scales throughout the run",
+                "Abyss does not occupy the normal active slot"
+              ],
+              "weaknesses": [
+                "Only two starting Red Hearts",
+                "Consumed items cannot be recovered",
+                "Many items create only a basic locust"
+              ],
+              "difficulty": "Easy"
+            }
+          ]
         },
         {
-          "name": "Tendril Rapier",
-          "type": "Upgraded Weapon",
-          "description": "A stronger follow-up made by combining Azrael with Magnetite. It is one of the most useful early-mid combat paths shared by players."
+          "tier": "B",
+          "label": "Balanced or Specialist Picks",
+          "description": "Capable characters whose mechanics are powerful in the right hands but less consistently forgiving.",
+          "entries": [
+            {
+              "name": "???",
+              "variant": "Normal",
+              "unlock": "Defeat Mom's Heart ten times.",
+              "starts_with": "Three Soul Hearts and The Poop.",
+              "core_mechanic": "Cannot gain Red Heart containers and must rely on Soul, Black, Bone, or other non-red health.",
+              "strengths": [
+                "Simple standard tears",
+                "Good no-red-heart synergies",
+                "Soul Heart damage preserves deal chance"
+              ],
+              "weaknesses": [
+                "No renewable Red Heart health",
+                "Weak starting active",
+                "Poor early damage can consume limited health"
+              ],
+              "difficulty": "Moderate"
+            },
+            {
+              "name": "Lazarus",
+              "variant": "Normal",
+              "unlock": "Have four or more Soul or Black Hearts at one time.",
+              "starts_with": "Three Red Hearts, a random pill, and one extra life.",
+              "core_mechanic": "Revives as Lazarus Risen with stronger offense; the extra life returns on later floors and planned deaths can grant permanent damage.",
+              "strengths": [
+                "Built-in extra life",
+                "Can gain permanent damage",
+                "Standard Red Heart healing"
+              ],
+              "weaknesses": [
+                "Base form is ordinary",
+                "Poorly timed deaths can ruin health or deals",
+                "Revival costs maximum health"
+              ],
+              "difficulty": "Moderate"
+            },
+            {
+              "name": "Eden",
+              "variant": "Normal",
+              "unlock": "Defeat Mom's Heart or It Lives! to earn Eden Tokens; each Eden run consumes one token.",
+              "starts_with": "Random health, stats, one passive item, one active item, and random pickups.",
+              "core_mechanic": "Every run begins with a different build and stat distribution.",
+              "strengths": [
+                "Can start with rare items",
+                "Encourages broad item knowledge",
+                "Every run is different"
+              ],
+              "weaknesses": [
+                "Unpredictable health and stats",
+                "Can begin with harmful combinations",
+                "Requires an Eden Token"
+              ],
+              "difficulty": "Moderate"
+            },
+            {
+              "name": "Keeper",
+              "variant": "Normal",
+              "unlock": "Donate 1,000 coins to the Greed Donation Machine.",
+              "starts_with": "Two Coin Hearts and a triple shot; Wooden Nickel and a third Coin Heart are added through completion unlocks.",
+              "core_mechanic": "Uses coins as health and initially has a low health cap.",
+              "strengths": [
+                "Strong triple-shot burst",
+                "Coins provide health and purchasing power",
+                "Wooden Nickel improves sustain"
+              ],
+              "weaknesses": [
+                "Restricted health cap",
+                "Slow starting fire rate",
+                "Spending money removes possible healing"
+              ],
+              "difficulty": "Hard"
+            },
+            {
+              "name": "Apollyon",
+              "variant": "Normal",
+              "unlock": "Defeat Mega Satan.",
+              "starts_with": "Three Red Hearts and Void.",
+              "core_mechanic": "Void consumes passives for random stats and stores active-item effects to trigger together.",
+              "strengths": [
+                "Converts weak items into stats",
+                "Combines active effects",
+                "Normal starting health"
+              ],
+              "weaknesses": [
+                "Stat gains are random",
+                "Stored effects can conflict",
+                "Void has a long charge time"
+              ],
+              "difficulty": "Moderate"
+            },
+            {
+              "name": "The Forgotten",
+              "variant": "Normal",
+              "unlock": "After defeating The Lamb, complete the Broken Shovel sequence and use Mom's Shovel on the grave in the Dark Room.",
+              "starts_with": "A Bone Heart body with a melee club and a Soul Heart spirit form with flight and spectral tears.",
+              "core_mechanic": "Switches between a powerful melee body and a mobile ranged soul tethered to the body.",
+              "strengths": [
+                "Strong melee damage",
+                "Two complementary forms",
+                "Club can destroy projectiles"
+              ],
+              "weaknesses": [
+                "Health is divided by form",
+                "The Soul is tethered to the body",
+                "Melee combat requires pattern knowledge"
+              ],
+              "difficulty": "Easy"
+            }
+          ]
         },
         {
-          "name": "Hookshot",
-          "type": "Mobility Tool",
-          "description": "An official traversal item that greatly improves movement and vertical exploration."
+          "tier": "C",
+          "label": "High-Execution Characters",
+          "description": "Strong characters whose health, inventory, reroll, or dual-control systems demand advanced planning.",
+          "entries": [
+            {
+              "name": "The Lost",
+              "variant": "Normal",
+              "unlock": "Die in a Sacrifice Room while holding Missing Poster.",
+              "starts_with": "Flight, spectral tears, no health, and Eternal D6 after its unlock; Holy Mantle is added after 879 Greed Donation Machine coins.",
+              "core_mechanic": "Dies from any unblocked hit. Holy Mantle blocks the first hit in each room, and Devil Deals can be taken without a health payment.",
+              "strengths": [
+                "Flight and spectral tears",
+                "Free Devil Deals",
+                "Eternal D6 improves item quality"
+              ],
+              "weaknesses": [
+                "One-hit death after the shield breaks",
+                "Small mistakes end long runs",
+                "Many self-damage interactions are unusable"
+              ],
+              "difficulty": "Very Hard"
+            },
+            {
+              "name": "Jacob & Esau",
+              "variant": "Normal",
+              "unlock": "Defeat Mother.",
+              "starts_with": "Jacob has three Red Hearts; Esau has one Red Heart and one Soul Heart. Their stats and items are separate, but consumables are shared.",
+              "core_mechanic": "Both characters move together and can collect separate items from simultaneous double-pedestal choices.",
+              "strengths": [
+                "Two independent builds",
+                "Can obtain two items from selected choice rooms",
+                "High combined starting damage"
+              ],
+              "weaknesses": [
+                "Two hitboxes are difficult to dodge",
+                "Different speeds cause separation",
+                "Health must be divided"
+              ],
+              "difficulty": "Very Hard"
+            },
+            {
+              "name": "Tainted Cain",
+              "variant": "Tainted",
+              "unlock": "Use Red Key or Cracked Key on the hidden closet in Home while playing as Cain.",
+              "starts_with": "Two Red Hearts, one key, and Bag of Crafting in the pocket active slot.",
+              "core_mechanic": "Pedestal items break into pickups, and eight stored pickups are converted into a crafted item.",
+              "strengths": [
+                "Strong resource conversion",
+                "Can deliberately shape the build",
+                "Few pickups are completely wasted"
+              ],
+              "weaknesses": [
+                "Cannot collect normal pedestal items",
+                "Crafting requires extensive knowledge",
+                "Poor drops can delay power"
+              ],
+              "difficulty": "Very Hard"
+            },
+            {
+              "name": "Tainted Lazarus",
+              "variant": "Tainted",
+              "unlock": "Use Red Key or Cracked Key on the hidden closet in Home while playing as Lazarus.",
+              "starts_with": "Alive Lazarus has Red Hearts, Dead Lazarus has Soul Hearts, and Flip occupies the pocket active slot.",
+              "core_mechanic": "Clearing rooms alternates between two forms with separate health, stats, and inventories. Flip changes forms and reveals paired faded items.",
+              "strengths": [
+                "Two specialized builds",
+                "Flip can provide additional items",
+                "Forms can cover different roles"
+              ],
+              "weaknesses": [
+                "Resources are split",
+                "Forced switching disrupts routing",
+                "One weak form can block progression"
+              ],
+              "difficulty": "Very Hard"
+            }
+          ]
         },
         {
-          "name": "Bee Glider",
-          "type": "Mobility Tool",
-          "description": "An official movement item that helps cover space more safely and efficiently."
-        },
-        {
-          "name": "Ball Wand",
-          "type": "Utility Weapon",
-          "description": "An official ranged utility item that expands your combat and puzzle options."
-        },
-        {
-          "name": "Scuba Diving Gear",
-          "type": "Traversal Gear",
-          "description": "An official utility item for reaching areas that would otherwise slow down exploration."
-        },
-        {
-          "name": "Explosives",
-          "type": "Utility Damage",
-          "description": "Officially highlighted as part of the core toolset and useful for breaking through threats or obstacles."
+          "tier": "D",
+          "label": "Extreme Challenge",
+          "description": "Characters designed around near-perfect play with little protection from a single mistake.",
+          "entries": [
+            {
+              "name": "Tainted Lost",
+              "variant": "Tainted",
+              "unlock": "Use Red Key or Cracked Key on the hidden closet in Home while playing as The Lost.",
+              "starts_with": "Flight, spectral tears, no health, a Holy Card, and an innate damage multiplier.",
+              "core_mechanic": "Has no Holy Mantle. Many defensive or low-value items are filtered from the available pools, but Holy Card shields remain the main protection.",
+              "strengths": [
+                "Higher average item quality",
+                "Strong damage multiplier",
+                "Flight and spectral tears"
+              ],
+              "weaknesses": [
+                "Any unshielded hit ends the run",
+                "No permanent Holy Mantle",
+                "Long bosses demand nearly flawless execution"
+              ],
+              "difficulty": "Extreme"
+            }
+          ]
         }
       ]
     },
-    "lucidBlocksStorageAndInventory": {
-      "title": "Lucid Blocks Storage and Inventory",
-      "displayType": "solutionCards",
-      "intro": "Inventory pressure starts early in Lucid Blocks, so building storage should be one of your first goals. Several real player-tested solutions already stand out.",
-      "solutions": [
+    "isaacUnlockGuide": {
+      "title": "The Binding of Isaac Repentance Unlock Guide",
+      "eyebrow": "PROGRESSION ROADMAP",
+      "subtitle": "Open the main endings first, obtain high-impact items and character upgrades, then complete alternate paths, Tainted characters, challenges, and final completion marks in The Binding of Isaac: Repentance.",
+      "intro": "A useful progression route prioritizes unlocks that make future attempts stronger. Hard Mode is needed for selected rewards and final completion, while Greedier Mode provides a separate completion mark and important donation milestones.",
+      "displayType": "roadmap",
+      "phases": [
         {
-          "name": "Cache Cube",
-          "role": "Chest-Like Storage",
-          "description": "Cache Cubes are one of the earliest practical storage answers and are treated by players as the game's main chest-style container."
-        },
-        {
-          "name": "Cabinet",
-          "role": "Simple Base Storage",
-          "description": "Cabinets are another confirmed storage option. A shared early recipe uses 1 Cut Wood and 1 String."
-        },
-        {
-          "name": "Personal Qualia",
-          "role": "Long-Term Storage Hub",
-          "description": "Once unlocked, your personal Qualia becomes a natural place to organize materials, craft in peace, and expand your base setup."
-        },
-        {
-          "name": "Journal Tracking",
-          "role": "Inventory Efficiency",
-          "description": "Recording useful combinations in your journal reduces wasted materials and makes inventory management much easier."
-        }
-      ],
-      "managementTips": [
-        "Prioritize one dependable storage option before hoarding rare drops.",
-        "Build around your personal Qualia once it becomes available.",
-        "Keep crafting materials, combat tools, and movement gear separated so upgrades are easier to plan.",
-        "Use your journal as part of inventory management, not just crafting discovery."
-      ]
-    },
-    "lucidBlocksQualiaAndBaseBuilding": {
-      "title": "Lucid Blocks Qualia and Base Building",
-      "displayType": "cards",
-      "intro": "Qualia is one of the most important progression milestones in Lucid Blocks. It gives you a personal space to regroup, store materials, and gradually turn exploration progress into a real home base.",
-      "cards": [
-        {
-          "name": "Personal Qualia",
-          "description": "Unlocking a Qualia is an early milestone that gives you a more reliable place to return to while exploring the wider world."
-        },
-        {
-          "name": "Storage-First Building",
-          "description": "Many players start using their Qualia as a storage hub before turning it into a larger base with organized crafting and building space."
-        },
-        {
-          "name": "Creative Home Building",
-          "description": "Lucid Blocks supports creative building, and players are already using Qualia spaces to make houses and personalized layouts."
-        },
-        {
-          "name": "Progression Hub",
-          "description": "A strong base helps you separate exploration loot, crafting materials, seeds, tools, and mobility gear so your next upgrades are easier to plan."
-        }
-      ],
-      "highlights": [
-        "Enter a qualia",
-        "Store materials safely",
-        "Expand from utility to decoration",
-        "Use base space to support crafting and farming"
-      ]
-    },
-    "lucidBlocksWorldRegions": {
-      "title": "Lucid Blocks World Regions",
-      "displayType": "regionCards",
-      "intro": "Lucid Blocks uses infinite world generation, so players keep discovering new environments and structures. A few named places are already showing up in achievements and community discussions.",
-      "regions": [
-        {
-          "name": "Fog Meadow",
-          "type": "Community-Noted Area",
-          "description": "Fog Meadow is already known among players as a tense area associated with hidden threats and dangerous encounters."
-        },
-        {
-          "name": "Tiamana Leyline",
-          "type": "Discovery Landmark",
-          "description": "The tiamana leyline is important enough to have its own achievement milestone, making it one of the clearest named world discoveries so far."
-        },
-        {
-          "name": "Clonaqualia",
-          "type": "Build Space",
-          "description": "Players are already using Clonaqualia as a place to build houses, store materials, and experiment with more permanent layouts."
-        },
-        {
-          "name": "Essence Morass",
-          "type": "Farming Area",
-          "description": "Essence Morass is being shared by players as a useful farming location, especially for fighting slimes and gaining experience."
-        }
-      ]
-    },
-    "lucidBlocksCreaturesAndEnemies": {
-      "title": "Lucid Blocks Creatures and Enemies",
-      "displayType": "creatureCards",
-      "intro": "Lucid Blocks mixes surreal creatures with real danger. Official descriptions and community posts point to a world full of strange life, hostile threats, and a few standout encounters players remember quickly.",
-      "creatures": [
-        {
-          "name": "Manikins",
-          "role": "Hostile Enemy",
-          "description": "Manikins are one of the officially named foes in the world and part of the game's surreal threat roster."
-        },
-        {
-          "name": "Squishy Gels",
-          "role": "Hostile Enemy",
-          "description": "Squishy gels are another officially named enemy type and help define the game's strange biological style."
-        },
-        {
-          "name": "Higher-Dimensional Beings",
-          "role": "Hostile Enemy",
-          "description": "These beings are presented as part of the world's more abstract and unsettling enemy lineup."
-        },
-        {
-          "name": "Colossal Spiders",
-          "role": "Major Threat",
-          "description": "Spiders are one of the most immediately feared enemies in community discussions and are clearly a memorable danger."
-        },
-        {
-          "name": "Bubblebear",
-          "role": "Named Creature",
-          "description": "Bubblebear is notable enough to have its own achievement, which makes it one of the clearest named creature encounters in the game."
-        },
-        {
-          "name": "Cute Vermin",
-          "role": "Interactable Creature",
-          "description": "Vermin are not only part of fusion progression, they can also be renamed, giving them a more personal role than standard enemies."
-        },
-        {
-          "name": "Blasphemous Creature",
-          "role": "Elite Threat",
-          "description": "The blasphemous creature is tied to a dedicated combat achievement, marking it as a significant enemy encounter."
-        }
-      ]
-    },
-    "lucidBlocksMobilityGear": {
-      "title": "Lucid Blocks Mobility Gear",
-      "displayType": "itemCards",
-      "intro": "Movement upgrades are one of the biggest quality-of-life jumps in Lucid Blocks. Once you unlock your first traversal tools, exploration becomes faster, safer, and much more rewarding.",
-      "items": [
-        {
-          "name": "Hookshot",
-          "type": "Traversal Tool",
-          "description": "The hookshot is one of the clearest movement milestones in the game and has its own dedicated achievement."
-        },
-        {
-          "name": "Glider Glove",
-          "type": "Air Mobility",
-          "description": "The glider glove opens up much smoother travel and is another major progression milestone with its own achievement."
-        },
-        {
-          "name": "Bee Glider",
-          "type": "Traversal Tool",
-          "description": "Bee gliders are officially highlighted as part of the game's movement toolkit for covering space more efficiently."
-        },
-        {
-          "name": "Ball Wand",
-          "type": "Utility Gear",
-          "description": "Ball wands are one of the officially highlighted special tools and expand how you move through or interact with the world."
-        },
-        {
-          "name": "Scuba Diving Gear",
-          "type": "Exploration Gear",
-          "description": "Scuba diving gear is officially listed as part of the core utility set for reaching areas that would otherwise be harder to explore."
-        },
-        {
-          "name": "Explosives",
-          "type": "Utility Damage",
-          "description": "Explosives are both officially highlighted and linked to an achievement milestone, making them part of the game's core utility progression."
-        }
-      ],
-      "unlockMilestones": [
-        "Command a hookshot",
-        "Fly with the glider glove",
-        "Brandish a projectile wand",
-        "Brandish an explosive"
-      ]
-    },
-    "lucidBlocksFarmingAndGrowth": {
-      "title": "Lucid Blocks Farming and Growth",
-      "displayType": "mixedCards",
-      "intro": "Growth is part of real progression in Lucid Blocks. Farming is not only about planting and harvesting, but also about setting up repeatable material routes that keep your tools, weapons, and crafting options flowing.",
-      "sections": [
-        {
-          "name": "Seed Progression",
-          "description": "Planting and fertilizing seeds is a real milestone in the game, and harvesting a fully-grown nut is part of the same growth path."
-        },
-        {
-          "name": "Material Farming",
-          "description": "A practical early farming loop is creating Mercury Capsules, which spawn small slimes that drop Tendrils and goo for repeatable crafting materials."
-        },
-        {
-          "name": "Tool Sustain",
-          "description": "Resource farming becomes much stronger once you can consistently gather Osmium, glass shards, plants, and slime materials for follow-up crafts."
-        },
-        {
-          "name": "Base Routine",
-          "description": "The best farming setup supports more than food. It should feed your storage, movement tools, weapon upgrades, and future fusion experiments."
-        }
-      ],
-      "growthMilestones": [
-        "Fertilize a seed",
-        "Harvest a fully-grown nut",
-        "Create repeatable material loops",
-        "Turn farming into long-term progression"
-      ]
-    },
-    "lucidBlocksBestEarlyUnlocks": {
-      "title": "Lucid Blocks Best Early Unlocks",
-      "displayType": "priorityCards",
-      "intro": "The strongest early unlocks are the ones that improve safety, storage, and movement. In Lucid Blocks, a few practical upgrades can make the entire rest of the game much smoother.",
-      "priorities": [
-        {
-          "name": "Personal Qualia",
+          "phase": "1. First Ending",
+          "requirement": "Defeat Mom in Depths II.",
+          "unlocks": "The Womb chapter, Ending 1, and access to Mom's Heart on later runs.",
           "priority": "Essential",
-          "description": "As soon as you get access to your personal Qualia, your run becomes much more stable. It acts as a reliable hub for storage, building, and regrouping."
+          "recommended_actions": "Use Isaac or Azazel, visit each early Treasure Room, and enter Mom's fight with spare health.",
+          "next_target": "Defeat Mom's Heart repeatedly."
         },
         {
-          "name": "Frost Pick",
-          "priority": "Very High",
-          "description": "A fast and cheap early mining tool made from Osmium and Stick. It is one of the most useful upgrades for accelerating early resource collection."
+          "phase": "2. Mom's Heart Cycle",
+          "requirement": "Defeat Mom's Heart ten times, then complete an eleventh Heart run.",
+          "unlocks": "The tenth defeat unlocks ???. The eleventh permanently replaces Mom's Heart with It Lives!.",
+          "priority": "Essential",
+          "recommended_actions": "Use several characters to begin earning completion rewards while learning Womb enemies and full-heart damage.",
+          "next_target": "Use the It Lives! exits to reach Cathedral and Sheol."
         },
         {
-          "name": "Cache Cube",
-          "priority": "Very High",
-          "description": "Storage pressure starts early, so getting your first dependable chest-style container is a major quality-of-life upgrade."
+          "phase": "3. Cathedral and Sheol",
+          "requirement": "After defeating It Lives!, enter the beam of light for Cathedral or the trapdoor for Sheol, then defeat Isaac or Satan.",
+          "unlocks": "Chapter V completion marks, character rewards, and progress toward the two Chapter VI routes.",
+          "priority": "Essential",
+          "recommended_actions": "Develop both routes while targeting useful character-specific unlocks.",
+          "next_target": "Defeat Isaac five times and Satan five times."
         },
         {
-          "name": "Hookshot",
+          "phase": "4. The Polaroid and The Negative",
+          "requirement": "Defeat Isaac five times to unlock The Polaroid and Satan five times to unlock The Negative.",
+          "unlocks": "The Polaroid opens Chest after Cathedral. The Negative opens Dark Room after Sheol.",
+          "priority": "Essential",
+          "recommended_actions": "Take the photograph that matches the intended route after defeating Mom.",
+          "next_target": "Defeat ??? in Chest and The Lamb in Dark Room."
+        },
+        {
+          "phase": "5. Mega Satan and Apollyon",
+          "requirement": "Clear Chest or Dark Room once, then bomb Angel statues in two Angel Rooms to assemble both Key Pieces and open the golden door in Chapter VI.",
+          "unlocks": "Mega Satan completion rewards; defeating Mega Satan unlocks Apollyon.",
           "priority": "High",
-          "description": "The hookshot is one of the clearest movement milestones in the game and quickly makes exploration faster and safer."
+          "recommended_actions": "Skip the first Devil Room to force the next deal-room spawn into the Angel route, and preserve bombs for both statues.",
+          "next_target": "Pursue Delirium through available Void portals."
         },
         {
-          "name": "Glider Glove",
+          "phase": "6. Boss Rush and Hush",
+          "requirement": "Defeat Mom in under 20 minutes for Boss Rush and defeat Mom's Heart or It Lives! in under 30 minutes for the Blue Womb and Hush.",
+          "unlocks": "Character-specific completion marks, items, and progress toward the Repentance alternate path.",
           "priority": "High",
-          "description": "The glider glove adds another major mobility boost and makes long-distance movement far more efficient."
+          "recommended_actions": "Attempt timed routes on strong runs, use map-reveal effects, and skip low-value rooms.",
+          "next_target": "Defeat Hush three times."
         },
         {
-          "name": "Projectile Wand or Bombs",
+          "phase": "7. Alternate Path",
+          "requirement": "Defeat Hush three times to unlock A Secret Exit.",
+          "unlocks": "Downpour or Dross, Mines or Ashpit, Mausoleum or Gehenna, the Knife Piece route, Corpse, and Mother.",
+          "priority": "Essential for Repentance",
+          "recommended_actions": "The first alternate door costs one key, the second costs two bombs, and the Mausoleum or Gehenna entrance costs two full hearts. Collect both Knife Pieces and use the completed knife on the flesh door after Mom.",
+          "next_target": "Reach Corpse II and defeat Mother."
+        },
+        {
+          "phase": "8. Mother and the Strange Door",
+          "requirement": "Collect both Knife Pieces, enter Corpse, and defeat Mother.",
+          "unlocks": "Jacob and Esau, the Strange Door in Depths II, Challenge #39 Isaac's Awakening, and the route toward Home.",
+          "priority": "Essential",
+          "recommended_actions": "Prioritize health and defense because Mother has two long phases and boss armor.",
+          "next_target": "Complete the Ascent and defeat The Beast."
+        },
+        {
+          "phase": "9. Home, The Beast, and Tainted Characters",
+          "requirement": "In Depths II, defeat Mom, use The Fool to leave, open the Strange Door with The Polaroid or The Negative, reach Dad's Note, complete the Ascent, enter Home, and defeat The Beast route.",
+          "unlocks": "The final ending route and character-specific Beast rewards. Opening Mom's chest at Home grants Red Key on the first visit.",
+          "priority": "Essential",
+          "recommended_actions": "On later runs, leave a trinket in a Treasure or Boss Room before the Ascent. It becomes a Cracked Key in the corresponding Ascent room. Use Red Key or Cracked Key on Home's hidden closet to unlock the current Tainted character.",
+          "next_target": "Prioritize Tainted Isaac, Tainted Lilith, and other characters with strong rewards."
+        },
+        {
+          "phase": "10. Greed Donation Milestones",
+          "requirement": "Complete Greed Mode and donate coins after defeating Ultra Greed.",
+          "unlocks": "30 coins unlock Wooden Nickel, 500 unlock Greedier Mode, 879 give The Lost a starting Holy Mantle, and 1,000 unlock Keeper.",
           "priority": "High",
-          "description": "A ranged tool or explosive option gives you a safer answer to dangerous enemies and trial-style encounters."
+          "recommended_actions": "Rotate characters to reduce the effect of the character-specific machine jam chance, and save coins for donation.",
+          "next_target": "Earn Greedier marks and Keeper's survival upgrades."
+        },
+        {
+          "phase": "11. Best Early Character Unlocks",
+          "requirement": "Complete selected character marks.",
+          "unlocks": "Defeat Isaac as ??? for Isaac's D6; Satan as Isaac for Mom's Knife; Isaac as Azazel for Satanic Bible; Isaac as Bethany for Book of Virtues; Isaac and ??? as Jacob and Esau for The Stairway and Birthright.",
+          "priority": "Highest early-item priority",
+          "recommended_actions": "Obtain these rewards before spending many attempts on low-impact completion goals.",
+          "next_target": "Begin Beast and Tainted-character rewards."
+        },
+        {
+          "phase": "12. Best Repentance Unlocks",
+          "requirement": "Complete selected Beast and Delirium marks.",
+          "unlocks": "C Section from The Beast as Lilith; Twisted Pair from The Beast as Tainted Lilith; Glitched Crown from The Beast as Tainted Isaac; Spindown Dice from Delirium as Tainted Isaac; Sacred Orb from The Beast as Tainted Lost.",
+          "priority": "Highest late-game priority",
+          "recommended_actions": "Begin with Lilith, Tainted Lilith, and Tainted Isaac. Attempt Sacred Orb after becoming comfortable with Holy Card management and final bosses.",
+          "next_target": "Target Rock Bottom, Godhead, Mega Mush, and Death Certificate."
+        },
+        {
+          "phase": "13. Challenges, Runes, and Utility",
+          "requirement": "Complete selected numbered challenges and general achievements.",
+          "unlocks": "High Brow unlocks Jera; Demo Man unlocks Chaos Card; Cursed! unlocks Credit Card; Solar System unlocks Perthro; Isaac's Awakening unlocks Spirit Sword; five consecutive Daily Challenge wins unlock Cracked Crown.",
+          "priority": "Medium to High",
+          "recommended_actions": "Unlock at least six runes or Soul Stones so Rune Shards stop appearing, then prioritize reroll, duplication, combat, and free-purchase rewards.",
+          "next_target": "Complete the remaining character post-it notes."
+        },
+        {
+          "phase": "14. Full Completion",
+          "requirement": "Finish the required Hard Mode and Greedier marks, unlock every ending and secret, complete all other achievements, and pick up every item at least once.",
+          "unlocks": "All non-Tainted Hard Mode post-it notes unlock Mega Mush. All normal and Tainted post-it notes unlock Death Certificate. Completing the entire collection leads to Dead God.",
+          "priority": "Final",
+          "recommended_actions": "Finish powerful characters first to improve the item pool, then complete difficult characters such as Jacob and Esau, The Lost, and Tainted Lost on a mature save file.",
+          "next_target": "Dead God on the current save file."
         }
       ]
     },
-    "lucidBlocksAchievementTracker": {
-      "title": "Lucid Blocks Achievement Tracker",
-      "displayType": "achievementGrid",
-      "intro": "Lucid Blocks currently has 19 Steam achievements, and they naturally split into exploration, crafting, mobility, combat, and growth progression.",
-      "groups": [
-        {
-          "name": "Exploration",
-          "achievements": [
-            {
-              "title": "Angel α",
-              "description": "Enter a qualia."
-            },
-            {
-              "title": "Angel γ",
-              "description": "Discover a tiamana leyline."
-            },
-            {
-              "title": "Angel δ",
-              "description": "Overcome a tiamana challenge."
-            },
-            {
-              "title": "Angel ε",
-              "description": "Hidden achievement."
-            }
-          ]
-        },
-        {
-          "name": "Crafting and Summoning",
-          "achievements": [
-            {
-              "title": "Apotheosis α",
-              "description": "Fuse an item."
-            },
-            {
-              "title": "Apotheosis β",
-              "description": "Fuse a vermin."
-            },
-            {
-              "title": "Apotheosis γ",
-              "description": "Fuse a divine artifact."
-            },
-            {
-              "title": "Archangel β",
-              "description": "Summon your faith."
-            }
-          ]
-        },
-        {
-          "name": "Mobility and Utility",
-          "achievements": [
-            {
-              "title": "Virtue α",
-              "description": "Fly with the glider glove."
-            },
-            {
-              "title": "Virtue β",
-              "description": "Command a hookshot."
-            },
-            {
-              "title": "Archangel α",
-              "description": "Brandish a projectile wand."
-            },
-            {
-              "title": "Archangel γ",
-              "description": "Brandish an explosive."
-            }
-          ]
-        },
-        {
-          "name": "Combat and Creatures",
-          "achievements": [
-            {
-              "title": "Bubblebear Massacre",
-              "description": "Defeat innocent bubblebears."
-            },
-            {
-              "title": "Archangel δ",
-              "description": "Eliminate a blasphemous creature."
-            },
-            {
-              "title": "Angel β",
-              "description": "Die."
-            },
-            {
-              "title": "Dominion γ",
-              "description": "Rename a cute vermin."
-            }
-          ]
-        },
-        {
-          "name": "Growth and Farming",
-          "achievements": [
-            {
-              "title": "Dominion α",
-              "description": "Fertilize a seed."
-            },
-            {
-              "title": "Dominion β",
-              "description": "Harvest a fully-grown nut."
-            },
-            {
-              "title": "Dominion δ",
-              "description": "Hidden achievement."
-            }
-          ]
-        }
-      ]
-    },
-    "lucidBlocksSingleplayerAndPlatformFAQ": {
-      "title": "Lucid Blocks Singleplayer and Platform FAQ",
+    "isaacBossesAndEndings": {
+      "title": "The Binding of Isaac Repentance Bosses and Endings",
+      "eyebrow": "BOSS ROUTES",
+      "subtitle": "Follow every major route from Mom's Heart to The Beast. Each entry explains access requirements, signature attacks, preparation priorities, and the completion mark or ending earned in The Binding of Isaac: Repentance.",
+      "intro": "Repentance opens its endgame in layers. Early Mom's Heart victories unlock It Lives, Cathedral, Sheol, Blue Womb, and later alternate floors; deeper routes require the Polaroid, the Negative, Key Pieces, Knife Pieces, or the Strange Door. Use the route notes below to plan each run before committing at Mom, It Lives, or the alternate-path doors.",
       "displayType": "accordion",
-      "intro": "These are the core platform and access questions players keep asking before buying Lucid Blocks.",
-      "faqs": [
+      "bosses": [
         {
-          "question": "Is Lucid Blocks singleplayer?",
-          "answer": "Yes. Lucid Blocks is a singleplayer game."
+          "id": "moms-heart-it-lives",
+          "heading": "Mom's Heart and It Lives",
+          "route": "Defeat Mom to open Womb or Utero, then clear the second floor of Chapter IV. Mom's Heart is the final boss until It Lives permanently replaces it after 11 Mom's Heart victories.",
+          "requirements": [
+            "Defeat Mom once to unlock Chapter IV.",
+            "Defeat Mom's Heart 10 times to unlock the Blue Womb route.",
+            "Defeat Mom's Heart 11 times to unlock It Lives, which permanently replaces Mom's Heart."
+          ],
+          "attacks": [
+            "Alternates between hiding in the ceiling and returning to the center while summoning enemies.",
+            "Fires rings, spirals, and aimed spreads of red tears."
+          ],
+          "preparation": [
+            "Enter Chapter IV with enough health for full-heart damage.",
+            "Prioritize sustained damage, movement speed, and a way to clear summoned enemies quickly."
+          ],
+          "result": "Awards the heart completion mark. The early Mom's Heart victories advance Endings 2-11 and unlock major progression features."
         },
         {
-          "question": "Is multiplayer or co-op planned?",
-          "answer": "No. Multiplayer is not planned for release or future updates."
+          "id": "isaac",
+          "heading": "Isaac",
+          "route": "After defeating It Lives, enter the beam of light to reach Cathedral. Defeat Isaac there. After unlocking the Polaroid by defeating Isaac five times, carry it from Mom and enter Isaac's End Chest to continue to the Chest.",
+          "requirements": [
+            "Unlock It Lives by defeating Mom's Heart 11 times.",
+            "Defeat Isaac five times to unlock the Polaroid for future Mom fights."
+          ],
+          "attacks": [
+            "Fires cardinal and diagonal tear spreads while repositioning around the room.",
+            "Later phases add dense holy tear patterns and Crack the Sky-style beams marked by light on the floor."
+          ],
+          "preparation": [
+            "Keep moving between safe lanes instead of circling close to the boss.",
+            "Projectile blocking, orbitals, and high movement speed make the beam phase safer."
+          ],
+          "result": "Awards the cross completion mark and Ending 13. The Polaroid route continues through the Chest to ???."
         },
         {
-          "question": "Where can I play Lucid Blocks?",
-          "answer": "It is currently available on Steam for Windows."
+          "id": "satan",
+          "heading": "Satan",
+          "route": "After defeating It Lives, enter the trapdoor to reach Sheol. The fight begins with The Fallen, continues against Satan's upper body, and ends with a stomping leg phase. After unlocking the Negative by defeating Satan five times, carry it from Mom and enter Satan's End Chest to reach the Dark Room.",
+          "requirements": [
+            "Unlock It Lives by defeating Mom's Heart 11 times.",
+            "Defeat Satan five times to unlock the Negative for future Mom fights."
+          ],
+          "attacks": [
+            "The Fallen opens the fight with charges, split shots, and Brimstone attacks.",
+            "Satan fires aimed tears and horizontal or vertical Brimstone lasers."
+          ],
+          "preparation": [
+            "Save burst damage for The Fallen so the main phases begin cleanly.",
+            "Watch Satan's face and body orientation for laser tells."
+          ],
+          "result": "Awards the inverted-cross completion mark and Ending 12. The Negative route continues through the Dark Room to The Lamb."
         },
         {
-          "question": "How much does Lucid Blocks cost?",
-          "answer": "$9.99 on Steam."
+          "id": "mega-satan",
+          "heading": "Mega Satan",
+          "route": "Complete Chapter VI, then defeat Angels to collect Key Piece 1 and Key Piece 2. Carry both pieces to the Chest or Dark Room and open the large golden door in the starting room.",
+          "requirements": [
+            "Complete Chapter VI by defeating ??? or The Lamb to enable Key Pieces.",
+            "Bomb Angel statues or otherwise fight Angels and collect both Key Pieces.",
+            "Reach the Chest with the Polaroid or the Dark Room with the Negative."
+          ],
+          "attacks": [
+            "Alternates direct hand, laser, projectile, and rock-wave attacks with enemy waves.",
+            "Summons Deadly Sins, Horsemen, Angels, and other bosses during stagger phases."
+          ],
+          "preparation": [
+            "Bring strong room-clear damage for summoned waves and consistent single-target damage for Mega Satan.",
+            "Projectile protection, invulnerability, and high health are especially valuable."
+          ],
+          "result": "Awards the brimstone completion mark and Ending 16. On victory, the run may open a Void gateway; otherwise it ends immediately."
         },
         {
-          "question": "Does Lucid Blocks support controllers?",
-          "answer": "Yes, but controller play is not recommended because the menus are not designed around it."
+          "id": "hush",
+          "heading": "Hush",
+          "route": "After defeating Mom's Heart 10 times, defeat Mom's Heart or It Lives before 30:00. Enter the large Blue Womb door, use the preparation rooms, and fight Hush.",
+          "requirements": [
+            "Defeat Mom's Heart 10 times to unlock Blue Womb.",
+            "Defeat Mom's Heart or It Lives before the 30-minute in-game timer.",
+            "Remain in the boss room before the timed door disappears."
+          ],
+          "attacks": [
+            "Begins with a Blue Baby-like first form before revealing the main body.",
+            "Uses dense rings, continuum tears that wrap across the screen, Hush Flies, burrowing, and sky lasers."
+          ],
+          "preparation": [
+            "Prioritize movement speed, health, sustained damage, and projectile defense.",
+            "Use the Blue Womb's two treasure rooms and shop before entering the fight."
+          ],
+          "result": "Awards the Hush completion mark and Ending 17. Defeating Hush always opens a gateway to the Void and defeating Hush three times unlocks the alternate-floor path."
         },
         {
-          "question": "Does Lucid Blocks work on Steam Deck?",
-          "answer": "Yes. Proton 9.0 or 9.0.4 is the commonly recommended setup for Steam Deck."
+          "id": "delirium",
+          "heading": "Delirium",
+          "route": "Enter a Void gateway after a major boss. Hush always opens one; It Lives, Isaac, Satan, ???, The Lamb, and Mega Satan can also open one after the Void has been unlocked. Explore the Void until the boss room containing Delirium is found.",
+          "requirements": [
+            "Defeat Hush once to unlock the Void.",
+            "Use a Void gateway after an eligible endgame boss."
+          ],
+          "attacks": [
+            "Rapidly transforms into bosses encountered during the run and copies their attacks.",
+            "Teleports frequently and can chain forms with very different movement speeds and hitboxes."
+          ],
+          "preparation": [
+            "Maximize survivability before entering the Void because the correct boss room is not identified in advance.",
+            "High speed, invulnerability effects, projectile blocking, and consistent homing are strong."
+          ],
+          "result": "Awards the torn-paper completion mark and Ending 20."
         },
         {
-          "question": "Does Lucid Blocks work on Linux?",
-          "answer": "Yes. Proton 9.0 is reported to work well for Linux and Steam Deck."
+          "id": "mother",
+          "heading": "Mother",
+          "route": "After defeating Hush three times, enter Downpour or Dross with one key, Mines or Ashpit with two bombs, and Mausoleum or Gehenna by paying two full hearts. Collect Knife Piece 1 in the Downpour II mirror world and Knife Piece 2 in the Mines II abandoned mineshaft. Use the completed knife on the flesh door after the alternate Mom fight, defeat the alternate Mom's Heart, then continue through Corpse I and Corpse II.",
+          "requirements": [
+            "Defeat Hush three times to unlock A Secret Exit and the alternate floors.",
+            "In Downpour or Dross II, touch the white fire, enter the mirror, and take Knife Piece 1 from the mirrored treasure room.",
+            "In Mines or Ashpit II, press all three yellow buttons, enter the abandoned mineshaft, and escape with Knife Piece 2."
+          ],
+          "attacks": [
+            "Phase one uses a thrown knife, a bouncing ball-and-fistula attack, maggots, and layered tear spreads.",
+            "Phase two adds sweeping hand attacks, fast charges, bouncing projectiles, and dense wall-to-wall tear lines."
+          ],
+          "preparation": [
+            "Enter Corpse with strong movement speed, high health, and enough damage for two long phases.",
+            "Save shields, invulnerability, and burst effects for phase two."
+          ],
+          "result": "Awards the knife completion mark and Ending 21. The first Mother victory unlocks the Strange Door route to Home."
         },
         {
-          "question": "Will Mac or Android be supported?",
-          "answer": "They may be supported in the future, but they are not current launch platforms."
+          "id": "dogma",
+          "heading": "Dogma",
+          "route": "After defeating Mother once, bomb the marked skull in Depths II for The Fool. Defeat Mom, take the Polaroid or Negative, teleport out, and use it to open the Strange Door. Reach the special Mausoleum II, take Dad's Note, complete the Ascension to Home, sleep in Mom's bed, and approach the television in the living room.",
+          "requirements": [
+            "Defeat Mother once to unlock the Strange Door.",
+            "Bring the Polaroid or Negative back to the starting room of Depths II.",
+            "Take Dad's Note and finish the reverse-floor Ascension."
+          ],
+          "attacks": [
+            "The television form emits static projectiles and large beam attacks.",
+            "The second form charges, dives, circles the room, and releases rotating feather or halo patterns."
+          ],
+          "preparation": [
+            "Use Home's bed before the fight to restore health.",
+            "Keep open space around Isaac for Dogma's charge and spinning patterns."
+          ],
+          "result": "Dogma is the first stage of the Beast route. Defeating it grants Dogma's defensive effect and advances directly to the final gauntlet."
         },
         {
-          "question": "Does Lucid Blocks have translations?",
-          "answer": "No. There are currently no translations planned."
+          "id": "the-beast",
+          "heading": "The Beast",
+          "route": "After Dogma, defeat Ultra Famine, Ultra Pestilence, Ultra War, and Ultra Death in sequence, then fight The Beast in a horizontal scrolling arena.",
+          "requirements": [
+            "Complete the Strange Door, Dad's Note, Ascension, Home, and Dogma sequence."
+          ],
+          "attacks": [
+            "Each Ultra Horseman has a separate aerial fight with projectile spreads and charge patterns.",
+            "The Beast uses fire rings, lunges, roars, stalactites, and long chase sequences through flames."
+          ],
+          "preparation": [
+            "Build for a long multi-boss sequence rather than one short burst fight.",
+            "Health, damage reduction, orbitals, homing, and sustained damage are stronger than room-clear effects."
+          ],
+          "result": "Awards the note completion mark and Ending 22, the final main-story ending in Repentance."
         },
         {
-          "question": "Will Lucid Blocks keep getting updates?",
-          "answer": "Yes. Some content updates are planned after release, but they are not intended to continue on an indefinite regular schedule."
+          "id": "alternate-floors-endings-completion-marks",
+          "heading": "Alternate Floors, Endings, and Completion Marks",
+          "route": "The main branches are Cathedral to the Chest, Sheol to the Dark Room, Blue Womb to Hush, the Void to Delirium, the Knife Piece route to Corpse and Mother, and the Strange Door route to Home, Dogma, and The Beast.",
+          "requirements": [
+            "Polaroid: defeat Isaac five times; carry it through Cathedral to enter the Chest.",
+            "Negative: defeat Satan five times; carry it through Sheol to enter the Dark Room.",
+            "Key Pieces: defeat Angels after completing Chapter VI; use both to open Mega Satan's door.",
+            "Alternate floors: defeat Hush three times; pay one key, two bombs, and two full hearts at the three route doors."
+          ],
+          "attacks": [
+            "Completion marks track Mom's Heart or It Lives, Isaac, Satan, Boss Rush, ???, The Lamb, Mega Satan, Hush, Delirium, Mother, The Beast, and Greed or Greedier.",
+            "Hard Mode victories add blood to the corresponding marks; Greedier upgrades the Greed mark."
+          ],
+          "preparation": [
+            "Choose the intended branch before Mom so the correct Polaroid, Negative, timed door, or alternate path is available.",
+            "Use Hard Mode when collecting marks to earn the normal and Hard versions together."
+          ],
+          "result": "A completed post-it note records the character's major route victories and unlocks character-specific rewards."
         }
       ]
     },
-    "lucidBlocksSteamDeckAndController": {
-      "title": "Lucid Blocks Steam Deck and Controller",
-      "displayType": "accordion",
-      "intro": "Lucid Blocks can run on Steam Deck, but the default setup may need adjustment. Keyboard and mouse remains the smoother option for menus and general play.",
-      "faqs": [
+    "isaacChallenges": {
+      "title": "The Binding of Isaac Repentance Challenges and Rewards",
+      "eyebrow": "CHALLENGE GUIDE",
+      "subtitle": "Compare every challenge by starting setup, special rules, destination, difficulty, and permanent reward in The Binding of Isaac: Repentance. Reward priority highlights the clears that improve future runs the most.",
+      "intro": "Repentance contains 45 preset challenge runs. Challenge runs block normal achievement progress, but completing the stated destination unlocks a specific rune, card, item, trinket, pickup type, pill effect, or character upgrade. The highest-impact early targets are High Brow for Jera, Solar System for Perthro, Waka Waka for Death's Touch, The Family Man for Epic Fetus, and Isaac's Awakening for Spirit Sword.",
+      "displayType": "challengeTable",
+      "challenges": [
         {
-          "question": "Does Lucid Blocks work on Steam Deck?",
-          "answer": "Yes. Proton 9.0 works well, and Proton 9.0.4 is a commonly shared fix for Steam Deck issues."
+          "number": 1,
+          "challenge": "Pitch Black",
+          "character": "Isaac",
+          "setup": "No starting items.",
+          "rules": "Permanent Curse of Darkness and Curse of the Unknown; shops cannot spawn; treasure rooms remain available.",
+          "destination": "Mom",
+          "difficulty": "Easy",
+          "reward": "Rune of Hagalaz",
+          "strategy": "Treat it like a normal Isaac run and use the visible map layout to compensate for darkness."
         },
         {
-          "question": "What should I do if Steam Deck controls are not working?",
-          "answer": "Force compatibility and switch the game to Proton 9.0.4. The default configuration may not accept controller input correctly."
+          "number": 2,
+          "challenge": "High Brow",
+          "character": "Isaac",
+          "setup": "Number One, E. Coli, Butt Bombs, Flush!, and Petrified Poop.",
+          "rules": "Treasure rooms cannot spawn.",
+          "destination": "Mom",
+          "difficulty": "Easy",
+          "reward": "Rune of Jera",
+          "strategy": "Prioritize range because Number One sharply reduces it."
         },
         {
-          "question": "Does Lucid Blocks support controllers?",
-          "answer": "Yes, but controller play is not recommended because the game's menus are not designed around it."
+          "number": 3,
+          "challenge": "Head Trauma",
+          "character": "Isaac",
+          "setup": "Tiny Planet, Soy Milk, The Small Rock, and Iron Bar.",
+          "rules": "Treasure rooms cannot spawn.",
+          "destination": "Mom",
+          "difficulty": "Medium",
+          "reward": "Rune of Ehwaz",
+          "strategy": "Fight at medium range and let the orbiting tear ring pass through enemies."
         },
         {
-          "question": "Is Linux support possible?",
-          "answer": "Yes. Proton 9.0 is reported to work well for Linux and Steam Deck."
+          "number": 4,
+          "challenge": "Darkness Falls",
+          "character": "Eve",
+          "setup": "Sacrificial Dagger, Dark Matter, Dead Bird, Pentagram, Razor Blade, and Whore of Babylon.",
+          "rules": "Treasure rooms cannot spawn.",
+          "destination": "Satan",
+          "difficulty": "Medium",
+          "reward": "Rune of Dagaz",
+          "strategy": "Use Sacrificial Dagger aggressively on early floors and keep red health low enough to maintain Whore of Babylon."
         },
         {
-          "question": "What is the best input setup?",
-          "answer": "Keyboard and mouse is the smoothest option for menu navigation and general moment-to-moment play."
+          "number": 5,
+          "challenge": "The Tank",
+          "character": "Magdalene",
+          "setup": "Infamy, Thunder Thighs, Bucket of Lard, and Yum Heart.",
+          "rules": "Treasure rooms cannot spawn; starting speed is extremely low.",
+          "destination": "Mom",
+          "difficulty": "Medium",
+          "reward": "Rune of Ansuz",
+          "strategy": "Speed upgrades are the first priority."
+        },
+        {
+          "number": 6,
+          "challenge": "Solar System",
+          "character": "Isaac",
+          "setup": "Distant Admiration, Forever Alone, Halo of Flies, and Transcendence.",
+          "rules": "Blindfolded; Isaac cannot fire tears; treasure rooms cannot spawn.",
+          "destination": "Mom's Heart",
+          "difficulty": "Hard",
+          "reward": "Rune of Perthro",
+          "strategy": "Use flight to hide over gaps and rocks while orbitals deal contact damage."
+        },
+        {
+          "number": 7,
+          "challenge": "Suicide King",
+          "character": "Lazarus",
+          "setup": "Ipecac, Mr. Mega, My Reflection, and one random pill.",
+          "rules": "Treasure rooms cannot spawn; reflected Ipecac shots can easily damage Lazarus.",
+          "destination": "Isaac",
+          "difficulty": "Hard",
+          "reward": "Suicide King card",
+          "strategy": "Fire from open lanes and wait for the returning arc before moving forward."
+        },
+        {
+          "number": 8,
+          "challenge": "Cat Got Your Tongue",
+          "character": "Isaac",
+          "setup": "Extra health, Guppy's Head, Guppy's Hairball, and Guppy's Tail.",
+          "rules": "Blindfolded; treasure rooms cannot spawn; the Hairball and blue flies are the main starting damage.",
+          "destination": "Mom",
+          "difficulty": "Hard",
+          "reward": "Rune of Algiz",
+          "strategy": "Swing the Hairball through enemies, then retreat."
+        },
+        {
+          "number": 9,
+          "challenge": "Demo Man",
+          "character": "Isaac",
+          "setup": "Remote Detonator, Dr. Fetus, and Match Stick.",
+          "rules": "Treasure rooms cannot spawn.",
+          "destination": "Mom's Heart",
+          "difficulty": "Easy",
+          "reward": "Chaos Card",
+          "strategy": "Use Dr. Fetus from long range and place bombs where enemies will remain until detonation."
+        },
+        {
+          "number": 10,
+          "challenge": "Cursed!",
+          "character": "Magdalene",
+          "setup": "Blue Map, Treasure Map, The Compass, Raw Liver, Yum Heart, and Child's Heart.",
+          "rules": "Every normal doorway is lined with damaging spikes; special-room and secret-room entrances are not.",
+          "destination": "Mom",
+          "difficulty": "Medium",
+          "reward": "Credit Card",
+          "strategy": "Plan the shortest route with the mapping items and avoid backtracking."
+        },
+        {
+          "number": 11,
+          "challenge": "Glass Cannon",
+          "character": "Judas",
+          "setup": "Epic Fetus and Loki's Horns.",
+          "rules": "Treasure rooms cannot spawn.",
+          "destination": "Satan",
+          "difficulty": "Medium",
+          "reward": "Rules Card",
+          "strategy": "Focus the intended Epic Fetus crosshair and ignore the extra Loki's Horns targets."
+        },
+        {
+          "number": 12,
+          "challenge": "When Life Gives You Lemons",
+          "character": "Isaac",
+          "setup": "9 Volt, Habit, Lemon Mishap, and one Lemon Party pill.",
+          "rules": "Treasure rooms cannot spawn.",
+          "destination": "Mom",
+          "difficulty": "Easy",
+          "reward": "Card Against Humanity",
+          "strategy": "Place Lemon Mishap where enemies must cross it, especially near doors and in narrow rooms."
+        },
+        {
+          "number": 13,
+          "challenge": "Beans!",
+          "character": "Isaac",
+          "setup": "9 Volt, The Bean, Black Bean, Butt Bombs, and Pyro.",
+          "rules": "Blindfolded; treasure rooms cannot spawn.",
+          "destination": "Mom",
+          "difficulty": "Medium",
+          "reward": "Burnt Penny",
+          "strategy": "Conserve Butt Bombs and use The Bean whenever enemies group near Isaac."
+        },
+        {
+          "number": 14,
+          "challenge": "It's in the Cards",
+          "character": "Isaac",
+          "setup": "9 Volt, The Battery, Deck of Cards, Starter Deck, and two random tarot cards.",
+          "rules": "Treasure rooms cannot spawn.",
+          "destination": "Mom",
+          "difficulty": "Easy",
+          "reward": "SMB Super Fan",
+          "strategy": "Cycle Deck of Cards often and save high-impact cards for bosses or dangerous rooms."
+        },
+        {
+          "number": 15,
+          "challenge": "Slow Roll",
+          "character": "Isaac",
+          "setup": "Polyphemus, Cupid's Arrow, and My Reflection.",
+          "rules": "Treasure rooms cannot spawn; damage is fixed at 100 and fire rate at 0.50.",
+          "destination": "Mom",
+          "difficulty": "Easy",
+          "reward": "Swallowed Penny",
+          "strategy": "Ignore damage and tears upgrades; seek range, homing, multishot, and other tear modifiers."
+        },
+        {
+          "number": 16,
+          "challenge": "Computer Savvy",
+          "character": "Isaac",
+          "setup": "Spoon Bender, Technology, and Technology 2.",
+          "rules": "Treasure rooms cannot spawn.",
+          "destination": "Mom",
+          "difficulty": "Easy",
+          "reward": "Robo-Baby 2.0",
+          "strategy": "The homing lasers are already strong enough to clear quickly."
+        },
+        {
+          "number": 17,
+          "challenge": "Waka Waka",
+          "character": "Isaac",
+          "setup": "Anti-Gravity and Strange Attractor.",
+          "rules": "Treasure rooms cannot spawn.",
+          "destination": "Mom",
+          "difficulty": "Medium",
+          "reward": "Death's Touch",
+          "strategy": "Tap fire to release tears quickly instead of building unstable clusters."
+        },
+        {
+          "number": 18,
+          "challenge": "The Host",
+          "character": "Isaac",
+          "setup": "The Mulligan, Spiderbaby, and Tick.",
+          "rules": "Treasure rooms cannot spawn; Tick cannot normally be dropped.",
+          "destination": "Mom",
+          "difficulty": "Easy",
+          "reward": "Tech.5",
+          "strategy": "Lean on fly generation and seek damage or luck."
+        },
+        {
+          "number": 19,
+          "challenge": "The Family Man",
+          "character": "Isaac",
+          "setup": "BFFS!, Rotten Baby, Brother Bobby, Sister Maggy, and Dad's Key.",
+          "rules": "Blindfolded; treasure rooms cannot spawn.",
+          "destination": "Isaac",
+          "difficulty": "Hard",
+          "reward": "Epic Fetus",
+          "strategy": "Collect familiars, orbitals, Box of Friends, and familiar-scaling effects."
+        },
+        {
+          "number": 20,
+          "challenge": "Purist",
+          "character": "Isaac",
+          "setup": "No starting items.",
+          "rules": "Treasure rooms cannot spawn.",
+          "destination": "Mom's Heart",
+          "difficulty": "Medium",
+          "reward": "Rune of Berkano",
+          "strategy": "Treat shops, libraries, boss items, and Angel or Devil Rooms as the main build sources."
+        },
+        {
+          "number": 21,
+          "challenge": "XXXXXXXXL",
+          "character": "Isaac",
+          "setup": "No starting items.",
+          "rules": "Every floor is much larger than normal.",
+          "destination": "Mom's Heart",
+          "difficulty": "Medium",
+          "reward": "Gold Hearts can appear in future runs",
+          "strategy": "Buy mapping and speed upgrades, then clear only what the build needs."
+        },
+        {
+          "number": 22,
+          "challenge": "SPEED!",
+          "character": "Isaac",
+          "setup": "No starting items.",
+          "rules": "Most gameplay is accelerated; after 16 minutes Isaac takes damage every 10 seconds.",
+          "destination": "Mom's Heart",
+          "difficulty": "Hard",
+          "reward": "Get Out of Jail Free card",
+          "strategy": "Skip low-value rooms, take fast damage upgrades, and avoid lengthy reroll setups."
+        },
+        {
+          "number": 23,
+          "challenge": "Blue Bomber",
+          "character": "???",
+          "setup": "Kamikaze!, Pyromaniac, Mr. Mega, and Brother Bobby.",
+          "rules": "Blindfolded; treasure rooms cannot spawn.",
+          "destination": "Satan",
+          "difficulty": "Medium",
+          "reward": "Gold Bombs can appear in future runs",
+          "strategy": "Kamikaze! heals instead of hurting because of Pyromaniac, giving repeatable damage and recovery."
+        },
+        {
+          "number": 24,
+          "challenge": "PAY TO PLAY",
+          "character": "Isaac",
+          "setup": "Money = Power, Sack of Pennies, and 50 coins.",
+          "rules": "Every normal door costs one coin; Isaac drops coins when hit; treasure rooms cannot spawn.",
+          "destination": "Isaac",
+          "difficulty": "Hard",
+          "reward": "Percs! and Addicted pill effects",
+          "strategy": "Keep a coin reserve for mandatory doors and avoid unnecessary branches."
+        },
+        {
+          "number": 25,
+          "challenge": "Have a Heart",
+          "character": "Isaac",
+          "setup": "Twelve red-heart containers with only one heart filled, plus Charm of the Vampire.",
+          "rules": "Red-heart pickups become coins and many regeneration items do not work.",
+          "destination": "Mom's Heart",
+          "difficulty": "Medium",
+          "reward": "Re-Lax and ??? pill effects",
+          "strategy": "Use Charm of the Vampire, health-restoring cards, beds, and non-pickup healing."
+        },
+        {
+          "number": 26,
+          "challenge": "I RULE!",
+          "character": "Isaac",
+          "setup": "Key Piece 1, Key Piece 2, The Ladder, The Boomerang, Trinity Shield, and Mom's Knife.",
+          "rules": "Treasure rooms cannot spawn.",
+          "destination": "Mega Satan",
+          "difficulty": "Medium",
+          "reward": "Poker Chip",
+          "strategy": "Mom's Knife supplies enough damage for the full route."
+        },
+        {
+          "number": 27,
+          "challenge": "BRAINS!",
+          "character": "???",
+          "setup": "Thunder Thighs and three Bob's Brain familiars.",
+          "rules": "Blindfolded; treasure rooms cannot spawn; Bob's Brain explosions can damage the player.",
+          "destination": "???",
+          "difficulty": "Extreme",
+          "reward": "Stud Finder",
+          "strategy": "Fire only with open space between Isaac and the target."
+        },
+        {
+          "number": 28,
+          "challenge": "PRIDE DAY!",
+          "character": "Isaac",
+          "setup": "Rainbow Worm, Rainbow Baby, and 3 Dollar Bill.",
+          "rules": "Treasure rooms cannot spawn; Rainbow Worm cannot be dropped.",
+          "destination": "Mom's Heart",
+          "difficulty": "Medium",
+          "reward": "D8",
+          "strategy": "Pause before entering dangerous rooms when Rainbow Worm is showing an awkward pattern."
+        },
+        {
+          "number": 29,
+          "challenge": "Onan's Streak",
+          "character": "Judas",
+          "setup": "Book of Belial and Chocolate Milk.",
+          "rules": "Every tear that misses an enemy damages Judas.",
+          "destination": "Isaac",
+          "difficulty": "Hard",
+          "reward": "Kidney Stone",
+          "strategy": "Use fully charged, deliberate shots at large targets."
+        },
+        {
+          "number": 30,
+          "challenge": "The Guardian",
+          "character": "Isaac",
+          "setup": "Holy Grail, Punching Bag, Isaac's Heart, and Spear of Destiny.",
+          "rules": "Isaac's Heart follows Punching Bag and is the vulnerable hitbox; Isaac cannot rely on normal tears.",
+          "destination": "Mom's Heart",
+          "difficulty": "Extreme",
+          "reward": "Blank Rune",
+          "strategy": "Body-block threats with invulnerable Isaac while keeping the wandering heart away from enemies."
+        },
+        {
+          "number": 31,
+          "challenge": "Backasswards",
+          "character": "Isaac",
+          "setup": "Random high health, 10 random items, and both Key Pieces.",
+          "rules": "Starts at Mega Satan and moves backward to Basement I; one base item and one red-heart container are lost on each ascent.",
+          "destination": "Basement I",
+          "difficulty": "Hard",
+          "reward": "Lazarus starts with Anemic",
+          "strategy": "Restart weak item sets before attempting Mega Satan."
+        },
+        {
+          "number": 32,
+          "challenge": "Aprils Fool",
+          "character": "Isaac",
+          "setup": "No starting items.",
+          "rules": "HUD, pickups, item sprites, prices, and map information are misleading; every boss is The Bloat.",
+          "destination": "Mom's Heart",
+          "difficulty": "Hard",
+          "reward": "Magdalene starts with a Full Health pill",
+          "strategy": "Judge pickups by their effect after collection instead of appearance."
+        },
+        {
+          "number": 33,
+          "challenge": "Pokey Mans",
+          "character": "Isaac",
+          "setup": "Friendly Ball and Mom's Eyeshadow.",
+          "rules": "Friendly Ball creates a charmed monster and recharges when that monster dies; treasure rooms cannot spawn.",
+          "destination": "Isaac",
+          "difficulty": "Medium",
+          "reward": "Charged Keys can appear in future runs",
+          "strategy": "Capture durable or high-damage enemies and replace weak allies often."
+        },
+        {
+          "number": 34,
+          "challenge": "Ultra Hard",
+          "character": "Isaac",
+          "setup": "Both Key Pieces.",
+          "rules": "Permanent curses, no heart pickups, mostly champion enemies, and double bosses whenever possible.",
+          "destination": "Mega Satan",
+          "difficulty": "Extreme",
+          "reward": "Samson starts with Child's Heart",
+          "strategy": "Restart until the first two treasure rooms provide major damage or renewable healing."
+        },
+        {
+          "number": 35,
+          "challenge": "Pong",
+          "character": "Isaac",
+          "setup": "Cupid's Arrow and Rubber Cement.",
+          "rules": "Damage is fixed at 100 and fire rate at 0.20.",
+          "destination": "???",
+          "difficulty": "Medium",
+          "reward": "Greed's Gullet",
+          "strategy": "Line up piercing ricochets to hit several enemies with each slow shot."
+        },
+        {
+          "number": 36,
+          "challenge": "Scat Man",
+          "character": "Isaac",
+          "setup": "9 Volt, The Poop, Dirty Mind, three Butt Bombs, Skatole, E. Coli, BFFS!, Thunder Thighs, and Mysterious Candy.",
+          "rules": "Treasure rooms cannot spawn.",
+          "destination": "Mom",
+          "difficulty": "Easy",
+          "reward": "Dirty Mind",
+          "strategy": "Break every poop to create friendly dips and use BFFS! to amplify them."
+        },
+        {
+          "number": 37,
+          "challenge": "Bloody Mary",
+          "character": "Bethany",
+          "setup": "Blood Oath, Blood Bag, Anemic, Book of Belial, and Child's Heart.",
+          "rules": "Treasure rooms cannot spawn; Blood Oath removes red health at the start of each floor for temporary stats.",
+          "destination": "Satan",
+          "difficulty": "Extreme",
+          "reward": "Sigil of Baphomet",
+          "strategy": "Seek renewable healing, Holy Mantle-style protection, and health generation."
+        },
+        {
+          "number": 38,
+          "challenge": "Baptism by Fire",
+          "character": "Bethany",
+          "setup": "Urn of Souls, Schoolbag, Guppy's Paw, and Maggy's Faith.",
+          "rules": "Blindfolded; treasure rooms cannot spawn; Urn of Souls consumes collected souls as fuel.",
+          "destination": "Isaac",
+          "difficulty": "Hard",
+          "reward": "Purgatory",
+          "strategy": "Group enemies before firing the Urn and conserve charges for bosses."
+        },
+        {
+          "number": 39,
+          "challenge": "Isaac's Awakening",
+          "character": "Isaac",
+          "setup": "Spirit Sword, Trinity Shield, and Mom's Bracelet.",
+          "rules": "Treasure rooms cannot spawn; the route ends at Mother.",
+          "destination": "Mother",
+          "difficulty": "Hard",
+          "reward": "Spirit Sword",
+          "strategy": "Use charged sword spins to erase projectiles and Trinity Shield to cover the facing direction."
+        },
+        {
+          "number": 40,
+          "challenge": "Seeing Double",
+          "character": "Jacob and Esau",
+          "setup": "20/20 on both characters; Esau also has X-Ray Vision.",
+          "rules": "Every enemy and boss spawns twice.",
+          "destination": "Mom's Heart",
+          "difficulty": "Extreme",
+          "reward": "Broken Glasses",
+          "strategy": "Keep Jacob and Esau tightly aligned and prioritize room-wide damage, piercing, and defensive items."
+        },
+        {
+          "number": 41,
+          "challenge": "Pica Run",
+          "character": "Isaac",
+          "setup": "Mom's Box, Mom's Purse, and Marbles.",
+          "rules": "All pedestal items become trinkets; Marbles activates on every hit.",
+          "destination": "Isaac",
+          "difficulty": "Hard",
+          "reward": "Ice Cube",
+          "strategy": "Use Mom's Box constantly and swallow the strongest trinkets before replacing them."
+        },
+        {
+          "number": 42,
+          "challenge": "Hot Potato",
+          "character": "Tainted Forgotten",
+          "setup": "No starting items.",
+          "rules": "Blindfolded; treasure rooms cannot spawn; the body automatically explodes every 2.5 seconds and is the main weapon.",
+          "destination": "Satan",
+          "difficulty": "Hard",
+          "reward": "The reversed Chariot card",
+          "strategy": "Throw the body, move the soul to safety, and time explosions before retrieving it."
+        },
+        {
+          "number": 43,
+          "challenge": "Cantripped!",
+          "character": "Tainted Cain",
+          "setup": "Bag of Crafting.",
+          "rules": "Cards and pills become item cards; using one grants a random item effect for the current room; boss rewards expand the hand and provide more item cards.",
+          "destination": "Mom",
+          "difficulty": "Medium",
+          "reward": "The reversed Justice card",
+          "strategy": "Save powerful item cards for bosses and use weaker effects to clear normal rooms."
+        },
+        {
+          "number": 44,
+          "challenge": "Red Redemption",
+          "character": "Tainted Jacob",
+          "setup": "Dad's Key and Red Key.",
+          "rules": "Floors begin isolated; use infinite Red Key charges to reveal rooms. Dark Esau appears after 20 uses, with another added every five additional uses.",
+          "destination": "Mother",
+          "difficulty": "Extreme",
+          "reward": "The reversed Hermit card",
+          "strategy": "Use mapping items to locate likely special-room and boss positions with fewer Red Key openings."
+        },
+        {
+          "number": 45,
+          "challenge": "DELETE THIS",
+          "character": "Isaac",
+          "setup": "TMTRAINER.",
+          "rules": "Glitched items have randomized effects; floor visuals and shop prices are randomized.",
+          "destination": "???",
+          "difficulty": "Hard",
+          "reward": "The reversed Temperance card",
+          "strategy": "Test glitched effects in safe rooms and avoid repeatedly triggering effects that damage, teleport, or soft-lock the run."
         }
       ]
     },
-    "lucidBlocksSettingsAndAccessibility": {
-      "title": "Lucid Blocks Settings and Accessibility",
-      "displayType": "settingCards",
-      "intro": "Lucid Blocks already has a few practical settings and compatibility notes that matter immediately when players first launch the game.",
-      "settings": [
+    "isaacBestMods": {
+      "title": "The Binding of Isaac Repentance Best Mods",
+      "eyebrow": "STEAM WORKSHOP",
+      "subtitle": "Improve item information, navigation, boss readability, music, practice, and endgame variety for The Binding of Isaac: Repentance. Every card includes branch compatibility, dependencies, and the main conflict to avoid.",
+      "intro": "For a stable loadout, begin with one information overlay, one boss-bar system, and a small number of quality-of-life mods. Add music frameworks only when a soundtrack requires them, and test large content expansions on their own before combining them. Repentance+ also includes newer built-in interface improvements, while Workshop tools such as External Item Descriptions remain useful for deeper statistics and modded content.",
+      "displayType": "modCards",
+      "mods": [
         {
-          "name": "Display Settings",
-          "type": "Comfort Option",
-          "description": "Display Settings includes an option that lets players hide the on-screen hands."
+          "id": "external-item-descriptions",
+          "name": "External Item Descriptions",
+          "category": "Interface",
+          "best_for": "Learning items without leaving the game",
+          "description": "Shows detailed descriptions for collectibles, trinkets, cards, runes, pills, horse pills, and selected rooms. It also supports Spindown Dice results, Bag of Crafting information, transformations, and a large number of content mods.",
+          "compatibility": "Afterbirth+, Repentance, Repentance+, and REPENTOGON",
+          "requirements": "No mandatory framework; Mod Config Menu is recommended for in-game settings.",
+          "conflicts": "Avoid displaying it beside another full item-description overlay unless both have been positioned separately."
         },
         {
-          "name": "Graphics Compatibility",
-          "type": "System Requirement",
-          "description": "Vulkan support is required for the graphics to render properly. Systems without Vulkan can run into crashes and severe graphical glitches."
+          "id": "goodtrip-fixed",
+          "name": "GoodTrip [Fixed]",
+          "category": "Quality of Life",
+          "best_for": "Removing cleared-room backtracking",
+          "description": "Lets players teleport between cleared rooms directly from the minimap. Mouse, keyboard, and controller navigation are supported, while combat rooms and uncleared destinations remain blocked.",
+          "compatibility": "Repentance and Repentance+",
+          "requirements": "The fixed edition is standalone; the original GoodTrip mod is not required.",
+          "conflicts": "Use only the fixed edition, and review minimap-control bindings when combining it with other map mods."
         },
         {
-          "name": "Input Preference",
-          "type": "Control Setup",
-          "description": "Controller support exists, but keyboard and mouse gives a smoother experience because menus are not built around controller use."
+          "id": "enhanced-boss-bars",
+          "name": "Enhanced Boss Bars",
+          "category": "Interface and Visuals",
+          "best_for": "Clearer multi-boss health tracking",
+          "description": "Replaces the standard boss display with individual icons, responsive health bars, and more than 45 special boss-bar designs. It is especially useful for segmented bosses and rooms containing several bosses.",
+          "compatibility": "Repentance and Repentance+",
+          "requirements": "Mod Config Menu is optional for visual customization.",
+          "conflicts": "Disable every other mod that changes boss health bars; overlapping boss-bar mods can produce duplicate vanilla and custom bars."
         },
         {
-          "name": "Language Support",
-          "type": "Localization",
-          "description": "The current setup is English-only, and no translations are planned right now."
+          "id": "planetarium-chance",
+          "name": "Planetarium Chance [REP+]",
+          "category": "Interface",
+          "best_for": "Planning treasure-room skips",
+          "description": "Adds the current floor's Planetarium chance to the HUD and accounts for relevant collectibles and modifiers. It makes Planetarium routing readable without manual percentage tracking.",
+          "compatibility": "Repentance+",
+          "requirements": "The Repentance DLC and the current Repentance+ branch.",
+          "conflicts": "Reposition HUD elements when another stat or chance display occupies the same screen area."
+        },
+        {
+          "id": "practice-mode",
+          "name": "Practice Mode",
+          "category": "Practice",
+          "best_for": "Training against superbosses",
+          "description": "Adds a practice challenge for Mega Satan, Hush, Delirium, Mother, and Dogma with the final gauntlet. The mode supplies a realistic minimum build, provides unlimited health, and tracks how many times the player is hit.",
+          "compatibility": "Repentance offline play",
+          "requirements": "Repentance.",
+          "conflicts": "Use a separate practice profile and disable gameplay-altering mods when learning vanilla attack patterns."
+        },
+        {
+          "id": "da-rules",
+          "name": "Da Rules",
+          "category": "Sandbox and Testing",
+          "best_for": "Custom experiments, spawning, and rule-based practice",
+          "description": "Adds a sandbox menu for replacing, resizing, moving, spawning, and modifying enemies, pickups, visuals, and room behavior. It is useful for testing synergies, recreating situations, and building custom practice rules.",
+          "compatibility": "Afterbirth+, Repentance, and Repentance+",
+          "requirements": "Open the full menu from the starting room of a floor; the default configurable menu key is J.",
+          "conflicts": "Complex rule sets can interfere with content mods that rewrite the same entities or room events."
+        },
+        {
+          "id": "antibirth-music-plus-plus-plus",
+          "name": "Antibirth Music+++",
+          "category": "Music",
+          "best_for": "A complete Antibirth-style soundtrack",
+          "description": "Replaces the default soundtrack with an expanded and polished Antibirth music set, including alternate shop and arcade tracks and additional boss music options.",
+          "compatibility": "Repentance+",
+          "requirements": "Music Mod Callback is required for several advanced track behaviors; Mod Config Menu enables its options.",
+          "conflicts": "When used with Soundtrack Menu, enable the mod's Passive Mode. Do not combine multiple mods that replace the same music configuration without a soundtrack manager."
+        },
+        {
+          "id": "soundtrack-menu",
+          "name": "Soundtrack Menu",
+          "category": "Music Utility",
+          "best_for": "Mixing soundtracks floor by floor",
+          "description": "Adds an in-game menu for selecting music packs and assigning tracks. It allows several compatible soundtrack mods to coexist without permanently replacing one another.",
+          "compatibility": "Repentance and Repentance+",
+          "requirements": "Use REPENTOGON or the correct Repentance/Repentance+ Music Mod Callback, but not both at the same time.",
+          "conflicts": "Installing both the Afterbirth+ and Repentance versions of Music Mod Callback can break playback."
+        },
+        {
+          "id": "music-mod-callback",
+          "name": "Music Mod Callback",
+          "category": "Framework",
+          "best_for": "Supporting advanced soundtrack mods",
+          "description": "Provides music callbacks used by soundtrack replacements and music-selection tools. It does nothing by itself and should only be installed when another subscribed mod lists it as a requirement.",
+          "compatibility": "Repentance and Repentance+",
+          "requirements": "Subscribe to the Repentance/Repentance+ edition.",
+          "conflicts": "Disable the separate Afterbirth+ edition and do not run it together with REPENTOGON when the soundtrack tool instructs users to choose only one framework."
+        },
+        {
+          "id": "fiend-folio-reheated",
+          "name": "Fiend Folio: Reheated",
+          "category": "Content Expansion",
+          "best_for": "A large post-completion content overhaul",
+          "description": "Adds more than 500 monsters, 23 bosses, more than 140 items, over 48,000 rooms, two major playable character concepts, and 10 challenges. It significantly changes floor variety and difficulty.",
+          "compatibility": "Repentance offline play",
+          "requirements": "Custom Stage API must be subscribed and enabled.",
+          "conflicts": "Large room, enemy, stage, and content packs can overlap; test this mod with a small loadout before adding more overhauls."
+        },
+        {
+          "id": "installation-and-activation",
+          "name": "Installation and Activation",
+          "category": "Setup",
+          "best_for": "A clean first-time mod setup",
+          "description": "Open a Workshop page, select Subscribe, let Steam finish the download, launch the game, open Mods from the main menu, and enable the mod plus every listed dependency. Restart the game after installing frameworks, large content packs, or music systems.",
+          "compatibility": "Match the Workshop title and description to the active game branch: Repentance or Repentance+.",
+          "requirements": "Steam Workshop access and the DLC listed on the mod page.",
+          "conflicts": "Do not subscribe to obsolete and maintained replacements at the same time."
+        },
+        {
+          "id": "load-order-and-troubleshooting",
+          "name": "Load Order and Troubleshooting",
+          "category": "Setup",
+          "best_for": "Fixing crashes, missing menus, duplicate HUDs, and broken audio",
+          "description": "Isaac does not include a drag-and-drop load-order manager. Keep required frameworks enabled, remove obsolete duplicates, and add mods in small batches. If a problem appears, disable half the loadout, restart, and repeat until the conflict is isolated.",
+          "compatibility": "Keep all enabled mods on the same Repentance or Repentance+ branch and use a mod-free setup for Daily Runs and online matchmaking.",
+          "requirements": "Back up save data before testing large overhauls and check each Workshop page's required-items panel.",
+          "conflicts": "The most common conflicts are duplicate item descriptions, two boss-bar replacements, multiple music systems, old dependency versions, and several stage overhauls editing the same floors."
         }
       ]
     },
-    "lucidBlocksUpdatesAndPatchNotes": {
-      "title": "Lucid Blocks Updates and Patch Notes",
-      "displayType": "timeline",
-      "intro": "Lucid Blocks is already receiving quick post-launch fixes and small usability updates.",
-      "entries": [
-        {
-          "title": "Update 2.8.2",
-          "type": "UI Update",
-          "description": "Renamed \"awaken\" to \"exit\" in the main menu."
-        },
-        {
-          "title": "Small Patch for Start-Up Crashes",
-          "type": "Hotfix",
-          "description": "A dedicated patch was released for players whose game was crashing on launch."
-        },
-        {
-          "title": "Post-Launch Content Support",
-          "type": "Roadmap Note",
-          "description": "Some content updates are planned after release, but they are not intended to continue on an indefinite regular schedule."
-        }
-      ]
-    },
-    "lucidBlocksCrashFixAndTroubleshooting": {
-      "title": "Lucid Blocks Crash Fix and Troubleshooting",
-      "displayType": "steps",
-      "intro": "Most immediate launch and crash issues should be checked in a simple order: patch level, graphics support, platform compatibility, and logs.",
+    "isaacOnlineCoop": {
+      "title": "The Binding of Isaac Repentance Plus Online Co-op",
+      "eyebrow": "ONLINE MULTIPLAYER",
+      "subtitle": "Set up a two-to-four-player Steam run, choose the right matchmaking option, and understand how characters, resources, unlocks, communication, and official updates work online in Repentance+.",
+      "intro": "Repentance+ is the free Steam DLC that adds integrated online co-op to Repentance. Up to four full characters can enter the same run through Friend Match, Public Match, or Quick Match, with challenges, Greed Mode, Daily Runs, achievements, completion marks, chat, emotes, and multiplayer-focused balance changes included.",
+      "displayType": "coopSteps",
       "steps": [
         {
-          "title": "Install the Latest Crash Hotfix",
-          "description": "If the game is crashing on start, update first and test again with the latest start-up crash patch."
+          "step": 1,
+          "heading": "Install the Required Steam Content",
+          "details": [
+            "Every player needs Rebirth, Afterbirth, Afterbirth+, Repentance, and the free Repentance+ DLC on Steam.",
+            "Use the same current Repentance+ version and restart after updates."
+          ]
         },
         {
-          "title": "Check Vulkan Support",
-          "description": "Lucid Blocks requires Vulkan support. Systems without Vulkan can suffer from crashes or major rendering problems."
+          "step": 2,
+          "heading": "Choose Matchmaking",
+          "options": [
+            {
+              "mode": "Friend Match",
+              "use": "Create a lobby for up to four players from the host's Steam friends list."
+            },
+            {
+              "mode": "Public Match",
+              "use": "Host or join a visible lobby with other online players."
+            },
+            {
+              "mode": "Quick Match",
+              "use": "Join an available group automatically."
+            }
+          ]
         },
         {
-          "title": "Use Proton 9.0.4 on Steam Deck",
-          "description": "If Steam Deck input or launch behavior is broken, force compatibility and switch to Proton 9.0.4."
+          "step": 3,
+          "heading": "Select Characters",
+          "details": [
+            "Each player selects a full character available on that player's Repentance+ save.",
+            "Health, passive and active items, cards, pills, and trinkets are individual; coins, bombs, and keys are shared.",
+            "Combine durable, damage, and utility characters so the group does not compete for every upgrade."
+          ]
         },
         {
-          "title": "Collect Crash Logs",
-          "description": "Open Windows Run, paste %APPDATA%, go to lucid blocks/logs, and gather the .txt files for troubleshooting."
+          "step": 4,
+          "heading": "Choose a Supported Mode",
+          "details": [
+            "Online play supports Normal, Hard, Greed, Greedier, Challenges, and Daily Runs.",
+            "Choose Hard or Greedier when the intended completion mark requires the harder setting."
+          ]
         },
         {
-          "title": "Report the Issue Properly",
-          "description": "Share the logs and device details through the official Discord bug-reports forum or on the Steam community page."
+          "step": 5,
+          "heading": "Share Items Fairly",
+          "details": [
+            "Many pedestals still go to one player, so assign build-defining items by synergy and rotate general upgrades.",
+            "Use the emote wheel's dice roll when several players want the same item.",
+            "Spend shared coins, bombs, and keys only after the group agrees."
+          ]
+        },
+        {
+          "step": 6,
+          "heading": "Earn Progress Together",
+          "details": [
+            "Eligible players can earn achievements, unlocks, and character completion marks in online runs.",
+            "Normal route, difficulty, challenge, and prerequisite requirements still apply to each player's save.",
+            "Plan one destination that clears missing marks for several selected characters."
+          ]
+        },
+        {
+          "step": 7,
+          "heading": "Communicate and Moderate",
+          "details": [
+            "Use the emote wheel to mark routes, tinted rocks, secret rooms, pickups, and item choices.",
+            "Use group text chat for route and resource decisions.",
+            "Use vote kick when a public player repeatedly disrupts the match."
+          ]
+        },
+        {
+          "step": 8,
+          "heading": "Fix Connection or Compatibility Problems",
+          "details": [
+            "Check DLC ownership and version matching first.",
+            "Disable Workshop mods, restart the game, and verify files through Steam.",
+            "Recreate the lobby with another host when joining or synchronization still fails."
+          ]
+        },
+        {
+          "step": 9,
+          "heading": "Follow Official Patch Notes",
+          "updates": [
+            {
+              "version": "1.9.7.6",
+              "focus": "Early online fixes and system adjustments"
+            },
+            {
+              "version": "1.9.7.8",
+              "focus": "More online bug fixes and improvements"
+            },
+            {
+              "version": "1.9.7.11",
+              "focus": "Gameplay fixes, online improvements, and compatibility work"
+            },
+            {
+              "version": "1.9.7.13",
+              "focus": "New features, balance changes, fixes, and built-in item descriptions"
+            }
+          ]
         }
       ]
     }
@@ -749,31 +2207,39 @@
   "faq": {
     "title": "Frequently Asked",
     "titleHighlight": "Questions",
-    "subtitle": "Everything you need to know about Lucid Blocks",
+    "subtitle": "Everything you need to know about The Binding of Isaac: Repentance",
     "questions": [
       {
-        "question": "Is Lucid Blocks a singleplayer game?",
-        "answer": "Yes. Lucid Blocks is a singleplayer-only game with no multiplayer or co-op planned."
+        "question": "What is The Binding of Isaac: Repentance?",
+        "answer": "The Binding of Isaac: Repentance is the final major DLC for the roguelike dungeon shooter The Binding of Isaac. It adds hundreds of items, 17 Tainted characters, alternate floors, new superbosses including Mother, Dogma, and The Beast, and the Repentance+ online co-op mode."
       },
       {
-        "question": "What is the Apotheosis system in Lucid Blocks?",
-        "answer": "Apotheosis is Lucid Blocks' freeform fusion crafting system. Instead of following fixed recipes, you combine materials and discover your own crafting paths."
+        "question": "How many items are in The Binding of Isaac: Repentance?",
+        "answer": "The Binding of Isaac: Repentance contains over 700 collectible items plus trinkets, cards, runes, and pills. Many unlock through character completion marks, challenges, and donation milestones, so a strong progression route improves the item pool over time."
       },
       {
-        "question": "Where can I play Lucid Blocks?",
-        "answer": "Lucid Blocks is currently available on Steam for Windows. Linux and Steam Deck support is available through Proton 9.0."
+        "question": "Do I need Repentance+ for online co-op in The Binding of Isaac?",
+        "answer": "Yes. Repentance+ is the free Steam DLC that adds integrated online co-op to The Binding of Isaac: Repentance. Every player needs the full DLC set and the same current Repentance+ version to join Friend Match, Public Match, or Quick Match."
       },
       {
-        "question": "How much does Lucid Blocks cost?",
-        "answer": "Lucid Blocks costs $9.99 on Steam."
+        "question": "What are Tainted characters in The Binding of Isaac: Repentance?",
+        "answer": "Tainted characters are alternate, harder-to-play versions of each normal character in The Binding of Isaac: Repentance. Each is unlocked from the hidden closet in Home using Red Key or Cracked Key after reaching the Strange Door route through Mother and The Beast."
       },
       {
-        "question": "Does Lucid Blocks support controllers?",
-        "answer": "Yes, but controller play is not recommended because the menus are not designed around it. Keyboard and mouse is the smoother option."
+        "question": "How do I unlock the alternate floors in The Binding of Isaac: Repentance?",
+        "answer": "In The Binding of Isaac: Repentance, defeat Hush three times to unlock A Secret Exit, then pay one key, two bombs, and two full hearts at the three route doors. This opens Downpour or Dross, Mines or Ashpit, and Mausoleum or Gehenna, leading to Corpse and the Mother boss fight."
       },
       {
-        "question": "Will Lucid Blocks receive updates?",
-        "answer": "Yes. Some content updates are planned after release, but they are not intended to continue on an indefinite regular schedule."
+        "question": "Where can I play The Binding of Isaac: Repentance?",
+        "answer": "The Binding of Isaac: Repentance is available on Steam for Windows, with Linux and Steam Deck support through Proton. Console versions exist on Nintendo Switch, PlayStation, and Xbox, though online co-op and mod support are PC-focused."
+      },
+      {
+        "question": "Does The Binding of Isaac: Repentance support mods?",
+        "answer": "Yes. The Binding of Isaac: Repentance supports Steam Workshop mods for interface overlays, boss bars, practice tools, music packs, and large content expansions. Repentance+ also adds newer built-in interface improvements."
+      },
+      {
+        "question": "What is Dead God completion in The Binding of Isaac: Repentance?",
+        "answer": "Dead God is the final completion milestone in The Binding of Isaac: Repentance. It is reached by finishing every Hard Mode and Greedier completion mark, unlocking every ending and secret, completing all achievements, and picking up every item at least once."
       }
     ]
   },
@@ -801,125 +2267,165 @@
     "disclaimer": "Unofficial fan-made resource website."
   },
   "pages": {
-    "guides": {
-      "title": "Lucid Blocks Guides",
-      "description": "Complete gameplay guides from beginner basics to advanced Apotheosis strategies. Master survival and crafting.",
-      "metaTitle": "Lucid Blocks Guides - Beginner to Advanced Strategies",
-      "metaDescription": "Complete Lucid Blocks guides covering beginner tips, Apotheosis system, survival strategies, and expert tactics for mastering the surreal sandbox.",
-      "categoryLabel": "GAME GUIDES",
-      "whatIs": "What are Guides?",
-      "whatIsDescription": "Comprehensive guides covering gameplay mechanics, survival strategies, and the Apotheosis crafting system. Learn everything from first steps to advanced techniques.",
-      "why": "Why read guides?",
-      "whySteps": {
-        "step1Title": "Learn Core Mechanics",
-        "step1Description": "Understand the Apotheosis system and avoid common beginner mistakes",
-        "step2Title": "Fast Progression",
-        "step2Description": "Follow proven paths to survive and thrive in the surreal world",
-        "step3Title": "Master Strategies",
-        "step3Description": "Develop advanced tactics for exploration and crafting"
-      },
-      "featured": "Featured & Essential",
-      "all": "All Guides"
-    },
-    "crafting": {
-      "title": "Lucid Blocks Crafting",
-      "description": "Master the Apotheosis fusion system with essence mechanics, recipes, and crafting strategies for powerful items.",
-      "metaTitle": "Lucid Blocks Crafting - Apotheosis System & Recipes",
-      "metaDescription": "Master Lucid Blocks Apotheosis crafting system. Learn essence mechanics, fusion recipes, and strategies for creating powerful tools and weapons.",
-      "categoryLabel": "CRAFTING SYSTEM",
-      "whatIs": "What is Crafting?",
-      "whatIsDescription": "The Apotheosis system is a unique essence-driven fusion mechanic where you combine up to six items to discover new recipes. No fixed crafting menus—experimentation is key.",
-      "why": "Why master crafting?",
-      "whySteps": {
-        "step1Title": "Unlock Powerful Items",
-        "step1Description": "Discover essential tools, weapons, and mobility gear through fusion",
-        "step2Title": "Understand Essences",
-        "step2Description": "Learn how item essences combine to create predictable results",
-        "step3Title": "Optimize Resources",
-        "step3Description": "Use dilution mechanics to maximize output from cheap materials"
-      },
-      "featured": "Featured & Essential",
-      "all": "All Crafting Guides"
-    },
     "items": {
-      "title": "Lucid Blocks Items",
-      "description": "Detailed item guides covering tools, weapons, mobility gear, and storage solutions with crafting recipes and usage tips.",
-      "metaTitle": "Lucid Blocks Items - Tools, Weapons & Gear Guide",
-      "metaDescription": "Complete item database for Lucid Blocks including tools, weapons, mobility gear, and storage. Learn how to craft and use every item effectively.",
-      "categoryLabel": "ITEMS & EQUIPMENT",
+      "title": "The Binding of Isaac Repentance Items",
+      "description": "Detailed item guides covering passives, active items, familiars, trinkets, cards, runes, and synergies for The Binding of Isaac: Repentance.",
+      "metaTitle": "The Binding of Isaac Repentance Items - Best Items, Trinkets & Synergies",
+      "metaDescription": "Complete item database for The Binding of Isaac: Repentance including passives, active items, familiars, trinkets, cards, runes, and the strongest synergies.",
+      "categoryLabel": "ITEMS & SYNERGIES",
       "whatIs": "What are Items?",
-      "whatIsDescription": "Comprehensive guides for tools, weapons, mobility gear, and functional items. Learn crafting recipes, usage strategies, and optimal combinations.",
+      "whatIsDescription": "Comprehensive guides for every collectible in The Binding of Isaac: Repentance. Learn item effects, item pools, unlock requirements, best uses, and synergy value.",
       "why": "Why check item guides?",
       "whySteps": {
-        "step1Title": "Learn Crafting Recipes",
-        "step1Description": "Discover how to craft essential tools and weapons using Apotheosis",
-        "step2Title": "Optimize Equipment",
-        "step2Description": "Choose the best items for your playstyle and progression stage",
-        "step3Title": "Improve Survival",
-        "step3Description": "Equip mobility gear and weapons to navigate the dangerous world"
+        "step1Title": "Build Smarter",
+        "step1Description": "Recognize run-defining items and avoid anti-synergies",
+        "step2Title": "Reroll and Duplicate",
+        "step2Description": "Use dice, runes, and duplication tools to upgrade weak pedestals",
+        "step3Title": "Unlock the Pool",
+        "step3Description": "Complete challenges and marks to remove Rune Shards and add premium items"
       },
       "featured": "Featured & Essential",
       "all": "All Items"
     },
-    "biomes": {
-      "title": "Lucid Blocks Biomes",
-      "description": "Explore world regions, environmental features, resource locations, and survival tips for each biome.",
-      "metaTitle": "Lucid Blocks Biomes - World Regions & Exploration",
-      "metaDescription": "Explore Lucid Blocks biomes including Tiamana Leylines, Fog Meadow, and surreal regions. Find resources, avoid dangers, and navigate the infinite world.",
-      "categoryLabel": "WORLD REGIONS",
-      "whatIs": "What are Biomes?",
-      "whatIsDescription": "Guides to different world regions, environmental features, resource distribution, and danger zones. Learn what to expect and how to prepare for each area.",
-      "why": "Why explore biomes?",
+    "characters": {
+      "title": "The Binding of Isaac Repentance Characters",
+      "description": "Every normal and Tainted character ranked by unlock, starting tools, core mechanic, strengths, weaknesses, and difficulty.",
+      "metaTitle": "The Binding of Isaac Repentance Characters - Normal & Tainted Ranked",
+      "metaDescription": "Compare all 17 normal characters and 17 Tainted characters in The Binding of Isaac: Repentance by unlock method, starting items, mechanics, and difficulty.",
+      "categoryLabel": "CHARACTERS",
+      "whatIs": "What are Characters?",
+      "whatIsDescription": "Guides to every playable character in The Binding of Isaac: Repentance, including Tainted variants unlocked through the Home closet and the Strange Door route.",
+      "why": "Why compare characters?",
       "whySteps": {
-        "step1Title": "Find Resources",
-        "step1Description": "Locate rare materials and essences specific to each region",
-        "step2Title": "Avoid Dangers",
-        "step2Description": "Understand environmental hazards and hostile creatures",
-        "step3Title": "Plan Exploration",
-        "step3Description": "Prepare the right tools and gear for each biome type"
+        "step1Title": "Find Your Style",
+        "step1Description": "Pick beginner-friendly characters or specialist picks that match your skill",
+        "step2Title": "Plan Unlocks",
+        "step2Description": "Target the character marks that reward high-impact items",
+        "step3Title": "Master Mechanics",
+        "step3Description": "Learn health, reroll, and dual-control systems for harder characters"
       },
       "featured": "Featured & Essential",
-      "all": "All Biomes"
+      "all": "All Characters"
     },
-    "building": {
-      "title": "Lucid Blocks Building",
-      "description": "Master Qualia personal dimensions, base building, storage management, and creative construction techniques.",
-      "metaTitle": "Lucid Blocks Building - Qualia & Base Construction",
-      "metaDescription": "Master Lucid Blocks building with Qualia personal dimensions, base construction, storage solutions, and creative building techniques.",
-      "categoryLabel": "BUILDING & BASES",
-      "whatIs": "What is Building?",
-      "whatIsDescription": "Guides to the Qualia personal dimension system, base construction, storage management, and creative building. Learn to create your safe haven in the surreal world.",
-      "why": "Why build bases?",
+    "unlocks": {
+      "title": "The Binding of Isaac Repentance Unlocks",
+      "description": "A progression roadmap from Mom to Dead God covering floors, endings, completion marks, items, and challenges.",
+      "metaTitle": "The Binding of Isaac Repentance Unlock Guide - Mom to Dead God",
+      "metaDescription": "Follow a full progression roadmap for The Binding of Isaac: Repentance unlocking endings, characters, items, alternate floors, and final completion marks.",
+      "categoryLabel": "UNLOCK ROADMAP",
+      "whatIs": "What are Unlocks?",
+      "whatIsDescription": "A prioritized unlock order for The Binding of Isaac: Repentance that opens the strongest items, characters, and alternate paths before low-impact goals.",
+      "why": "Why follow an unlock order?",
       "whySteps": {
-        "step1Title": "Create Safe Spaces",
-        "step1Description": "Establish secure bases for storage and crafting operations",
-        "step2Title": "Manage Resources",
-        "step2Description": "Organize materials efficiently with storage solutions",
-        "step3Title": "Unlock Qualia",
-        "step3Description": "Access personal pocket dimensions for ultimate convenience"
+        "step1Title": "Improve the Pool",
+        "step1Description": "Unlock high-impact items early so future runs get stronger",
+        "step2Title": "Open Routes",
+        "step2Description": "Reach alternate floors, Mother, and The Beast through key milestones",
+        "step3Title": "Reach Dead God",
+        "step3Description": "Collect every Hard Mode, Greedier, and Tainted completion mark"
       },
       "featured": "Featured & Essential",
-      "all": "All Building Guides"
+      "all": "All Unlocks"
     },
-    "support": {
-      "title": "Lucid Blocks Support",
-      "description": "Technical support, platform compatibility, performance optimization, and troubleshooting for common issues.",
-      "metaTitle": "Lucid Blocks Support - Technical Help & Fixes",
-      "metaDescription": "Get technical support for Lucid Blocks including Steam Deck setup, crash fixes, performance optimization, and platform compatibility guides.",
-      "categoryLabel": "TECHNICAL SUPPORT",
-      "whatIs": "What is Support?",
-      "whatIsDescription": "Technical guides covering platform compatibility, performance optimization, crash fixes, and common issues. Get help with Steam Deck, multiplayer questions, and settings.",
-      "why": "Why check support?",
+    "routes": {
+      "title": "The Binding of Isaac Repentance Routes",
+      "description": "Boss routes, alternate floors, Knife Pieces, Key Pieces, and the Strange Door path to Home and The Beast.",
+      "metaTitle": "The Binding of Isaac Repentance Routes - Boss Paths & Endings",
+      "metaDescription": "Master every route in The Binding of Isaac: Repentance from Mom's Heart to The Beast, including Cathedral, Sheol, Blue Womb, the Void, and alternate floors.",
+      "categoryLabel": "RUN ROUTES",
+      "whatIs": "What are Routes?",
+      "whatIsDescription": "Guides to every major branch in The Binding of Isaac: Repentance, including the Polaroid, Negative, Key Pieces, Knife Pieces, and the Strange Door.",
+      "why": "Why plan routes?",
       "whySteps": {
-        "step1Title": "Fix Technical Issues",
-        "step1Description": "Resolve crashes, performance problems, and compatibility issues",
-        "step2Title": "Optimize Performance",
-        "step2Description": "Configure settings for best experience on your platform",
-        "step3Title": "Platform Compatibility",
-        "step3Description": "Learn about Steam Deck, controller support, and system requirements"
+        "step1Title": "Choose a Branch",
+        "step1Description": "Pick Cathedral, Sheol, Blue Womb, Void, or the alternate path before Mom",
+        "step2Title": "Collect Key Items",
+        "step2Description": "Gather Polaroid, Negative, Key Pieces, and Knife Pieces for deeper routes",
+        "step3Title": "Earn Endings",
+        "step3Description": "Clear superbosses for completion marks and character rewards"
       },
       "featured": "Featured & Essential",
-      "all": "All Support Articles"
+      "all": "All Routes"
+    },
+    "bosses": {
+      "title": "The Binding of Isaac Repentance Bosses",
+      "description": "Boss attack patterns, preparation, and routes to Mom's Heart, Isaac, Satan, Mega Satan, Hush, Delirium, Mother, Dogma, and The Beast.",
+      "metaTitle": "The Binding of Isaac Repentance Bosses - Attack Patterns & Routes",
+      "metaDescription": "Defeat every major boss in The Binding of Isaac: Repentance with attack patterns, preparation tips, and the routes and requirements to reach each superboss.",
+      "categoryLabel": "BOSSES & ENDINGS",
+      "whatIs": "What are Bosses?",
+      "whatIsDescription": "Guides to every major boss and superboss in The Binding of Isaac: Repentance, including access requirements, signature attacks, and the endings they award.",
+      "why": "Why study bosses?",
+      "whySteps": {
+        "step1Title": "Read Patterns",
+        "step1Description": "Recognize attack tells and safe lanes for each superboss",
+        "step2Title": "Prepare Builds",
+        "step2Description": "Bring the right damage, defense, and movement for long fights",
+        "step3Title": "Unlock Endings",
+        "step3Description": "Earn completion marks and route access from each victory"
+      },
+      "featured": "Featured & Essential",
+      "all": "All Bosses"
+    },
+    "challenges": {
+      "title": "The Binding of Isaac Repentance Challenges",
+      "description": "All 45 challenges with starting setups, restrictions, destinations, difficulty, and unlock rewards.",
+      "metaTitle": "The Binding of Isaac Repentance Challenges - All 45 Runs & Rewards",
+      "metaDescription": "Complete guide to all 45 challenges in The Binding of Isaac: Repentance with starting items, restrictions, destinations, difficulty, and unlock rewards.",
+      "categoryLabel": "CHALLENGES",
+      "whatIs": "What are Challenges?",
+      "whatIsDescription": "Preset runs in The Binding of Isaac: Repentance with special starting items and rules. Completing each destination unlocks a rune, card, item, trinket, or character upgrade.",
+      "why": "Why complete challenges?",
+      "whySteps": {
+        "step1Title": "Unlock Rewards",
+        "step1Description": "Earn runes, cards, and items that improve normal runs",
+        "step2Title": "Learn Mechanics",
+        "step2Description": "Practice unusual item combinations and blindfolded strategies",
+        "step3Title": "Prioritize Value",
+        "step3Description": "Clear high-impact challenges like High Brow and Solar System first"
+      },
+      "featured": "Featured & Essential",
+      "all": "All Challenges"
+    },
+    "mods": {
+      "title": "The Binding of Isaac Repentance Mods",
+      "description": "The best Steam Workshop mods for interface, quality of life, practice, music, and content in The Binding of Isaac: Repentance.",
+      "metaTitle": "The Binding of Isaac Repentance Best Mods - Steam Workshop Guide",
+      "metaDescription": "Discover the best mods for The Binding of Isaac: Repentance including item descriptions, boss bars, practice tools, music packs, and content expansions.",
+      "categoryLabel": "BEST MODS",
+      "whatIs": "What are Mods?",
+      "whatIsDescription": "Steam Workshop modifications for The Binding of Isaac: Repentance that improve item information, navigation, boss readability, music, practice, and endgame variety.",
+      "why": "Why use mods?",
+      "whySteps": {
+        "step1Title": "Improve Readability",
+        "step1Description": "Add item descriptions, boss bars, and Planetarium chance displays",
+        "step2Title": "Practice Runs",
+        "step2Description": "Train against superbosses with a realistic minimum build",
+        "step3Title": "Expand Content",
+        "step3Description": "Add new enemies, items, rooms, and soundtracks"
+      },
+      "featured": "Featured & Essential",
+      "all": "All Mods"
+    },
+    "seeds": {
+      "title": "The Binding of Isaac Repentance Seeds",
+      "description": "Seed mechanics, special seeds, daily runs, and how to share or reproduce runs in The Binding of Isaac: Repentance.",
+      "metaTitle": "The Binding of Isaac Repentance Seeds - Daily Runs & Special Seeds",
+      "metaDescription": "Understand seeds and daily runs in The Binding of Isaac: Repentance, including how layouts are generated, shared, and reproduced for practice and competition.",
+      "categoryLabel": "SEEDS & DAILIES",
+      "whatIs": "What are Seeds?",
+      "whatIsDescription": "Seeds determine the floor layouts, item placements, and room generation in The Binding of Isaac: Repentance. Daily Runs use a shared seed so every player faces the same run.",
+      "why": "Why use seeds?",
+      "whySteps": {
+        "step1Title": "Reproduce Runs",
+        "step1Description": "Share or replay specific layouts and item placements",
+        "step2Title": "Compete Daily",
+        "step2Description": "Race the same Daily Run seed against other players",
+        "step3Title": "Practice Patterns",
+        "step3Description": "Revisit difficult floors and bosses to refine strategy"
+      },
+      "featured": "Featured & Essential",
+      "all": "All Seeds"
     }
   }
 }
