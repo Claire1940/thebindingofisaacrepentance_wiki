@@ -1,13 +1,13 @@
 {
   "seo": {
     "home": {
-      "title": "Lucid Blocks Wiki - Crafting, Biomes & Achievements",
-      "description": "Lucid Blocks Wiki covers crafting, biomes, creatures, items, achievements, endings, and survival tips for the surreal voxel sandbox adventure on Steam.",
-      "keywords": "Lucid Blocks, Lucid Blocks wiki, crafting, biomes, achievements, survival, Steam",
-      "ogTitle": "Lucid Blocks Wiki - Crafting, Biomes & Achievements",
-      "ogDescription": "Lucid Blocks Wiki covers crafting, biomes, creatures, items, achievements, endings, and survival tips for the surreal voxel sandbox adventure on Steam.",
-      "twitterTitle": "Lucid Blocks Wiki - Crafting, Biomes & Achievements",
-      "twitterDescription": "Lucid Blocks Wiki covers crafting, biomes, creatures, items, achievements, and survival tips for the surreal voxel sandbox on Steam."
+      "title": "The Binding of Isaac: Repentance Wiki - Items & Unlocks",
+      "description": "Explore The Binding of Isaac: Repentance items, characters, unlocks, bosses, challenges, seeds, synergies, and mods with clear guides for every run.",
+      "keywords": "The Binding of Isaac Repentance, items, characters, unlocks, bosses, challenges, seeds, mods",
+      "ogTitle": "The Binding of Isaac: Repentance Wiki - Items & Unlocks",
+      "ogDescription": "Explore The Binding of Isaac: Repentance items, characters, unlocks, bosses, challenges, seeds, synergies, and mods with clear guides for every run.",
+      "twitterTitle": "The Binding of Isaac: Repentance Wiki - Items & Unlocks",
+      "twitterDescription": "Explore The Binding of Isaac: Repentance items, characters, unlocks, bosses, challenges, seeds, and mods with clear guides for every run."
     }
   },
   "nav": {
@@ -34,27 +34,27 @@
     "articlesComingSoon": "Articles coming soon"
   },
   "hero": {
-    "badge": "Surreal Voxel Survival Sandbox",
-    "title": "Lucid Blocks Wiki",
-    "description": "Explore dreamlike biomes, fuse items with Apotheosis, build freely, and survive strange creatures in this surreal open-world sandbox on Steam.",
-    "getFreeCodesCTA": "Explore Crafting Guide",
+    "badge": "Dark Roguelike Dungeon Shooter",
+    "title": "The Binding of Isaac: Repentance Wiki",
+    "description": "Descend through randomized dungeons, combine hundreds of items, unlock normal and Tainted characters, defeat branching bosses, and master challenges, secrets, routes, and four-player co-op.",
+    "getFreeCodesCTA": "Explore Items",
     "playOnSteamCTA": "Play on Steam",
     "stats": {
       "stat1": {
-        "value": "1,325",
-        "label": "Players Online"
+        "value": "700+",
+        "label": "Total Items"
       },
       "stat2": {
-        "value": "1,986",
-        "label": "Peak CCU"
+        "value": "25+",
+        "label": "New Bosses"
       },
       "stat3": {
-        "value": "97%",
-        "label": "Positive Reviews"
+        "value": "4",
+        "label": "Co-op Players"
       },
       "stat4": {
-        "value": "Mar 12, 2026",
-        "label": "Release Date"
+        "value": "13.5K+",
+        "label": "Steam Reviews"
       }
     }
   },
@@ -785,26 +785,26 @@
     ]
   },
   "cta": {
-    "title": "Ready to Explore Lucid Blocks?",
-    "description": "Join the Lucid Blocks community on Discord for guides, updates, and discussions!",
+    "title": "Ready to Explore The Binding of Isaac: Repentance?",
+    "description": "Join the Isaac community on Discord for item guides, unlock routes, boss strategies, and mod discussions!",
     "joinCommunity": "Join Discord",
     "joinGame": "Play on Steam"
   },
   "footer": {
-    "title": "Lucid Blocks Wiki",
-    "description": "Your complete resource hub for Lucid Blocks crafting, biomes, creatures, achievements, and survival guides.",
+    "title": "The Binding of Isaac: Repentance Wiki",
+    "description": "Your complete resource hub for The Binding of Isaac: Repentance items, characters, unlocks, bosses, challenges, routes, and mods.",
     "resources": "Resources",
     "community": "Community",
     "legal": "Legal",
     "discord": "Discord",
-    "twitter": "X / Twitter",
+    "reddit": "Reddit",
     "steamCommunity": "Steam Community",
     "steamStore": "Steam Store",
     "about": "About",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "copyrightNotice": "Copyright",
-    "copyright": "© 2026 Lucid Blocks Wiki. Not affiliated with the developers of Lucid Blocks.",
+    "copyright": "© 2026 The Binding of Isaac: Repentance Wiki. Not affiliated with the developers of The Binding of Isaac.",
     "disclaimer": "Unofficial fan-made resource website."
   },
   "pages": {
