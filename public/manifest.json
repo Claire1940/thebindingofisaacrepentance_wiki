@@ -1,12 +1,12 @@
 {
-  "name": "Lucid Blocks Wiki - Crafting, Biomes & Achievements",
-  "short_name": "Lucid Blocks",
-  "description": "Lucid Blocks Wiki covers crafting, biomes, creatures, items, achievements, endings, and survival tips for the surreal voxel sandbox adventure on Steam.",
+  "name": "The Binding of Isaac: Repentance Wiki - Items, Characters & Unlocks",
+  "short_name": "Isaac Wiki",
+  "description": "The Binding of Isaac: Repentance Wiki covers items, characters, unlocks, bosses, routes, challenges, seeds, synergies, and mods for the dark roguelike dungeon shooter.",
   "start_url": "/",
   "display": "standalone",
   "orientation": "any",
-  "theme_color": "#1a7a7a",
-  "background_color": "#0a0a0a",
+  "theme_color": "#B92B1E",
+  "background_color": "#120B0D",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
