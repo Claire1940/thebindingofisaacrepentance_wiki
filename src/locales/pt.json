@@ -1,6 +1,17 @@
 {
+  "seo": {
+    "home": {
+      "title": "The Binding of Isaac: Repentance Wiki - Itens & Desbloqueios",
+      "description": "Explore os itens, personagens, desbloqueios, chefes, desafios, seeds, sinergias e mods de The Binding of Isaac: Repentance com guias claros para cada partida.",
+      "keywords": "The Binding of Isaac Repentance, itens, personagens, desbloqueios, chefes, desafios, seeds, mods",
+      "ogTitle": "The Binding of Isaac: Repentance Wiki - Itens & Desbloqueios",
+      "ogDescription": "Explore os itens, personagens, desbloqueios, chefes, desafios, seeds, sinergias e mods de The Binding of Isaac: Repentance com guias claros para cada partida.",
+      "twitterTitle": "The Binding of Isaac: Repentance Wiki - Itens & Desbloqueios",
+      "twitterDescription": "Explore os itens, personagens, desbloqueios, chefes, desafios, seeds e mods de The Binding of Isaac: Repentance com guias claros para cada partida."
+    }
+  },
   "nav": {
-    "guide": "Guias",
+    "guide": "Guia",
     "items": "Itens",
     "mods": "Mods",
     "unlocks": "Desbloqueios",
@@ -8,5 +19,2422 @@
     "multiplayer": "Multijogador",
     "versions": "Versões",
     "support": "Suporte"
+  },
+  "common": {
+    "home": "Início",
+    "more": "Mais",
+    "playNow": "Jogue na Steam",
+    "switchLanguage": "Mudar Idioma",
+    "switchTheme": "Mudar Tema",
+    "lightMode": "Modo Claro",
+    "darkMode": "Modo Escuro",
+    "notFound": "Página Não Encontrada",
+    "notFoundDescription": "A página que você está procurando não existe.",
+    "backToHome": "Voltar para o Início",
+    "relatedArticles": "Artigos Relacionados",
+    "readMore": "Leia Mais",
+    "articlesComingSoon": "Artigos em breve"
+  },
+  "hero": {
+    "badge": "Dungeon Shooter Roguelike Sombrio",
+    "title": "The Binding of Isaac: Repentance Wiki",
+    "description": "Desça por masmorras aleatórias, combine centenas de itens, desbloqueie personagens normais e Tainted, derrote chefes de caminhos ramificados e domine desafios, segredos, rotas e o co-op de quatro jogadores.",
+    "getFreeCodesCTA": "Explorar Itens",
+    "playOnSteamCTA": "Jogue na Steam",
+    "stats": {
+      "stat1": {
+        "value": "700+",
+        "label": "Total de Itens"
+      },
+      "stat2": {
+        "value": "25+",
+        "label": "Novos Chefes"
+      },
+      "stat3": {
+        "value": "4",
+        "label": "Jogadores em Co-op"
+      },
+      "stat4": {
+        "value": "13,5K+",
+        "label": "Avaliações da Steam"
+      }
+    }
+  },
+  "gameFeature": {
+    "title": "The Binding of Isaac: Repentance",
+    "description": "Um dungeon shooter roguelike sombrio onde cada run reembaralha andares, itens, chefes e salas. Combine mais de 700 itens, desbloqueie 17 personagens normais e 17 variantes Tainted, derrote superchefes ramificados e domine desafios, caminhos alternativos, seeds e o co-op online para quatro jogadores do Repentance+."
+  },
+  "tools": {
+    "title": "The Binding of Isaac",
+    "titleHighlight": "Hub do Repentance",
+    "subtitle": "Tudo o que você precisa para itens, personagens, desbloqueios, chefes, desafios, mods e co-op online de The Binding of Isaac: Repentance",
+    "cards": [
+      {
+        "icon": "BookOpen",
+        "title": "Guia para Iniciantes",
+        "description": "Loop de limpeza de salas, atributos, pickups e a rota para Mom e Mom's Heart"
+      },
+      {
+        "icon": "Layers",
+        "title": "Tier List de Itens",
+        "description": "Rankings de S a D para passivos, ativos, familiares, trinkets, cartas e runas"
+      },
+      {
+        "icon": "Users",
+        "title": "Personagens",
+        "description": "Todos os personagens normais e Tainted ranqueados com pontos fortes e desbloqueios"
+      },
+      {
+        "icon": "ClipboardCheck",
+        "title": "Guia de Desbloqueios",
+        "description": "Um roteiro completo de progressão de Mom até Dead God"
+      },
+      {
+        "icon": "Skull",
+        "title": "Chefes e Finais",
+        "description": "Rotas, padrões de ataque e finais de Mom's Heart até The Beast"
+      },
+      {
+        "icon": "Swords",
+        "title": "Desafios",
+        "description": "Todos os 45 desafios com setups iniciais, restrições e recompensas"
+      },
+      {
+        "icon": "Puzzle",
+        "title": "Melhores Mods",
+        "description": "Mods da Oficina Steam para interface, treino, música e conteúdo"
+      },
+      {
+        "icon": "Gamepad2",
+        "title": "Co-op Online",
+        "description": "Configuração, regras e notas de atualização do multiplayer online do Repentance+"
+      }
+    ]
+  },
+  "modules": {
+    "isaacBeginnerGuide": {
+      "title": "Guia para Iniciantes de The Binding of Isaac Repentance",
+      "eyebrow": "COMECE AQUI",
+      "subtitle": "Aprenda o loop de limpeza de salas, proteja sua vida, gaste pickups com sabedoria e siga um caminho comprovado do Basement até Mom e Mom's Heart em The Binding of Isaac: Repentance.",
+      "intro": "Cada run em The Binding of Isaac: Repentance é uma cadeia de andares gerados aleatoriamente. Limpe salas de combate, colete recursos, melhore sua build através de salas especiais, derrote o chefe do andar e desça. O sucesso inicial depende mais de evitar dano e tomar decisões consistentes do que de encontrar um item perfeito.",
+      "displayType": "steps",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Aprenda Movimentação, Tiro e Controle de Sala",
+          "goal": "Mova-se e atire de forma independente enquanto preserva um caminho de fuga seguro.",
+          "details": [
+            "A movimentação e os tiros usam controles direcionais separados. Bombas, itens ativos, cartas, pílulas e drops de trinkets têm seus próprios comandos, que podem ser remapeados no menu de opções.",
+            "A maioria dos inimigos mira na posição atual de Isaac. Use movimentos curtos e deliberados em vez de circular pela sala sem prestar atenção nos projéteis.",
+            "Destrua chargers, inimigos com muitos projéteis e geradores de inimigos antes dos inimigos lentos de combate corpo a corpo."
+          ],
+          "checklist": [
+            "Pratique mover-se em uma direção enquanto atira em outra.",
+            "Mantenha pelo menos um caminho livre para esquiva.",
+            "Não fique encostado na parede, a menos que o padrão de ataque exija."
+          ]
+        },
+        {
+          "step": 2,
+          "title": "Entenda a Vida e os Atributos Principais (Core Stats)",
+          "goal": "Reconheça se um item melhora o ataque, a sobrevivência ou a consistência.",
+          "details": [
+            "Recipientes de Red Heart podem ser recarregados e são comumente usados para pagar por Devil Deals. Soul e Black Hearts protegem a vida e ajudam a preservar as chances de salas de pacto.",
+            "Damage controla a força das lágrimas. Fire Rate controla a frequência dos tiros. Range controla a distância percorrida, Shot Speed controla a velocidade do projétil, Speed controla o movimento, e Luck afeta muitos efeitos baseados em sorte.",
+            "Ative o Found HUD no menu de opções para exibir atributos numéricos durante uma partida."
+          ],
+          "checklist": [
+            "Priorize uma melhoria inicial de Damage ou Fire Rate.",
+            "Mantenha Speed de movimento suficiente para esquivar confortavelmente.",
+            "Trate Soul e Black Hearts como vida e proteção de pactos."
+          ]
+        },
+        {
+          "step": 3,
+          "title": "Limpe as Salas na Ordem Certa",
+          "goal": "Remova ameaças imediatas antes de buscar pickups ou quebrar objetos.",
+          "details": [
+            "A maioria das salas de combate permanece trancada até que todos os inimigos necessários sejam derrotados. Limpar uma sala pode criar um pickup e recarregar itens ativos.",
+            "Use rochas e poços como cobertura contra inimigos terrestres, mas lembre-se que inimigos voadores e projéteis espectrais podem ignorar alguns obstáculos.",
+            "Guarde bombas em salas fáceis, a menos que usá-las evite mais dano do que o valor da bomba."
+          ],
+          "checklist": [
+            "Identifique o inimigo mais rápido ou perigoso imediatamente.",
+            "Mova-se antes de atirar quando uma sala começar lotada.",
+            "Finalize inimigos lentos apenas após a sala estar sob controle."
+          ]
+        },
+        {
+          "step": 4,
+          "title": "Gaste Keys, Bombs e Coins por Prioridade",
+          "goal": "Transforme recursos limitados em melhorias confiáveis.",
+          "details": [
+            "Treasure Rooms contêm um item de pedestal gratuito. A maioria das portas de Treasure Room após o primeiro andar requer uma key.",
+            "Shops requerem uma key e vendem itens, vida, baterias, cartas e outros pickups. Doar coins extras melhora futuros Shops.",
+            "Bombs revelam salas secretas, abrem tinted rocks, causam dano a chefes e destroem obstáculos. Keys também abrem baús trancados e portas especiais."
+          ],
+          "checklist": [
+            "Reserve uma key inicial para a Treasure Room, a menos que outra porta tenha um valor claramente superior.",
+            "Procure por tinted rocks com uma cruz tênue e cor diferente.",
+            "Guarde uma bomb para uma localização provável de Secret Room ou para um chefe perigoso."
+          ]
+        },
+        {
+          "step": 5,
+          "title": "Reconheça Salas Especiais Valiosas",
+          "goal": "Saiba o que uma sala oferece antes de pagar seu custo de entrada.",
+          "details": [
+            "Treasure Rooms são a principal fonte de itens que mudam sua build. Shops oferecem utilidade e compras controladas.",
+            "Libraries contêm livros, Arcades trocam dinheiro ou vida por recompensas, e Curse Rooms podem conter Red Chests, itens de Devil, pickups ou inimigos.",
+            "Sacrifice Rooms oferecem recompensas cada vez mais poderosas após danos repetidos em espinhos, mas iniciantes devem usá-las apenas com cura de sobra."
+          ],
+          "checklist": [
+            "Visite a Treasure Room na maioria dos andares iniciais.",
+            "Verifique o Shop quando tiver uma key e pelo menos 15 coins.",
+            "Não entre em uma sala de custo de vida quando o custo puder impedir sua sobrevivência contra o chefe."
+          ]
+        },
+        {
+          "step": 6,
+          "title": "Escolha entre Devil Deals e Angel Rooms",
+          "goal": "Pegue itens premium sem destruir sua sobrevivência.",
+          "details": [
+            "Devil Rooms podem aparecer após chefes do segundo andar em diante e geralmente vendem itens poderosos por vida.",
+            "Receber dano em Red Heart reduz a chance de pacto do andar atual, especialmente durante a luta contra o chefe. Dano em Soul e Black Heart não aplica a mesma penalidade.",
+            "Em Repentance, recusar-se a entrar na primeira Devil Room disponível garante que a próxima aparição bem-sucedida de uma sala de pacto seja uma Angel Room. Entrar na sala, mas recusar seus itens, mantém uma rota mista de Devil e Angel."
+          ],
+          "checklist": [
+            "Aceite um Devil Deal apenas quando a recompensa claramente superar a vida perdida.",
+            "Pule o primeiro Devil Room completamente quando estiver buscando itens de Angel gratuitos.",
+            "Após as batalhas contra Angels serem desbloqueadas, use bombas em duas estátuas de Angel para montar a chave para o Mega Satan."
+          ]
+        },
+        {
+          "step": 7,
+          "title": "Encontre Secret Rooms de forma eficiente",
+          "goal": "Use a geometria do andar para fazer testes de bomba de alto valor.",
+          "details": [
+            "Uma Secret Room comum geralmente toca várias salas normais. Cada parede de conexão precisa de uma posição de porta válida, sem pedras, buracos ou obstáculos bloqueando-a.",
+            "Uma Super Secret Room normalmente se conecta a apenas uma sala e é frequentemente encontrada perto da parte final do andar ou na rota em direção ao chefe.",
+            "Coloque a bomba no centro da parede suspeita. Teste conexões fortes de três salas antes de locais incertos de duas salas."
+          ],
+          "checklist": [
+            "Verifique se cada parede adjacente tem uma posição de porta desobstruída.",
+            "Teste locais que tocam três salas normais primeiro.",
+            "Pare de procurar quando as bombas restantes forem mais valiosas para tinted rocks ou combate."
+          ]
+        },
+        {
+          "step": 8,
+          "title": "Siga a Rota da Primeira Jogada",
+          "goal": "Alcance a Mom com uma build estável em vez de correr.",
+          "details": [
+            "Comece como Isaac no Modo Normal e progrida por Basement I-II, Caves I-II e Depths I-II.",
+            "Em cada andar, encontre a Treasure Room, considere a Shop e depois derrote o chefe. Limpe completamente apenas quando você ainda precisar de vida, chaves, bombas, moedas, cargas ou uma sala especial.",
+            "Mom é o chefe fixo de Depths II na primeira rota. Continue se movendo para longe do pé pisoteador, observe todas as quatro portas para ataques e use bombas quando ela estiver exposta."
+          ],
+          "checklist": [
+            "Encontre pelo menos uma melhoria ofensiva significativa antes de Depths.",
+            "Entre na sala da Mom com vida extra e uma ou duas bombas.",
+            "Derrotar a Mom desbloqueia o Womb e o primeiro final."
+          ]
+        },
+        {
+          "step": 9,
+          "title": "Derrote o Mom's Heart e Abra o Endgame",
+          "goal": "Transforme vitórias iniciais em rotas e personagens permanentes.",
+          "details": [
+            "Após derrotar a Mom uma vez, as próximas runs continuam pelo Womb I-II. A maioria dos danos no Womb e capítulos posteriores remove um coração inteiro.",
+            "O Mom's Heart fica protegido enquanto inimigos invocados continuarem vivos. Elimine os invocados rapidamente e, em seguida, cause dano ao Heart enquanto se move com cuidado pelos padrões de projéteis.",
+            "A décima derrota do Mom's Heart desbloqueia ???. A décima primeira derrota transforma o chefe em It Lives!, fornecendo acesso regular à Cathedral e ao Sheol."
+          ],
+          "checklist": [
+            "Guarde itens ativos defensivos para padrões densos de projéteis.",
+            "Destrua os inimigos invocados antes de focar no Heart.",
+            "Após desbloquear o It Lives!, trabalhe para obter cinco vitórias contra o Isaac para conseguir The Polaroid e cinco vitórias contra o Satan para conseguir The Negative."
+          ]
+        }
+      ],
+      "quickTips": [
+        "Ative o Found HUD cedo para que você possa ler seu dano, lágrimas, alcance e sorte rapidamente.",
+        "Guarde uma bomba para uma localização provável de Secret Room ou para um chefe perigoso em vez de gastá-la à toa.",
+        "Pule o primeiro Devil Room para garantir uma Angel Room quando quiser itens gratuitos e acesso ao Mega Satan.",
+        "Procure por tinted rocks com uma cruz tênue para obter consumíveis garantidos, corações ou itens."
+      ]
+    },
+    "isaacItemTierList": {
+      "title": "Tier List de Itens de The Binding of Isaac Repentance",
+      "eyebrow": "CLASSIFICAÇÕES DE ITENS",
+      "subtitle": "Compare itens de alto impacto e consumíveis por consistência, pool de itens, requisitos de desbloqueio, valor de sinergia e possíveis desvantagens em The Binding of Isaac: Repentance.",
+      "intro": "Esta tier list favorece itens que funcionam de forma confiável em muitos personagens e builds. Itens de categorias inferiores não são necessariamente fracos: vários se tornam excepcionais com a sinergia correta, mas exigem mais planejamento ou criam um risco maior do que melhorias universalmente fortes.",
+      "displayType": "tiers",
+      "tiers": [
+        {
+          "tier": "S",
+          "label": "Definidores de Run",
+          "description": "Itens que podem transformar uma run mediana em uma run vencedora com pouca preparação adicional.",
+          "entries": [
+            {
+              "name": "Sacred Heart",
+              "type": "Passivo",
+              "pool": "Angel Room",
+              "effect": "Fornece um multiplicador de dano massivo, lágrimas teleguiadas, um container de Red Heart, cura e mudanças adicionais nas lágrimas.",
+              "best_use": "Funciona em quase qualquer build de lágrimas convencional; o efeito homing torna projéteis lentos ou fáceis de errar muito mais consistentes.",
+              "caution": "Diminui a cadência de tiro, mas o dano e o efeito homing geralmente compensam a penalidade.",
+              "unlock": "Disponível na pool da Angel Room."
+            },
+            {
+              "name": "C Section",
+              "type": "Substituição de Lágrima Passiva",
+              "pool": "Treasure Room",
+              "effect": "Substitui as lágrimas por projéteis de fetos teleguiados que causam dano repetidamente aos inimigos e herdam muitos efeitos de lágrimas.",
+              "best_use": "Combine com dano, multishot, suporte de homing e efeitos de lágrimas compatíveis.",
+              "caution": "Algumas substituições de lágrimas sobrepõem ou mudam significativamente seu comportamento.",
+              "unlock": "Derrote The Beast jogando como Lilith."
+            },
+            {
+              "name": "Glitched Crown",
+              "type": "Passivo",
+              "pool": "Secret Room",
+              "effect": "A maioria dos pedestais de itens alterna rapidamente entre vários itens possíveis, criando chances repetidas de escolher um resultado premium.",
+              "best_use": "Observe o ciclo completo e cronometre a coleta deliberadamente.",
+              "caution": "Um timing ruim pode selecionar o item errado, enquanto pedestais cegos removem grande parte do seu controle.",
+              "unlock": "Derrote The Beast jogando como Tainted Isaac."
+            },
+            {
+              "name": "Spindown Dice",
+              "type": "Ativo",
+              "pool": "Secret Room",
+              "effect": "Rerrola um pedestal para o item com o ID interno anterior, permitindo transformações previsíveis.",
+              "best_use": "Guarde cargas para conversões conhecidas em itens premium e combine-o com baterias ou geração de carga.",
+              "caution": "Seu uso mais forte requer aprender as correntes de conversão.",
+              "unlock": "Derrote Delirium jogando como Tainted Isaac."
+            },
+            {
+              "name": "R Key",
+              "type": "Ativo de Uso Único",
+              "pool": "Secret Room",
+              "effect": "Reinicia a partida no Basement I, preservando os itens coletados e a elegibilidade para conquistas.",
+              "best_use": "Conclua um objetivo de fim de jogo e, em seguida, reinicie com a build atual para seguir outra rota ou coletar mais marcas de conclusão.",
+              "caution": "O cronômetro não reinicia, então os limites de tempo para Boss Rush e Hush continuam perdidos.",
+              "unlock": "Nenhum desbloqueio de conclusão de personagem é necessário."
+            },
+            {
+              "name": "Twisted Pair",
+              "type": "Familiar",
+              "pool": "Devil Room",
+              "effect": "Adiciona dois familiares que copiam a direção de tiro do jogador e escalam com o dano do jogador.",
+              "best_use": "Fornece dano imediato e se beneficia de muitos efeitos globais de lágrimas.",
+              "caution": "As posições de tiro separadas podem errar inimigos pequenos em ângulos incomuns.",
+              "unlock": "Derrote The Beast como Tainted Lilith."
+            },
+            {
+              "name": "Sacred Orb",
+              "type": "Passivo",
+              "pool": "Angel Room",
+              "effect": "Filtra muitos resultados de itens fracos e troca alguns pedestais de baixa qualidade por opções melhores.",
+              "best_use": "Pegue-o cedo para que as futuras recompensas de Treasure, Boss, Angel, Devil e Secret Room sejam beneficiadas.",
+              "caution": "Ele melhora a qualidade de itens futuros em vez de fornecer poder de combate imediato.",
+              "unlock": "Derrote The Beast como Tainted Lost."
+            }
+          ]
+        },
+        {
+          "tier": "A",
+          "label": "Excelente",
+          "description": "Opções poderosas que melhoram consistentemente a maioria das builds, mas ficam um pouco abaixo dos itens mais dominantes que definem a run.",
+          "entries": [
+            {
+              "name": "Brimstone",
+              "type": "Substituição de Lágrima Passiva",
+              "pool": "Devil Room",
+              "effect": "Substitui lágrimas por um laser de sangue carregável e perfurante.",
+              "best_use": "Excelente contra grupos e chefes, especialmente com efeitos de homing, split-shot ou multishot.",
+              "caution": "O tempo de carga muda o ritmo de disparo e alguns efeitos de lágrima se comportam de maneira diferente.",
+              "unlock": "Disponível na pool da Devil Room."
+            },
+            {
+              "name": "Mom's Knife",
+              "type": "Substituição de Lágrima Passiva",
+              "pool": "Devil Room",
+              "effect": "Substitui lágrimas por uma faca carregável que causa dano de contato repetido muito alto.",
+              "best_use": "Solte a faca através dos chefes e use o seu caminho de volta para acertos adicionais.",
+              "caution": "Ela anula muitas combinações de lágrimas e geralmente requer um posicionamento mais próximo.",
+              "unlock": "Derrote Satan como Isaac."
+            },
+            {
+              "name": "Tech X",
+              "type": "Substituição de Lágrima Passiva",
+              "pool": "Treasure Room",
+              "effect": "Dispara anéis de laser carregáveis que perfuram inimigos e cobrem grandes áreas.",
+              "best_use": "Use anéis médios ou grandes para controlar salas; dano, homing e multishot escalam bem com ele.",
+              "caution": "Anéis muito pequenos podem ter um desempenho inferior quando liberados rápido demais.",
+              "unlock": "Disponível na pool da Treasure Room."
+            },
+            {
+              "name": "Godhead",
+              "type": "Passivo",
+              "pool": "Angel Room",
+              "effect": "Adiciona homing, uma aura de dano ao redor das lágrimas e um grande aumento de dano.",
+              "best_use": "Especialmente poderoso com projéteis lentos, grandes, perfurantes ou persistentes.",
+              "caution": "Obter o desbloqueio requer completar as marcas do Hard Mode do The Lost.",
+              "unlock": "Ganhe todas as marcas de conclusão do Hard Mode exigidas como The Lost."
+            },
+            {
+              "name": "D Infinity",
+              "type": "Ativo",
+              "pool": "Secret Room",
+              "effect": "Alterna entre vários efeitos de dados para rerolar itens, pickups, atributos ou a build completa.",
+              "best_use": "Selecione o dado que resolve a sala atual em vez de carregar ferramentas de rerolagem separadas.",
+              "caution": "O dado errado pode destruir uma build forte ou uma sala valiosa.",
+              "unlock": "Derrote Delirium como Isaac."
+            },
+            {
+              "name": "The Stairway",
+              "type": "Passivo",
+              "pool": "Angel Room",
+              "effect": "Cria uma escada na sala inicial de andares posteriores que leva a uma loja que vende itens de Angel Room.",
+              "best_use": "Mantenha uma reserva de moedas e compre itens de Angel Room repetidamente ao longo de vários andares.",
+              "caution": "A escada desaparece após sair da sala inicial.",
+              "unlock": "Derrote Isaac como Jacob and Esau."
+            },
+            {
+              "name": "Birthright",
+              "type": "Passivo",
+              "pool": "Shop",
+              "effect": "Fornece uma melhoria única específica para o personagem.",
+              "best_use": "Seus efeitos podem adicionar slots de itens, vida, familiares, dano ou melhorias mecânicas importantes, dependendo do personagem.",
+              "caution": "O valor varia muito entre os personagens.",
+              "unlock": "Derrote ??? como Jacob and Esau."
+            },
+            {
+              "name": "Incubus",
+              "type": "Familiar",
+              "pool": "Devil Room",
+              "effect": "Copia as lágrimas do jogador e a maioria dos efeitos de lágrimas a partir da posição do familiar.",
+              "best_use": "Atua como um grande multiplicador de dano para builds de lágrimas convencionais.",
+              "caution": "O posicionamento deslocado pode fazer com que os tiros errem em salas estreitas.",
+              "unlock": "Derrote Hush como Lilith."
+            },
+            {
+              "name": "Curved Horn",
+              "type": "Trinket",
+              "pool": "Trinket Pool",
+              "effect": "Fornece um aumento de dano fixo enquanto segurado.",
+              "best_use": "Um aumento de poder simples no início do jogo sem custo de vida ou carga.",
+              "caution": "Ele compete com trinkets defensivos e de utilidade.",
+              "unlock": "Derrote The Lamb como Judas."
+            },
+            {
+              "name": "Jera",
+              "type": "Runa",
+              "pool": "Rune Pickup",
+              "effect": "Duplica pickups e baús fechados na sala atual.",
+              "best_use": "Guarde-a para salas de bateria, andares de fim de jogo com muitos baús ou salas contendo vários pickups valiosos.",
+              "caution": "Não duplica diretamente itens de pedestal.",
+              "unlock": "Complete o Desafio #2, High Brow."
+            },
+            {
+              "name": "Chaos Card",
+              "type": "Carta",
+              "pool": "Coletável de Carta",
+              "effect": "Lança uma carta que derrota instantaneamente muitos inimigos e bosses que tocar.",
+              "best_use": "Reserve-a para um boss difícil ou uma sala que ameace a run.",
+              "caution": "A carta deve ser mirada, pode errar e não ignora todas as fases de bosses finais.",
+              "unlock": "Complete o Desafio #9, Demo Man."
+            }
+          ]
+        },
+        {
+          "tier": "B",
+          "label": "Confiável e Flexível",
+          "description": "Ferramentas fortes que melhoram muitas runs, mas geralmente exigem cargas, gerenciamento de vida, posicionamento ou uma rota compatível.",
+          "entries": [
+            {
+              "name": "Satanic Bible",
+              "type": "Ativo",
+              "pool": "Devil Room e Library",
+              "effect": "Concede um Black Heart e transforma a recompensa do boss do andar atual em um item de Devil Room comprável.",
+              "best_use": "Gera defesa enquanto substitui recompensas de boss fracas por itens de Devil Room potencialmente mais fortes.",
+              "caution": "Compras repetidas podem consumir muitos containers de coração.",
+              "unlock": "Derrote Isaac como Azazel."
+            },
+            {
+              "name": "Book of Virtues",
+              "type": "Ativo-Passivo",
+              "pool": "Angel Room e Library",
+              "effect": "Cria wisps orbitais e combina com a maioria dos itens ativos para criar efeitos únicos de wisps.",
+              "best_use": "Combine com um item ativo de baixa carga para obter ataque e proteção contra projéteis.",
+              "caution": "Wisps podem ser destruídos por tiros e contato de inimigos.",
+              "unlock": "Derrote Isaac como Bethany."
+            },
+            {
+              "name": "The Pact",
+              "type": "Passivo",
+              "pool": "Devil Room",
+              "effect": "Fornece dano, cadência de tiro e Soul Hearts.",
+              "best_use": "Um upgrade ofensivo e defensivo confiável para qualquer propósito.",
+              "caution": "O preço do Devil Deal pode ainda ser perigoso para personagens com pouca vida.",
+              "unlock": "Disponível no pool da Devil Room."
+            },
+            {
+              "name": "Rotten Baby",
+              "type": "Familiar",
+              "pool": "Devil Room",
+              "effect": "Gera moscas azuis enquanto o jogador atira.",
+              "best_use": "Escala com o dano do jogador e adiciona dano explosivo automático.",
+              "caution": "Moscas podem ser desperdiçadas em alvos fracos antes de chegar a um boss.",
+              "unlock": "Derrote The Lamb como Lilith."
+            },
+            {
+              "name": "Holy Mantle",
+              "type": "Passivo",
+              "pool": "Treasure Room e Angel Room",
+              "effect": "Bloqueia o primeiro golpe de dano em cada sala.",
+              "best_use": "Excelente para Curse Rooms, salas difíceis e personagens com mecânicas de vida de um golpe.",
+              "caution": "Depois que o escudo quebra, ele não fornece mais proteção até a próxima sala.",
+              "unlock": "Disponível como um item; The Lost começa com ele após 879 moedas na Greed Donation Machine."
+            },
+            {
+              "name": "Diplopia",
+              "type": "Ativo de Uso Único",
+              "pool": "Shop",
+              "effect": "Duplica itens de pedestal e pickups na sala atual.",
+              "best_use": "Copie um item de Angel, seleção de Devil, inventário do Shop ou uma sala com vários pickups valiosos.",
+              "caution": "Usá-lo cedo pode desperdiçar uma oportunidade de duplicação mais forte posteriormente.",
+              "unlock": "Disponível na pool do Shop."
+            },
+            {
+              "name": "Credit Card",
+              "type": "Carta",
+              "pool": "Pickup de Carta",
+              "effect": "Torna gratuitas as compras no Shop ou Devil Room atual.",
+              "best_use": "Use em uma sala que contenha vários itens caros.",
+              "caution": "Segurá-lo por muito tempo corre o risco de nunca encontrar uma sala premium.",
+              "unlock": "Complete o Desafio #10, Cursed!."
+            },
+            {
+              "name": "Perthro",
+              "type": "Runa",
+              "pool": "Pickup de Runa",
+              "effect": "Rerrola itens de pedestal na sala atual.",
+              "best_use": "Substitua itens fracos de Treasure, Boss, Angel ou Devil.",
+              "caution": "O item original não pode ser recuperado após ser rerrolado.",
+              "unlock": "Complete o Desafio #6, Solar System."
+            },
+            {
+              "name": "Soul of Isaac",
+              "type": "Soul Stone",
+              "pool": "Pickup de Soul Stone",
+              "effect": "Faz com que os pedestais alternem entre o item original e uma opção rerrolada.",
+              "best_use": "Ganhe uma segunda escolha sem perder imediatamente o resultado original.",
+              "caution": "Pisar no pedestal no momento errado seleciona o item errado.",
+              "unlock": "Complete o Boss Rush e derrote o Hush como Tainted Isaac."
+            },
+            {
+              "name": "Cracked Crown",
+              "type": "Trinket",
+              "pool": "Pool de Trinkets",
+              "effect": "Melhora vários atributos que já estão acima de seus valores base.",
+              "best_use": "Forte em builds equilibradas contendo vários pequenos upgrades de atributos.",
+              "caution": "Fornece menos valor quando poucos atributos base foram melhorados.",
+              "unlock": "Vença cinco Daily Challenges consecutivamente."
+            }
+          ]
+        },
+        {
+          "tier": "C",
+          "label": "Dependente de Build",
+          "description": "Estes itens podem se tornar excelentes, mas suas desvantagens ou mudanças de controle podem prejudicar uma build incompatível.",
+          "entries": [
+            {
+              "name": "Soy Milk",
+              "type": "Modificador de Lágrimas Passivo",
+              "pool": "Treasure Room",
+              "effect": "Aumenta drasticamente a cadência de tiro enquanto aplica um severo multiplicador de dano.",
+              "best_use": "Combine com adições de dano fixo, tiros teleguiados e efeitos que ativam por lágrima.",
+              "caution": "Acertos individuais fracos podem criar um recuo excessivo e baixo controle de inimigos."
+            },
+            {
+              "name": "Almond Milk",
+              "type": "Modificador de Lágrimas Passivo",
+              "pool": "Treasure Room",
+              "effect": "Aumenta drasticamente a cadência de tiro, diminui o dano e aplica padrões de lágrimas oscilantes estilo \"worm\".",
+              "best_use": "Funciona com efeitos poderosos que se beneficiam da produção de muitos projéteis.",
+              "caution": "Trajetórias aleatórias reduzem a precisão."
+            },
+            {
+              "name": "Tiny Planet",
+              "type": "Modificador de Lágrimas Passivo",
+              "pool": "Treasure Room",
+              "effect": "Faz com que as lágrimas orbitem ao redor do jogador com comportamento espectral e alcance aumentado.",
+              "best_use": "Combine com efeitos perfurantes, lasers, tiros teleguiados ou projéteis grandes.",
+              "caution": "Lágrimas normais podem errar alvos próximos e exigem um estilo de mira diferente."
+            },
+            {
+              "name": "Ludovico Technique",
+              "type": "Substituição de Lágrimas Passiva",
+              "pool": "Treasure Room",
+              "effect": "Cria uma lágrima controlável que se move independentemente do jogador.",
+              "best_use": "Muito forte com Brimstone, efeitos de Technology, tiros teleguiados ou grandes auras de dano.",
+              "caution": "Uma lágrima fraca ou lenta pode deixar o jogador incapaz de responder a ameaças de várias direções."
+            },
+            {
+              "name": "Ipecac",
+              "type": "Substituição de Lágrimas Passiva",
+              "pool": "Treasure Room",
+              "effect": "Dispara lágrimas explosivas em arco com um aumento de dano muito grande.",
+              "best_use": "Limpa salas e chefes rapidamente, além de fornecer destruição de rochas ilimitada.",
+              "caution": "Inimigos de curto alcance e trajetórias de lágrima incomuns podem causar auto-dano."
+            },
+            {
+              "name": "Dr. Fetus",
+              "type": "Substituição de Lágrimas Passiva",
+              "pool": "Treasure Room",
+              "effect": "Substitui lágrimas por bombas lançadas que herdam muitos efeitos de bombas.",
+              "best_use": "Poderoso com melhorias de bomba, tiros teleguiados e imunidade a explosões.",
+              "caution": "O tempo da explosão e o recuo podem causar auto-dano ou limpezas lentas."
+            },
+            {
+              "name": "Cursed Eye",
+              "type": "Modificador de Lágrimas Passivo",
+              "pool": "Treasure Room",
+              "effect": "Carrega e dispara uma rajada de lágrimas.",
+              "best_use": "Fornece um forte dano de rajada quando totalmente carregado de uma posição segura.",
+              "caution": "Sofrer dano enquanto carrega pode teletransportar o jogador para fora da sala e resetar o progresso do chefe."
+            },
+            {
+              "name": "Bob's Brain",
+              "type": "Familiar",
+              "pool": "Treasure Room",
+              "effect": "Lança um familiar explosivo ao atirar em direção a um inimigo.",
+              "best_use": "Oferece um forte dano inicial quando o distanciamento é controlado.",
+              "caution": "A explosão pode causar dano ao jogador, especialmente a curta distância."
+            },
+            {
+              "name": "Magic Skin",
+              "type": "Ativo",
+              "pool": "Curse Room",
+              "effect": "Cria um item da pool da sala atual enquanto adiciona um Broken Heart.",
+              "best_use": "Use com moderação em pools premium, como Angel ou Secret Rooms.",
+              "caution": "O uso repetido reduz a vida máxima, e um Magic Skin abandonado pode substituir pedestais futuros."
+            },
+            {
+              "name": "Missing No.",
+              "type": "Passivo",
+              "pool": "Secret Room",
+              "effect": "Dá reroll em itens passivos no início de cada andar.",
+              "best_use": "Pode salvar uma build perdedora ou criar combinações incomuns de high-roll.",
+              "caution": "Uma build vencedora pode ser destruída no próximo andar sem o controle do jogador."
+            }
+          ]
+        },
+        {
+          "tier": "D",
+          "label": "Dar Reroll ou Manusear com Cuidado",
+          "description": "Itens com riscos graves de mira, posicionamento, dano próprio ou aleatoriedade, a menos que uma sinergia específica remova a desvantagem.",
+          "entries": [
+            {
+              "name": "The Wiz",
+              "type": "Modificador de Lágrimas Passivo",
+              "pool": "Treasure Room",
+              "effect": "Adiciona disparos duplos disparados na diagonal.",
+              "best_use": "Pode funcionar com efeitos de homing, Tractor Beam ou lasers largos.",
+              "caution": "Acertar inimigos diretamente torna-se difícil sem uma sinergia corretiva."
+            },
+            {
+              "name": "Strange Attractor",
+              "type": "Modificador de Lágrimas Passivo",
+              "pool": "Treasure Room",
+              "effect": "As lágrimas criam uma força magnética que puxa inimigos e objetos em direção à sua trajetória.",
+              "best_use": "Pode agrupar inimigos para dano de perfuração e em área.",
+              "caution": "Inimigos perigosos podem ser puxados diretamente para o jogador."
+            },
+            {
+              "name": "Guillotine",
+              "type": "Passivo",
+              "pool": "Treasure Room",
+              "effect": "Destaca a cabeça de Isaac como um orbital enquanto aumenta o dano e a cadência de tiro.",
+              "best_use": "O orbital bloqueia projéteis e causa dano de contato.",
+              "caution": "A cabeça visível não representa mais a hitbox do corpo do jogador, tornando o desvio mais difícil."
+            },
+            {
+              "name": "Isaac's Heart",
+              "type": "Passivo",
+              "pool": "Treasure Room",
+              "effect": "Torna o corpo do jogador invulnerável enquanto um coração seguidor se torna a hitbox vulnerável.",
+              "best_use": "Suporta estratégias agressivas de contato e interações selecionadas de auto-dano.",
+              "caution": "O coração seguidor é difícil de posicionar e pode ser atingido por ataques que o corpo evita."
+            },
+            {
+              "name": "Curse of the Tower",
+              "type": "Passivo",
+              "pool": "Treasure Room",
+              "effect": "Gera múltiplas troll bombs sempre que o jogador recebe dano.",
+              "best_use": "Pode causar alto dano na sala com imunidade a explosões e melhorias de bombas.",
+              "caution": "Sem imunidade, um acerto pode causar dano adicional ou destruir pickups úteis."
+            },
+            {
+              "name": "TMTRAINER",
+              "type": "Passivo",
+              "pool": "Secret Room",
+              "effect": "Substitui itens futuros por efeitos glitched aleatórios.",
+              "best_use": "Projetado para runs caóticas e pode criar combinações extremamente poderosas.",
+              "caution": "Efeitos podem ser inúteis, perturbadores ou perigosos, tornando impossível o planejamento normal de itens.",
+              "unlock": "Derrote The Beast como Tainted Eden."
+            }
+          ]
+        }
+      ]
+    },
+    "isaacCharacters": {
+      "title": "Personagens e Tainted Characters de The Binding of Isaac Repentance",
+      "eyebrow": "34 ESTILOS DE JOGO",
+      "subtitle": "Compare todos os 17 personagens normais e 17 variantes Tainted em The Binding of Isaac: Repentance por método de desbloqueio, ferramentas iniciais, mecânica central, pontos fortes, pontos fracos e dificuldade.",
+      "intro": "Estas tiers medem a consistência geral e acessibilidade, em vez da qualidade das recompensas de desbloqueio de cada personagem. Melhorias permanentes como o D6 de Isaac, o Holy Mantle de The Lost e o Wooden Nickel de Keeper podem melhorar substancialmente um personagem após serem obtidos.",
+      "displayType": "charTiers",
+      "tiers": [
+        {
+          "tier": "S",
+          "label": "Potências Amigáveis para Iniciantes",
+          "description": "Personagens com ferramentas iniciais fortes, vida generosa ou mecânicas que criam consistentemente runs vitoriosas.",
+          "entries": [
+            {
+              "name": "Isaac",
+              "variant": "Normal",
+              "unlock": "Disponível desde o início.",
+              "starts_with": "Três Red Hearts e uma bomba; o D6 torna-se seu item ativo inicial após derrotar Isaac como ???.",
+              "core_mechanic": "Um personagem equilibrado cujo D6 rerrola itens de pedestal.",
+              "strengths": [
+                "Vida e atributos equilibrados",
+                "Excelente controle de itens com o D6",
+                "Sem mecânica restritiva"
+              ],
+              "weaknesses": [
+                "Isaac base não tem nenhuma vantagem ofensiva especial",
+                "O valor do D6 depende do gerenciamento de carga"
+              ],
+              "difficulty": "Fácil"
+            },
+            {
+              "name": "Magdalene",
+              "variant": "Normal",
+              "unlock": "Tenha sete ou mais recipientes de Red Heart ao mesmo tempo.",
+              "starts_with": "Quatro Red Hearts e Yum Heart; completar Aprils Fool adiciona uma pílula de Full Health.",
+              "core_mechanic": "A grande vida inicial e a cura repetível facilitam a recuperação de erros.",
+              "strengths": [
+                "Reserva de vida muito generosa",
+                "Cura confiável",
+                "Bom para aprender os bosses"
+              ],
+              "weaknesses": [
+                "Baixa velocidade inicial",
+                "A cura não pode compensar o dano fraco no fim do jogo"
+              ],
+              "difficulty": "Muito Fácil"
+            },
+            {
+              "name": "Cain",
+              "variant": "Normal",
+              "unlock": "Tenha 55 moedas ao mesmo tempo.",
+              "starts_with": "Dois Red Hearts, Lucky Foot, uma chave e uma pílula; Paper Clip é adicionado após 68 moedas na Greed Donation Machine.",
+              "core_mechanic": "Dano e velocidade fortes combinam com resultados favoráveis em pílulas e apostas.",
+              "strengths": [
+                "Dano inicial forte",
+                "Boa velocidade de movimento",
+                "Uso de pílulas mais seguro"
+              ],
+              "weaknesses": [
+                "Apenas dois Red Hearts iniciais",
+                "Ângulo de tiro e alcance efetivo reduzidos"
+              ],
+              "difficulty": "Fácil"
+            },
+            {
+              "name": "Azazel",
+              "variant": "Normal",
+              "unlock": "Pegue três itens de Devil Deal em uma única partida.",
+              "starts_with": "Três Black Hearts, voo e um feixe de Brimstone de curto alcance.",
+              "core_mechanic": "Dano inicial extremamente alto e voo permanente ao custo de curto alcance.",
+              "strengths": [
+                "Dano inicial poderoso",
+                "Voo permanente",
+                "Derrota bosses rapidamente"
+              ],
+              "weaknesses": [
+                "Alcance base muito curto",
+                "Nenhum recipiente de Red Heart inicial",
+                "O posicionamento próximo pode ser perigoso"
+              ],
+              "difficulty": "Muito Fácil"
+            },
+            {
+              "name": "Tainted Judas",
+              "variant": "Tainted",
+              "unlock": "Use Red Key ou Cracked Key no armário escondido em Home enquanto joga como Judas.",
+              "starts_with": "Dois Black Hearts, três moedas e Dark Arts no slot de item ativo de bolso.",
+              "core_mechanic": "Dark Arts torna Judas intangível e converte inimigos e tiros atravessados em um poderoso corte final.",
+              "strengths": [
+                "Ataque e defesa em uma única habilidade",
+                "Forte limpeza de salas",
+                "Pode atravessar ondas de projéteis"
+              ],
+              "weaknesses": [
+                "Não pode ganhar recipientes de Red Heart",
+                "Tempo de reação ruim pode fazer você terminar dentro de uma ameaça"
+              ],
+              "difficulty": "Fácil"
+            },
+            {
+              "name": "Tainted Lilith",
+              "variant": "Tainted",
+              "unlock": "Use Red Key ou Cracked Key no armário escondido em Home enquanto joga como Lilith.",
+              "starts_with": "Um Red Heart, dois Black Hearts e um feto familiar acoplado usado como seu ataque principal.",
+              "core_mechanic": "Atirar lança o feto como um chicote, causando dano de contato antes de disparar lágrimas.",
+              "strengths": [
+                "Alto dano inicial",
+                "Ampla cobertura de ataque",
+                "Forte escalonamento de familiar"
+              ],
+              "weaknesses": [
+                "Mira incomum exige prática",
+                "Salas estreitas podem restringir o ataque"
+              ],
+              "difficulty": "Fácil"
+            }
+          ]
+        },
+        {
+          "tier": "A",
+          "label": "Forte e Consistente",
+          "description": "Personagens poderosos que permanecem confiáveis uma vez que sua mecânica central é compreendida.",
+          "entries": [
+            {
+              "name": "Judas",
+              "variant": "Normal",
+              "unlock": "Derrote Satan.",
+              "starts_with": "Um Red Heart, três moedas e Book of Belial.",
+              "core_mechanic": "Alto dano base combinado com um aumento de dano repetível em salas de chefe.",
+              "strengths": [
+                "Alto dano inicial",
+                "Item ativo confiável",
+                "Limpezas rápidas no início do jogo"
+              ],
+              "weaknesses": [
+                "Apenas um Red Heart inicial",
+                "Erros iniciais são severamente punidos"
+              ],
+              "difficulty": "Moderado"
+            },
+            {
+              "name": "Eve",
+              "variant": "Normal",
+              "unlock": "Complete dois andares consecutivos sem coletar corações.",
+              "starts_with": "Dois Red Hearts, Dead Bird e Whore of Babylon; Razor Blade é adicionado após 439 moedas na Greed Donation Machine.",
+              "core_mechanic": "Whore of Babylon concede grandes bônus ofensivos enquanto Eve permanecer com um Red Heart ou menos.",
+              "strengths": [
+                "Ofensiva forte com pouca vida",
+                "Excelentes builds de Soul Heart",
+                "Bom roteamento de Devil Deal"
+              ],
+              "weaknesses": [
+                "Dano fraco fora de Whore of Babylon",
+                "Manter o bônus limita a proteção de Red Heart"
+              ],
+              "difficulty": "Moderado"
+            },
+            {
+              "name": "Lilith",
+              "variant": "Normal",
+              "unlock": "Derrote Ultra Greed como Azazel.",
+              "starts_with": "Um Red Heart, dois Black Hearts, Incubus, Box of Friends e Cambion Conception.",
+              "core_mechanic": "Lilith atira através de Incubus, enquanto Box of Friends duplica temporariamente seus familiars.",
+              "strengths": [
+                "Excelente escalonamento de familiar",
+                "Item ativo poderoso",
+                "Cambion Conception adiciona familiars com o tempo"
+              ],
+              "weaknesses": [
+                "Mira deslocada é mais difícil",
+                "Seu item ativo inicial compete com outros itens ativos"
+              ],
+              "difficulty": "Moderado"
+            },
+            {
+              "name": "Bethany",
+              "variant": "Normal",
+              "unlock": "Derrote Mom's Heart ou It Lives! no Hard Mode como Lazarus sem usar sua vida extra.",
+              "starts_with": "Três Red Hearts e Book of Virtues.",
+              "core_mechanic": "Soul e Black Hearts tornam-se cargas de item ativo em vez de vida, enquanto Book of Virtues cria wisps vinculadas ao item.",
+              "strengths": [
+                "Poderosas sinergias de item ativo",
+                "Wisps fornecem ataque e proteção",
+                "Armazenamento de carga flexível"
+              ],
+              "weaknesses": [
+                "Não pode usar Soul ou Black Hearts como vida",
+                "Dano em Red Heart é especialmente caro"
+              ],
+              "difficulty": "Moderado"
+            },
+            {
+              "name": "Tainted Isaac",
+              "variant": "Tainted",
+              "unlock": "Use Red Key ou Cracked Key no armário escondido em Home enquanto joga como Isaac.",
+              "starts_with": "Três Red Hearts e um limite de oito slots de itens passivos.",
+              "core_mechanic": "A maioria dos pedestais alterna entre duas escolhas, mas apenas oito itens passivos podem ser carregados; Birthright aumenta o limite para doze.",
+              "strengths": [
+                "Escolhas de itens integradas",
+                "Pode descartar itens passivos fracos",
+                "Alta qualidade média de build"
+              ],
+              "weaknesses": [
+                "Limite estrito de slots de itens",
+                "Timing ruim pode selecionar a opção de pedestal errada"
+              ],
+              "difficulty": "Moderado"
+            },
+            {
+              "name": "Tainted Azazel",
+              "variant": "Tainted",
+              "unlock": "Use Red Key ou Cracked Key no armário escondido em Home enquanto joga como Azazel.",
+              "starts_with": "Três Corações Pretos, voo, um feixe estreito de Brimstone de longo alcance e The Fool.",
+              "core_mechanic": "Um espirro de curto alcance causa dano e marca inimigos, fazendo com que o feixe de Brimstone cause dano amplificado.",
+              "strengths": [
+                "Voo e Brimstone de longo alcance",
+                "O espirro fornece controle de grupo",
+                "Forte consistência no início do jogo"
+              ],
+              "weaknesses": [
+                "Sem recipientes de Coração Vermelho iniciais",
+                "O dano máximo requer preparação de curto alcance",
+                "O feixe estreito requer mira precisa"
+              ],
+              "difficulty": "Fácil"
+            },
+            {
+              "name": "Tainted Apollyon",
+              "variant": "Tainted",
+              "unlock": "Use a Red Key ou Cracked Key no armário oculto em Home enquanto joga como Apollyon.",
+              "starts_with": "Dois Corações Vermelhos e Abyss no espaço de item ativo de bolso.",
+              "core_mechanic": "Abyss converte itens de pedestal indesejados em gafanhotos de ataque permanentes.",
+              "strengths": [
+                "Cada pedestal mantém seu valor",
+                "O exército de gafanhotos escala ao longo da partida",
+                "Abyss não ocupa o espaço ativo normal"
+              ],
+              "weaknesses": [
+                "Apenas dois Corações Vermelhos iniciais",
+                "Itens consumidos não podem ser recuperados",
+                "Muitos itens criam apenas um gafanhoto básico"
+              ],
+              "difficulty": "Fácil"
+            }
+          ]
+        },
+        {
+          "tier": "B",
+          "label": "Escolhas Balanceadas ou Especialistas",
+          "description": "Personagens capazes cujas mecânicas são poderosas nas mãos certas, mas menos consistentemente tolerantes.",
+          "entries": [
+            {
+              "name": "???",
+              "variant": "Normal",
+              "unlock": "Derrote o Mom's Heart dez vezes.",
+              "starts_with": "Três Corações de Alma e The Poop.",
+              "core_mechanic": "Não pode obter recipientes de Coração Vermelho e deve confiar em corações de alma, pretos, de osso ou outra vida não vermelha.",
+              "strengths": [
+                "Lágrimas padrão simples",
+                "Boas sinergias sem coração vermelho",
+                "Dano em Coração de Alma preserva a chance de pacto"
+              ],
+              "weaknesses": [
+                "Sem vida de Coração Vermelho renovável",
+                "Item ativo inicial fraco",
+                "Dano inicial ruim pode consumir a vida limitada"
+              ],
+              "difficulty": "Moderado"
+            },
+            {
+              "name": "Lazarus",
+              "variant": "Normal",
+              "unlock": "Tenha quatro ou mais Corações de Alma ou Pretos ao mesmo tempo.",
+              "starts_with": "Três Corações Vermelhos, uma pílula aleatória e uma vida extra.",
+              "core_mechanic": "Revive como Lazarus Risen com uma ofensiva mais forte; a vida extra retorna em andares posteriores e mortes planejadas podem conceder dano permanente.",
+              "strengths": [
+                "Vida extra integrada",
+                "Pode ganhar dano permanente",
+                "Cura padrão de Red Heart"
+              ],
+              "weaknesses": [
+                "A forma base é comum",
+                "Mortes em momentos ruins podem arruinar a vida ou pactos",
+                "O renascimento custa vida máxima"
+              ],
+              "difficulty": "Moderado"
+            },
+            {
+              "name": "Eden",
+              "variant": "Normal",
+              "unlock": "Derrote Mom's Heart ou It Lives! para ganhar Eden Tokens; cada partida com Eden consome um token.",
+              "starts_with": "Vida e atributos aleatórios, um item passivo, um item ativo e consumíveis aleatórios.",
+              "core_mechanic": "Cada partida começa com uma build e distribuição de atributos diferente.",
+              "strengths": [
+                "Pode começar com itens raros",
+                "Incentiva um amplo conhecimento de itens",
+                "Cada partida é diferente"
+              ],
+              "weaknesses": [
+                "Vida e atributos imprevisíveis",
+                "Pode começar com combinações prejudiciais",
+                "Requer um Eden Token"
+              ],
+              "difficulty": "Moderado"
+            },
+            {
+              "name": "Keeper",
+              "variant": "Normal",
+              "unlock": "Doe 1.000 moedas para a Greed Donation Machine.",
+              "starts_with": "Dois Coin Hearts e um tiro triplo; Wooden Nickel e um terceiro Coin Heart são adicionados através de desbloqueios de conclusão.",
+              "core_mechanic": "Usa moedas como vida e inicialmente tem um limite de vida baixo.",
+              "strengths": [
+                "Rajada forte de tiro triplo",
+                "Moedas fornecem vida e poder de compra",
+                "Wooden Nickel melhora a sustentação"
+              ],
+              "weaknesses": [
+                "Limite de vida restrito",
+                "Taxa de tiro inicial lenta",
+                "Gastar dinheiro remove curas possíveis"
+              ],
+              "difficulty": "Difícil"
+            },
+            {
+              "name": "Apollyon",
+              "variant": "Normal",
+              "unlock": "Derrote Mega Satan.",
+              "starts_with": "Três Red Hearts e Void.",
+              "core_mechanic": "Void consome itens passivos em troca de atributos aleatórios e armazena efeitos de itens ativos para ativá-los juntos.",
+              "strengths": [
+                "Converte itens fracos em atributos",
+                "Combina efeitos ativos",
+                "Vida inicial normal"
+              ],
+              "weaknesses": [
+                "Ganhos de atributos são aleatórios",
+                "Efeitos armazenados podem entrar em conflito",
+                "O Void tem um longo tempo de recarga"
+              ],
+              "difficulty": "Moderado"
+            },
+            {
+              "name": "The Forgotten",
+              "variant": "Normal",
+              "unlock": "Após derrotar The Lamb, complete a sequência da Broken Shovel e use a Mom's Shovel no túmulo na Dark Room.",
+              "starts_with": "Um corpo de Bone Heart com uma clava corpo a corpo e uma forma espiritual de Soul Heart com voo e lágrimas espectrais.",
+              "core_mechanic": "Alterna entre um corpo corpo a corpo poderoso e uma alma móvel de longo alcance vinculada ao corpo.",
+              "strengths": [
+                "Alto dano corpo a corpo",
+                "Duas formas complementares",
+                "A clava pode destruir projéteis"
+              ],
+              "weaknesses": [
+                "A vida é dividida por forma",
+                "The Soul está vinculada ao corpo",
+                "O combate corpo a corpo exige conhecimento de padrões"
+              ],
+              "difficulty": "Fácil"
+            }
+          ]
+        },
+        {
+          "tier": "C",
+          "label": "Personagens de Alta Execução",
+          "description": "Personagens fortes cujos sistemas de vida, inventário, reroll ou controle duplo exigem planejamento avançado.",
+          "entries": [
+            {
+              "name": "The Lost",
+              "variant": "Normal",
+              "unlock": "Morra em uma Sacrifice Room segurando o Missing Poster.",
+              "starts_with": "Voo, lágrimas espectrais, sem vida e Eternal D6 após seu desbloqueio; Holy Mantle é adicionado após 879 moedas na Greed Donation Machine.",
+              "core_mechanic": "Morre com qualquer golpe não bloqueado. Holy Mantle bloqueia o primeiro golpe em cada sala, e Devil Deals podem ser obtidos sem pagamento de vida.",
+              "strengths": [
+                "Voo e lágrimas espectrais",
+                "Devil Deals gratuitos",
+                "Eternal D6 melhora a qualidade dos itens"
+              ],
+              "weaknesses": [
+                "Morte com um único golpe após o escudo quebrar",
+                "Pequenos erros encerram partidas longas",
+                "Muitas interações de autodano são inutilizáveis"
+              ],
+              "difficulty": "Muito Difícil"
+            },
+            {
+              "name": "Jacob & Esau",
+              "variant": "Normal",
+              "unlock": "Derrote Mother.",
+              "starts_with": "Jacob tem três Red Hearts; Esau tem um Red Heart e um Soul Heart. Seus atributos e itens são separados, mas os consumíveis são compartilhados.",
+              "core_mechanic": "Ambos os personagens se movem juntos e podem coletar itens separados de escolhas simultâneas de pedestal duplo.",
+              "strengths": [
+                "Duas builds independentes",
+                "Pode obter dois itens de salas de escolha selecionadas",
+                "Alto dano inicial combinado"
+              ],
+              "weaknesses": [
+                "Duas hitboxes são difíceis de esquivar",
+                "Velocidades diferentes causam separação",
+                "A vida deve ser dividida"
+              ],
+              "difficulty": "Muito Difícil"
+            },
+            {
+              "name": "Tainted Cain",
+              "variant": "Tainted",
+              "unlock": "Use Red Key ou Cracked Key no closet escondido em Home enquanto joga como Cain.",
+              "starts_with": "Dois Red Hearts, uma chave e Bag of Crafting no pocket active slot.",
+              "core_mechanic": "Itens de pedestal quebram em pickups, e oito pickups armazenados são convertidos em um item fabricado.",
+              "strengths": [
+                "Forte conversão de recursos",
+                "Pode moldar a build deliberadamente",
+                "Poucos pickups são completamente desperdiçados"
+              ],
+              "weaknesses": [
+                "Não pode coletar itens de pedestal normais",
+                "Crafting exige conhecimento extensivo",
+                "Drops ruins podem atrasar o poder"
+              ],
+              "difficulty": "Muito Difícil"
+            },
+            {
+              "name": "Tainted Lazarus",
+              "variant": "Tainted",
+              "unlock": "Use Red Key ou Cracked Key no closet escondido em Home enquanto joga como Lazarus.",
+              "starts_with": "Alive Lazarus tem Red Hearts, Dead Lazarus tem Soul Hearts e Flip ocupa o pocket active slot.",
+              "core_mechanic": "Limpar salas alterna entre duas formas com vida, atributos e inventários separados. Flip muda as formas e revela itens apagados emparelhados.",
+              "strengths": [
+                "Duas builds especializadas",
+                "Flip pode fornecer itens adicionais",
+                "Formas podem cobrir funções diferentes"
+              ],
+              "weaknesses": [
+                "Recursos são divididos",
+                "Troca forçada atrapalha o planejamento de rota",
+                "Uma forma fraca pode bloquear a progressão"
+              ],
+              "difficulty": "Muito Difícil"
+            }
+          ]
+        },
+        {
+          "tier": "D",
+          "label": "Desafio Extremo",
+          "description": "Personagens projetados em torno de uma jogabilidade quase perfeita com pouca proteção contra um único erro.",
+          "entries": [
+            {
+              "name": "Tainted Lost",
+              "variant": "Tainted",
+              "unlock": "Use Red Key ou Cracked Key no closet escondido em Home enquanto joga como The Lost.",
+              "starts_with": "Voo, spectral tears, sem vida, um Holy Card e um multiplicador de dano inato.",
+              "core_mechanic": "Não possui Holy Mantle. Muitos itens defensivos ou de baixo valor são filtrados das pools disponíveis, mas os escudos de Holy Card permanecem como a proteção principal.",
+              "strengths": [
+                "Qualidade média de itens mais alta",
+                "Forte multiplicador de dano",
+                "Voo e spectral tears"
+              ],
+              "weaknesses": [
+                "Qualquer acerto sem escudo encerra a run",
+                "Sem Holy Mantle permanente",
+                "Chefes longos exigem uma execução quase impecável"
+              ],
+              "difficulty": "Extremo"
+            }
+          ]
+        }
+      ]
+    },
+    "isaacUnlockGuide": {
+      "title": "Guia de Desbloqueios de The Binding of Isaac Repentance",
+      "eyebrow": "ROTEIRO DE PROGRESSÃO",
+      "subtitle": "Abra os finais principais primeiro, obtenha itens de alto impacto e melhorias de personagem, depois complete os caminhos alternativos, personagens Tainted, desafios e marcas de conclusão finais em The Binding of Isaac: Repentance.",
+      "intro": "Uma rota de progressão útil prioriza desbloqueios que tornam as tentativas futuras mais fortes. O Hard Mode é necessário para recompensas selecionadas e conclusão final, enquanto o Greedier Mode fornece uma marca de conclusão separada e marcos de doação importantes.",
+      "displayType": "roteiro",
+      "phases": [
+        {
+          "phase": "1. Primeiro Final",
+          "requirement": "Derrote Mom em Depths II.",
+          "unlocks": "O capítulo The Womb, Final 1 e acesso a Mom's Heart em partidas posteriores.",
+          "priority": "Essencial",
+          "recommended_actions": "Use Isaac ou Azazel, visite cada Treasure Room inicial e entre na luta contra Mom com vida extra.",
+          "next_target": "Derrote Mom's Heart repetidamente."
+        },
+        {
+          "phase": "2. Ciclo de Mom's Heart",
+          "requirement": "Derrote Mom's Heart dez vezes, então complete uma décima primeira partida de Heart.",
+          "unlocks": "A décima derrota desbloqueia ???. A décima primeira substitui permanentemente Mom's Heart por It Lives!.",
+          "priority": "Essencial",
+          "recommended_actions": "Use vários personagens para começar a ganhar recompensas de conclusão enquanto aprende sobre os inimigos da Womb e dano de um coração inteiro.",
+          "next_target": "Use as saídas de It Lives! para chegar à Cathedral e Sheol."
+        },
+        {
+          "phase": "3. Cathedral e Sheol",
+          "requirement": "Após derrotar It Lives!, entre no feixe de luz para a Cathedral ou no alçapão para Sheol, então derrote Isaac ou Satan.",
+          "unlocks": "Marcas de conclusão do Capítulo V, recompensas de personagem e progresso em direção às duas rotas do Capítulo VI.",
+          "priority": "Essencial",
+          "recommended_actions": "Desenvolva ambas as rotas enquanto foca em desbloqueios úteis específicos de personagens.",
+          "next_target": "Derrote Isaac cinco vezes e Satan cinco vezes."
+        },
+        {
+          "phase": "4. The Polaroid e The Negative",
+          "requirement": "Derrote Isaac cinco vezes para desbloquear The Polaroid e Satan cinco vezes para desbloquear The Negative.",
+          "unlocks": "The Polaroid abre Chest após a Cathedral. The Negative abre Dark Room após Sheol.",
+          "priority": "Essencial",
+          "recommended_actions": "Pegue a fotografia que corresponde à rota pretendida após derrotar Mom.",
+          "next_target": "Derrote ??? em Chest e The Lamb em Dark Room."
+        },
+        {
+          "phase": "5. Mega Satan e Apollyon",
+          "requirement": "Limpe Chest ou Dark Room uma vez, então use bombas nas estátuas de Angel em duas Angel Rooms para montar as duas Key Pieces e abrir a porta dourada no Capítulo VI.",
+          "unlocks": "Recompensas de conclusão de Mega Satan; derrotar Mega Satan desbloqueia Apollyon.",
+          "priority": "Alta",
+          "recommended_actions": "Pule a primeira Devil Room para forçar o próximo spawn de sala de pacto para a rota de Angel, e reserve bombas para ambas as estátuas.",
+          "next_target": "Persiga Delirium através de portais da Void disponíveis."
+        },
+        {
+          "phase": "6. Boss Rush e Hush",
+          "requirement": "Derrote Mom em menos de 20 minutos para a Boss Rush e derrote Mom's Heart ou It Lives! em menos de 30 minutos para a Blue Womb e Hush.",
+          "unlocks": "Marcas de conclusão específicas de personagens, itens e progresso em direção ao caminho alternativo de Repentance.",
+          "priority": "Alta",
+          "recommended_actions": "Tente rotas cronometradas em runs fortes, use efeitos de revelação de mapa e pule salas de baixo valor.",
+          "next_target": "Derrote Hush três vezes."
+        },
+        {
+          "phase": "7. Caminho Alternativo",
+          "requirement": "Derrote Hush três vezes para desbloquear A Secret Exit.",
+          "unlocks": "Downpour ou Dross, Mines ou Ashpit, Mausoleum ou Gehenna, a rota do Knife Piece, Corpse e Mother.",
+          "priority": "Essencial para Repentance",
+          "recommended_actions": "A primeira porta alternativa custa uma chave, a segunda custa duas bombas, e a entrada de Mausoleum ou Gehenna custa dois corações cheios. Colete ambos os Knife Pieces e use a faca completada na porta de carne após Mom.",
+          "next_target": "Alcance Corpse II e derrote Mother."
+        },
+        {
+          "phase": "8. Mother e a Strange Door",
+          "requirement": "Colete ambos os Knife Pieces, entre em Corpse e derrote Mother.",
+          "unlocks": "Jacob and Esau, a Strange Door em Depths II, Desafio #39 Isaac's Awakening e a rota em direção a Home.",
+          "priority": "Essencial",
+          "recommended_actions": "Priorize vida e defesa porque Mother tem duas fases longas e boss armor.",
+          "next_target": "Complete o Ascent e derrote The Beast."
+        },
+        {
+          "phase": "9. Home, The Beast e Tainted Characters",
+          "requirement": "Em Depths II, derrote Mom, use The Fool para sair, abra a Strange Door com The Polaroid ou The Negative, alcance Dad's Note, complete o Ascent, entre em Home e derrote a rota de The Beast.",
+          "unlocks": "A rota do final definitivo e recompensas de Beast específicas de personagem. Abrir o baú de Mom em Home concede Red Key na primeira visita.",
+          "priority": "Essencial",
+          "recommended_actions": "Em runs posteriores, deixe um trinket em uma Treasure ou Boss Room antes do Ascent. Ele se torna uma Cracked Key na sala correspondente do Ascent. Use Red Key ou Cracked Key no closet oculto de Home para desbloquear o personagem Tainted atual.",
+          "next_target": "Priorize Tainted Isaac, Tainted Lilith e outros personagens com recompensas fortes."
+        },
+        {
+          "phase": "10. Marcos de Doação do Greed",
+          "requirement": "Complete o Greed Mode e doe moedas após derrotar Ultra Greed.",
+          "unlocks": "30 moedas desbloqueiam Wooden Nickel, 500 desbloqueiam o Greedier Mode, 879 dão a The Lost um Holy Mantle inicial e 1.000 desbloqueiam Keeper.",
+          "priority": "Alta",
+          "recommended_actions": "Alterne os personagens para reduzir o efeito da chance de travamento da máquina específica de cada personagem, e economize moedas para doação.",
+          "next_target": "Ganhe marcas de Greedier e os upgrades de sobrevivência de Keeper."
+        },
+        {
+          "phase": "11. Melhores Desbloqueios de Personagens Iniciais",
+          "requirement": "Complete as marcas de personagens selecionados.",
+          "unlocks": "Derrote Isaac como ??? para o D6 de Isaac; Satan como Isaac para Mom's Knife; Isaac como Azazel para Satanic Bible; Isaac como Bethany para Book of Virtues; Isaac e ??? como Jacob and Esau para The Stairway e Birthright.",
+          "priority": "Maior prioridade de itens iniciais",
+          "recommended_actions": "Obtenha essas recompensas antes de gastar muitas tentativas em objetivos de conclusão de baixo impacto.",
+          "next_target": "Comece as recompensas de Beast e de personagens Tainted."
+        },
+        {
+          "phase": "12. Melhores Desbloqueios de Repentance",
+          "requirement": "Complete as marcas selecionadas de Beast e Delirium.",
+          "unlocks": "C Section de The Beast como Lilith; Twisted Pair de The Beast como Tainted Lilith; Glitched Crown de The Beast como Tainted Isaac; Spindown Dice de Delirium como Tainted Isaac; Sacred Orb de The Beast como Tainted Lost.",
+          "priority": "Maior prioridade de late-game",
+          "recommended_actions": "Comece com Lilith, Tainted Lilith e Tainted Isaac. Tente obter Sacred Orb após se sentir confortável com o gerenciamento de Holy Card e chefes finais.",
+          "next_target": "Busque Rock Bottom, Godhead, Mega Mush e Death Certificate."
+        },
+        {
+          "phase": "13. Desafios, Runas e Utilidades",
+          "requirement": "Complete os desafios numerados selecionados e as conquistas gerais.",
+          "unlocks": "High Brow desbloqueia Jera; Demo Man desbloqueia Chaos Card; Cursed! desbloqueia Credit Card; Solar System desbloqueia Perthro; Isaac's Awakening desbloqueia Spirit Sword; cinco vitórias consecutivas no Daily Challenge desbloqueiam Cracked Crown.",
+          "priority": "Médio a Alto",
+          "recommended_actions": "Desbloqueie pelo menos seis runas ou Soul Stones para que Rune Shards parem de aparecer, depois priorize recompensas de reroll, duplicação, combate e compra gratuita.",
+          "next_target": "Complete as notas de post-it dos personagens restantes."
+        },
+        {
+          "phase": "14. Conclusão Completa",
+          "requirement": "Finalize as marcas necessárias de Hard Mode e Greedier, desbloqueie todos os finais e segredos, complete todas as outras conquistas e pegue cada item pelo menos uma vez.",
+          "unlocks": "Todas as notas de post-it de Hard Mode não-Tainted desbloqueiam Mega Mush. Todas as notas de post-it normais e Tainted desbloqueiam Death Certificate. Completar toda a coleção leva a Dead God.",
+          "priority": "Final",
+          "recommended_actions": "Finalize os personagens poderosos primeiro para melhorar a pool de itens, depois complete personagens difíceis como Jacob and Esau, The Lost e Tainted Lost em um arquivo de save maduro.",
+          "next_target": "Dead God no arquivo de save atual."
+        }
+      ]
+    },
+    "isaacBossesAndEndings": {
+      "title": "Chefes e Finais de The Binding of Isaac Repentance",
+      "eyebrow": "ROTAS DE CHEFES",
+      "subtitle": "Siga todas as rotas principais de Mom's Heart a The Beast. Cada entrada explica os requisitos de acesso, ataques característicos, prioridades de preparação e a marca de conclusão ou final obtido em The Binding of Isaac: Repentance.",
+      "intro": "Repentance abre seu endgame em camadas. Primeiras vitórias contra Mom's Heart desbloqueiam It Lives, Cathedral, Sheol, Blue Womb e pisos alternativos posteriores; rotas mais profundas exigem a Polaroid, o Negative, Key Pieces, Knife Pieces ou a Strange Door. Use as notas de rota abaixo para planejar cada run antes de se comprometer em Mom, It Lives ou nas portas do caminho alternativo.",
+      "displayType": "acordeão",
+      "bosses": [
+        {
+          "id": "moms-heart-it-lives",
+          "heading": "Mom's Heart e It Lives",
+          "route": "Derrote Mom para abrir Womb ou Utero, depois limpe o segundo andar do Chapter IV. Mom's Heart é o chefe final até que It Lives o substitua permanentemente após 11 vitórias contra Mom's Heart.",
+          "requirements": [
+            "Derrote Mom uma vez para desbloquear o Chapter IV.",
+            "Derrote Mom's Heart 10 vezes para desbloquear a rota do Blue Womb.",
+            "Derrote Mom's Heart 11 vezes para desbloquear It Lives, que substitui permanentemente Mom's Heart."
+          ],
+          "attacks": [
+            "Alterna entre se esconder no teto e retornar ao centro enquanto invoca inimigos.",
+            "Dispara anéis, espirais e rajadas direcionadas de lágrimas vermelhas."
+          ],
+          "preparation": [
+            "Entre no Chapter IV com vida suficiente para dano de um coração inteiro.",
+            "Priorize dano sustentado, velocidade de movimento e uma maneira de eliminar inimigos invocados rapidamente."
+          ],
+          "result": "Concede a marca de conclusão do coração. As primeiras vitórias contra Mom's Heart avançam os Endings 2-11 e desbloqueiam recursos importantes de progressão."
+        },
+        {
+          "id": "isaac",
+          "heading": "Isaac",
+          "route": "Após derrotar It Lives, entre no feixe de luz para alcançar a Cathedral. Derrote Isaac lá. Depois de desbloquear a Polaroid derrotando Isaac cinco vezes, leve-a a partir de Mom e entre no baú final do Isaac para continuar para o Chest.",
+          "requirements": [
+            "Desbloqueie It Lives derrotando Mom's Heart 11 vezes.",
+            "Derrote Isaac cinco vezes para desbloquear a Polaroid para futuras lutas contra Mom."
+          ],
+          "attacks": [
+            "Dispara rajadas de lágrimas cardinais e diagonais enquanto se reposiciona pela sala.",
+            "Fases posteriores adicionam padrões densos de lágrimas sagradas e feixes no estilo Crack the Sky marcados por luz no chão."
+          ],
+          "preparation": [
+            "Continue se movendo entre caminhos seguros em vez de circular perto do chefe.",
+            "Bloqueio de projéteis, orbitais e alta velocidade de movimento tornam a fase dos feixes mais segura."
+          ],
+          "result": "Concede a marca de conclusão da cruz e o Ending 13. A rota da Polaroid continua através do Chest até ???."
+        },
+        {
+          "id": "satan",
+          "heading": "Satan",
+          "route": "Após derrotar It Lives, entre no alçapão para chegar a Sheol. A luta começa com The Fallen, continua contra a parte superior do corpo de Satan e termina com uma fase de pernas pisoteando. Depois de desbloquear o Negative derrotando Satan cinco vezes, leve-o a partir de Mom e entre no baú final de Satan para alcançar o Dark Room.",
+          "requirements": [
+            "Desbloqueie It Lives derrotando Mom's Heart 11 vezes.",
+            "Derrote Satan cinco vezes para desbloquear o Negative para futuras lutas contra Mom."
+          ],
+          "attacks": [
+            "The Fallen abre a luta com investidas, tiros divididos e ataques de Brimstone.",
+            "Satan dispara lágrimas miradas e lasers de Brimstone horizontais ou verticais."
+          ],
+          "preparation": [
+            "Guarde dano explosivo para The Fallen para que as fases principais comecem de forma limpa.",
+            "Observe o rosto e a orientação do corpo de Satan para sinais de laser."
+          ],
+          "result": "Concede a marca de conclusão da cruz invertida e o Ending 12. A rota do Negative continua pelo Dark Room até The Lamb."
+        },
+        {
+          "id": "mega-satan",
+          "heading": "Mega Satan",
+          "route": "Complete o Chapter VI, então derrote Angels para coletar Key Piece 1 e Key Piece 2. Leve ambas as peças para o Chest ou Dark Room e abra a grande porta dourada na sala inicial.",
+          "requirements": [
+            "Complete o Chapter VI derrotando ??? ou The Lamb para habilitar Key Pieces.",
+            "Use bombas em estátuas de Angel ou lute contra Angels de outra forma e colete ambas as Key Pieces.",
+            "Chegue ao Chest com o Polaroid ou ao Dark Room com o Negative."
+          ],
+          "attacks": [
+            "Alterna ataques diretos de mão, laser, projéteis e ondas de rocha com ondas de inimigos.",
+            "Invoca Deadly Sins, Horsemen, Angels e outros chefes durante fases de atordoamento."
+          ],
+          "preparation": [
+            "Traga dano forte de limpeza de sala para as ondas invocadas e dano consistente de alvo único para Mega Satan.",
+            "Proteção contra projéteis, invulnerabilidade e vida alta são especialmente valiosos."
+          ],
+          "result": "Concede a marca de conclusão de brimstone e o Ending 16. Na vitória, a partida pode abrir um portal para o Void; caso contrário, ela termina imediatamente."
+        },
+        {
+          "id": "hush",
+          "heading": "Hush",
+          "route": "Após derrotar Mom's Heart 10 vezes, derrote Mom's Heart ou It Lives antes de 30:00. Entre na grande porta do Blue Womb, use as salas de preparação e lute contra Hush.",
+          "requirements": [
+            "Derrote Mom's Heart 10 vezes para desbloquear o Blue Womb.",
+            "Derrote Mom's Heart ou It Lives antes do cronômetro de 30 minutos de jogo.",
+            "Permaneça na sala do chefe antes que a porta temporizada desapareça."
+          ],
+          "attacks": [
+            "Começa com uma primeira forma semelhante ao Blue Baby antes de revelar o corpo principal.",
+            "Usa anéis densos, lágrimas de continuum que atravessam a tela, Hush Flies, escavação e lasers celestiais."
+          ],
+          "preparation": [
+            "Priorize velocidade de movimento, vida, dano sustentado e defesa contra projéteis.",
+            "Use as duas salas de tesouro e a loja do Blue Womb antes de entrar na luta."
+          ],
+          "result": "Concede a marca de conclusão de Hush e o Ending 17. Derrotar Hush sempre abre um portal para o Void e derrotar Hush três vezes desbloqueia o caminho de andares alternativos."
+        },
+        {
+          "id": "delirium",
+          "heading": "Delirium",
+          "route": "Entre em um portal para o Void após um chefe principal. Hush sempre abre um; It Lives, Isaac, Satan, ???, The Lamb e Mega Satan também podem abrir um após o Void ter sido desbloqueado. Explore o Void até que a sala do chefe contendo Delirium seja encontrada.",
+          "requirements": [
+            "Derrote Hush uma vez para desbloquear o Void.",
+            "Use um portal para o Void após um chefe de fim de jogo elegível."
+          ],
+          "attacks": [
+            "Transforma-se rapidamente em chefes encontrados durante a partida e copia seus ataques.",
+            "Teleporta-se frequentemente e pode encadear formas com velocidades de movimento e hitboxes muito diferentes."
+          ],
+          "preparation": [
+            "Maximize a sobrevivência antes de entrar no Void porque a sala correta do chefe não é identificada antecipadamente.",
+            "Velocidade alta, efeitos de invulnerabilidade, bloqueio de projéteis e disparos teleguiados consistentes são fortes."
+          ],
+          "result": "Concede a marca de conclusão de papel rasgado e o Ending 20."
+        },
+        {
+          "id": "mother",
+          "heading": "Mother",
+          "route": "Após derrotar Hush três vezes, entre em Downpour ou Dross com uma chave, Mines ou Ashpit com duas bombas, e Mausoleum ou Gehenna pagando dois corações cheios. Colete Knife Piece 1 no mundo do espelho em Downpour II e Knife Piece 2 no poço de mina abandonado em Mines II. Use a faca completada na porta de carne após a luta contra a Mom alternativa, derrote o Mom's Heart alternativo, e então continue por Corpse I e Corpse II.",
+          "requirements": [
+            "Derrote Hush três vezes para desbloquear A Secret Exit e os andares alternativos.",
+            "Em Downpour or Dross II, toque no fogo branco, entre no espelho e pegue o Knife Piece 1 na sala de tesouro espelhada.",
+            "Em Mines or Ashpit II, pressione todos os três botões amarelos, entre no poço de mina abandonado e escape com o Knife Piece 2."
+          ],
+          "attacks": [
+            "A fase um usa uma faca arremessada, um ataque de bola e fístula saltitante, larvas e dispersões de lágrimas em camadas.",
+            "A fase dois adiciona ataques de varredura com as mãos, investidas rápidas, projéteis saltitantes e linhas densas de lágrimas de parede a parede."
+          ],
+          "preparation": [
+            "Entre em Corpse com alta velocidade de movimento, vida alta e dano suficiente para duas fases longas.",
+            "Guarde escudos, invulnerabilidade e efeitos de dano explosivo para a fase dois."
+          ],
+          "result": "Concede a marca de conclusão da faca e o Ending 21. A primeira vitória contra Mother desbloqueia a rota da Strange Door para Home."
+        },
+        {
+          "id": "dogma",
+          "heading": "Dogma",
+          "route": "Após derrotar Mother uma vez, use uma bomba na caveira marcada em Depths II para obter The Fool. Derrote Mom, pegue a Polaroid ou o Negative, teletransporte-se para fora e use-o para abrir a Strange Door. Alcance a Mausoleum II especial, pegue o Dad's Note, complete a Ascension até Home, durma na cama da Mom e aproxime-se da televisão na sala de estar.",
+          "requirements": [
+            "Derrote Mother uma vez para desbloquear a Strange Door.",
+            "Traga a Polaroid ou o Negative de volta para a sala inicial de Depths II.",
+            "Pegue o Dad's Note e termine a Ascension de andares invertidos."
+          ],
+          "attacks": [
+            "A forma de televisão emite projéteis de estática e grandes ataques de feixe.",
+            "A segunda forma investe, mergulha, circula a sala e lança padrões rotativos de penas ou auréolas."
+          ],
+          "preparation": [
+            "Use a cama de Home antes da luta para restaurar a vida.",
+            "Mantenha espaço aberto ao redor de Isaac para as investidas e padrões giratórios de Dogma."
+          ],
+          "result": "Dogma é a primeira fase da rota da Beast. Derrotá-lo concede o efeito defensivo de Dogma e avança diretamente para o desafio final."
+        },
+        {
+          "id": "the-beast",
+          "heading": "The Beast",
+          "route": "Após Dogma, derrote Ultra Famine, Ultra Pestilence, Ultra War e Ultra Death em sequência, então lute contra The Beast em uma arena de rolagem horizontal.",
+          "requirements": [
+            "Complete a sequência da Strange Door, Dad's Note, Ascension, Home e Dogma."
+          ],
+          "attacks": [
+            "Cada Ultra Horseman tem uma luta aérea separada com dispersões de projéteis e padrões de investida.",
+            "The Beast usa anéis de fogo, botes, rugidos, estalactites e longas sequências de perseguição através das chamas."
+          ],
+          "preparation": [
+            "Monte uma build para uma longa sequência de vários chefes, em vez de uma única luta curta de dano explosivo.",
+            "Vida, redução de dano, orbitais, teleguiado e dano sustentado são mais fortes do que efeitos de limpeza de sala."
+          ],
+          "result": "Concede a marca de conclusão da nota e o Ending 22, o final da história principal em Repentance."
+        },
+        {
+          "id": "alternate-floors-endings-completion-marks",
+          "heading": "Andares Alternativos, Finais e Marcas de Conclusão",
+          "route": "As ramificações principais são Cathedral para o Chest, Sheol para o Dark Room, Blue Womb para Hush, o Void para Delirium, a rota de Knife Piece para Corpse e Mother, e a rota de Strange Door para Home, Dogma e The Beast.",
+          "requirements": [
+            "Polaroid: derrote Isaac cinco vezes; carregue-a por Cathedral para entrar no Chest.",
+            "Negative: derrote Satan sem vezes; carregue-o por Sheol para entrar no Dark Room.",
+            "Key Pieces: derrote Angels após completar o Chapter VI; use ambos para abrir a porta do Mega Satan.",
+            "Andares alternativos: derrote Hush três vezes; pague uma chave, duas bombas e dois corações cheios nas três portas de rota."
+          ],
+          "attacks": [
+            "As marcas de conclusão rastreiam Mom's Heart ou It Lives, Isaac, Satan, Boss Rush, ???, The Lamb, Mega Satan, Hush, Delirium, Mother, The Beast e Greed ou Greedier.",
+            "Vitórias no Hard Mode adicionam sangue às marcas correspondentes; Greedier aprimora a marca de Greed."
+          ],
+          "preparation": [
+            "Escolha a ramificação pretendida antes da Mom para que a Polaroid, o Negative, a porta com limite de tempo ou o caminho alternativo correto estejam disponíveis.",
+            "Use o Hard Mode ao coletar marks para ganhar as versões normal e Hard juntas."
+          ],
+          "result": "Um post-it note completo registra as principais vitórias de rota do personagem e desbloqueia recompensas específicas do personagem."
+        }
+      ]
+    },
+    "isaacChallenges": {
+      "title": "Desafios e Recompensas de The Binding of Isaac Repentance",
+      "eyebrow": "GUIA DE DESAFIOS",
+      "subtitle": "Compare cada desafio por configuração inicial, regras especiais, destino, dificuldade e recompensa permanente em The Binding of Isaac: Repentance. A prioridade de recompensa destaca as conclusões que mais melhoram as runs futuras.",
+      "intro": "Repentance contém 45 runs de desafio predefinidas. Runs de desafio bloqueiam o progresso normal de conquistas, mas completar o destino indicado desbloqueia uma rune, card, item, trinket, tipo de pickup, efeito de pill ou upgrade de personagem específico. Os alvos iniciais de maior impacto são High Brow para Jera, Solar System para Perthro, Waka Waka para Death's Touch, The Family Man para Epic Fetus e Isaac's Awakening para Spirit Sword.",
+      "displayType": "challengeTable",
+      "challenges": [
+        {
+          "number": 1,
+          "challenge": "Pitch Black",
+          "character": "Isaac",
+          "setup": "Sem itens iniciais.",
+          "rules": "Curse of Darkness e Curse of the Unknown permanentes; shops não aparecem; treasure rooms permanecem disponíveis.",
+          "destination": "Mom",
+          "difficulty": "Fácil",
+          "reward": "Rune of Hagalaz",
+          "strategy": "Trate como uma run de Isaac normal e use o layout visível do mapa para compensar a escuridão."
+        },
+        {
+          "number": 2,
+          "challenge": "High Brow",
+          "character": "Isaac",
+          "setup": "Number One, E. Coli, Butt Bombs, Flush! e Petrified Poop.",
+          "rules": "Treasure rooms não aparecem.",
+          "destination": "Mom",
+          "difficulty": "Fácil",
+          "reward": "Rune of Jera",
+          "strategy": "Priorize range porque o Number One o reduz drasticamente."
+        },
+        {
+          "number": 3,
+          "challenge": "Head Trauma",
+          "character": "Isaac",
+          "setup": "Tiny Planet, Soy Milk, The Small Rock e Iron Bar.",
+          "rules": "Treasure rooms não aparecem.",
+          "destination": "Mom",
+          "difficulty": "Médio",
+          "reward": "Rune of Ehwaz",
+          "strategy": "Lute a média distância e deixe o anel de lágrimas orbitais passar pelos inimigos."
+        },
+        {
+          "number": 4,
+          "challenge": "Darkness Falls",
+          "character": "Eve",
+          "setup": "Sacrificial Dagger, Dark Matter, Dead Bird, Pentagram, Razor Blade e Whore of Babylon.",
+          "rules": "Treasure rooms não aparecem.",
+          "destination": "Satan",
+          "difficulty": "Médio",
+          "reward": "Rune of Dagaz",
+          "strategy": "Use Sacrificial Dagger agressivamente nos primeiros floors e mantenha a vida vermelha baixa o suficiente para manter a Whore of Babylon."
+        },
+        {
+          "number": 5,
+          "challenge": "The Tank",
+          "character": "Magdalene",
+          "setup": "Infamy, Thunder Thighs, Bucket of Lard e Yum Heart.",
+          "rules": "Treasure rooms não podem aparecer; a velocidade inicial é extremamente baixa.",
+          "destination": "Mom",
+          "difficulty": "Médio",
+          "reward": "Rune of Ansuz",
+          "strategy": "Upgrades de velocidade são a primeira prioridade."
+        },
+        {
+          "number": 6,
+          "challenge": "Solar System",
+          "character": "Isaac",
+          "setup": "Distant Admiration, Forever Alone, Halo of Flies e Transcendence.",
+          "rules": "De olhos vendados; Isaac não pode disparar lágrimas; treasure rooms não podem aparecer.",
+          "destination": "Mom's Heart",
+          "difficulty": "Difícil",
+          "reward": "Rune of Perthro",
+          "strategy": "Use o voo para se esconder sobre vãos e rochas enquanto os orbitais causam dano por contato."
+        },
+        {
+          "number": 7,
+          "challenge": "Suicide King",
+          "character": "Lazarus",
+          "setup": "Ipecac, Mr. Mega, My Reflection e uma pílula aleatória.",
+          "rules": "Treasure rooms não podem aparecer; disparos refletidos de Ipecac podem facilmente causar dano a Lazarus.",
+          "destination": "Isaac",
+          "difficulty": "Difícil",
+          "reward": "Carta Suicide King",
+          "strategy": "Atire a partir de corredores abertos e espere pelo arco de retorno antes de avançar."
+        },
+        {
+          "number": 8,
+          "challenge": "Cat Got Your Tongue",
+          "character": "Isaac",
+          "setup": "Vida extra, Guppy's Head, Guppy's Hairball e Guppy's Tail.",
+          "rules": "De olhos vendados; treasure rooms não podem aparecer; a Hairball e as moscas azuis são a principal fonte de dano inicial.",
+          "destination": "Mom",
+          "difficulty": "Difícil",
+          "reward": "Rune of Algiz",
+          "strategy": "Balance a Hairball pelos inimigos, depois recue."
+        },
+        {
+          "number": 9,
+          "challenge": "Demo Man",
+          "character": "Isaac",
+          "setup": "Remote Detonator, Dr. Fetus e Match Stick.",
+          "rules": "Treasure rooms não podem aparecer.",
+          "destination": "Mom's Heart",
+          "difficulty": "Fácil",
+          "reward": "Chaos Card",
+          "strategy": "Use o Dr. Fetus de longo alcance e posicione bombas onde os inimigos permanecerão até a detonação."
+        },
+        {
+          "number": 10,
+          "challenge": "Cursed!",
+          "character": "Magdalene",
+          "setup": "Blue Map, Treasure Map, The Compass, Raw Liver, Yum Heart e Child's Heart.",
+          "rules": "Todas as portas normais são cercadas por espinhos que causam dano; as entradas de salas especiais e salas secretas não.",
+          "destination": "Mom",
+          "difficulty": "Médio",
+          "reward": "Credit Card",
+          "strategy": "Planeje a rota mais curta com os itens de mapeamento e evite voltar pelo mesmo caminho."
+        },
+        {
+          "number": 11,
+          "challenge": "Glass Cannon",
+          "character": "Judas",
+          "setup": "Epic Fetus e Loki's Horns.",
+          "rules": "Salas do tesouro não aparecem.",
+          "destination": "Satan",
+          "difficulty": "Médio",
+          "reward": "Rules Card",
+          "strategy": "Foque na mira pretendida do Epic Fetus e ignore os alvos extras do Loki's Horns."
+        },
+        {
+          "number": 12,
+          "challenge": "When Life Gives You Lemons",
+          "character": "Isaac",
+          "setup": "9 Volt, Habit, Lemon Mishap e uma pílula Lemon Party.",
+          "rules": "Salas do tesouro não aparecem.",
+          "destination": "Mom",
+          "difficulty": "Fácil",
+          "reward": "Card Against Humanity",
+          "strategy": "Coloque o Lemon Mishap onde os inimigos precisam passar, especialmente perto de portas e em salas estreitas."
+        },
+        {
+          "number": 13,
+          "challenge": "Beans!",
+          "character": "Isaac",
+          "setup": "9 Volt, The Bean, Black Bean, Butt Bombs e Pyro.",
+          "rules": "De olhos vendados; salas do tesouro não aparecem.",
+          "destination": "Mom",
+          "difficulty": "Médio",
+          "reward": "Burnt Penny",
+          "strategy": "Economize Butt Bombs e use The Bean sempre que os inimigos se agruparem perto de Isaac."
+        },
+        {
+          "number": 14,
+          "challenge": "It's in the Cards",
+          "character": "Isaac",
+          "setup": "9 Volt, The Battery, Deck of Cards, Starter Deck e duas cartas de tarô aleatórias.",
+          "rules": "Salas do tesouro não aparecem.",
+          "destination": "Mom",
+          "difficulty": "Fácil",
+          "reward": "SMB Super Fan",
+          "strategy": "Use o Deck of Cards com frequência e guarde cartas de alto impacto para chefes ou salas perigosas."
+        },
+        {
+          "number": 15,
+          "challenge": "Slow Roll",
+          "character": "Isaac",
+          "setup": "Polyphemus, Cupid's Arrow e My Reflection.",
+          "rules": "Salas do Tesouro não podem aparecer; o dano é fixado em 100 e a cadência de tiro em 0.50.",
+          "destination": "Mom",
+          "difficulty": "Fácil",
+          "reward": "Swallowed Penny",
+          "strategy": "Ignore melhorias de dano e lágrimas; busque alcance, teleguiadas, tiro múltiplo e outros modificadores de lágrimas."
+        },
+        {
+          "number": 16,
+          "challenge": "Computer Savvy",
+          "character": "Isaac",
+          "setup": "Spoon Bender, Technology e Technology 2.",
+          "rules": "Salas do Tesouro não podem aparecer.",
+          "destination": "Mom",
+          "difficulty": "Fácil",
+          "reward": "Robo-Baby 2.0",
+          "strategy": "Os lasers teleguiados já são fortes o suficiente para limpar rapidamente."
+        },
+        {
+          "number": 17,
+          "challenge": "Waka Waka",
+          "character": "Isaac",
+          "setup": "Anti-Gravity e Strange Attractor.",
+          "rules": "Salas do Tesouro não podem aparecer.",
+          "destination": "Mom",
+          "difficulty": "Médio",
+          "reward": "Death's Touch",
+          "strategy": "Dê toques para atirar e soltar lágrimas rapidamente em vez de acumular aglomerados instáveis."
+        },
+        {
+          "number": 18,
+          "challenge": "The Host",
+          "character": "Isaac",
+          "setup": "The Mulligan, Spiderbaby e Tick.",
+          "rules": "Salas do Tesouro não podem aparecer; Tick normalmente não pode ser descartado.",
+          "destination": "Mom",
+          "difficulty": "Fácil",
+          "reward": "Tech.5",
+          "strategy": "Apoie-se na geração de moscas e busque dano ou sorte."
+        },
+        {
+          "number": 19,
+          "challenge": "The Family Man",
+          "character": "Isaac",
+          "setup": "BFFS!, Rotten Baby, Brother Bobby, Sister Maggy e Dad's Key.",
+          "rules": "De olhos vendados; salas do Tesouro não podem aparecer.",
+          "destination": "Isaac",
+          "difficulty": "Difícil",
+          "reward": "Epic Fetus",
+          "strategy": "Colete familiares, orbitais, Box of Friends e efeitos que escalam com familiares."
+        },
+        {
+          "number": 20,
+          "challenge": "Purist",
+          "character": "Isaac",
+          "setup": "Sem itens iniciais.",
+          "rules": "Salas do tesouro não podem aparecer.",
+          "destination": "Mom's Heart",
+          "difficulty": "Médio",
+          "reward": "Rune of Berkano",
+          "strategy": "Trate lojas, bibliotecas, itens de chefe e Angel ou Devil Rooms como as principais fontes de build."
+        },
+        {
+          "number": 21,
+          "challenge": "XXXXXXXXL",
+          "character": "Isaac",
+          "setup": "Sem itens iniciais.",
+          "rules": "Cada andar é muito maior do que o normal.",
+          "destination": "Mom's Heart",
+          "difficulty": "Médio",
+          "reward": "Gold Hearts podem aparecer em partidas futuras",
+          "strategy": "Compre melhorias de mapeamento e velocidade, depois limpe apenas o que a build precisa."
+        },
+        {
+          "number": 22,
+          "challenge": "SPEED!",
+          "character": "Isaac",
+          "setup": "Sem itens iniciais.",
+          "rules": "A maior parte da jogabilidade é acelerada; após 16 minutos, Isaac recebe dano a cada 10 segundos.",
+          "destination": "Mom's Heart",
+          "difficulty": "Difícil",
+          "reward": "Get Out of Jail Free card",
+          "strategy": "Pule salas de baixo valor, pegue melhorias rápidas de dano e evite preparações longas de reroll."
+        },
+        {
+          "number": 23,
+          "challenge": "Blue Bomber",
+          "character": "???",
+          "setup": "Kamikaze!, Pyromaniac, Mr. Mega e Brother Bobby.",
+          "rules": "Vendado; salas do tesouro não podem aparecer.",
+          "destination": "Satan",
+          "difficulty": "Médio",
+          "reward": "Gold Bombs podem aparecer em partidas futuras",
+          "strategy": "Kamikaze! cura em vez de machucar por causa do Pyromaniac, fornecendo dano e recuperação repetíveis."
+        },
+        {
+          "number": 24,
+          "challenge": "PAY TO PLAY",
+          "character": "Isaac",
+          "setup": "Money = Power, Sack of Pennies e 50 moedas.",
+          "rules": "Cada porta normal custa uma moeda; Isaac solta moedas ao ser atingido; salas do tesouro não podem aparecer.",
+          "destination": "Isaac",
+          "difficulty": "Difícil",
+          "reward": "Efeitos das pílulas Percs! e Addicted",
+          "strategy": "Mantenha uma reserva de moedas para portas obrigatórias e evite caminhos desnecessários."
+        },
+        {
+          "number": 25,
+          "challenge": "Have a Heart",
+          "character": "Isaac",
+          "setup": "Doze recipientes de corações vermelhos com apenas um coração cheio, além de Charm of the Vampire.",
+          "rules": "Pickups de corações vermelhos tornam-se moedas e muitos itens de regeneração não funcionam.",
+          "destination": "Mom's Heart",
+          "difficulty": "Médio",
+          "reward": "Efeitos das pílulas Re-Lax e ???",
+          "strategy": "Use Charm of the Vampire, cartas de restauração de vida, camas e cura que não seja por pickups."
+        },
+        {
+          "number": 26,
+          "challenge": "I RULE!",
+          "character": "Isaac",
+          "setup": "Key Piece 1, Key Piece 2, The Ladder, The Boomerang, Trinity Shield e Mom's Knife.",
+          "rules": "Treasure rooms não podem aparecer.",
+          "destination": "Mega Satan",
+          "difficulty": "Médio",
+          "reward": "Poker Chip",
+          "strategy": "Mom's Knife fornece dano suficiente para a rota completa."
+        },
+        {
+          "number": 27,
+          "challenge": "BRAINS!",
+          "character": "???",
+          "setup": "Thunder Thighs e três familiares Bob's Brain.",
+          "rules": "De olhos vendados; Treasure rooms não podem aparecer; explosões de Bob's Brain podem causar dano ao jogador.",
+          "destination": "???",
+          "difficulty": "Extremo",
+          "reward": "Stud Finder",
+          "strategy": "Atire apenas com espaço aberto entre Isaac e o alvo."
+        },
+        {
+          "number": 28,
+          "challenge": "PRIDE DAY!",
+          "character": "Isaac",
+          "setup": "Rainbow Worm, Rainbow Baby e 3 Dollar Bill.",
+          "rules": "Treasure rooms não podem aparecer; Rainbow Worm não pode ser descartado.",
+          "destination": "Mom's Heart",
+          "difficulty": "Médio",
+          "reward": "D8",
+          "strategy": "Pausa antes de entrar em salas perigosas quando Rainbow Worm estiver mostrando um padrão estranho."
+        },
+        {
+          "number": 29,
+          "challenge": "Onan's Streak",
+          "character": "Judas",
+          "setup": "Book of Belial e Chocolate Milk.",
+          "rules": "Cada lágrima que erra um inimigo causa dano a Judas.",
+          "destination": "Isaac",
+          "difficulty": "Difícil",
+          "reward": "Kidney Stone",
+          "strategy": "Use tiros totalmente carregados e deliberados em alvos grandes."
+        },
+        {
+          "number": 30,
+          "challenge": "The Guardian",
+          "character": "Isaac",
+          "setup": "Holy Grail, Punching Bag, Isaac's Heart e Spear of Destiny.",
+          "rules": "Isaac's Heart segue Punching Bag e é a hitbox vulnerável; Isaac não pode contar com lágrimas normais.",
+          "destination": "Mom's Heart",
+          "difficulty": "Extremo",
+          "reward": "Blank Rune",
+          "strategy": "Bloqueie as ameaças com o corpo usando o Isaac invulnerável enquanto mantém o coração errante longe dos inimigos."
+        },
+        {
+          "number": 31,
+          "challenge": "Backasswards",
+          "character": "Isaac",
+          "setup": "Vida máxima alta aleatória, 10 itens aleatórios e ambas as Key Pieces.",
+          "rules": "Começa no Mega Satan e avança de trás para frente até o Basement I; um item base e um recipiente de coração vermelho são perdidos a cada ascensão.",
+          "destination": "Basement I",
+          "difficulty": "Difícil",
+          "reward": "Lazarus começa com Anemic",
+          "strategy": "Reinicie conjuntos de itens fracos antes de tentar o Mega Satan."
+        },
+        {
+          "number": 32,
+          "challenge": "Aprils Fool",
+          "character": "Isaac",
+          "setup": "Sem itens iniciais.",
+          "rules": "HUD, pickups, sprites de itens, preços e informações do mapa são enganosos; todo chefe é o The Bloat.",
+          "destination": "Mom's Heart",
+          "difficulty": "Difícil",
+          "reward": "Magdalene começa com uma pílula de Full Health",
+          "strategy": "Julgue os pickups pelo efeito após a coleta, em vez da aparência."
+        },
+        {
+          "number": 33,
+          "challenge": "Pokey Mans",
+          "character": "Isaac",
+          "setup": "Friendly Ball e Mom's Eyeshadow.",
+          "rules": "Friendly Ball cria um monstro encantado e recarrega quando esse monstro morre; salas de tesouro não podem surgir.",
+          "destination": "Isaac",
+          "difficulty": "Médio",
+          "reward": "Charged Keys podem aparecer em partidas futuras",
+          "strategy": "Capture inimigos resistentes ou de alto dano e substitua aliados fracos frequentemente."
+        },
+        {
+          "number": 34,
+          "challenge": "Ultra Hard",
+          "character": "Isaac",
+          "setup": "Ambas as Key Pieces.",
+          "rules": "Maldições permanentes, sem pickups de coração, a maioria dos inimigos sendo campeões e chefes duplos sempre que possível.",
+          "destination": "Mega Satan",
+          "difficulty": "Extremo",
+          "reward": "Samson começa com Child's Heart",
+          "strategy": "Reinicie até que as duas primeiras salas de tesouro forneçam grande dano ou cura renovável."
+        },
+        {
+          "number": 35,
+          "challenge": "Pong",
+          "character": "Isaac",
+          "setup": "Cupid's Arrow e Rubber Cement.",
+          "rules": "O dano é fixo em 100 e a cadência de tiro em 0.20.",
+          "destination": "???",
+          "difficulty": "Médio",
+          "reward": "Greed's Gullet",
+          "strategy": "Alinhe ricochetes perfurantes para atingir vários inimigos com cada tiro lento."
+        },
+        {
+          "number": 36,
+          "challenge": "Scat Man",
+          "character": "Isaac",
+          "setup": "9 Volt, The Poop, Dirty Mind, três Butt Bombs, Skatole, E. Coli, BFFS!, Thunder Thighs e Mysterious Candy.",
+          "rules": "Treasure rooms não podem aparecer.",
+          "destination": "Mom",
+          "difficulty": "Fácil",
+          "reward": "Dirty Mind",
+          "strategy": "Quebre cada cocô para criar dips amigáveis e use BFFS! para amplificá-los."
+        },
+        {
+          "number": 37,
+          "challenge": "Bloody Mary",
+          "character": "Bethany",
+          "setup": "Blood Oath, Blood Bag, Anemic, Book of Belial e Child's Heart.",
+          "rules": "Treasure rooms não podem aparecer; Blood Oath remove vida vermelha no início de cada andar para atributos temporários.",
+          "destination": "Satan",
+          "difficulty": "Extremo",
+          "reward": "Sigil of Baphomet",
+          "strategy": "Busque cura renovável, proteção ao estilo Holy Mantle e geração de vida."
+        },
+        {
+          "number": 38,
+          "challenge": "Baptism by Fire",
+          "character": "Bethany",
+          "setup": "Urn of Souls, Schoolbag, Guppy's Paw e Maggy's Faith.",
+          "rules": "Blindfolded; Treasure rooms não podem aparecer; Urn of Souls consome almas coletadas como combustível.",
+          "destination": "Isaac",
+          "difficulty": "Difícil",
+          "reward": "Purgatory",
+          "strategy": "Agrupe os inimigos antes de disparar a Urn e economize cargas para os chefes."
+        },
+        {
+          "number": 39,
+          "challenge": "Isaac's Awakening",
+          "character": "Isaac",
+          "setup": "Spirit Sword, Trinity Shield e Mom's Bracelet.",
+          "rules": "Treasure rooms não podem aparecer; a rota termina em Mother.",
+          "destination": "Mother",
+          "difficulty": "Difícil",
+          "reward": "Spirit Sword",
+          "strategy": "Use giros de espada carregados para eliminar projéteis e Trinity Shield para proteger a direção para a qual está virado."
+        },
+        {
+          "number": 40,
+          "challenge": "Seeing Double",
+          "character": "Jacob and Esau",
+          "setup": "20/20 em ambos os personagens; Esau também tem X-Ray Vision.",
+          "rules": "Cada inimigo e boss surge duas vezes.",
+          "destination": "Mom's Heart",
+          "difficulty": "Extremo",
+          "reward": "Broken Glasses",
+          "strategy": "Mantenha Jacob and Esau bem alinhados e priorize dano em toda a sala, itens de perfuração e itens defensivos."
+        },
+        {
+          "number": 41,
+          "challenge": "Pica Run",
+          "character": "Isaac",
+          "setup": "Mom's Box, Mom's Purse e Marbles.",
+          "rules": "Todos os itens de pedestal tornam-se trinkets; Marbles ativa a cada acerto.",
+          "destination": "Isaac",
+          "difficulty": "Difícil",
+          "reward": "Ice Cube",
+          "strategy": "Use Mom's Box constantemente e engula os trinkets mais fortes antes de substituí-los."
+        },
+        {
+          "number": 42,
+          "challenge": "Hot Potato",
+          "character": "Tainted Forgotten",
+          "setup": "Sem itens iniciais.",
+          "rules": "Com venda (Blindfolded); treasure rooms não podem aparecer; o corpo explode automaticamente a cada 2,5 segundos e é a arma principal.",
+          "destination": "Satan",
+          "difficulty": "Difícil",
+          "reward": "A carta The Chariot invertida",
+          "strategy": "Arremesse o corpo, mova a alma para segurança e cronometre as explosões antes de recuperá-lo."
+        },
+        {
+          "number": 43,
+          "challenge": "Cantripped!",
+          "character": "Tainted Cain",
+          "setup": "Bag of Crafting.",
+          "rules": "Cartas e pílulas tornam-se item cards; usar uma concede um efeito de item aleatório para a sala atual; recompensas de boss expandem a mão e fornecem mais item cards.",
+          "destination": "Mom",
+          "difficulty": "Médio",
+          "reward": "A carta The Justice invertida",
+          "strategy": "Guarde item cards poderosas para bosses e use efeitos mais fracos para limpar salas normais."
+        },
+        {
+          "number": 44,
+          "challenge": "Red Redemption",
+          "character": "Tainted Jacob",
+          "setup": "Dad's Key e Red Key.",
+          "rules": "Os andares começam isolados; use cargas infinitas da Red Key para revelar salas. Dark Esau aparece após 20 usos, com outro adicionado a cada cinco usos adicionais.",
+          "destination": "Mother",
+          "difficulty": "Extremo",
+          "reward": "A carta The Hermit invertida",
+          "strategy": "Use itens de mapeamento para localizar prováveis posições de salas especiais e bosses com menos aberturas de Red Key."
+        },
+        {
+          "number": 45,
+          "challenge": "DELETE THIS",
+          "character": "Isaac",
+          "setup": "TMTRAINER.",
+          "rules": "Itens glitched têm efeitos aleatórios; o visual dos andares e os preços das lojas são randomizados.",
+          "destination": "???",
+          "difficulty": "Difícil",
+          "reward": "A carta Temperance invertida",
+          "strategy": "Teste efeitos glitched em salas seguras e evite ativar repetidamente efeitos que causem dano, teletransporte ou que travem o progresso da run."
+        }
+      ]
+    },
+    "isaacBestMods": {
+      "title": "Melhores Mods para The Binding of Isaac Repentance",
+      "eyebrow": "STEAM WORKSHOP",
+      "subtitle": "Melhore as informações de itens, navegação, legibilidade de chefes, música, prática e variedade de endgame para The Binding of Isaac: Repentance. Cada card inclui compatibilidade de ramificações, dependências e o principal conflito a ser evitado.",
+      "intro": "Para um loadout estável, comece com um overlay de informações, um sistema de barras de chefes e um pequeno número de mods de qualidade de vida. Adicione frameworks de música apenas quando uma trilha sonora exigir e teste grandes expansões de conteúdo individualmente antes de combiná-las. Repentance+ também inclui novas melhorias de interface integradas, enquanto ferramentas da Workshop como External Item Descriptions continuam úteis para estatísticas detalhadas e conteúdo de mods.",
+      "displayType": "modCards",
+      "mods": [
+        {
+          "id": "external-item-descriptions",
+          "name": "External Item Descriptions",
+          "category": "Interface",
+          "best_for": "Conhecer os itens sem sair do jogo",
+          "description": "Mostra descrições detalhadas de colecionáveis, trinkets, cartas, runas, pílulas, horse pills e salas selecionadas. Também suporta resultados de Spindown Dice, informações da Bag of Crafting, transformações e um grande número de mods de conteúdo.",
+          "compatibility": "Afterbirth+, Repentance, Repentance+ e REPENTOGON",
+          "requirements": "Sem framework obrigatório; Mod Config Menu é recomendado para configurações dentro do jogo.",
+          "conflicts": "Evite exibi-lo ao lado de outro overlay de descrição de itens completo, a menos que ambos tenham sido posicionados separadamente."
+        },
+        {
+          "id": "goodtrip-fixed",
+          "name": "GoodTrip [Fixed]",
+          "category": "Qualidade de Vida",
+          "best_for": "Removendo o backtracking em salas limpas",
+          "description": "Permite que os jogadores se teletransportem entre salas limpas diretamente pelo minimapa. Navegação por mouse, teclado e controle é suportada, enquanto salas de combate e destinos não limpos permanecem bloqueados.",
+          "compatibility": "Repentance e Repentance+",
+          "requirements": "A edição corrigida é independente; o mod GoodTrip original não é necessário.",
+          "conflicts": "Use apenas a edição corrigida e revise os comandos de controle do minimapa ao combiná-lo com outros mods de mapa."
+        },
+        {
+          "id": "enhanced-boss-bars",
+          "name": "Enhanced Boss Bars",
+          "category": "Interface e Visuais",
+          "best_for": "Monitoramento mais claro de vida para múltiplos chefes",
+          "description": "Substitui a exibição padrão de chefes por ícones individuais, barras de vida responsivas e mais de 45 designs especiais de barras de chefes. É especialmente útil para chefes segmentados e salas contendo vários chefes.",
+          "compatibility": "Repentance e Repentance+",
+          "requirements": "Mod Config Menu é opcional para customização visual.",
+          "conflicts": "Desative todos os outros mods que alteram as barras de vida dos chefes; mods de barras de chefes sobrepostos podem produzir barras originais e customizadas duplicadas."
+        },
+        {
+          "id": "planetarium-chance",
+          "name": "Planetarium Chance [REP+]",
+          "category": "Interface",
+          "best_for": "Planejando pular Treasure Rooms",
+          "description": "Adiciona a chance de Planetarium do andar atual ao HUD e contabiliza colecionáveis e modificadores relevantes. Torna o planejamento de rotas de Planetarium legível sem a necessidade de rastrear porcentagens manualmente.",
+          "compatibility": "Repentance+",
+          "requirements": "A DLC Repentance e o branch atual do Repentance+.",
+          "conflicts": "Reposiciona elementos do HUD quando outra exibição de atributo ou chance ocupa a mesma área da tela."
+        },
+        {
+          "id": "practice-mode",
+          "name": "Modo de Treino",
+          "category": "Treino",
+          "best_for": "Treinamento contra superchefes",
+          "description": "Adiciona um desafio de treino para Mega Satan, Hush, Delirium, Mother e Dogma com o gauntlet final. O modo fornece uma build mínima realista, oferece vida ilimitada e rastreia quantas vezes o jogador é atingido.",
+          "compatibility": "Jogo offline do Repentance",
+          "requirements": "Repentance.",
+          "conflicts": "Use um perfil de treino separado e desative mods que alteram a jogabilidade ao aprender os padrões de ataque vanilla."
+        },
+        {
+          "id": "da-rules",
+          "name": "Da Rules",
+          "category": "Sandbox e Testes",
+          "best_for": "Experimentos personalizados, geração de elementos e treino baseado em regras",
+          "description": "Adiciona um menu sandbox para substituir, redimensionar, mover, gerar e modificar inimigos, pickups, visuais e o comportamento das salas. É útil para testar sinergias, recriar situações e criar regras de treino personalizadas.",
+          "compatibility": "Afterbirth+, Repentance e Repentance+",
+          "requirements": "Abra o menu completo a partir da sala inicial de um andar; a tecla padrão configurável do menu é J.",
+          "conflicts": "Conjuntos de regras complexos podem interferir com mods de conteúdo que sobrescrevem as mesmas entidades ou eventos de sala."
+        },
+        {
+          "id": "antibirth-music-plus-plus-plus",
+          "name": "Antibirth Music+++",
+          "category": "Música",
+          "best_for": "Uma trilha sonora completa no estilo de Antibirth",
+          "description": "Substitui a trilha sonora padrão por um conjunto de músicas de Antibirth expandido e polido, incluindo faixas alternativas para lojas e arcades, além de opções adicionais de músicas de chefes.",
+          "compatibility": "Repentance+",
+          "requirements": "O Music Mod Callback é necessário para vários comportamentos avançados de faixas; o Mod Config Menu ativa suas opções.",
+          "conflicts": "Quando usado com o Soundtrack Menu, ative o Modo Passivo do mod. Não combine vários mods que substituem a mesma configuração de música sem um gerenciador de trilha sonora."
+        },
+        {
+          "id": "soundtrack-menu",
+          "name": "Soundtrack Menu",
+          "category": "Utilitário de Música",
+          "best_for": "Misturando trilhas sonoras andar por andar",
+          "description": "Adiciona um menu no jogo para selecionar pacotes de música e atribuir faixas. Permite que vários mods de trilha sonora compatíveis coexistam sem substituir permanentemente uns aos outros.",
+          "compatibility": "Repentance e Repentance+",
+          "requirements": "Use o REPENTOGON ou o Music Mod Callback correto para Repentance/Repentance+, mas não ambos ao mesmo tempo.",
+          "conflicts": "Instalar as versões de Afterbirth+ e Repentance do Music Mod Callback ao mesmo tempo pode quebrar a reprodução."
+        },
+        {
+          "id": "music-mod-callback",
+          "name": "Music Mod Callback",
+          "category": "Framework",
+          "best_for": "Suporte para mods de trilha sonora avançados",
+          "description": "Fornece callbacks de música usados por substituições de trilha sonora e ferramentas de seleção de música. Ele não faz nada sozinho e deve ser instalado apenas quando outro mod inscrito o listar como um requisito.",
+          "compatibility": "Repentance e Repentance+",
+          "requirements": "Inscreva-se na edição Repentance/Repentance+.",
+          "conflicts": "Desative a edição separada Afterbirth+ e não a execute junto com o REPENTOGON quando a ferramenta de trilha sonora instruir os usuários a escolher apenas um framework."
+        },
+        {
+          "id": "fiend-folio-reheated",
+          "name": "Fiend Folio: Reheated",
+          "category": "Expansão de Conteúdo",
+          "best_for": "Uma grande reformulação de conteúdo pós-conclusão",
+          "description": "Adiciona mais de 500 monstros, 23 chefes, mais de 140 itens, mais de 48.000 salas, dois conceitos principais de personagens jogáveis e 10 desafios. Isso altera significativamente a variedade e a dificuldade dos andares.",
+          "compatibility": "Jogo offline no Repentance",
+          "requirements": "O Custom Stage API deve estar inscrito e ativado.",
+          "conflicts": "Pacotes grandes de salas, inimigos, estágios e conteúdo podem se sobrepor; teste este mod com uma carga pequena antes de adicionar mais reformulações."
+        },
+        {
+          "id": "instalacao-e-ativacao",
+          "name": "Instalação e Ativação",
+          "category": "Configuração",
+          "best_for": "Uma primeira configuração limpa de mods",
+          "description": "Abra uma página da Workshop, selecione Inscrever-se, deixe o Steam terminar o download, inicie o jogo, abra Mods no menu principal e ative o mod e todas as dependências listadas. Reinicie o jogo após instalar frameworks, grandes pacotes de conteúdo ou sistemas de música.",
+          "compatibility": "Combine o título e a descrição da Workshop com a ramificação ativa do jogo: Repentance ou Repentance+.",
+          "requirements": "Acesso à Steam Workshop e a DLC listada na página do mod.",
+          "conflicts": "Não se inscreva em substituições obsoletas e mantidas ao mesmo tempo."
+        },
+        {
+          "id": "ordem-de-carregamento-e-solucao-de-problemas",
+          "name": "Ordem de Carregamento e Solução de Problemas",
+          "category": "Configuração",
+          "best_for": "Corrigindo travamentos, menus ausentes, HUDs duplicados e áudio corrompido",
+          "description": "Isaac não inclui um gerenciador de ordem de carregamento do tipo arrastar e soltar. Mantenha os frameworks necessários ativados, remova duplicatas obsoletas e adicione mods em pequenos lotes. Se um problema aparecer, desative metade da carga, reinicie e repita até que o conflito seja isolado.",
+          "compatibility": "Mantenha todos os mods ativados na mesma ramificação Repentance ou Repentance+ e use uma configuração sem mods para Daily Runs e matchmaking online.",
+          "requirements": "Faça backup dos dados salvos antes de testar grandes reformulações e verifique o painel de itens necessários de cada página da Workshop.",
+          "conflicts": "Os conflitos mais comuns são descrições de itens duplicadas, duas substituições de barras de chefe, múltiplos sistemas de música, versões antigas de dependências e várias reformulações de estágios editando os mesmos andares."
+        }
+      ]
+    },
+    "isaacOnlineCoop": {
+      "title": "Cooperativo Online de The Binding of Isaac Repentance Plus",
+      "eyebrow": "MULTIJOGADOR ONLINE",
+      "subtitle": "Configure uma partida Steam para dois a quatro jogadores, escolha a opção de matchmaking correta e entenda como personagens, recursos, desbloqueios, comunicação e atualizações oficiais funcionam online no Repentance+.",
+      "intro": "Repentance+ é a DLC gratuita da Steam que adiciona cooperativo online integrado ao Repentance. Até quatro personagens completos podem entrar na mesma partida através de Friend Match, Public Match ou Quick Match, com desafios, Greed Mode, Daily Runs, conquistas, marcas de conclusão, chat, emotes e mudanças de balanceamento focadas no multijogador incluídas.",
+      "displayType": "passosCoop",
+      "steps": [
+        {
+          "step": 1,
+          "heading": "Instale o Conteúdo Necessário da Steam",
+          "details": [
+            "Cada jogador precisa de Rebirth, Afterbirth, Afterbirth+, Repentance e a DLC gratuita Repentance+ na Steam.",
+            "Use a mesma versão atual do Repentance+ e reinicie após atualizações."
+          ]
+        },
+        {
+          "step": 2,
+          "heading": "Escolha o Matchmaking",
+          "options": [
+            {
+              "mode": "Friend Match",
+              "use": "Crie um lobby para até quatro jogadores da lista de amigos Steam do anfitrião."
+            },
+            {
+              "mode": "Public Match",
+              "use": "Hospede ou entre em um lobby visível com outros jogadores online."
+            },
+            {
+              "mode": "Partida Rápida",
+              "use": "Junte-se a um grupo disponível automaticamente."
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "heading": "Selecionar Personagens",
+          "details": [
+            "Cada jogador seleciona um personagem completo disponível no save do Repentance+ daquele jogador.",
+            "Vida, itens passivos e ativos, cartas, pílulas e trinkets são individuais; moedas, bombas e chaves são compartilhados.",
+            "Combine personagens de durabilidade, dano e utilidade para que o grupo não dispute cada melhoria."
+          ]
+        },
+        {
+          "step": 4,
+          "heading": "Escolha um Modo Suportado",
+          "details": [
+            "O jogo online suporta Normal, Hard, Greed, Greedier, Challenges e Daily Runs.",
+            "Escolha Hard ou Greedier quando a marca de conclusão pretendida exigir a dificuldade mais difícil."
+          ]
+        },
+        {
+          "step": 5,
+          "heading": "Compartilhe Itens de Forma Justa",
+          "details": [
+            "Muitos pedestais ainda vão para apenas um jogador, então distribua itens que definem a build por sinergia e rotacione melhorias gerais.",
+            "Use a rolagem de dados da roda de emotes quando vários jogadores quiserem o mesmo item.",
+            "Gaste moedas, bombas e chaves compartilhadas apenas após o grupo concordar."
+          ]
+        },
+        {
+          "step": 6,
+          "heading": "Progridam Juntos",
+          "details": [
+            "Jogadores qualificados podem obter conquistas, desbloqueios e marcas de conclusão de personagem em partidas online.",
+            "A rota normal, dificuldade, desafio e requisitos de pré-requisito ainda se aplicam ao save de cada jogador.",
+            "Planeje um destino que complete marcas restantes para vários personagens selecionados."
+          ]
+        },
+        {
+          "step": 7,
+          "heading": "Comunique-se e Modere",
+          "details": [
+            "Use a roda de emotes para marcar rotas, tinted rocks, salas secretas, consumíveis e escolhas de itens.",
+            "Use o chat de texto do grupo para decisões de rota e recursos.",
+            "Use a votação de expulsão quando um jogador público perturbar a partida repetidamente."
+          ]
+        },
+        {
+          "step": 8,
+          "heading": "Corrija Problemas de Conexão ou Compatibilidade",
+          "details": [
+            "Verifique a posse da DLC e a compatibilidade de versão primeiro.",
+            "Desative mods da Workshop, reinicie o jogo e verifique os arquivos pela Steam.",
+            "Recrie o lobby com outro host caso a conexão ou a sincronização continuem falhando."
+          ]
+        },
+        {
+          "step": 9,
+          "heading": "Acompanhe as Notas de Atualização Oficiais",
+          "updates": [
+            {
+              "version": "1.9.7.6",
+              "focus": "Correções online iniciais e ajustes de sistema"
+            },
+            {
+              "version": "1.9.7.8",
+              "focus": "Mais correções de bugs online e melhorias"
+            },
+            {
+              "version": "1.9.7.11",
+              "focus": "Correções de jogabilidade, melhorias online e trabalho de compatibilidade"
+            },
+            {
+              "version": "1.9.7.13",
+              "focus": "Novos recursos, mudanças de balanceamento, correções e descrições de itens integradas"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "faq": {
+    "title": "Perguntas",
+    "titleHighlight": "Frequentes",
+    "subtitle": "Tudo o que você precisa saber sobre The Binding of Isaac: Repentance",
+    "questions": [
+      {
+        "question": "O que é The Binding of Isaac: Repentance?",
+        "answer": "The Binding of Isaac: Repentance é a última grande DLC para o roguelike dungeon shooter The Binding of Isaac. Ela adiciona centenas de itens, 17 personagens Tainted, andares alternativos, novos superbosses incluindo Mother, Dogma e The Beast, e o modo co-op online do Repentance+."
+      },
+      {
+        "question": "Quantos itens existem em The Binding of Isaac: Repentance?",
+        "answer": "The Binding of Isaac: Repentance contém mais de 700 itens colecionáveis, além de trinkets, cartas, runas e pílulas. Muitos são desbloqueados através de marcas de conclusão de personagens, desafios e marcos de doação, então uma rota de progressão sólida melhora a pool de itens com o tempo."
+      },
+      {
+        "question": "Eu preciso do Repentance+ para o co-op online em The Binding of Isaac?",
+        "answer": "Sim. Repentance+ é a DLC gratuita do Steam que adiciona co-op online integrado ao The Binding of Isaac: Repentance. Todos os jogadores precisam do conjunto completo de DLCs e da mesma versão atual do Repentance+ para participar de uma Friend Match, Public Match ou Quick Match."
+      },
+      {
+        "question": "O que são os personagens Tainted em The Binding of Isaac: Repentance?",
+        "answer": "Personagens Tainted são versões alternativas e mais difíceis de jogar de cada personagem normal em The Binding of Isaac: Repentance. Cada um é desbloqueado no armário oculto em Home usando a Red Key ou Cracked Key após alcançar a rota da Strange Door através de Mother e The Beast."
+      },
+      {
+        "question": "Como eu desbloqueio os andares alternativos em The Binding of Isaac: Repentance?",
+        "answer": "Em The Binding of Isaac: Repentance, derrote Hush três vezes para desbloquear A Secret Exit, depois pague uma chave, duas bombas e dois corações cheios nas portas das três rotas. Isso abre Downpour ou Dross, Mines ou Ashpit, e Mausoleum ou Gehenna, levando a Corpse e à luta contra o chefe Mother."
+      },
+      {
+        "question": "Onde posso jogar The Binding of Isaac: Repentance?",
+        "answer": "The Binding of Isaac: Repentance está disponível no Steam para Windows, com suporte para Linux e Steam Deck através do Proton. Existem versões de console para Nintendo Switch, PlayStation e Xbox, embora o suporte para mods e co-op online seja focado no PC."
+      },
+      {
+        "question": "O The Binding of Isaac: Repentance suporta mods?",
+        "answer": "Sim. The Binding of Isaac: Repentance suporta mods do Steam Workshop para sobreposições de interface, barras de chefes, ferramentas de treino, pacotes de música e grandes expansões de conteúdo. O Repentance+ também adiciona melhorias de interface integradas mais recentes."
+      },
+      {
+        "question": "O que é a conclusão Dead God em The Binding of Isaac: Repentance?",
+        "answer": "Dead God é o marco de conclusão final em The Binding of Isaac: Repentance. Ele é alcançado ao completar cada marca de conclusão do Hard Mode e do Greedier, desbloquear todos os finais e segredos, completar todas as conquistas e pegar cada item pelo menos uma vez."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Pronto para explorar The Binding of Isaac: Repentance?",
+    "description": "Junte-se à comunidade de Isaac no Discord para guias de itens, rotas de desbloqueio, estratégias contra chefes e discussões sobre mods!",
+    "joinCommunity": "Entre no Discord",
+    "joinGame": "Jogue no Steam"
+  },
+  "footer": {
+    "title": "Wiki de The Binding of Isaac: Repentance",
+    "description": "Sua central de recursos completa para itens, personagens, desbloqueios, chefes, desafios, rotas e mods de The Binding of Isaac: Repentance.",
+    "resources": "Recursos",
+    "community": "Comunidade",
+    "legal": "Legal",
+    "discord": "Discord",
+    "reddit": "Reddit",
+    "steamCommunity": "Comunidade Steam",
+    "steamStore": "Loja Steam",
+    "about": "Sobre",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço",
+    "copyrightNotice": "Copyright",
+    "copyright": "© 2026 The Binding of Isaac: Repentance Wiki. Não afiliado aos desenvolvedores de The Binding of Isaac.",
+    "disclaimer": "Site de recursos não oficial criado por fãs."
+  },
+  "pages": {
+    "guide": {
+      "title": "Guia de The Binding of Isaac Repentance",
+      "description": "Guias passo a passo para iniciantes, o básico de como jogar, progressão de andares e mecânicas principais para jogadores novos e antigos de The Binding of Isaac: Repentance.",
+      "metaTitle": "Guia de The Binding of Isaac Repentance - Guia para Iniciantes e Dicas",
+      "metaDescription": "Aprenda a jogar The Binding of Isaac: Repentance com guias passo a passo para iniciantes, progressão de andares, mecânicas básicas, controles e dicas essenciais para cada run.",
+      "categoryLabel": "GUIAS E DETONADOS",
+      "whatIs": "O que é o Guia?",
+      "whatIsDescription": "Um ponto de entrada completo para The Binding of Isaac: Repentance, cobrindo como as runs funcionam, o que é o jogo, se vale a pena jogar e o caminho passo a passo do seu primeiro andar do Basement até os finais avançados.",
+      "why": "Por que ler o guia?",
+      "whySteps": {
+        "step1Title": "Aprenda o Básico",
+        "step1Description": "Entenda movimentação, tears, items, rooms, devil deals e a progressão de floors",
+        "step2Title": "Planeje sua Run",
+        "step2Description": "Siga um passo a passo claro do Basement ao Depths e além",
+        "step3Title": "Evite Erros de Iniciante",
+        "step3Description": "Escolha os items certos, gerencie vida e keys, e sobreviva aos floors iniciais"
+      },
+      "featured": "Destaques e Essenciais",
+      "all": "Todos os Guias"
+    },
+    "items": {
+      "title": "Items de The Binding of Isaac Repentance",
+      "description": "Guias detalhados de items cobrindo passives, active items, familiars, trinkets, cards, runes e synergies para The Binding of Isaac: Repentance.",
+      "metaTitle": "Items de The Binding of Isaac Repentance - Melhores Items, Trinkets e Synergies",
+      "metaDescription": "Banco de dados completo de items para The Binding of Isaac: Repentance incluindo passives, active items, familiars, trinkets, cards, runes e as synergies mais fortes.",
+      "categoryLabel": "ITEMS E SYNERGIES",
+      "whatIs": "O que são Items?",
+      "whatIsDescription": "Guias abrangentes para cada collectible em The Binding of Isaac: Repentance. Aprenda efeitos de item, item pools, requisitos de unlock, melhores usos e valor de synergy.",
+      "why": "Por que conferir guias de items?",
+      "whySteps": {
+        "step1Title": "Monte sua Build de forma Inteligente",
+        "step1Description": "Reconheça items que definem a run e evite anti-synergies",
+        "step2Title": "Reroll e Duplicação",
+        "step2Description": "Use dice, runes e ferramentas de duplicação para melhorar pedestals fracos",
+        "step3Title": "Desbloqueie a Pool",
+        "step3Description": "Complete challenges e marks para remover Rune Shards e adicionar items premium"
+      },
+      "featured": "Destaques e Essenciais",
+      "all": "Todos os Items"
+    },
+    "mods": {
+      "title": "Mods de The Binding of Isaac Repentance",
+      "description": "Os melhores mods da Steam Workshop para interface, qualidade de vida, treino, música e conteúdo em The Binding of Isaac: Repentance.",
+      "metaTitle": "Melhores Mods de The Binding of Isaac Repentance - Guia da Steam Workshop",
+      "metaDescription": "Descubra os melhores mods para The Binding of Isaac: Repentance incluindo descrições de items, boss bars, ferramentas de treino, pacotes de música e expansões de conteúdo.",
+      "categoryLabel": "MELHORES MODS",
+      "whatIs": "O que são Mods?",
+      "whatIsDescription": "Modificações da Steam Workshop para The Binding of Isaac: Repentance que melhoram informações de items, navegação, legibilidade de bosses, música, treino e variedade no endgame.",
+      "why": "Por que usar mods?",
+      "whySteps": {
+        "step1Title": "Melhore a Legibilidade",
+        "step1Description": "Adicione descrições de items, boss bars e indicadores de chance de Planetarium",
+        "step2Title": "Runs de Treino",
+        "step2Description": "Treine contra superbosses com uma build mínima realista",
+        "step3Title": "Expanda o Conteúdo",
+        "step3Description": "Adicione novos inimigos, items, rooms e trilhas sonoras"
+      },
+      "featured": "Destaques e Essenciais",
+      "all": "Todos os Mods"
+    },
+    "unlocks": {
+      "title": "Desbloqueios de The Binding of Isaac Repentance",
+      "description": "Um roteiro de progressão de Mom até Dead God cobrindo andares, finais, marcas de conclusão, itens e desafios.",
+      "metaTitle": "Guia de Desbloqueio de The Binding of Isaac Repentance - De Mom a Dead God",
+      "metaDescription": "Siga um roteiro de progressão completo para The Binding of Isaac: Repentance, desbloqueando finais, personagens, itens, andares alternativos e marcas de conclusão finais.",
+      "categoryLabel": "ROTEIRO DE DESBLOQUEIOS",
+      "whatIs": "O que são Desbloqueios?",
+      "whatIsDescription": "Uma ordem de desbloqueio priorizada para The Binding of Isaac: Repentance que libera os itens, personagens e caminhos alternativos mais fortes antes de objetivos de baixo impacto.",
+      "why": "Por que seguir uma ordem de desbloqueio?",
+      "whySteps": {
+        "step1Title": "Melhore o Pool",
+        "step1Description": "Desbloqueie itens de alto impacto cedo para que as futuras runs fiquem mais fortes",
+        "step2Title": "Abra Rotas",
+        "step2Description": "Alcance andares alternativos, Mother e The Beast através de marcos importantes",
+        "step3Title": "Alcance Dead God",
+        "step3Description": "Colete todas as marcas de conclusão no Hard Mode, Greedier e Tainted"
+      },
+      "featured": "Destaques e Essenciais",
+      "all": "Todos os Desbloqueios"
+    },
+    "bosses": {
+      "title": "Chefes de The Binding of Isaac Repentance",
+      "description": "Padrões de ataque dos chefes, preparação e rotas para Mom's Heart, Isaac, Satan, Mega Satan, Hush, Delirium, Mother, Dogma e The Beast.",
+      "metaTitle": "Chefes de The Binding of Isaac Repentance - Padrões de Ataque e Rotas",
+      "metaDescription": "Derrote todos os chefes principais em The Binding of Isaac: Repentance com padrões de ataque, dicas de preparação e as rotas e requisitos para alcançar cada superchefe.",
+      "categoryLabel": "CHEFES E FINAIS",
+      "whatIs": "O que são Chefes?",
+      "whatIsDescription": "Guias para todos os chefes principais e superchefes em The Binding of Isaac: Repentance, incluindo requisitos de acesso, ataques característicos e os finais que eles concedem.",
+      "why": "Por que estudar os chefes?",
+      "whySteps": {
+        "step1Title": "Leia os Padrões",
+        "step1Description": "Reconheça os sinais de ataque e as zonas seguras para cada superchefe",
+        "step2Title": "Prepare Builds",
+        "step2Description": "Traga o dano, a defesa e a movimentação certos para lutas longas",
+        "step3Title": "Desbloqueie Finais",
+        "step3Description": "Ganhe marcas de conclusão e acesso a rotas a cada vitória"
+      },
+      "featured": "Destaques e Essenciais",
+      "all": "Todos os Chefes"
+    },
+    "multiplayer": {
+      "title": "Multiplayer de The Binding of Isaac Repentance",
+      "description": "Configuração de coop para jogo online e local, incluindo como funcionam o multiplayer online, o coop de sofá local e os babies em The Binding of Isaac: Repentance.",
+      "metaTitle": "Multiplayer de The Binding of Isaac Repentance - Guia de Coop Online e Local",
+      "metaDescription": "Configure o coop em The Binding of Isaac: Repentance com guias sobre multiplayer online, coop de sofá local, remote play e como os players babies compartilham itens e dano.",
+      "categoryLabel": "COOP E MULTIPLAYER",
+      "whatIs": "O que é Multiplayer?",
+      "whatIsDescription": "Jogo cooperativo em The Binding of Isaac: Repentance onde jogadores extras entram como babies que compartilham vida, itens e controle de lágrimas através de online, remote play e coop de sofá local.",
+      "why": "Por que jogar coop?",
+      "whySteps": {
+        "step1Title": "Compartilhe a Run",
+        "step1Description": "Divida movimentação, itens e dano com amigos pelos mesmos floors",
+        "step2Title": "Reviva e Recupere-se",
+        "step2Description": "Use as vidas extras de baby para sobreviver a lutas contra bosses mais longas",
+        "step3Title": "Jogue Online ou Couch",
+        "step3Description": "Conecte-se através do multiplayer online, Steam Remote Play ou coop local"
+      },
+      "featured": "Destaques e Essenciais",
+      "all": "Todos os Guias de Multiplayer"
+    },
+    "versions": {
+      "title": "Versões de The Binding of Isaac Repentance",
+      "description": "Cobertura de plataformas e edições para The Binding of Isaac: Repentance no Steam, Switch, Switch 2, Mac, a atualização Plus, e como se compara ao Rebirth.",
+      "metaTitle": "Versões de The Binding of Isaac Repentance - Steam, Switch, Switch 2 & Mac",
+      "metaDescription": "Compare cada versão de The Binding of Isaac: Repentance incluindo Steam, Nintendo Switch, Switch 2, Mac, a atualização Repentance Plus, e as diferenças em relação ao Rebirth.",
+      "categoryLabel": "VERSÕES E PLATAFORMAS",
+      "whatIs": "O que são Versões?",
+      "whatIsDescription": "Guias de plataforma e edição para The Binding of Isaac: Repentance cobrindo Steam PC, Nintendo Switch e Switch 2, Mac, a atualização gratuita de conteúdo Repentance Plus, e como Repentance difere de Rebirth e Afterbirth+.",
+      "why": "Por que comparar versões?",
+      "whySteps": {
+        "step1Title": "Escolha sua Plataforma",
+        "step1Description": "Escolha entre Steam, Switch, Switch 2 e Mac para o seu setup",
+        "step2Title": "Entenda o Repentance Plus",
+        "step2Description": "Saiba o que a atualização gratuita Plus adiciona além da DLC base",
+        "step3Title": "Veja as Diferenças",
+        "step3Description": "Compare o Repentance com o Rebirth e Afterbirth+ antes de comprar"
+      },
+      "featured": "Destaques e Essenciais",
+      "all": "Todos os Guias de Versão"
+    },
+    "support": {
+      "title": "Suporte de The Binding of Isaac Repentance",
+      "description": "Correções e solução de problemas para tela preta, configurações de idioma, localização de save file, FPS baixo e crashes ao iniciar em The Binding of Isaac: Repentance.",
+      "metaTitle": "Suporte de The Binding of Isaac Repentance - Correções, Crashes e Save Files",
+      "metaDescription": "Resolva problemas comuns em The Binding of Isaac: Repentance incluindo tela preta ao iniciar, opções de idioma ausentes, localização de save file, FPS baixo e o jogo não iniciando.",
+      "categoryLabel": "SUPORTE E CORREÇÕES",
+      "whatIs": "O que é Suporte?",
+      "whatIsDescription": "Guias de solução de problemas para The Binding of Isaac: Repentance que resolvem erros de tela preta, configuração de idioma e localização, backup e localização de save file, FPS baixo e crashes na inicialização.",
+      "why": "Por que usar os guias de suporte?",
+      "whySteps": {
+        "step1Title": "Corrija Problemas de Inicialização",
+        "step1Description": "Resolva problemas de tela preta, o jogo não abrir e crashes na inicialização",
+        "step2Title": "Defina seu Idioma",
+        "step2Description": "Ative e troque idiomas quando as opções estiverem ausentes",
+        "step3Title": "Faça Backup dos Saves",
+        "step3Description": "Localize e faça backup dos seus save files antes de reinstalar ou mudar de plataforma"
+      },
+      "featured": "Destaques e Essenciais",
+      "all": "Todos os Guias de Suporte"
+    }
   }
 }

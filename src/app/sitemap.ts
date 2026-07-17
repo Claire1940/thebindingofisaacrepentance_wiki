@@ -7,27 +7,27 @@ export const dynamic = 'force-static'
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.thebindingofisaacrepentance.wiki'
 
-// 内容类型优先级配置
+// 内容类型优先级配置（与 navigation.ts 的 8 个分类一一对应）
 const contentTypePriority: Record<string, number> = {
-	'guides': 0.9,
-	'crafting': 0.9,
-	'biomes': 0.8,
-	'creatures': 0.8,
+	'guide': 0.9,
 	'items': 0.8,
-	'achievements': 0.7,
-	'lore': 0.7,
+	'bosses': 0.8,
+	'unlocks': 0.7,
+	'mods': 0.7,
+	'multiplayer': 0.6,
+	'versions': 0.6,
 	'support': 0.6,
 }
 
-// 内容更新频率配置
+// 内容更新频率配置（与 navigation.ts 的 8 个分类一一对应）
 const contentTypeChangeFrequency: Record<string, 'daily' | 'weekly' | 'monthly'> = {
-	'guides': 'weekly',
-	'crafting': 'weekly',
-	'biomes': 'weekly',
-	'creatures': 'weekly',
+	'guide': 'weekly',
 	'items': 'weekly',
-	'achievements': 'monthly',
-	'lore': 'monthly',
+	'bosses': 'weekly',
+	'unlocks': 'weekly',
+	'mods': 'weekly',
+	'multiplayer': 'monthly',
+	'versions': 'monthly',
 	'support': 'monthly',
 }
 
