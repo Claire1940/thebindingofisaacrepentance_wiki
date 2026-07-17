@@ -1,0 +1,182 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "Como Jogar The Binding of Isaac Repentance: Guia Completo para Iniciantes (2026)",
+  description: "Aprenda a jogar The Binding of Isaac Repentance com nosso guia de 2026. Domine mecânicas básicas, sinergias de itens, desbloqueio de personagens e rotas finais.",
+  category: "Guia",
+  image: "https://placehold.co/800x400/120B0D/F4E9E7?text=How+To+Play+Isaac+Repentance",
+  date: "2026-07-17",
+  author: "Equipe da Wiki de The Binding of Isaac Repentance"
+}
+
+<Callout type="info" title="Guia Rápido">
+- **Como Jogar The Binding of Isaac Repentance**: Foque no ciclo básico de limpar salas, gerenciar sua vida e coletar sinergias de itens.
+- **Gerenciamento de Vida**: Priorize **Corações de Alma** (Soul Hearts) e **Corações Pretos** (Black Hearts) para proteger seus recipientes de Corações Vermelhos e manter suas chances de Acordo com o Diabo/Anjo.
+- **Prioridade de Recursos**: Use chaves primeiro para as **Salas do Tesouro** (Treasure Rooms) e bombas para **Rochas Marcadas** (Tinted Rocks) ou para encontrar **Salas Secretas** (Secret Rooms).
+- **Caminho de Progressão**: Foque em derrotar a Mãe (Mom), e depois o Coração da Mãe (Mom's Heart) 11 vezes para desbloquear os capítulos mais profundos, como a Catedral (Cathedral) e o Sheol.
+- **HUD Otimizado**: Sempre ative o **Found HUD** e o **Extra HUD** no menu de opções para acompanhar seus atributos numéricos e o histórico de itens ativos.
+</Callout>
+
+<Section icon={Map} title="Dominando o Ciclo: Como Jogar The Binding of Isaac Repentance">
+
+Aprender **como jogar the binding of isaac repentance** de forma eficaz exige entender que cada partida é um quebra-cabeça único e gerado proceduralmente. Você começa no Porão (Basement), movendo-se de sala em sala para derrotar inimigos e coletar recursos. O objetivo principal é chegar ao chefe do andar, derrotá-lo para ganhar um aumento de atributo ou item de vida, e descer ainda mais no porão. O sucesso não depende apenas de reflexos rápidos; trata-se de tomar decisões calculadas sobre quais itens pegar e como gastar seus recursos limitados.
+
+No meta de 2026, o jogo está mais equilibrado, mas também mais punitivo do que nas versões anteriores. Dano (Damage) e Cadência de Tiro (Tears) continuam sendo os atributos mais importantes, mas atributos de utilidade como Sorte (Luck) e Velocidade (Speed) não podem ser ignorados. Cada inimigo tem um padrão de movimento e ataque específico. A maioria das ameaças no início do jogo mira diretamente na posição atual de Isaac, o que significa que movimentos pequenos e deliberados costumam ser mais seguros do que correr em pânico pela sala.
+
+| Atributo | Função | Prioridade |
+| :--- | :--- | :--- |
+| **Dano (Damage)** | Determina o poder bruto das suas lágrimas | **Máxima** |
+| **Lágrimas (Tears)** | Controla a frequência dos seus disparos | **Máxima** |
+| **Velocidade (Speed)** | Afeta a movimentação; 1.50 é o ponto ideal | Média |
+| **Sorte (Luck)** | Influencia os drops das salas e chances de ativação de efeitos | Média |
+| **Alcance (Range)** | Quão longe suas lágrimas viajam antes de cair | Baixa |
+| **Velocidade do Tiro (Shot Speed)** | Quão rápido suas lágrimas se movem pelo ar | Baixa |
+
+<Callout type="tip" title="Dica Pro de Interface">
+Vá para o menu de Opções e ative o **Found HUD**. Isso exibirá seus atributos numéricos exatos no lado esquerdo da tela. Ver seus valores exatos de Dano e Lágrimas é essencial para saber se um item de loja ou pílula vale o investimento.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Mecânicas Básicas e Gerenciamento de Recursos">
+
+Para dominar **como jogar the binding of isaac repentance**, você deve gerenciar quatro recursos primários: Corações Vermelhos, Moedas, Bombas e Chaves. Gerenciar mal esses recursos nos dois primeiros andares geralmente leva a uma corrida fracassada quando você chega às Profundezas (Depths).
+
+<CardGrid cols={3}>
+  <Card title="Chaves">
+    - **Salas do Tesouro**: Sempre exigem uma chave após o primeiro andar.
+    - **Lojas**: Essenciais para comprar vida ou corações de alma.
+    - **Biblioteca**: Alto valor para sinergias de itens ativos.
+  </Card>
+  <Card title="Bombas">
+    - **Rochas Marcadas**: Procure por rochas com um pequeno 'X' para encontrar Corações de Alma.
+    - **Salas Secretas**: Geralmente localizadas entre 3 ou 4 salas adjacentes.
+    - **Dano em Chefes**: Use-as para pular fases difíceis dos chefes iniciais.
+  </Card>
+  <Card title="Moedas">
+    - **Itens de Loja**: A maioria dos itens custa 15 moedas.
+    - **Máquina de Doação**: Sempre doe moedas sobressalentes para melhorar lojas futuras.
+    - **Arcades**: Use-os para converter moedas em bombas ou chaves.
+  </Card>
+</CardGrid>
+
+<Callout type="warning" title="Proteção de Vida">
+Receber dano em Corações Vermelhos em um chefe de andar reduz significativamente sua chance de gerar uma Sala do Diabo ou do Anjo. Sempre tente ter pelo menos um **Coração de Alma** (azul) ou **Coração Preto** (preto) para servir de escudo para seus recipientes permanentes de Corações Vermelhos.
+</Callout>
+
+### Prioridade de Salas e Exploração
+Nem toda sala precisa ser limpa se você estiver com pouca vida. No entanto, limpar completamente os andares 1 e 2 é geralmente recomendado para maximizar sua contagem de itens antes que a dificuldade aumente nas Cavernas (Caves).
+
+| Tipo de Sala | Requisito de Entrada | Recompensa Típica |
+| :--- | :--- | :--- |
+| **Sala do Tesouro** | 1 Chave (Grátis no 1º Andar) | Item Passivo ou Ativo |
+| **Loja** | 1 Chave | Consumíveis, Cartas ou Trinkets |
+| **Sala Secreta** | 1 Bomba | Itens Raros ou 6-9 Moedas |
+| **Sala Amaldiçoada** | Dano de 0.5 a 1 Coração | Baús Vermelhos ou Itens do Diabo |
+| **Sala de Sacrifício** | Dano por Contato | Baús, Itens de Anjo ou Moedas |
+
+</Section>
+
+<Section icon={Swords} title="Passo a Passo: Sua Primeira Vitória">
+
+Se você é novo no jogo, siga este roteiro de progressão para garantir sua primeira grande vitória contra a Mãe (Mom) e desbloquear o caminho para o fim do jogo.
+
+<Steps>
+  <Step num="1" title="Configuração Inicial e Controles">
+    O movimento e os disparos são independentes. Pratique atrair ("kiting") os inimigos movendo-se para trás enquanto atira na direção deles. Use o primeiro andar (Basement I) para se acostumar com a parábola das suas lágrimas, pois a velocidade do seu movimento adiciona impulso aos seus disparos.
+  </Step>
+  <Step num="2" title="Os Dois Primeiros Andares">
+    Seu objetivo é encontrar a Sala do Tesouro e a Sala do Chefe. Não gaste moedas na loja ainda, a menos que veja um Coração de Alma e corra risco de morrer. Derrote o chefe e procure por uma melhoria de Dano ou Lágrimas. Se você não sofreu dano em corações vermelhos, uma Sala do Diabo pode aparecer.
+  </Step>
+  <Step num="3" title="Navegando pelas Cavernas e Profundezas">
+    Os inimigos aqui se tornam mais rápidos e frequentemente explodem. Priorize a sobrevivência. A essa altura, você deve ter pelo menos 2 a 3 itens. Se o seu dano estiver baixo, procure por **Lojas** para encontrar itens como *There's Options* ou *Champion Belt*.
+  </Step>
+  <Step num="4" title="A Luta contra a Mãe">
+    A Mãe (Mom) é a chefe de Depths II. Fique longe das quatro portas (onde suas mãos aparecem) e preste atenção na sombra do seu pé. Movimentação constante é a chave. Uma vez derrotada, você desbloqueia o Útero (Womb) e seu primeiro final.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Escolha de Personagem">
+Comece com **Isaac** para aprender o básico. Assim que desbloquear **Azazel** (pegando 3 Acordos com o Diabo em uma única partida), use-o para vitórias mais fáceis. Seu sopro de Brimstone de curto alcance causa dano massivo, tornando os andares iniciais triviais para iniciantes.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Itens de Alto Nível e Sinergias">
+
+Entender **como jogar the binding of isaac repentance** envolve saber quais itens podem "carregar" uma partida. No Repentance, muitos itens foram reequilibrados, mas alguns continuam sendo objetivamente superiores para garantir uma vitória.
+
+| Nome do Item | Tipo | Efeito Principal |
+| :--- | :--- | :--- |
+| **Sacred Heart** | Passivo | Multiplicador de Dano massivo + Lágrimas teleguiadas |
+| **C Section** | Passivo | Substitui lágrimas por fetos teleguiados |
+| **Brimstone** | Passivo | Substitui lágrimas por um feixe de laser de sangue |
+| **Holy Mantle** | Passivo | Anula o primeiro golpe recebido em cada sala |
+| **The D6** | Ativo | Sorteia novamente (reroll) itens em pedestais por novos itens |
+
+### Exemplos de Sinergias Poderosas
+- **Soy Milk + Libra**: Converte a cadência de tiro massiva em atributos altos e equilibrados de forma geral.
+- **Brimstone + Sad Onion**: Reduz significativamente o tempo de carga do laser.
+- **Transformação em Guppy**: Colete quaisquer 3 itens "Guppy" (Tail, Head, Paw, Collar) para voar e gerar moscas azuis que causam o dobro do seu dano.
+
+<Callout type="tip" title="Estratégia de Reroll">
+Se você estiver jogando com o Isaac e tiver o **D6**, nunca mude (reroll) um item que dê aumento de Dano ou Lágrimas, a menos que você já tenha uma build "apelona" (broken). Consistência é melhor do que tentar a sorte por uma chance de 1% de conseguir um item como o Sacred Heart.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Checklist de Progressão e Marcos">
+
+O jogo "verdadeiro" começa após suas primeiras vitórias. Use esta lista para acompanhar seu progresso em direção ao desbloqueio da experiência completa do Repentance.
+
+<Checklist
+  id="isaac-progression"
+  title="Objetivos de Conclusão para 2026:"
+  items={[
+    "Derrote o Coração da Mãe (Mom's Heart) 11 vezes para desbloquear It Lives!",
+    "Derrote Isaac (Cathedral) 5 vezes para desbloquear O Polaroid (The Polaroid)",
+    "Derrote Satan (Sheol) 5 vezes para desbloquear O Negativo (The Negative)",
+    "Derrote Hush 3 vezes para desbloquear os Caminhos Alternativos (Downpour/Mines)",
+    "Alcance o andar Home e desbloqueie seu primeiro Personagem Tainted",
+    "Complete o desafio 'High Brow' para desbloquear a Runa Jera"
+  ]}
+/>
+
+<Callout type="info" title="O Caminho Alternativo">
+Para chegar ao chefe final, **The Beast**, você deve primeiro derrotar a **Mother** no Corpse. Isso requer encontrar duas partes da faca (Knife Pieces) escondidas nos andares alternativos (Downpour II e Mines II). Esta é considerada a rota mais difícil do jogo e só deve ser tentada quando você estiver confortável com as rotas padrão.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Perguntas Frequentes">
+
+<FAQ items={[
+  {
+    question: "Como faço para desbloquear os personagens Tainted no Repentance?",
+    answer: "Você deve chegar ao andar 'Home'. No caminho de volta durante a Ascensão (Ascent), deixe um trinket em uma Sala do Tesouro ou de Chefe. Ele se transformará em uma Chave Rachada (Cracked Key). Use essa chave na porta vermelha brilhante no corredor do lado de fora do quarto da Mãe em Home."
+  },
+  {
+    question: "Devo sempre aceitar Acordos com o Diabo?",
+    answer: "Não mais. No Repentance, se você pular sua primeira Sala do Diabo sem entrar nela, terá 100% de garantia de chance de uma Sala do Anjo no próximo andar. Os itens de Anjo são gratuitos e costumam oferecer melhores atributos defensivos."
+  },
+  {
+    question: "Qual é a melhor maneira de encontrar Salas Secretas?",
+    answer: "As Salas Secretas geralmente são adjacentes a 3 ou 4 outras salas. Procure por um formato de 'U' ou um cruzamento no seu mapa. As Salas Super Secretas são diferentes; elas costumam ser adjacentes a apenas uma sala, frequentemente perto da Sala do Chefe."
+  },
+  {
+    question: "Por que não consigo ver meus atributos na tela?",
+    answer: "Você precisa ativar o 'Found HUD' nas opções do jogo. Este é um recurso nativo da DLC Repentance e é essencial para jogar em alto nível."
+  }
+]} />
+
+<Callout type="success" title="Conselho Final">
+Não desanime com a morte. **Como jogar The Binding of Isaac Repentance** é uma habilidade que se desenvolve a cada tentativa fracassada. Cada morte ensina o padrão de um inimigo ou o lado negativo oculto de um item. Continue descendo!
+</Callout>
+
+</Section>

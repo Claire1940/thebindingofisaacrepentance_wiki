@@ -1,0 +1,167 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "the binding of isaac repentance repentogon: Guía de Configuración",
+  description: "Optimiza tu juego con el extensor de scripts repentogon para the binding of isaac repentance. Aprende sobre instalación, compatibilidad y solución de problemas.",
+  category: "Tutorial",
+  image: "https://placehold.co/800x400/120b0d/f4e9e7?text=Repentogon+Setup+Guide",
+  date: "2026-07-17",
+  author: "Equipo de la Wiki de the binding of isaac repentance",
+  keywords: "the binding of isaac, repentance, repentogon, modding, guía, instalación"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **Framework Principal**: El extensor de scripts optimiza el rendimiento y expande las capacidades de modding.
+- **Mecánica Clave**: Omite los cuellos de botella tradicionales de la API de Lua utilizando ganchos (hooks) nativos del motor en C++.
+- **Mejor Estrategia**: Siempre realiza una copia de seguridad de tus partidas guardadas antes de instalar cualquier modificación de ejecutable nativo.
+- **Consejo Crítico**: Mantén el framework actualizado para que coincida con la versión actual de Steam del juego.
+- **Mejor Opción**: Esencial para paquetes de mods pesados como Fiend Folio y superposiciones de interfaz avanzadas.
+</Callout>
+
+<Section icon={Sparkles} title="Comprendiendo el Framework repentogon de the binding of isaac repentance">
+
+El modding siempre ha sido una piedra angular de la longevidad para los jugadores. Sin embargo, a medida que los mods se volvieron más complejos, la API de Lua integrada comenzó a mostrar graves limitaciones de rendimiento. La introducción de **the binding of isaac repentance repentogon** ha cambiado completamente el panorama del modding. Esta herramienta es un extensor de scripts nativo y un potenciador del motor que se conecta directamente al ejecutable del juego, permitiendo a los desarrolladores de mods acceder a funciones profundas del motor que antes eran completamente inalcanzables.
+
+A diferencia de los mods estándar de la Steam Workshop que se ejecutan estrictamente dentro de un entorno aislado (sandbox) de Lua, este framework opera a nivel nativo. Optimiza la asignación de memoria, reduce las caídas de fotogramas causadas por sinergias complejas de objetos e introduce canales de renderizado personalizados. Para los jugadores que ejecutan docenas de mods simultáneamente, instalar este framework es la forma más efectiva de estabilizar la tasa de fotogramas y prevenir cierres inesperados al escritorio.
+
+| Característica | API de Lua Estándar | Extensor Repentogon |
+| :--- | :--- | :--- |
+| **Nivel de Ejecución** | Intérprete de Lua en Sandbox | Hooking nativo del ejecutable en C++ |
+| **Renderizado de Interfaz** | Restringido a capas básicas de sprites | Elementos de interfaz y shaders personalizados |
+| **Rendimiento** | Alta carga de CPU con cargas masivas de mods | Memoria y llamadas de dibujo altamente optimizadas |
+| **Parches del Motor** | Ninguno (requiere soluciones manuales) | Aplicación directa de parches al motor |
+| **Estabilidad de Guardado** | Vulnerable a corrupción por límites de mods | Serialización robusta de guardado personalizado |
+
+<Callout type="tip" title="Compatibilidad con Logros">
+El uso de este framework nativo no desactiva los logros de Steam, siempre que hayas derrotado a Mom al menos una vez en tu archivo de guardado sin mods activos previamente.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Requisitos del Sistema y Compatibilidad">
+
+Antes de intentar instalar el framework, es vital asegurarse de que su sistema y la versión del juego sean totalmente compatibles. Debido a que esta herramienta se engancha directamente en el espacio de memoria del juego, es muy sensible a las discrepancias de versión. Está diseñado específicamente para el lanzamiento oficial en Steam de la expansión Repentance y no funcionará correctamente con copias del juego desactualizadas, sin DRM o no autorizadas.
+
+El framework es compatible con entornos Windows y Linux, incluyendo la Steam Deck. En plataformas basadas en Linux, utiliza las capas de compatibilidad de Proton para inyectar las bibliotecas necesarias sin problemas. La compatibilidad con otros mods importantes es muy estable, ya que el framework está diseñado para cooperar con la Steam Workshop en lugar de reemplazarla por completo.
+
+<CardGrid cols={3}>
+  <Card title="Sistemas Windows">
+    - **Windows 10 u 11** (64 bits)
+    - Versión de Steam de Repentance
+    - Visual C++ Redistributable instalado
+  </Card>
+  <Card title="Linux y Steam Deck">
+    - **Proton Experimental** o Proton 8.0+
+    - Opciones de lanzamiento personalizadas configuradas
+    - Acceso al modo escritorio estándar
+  </Card>
+  <Card title="Impacto en el Hardware">
+    - **Cero carga adicional de CPU**
+    - Uso reducido de RAM durante sinergias pesadas
+    - Manejo mejorado de la recolección de basura
+  </Card>
+</CardGrid>
+
+| Plataforma | Estado de Compatibilidad | Pasos Requeridos |
+| :--- | :--- | :--- |
+| **Steam (Windows)** | Totalmente Compatible | Instalación directa arrastrando archivos |
+| **Steam (Linux/Steam Deck)** | Totalmente Compatible | Requiere ajuste en las opciones de lanzamiento de Proton |
+| **Epic Games Store** | Inestable | Requiere inyección manual |
+| **GOG / DRM-Free** | No Compatible | Los hooks nativos no logran localizar la API de Steam |
+
+<Callout type="warning" title="Coincidencia de Versiones">
+Asegúrate siempre de que tu juego esté totalmente actualizado en Steam antes de instalar el framework. Una versión del ejecutable que no coincida causará que el juego se cierre inmediatamente al iniciar.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="Cómo instalar Repentogon">
+
+El proceso de instalación es sencillo pero requiere la colocación manual de archivos, ya que los inyectores de código nativo no pueden distribuirse directamente a través de la Steam Workshop estándar. Sigue estos pasos cuidadosamente para asegurar una configuración limpia sin arriesgar tu progreso actual.
+
+<Steps>
+  <Step num="1" title="Respaldar Datos de Guardado">
+    Localiza tu carpeta de guardado, que generalmente se encuentra en el directorio de datos de usuario de Steam o en la carpeta My Games en Windows. Copia la carpeta completa a una ubicación segura en tu escritorio.
+  </Step>
+  <Step num="2" title="Descargar el Paquete de Lanzamiento">
+    Visita el repositorio oficial de GitHub del proyecto y descarga el archivo zip compilado más reciente. Asegúrate de descargar archivos solo de fuentes oficiales verificadas para evitar riesgos de seguridad.
+  </Step>
+  <Step num="3" title="Extraer Archivos al Directorio Raíz">
+    Abre tu biblioteca de Steam, haz clic derecho en el juego, selecciona Administrar y haz clic en Ver archivos locales. Extrae el contenido del zip descargado directamente en esta carpeta raíz, junto al ejecutable principal.
+  </Step>
+  <Step num="4" title="Verificar la Instalación">
+    Inicia el juego a través de Steam. Observa el menú principal; debería aparecer una cadena de versión personalizada o una superposición de logotipo en la esquina, confirmando que el hook nativo se ha cargado correctamente.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Instalación Verificada">
+Una vez que aparezca el logotipo personalizado en el menú principal, el framework estará activo. Ahora puedes suscribirte de forma segura a mods avanzados de la Steam Workshop que requieran este extensor.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Mods Optimizados y Gestión de Guardado">
+
+Con el framework nativo activo, puedes desbloquear todo el potencial de varios mods de alto perfil. Muchos ajustes de interfaz complejos y mods de conversión total ahora requieren esta herramienta como una dependencia obligatoria. Por ejemplo, las superposiciones avanzadas de descripción de objetos utilizan los hooks nativos para mostrar cálculos de sinergia en tiempo real y un seguimiento preciso de los grupos de objetos (item pools).
+
+La gestión del orden de carga de tus mods también se vuelve significativamente más fácil. El framework resuelve automáticamente conflictos de recursos comunes que anteriormente causaban errores silenciosos o grupos de objetos rotos durante partidas prolongadas.
+
+| Nombre del Mod | Categoría | Beneficio de Repentogon |
+| :--- | :--- | :--- |
+| **External Item Descriptions** | Interfaz | Vistas previas de Spindown Dice en tiempo real y recetas del Bag of Crafting |
+| **Soundtrack Menu** | Audio | Mezcla dinámica de música piso por piso sin retraso de audio |
+| **Fiend Folio: Reheated** | Expansión de Contenido | Tiempos de carga drásticamente reducidos y límites de entidades personalizadas estabilizados |
+
+<Checklist
+  id="post-install-verification"
+  title="Lista de verificación post-instalación:"
+  items={[
+    "Verificar que los archivos de guardado carguen correctamente sin perder marcas de finalización",
+    "Confirmar que la consola de desarrollador se abre usando la tecla de tilde (~)",
+    "Probar una partida con sinergias de alta carga para comprobar la estabilidad de la tasa de fotogramas",
+    "Activar el comprobador de actualizaciones automáticas en el archivo de configuración"
+  ]}
+/>
+
+<Callout type="info" title="Configuración de Ajustes">
+Puedes personalizar el comportamiento del framework editando el archivo de configuración generado en el directorio de tu juego. Esto te permite activar o desactivar correcciones de errores específicas del motor.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Solución de Problemas Comunes">
+
+Si tu juego no se inicia o se cierra con frecuencia después de la instalación, la causa suele ser un simple error de configuración o un conflicto con superposiciones de terceros desactualizadas. La mayoría de los problemas se pueden resolver verificando los archivos del juego o actualizando las bibliotecas de ejecución en tu sistema operativo.
+
+Si experimentas problemas persistentes en Linux o Steam Deck, verifica dos veces tus opciones de lanzamiento de Proton. El comando de anulación de DLL debe escribirse exactamente como se especifica en la documentación oficial para forzar al entorno Wine a cargar la biblioteca inyectada.
+
+<Callout type="warning" title="Conflictos de Superposición">
+Desactiva las superposiciones de monitoreo de hardware como RivaTuner, MSI Afterburner o el uso compartido de pantalla de Discord si experimentas cierres aleatorios al cargar una partida.
+</Callout>
+
+<FAQ items={[
+  {
+    question: "¿Qué es the binding of isaac repentance repentogon y es seguro usarlo?",
+    answer: "Es un extensor de scripts nativo desarrollado por la comunidad que se conecta al motor del juego para mejorar el rendimiento y las capacidades de modding. Es completamente de código abierto, seguro y libre de malware."
+  },
+  {
+    question: "¿El uso de este framework corromperá mis archivos de guardado existentes?",
+    answer: "No, no altera la estructura de guardado original. Sin embargo, debido a que permite a los mods guardar datos más complejos, se recomienda encarecidamente realizar una copia de seguridad de tus partidas antes de la instalación."
+  },
+  {
+    question: "¿Cómo actualizo el extensor de scripts cuando sale un nuevo parche del juego?",
+    answer: "Debes descargar el paquete de lanzamiento actualizado desde el repositorio oficial y sobrescribir los archivos existentes en el directorio de tu juego. Las actualizaciones estándar de Steam Workshop no actualizarán los archivos nativos automáticamente."
+  },
+  {
+    question: "¿Puedo jugar cooperativo en línea con este framework activado?",
+    answer: "Sí, pero todos los jugadores en la sala en línea deben tener exactamente la misma versión del framework y el mismo conjunto de mods instalados para evitar errores de sincronización."
+  }
+]} />
+
+</Section>

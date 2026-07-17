@@ -1,0 +1,196 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "The Binding of Isaac Repentance en Steam: Guía de Configuración y Mods",
+  description: "Aprende a instalar, optimizar y usar mods en The Binding of Isaac: Repentance en Steam. Soluciona problemas de inicio y configura el multijugador cooperativo.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/1e293b/fff?text=Steam+Setup+Guide",
+  date: "2026-07-17",
+  author: "Equipo de la Wiki de The Binding of Isaac Repentance"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **Configuración de instalación**: Ejecuta los archivos de **the binding of isaac repentance steam** ejecutando el ejecutable principal como administrador.
+- **Solución de problemas de antivirus**: Excluye el directorio del juego de los análisis en tiempo real para evitar bloqueos al iniciar.
+- **Optimización del rendimiento**: Desactiva el VSync en el archivo de configuración si experimentas retraso de entrada (input lag) o caídas de fotogramas.
+- **Acceso a mods**: Suscríbete a los mods de la comunidad directamente a través de la Steam Workshop después de derrotar a Mamá una vez.
+</Callout>
+
+<Section icon={Map} title="Instalación de la versión de Steam de The Binding of Isaac Repentance">
+
+Configurar correctamente la versión de **the binding of isaac repentance steam** garantiza una experiencia fluida y sin bloqueos desde el principio. Ya sea que estés instalando el juego por primera vez o actualizándolo a la última versión de 2026, seguir los pasos correctos de extracción y administración es esencial para que el cliente del juego se conecte adecuadamente con Steam.
+
+**Puntos destacados del video:**
+- Extraer los archivos del juego usando WinRAR o software de archivo similar.
+- Iniciar sesión en el cliente de Steam antes de lanzar el juego.
+- Ejecutar el ejecutable del juego con privilegios de administrador.
+- Añadir el directorio del juego a las exclusiones del antivirus para evitar errores de inicio.
+
+<YouTubeEmbed videoId="DWM3rp3YBk8" title="Cómo jugar a The Binding of Isaac Repentance en PC" />
+
+Para garantizar que tu sistema operativo mapee y lea correctamente todos los archivos, sigue esta secuencia de instalación estructurada:
+
+<Steps>
+  <Step num="1" title="Extraer los archivos del juego">
+    Localiza el archivo del juego descargado. Haz clic derecho en el archivo y selecciona "Extraer aquí" usando WinRAR o 7-Zip. Asegúrate de que los archivos se extraigan en un directorio dedicado en tu unidad local.
+  </Step>
+  <Step num="2" title="Iniciar sesión en Steam">
+    Abre tu cliente de Steam e inicia sesión en tu cuenta. El juego requiere una sesión activa de Steam ejecutándose en segundo plano para inicializar los logros y los guardados en la nube.
+  </Step>
+  <Step num="3" title="Ejecutar como administrador">
+    Navega a la carpeta extraída. Haz clic derecho en el archivo `isaac-ng.exe` y selecciona "Ejecutar como administrador" para lanzar el juego con todos los permisos del sistema.
+  </Step>
+  <Step num="4" title="Configurar exclusiones de antivirus">
+    Si tu software de seguridad marca el juego, desactiva temporalmente la protección en tiempo real o añade el directorio del juego a tu lista de exclusiones del antivirus.
+  </Step>
+</Steps>
+
+<Callout type="warning" title="Falsos positivos del antivirus">
+Los programas de seguridad suelen marcar con frecuencia los ejecutables personalizados de los juegos. Añadir la carpeta completa a tu lista de exclusiones evita que el antivirus elimine archivos críticos del juego durante el inicio.
+</Callout>
+
+A continuación se muestra un desglose de los archivos principales que se encuentran en el directorio y la acción requerida para cada uno:
+
+| Archivo/Carpeta | Propósito | Acción requerida |
+|---|---|---|
+| isaac-ng.exe | Ejecutable principal del juego | Ejecutar como administrador |
+| resources | Directorio principal de recursos | No modificar manualmente |
+| options.ini | Ajustes de configuración | Editar para un rendimiento personalizado |
+
+</Section>
+
+<Section icon={Sparkles} title="Optimización de los mods de la Steam Workshop">
+
+La Steam Workshop ofrece miles de mods creados por la comunidad que mejoran la interfaz de usuario, añaden nuevos objetos y ajustan las mecánicas de juego. Administrar estos mods correctamente evita la corrupción de los archivos de guardado y garantiza la compatibilidad con las últimas actualizaciones del juego.
+
+Para utilizar mods sin desactivar tu progreso, debes cumplir ciertos hitos en el juego. De forma predeterminada, activar mods antes de derrotar al primer jefe principal bloqueará el progreso de los logros.
+
+| Nombre del mod | Función principal | Nivel de impacto |
+|---|---|---|
+| External Item Descriptions | Muestra las estadísticas y grupos de objetos | Alto |
+| Pog for Good Items | Reacciones cosméticas visuales | Bajo |
+| Detailed Stat Sheet | Información del HUD ampliada | Medio |
+
+<Callout type="tip" title="Desbloquear logros con mods">
+Debes derrotar a Mamá al menos una vez en una partida limpia y sin mods. Una vez que alcances este hito, podrás activar cualquier mod de la Steam Workshop sin bloquear los logros.
+</Callout>
+
+Para suscribirte a los mods, navega a la página de la Steam Workshop del juego, haz clic en "Suscribirse" en el mod deseado y permite que Steam descargue los archivos. Puedes activarlos o desactivarlos dentro del juego a través de la sección "Mods" del menú principal.
+
+</Section>
+
+<Section icon={Shield} title="Requisitos del sistema y ajustes de rendimiento">
+
+Aunque el juego no es exigente a nivel gráfico, pueden ocurrir problemas de rendimiento en sistemas que carecen de hardware dedicado. Los jugadores que utilizan tarjetas gráficas integradas pueden experimentar un juego lento o retraso de entrada durante las limpiezas intensas de habitaciones.
+
+Optimizar tus archivos de configuración puede mejorar significativamente la tasa de fotogramas en sistemas de gama baja. Ajustar la configuración directamente en los archivos de inicialización del juego evita las limitaciones predeterminadas del motor.
+
+| Hardware | Requisito mínimo | Especificación recomendada |
+|---|---|---|
+| SO | Windows 7 | Windows 10 / 11 |
+| Procesador | Intel Core i3 | Intel Core i7 |
+| Memoria | 4 GB de RAM | 8 GB de RAM |
+| Gráficos | GPU dedicada | Nvidia GTX 960 o superior |
+
+<Callout type="info" title="Ubicación del archivo de configuración">
+Localiza tu archivo `options.ini` en el directorio `Mis documentos/Mis juegos/Binding of Isaac Repentance` para ajustar manualmente la configuración de hardware.
+</Callout>
+
+Para resolver las caídas de fotogramas, abre el archivo de configuración y establece `VSync=0`. Esto desactiva la sincronización vertical, reduciendo la latencia de entrada y mejorando el rendimiento en tarjetas gráficas más antiguas.
+
+</Section>
+
+<Section icon={Swords} title="Configuración de multijugador y cooperativo">
+
+Repentance introduce el juego cooperativo nativo, lo que permite a varios jugadores explorar mazmorras juntos. Puedes configurar sesiones multijugador de forma local o en línea utilizando las funciones de uso compartido integradas de Steam.
+
+El juego cooperativo altera el equilibrio del juego al compartir los grupos de objetos y los contenedores de salud entre todos los jugadores activos. Comprender los diferentes métodos de conexión te ayuda a elegir la mejor configuración para tu grupo.
+
+<CardGrid cols={3}>
+  <Card title="Cooperativo local">
+    - Conecta hasta cuatro mandos a una sola PC.
+    - Presiona start en los mandos adicionales en la habitación inicial.
+    - Comparte una sola pantalla localmente.
+  </Card>
+  <Card title="Steam Remote Play">
+    - Invita a amigos a través de tu lista de amigos de Steam.
+    - Solo el anfitrión necesita poseer el juego.
+    - Transmite la partida a los usuarios remotos.
+  </Card>
+  <Card title="Beta nativa en línea">
+    - Participa en la beta multijugador a través de las propiedades de Steam.
+    - Juega con vistas de pantalla independientes.
+    - Requiere conexiones a internet estables.
+  </Card>
+</CardGrid>
+
+<Callout type="success" title="Optimización de Remote Play">
+Al usar Steam Remote Play Together, asegúrate de que el anfitrión tenga una conexión ethernet por cable para minimizar la latencia de los invitados conectados.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Solución de problemas comunes de Steam">
+
+Los fallos de inicio, las pantallas negras y los problemas de sincronización en la nube pueden interrumpir tu juego. La mayoría de los errores se deben a archivos de configuración dañados o a la falta de dependencias del sistema.
+
+Seguir un proceso de verificación sistemático resuelve la mayoría de estos problemas técnicos sin necesidad de reinstalar completamente el juego.
+
+| Problema | Causa potencial | Solución recomendada |
+|---|---|---|
+| Bloqueo al iniciar | options.ini dañado | Elimina options.ini para regenerarlo |
+| Error de DLL faltante | Falta VC++ Redistributable | Instala el último Microsoft Visual C++ |
+| Error de sincronización en la nube | Desajuste de Steam Cloud | Reinicia Steam y verifica los archivos del juego |
+
+<Checklist
+  id="troubleshooting-checklist"
+  title="Lista de verificación:"
+  items={[
+    "Verifica la integridad de los archivos del juego a través de las propiedades de Steam.",
+    "Actualiza los controladores gráficos a las últimas versiones de 2026.",
+    "Asegúrate de que Steam se esté ejecutando en modo de administrador.",
+    "Limpia la carpeta de caché de sombreadores (shaders) del juego."
+  ]}
+/>
+
+<Callout type="warning" title="Copias de seguridad de archivos de guardado">
+Crea siempre una copia de seguridad de tus archivos de guardado ubicados en el directorio userdata de Steam antes de eliminar archivos de configuración o participar en ramas beta.
+</Callout>
+
+Para obtener actualizaciones oficiales y notas de parches, visita el [Centro de la Comunidad de Steam](https://steamcommunity.com/app/250900) (accedido en 2026) para mantenerte informado sobre las recientes correcciones de estabilidad.
+
+</Section>
+
+<Section icon={Target} title="Preguntas frecuentes de Steam y soporte de la comunidad">
+
+<Callout type="tip" title="Guías de la comunidad">
+Consulta la sección de guías de la comunidad de Steam para obtener estrategias detalladas de equipamiento de personajes y tablas de sinergias de objetos creadas por jugadores veteranos.
+</Callout>
+
+<FAQ items={[
+  {
+    question: "¿Cómo ejecuto la versión de Steam de The Binding of Isaac Repentance si se bloquea al iniciar?",
+    answer: "Haz clic derecho en el ejecutable del juego en tu carpeta de instalación, selecciona propiedades y marca la opción para ejecutar como administrador. Además, verifica que tu antivirus no esté bloqueando los archivos del juego."
+  },
+  {
+    question: "¿Puedo jugar al juego sin una tarjeta gráfica dedicada?",
+    answer: "Sí, pero puedes experimentar un juego lento. Para mejorar el rendimiento, abre el archivo options.ini y desactiva el VSync, o baja la resolución del juego."
+  },
+  {
+    question: "¿Los mods desactivan los logros en Steam?",
+    answer: "Los mods solo desactivan los logros si no has derrotado a Mamá en ese archivo de guardado. Una vez que derrotes a Mamá por primera vez sin mods, puedes activarlos de forma segura."
+  },
+  {
+    question: "¿Cómo accedo al modo multijugador en línea en Steam?",
+    answer: "Haz clic derecho en el juego en tu biblioteca de Steam, selecciona Propiedades, ve a la pestaña Betas y selecciona la rama beta multijugador en el menú desplegable."
+  }
+]} />
+
+</Section>

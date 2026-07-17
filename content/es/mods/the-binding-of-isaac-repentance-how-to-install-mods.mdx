@@ -1,0 +1,188 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Cómo instalar mods en The Binding of Isaac Repentance: Guía de configuración",
+  description: "Aprende cómo instalar mods en The Binding of Isaac Repentance usando Steam Workshop o métodos manuales, configurar directorios y mantener los logros activos.",
+  category: "Tutorial",
+  image: "https://placehold.co/800x400/3a0f0f/fff?text=Install+Mods+Guide",
+  date: "2026-07-17",
+  author: "Equipo de la Wiki de The Binding of Isaac Repentance",
+  keywords: "the binding of isaac repentance, mods, instalar mods, steam workshop, guía, tutorial"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **Instalación principal**: Utiliza Steam Workshop para suscribirte fácilmente a las modificaciones que desees.
+- **Regla de logros**: Derrota a Mom (Mamá) una vez en una partida para seguir obteniendo logros con mods activos.
+- **Requisito de reinicio**: Reinicia el cliente del juego después de suscribirte para asegurar que los archivos se carguen correctamente.
+- **Copia de seguridad manual**: Mantén copias de seguridad de los directorios al instalar archivos externos fuera del cliente de Steam.
+</Callout>
+
+<Section icon={Sparkles} title="Cómo instalar mods en The Binding of Isaac Repentance a través de Steam">
+
+The Binding of Isaac Repentance ofrece una cantidad masiva de contenido, pero las modificaciones creadas por la comunidad elevan la experiencia de juego. Aprender **cómo instalar mods en the binding of isaac repentance** te permite acceder a miles de personajes personalizados, objetos, ajustes gráficos y mejoras de calidad de vida. El proceso es sencillo, especialmente si posees el juego en Steam, pero hay algunas reglas esenciales que debes seguir para asegurar que tus mods funcionen correctamente y no bloqueen tu progreso en el juego.
+
+Usar la Steam Workshop es el método más eficiente y confiable para gestionar tus modificaciones. Steam se encarga automáticamente de descargar, instalar y actualizar los archivos cada vez que los creadores de los mods lanzan nuevos parches. Esto minimiza los problemas de compatibilidad y asegura que el cliente de tu juego se mantenga estable.
+
+**Puntos destacados del video:**
+- Abre Steam y navega a la sección de Workshop del juego.
+- Busca mods populares como "Better Character Menu" y suscríbete a ellos.
+- Reinicia el juego completamente para permitir que los archivos se carguen.
+- Verifica el estado activo de las modificaciones instaladas en la pantalla de selección de personaje.
+
+<YouTubeEmbed videoId="EXKfpfGG0fQ" title="Cómo instalar mods en The Binding of Isaac Repentance – Guía paso a paso" />
+
+Para comenzar con el proceso de instalación automatizado, sigue estos sencillos pasos para configurar tu cliente de juego:
+
+<Steps>
+  <Step num="1" title="Acceder a la Steam Workshop">
+    Abre tu cliente de Steam, navega a tu Biblioteca y selecciona el juego. Haz clic en la pestaña de Punto de encuentro y luego selecciona la opción Workshop en la barra de navegación.
+  </Step>
+  <Step num="2" title="Buscar y suscribirse a los mods">
+    Utiliza la barra de búsqueda o navega por la sección de archivos populares para encontrar modificaciones. Haz clic en el botón verde de Suscribirse en la página del mod para iniciar la descarga.
+  </Step>
+  <Step num="3" title="Reiniciar el cliente del juego">
+    Si el juego se está ejecutando, ciérralo por completo. Inicia el juego de nuevo para permitir que el cliente extraiga e integre los archivos de la Workshop recién descargados.
+  </Step>
+  <Step num="4" title="Habilitar mods en el menú principal">
+    Navega al menú de Mods desde la pantalla principal. Asegúrate de que los mods estén habilitados activándolos (el texto debe aparecer brillante en lugar de gris).
+  </Step>
+</Steps>
+
+| Métrica | Método Steam Workshop | Método de instalación manual |
+| :--- | :--- | :--- |
+| Ventaja | Sincronización con Steam Cloud, actualizaciones automáticas | Compatibilidad offline, recursos personalizados |
+| Facilidad de uso | Alta | Moderada |
+| Riesgo de pérdida de archivos | Muy bajo | Bajo |
+
+<Callout type="success" title="Instalación verificada">
+Una vez que completes estos pasos, las modificaciones estarán activas inmediatamente. Puedes confirmar esto iniciando una nueva partida y comprobando si los cambios visuales o los elementos de la interfaz personalizada aparecen en tu pantalla.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Instalación manual de mods y rutas de directorio">
+
+Para los jugadores que utilizan versiones del juego que no son de Steam o aquellos que prefieren descargar recursos personalizados directamente desde sitios de la comunidad de terceros, la instalación manual es necesaria. Este método requiere que localices la estructura de directorios correcta en tu dispositivo de almacenamiento local y coloques los archivos en la carpeta específica designada para las modificaciones.
+
+La ruta del directorio varía dependiendo de tu sistema operativo. Es importante tener en cuenta que crear una copia de seguridad de tus archivos de guardado antes de modificar manualmente los directorios del juego es una medida de seguridad altamente recomendada para prevenir la corrupción de datos.
+
+| Sistema operativo | Ruta del directorio de instalación predeterminado |
+| :--- | :--- |
+| Windows | `Documents\My Games\Binding of Isaac Repentance\mods` |
+| macOS | `~/Library/Application Support/Binding of Isaac Repentance/mods` |
+| Linux (Steam Deck) | `~/.local/share/Steam/steamapps/compatdata/250900/pfx/` |
+
+Al instalar mods manualmente, debes extraer los archivos comprimidos (usualmente en formato ZIP o RAR) directamente en la carpeta mencionada anteriormente. Asegúrate de que cada modificación tenga su propia carpeta distinta dentro del directorio principal para evitar que los archivos se sobrescriban entre sí.
+
+<Callout type="warning" title="Creación del directorio">
+Si no ves el directorio "mods" en tus carpetas locales, es posible que necesites iniciar el juego al menos una vez o crear el directorio manualmente usando el nombre exacto en minúsculas.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Mods iniciales recomendados y configuración">
+
+La comunidad de modding ha creado miles de adiciones únicas, que van desde cambios cosméticos menores hasta revisiones completas de la jugabilidad. Para los jugadores que son nuevos en la modificación de su juego, se recomienda comenzar con ajustes de calidad de vida para preservar la experiencia central mientras se mejora la usabilidad.
+
+A continuación se presentan tres de las modificaciones más populares y mejor valoradas que se integran perfectamente con la expansión Repentance sin alterar el equilibrio fundamental del juego.
+
+<CardGrid cols={3}>
+  <Card title="External Item Descriptions">
+    - **Muestra estadísticas detalladas de objetos**
+    - Indica sinergias y transformaciones
+    - Opciones de diseño altamente personalizables
+  </Card>
+  <Card title="Better Character Menu">
+    - **Mejora la pantalla de selección de personajes**
+    - Añade sprites detallados a color
+    - Proporciona una respuesta visual más clara
+  </Card>
+  <Card title="Pog for Good Items">
+    - **Añade divertidas animaciones al personaje**
+    - Se activa cuando aparecen objetos de alto nivel
+    - Puramente cosmético y ligero para el rendimiento
+  </Card>
+</CardGrid>
+
+Estas modificaciones están diseñadas para ejecutarse simultáneamente sin causar conflictos ni cierres del juego. Al elegir qué archivos instalar, consulta sus notas de compatibilidad para evitar problemas con personajes personalizados o diseños de salas personalizadas.
+
+| Nombre del mod | Impacto en el rendimiento | Compatibilidad de versión | Configuración recomendada |
+| :--- | :--- | :--- | :--- |
+| External Item Descriptions | Muy bajo | Repentance v1.7.9+ | Habilitado (Predeterminado) |
+| Better Character Menu | Muy bajo | Repentance v1.7.9+ | Habilitado (Predeterminado) |
+| Pog for Good Items | Bajo | Repentance v1.7.9+ | Opcional |
+
+<Callout type="tip" title="Prioridad de mods">
+Si experimentas fallos visuales, intenta desactivar otros mods gráficos uno por uno. Las modificaciones de la interfaz que cambian el diseño del HUD son las fuentes más comunes de conflicto.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Solución de problemas y guía de logros">
+
+Una preocupación común entre los jugadores es si el uso de modificaciones desactivará los logros de Steam o bloqueará la progresión hacia los finales definitivos. En la expansión Repentance, los desarrolladores implementaron un sistema de reglas específico para equilibrar el uso de mods con una progresión justa.
+
+Para evitar trampas, los logros se desactivan inicialmente cuando cualquier modificación está activa. Sin embargo, puedes evitar esta restricción alcanzando un hito específico de juego dentro de la versión sin mods del juego.
+
+| Condición de la regla | Estado de los logros | Progresión permitida |
+| :--- | :--- | :--- |
+| Mods activos (Mom no derrotada) | Desactivados | No |
+| Mods activos (Mom derrotada una vez) | Activados | Sí |
+| Sin mods activos (Cualquier progreso) | Activados | Sí |
+
+Una vez que derrotas al jefe Mom (Mamá) en un archivo de guardado limpio y sin mods, el juego desbloquea permanentemente la capacidad de ganar logros mientras usas mods. Sabrás que esto está activo porque el icono del trofeo con una raya roja ya no aparecerá en tu pantalla durante las partidas.
+
+<Checklist
+  id="troubleshooting-steps"
+  title="Lista de verificación de problemas comunes:"
+  items={[
+    "Confirma que has derrotado a Mom al menos una vez en el archivo de guardado actual",
+    "Verifica la integridad de los archivos del juego a través del menú de propiedades de la biblioteca de Steam",
+    "Desactiva las modificaciones de la interfaz de usuario en conflicto en el menú del juego",
+    "Busca actualizaciones recientes de los archivos del mod en la página de la Workshop"
+  ]}
+/>
+
+<Callout type="info" title="Seguridad del archivo de guardado">
+Copia siempre tus archivos persistentes de datos de juego (gamedata) a un directorio separado antes de instalar revisiones importantes de la jugabilidad. Esto asegura que puedas restaurar tu progreso si ocurre un conflicto de archivos.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Gestión de mods y mejores prácticas">
+
+Gestionar una gran colección de modificaciones requiere un mantenimiento regular para prevenir la degradación del rendimiento y los cierres del juego. A medida que el juego recibe actualizaciones oficiales, las modificaciones más antiguas pueden quedar obsoletas y causar inestabilidad.
+
+Para mantener una instalación saludable, revisa regularmente tus artículos suscritos y elimina los archivos que ya no utilices. Desactivar los mods en el menú suele ser suficiente, pero cancelar la suscripción por completo es la forma más segura de garantizar que no se carguen en la memoria del sistema.
+
+<FAQ items={[
+  {
+    question: "¿Cómo uso la guía de instalación de mods para Steam Deck?",
+    answer: "Puedes usar la Steam Workshop directamente en la Steam Deck suscribiéndote a los mods a través de la interfaz de Steam. Los archivos se descargarán e instalarán automáticamente en segundo plano, igual que en una computadora de escritorio."
+  },
+  {
+    question: "¿Por qué mis logros están desactivados si solo me suscribí a mods visuales simples?",
+    answer: "Debes derrotar al jefe Mom al menos una vez en ese archivo de guardado específico sin ningún mod habilitado. Una vez completado este hito, puedes activar cualquier mod sin bloquear los logros."
+  },
+  {
+    question: "¿Puedo instalar mods manualmente si compré el juego en la Epic Games Store?",
+    answer: "Sí, puedes instalarlos manualmente descargando los archivos del mod desde sitios externos de la comunidad y colocándolos en el directorio local de mods ubicado en tu carpeta de Documentos."
+  },
+  {
+    question: "¿Qué debo hacer si mi juego se cierra inmediatamente al iniciar después de instalar un nuevo mod?",
+    answer: "Localiza tu directorio local de mods y elimina la carpeta del mod instalado más recientemente, o cancela la suscripción en la Steam Workshop para evitar que se cargue."
+  }
+]} />
+
+<Callout type="warning" title="Advertencia de límite de mods">
+Ejecutar docenas de modificaciones gráficas pesadas simultáneamente puede causar caídas en la tasa de fotogramas, especialmente durante peleas intensas contra jefes con muchos proyectiles en pantalla. Mantén tu lista activa optimizada para la mejor experiencia.
+</Callout>
+
+</Section>

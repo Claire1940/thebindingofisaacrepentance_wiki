@@ -1,0 +1,190 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, Settings, Info } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "Mods de The Binding of Isaac: Repentance: Las mejores opciones de QoL y contenido para 2026",
+  description: "Explora los mejores mods de The Binding of Isaac: Repentance para 2026. Desde External Item Descriptions hasta Fiend Folio, mejora tu juego con nuestra guía experta.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/1E1417/E24133?text=Best+Repentance+Mods",
+  date: "2026-07-17",
+  author: "Equipo de la Wiki de The Binding of Isaac: Repentance",
+  keywords: "the binding of isaac repentance, mods, mejores mods, qol, fiend folio, guía"
+}
+
+<Callout type="info" title="Guía rápida">
+- Los **mods de The Binding of Isaac: Repentance** se gestionan principalmente a través de la **Steam Workshop**, lo que permite una instalación y actualización sin problemas.
+- **External Item Descriptions (EID)** es el mod más esencial, ya que proporciona datos en tiempo real sobre más de 700 objetos y miles de sinergias.
+- Los mods de **Calidad de vida (QoL)** como GoodTrip y Enhanced Boss Bars reducen la frustración sin romper el equilibrio principal del juego.
+- Las **expansiones de contenido** como Fiend Folio: Reheated añaden miles de habitaciones nuevas y cientos de enemigos para los jugadores veteranos.
+- La **compatibilidad** es clave; comprueba siempre si un mod requiere frameworks como **REPENTOGON** o Custom Stage API antes de activarlo.
+</Callout>
+
+<Section icon={Map} title="Mods esenciales de interfaz e información">
+
+La base de una partida moderna depende de la información. En un juego con más de 700 objetos e interacciones complejas, los **mods de The Binding of Isaac: Repentance** que aportan claridad son indispensables. Estas herramientas no cambian la dificultad del juego, sino que eliminan la necesidad de hacer Alt-Tab constantemente para consultar una wiki.
+
+<CardGrid cols={3}>
+  <Card title="External Item Descriptions">
+    El estándar de oro para la información. Muestra texto detallado de cada objeto coleccionable, trinket y carta directamente en la pantalla.
+  </Card>
+  <Card title="Enhanced Boss Bars">
+    Reemplaza la barra roja genérica con indicadores de salud únicos y estilizados para más de 45 jefes principales y minijefes.
+  </Card>
+  <Card title="Planetarium Chance">
+    Añade un elemento al HUD que rastrea tu porcentaje actual para encontrar un Planetario, ayudándote a decidir si saltarte las Salas del Tesoro.
+  </Card>
+</CardGrid>
+
+| Nombre del Mod | Función principal | Compatibilidad | Prioridad |
+| :--- | :--- | :--- | :--- |
+| **External Item Descriptions** | Muestra los efectos de los objetos, sinergias y resultados de Spindown Dice | Todos los DLCs / REPENTOGON | **Esencial** |
+| **Enhanced Boss Bars** | Barras de salud dinámicas con iconos de jefes únicos | Repentance / Repentance+ | **Alta** |
+| **Planetarium Chance** | Rastreo en tiempo real de la probabilidad de aparición del Planetario | Repentance+ | **Media** |
+| **Visible Missing No.** | Muestra qué objetos fueron reiniciados (rerolled) por Missing No. | Repentance | **Baja** |
+
+<Callout type="tip" title="Consejo profesional">
+Si estás usando el Spindown Dice, External Item Descriptions es un salvavidas. Te muestra exactamente en qué se convertirá el objeto actual antes de usar la carga, evitando que reinicies accidentalmente un objeto de nivel superior en algo inútil.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Mods de calidad de vida para The Binding of Isaac: Repentance">
+
+Los mods de calidad de vida (QoL) están diseñados para respetar el tiempo del jugador. Estos **mods de The Binding of Isaac: Repentance** se centran en eliminar tareas tediosas, como caminar por pasillos largos y despejados o tener dificultades para rastrear la salud de jefes con múltiples segmentos. Al agilizar estos aspectos, los jugadores pueden concentrarse en el combate estratégico y la gestión de recursos que hacen famoso al juego.
+
+| Función de QoL | Mod recomendado | Beneficio clave |
+| :--- | :--- | :--- |
+| **Viaje rápido** | **GoodTrip [Fixed]** | Teletranspórtate entre habitaciones despejadas para eliminar el tener que volver sobre tus pasos |
+| **Rastreo de jefes** | **Enhanced Boss Bars** | Visibilidad más clara para jefes segmentados como Larry Jr. |
+| **Pruebas de Sandbox** | **Da Rules** | Reglas personalizadas para generar objetos o probar sinergias |
+| **HUD Personalizado** | **Mod Config Menu** | Ajustes dentro del juego para modificar el comportamiento y las posiciones de los mods |
+| **Peligros más claros** | **Coming Down!** | Añade un indicador de sombra para los ataques de rocas que caen o pisotones |
+
+**GoodTrip [Fixed]** es quizás el mod de QoL más popular en la comunidad. Te permite hacer clic en cualquier habitación despejada del minimapa para teletransportarte allí al instante. Esto es especialmente útil en pisos XL o cuando necesitas volver a una tienda o a una Sala de Sacrificio en el otro extremo del mapa.
+
+<Callout type="success" title="Nota de rendimiento">
+La mayoría de los mods de QoL tienen un impacto insignificante en la tasa de fotogramas (FPS). Sin embargo, si experimentas tirones (stuttering), asegúrate de no estar ejecutando múltiples mods que afecten a los mismos elementos de la interfaz de usuario, como dos reemplazos de barra de jefe diferentes.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Revisiones de contenido y herramientas de práctica">
+
+Para los jugadores que han alcanzado el estado de "Dead God" o que simplemente quieren más variedad, las expansiones de contenido mediante **mods de The Binding of Isaac: Repentance** ofrecen cientos de horas adicionales de juego. Estos mods suelen ser de un alcance masivo, añadiendo nuevas mecánicas, personajes y variantes de pisos completos.
+
+**Fiend Folio: Reheated** es la cumbre de los mods de contenido. Introduce más de 500 monstruos nuevos y 23 jefes, aumentando significativamente la dificultad y variedad del juego. A diferencia de los mods más pequeños, este requiere la **Custom Stage API** para funcionar correctamente.
+
+| Mod de contenido | Nuevos objetos | Nuevos enemigos | Cambio de dificultad |
+| :--- | :--- | :--- | :--- |
+| **Fiend Folio** | 140+ | 500+ | **Incremento significativo** |
+| **Revelations** | 50+ | 60+ | **Incremento moderado** |
+| **Retribution** | 40+ | 30+ | **Incremento leve** |
+| **Practice Mode** | 0 | 0 | **N/A (Herramienta de entrenamiento)** |
+
+**Practice Mode** (Modo de práctica) es una herramienta esencial para aquellos que tienen dificultades con los "superjefes" del juego. Proporciona un entorno controlado donde puedes luchar contra Mother, The Beast o Delirium con una build realista, registrando cuántas veces te golpean para ayudarte a dominar sus patrones.
+
+<Callout type="warning" title="Advertencia sobre los datos de guardado">
+Los mods de contenido grandes como Fiend Folio pueden alterar drásticamente tu archivo de guardado. Se recomienda encarecidamente hacer una copia de seguridad de tu carpeta de guardado ubicada en el directorio del juego antes de activar modificaciones masivas.
+</Callout>
+
+<Checklist
+  id="content-mod-prep"
+  title="Antes de instalar revisiones de contenido:"
+  items={[
+    "Haz una copia de seguridad de tus datos de guardado locales",
+    "Suscríbete a las APIs requeridas (por ejemplo, Custom Stage API)",
+    "Desactiva los mods de HUD o interfaz de usuario que entren en conflicto",
+    "Comprueba la compatibilidad con Repentance+",
+    "Reinicia el juego después de la primera activación"
+  ]}
+/>
+
+</Section>
+
+<Section icon={Shield} title="Personalización visual y de audio">
+
+La estética juega un papel fundamental en la atmósfera del sótano. Muchos jugadores prefieren la música del juego original en Flash o la expansión de fans "Antibirth". Los mods visuales también pueden ayudar con la accesibilidad, haciendo que los proyectiles sean más visibles o mejorando la detección de las rocas marcadas (tinted rocks).
+
+| Categoría estética | Recomendación principal | Efecto |
+| :--- | :--- | :--- |
+| **Framework de música** | **Soundtrack Menu** | Permite cambiar entre diferentes paquetes de música dentro del juego |
+| **Banda sonora** | **Antibirth Music+++** | Reemplaza la BSO original con las aclamadas pistas de Antibirth |
+| **Visuales de proyectiles** | **Bullet Visibility** | Añade contornos de alto contraste a las lágrimas enemigas |
+| **Sprites de personajes** | **Old Wardrobe** | Te permite personalizar la apariencia visual de los personajes |
+| **Entorno** | **HD Backgrounds** | Mejora la resolución de las texturas del suelo para un aspecto más limpio |
+
+<Steps>
+  <Step num="1" title="Instala el Framework de música">
+    Suscríbete a **Music Mod Callback** o **Soundtrack Menu** en la Steam Workshop. Estos actúan como el motor para tu música personalizada.
+  </Step>
+  <Step num="2" title="Elige tus pistas">
+    Busca un paquete de música específico, como la *Banda Sonora Original de Flash* o la *BSO de Antibirth*, y suscríbete a él.
+  </Step>
+  <Step num="3" title="Configura dentro del juego">
+    Inicia el juego y usa el **Mod Config Menu** para seleccionar qué pistas se reproducen en pisos específicos o combates contra jefes.
+  </Step>
+</Steps>
+
+<Callout type="info" title="Compatibilidad de audio">
+Al usar mods de música, asegúrate de no estar suscrito a varios mods que reemplacen el mismo archivo `music.xml`, ya que esto hará que el juego vuelva a la banda sonora original por defecto o se cierre inesperadamente.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Guía de instalación y resolución de problemas">
+
+Gestionar los **mods de The Binding of Isaac: Repentance** es sencillo gracias a la integración con la Steam Workshop, pero aún pueden surgir conflictos, especialmente después de las actualizaciones oficiales del juego. Seguir un procedimiento de configuración estándar garantiza que tu juego se mantenga estable incluso con docenas de mods activos.
+
+| Paso de resolución de problemas | Acción | Resolución |
+| :--- | :--- | :--- |
+| **El mod no aparece** | Revisa el menú 'Mods' dentro del juego | Asegúrate de que el mod esté marcado como 'Habilitado' (Enabled) |
+| **El juego se cierra al iniciar** | Desasóciate de los últimos 5 mods | Aísla el archivo en conflicto |
+| **Faltan texturas** | Verifica la integridad de los archivos del juego | Repara archivos originales o modificados corruptos |
+| **Logros bloqueados** | Derrota a Mom una vez sin mods | Desbloquea el progreso de logros para partidas con mods |
+| **El menú no se abre** | Revisa los atajos de teclado en el Mod Config Menu | Por lo general, es la tecla 'L' o 'J' por defecto |
+
+<Callout type="warning" title="Progreso de logros">
+En **The Binding of Isaac: Repentance**, los mods desactivan los logros **hasta que hayas derrotado a Mom una vez** en ese archivo de guardado. Una vez derrotada, puedes usar mods y seguir ganando marcas de completado, objetos y trofeos.
+</Callout>
+
+**Pasos de instalación estándar:**
+1. Busca el mod deseado en la Steam Workshop.
+2. Haz clic en el botón verde "Suscribirse".
+3. Espera a que se complete la descarga en Steam.
+4. Inicia el juego y navega al menú **Mods**.
+5. Presiona 'Tab' para habilitar o deshabilitar mods individuales.
+6. Reinicia el juego si has instalado un framework importante como **REPENTOGON**.
+
+</Section>
+
+<Section icon={Trophy} title="Preguntas frecuentes sobre mods">
+
+<FAQ items={[
+  {
+    question: "¿Los mods de The Binding of Isaac: Repentance desactivan los logros?",
+    answer: "Solo si aún no has derrotado a Mom. Después de tu primera victoria contra Mom en un archivo de guardado, puedes usar cualquier mod de la Steam Workshop y seguir obteniendo logros y marcas de completado."
+  },
+  {
+    question: "¿Qué es REPENTOGON y lo necesito?",
+    answer: "REPENTOGON es un extensor de scripts (script extender) que aumenta el rendimiento del juego y permite que mods más complejos como External Item Descriptions funcionen de manera más eficiente. Aunque no es estrictamente necesario para todos los mods, se recomienda encarecidamente para una experiencia estable."
+  },
+  {
+    question: "¿Cómo soluciono un conflicto de mods?",
+    answer: "La mejor manera es desactivar la mitad de tus mods y reiniciar el juego. Si el problema persiste, el conflicto está en la mitad activa. Repite este proceso hasta encontrar el mod específico que causa el problema."
+  },
+  {
+    question: "¿Puedo usar mods en el cooperativo en línea?",
+    answer: "Actualmente, la mayoría de los mods de la Workshop están desactivados o causan problemas de sincronización en el modo oficial en línea de Repentance+. Para disfrutar de la experiencia multijugador más estable, se recomienda jugar con los mods desactivados."
+  }
+]} />
+
+<Callout type="info" title="Veredicto final">
+Tanto si eres un recién llegado que busca claridad con **External Item Descriptions** como si eres un veterano que busca un desafío en **Fiend Folio**, la comunidad de modding ha hecho de **The Binding of Isaac: Repentance** uno de los juegos más rejugables de 2026. Comienza con mejoras de QoL y expande lentamente hacia modificaciones de contenido a medida que te sientas más cómodo con los muchos secretos del sótano.
+</Callout>
+
+</Section>

@@ -1,0 +1,208 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "The Binding of Isaac Repentance Plus: Guia do Co-op Online",
+  description: "Domine o novo modo cooperativo online multiplayer do Repentance+. Aprenda a configurar a conexão, sinergias de personagens, regras de progressão compartilhada e atualizações de patch.",
+  category: "Guia",
+  image: "https://placehold.co/800x400/1e1417/f2786e?text=Repentance+Plus+Online+Co-op",
+  date: "2026-07-17",
+  author: "Equipe do Wiki de The Binding of Isaac: Repentance"
+}
+
+<Callout type="info" title="Guia Rápido">
+- **Palavra-chave Principal**: Este guia cobre a configuração completa e estratégias para o modo cooperativo online de **the binding of isaac repentance plus**.
+- **Mecânica Chave**: Até quatro jogadores podem entrar em uma única partida com personagens individuais, compartilhando um único acúmulo de chaves, bombas e moedas.
+- **Melhor Estratégia**: Coordene a seleção de personagens para equilibrar causadores de dano com personagens focados em defesa ou utilidade.
+- **Dica Crítica**: Desative todos os mods da Oficina Steam (Steam Workshop) antes de tentar entrar ou hospedar salas de partidas públicas.
+- **Melhor Escolha**: Combine o Isaac normal com o Tainted Isaac para maximizar a troca de itens (rerolls) e o controle de seleção.
+</Callout>
+
+<Section icon={Shield} title="The Binding of Isaac Repentance Plus: Requisitos do Sistema">
+
+O lançamento da atualização gratuita de expansão introduz o matchmaking multiplayer online integrado diretamente ao Steam. Este sistema permite que até quatro jogadores desçam ao porão juntos. Diferente dos métodos anteriores de cooperativo local ou soluções alternativas de remote play, esta atualização estabelece uma estrutura de netcode dedicada, projetada para sincronizar estados de jogo, conjuntos de itens (item pools) e progressão entre múltiplas contas distintas do Steam.
+
+Para garantir uma conexão estável e evitar erros de dessincronização durante lutas contra chefes com muitos projéteis, os jogadores devem atender a requisitos de software específicos. Todos os participantes da sala devem possuir o pacote completo de DLCs no Steam, incluindo Rebirth, Afterbirth, Afterbirth+, Repentance e a atualização gratuita de multiplayer.
+
+| Requisito | Especificação | Detalhe |
+| --- | --- | --- |
+| Plataforma | Steam PC | O matchmaking online dedicado é exclusivo do Steam |
+| Pacote de DLCs | Rebirth ao Repentance | Todas as expansões anteriores devem estar instaladas e ativas |
+| Limite de Jogadores | 2 a 4 Jogadores | Suporta partidas desde duplas até esquadrões completos de quatro jogadores |
+| Controles | Teclado ou Controle | Mapeamento completo de botões suportado para todos os clientes conectados |
+| Status de Mods | Desativados | Os mods da Oficina devem ser desativados para o matchmaking público |
+
+<Callout type="warning" title="Aviso de Compatibilidade de Mods">
+Executar mods ativos da Oficina Steam ao tentar usar o matchmaking público resultará em falhas de conexão ou dessincronização imediata da sala. Sempre desative os mods e reinicie o cliente do jogo antes de hospedar ou entrar em uma partida.
+</Callout>
+
+O netcode depende muito da estabilidade da conexão do jogador anfitrião (host). Embora os jogadores clientes experimentem pequenos ajustes visuais para compensar a latência, a máquina do anfitrião processa a física, a geração de salas e a IA dos inimigos. Para a experiência de jogo mais fluida, o jogador com as melhores especificações de hardware e a conexão de internet a cabo mais estável deve hospedar a sala.
+
+</Section>
+
+<Section icon={Target} title="Configuração Passo a Passo do Multiplayer">
+
+Configurar uma sala online requer navegar pela interface atualizada do menu principal. O sistema suporta partidas privadas com amigos, salas públicas visíveis para a comunidade e matchmaking rápido para jogadores solo que desejam se juntar a grupos ativos. Siga estes passos para estabelecer uma conexão e configurar sua sessão.
+
+<Steps>
+  <Step num="1" title="Ative a DLC Multiplayer">
+    Certifique-se de que a expansão está instalada corretamente na sua biblioteca Steam. Verifique o painel de propriedades de conteúdo para download para confirmar se a atualização multiplayer está marcada e ativa.
+  </Step>
+  <Step num="2" title="Acesse o Menu Online">
+    Inicie o jogo e selecione a opção Online Co-op no menu principal. Se esta opção estiver cinza (indisponível), verifique o status da sua conexão Steam e certifique-se de que o jogo está rodando em modo online.
+  </Step>
+  <Step num="3" title="Selecione o Tipo de Matchmaking">
+    Escolha entre Friend Match (Partida com Amigos), Public Match (Partida Pública) ou Quick Match (Partida Rápida). A opção Friend Match permite convidar jogadores diretamente da sua lista de amigos do Steam para uma sala privada.
+  </Step>
+  <Step num="4" title="Configure as Regras do Jogo">
+    O anfitrião da sala pode selecionar o modo de jogo, incluindo Normal, Hard, Greed ou Greedier. O anfitrião também pode optar por jogar desafios específicos desbloqueados ou as corridas diárias (daily runs).
+  </Step>
+  <Step num="5" title="Confirme os Personagens">
+    Assim que todos os jogadores entrarem na sala, cada participante seleciona seu personagem a partir de sua lista pessoal de desbloqueados. Quando todos estiverem prontos, o anfitrião inicia a partida.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Dica de Matchmaking">
+Se você estiver jogando com um grupo predefinido, use a opção Friend Match. Isso ignora completamente a lista de salas públicas, permitindo reconexões rápidas caso um jogador sofra uma queda repentina de conexão.
+</Callout>
+
+Durante a seleção de personagens, os jogadores só podem escolher personagens que desbloquearam pessoalmente em seu arquivo de salvamento local. Se um jogador cliente não tiver desbloqueado um personagem específico ou sua variante Tainted, ele não poderá selecioná-lo, mesmo que o anfitrião tenha 100% das conquistas do jogo concluídas.
+
+</Section>
+
+<Section icon={Swords} title="Progressão Compartilhada e Mecânicas do Co-op">
+
+O sistema multiplayer introduz regras exclusivas para a distribuição de recursos e rastreamento de progressão. Compreender como o jogo lida com itens coletáveis (pickups), pedestais de itens e marcas de conclusão é essencial para planejar partidas longas e bem-sucedidas.
+
+Embora os jogadores controlem personagens individuais com barras de vida e itens ativos separados, os recursos utilitários são totalmente compartilhados. Moedas, bombas e chaves vão para um único contador unificado visível no topo da tela. Qualquer jogador pode gastar esses recursos, exigindo comunicação ativa antes de abrir baús trancados, comprar itens na loja ou usar bombas para procurar salas secretas.
+
+| Tipo de Recurso | Distribuição | Estratégia |
+| --- | --- | --- |
+| Moedas | Acúmulo Compartilhado | Economize para lojas, itens prioritários ou compras essenciais de vida |
+| Bombas | Acúmulo Compartilhado | Priorize pedras marcadas (tinted rocks), salas secretas e dano contra chefes |
+| Chaves | Acúmulo Compartilhado | Sempre reserve pelo menos uma chave para a próxima Sala do Tesouro |
+| Vida | Individual | Corações vermelhos, de alma (soul) e pretos (black) são coletados por personagem |
+| Itens de Pedestal | Coleta Única | Atribua itens aos personagens com base no valor de sinergia |
+
+<Callout type="tip" title="Coordenação de Recursos">
+Como chaves e bombas são compartilhadas, os jogadores devem coordenar seus gastos. Evite gastar bombas em obstáculos básicos se um andar futuro exigir acesso por chave a um Planetário ou a um cofre trancado.
+</Callout>
+
+As marcas de conclusão obtidas durante uma partida cooperativa online aplicam-se a todos os jogadores qualificados na sala. Se o grupo derrotar com sucesso um chefe principal, como a Mother ou The Beast, cada jogador que sobreviveu à partida receberá a marca de conclusão correspondente em seu arquivo de salvamento ativo, desde que tenha selecionado um personagem que ainda precisasse daquela marca de vitória específica.
+
+| Rota do Chefe | Tipo de Recompensa de Desbloqueio | Prioridade do Alvo |
+| --- | --- | --- |
+| Mom's Heart | Progressão Principal | Essencial para desbloquear capítulos alternativos |
+| Cathedral / Sheol | Marcas do Capítulo V | Desbloqueia itens passivos poderosos específicos de personagens |
+| Chest / Dark Room | Itens de Fim de Jogo | Oferece melhorias de alto impacto na lista de itens, como a Polaroid |
+| Mega Satan | Golden Gate | Desbloqueia o Apollyon e ornamentos (trinkets) favoritos da comunidade |
+| The Beast | Variantes Tainted | Desbloqueia a lista definitiva de personagens de fim de jogo |
+
+Esta progressão compartilhada torna o co-op online uma excelente ferramenta para ajudar amigos a completarem post-its difíceis de personagens, como os de Jacob e Esau ou do Tainted Lost. Um jogador habilidoso pode carregar a partida usando um personagem forte e confiável, enquanto o outro jogador foca em sobreviver para garantir a marca de conclusão.
+
+</Section>
+
+<Section icon={Sparkles} title="Melhores Sinergias de Personagens">
+
+Selecionar personagens complementares é a maneira mais rápida de quebrar o equilíbrio do jogo no modo multiplayer. Certas habilidades passivas e itens iniciais interagem de maneiras que são impossíveis de alcançar no modo de um jogador.
+
+Ao montar sua equipe, tente combinar personagens que geram recursos com aqueles que escalam agressivamente com alto dano. Evite usar múltiplos personagens que dependem dos mesmos tipos raros de vida, como jogar com Tainted Lost ao lado de Tainted Beth, pois eles competirão constantemente por recursos defensivos limitados.
+
+<CardGrid cols={3}>
+  <Card title="O Motor de Recursos">
+    - **Tainted Keeper & Magdalene**
+    - A alta geração de moedas cura Magdalene instantaneamente.
+    - Permite o farm agressivo em máquinas de doação de sangue.
+    - Excelente para quebrar a economia das lojas logo cedo.
+  </Card>
+  <Card title="O Controlador de Itens">
+    - **Isaac & Tainted Isaac**
+    - O dobro de opções de itens em cada pedestal.
+    - Isaac troca (reroll) itens indesejados usando o D6.
+    - Tainted Isaac cicla itens para encontrar sinergias perfeitas.
+  </Card>
+  <Card title="O DPS Definitivo">
+    - **Azazel & Lilith**
+    - Alto dano de curto alcance no início do jogo.
+    - Lilith fornece suporte consistente de familiares à distância.
+    - Derrota chefes iniciais com segurança sem perder chances de pactos.
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Otimização de Sinergias">
+Use a função integrada de rolar dados na roda de emotes para resolver disputas por itens de alto nível. Atribuir itens ao personagem que mais se beneficia de uma melhoria de atributo específica garante maiores taxas de sobrevivência para a equipe.
+</Callout>
+
+Para otimizar ainda mais a composição da sua equipe, consulte a tabela de classificações de sinergia abaixo. Esta matriz destaca o desempenho de diferentes arquétipos de personagens quando pareados em capítulos de alta dificuldade, como o Void ou Home.
+
+| Par de Arquétipos | Classificação de Sinergia | Vantagem Principal |
+| --- | --- | --- |
+| Utilidade + DPS | ★★★★★ | Dano equilibrado com geração consistente de recursos |
+| Duplo DPS | ★★★★☆ | Limpeza de salas extremamente rápida, mas vulnerável à falta de vida |
+| Suporte + Tanque | ★★★★☆ | Alta sobrevivência, mas sofre contra a armadura de chefes no fim de jogo |
+| Duplo Suporte | ★★☆☆☆ | Andares iniciais seguros, mas carece do dano necessário para rotas cronometradas |
+
+</Section>
+
+<Section icon={Trophy} title="Solução de Problemas e Acompanhamento de Patches">
+
+Mesmo com o suporte de servidores dedicados, latência de rede e conflitos de software podem ocorrer durante as sessões multiplayer. Siga esta lista de verificação para preparar seu sistema para uma sessão online estável.
+
+<Checklist
+  id="co-op-prep"
+  title="Lista de Verificação Pré-Jogo do Co-op:"
+  items={[
+    "Verifique se todos os jogadores desativaram completamente os mods da Oficina Steam.",
+    "Certifique-se de que o anfitrião tenha uma conexão de internet a cabo ativa.",
+    "Confirme se todos os clientes estão executando exatamente a mesma versão do jogo.",
+    "Reinicie o cliente Steam para limpar os dados de cache das salas de matchmaking.",
+    "Selecione o jogador anfitrião com base nas melhores especificações de hardware."
+  ]}
+/>
+
+<Callout type="warning" title="Recuperação de Conexão Caída">
+Se um jogador cliente desconectar no meio da partida, o anfitrião deve pausar o jogo imediatamente. O jogador desconectado pode tentar entrar novamente na sala ativa diretamente através da sobreposição da lista de amigos do Steam, sem perder o progresso da partida.
+</Callout>
+
+Os desenvolvedores oficiais lançam patches regularmente para corrigir bugs do multiplayer, melhorar a sincronização da conexão e ajustar o equilíbrio dos personagens para o jogo cooperativo. Acompanhar essas mudanças de versão garante que você esteja jogando na build mais estável.
+
+| Versão | Foco | Principais Correções |
+| --- | --- | --- |
+| 1.9.7.6 | Lançamento Online Inicial | Introduziu o sistema básico de salas e matchmaking com amigos |
+| 1.9.7.8 | Estabilidade do Netcode | Reduziu erros de dessincronização durante lutas contra chefes com muitos projéteis |
+| 1.9.7.11 | Interface e Equilíbrio | Adicionou indicadores visuais para recursos e itens compartilhados |
+| 1.9.7.13 | Recursos Integrados | Adicionou descrições de itens integradas e melhorou o matchmaking |
+
+</Section>
+
+<Section icon={Map} title="Perguntas Frequentes">
+
+<FAQ items={[
+  {
+    question: "As conquistas de desbloqueio contam para todos na sala online?",
+    answer: "Sim. Quaisquer marcas de conclusão, desbloqueios de personagens ou conquistas de itens obtidas durante a partida são creditadas a todos os jogadores na sala, desde que tenham selecionado um personagem que se qualifique para aquele desbloqueio específico."
+  },
+  {
+    question: "Como o jogo lida com pedestais de itens quando vários jogadores estão presentes?",
+    answer: "A maioria dos pedestais de itens só pode ser coletada por um jogador. No entanto, certas salas especiais, como salas de escolha com pedestal duplo, permitem que vários jogadores peguem um item simultaneamente se coordenado corretamente."
+  },
+  {
+    question: "Posso usar mods da Oficina Steam ao jogar o co-op online de the binding of isaac repentance plus?",
+    answer: "Não. Todos os mods da Oficina devem ser completamente desativados para garantir a compatibilidade com os servidores de matchmaking e evitar erros de dessincronização entre diferentes clientes de jogo."
+  },
+  {
+    question: "O que acontece quando um jogador morre durante uma partida cooperativa online?",
+    answer: "Jogadores mortos reaparecem como um companheiro bebê fantasma (ghost baby) com capacidade de dano limitada. Eles reviverão com meio coração no início do próximo andar, desde que pelo menos um outro jogador derrote com sucesso o chefe do andar atual."
+  }
+]} />
+
+<Callout type="info" title="Recursos da Comunidade">
+Para encontrar parceiros de matchmaking em tempo real, discussões de estratégia e suporte técnico, junte-se ao Discord oficial da comunidade ou visite os canais dedicados no subreddit.
+</Callout>
+
+</Section>

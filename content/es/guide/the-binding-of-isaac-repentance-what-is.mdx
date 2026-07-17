@@ -1,0 +1,204 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, BookOpen, Users, Settings } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Qué es The Binding of Isaac Repentance: Jugabilidad y Guía 2026",
+  description: "Descubre qué es The Binding of Isaac: Repentance, la experiencia roguelike definitiva. Aprende sobre objetos, personajes y el meta de progresión para 2026.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/120B0D/F4E9E7?text=Repentance+Guide",
+  date: "2026-07-17",
+  author: "Equipo de la Wiki de The Binding of Isaac Repentance",
+  keywords: "The Binding of Isaac, Repentance, guía, roguelike, objetos, personajes, meta 2026"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **Qué es The Binding of Isaac Repentance**: Es la expansión final y más grande del icónico roguelike, que añade más de 700 objetos y 34 personajes jugables.
+- **Bucle Principal**: Supera pisos de mazmorras generados aleatoriamente, recoge sinergias y derrota a jefes complejos para desbloquear múltiples finales.
+- **Mecánica Clave**: Gestionar los Corazones Rojos frente a los Corazones de Alma/Negros es esencial para preservar las probabilidades de las Salas del Diablo y del Ángel.
+- **Progresión**: El éxito requiere llegar a Mom, luego a Mom's Heart y, finalmente, a las rutas alternas que conducen a Mother y The Beast.
+- **Meta de 2026**: Los personajes Tainted y el sistema cooperativo en línea de Repentance+ han redefinido cómo los jugadores abordan la completitud total.
+</Callout>
+
+<Section icon={Map} title="Qué es The Binding of Isaac Repentance: Una Visión General">
+
+**Qué es The Binding of Isaac Repentance** es, esencialmente, la versión definitiva del legendario shooter roguelike. Lanzado como la expansión final de *The Binding of Isaac: Rebirth*, integra años de contenido, incluido el famoso mod *Antibirth*, en un paquete oficial pulido. En 2026, sigue siendo el estándar de oro del género debido a su rejugabilidad infinita y su profunda complejidad mecánica.
+
+<CardGrid cols={4}>
+  <Card title="700+ Objetos">
+    Una enorme biblioteca de objetos pasivos y activos que crean sinergias únicas.
+  </Card>
+  <Card title="34 Personajes">
+    17 personajes estándar y 17 variantes Tainted con mecánicas únicas.
+  </Card>
+  <Card title="100+ Jefes">
+    Desde simples amenazas en el sótano hasta superbosses de final de juego que llenan la pantalla.
+  </Card>
+  <Card title="20+ Finales">
+    Una narrativa ramificada con múltiples destinos finales y secretos.
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Contenido de la Expansión">
+Repentance no es un juego independiente; requiere el juego base Rebirth y los DLC Afterbirth/Afterbirth+ para funcionar. Asegúrate de que tu biblioteca de Steam esté actualizada para la actualización en línea Repentance+ de 2026.
+</Callout>
+
+| Característica | Rebirth (Base) | Repentance (Expansión) |
+| :--- | :--- | :--- |
+| **Objetos Totales** | 341 | 700+ |
+| **Personajes Jugables** | 11 | 34 |
+| **Jefes Finales** | Isaac/Satan | Mother/The Beast |
+| **Variedad de Salas** | Estándar | Rutas Alt/Mundo Espejo |
+| **Modo Cooperativo** | Bebés Locales | Cooperativo Online Completo |
+
+</Section>
+
+<Section icon={Target} title="Mecánicas Principales y Estadísticas">
+
+Comprender los sistemas subyacentes es el primer paso para dominar la mazmorra. Cada partida comienza con Isaac (u otro personaje) en el Sótano (Basement). Tu objetivo es navegar por una serie de salas generadas aleatoriamente, cada una con enemigos, obstáculos o recompensas.
+
+La opción "Found HUD" es obligatoria para los jugadores serios en 2026. Muestra tus estadísticas numéricas en el lado izquierdo de la pantalla, permitiéndote ver exactamente cómo un objeto afecta tu rendimiento.
+
+| Estadística | Icono | Descripción | Umbral Crítico |
+| :--- | :--- | :--- | :--- |
+| **Daño** | Swords | Cuánta vida pierden los enemigos por golpe | 5.00+ para jefes iniciales |
+| **Lágrimas** | Fire Rate | La frecuencia de tus ataques | 5.00 (Cap base máximo) |
+| **Velocidad** | Boot | Qué tan rápido te mueves y esquivas | 1.50+ para el juego tardío |
+| **Rango** | Arrow | Qué tan lejos llegan tus lágrimas | 6.50+ para seguridad |
+| **Suerte** | Clover | Afecta la tasa de aparición de objetos | 1.00+ para consistencia |
+
+<Callout type="info" title="Gestión de Salud">
+Los Corazones Rojos te permiten usar Máquinas de Donación de Sangre y Salas de Sacrificio, pero recibir daño en los Corazones Rojos reduce tu probabilidad de Salas del Diablo y del Ángel. Usa Corazones de Alma para proteger tus contenedores de Corazón Rojo.
+</Callout>
+
+</Section>
+
+<Section icon={Users} title="Clasificación de Personajes y Variantes Tainted">
+
+El elenco de personajes se divide en versiones "Normales" y "Tainted". Los personajes Tainted se desbloquean al llegar al piso "Home" y usar una Red Key o un Cracked Key en el armario oculto. Estas variantes suelen tener mecánicas de alto riesgo y alta recompensa que difieren significativamente de sus contrapartes estándar.
+
+<Steps>
+  <Step num="1" title="Selecciones para Principiantes">
+    Comienza con **Isaac** o **Magdalene**. Isaac es equilibrado, mientras que la alta salud de Magdalene y su objeto activo Yum Heart permiten más errores.
+  </Step>
+  <Step num="2" title="Potencias Ofensivas">
+    Desbloquea a **Azazel** aceptando tres tratos con el Diablo en una sola partida. Su rayo de Brimstone de corto alcance facilita los primeros pisos.
+  </Step>
+  <Step num="3" title="Mecánicas Avanzadas">
+    Prueba a **The Forgotten** para el combate cuerpo a cuerpo o a **Bethany** para dominar el Book of Virtues y las sinergias basadas en fuegos fatuos.
+  </Step>
+  <Step num="4" title="Transformación Tainted">
+    Una vez que alcances el final del juego, **Tainted Lilith** y **Tainted Judas** ofrecen algunos de los kits ofensivos más poderosos en el meta de 2026.
+  </Step>
+</Steps>
+
+<Callout type="warning" title="The Lost y Tainted Lost">
+Estos personajes mueren de uno o dos golpes. Solo intenta sus marcas de completitud una vez que hayas desbloqueado el Holy Mantle (mediante 879 monedas en la Máquina de Greed) y tengas un conocimiento profundo de los patrones de los jefes.
+</Callout>
+
+| Nivel | Personajes | Por qué destacan |
+| :--- | :--- | :--- |
+| **Tier S** | Isaac (D6), Azazel, Tainted Lilith | Alto control o daño masivo inicial |
+| **Tier A** | Cain, Forgotten, Tainted Judas | Estadísticas iniciales fuertes y utilidad |
+| **Tier B** | Judas, Samson, Tainted Isaac | Dependientes del escalado de daño o límites de objetos |
+| **Tier C** | Eve, Lazarus, Tainted ??? | Requieren configuraciones específicas de salud/objetos |
+| **Tier D** | The Lost, Jacob & Esau | Dificultad extrema o frustración por doble hitbox |
+
+</Section>
+
+<Section icon={Sparkles} title="Objetos Esenciales y Sinergias de Tier S">
+
+Los objetos son el alma de una partida. Aunque hay cientos de opciones, algunos destacan como "ganadores de partidas" que pueden llevarte hasta el jefe final independientemente de tu otro equipo.
+
+**Objetos de Nivel Superior para Partidas de 2026:**
+- **Sacred Heart**: Multiplicador de daño masivo + Lágrimas teledirigidas.
+- **C Section**: Proyectiles de fetos que infligen un daño constante masivo.
+- **Glitched Crown**: Te permite ciclar entre objetos en un pedestal para elegir el mejor.
+- **R Key**: Reinicia la partida desde el piso 1 manteniendo todos tus objetos (esencial para carreras de múltiples marcas).
+
+<Callout type="success" title="Salas del Diablo vs. Salas del Ángel">
+En Repentance, saltarse la primera Sala del Diablo garantiza una Sala del Ángel en la siguiente aparición exitosa. Las Salas del Ángel suelen preferirse en el meta de 2026 porque son gratuitas y contienen objetos defensivos y ofensivos de alta calidad como Godhead o Holy Mantle.
+</Callout>
+
+| Nombre del Objeto | Tipo | Efecto Clave | Estrategia |
+| :--- | :--- | :--- | :--- |
+| **Brimstone** | Pasivo | Láser de Sangre | Alta limpieza de salas, combina con Teledirigido |
+| **Mom's Knife** | Pasivo | Cuchillo Melee | El DPS más alto, requiere corto alcance |
+| **Tech X** | Pasivo | Anillos Láser | Excelente control de área |
+| **Rock Bottom** | Pasivo | Bloqueo de Stats | Las estadísticas nunca pueden disminuir |
+| **Spindown Dice** | Activo | Re-roll de Objetos | Convierte objetos malos en objetos de Tier S |
+
+</Section>
+
+<Section icon={Trophy} title="Hoja de Ruta de Progresión: De Mom a Dead God">
+
+Completar el juego requiere un orden específico de operaciones. No puedes llegar a los jefes finales sin demostrar tu valía en los capítulos anteriores.
+
+<Checklist
+  id="progression-2026"
+  title="Lista de Hitos Principales:"
+  items={[
+    "Derrota a Mom en Depths II para desbloquear el Womb",
+    "Derrota a Mom's Heart 11 veces para desbloquear It Lives y la Cathedral/Sheol",
+    "Derrota a Isaac (Cathedral) y Satan (Sheol) 5 veces cada uno para desbloquear el Polaroid y el Negative",
+    "Derrota a Hush 3 veces para desbloquear la Salida Secreta (Rutas Alternativas)",
+    "Derrota a Mother en el Corpse para desbloquear la ruta de Strange Door/Home",
+    "Derrota a The Beast para presenciar el final de la historia"
+  ]}
+/>
+
+<Callout type="tip" title="Prioridad del Modo Difícil">
+Juega siempre en Modo Difícil. Las marcas de completitud obtenidas en Normal no cuentan para el logro "Dead God" ni para ciertos desbloqueos de objetos de alto nivel como Godhead.
+</Callout>
+
+| Ruta | Objeto Requerido | Destino Final | Tipo de Recompensa |
+| :--- | :--- | :--- | :--- |
+| **Ruta de Luz** | Polaroid | The Chest (???) | Objetos de alto nivel |
+| **Ruta Oscura** | Negative | Dark Room (The Lamb) | Victoria/Final |
+| **Ruta Alt** | Piezas del Cuchillo | Corpse (Mother) | Nuevos Personajes |
+| **Ruta Final** | Dad's Note | Home (The Beast) | Desbloqueos Tainted |
+
+</Section>
+
+<Section icon={Settings} title="Mods y Cooperativo Online (Repentance+)">
+
+A partir de 2026, la experiencia de **Qué es The Binding of Isaac Repentance** se ha mejorado aún más con la actualización Repentance+, que introdujo el cooperativo en línea oficial. Esto permite que hasta cuatro jugadores enfrenten el sótano juntos con progresión compartida.
+
+**Mods de Calidad de Vida Recomendados:**
+- **External Item Descriptions**: Muestra exactamente qué hace un objeto antes de recogerlo.
+- **Enhanced Boss Bars**: Proporciona mejor visibilidad para la salud de los jefes con múltiples fases.
+- **GoodTrip**: Permite el viaje rápido entre salas limpias para ahorrar tiempo.
+
+<Callout type="warning" title="Compatibilidad de Mods">
+El uso de mods desactivará los logros a menos que hayas derrotado a Mom al menos una vez en ese archivo de guardado. Para el cooperativo en línea, todos los jugadores deben tener los mismos mods activados o desactivados para evitar desincronizaciones.
+</Callout>
+
+</Section>
+
+<Section icon={BookOpen} title="Preguntas Frecuentes">
+
+<FAQ items={[
+  {
+    question: "¿Cuál es la mejor manera de desbloquear personajes Tainted?",
+    answer: "Debes llegar al piso Home. En el camino de subida durante el Ascenso (Ascent), deja un trinket en una Sala del Tesoro. Se convertirá en una Cracked Key durante el viaje de regreso, que usarás en el contorno rojo en el pasillo fuera de la habitación de Mom."
+  },
+  {
+    question: "¿Repentance incluye el contenido de Afterbirth+?",
+    answer: "Sí, Repentance es una expansión que se construye sobre Rebirth, Afterbirth y Afterbirth+. Debes poseer todos los DLC anteriores para jugar Repentance."
+  },
+  {
+    question: "¿Cómo lidio con la 'Armadura de Jefe' en jefes como Hush?",
+    answer: "La armadura de jefe escala con tu daño. Para omitirla, concéntrate en objetos que inflijan daño constante o tengan altas tasas de disparo en lugar de disparos únicos de alto daño. Los familiares y los efectos de estado también ayudan."
+  },
+  {
+    question: "¿Hay alguna forma de jugar cooperativo en línea en 2026?",
+    answer: "Sí, la actualización Repentance+ en Steam añadió emparejamiento en línea oficial y salas para amigos. Asegúrate de tener el DLC 'Repentance+' activado en tus propiedades de Steam."
+  }
+]} />
+
+</Section>

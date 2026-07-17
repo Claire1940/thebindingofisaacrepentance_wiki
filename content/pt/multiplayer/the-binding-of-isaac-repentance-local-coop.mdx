@@ -1,0 +1,208 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Co-op Local em The Binding of Isaac: Repentance: Guia de Configuração Completo",
+  description: "Domine o co-op local de The Binding of Isaac: Repentance com o nosso guia de 2026. Aprenda a configuração para 4 jogadores, sinergias de personagens, desbloqueios compartilhados e gerenciamento de recursos.",
+  category: "Guia",
+  image: "https://placehold.co/800x400/120B0D/E24133?text=Local+Co-op+Guide",
+  date: "2026-07-17",
+  author: "Equipe da Wiki de The Binding of Isaac: Repentance",
+  keywords: "the binding of isaac repentance, co-op local, cooperativo, guia de configuração, sinergias de personagens, marcas de conclusão"
+}
+
+<Callout type="info" title="Guia Rápido">
+- O **co-op local de The Binding of Isaac: Repentance** suporta até **quatro jogadores** com controle total de personagens, substituindo o antigo sistema de "bebês".
+- **Recursos Compartilhados**: Moedas, bombas e chaves são compartilhados por toda a equipe, enquanto a vida e os itens são individuais.
+- **Progressão**: As marcas de conclusão obtidas no co-op local contam para todos os personagens participantes no arquivo de salvamento do hospedeiro (host).
+- **Melhor Estratégia**: Equilibre a equipe com um causador de dano principal ("carry") e pelo menos um personagem utilitário ou tanque, como Magdalene.
+- **Requisito de Configuração**: São necessários vários controles; o primeiro jogador pode usar o teclado, mas os jogadores adicionais devem usar gamepads.
+</Callout>
+
+<Section icon={Swords} title="Evolução do Co-op Local em The Binding of Isaac: Repentance">
+
+Experimente o desafio definitivo de exploração de masmorras com amigos usando o **co-op local de The Binding of Isaac: Repentance**, um recurso que transforma o brutal roguelike em uma experiência tática para até 4 jogadores. Ao contrário das versões anteriores do jogo, onde os jogadores adicionais eram limitados a "bebês co-op" voadores com vida e dano reduzidos, Repentance introduz o "Co-op Verdadeiro". Isso significa que cada jogador seleciona um personagem único do elenco de 34 (incluindo as variantes Tainted), cada um com sua própria barra de vida, itens ativos e sinergias passivas.
+
+Em 2026, dominar este modo é essencial para os jogadores que desejam obter de forma eficiente as marcas de conclusão difíceis para personagens como The Lost ou Jacob & Esau. Ao ter um amigo jogando com um personagem mais resistente, você pode proteger "canhões de vidro" frágeis enquanto ainda colhe as recompensas de uma partida bem-sucedida.
+
+<CardGrid cols={3}>
+  <Card title="Jogador 1 (Hospedeiro)">
+    - **Controle Primário**: Teclado ou Controle
+    - **Foco da Câmera**: A câmera foca no Jogador 1 por padrão
+    - **Função**: Geralmente o líder do grupo e navegador principal
+  </Card>
+  <Card title="Jogadores Adicionais">
+    - **Entrada**: Devem usar gamepads/controles separados
+    - **Momento de Entrada**: Podem entrar no início de uma partida na sala inicial
+    - **Função**: Suporte de combate, gerenciamento de recursos e distração
+  </Card>
+  <Card title="Economia Compartilhada">
+    - **Moedas/Bombas/Chaves**: Pool totalmente compartilhado para a equipe
+    - **Pedestais de Itens**: Geralmente um por sala; a equipe deve decidir quem o pega
+    - **Lojas**: Os preços continuam padrão, mas os recursos são limitados
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Dica de Profissional">
+Se um jogador morrer durante um andar, ele reaparecerá como um fantasma. Nesse estado, ele ainda pode fornecer uma pequena ajuda causando um dano muito baixo. Ele reaparecerá totalmente com meio coração após o chefe do andar ser derrotado, desde que pelo menos um jogador tenha sobrevivido.
+</Callout>
+
+| Recurso | Antigo Co-op (Bebês) | Co-op Verdadeiro (Repentance) |
+| :--- | :--- | :--- |
+| **Máximo de Jogadores** | 2-4 (Limitado) | **4 Personagens Completos** |
+| **Vida** | Retirada do Jogador 1 | **Vida Individual** |
+| **Uso de Itens** | Não podiam pegar itens | **Sinergia Total de Itens** |
+| **Escolha de Personagem** | Bebê Aleatório | **Qualquer Personagem Desbloqueado** |
+| **Desbloqueios** | Apenas J1 ganha marcas | **Todos de J1 a J4 ganham marcas** |
+
+</Section>
+
+<Section icon={Map} title="Como Configurar Sessões de Co-op Local">
+
+Configurar uma sessão para o **co-op local de The Binding of Isaac: Repentance** é simples, mas requer configurações específicas de hardware para garantir que o jogo reconheça várias entradas. Embora a versão para PC seja a mais flexível, as versões para console (Switch, PS5, Xbox) oferecem suporte nativo plug-and-play para controles adicionais.
+
+<Steps>
+  <Step num="1" title="Conectar Controles">
+    Certifique-se de que todos os gamepads estejam conectados ao seu PC ou console antes de iniciar o jogo. No PC, o Steam Input geralmente cuida do mapeamento, mas ferramentas de terceiros podem ser necessárias para controles mais antigos.
+  </Step>
+  <Step num="2" title="Iniciar uma Nova Partida">
+    O Jogador 1 inicia uma partida padrão (modo Normal, Hard ou Greed). Você deve estar na primeiríssima sala (Sala Inicial) para adicionar jogadores adicionais.
+  </Step>
+  <Step num="3" title="Entrar no Jogo">
+    Os jogadores adicionais devem pressionar o botão 'Start' ou 'Options' em seus controles. Um menu de seleção de personagens aparecerá para cada novo jogador.
+  </Step>
+  <Step num="4" title="Selecionar Personagens">
+    Cada jogador escolhe seu personagem. Note que não é possível ter personagens duplicados (por exemplo, dois Isaacs), a menos que use mods ou glitches específicos.
+  </Step>
+</Steps>
+
+<Callout type="warning" title="Limitação de Hardware">
+No PC, o Jogador 1 pode usar o teclado, mas os Jogadores 2, 3 e 4 **devem** usar controles. O jogo geralmente não suporta vários teclados para jogo local sem softwares de remapeamento externos complexos.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Dominando as Mecânicas do Co-op Local de The Binding of Isaac: Repentance">
+
+O sucesso no **co-op local de The Binding of Isaac: Repentance** depende da distribuição de recursos. Como o jogo não dimensiona a quantidade de itens dropados com base no número de jogadores, uma equipe de quatro jogadores terá a mesma quantidade de itens que um jogador solo. Isso cria um nível de poder "diluído", onde cada jogador é individualmente mais fraco do que um Isaac solo seria.
+
+Para compensar, os jogadores devem utilizar as forças específicas de cada personagem. Por exemplo, dar todos os itens de aumento de vida (HP Up) para Magdalene permite que ela atue como um tanque para a equipe, enquanto dar multiplicadores de dano para Azazel garante que a equipe tenha DPS suficiente para derrotar os chefes rapidamente.
+
+| Tipo de Recurso | Estratégia de Gerenciamento | Alvo Prioritário |
+| :--- | :--- | :--- |
+| **Corações Vermelhos** | Deixe no chão para Magdalene/Samson | **Tanques / Personagens que se Automutilam** |
+| **Corações de Alma** | Proteja as chances de Pacto para toda a equipe | **Personagens Frágeis** |
+| **Itens Passivos** | Atribua com base nas sinergias existentes | **Causador de Dano Principal** |
+| **Itens Ativos** | Diversifique (1 de Cura, 1 de Dano, 1 de Utilidade) | **Personagens de Suporte** |
+| **Ornamentos (Trinkets)** | Troque frequentemente para maximizar os benefícios do andar | **Personagens Baseados em Sorte** |
+
+<Callout type="success" title="Bônus de Sinergia">
+Itens que afetam a "sala inteira" ou "todos os inimigos" tornam-se significativamente mais valiosos no co-op. Itens como **The Relic** ou **Book of Revelations** fornecem vida que pode ser distribuída para quem mais precisa, mantendo toda a equipe viva.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Melhores Combinações de Personagens para Co-op">
+
+Escolher a composição de equipe certa pode fazer a diferença entre uma partida fracassada no Basement (Porão) e derrotar The Beast (A Besta). Alguns personagens são projetados para apoiar outros, enquanto alguns são verdadeiras potências que precisam de proteção.
+
+<CardGrid cols={2}>
+  <Card title="O Médico e o Forte">
+    - **Magdalene**: Usa o Yum Heart para sustentar a equipe.
+    - **Azazel**: Fornece alto DPS de curto alcance para limpar ameaças.
+    - **Resultado**: Alta sobrevivência com limpezas de sala rápidas.
+  </Card>
+  <Card title="O Rerollador e o Apostador">
+    - **Isaac (com D6)**: Rerrola itens fracos para a equipe.
+    - **Cain**: Usa alta sorte e Lucky Foot para obter saques melhores em baús.
+    - **Resultado**: Builds de itens de alta qualidade para todos os jogadores.
+  </Card>
+  <Card title="O Fantasma e o Tanque">
+    - **The Lost**: Pega Pactos com o Diabo de graça para a equipe.
+    - **Forgotten**: Bloqueia projéteis com seu corpo de osso.
+    - **Resultado**: Aquisição estratégica de itens e segurança contra projéteis.
+  </Card>
+  <Card title="A Bateria e a Fogo-Fátuo">
+    - **Bethany**: Gera fogos-fátuos (wisps) para pressão ofensiva.
+    - **Tainted Isaac**: Cicla itens para encontrar baterias de itens ativos.
+    - **Resultado**: Uso constante de itens ativos e grande cobertura de tela.
+  </Card>
+</CardGrid>
+
+| Personagem | Tier no Co-op | Por Que Se Destacam |
+| :--- | :--- | :--- |
+| **Isaac (D6)** | **S-Tier** | Rerolls afetam o pool de itens compartilhado |
+| **Magdalene** | **A-Tier** | Essencial para a cura da equipe |
+| **Tainted Lilith** | **S-Tier** | Dano massivo sem precisar de muitos itens |
+| **Tainted Forgotten** | **B-Tier** | Pode ser arremessado por aliados para posicionamento tático |
+| **Jacob & Esau** | **D-Tier** | Quatro hitboxes (J1 + J2) são um pesadelo para desviar |
+
+<Callout type="tip" title="Dica de Estratégia">
+Ao jogar o **co-op local de The Binding of Isaac: Repentance**, sempre deixe o jogador com o maior atributo de **Sorte (Luck)** abrir baús e destruir cocôs/rochas. Isso maximiza a chance de encontrar consumíveis extras para a equipe.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Desbloqueios e Marcas de Conclusão no Co-op">
+
+Um de os maiores benefícios do **co-op local de The Binding of Isaac: Repentance** é a capacidade de obter marcas de conclusão para vários personagens simultaneamente. Se você alcançar e derrotar um chefe importante como Delirium, cada personagem atualmente vivo (ou em forma de fantasma) receberá a marca de conclusão no arquivo de salvamento do hospedeiro.
+
+Isso é particularmente útil para desbloquear itens de alto nível que estão bloqueados atrás de personagens difíceis.
+
+<Checklist
+  id="coop-progression"
+  title="Objetivos de Progressão do Co-op para 2026:"
+  items={[
+    "Desbloquear personagens Tainted para todos os jogadores na rota do Home (Lar)",
+    "Derrotar o Mega Satan para desbloquear o Apollyon usando uma equipe equilibrada",
+    "Concluir a Boss Rush em menos de 20 minutos dividindo-se em salas grandes",
+    "Obter a conquista 'Dead God' rotacionando personagens a cada partida",
+    "Derrotar a Mother no Corpse (Cadáver) para desbloquear Jacob & Esau para o J2"
+  ]}
+/>
+
+<Callout type="info" title="Nota Importante">
+Embora todos os personagens ganhem marcas, a dificuldade do jogo não diminui. Na verdade, os Chefes têm "Armadura de Chefe" (escala de dano), o que pode fazê-los parecer mais resistentes se o dano total da equipe estiver muito dividido entre quatro jogadores.
+</Callout>
+
+| Alvo do Chefe | Prioridade de Desbloqueio | Valor da Recompensa |
+| :--- | :--- | :--- |
+| **Mom's Heart (11x)** | **Essencial** | Desbloqueia 'It Lives' e Catedral/Sheol |
+| **Isaac / Satan (5x)** | **Alta** | Desbloqueia Polaroid e Negative |
+| **Hush (3x)** | **Alta** | Desbloqueia o Caminho Alternativo (Downpour/Mines) |
+| **The Beast** | **Extrema** | Desbloqueia variantes Tainted para a equipe |
+
+</Section>
+
+<Section icon={Sparkles} title="Perguntas Frequentes">
+
+<FAQ items={[
+  {
+    question: "O co-op local de The Binding of Isaac: Repentance funciona com o Steam Remote Play Together?",
+    answer: "Sim! Embora seja tecnicamente um co-op local, os usuários do Steam podem usar o Remote Play Together para convidar amigos online para jogar como se estivessem sentados no mesmo sofá. Apenas o hospedeiro precisa possuir o jogo."
+  },
+  {
+    question: "Como funcionam os itens se houver 4 jogadores?",
+    answer: "A maioria das salas ainda gera apenas um item. A equipe deve decidir quem o pega. No entanto, salas de escolha (como as Salas de Anjo ou as Salas de Tesouro do Caminho Alternativo) podem permitir que os jogadores cronometrem suas coletas para pegar vários itens simultaneamente."
+  },
+  {
+    question: "Podemos jogar com o mesmo personagem?",
+    answer: "Por padrão, não. Cada jogador deve selecionar um personagem único do elenco disponível. As variantes Tainted contam como personagens separados de suas contrapartes normais."
+  },
+  {
+    question: "O que acontece se o Jogador 1 morrer?",
+    answer: "Desde que pelo menos um jogador permaneça vivo, a partida continua. Se todos os jogadores morrerem, a partida termina. Os jogadores sobreviventes podem reviver os companheiros caídos derrotando o chefe do andar."
+  }
+]} />
+
+<Callout type="tip" title="Conselho Final">
+A comunicação é fundamental. Antes de entrar em uma Sala de Tesouro ou Loja, discuta quem precisa da próxima melhoria. Um único jogador poderoso é frequentemente melhor do que quatro medíocres nos estágios finais do jogo, como The Void (O Vazio) ou Home (Lar).
+</Callout>
+
+</Section>

@@ -1,0 +1,209 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "Guía del Modo Cooperativo en Línea de The Binding of Isaac Repentance Plus",
+  description: "Domina el nuevo modo cooperativo multijugador en línea de Repentance+. Aprende sobre la configuración de la conexión, sinergias de personajes, reglas de progresión compartida y actualizaciones de parches.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/1e1417/f2786e?text=Repentance+Plus+Online+Co-op",
+  date: "2026-07-17",
+  author: "Equipo de la Wiki de The Binding of Isaac Repentance",
+  keywords: "the binding of isaac repentance plus, cooperativo en línea, multijugador, guía, sinergias, configuración"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **Palabra clave principal**: Esta guía cubre la configuración completa y la estrategia para el modo cooperativo en línea de **the binding of isaac repentance plus**.
+- **Mecánica clave**: Hasta cuatro jugadores pueden unirse a una sola partida con personajes individuales, compartiendo un único pozo de llaves, bombas y monedas.
+- **Mejor estrategia**: Coordinar la selección de personajes para equilibrar a los atacantes con personajes defensivos o centrados en la utilidad.
+- **Consejo crítico**: Desactiva todos los mods de Steam Workshop antes de intentar unirte o crear salas de partidas públicas.
+- **Mejor opción**: Empareja a Isaac normal con Tainted Isaac para maximizar los rerolls de objetos y el control de selección.
+</Callout>
+
+<Section icon={Shield} title="The Binding of Isaac Repentance Plus: Requisitos del Sistema">
+
+El lanzamiento de la actualización de expansión gratuita introduce el emparejamiento multijugador en línea integrado directamente en Steam. Este sistema permite que hasta cuatro jugadores desciendan juntos al sótano. A diferencia de los métodos cooperativos locales anteriores o las soluciones de Remote Play, esta actualización establece un marco de código de red (netcode) dedicado, diseñado para sincronizar los estados del juego, los pozos de objetos y la progresión a través de múltiples cuentas de Steam distintas.
+
+Para garantizar una conexión estable y evitar errores de desincronización durante las peleas contra jefes con muchos proyectiles, los jugadores deben cumplir con requisitos de software específicos. Cada participante en la sala debe poseer el paquete completo de DLC en Steam, que incluye Rebirth, Afterbirth, Afterbirth+, Repentance y la actualización multijugador gratuita.
+
+| Requisito | Especificación | Detalle |
+| --- | --- | --- |
+| Plataforma | Steam PC | El emparejamiento en línea dedicado es exclusivo de Steam |
+| Paquete de DLC | Rebirth a Repentance | Todas las expansiones anteriores deben estar instaladas y activas |
+| Límite de Jugadores | 2 a 4 Jugadores | Admite partidas desde dúos hasta escuadrones completos de cuatro |
+| Entrada | Teclado o Mando | Reasignación completa de teclas compatible para todos los clientes |
+| Estado de Mods | Desactivados | Los mods del Workshop deben estar apagados para el emparejamiento público |
+
+<Callout type="warning" title="Advertencia de Compatibilidad de Mods">
+Ejecutar mods activos de Steam Workshop mientras intentas usar el emparejamiento público resultará en fallos de conexión o desincronización inmediata de la sala. Siempre desactiva los mods y reinicia el cliente del juego antes de ser anfitrión o unirte.
+</Callout>
+
+El código de red depende en gran medida de la estabilidad de la conexión del jugador anfitrión (host). Mientras que los jugadores clientes experimentarán pequeños ajustes visuales para compensar la latencia, la máquina anfitriona procesa las físicas, la generación de salas y la IA de los enemigos. Para la experiencia de juego más fluida, el jugador con las especificaciones de hardware más altas y la conexión a internet por cable más estable debería ser el anfitrión de la sala.
+
+</Section>
+
+<Section icon={Target} title="Configuración del Multijugador Paso a Paso">
+
+Configurar una sala en línea requiere navegar por la interfaz actualizada del menú principal. El sistema admite partidas privadas con amigos, salas públicas visibles para la comunidad y emparejamiento rápido para jugadores solitarios que buscan unirse a grupos activos. Sigue estos pasos para establecer una conexión y configurar tu sesión.
+
+<Steps>
+  <Step num="1" title="Habilitar el DLC Multijugador">
+    Asegúrate de que la expansión esté correctamente instalada en tu biblioteca de Steam. Revisa el panel de propiedades de contenido descargable para verificar que la actualización multijugador esté marcada y activa.
+  </Step>
+  <Step num="2" title="Acceder al Menú en Línea">
+    Inicia el juego y selecciona la opción "Online Co-op" en el menú principal. Si esta opción aparece en gris, verifica tu estado de conexión a Steam y asegúrate de que el juego se esté ejecutando en modo en línea.
+  </Step>
+  <Step num="3" title="Seleccionar Tipo de Emparejamiento">
+    Elige entre Partida con Amigos (Friend Match), Partida Pública (Public Match) o Partida Rápida (Quick Match). La partida con amigos te permite invitar a jugadores directamente desde tu lista de amigos de Steam a una sala privada.
+  </Step>
+  <Step num="4" title="Configurar Reglas del Juego">
+    El anfitrión de la sala puede seleccionar el modo de juego, incluyendo Normal, Difícil (Hard), Greed o Greedier. El anfitrión también puede elegir ejecutar desafíos desbloqueados específicos o carreras diarias.
+  </Step>
+  <Step num="5" title="Confirmar Personajes">
+    Una vez que todos los jugadores se han unido a la sala, cada participante selecciona su personaje de su lista personal de desbloqueados. Cuando todos estén listos, el anfitrión comienza la partida.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Consejo de Emparejamiento">
+Si estás jugando con un grupo preestablecido, usa la opción de Partida con Amigos. Esto omite por completo la lista de salas públicas, permitiendo reconexiones rápidas si un jugador experimenta una caída repentina de red.
+</Callout>
+
+Durante la selección de personajes, los jugadores solo pueden elegir personajes que hayan desbloqueado personalmente en su archivo de guardado local. Si un jugador cliente no ha desbloqueado un personaje específico o una variante Tainted, no podrá seleccionarlo, incluso si el anfitrión ha completado el 100% de los logros del juego.
+
+</Section>
+
+<Section icon={Swords} title="Progresión Compartida y Mecánicas Cooperativas">
+
+El sistema multijugador introduce reglas únicas para la distribución de recursos y el seguimiento de la progresión. Entender cómo el juego maneja las recolecciones, los pedestales de objetos y las marcas de completado es esencial para planificar partidas exitosas.
+
+Aunque los jugadores controlan personajes individuales con barras de salud y objetos activos separados, los recursos de utilidad son completamente compartidos. Las monedas, bombas y llaves van a un único contador unificado visible en la parte superior de la pantalla. Cualquier jugador puede gastar estos recursos, lo que requiere comunicación activa antes de abrir cofres cerrados, comprar objetos en la tienda o usar bombas para buscar salas secretas.
+
+| Tipo de Recurso | Distribución | Estrategia |
+| --- | --- | --- |
+| Monedas | Pozo Compartido | Ahorrar para tiendas, objetos prioritarios o compras de salud clave |
+| Bombas | Pozo Compartido | Priorizar rocas marcadas, salas secretas y daño a jefes |
+| Llaves | Pozo Compartido | Reservar siempre al menos una llave para la siguiente Sala del Tesoro |
+| Salud | Individual | Los corazones rojos, de alma y negros se recogen por personaje |
+| Objetos de Pedestal | Recogida Única | Asignar objetos a personajes según el valor de su sinergia |
+
+<Callout type="tip" title="Coordinación de Recursos">
+Debido a que las llaves y las bombas son compartidas, los jugadores deben coordinar sus gastos. Evita desperdiciar bombas en obstáculos básicos si un piso futuro requiere acceso con llave a un Planetario o una bóveda cerrada.
+</Callout>
+
+Las marcas de progresión obtenidas durante una partida cooperativa en línea se aplican a todos los jugadores elegibles en la sala. Si el grupo derrota con éxito a un jefe importante, como Mother o The Beast, cada jugador que haya sobrevivido a la partida recibe la marca de completado correspondiente en su archivo de guardado activo, siempre que haya seleccionado un personaje que aún necesitara esa marca de victoria específica.
+
+| Ruta del Jefe | Tipo de Recompensa de Desbloqueo | Prioridad de Objetivo |
+| --- | --- | --- |
+| Mom's Heart | Progresión Principal | Esencial para desbloquear capítulos alternativos |
+| Cathedral / Sheol | Marcas del Capítulo V | Desbloquea poderosos objetos pasivos específicos de personaje |
+| Chest / Dark Room | Objetos de Final de Juego | Proporciona mejoras de pozo de alto impacto como el Polaroid |
+| Mega Satan | Puerta Dorada | Desbloquea a Apollyon y abalorios favoritos de la comunidad |
+| The Beast | Variantes Tainted | Desbloquea el elenco definitivo de personajes de final de juego |
+
+Esta progresión compartida convierte al cooperativo en línea en una herramienta excelente para ayudar a los amigos a completar notas post-it de personajes difíciles, como las de Jacob y Esau o Tainted Lost. Un jugador habilidoso puede liderar la partida usando un personaje fuerte y confiable mientras el otro jugador se concentra en sobrevivir para asegurar la marca de completado.
+
+</Section>
+
+<Section icon={Sparkles} title="Mejores Sinergias de Personajes">
+
+Seleccionar personajes complementarios es la forma más rápida de romper el equilibrio del juego en el multijugador. Ciertas habilidades pasivas y objetos iniciales interactúan de formas que son imposibles de lograr en el modo de un solo jugador.
+
+Al construir tu equipo, intenta combinar personajes que generen recursos con aquellos que escalan agresivamente con daño alto. Evita usar múltiples personajes que dependan de los mismos tipos de salud rara, como usar a Tainted Lost junto a Tainted Beth, ya que competirán constantemente por recursos defensivos limitados.
+
+<CardGrid cols={3}>
+  <Card title="El Motor de Recursos">
+    - **Tainted Keeper y Magdalene**
+    - La alta generación de monedas cura a Magdalene instantáneamente.
+    - Permite farmear agresivamente las máquinas de donación de sangre.
+    - Excelente para romper la economía de las tiendas temprano.
+  </Card>
+  <Card title="El Controlador de Objetos">
+    - **Isaac y Tainted Isaac**
+    - Doble opción de objetos en cada pedestal.
+    - Isaac hace reroll de objetos no deseados usando el D6.
+    - Tainted Isaac cicla objetos para encontrar sinergias perfectas.
+  </Card>
+  <Card title="El DPS Definitivo">
+    - **Azazel y Lilith**
+    - Alto daño de corto alcance al inicio del juego.
+    - Lilith proporciona apoyo constante con familiares a distancia.
+    - Limpian jefes iniciales de forma segura sin perder tratos.
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Optimización de Sinergias">
+Usa la función de tirada de dados integrada en la rueda de gestos para resolver disputas sobre objetos de alto nivel. Asignar objetos al personaje que más se beneficie de la mejora de estadística específica asegura mayores tasas de supervivencia del equipo.
+</Callout>
+
+Para optimizar aún más la composición de tu equipo, consulta la tabla de calificaciones de sinergia a continuación. Esta matriz destaca cómo se desempeñan diferentes arquetipos de personajes cuando se emparejan en capítulos de alta dificultad como el Void o Home.
+
+| Pareja de Arquetipos | Calificación de Sinergia | Ventaja Principal |
+| --- | --- | --- |
+| Utilidad + DPS | ★★★★★ | Daño equilibrado con generación constante de recursos |
+| Doble DPS | ★★★★☆ | Limpieza de salas extremadamente rápida, pero vulnerable a la falta de salud |
+| Apoyo + Tanque | ★★★★☆ | Alta supervivencia, pero sufre contra la armadura de jefes tardíos |
+| Doble Apoyo | ★★☆☆☆ | Pisos iniciales seguros, pero carece del daño necesario para rutas cronometradas |
+
+</Section>
+
+<Section icon={Trophy} title="Resolución de Problemas y Seguimiento de Parches">
+
+Incluso con el soporte de servidores dedicados, pueden ocurrir latencias de red y conflictos de software durante las sesiones multijugador. Sigue esta lista de verificación para preparar tu sistema para una sesión estable en línea.
+
+<Checklist
+  id="co-op-prep"
+  title="Lista de Verificación Pre-Cooperativo:"
+  items={[
+    "Verificar que todos los jugadores hayan desactivado completamente los mods de Steam Workshop.",
+    "Asegurarse de que el anfitrión tenga una conexión ethernet por cable activa.",
+    "Confirmar que todos los clientes estén ejecutando exactamente la misma versión del juego.",
+    "Reiniciar el cliente de Steam para limpiar los datos almacenados de las salas de emparejamiento.",
+    "Seleccionar al jugador anfitrión basándose en las especificaciones de hardware más altas."
+  ]}
+/>
+
+<Callout type="warning" title="Recuperación de Conexión Perdida">
+Si un jugador cliente se desconecta a mitad de la partida, el anfitrión debe pausar el juego inmediatamente. El jugador desconectado puede intentar unirse de nuevo a la sala activa directamente a través de la interfaz de la lista de amigos de Steam sin perder el progreso de la partida.
+</Callout>
+
+Los desarrolladores oficiales lanzan parches regularmente para solucionar errores del multijugador, mejorar la sincronización de la conexión y ajustar el equilibrio de los personajes para el juego cooperativo. Mantenerse al tanto de estos cambios de versión garantiza que estés jugando en la versión más estable.
+
+| Versión | Enfoque | Correcciones Clave |
+| --- | --- | --- |
+| 1.9.7.6 | Lanzamiento Inicial Online | Introdujo el sistema de salas básico y emparejamiento de amigos |
+| 1.9.7.8 | Estabilidad del Netcode | Reducción de errores de desincronización en peleas de jefes intensas |
+| 1.9.7.11 | IU y Equilibrio | Se añadieron indicadores visuales para recursos y objetos compartidos |
+| 1.9.7.13 | Funciones Integradas | Se añadieron descripciones de objetos integradas y mejora de emparejamiento |
+
+</Section>
+
+<Section icon={Map} title="Preguntas Frecuentes">
+
+<FAQ items={[
+  {
+    question: "¿Los logros desbloqueados cuentan para todos en la sala en línea?",
+    answer: "Sí. Cualquier marca de completado, desbloqueo de personaje o logro de objeto obtenido durante la partida se acredita a todos los jugadores en la sala, siempre que hayan seleccionado un personaje que califique para ese desbloqueo específico."
+  },
+  {
+    question: "¿Cómo maneja el juego los pedestales de objetos cuando hay varios jugadores?",
+    answer: "La mayoría de los pedestales de objetos solo pueden ser recogidos por un jugador. Sin embargo, ciertas salas especiales, como las salas de elección con doble pedestal, permiten que varios jugadores agarren un objeto simultáneamente si se coordinan correctamente."
+  },
+  {
+    question: "¿Puedo usar mods de Steam Workshop mientras juego the binding of isaac repentance plus en línea?",
+    answer: "No. Todos los mods del Workshop deben estar completamente desactivados para asegurar la compatibilidad con los servidores de emparejamiento y prevenir errores de desincronización entre diferentes clientes de juego."
+  },
+  {
+    question: "¿Qué sucede cuando un jugador muere durante una partida cooperativa en línea?",
+    answer: "Los jugadores muertos reaparecen como un compañero bebé fantasma con capacidades de daño limitadas. Revivirán con medio corazón al comienzo del siguiente piso, siempre que al menos otro jugador derrote con éxito al jefe del piso actual."
+  }
+]} />
+
+<Callout type="info" title="Recursos de la Comunidad">
+Para encontrar compañeros de emparejamiento en tiempo real, discutir estrategias y obtener soporte técnico, únete al Discord oficial de la comunidad o visita los canales dedicados en el subreddit.
+</Callout>
+
+</Section>

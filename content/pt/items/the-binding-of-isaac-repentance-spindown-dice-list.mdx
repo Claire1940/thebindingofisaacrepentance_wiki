@@ -1,0 +1,187 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "Lista do Spindown Dice em The Binding of Isaac: Repentance: Guia",
+  description: "Domine o Spindown Dice em The Binding of Isaac: Repentance. Aprenda as melhores rotas de conversão de itens, rerrolagens de alto nível e estratégias de transição.",
+  category: "Guia",
+  image: "https://placehold.co/800x400/1e1417/f4e9e7?text=Spindown+Dice+List",
+  date: "2026-07-17",
+  author: "Equipe da Wiki de The Binding of Isaac: Repentance"
+}
+
+<Callout type="info" title="Guia Rápido">
+- **Recurso Principal**: Use a **lista do Spindown Dice em The Binding of Isaac: Repentance** para prever suas rerrolagens exatas.
+- **Mecânica Central**: O Spindown Dice reduz o ID interno de qualquer item em pedestal em exatamente 1 por carga.
+- **Melhores Alvos**: Transforme Toothpicks em Sacred Heart, Bot Fly em C Section e Glass Eye em Glitched Crown.
+- **Regra de Pulo**: Itens bloqueados são ignorados automaticamente, rolando para o próximo ID de item desbloqueado.
+- **Sinergia Principal**: Car Battery gira os itens para baixo em 2 IDs instantaneamente, economizando tempo de carga.
+</Callout>
+
+<Section icon={Sparkles} title="Lista do Spindown Dice em The Binding of Isaac: Repentance: Mecânicas Centrais">
+
+O Spindown Dice é um item ativo de nível S em The Binding of Isaac: Repentance. Diferente do D6 clássico, que rerrola itens em pedestais aleatoriamente com base na pool da sala atual, o Spindown Dice opera em um sistema totalmente determinístico. Todo item no jogo possui um ID numérico oculto. Quando ativado, o Spindown Dice subtrai exatamente 1 do ID de qualquer item em pedestal na sala. Isso permite que os jogadores planejem sua build com certeza absoluta, transformando itens medíocres em obras-primas que garantem a vitória.
+
+Para aproveitar ao máximo este poderoso item ativo, os jogadores devem consultar a **lista do Spindown Dice em The Binding of Isaac: Repentance** para rastrear a linhagem exata de seus itens atuais. Como o caminho de rerrolagem é fixo, você pode estrategicamente deixar itens no chão, coletar cargas e girá-los várias vezes até que atinjam o alvo desejado. Esta mecânica contorna as restrições padrão das pools de itens, permitindo obter itens de Secret Room ou Angel Room a partir de drops comuns de Boss Room.
+
+| Métrica | Detalhe | Impacto |
+| **Pool de Itens** | Pool de Secret Room | Difícil de encontrar naturalmente, altamente priorizado |
+| **Tempo de Carga** | 6 Salas | Requer suporte de bateria para múltiplas rodadas |
+| **Alvo da Rerrolagem** | ID menos 1 | Totalmente determinístico, ignora pools de salas |
+| **Itens Bloqueados** | Pulados totalmente | Rola automaticamente para o próximo ID desbloqueado |
+
+<Callout type="warning" title="Aviso sobre Itens Bloqueados">
+Se você não desbloqueou um item específico na cadeia de conversão, o Spindown Dice pulará o ID dele e subtrairá para o próximo item desbloqueado. Certifique-se sempre de que os pré-requisitos do seu alvo desejado estejam concluídos no seu arquivo de salvamento.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Caminhos de Conversão de Alto Valor">
+
+Encontrar um item de alto nível como Sacred Heart, C Section ou Death Certificate pode vencer uma partida instantaneamente. Com o Spindown Dice, você não precisa depender das baixas taxas de spawn de Angel ou Secret Rooms. Em vez disso, você pode procurar itens comuns que ficam logo acima desses itens lendários no registro numérico.
+
+Por exemplo, Toothpicks é uma recompensa comum de sala de chefe. Seu ID é 183. Ativar o Spindown Dice uma vez o transforma em Sacred Heart (ID 182), fornecendo um multiplicador de dano massivo e lágrimas teleguiadas. Da mesma forma, Bot Fly (ID 635) gira diretamente para C Section (ID 634), substituindo suas lágrimas por projéteis de feto teleguiados de alto dano. Isso torna itens de baixo nível pontos de partida altamente valiosos para suas cadeias de conversão.
+
+| Item Inicial | ID Inicial | Item Alvo | ID Alvo | Rodadas Necessárias |
+| **Toothpicks** | 183 | **Sacred Heart** | 182 | 1 Rodada |
+| **Bot Fly** | 635 | **C Section** | 634 | 1 Rodada |
+| **Glass Eye** | 712 | **Glitched Crown** | 711 | 1 Rodada |
+| **Blood Bag** | 119 | **Brimstone** | 118 | 1 Rodada |
+| **Lazarus' Rags** | 332 | **Godhead** | 331 | 1 Rodada |
+| **Sharp Key** | 662 | **Death Certificate** | 661 | 1 Rodada |
+| **Alabaster Box** | 583 | **The Stairway** | 582 | 1 Rodada |
+| **Quarter** | 146 | **Abaddon** | 145 | 1 Rodada |
+
+<Callout type="success" title="Farm Fácil de Blood Bag">
+Você pode obter Blood Bag facilmente usando uma Máquina de Doação de Sangue no Arcade. Assim que pegar o pedestal de Blood Bag, gire-o uma vez para garantir Brimstone, mesmo se estiver no caminho da Angel Room!
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Estratégia de Rerrolagem Passo a Passo">
+
+Executar uma quebra com o Spindown Dice requer planejamento cuidadoso e gerenciamento de recursos. Você não pode simplesmente girar todos os itens que vê; você deve gerenciar as cargas do item ativo, mapear seu andar e decidir quais itens valem a pena manter e quais devem ser convertidos. Siga esta abordagem estruturada para maximizar sua eficiência durante uma partida.
+
+<Steps>
+  <Step num="1" title="Localize o Dice">
+    Adquira o Spindown Dice da pool de Secret Room ou crie-o usando Tainted Cain. Se encontrá-lo cedo, priorize comprar baterias na Loja para manter sua carga ativa cheia.
+  </Step>
+  <Step num="2" title="Escaneie e Mapeie Pedestais">
+    Limpe todo o andar antes de usar qualquer carga. Anote todos os itens em pedestal disponíveis e verifique seus IDs na **lista do Spindown Dice em The Binding of Isaac: Repentance** para identificar alvos potenciais.
+  </Step>
+  <Step num="3" title="Reúna Recursos de Bateria">
+    Procure por baterias, familiares Lil Battery ou 4.5 Volt na Loja. Se tiver moedas suficientes, compre o estoque de baterias da Loja para facilitar múltiplas rodadas em um único pedestal de alto valor.
+  </Step>
+  <Step num="4" title="Execute as Rodadas">
+    Leve o Spindown Dice até o pedestal escolhido. Ative-o exatamente o número de vezes necessário para chegar ao seu alvo. Tenha cuidado para não girar demais, pois você não pode reverter o processo.
+  </Step>
+</Steps>
+
+<Callout type="info" title="Regra de Não Retroceder">
+Como o Spindown Dice apenas decrementa IDs, você não pode subir na lista. Se você girar acidentalmente além do item alvo, terá que encontrar outro pedestal para iniciar a cadeia novamente.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Sinergias Essenciais e Combinações de Quebra">
+
+O Spindown Dice é incrivelmente forte por si só, mas certos itens o transformam em uma força imparável. Itens relacionados a baterias são as sinergias mais valiosas, pois reduzem diretamente o tempo e a limpeza de salas necessários para realizar múltiplas rodadas em um único pedestal.
+
+<CardGrid cols={3}>
+  <Card title="Car Battery">
+    - **Efeito de Rodada Dupla**
+    - Subtrai 2 IDs por carga
+    - Acelera muito as cadeias longas
+  </Card>
+  <Card title="4.5 Volt">
+    - **Cargas Baseadas em Dano**
+    - Inestimável durante boss rushes
+    - Permite rodadas infinitas em chefes
+  </Card>
+  <Card title="The Battery">
+    - **Capacidade de Carga Dupla**
+    - Armazene até 12 cargas
+    - Permite rodadas consecutivas instantâneas
+  </Card>
+</CardGrid>
+
+Além de itens de bateria, itens passivos que geram pedestais extras ou mudam a forma como os itens surgem lhe darão mais oportunidades de encontrar pontos de partida para suas cadeias de conversão. Itens como Option e More Options são altamente recomendados.
+
+| Item de Sinergia | Tipo de Sinergia | Efeito no Jogo com Spindown Dice |
+| **Car Battery** | Modificador Ativo | Gira itens duas vezes, subtraindo 2 IDs por uso |
+| **4.5 Volt** | Modificador de Carga | Gera cargas ao causar dano, permitindo rodadas em chefes |
+| **The Battery** | Modificador de Carga | Permite armazenar uma carga cheia extra, até 12 slots |
+| **Sharp Plug** | Modificador de Carga | Troca meio coração por 1 carga ativa, permitindo rodadas rápidas |
+| **Schoolbag** | Inventário | Permite segurar o Spindown Dice junto com outro ativo de alto nível |
+| **Moving Box** | Utilidade | Embale pedestais e mova-os para uma única sala para rodadas em massa |
+
+<Callout type="tip" title="Aviso sobre Car Battery">
+Embora o Car Battery seja excelente para pular caminhos longos, ele torna rodadas ímpares impossíveis, a menos que você solte o Car Battery antes. Tenha isso em mente ao visar um ID específico.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Checklist do Spindown e Armadilhas Comuns">
+
+Para garantir que você não estrague uma partida promissora, você deve seguir um checklist rigoroso antes de ativar seu Spindown Dice. Muitos jogadores cometem o erro de girar itens sem verificar seu status de desbloqueio ou entender como as pools especiais de itens interagem com a mecânica de rerrolagem determinística.
+
+<Checklist
+  id="spindown-run-checklist"
+  title="Checklist de Verificação Pré-Rerrolagem:"
+  items={[
+    "Verifique se o item alvo está totalmente desbloqueado no seu arquivo de salvamento atual",
+    "Calcule o número exato de cargas necessárias para a conversão",
+    "Verifique se há Car Battery ou outros efeitos de dupla ativação no seu inventário",
+    "Certifique-se de que não precisa da utilidade do item atual antes de girá-lo",
+    "Limpe o resto do andar para maximizar os drops de bateria disponíveis"
+  ]}
+/>
+
+Além disso, alguns itens se comportam de forma estranha quando girados. Por exemplo, itens ativos que são girados retêm seu estado de carga, e certos itens relacionados à história não podem ser girados de forma alguma.
+
+| Tipo de Item / Cenário | Comportamento | Dica Estratégica |
+| **Verificação de Desbloqueios** | Pula IDs bloqueados | Evite tentar uma cadeia se o alvo estiver bloqueado |
+| **Itens Ativos** | Retém nível de carga | Itens ativos girados mantêm sua carga atual |
+| **Itens de História** | Não podem ser girados | Key Pieces e Knife Pieces ignoram o Spindown Dice |
+| **Itens Glitch** | Resultados caóticos | Itens TMTRAINER giram para variantes glitched |
+| **Partidas Co-op** | Saves individuais | Desbloqueios são verificados no save do host |
+
+<Callout type="success" title="Vantagem no Co-op">
+Em partidas co-op online, o Spindown Dice verifica desbloqueios com base no save do host. Use isso a seu favor para obter itens que outros jogadores no seu lobby ainda não desbloquearam!
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="FAQ">
+
+Entender os detalhes mais refinados do Spindown Dice pode elevar sua jogabilidade de casual para especialista. Abaixo estão as perguntas mais comuns que os jogadores fazem ao consultar a **lista do Spindown Dice em The Binding of Isaac: Repentance** durante suas partidas.
+
+<FAQ items={[
+  {
+    question: "O que acontece se eu usar o Spindown Dice no item ID 1?",
+    answer: "Usar o Spindown Dice no Sad Onion (ID 1) o rolará para o maior ID de item do jogo, que é Death Certificate (ID 661) ou o ID de item adicionado mais recentemente, dependendo da sua versão de DLC. Este é um dos loops mais poderosos do jogo."
+  },
+  {
+    question: "A pool de itens da sala afeta os resultados do Spindown Dice?",
+    answer: "Não. O Spindown Dice ignora completamente a pool de itens da sala. Ele segue estritamente a ordem numérica dos IDs dos itens, tornando-o 100% determinístico, independentemente de você estar em uma Treasure Room, Devil Room ou Secret Room."
+  },
+  {
+    question: "Como o Spindown Dice interage com Tainted Isaac?",
+    answer: "Tainted Isaac pode usar o Spindown Dice para ciclar através de seu inventário limitado. No entanto, como Tainted Isaac só pode segurar 8 itens passivos, você deve ter cuidado para não soltar um item essencial enquanto realiza suas cadeias de conversão."
+  },
+  {
+    question: "Posso girar trinkets ou itens de bolso?",
+    answer: "Não. O Spindown Dice afeta apenas itens em pedestal (coletáveis). Ele não tem efeito em trinkets, cartas, pílulas, runas ou drops de baús deixados no chão."
+  }
+]} />
+
+<Callout type="tip" title="Loop de Sad Onion">
+Fique sempre de olho no Sad Onion em suas Treasure Rooms. É a maneira mais fácil e confiável de obter Death Certificate via Spindown Dice, quebrando sua partida instantaneamente.
+</Callout>
+
+</Section>

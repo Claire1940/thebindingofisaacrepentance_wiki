@@ -1,0 +1,188 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, Wifi, Users } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "The Binding of Isaac: Repentance multijugador en línea: Guía de configuración y consejos",
+  description: "Domina el multijugador en línea de The Binding of Isaac: Repentance con nuestra guía de 2026. Aprende a unirte a la beta, gestionar objetos y optimizar tus partidas cooperativas.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/4a148c/fff?text=Online+Multiplayer+Guide",
+  date: "2026-07-17",
+  author: "Equipo de la Wiki de The Binding of Isaac: Repentance",
+  keywords: "the binding of isaac repentance, multijugador en línea, guía, cooperativo, beta de steam"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **Función principal**: El **multijugador en línea de The Binding of Isaac: Repentance** permite que hasta cuatro jugadores se enfrenten juntos al sótano de forma nativa.
+- **Método de acceso**: Los jugadores deben optar por la **rama Beta de Steam** usando un código de acceso específico proporcionado por los desarrolladores.
+- **Mecánicas de objetos**: Los objetos generalmente se comparten o se distribuyen mediante un sistema de votación/selección dependiendo del tipo de sala.
+- **Progresión**: Las marcas de finalización se obtienen para todos los jugadores simultáneamente, lo que lo hace ideal para completar desbloqueos difíciles.
+- **Conectividad**: Se requiere una conexión a internet estable, ya que el juego utiliza un netcode de estilo rollback para minimizar el retraso de entrada (input lag).
+</Callout>
+
+<Section icon={Map} title="Primeros pasos con Isaac Online">
+
+La llegada del **multijugador en línea nativo de The Binding of Isaac: Repentance** ha cambiado fundamentalmente la forma en que la comunidad interactúa con el sótano. A diferencia de las soluciones temporales anteriores como "Remote Play Together", el modo en línea integrado ofrece una interfaz dedicada, mejor sincronización y un sistema de salas optimizado. A partir de 2026, la función ha pasado de una alfa restringida a una beta ampliamente accesible, permitiendo a los fans experimentar el caos de Repentance con amigos de todo el mundo.
+
+**Puntos destacados del video:**
+- Visión general visual de la caótica jugabilidad multijugador.
+- Demostración de sinergias de objetos a alta velocidad en un entorno grupal.
+- Ejemplos de cómo interactúan múltiples jugadores con los patrones de los jefes.
+
+<YouTubeEmbed videoId="I4LacitlqU4" title="thebindingofisaacrepentance.exe" />
+
+<Callout type="tip" title="Consejo de acceso a la Beta">
+Antes de intentar organizar una partida, asegúrate de que tu cliente de Steam esté actualizado. El modo en línea está actualmente vinculado a las versiones `v1.9.5` (o posteriores) que se encuentran en la pestaña "betas" de las propiedades del juego.
+</Callout>
+
+| Característica | Cooperativo Local | Multijugador en Línea (2026) |
+| :--- | :--- | :--- |
+| **Límite de jugadores** | 4 Jugadores | 4 Jugadores |
+| **Retraso de entrada** | Cero (Local) | Bajo (Rollback Netcode) |
+| **Progresión de guardado** | Solo el anfitrión | Todos los participantes |
+| **Soporte de mods** | Completo | Limitado (Requiere sincronización) |
+| **Sistema de salas** | Ninguno | Salas públicas y privadas |
+
+</Section>
+
+<Section icon={Target} title="Cómo habilitar el multijugador en línea">
+
+Configurar el **multijugador en línea de The Binding of Isaac: Repentance** requiere unos pasos específicos dentro de la interfaz de Steam. Debido a que el modo todavía está técnicamente en su fase de "Beta en línea" a partir de 2026, no está habilitado por defecto en la rama estándar del juego.
+
+<Steps>
+  <Step num="1" title="Acceder a las propiedades de Steam">
+    Haz clic derecho en *The Binding of Isaac: Rebirth* en tu biblioteca de Steam y selecciona **Propiedades**.
+  </Step>
+  <Step num="2" title="Navegar a Betas">
+    Haz clic en la pestaña **Betas** en el lado izquierdo de la ventana de propiedades.
+  </Step>
+  <Step num="3" title="Introducir código de Beta">
+    En el cuadro de texto "Betas privadas", introduce el código de acceso actual (históricamente `be Isaac online!`) y haz clic en **Verificar código**.
+  </Step>
+  <Step num="4" title="Seleccionar la rama">
+    En el menú desplegable de arriba, selecciona **online_beta**. Steam comenzará una pequeña descarga para actualizar los archivos del juego.
+  </Step>
+  <Step num="5" title="Lanzar el juego">
+    Una vez completada la descarga, lanza el juego. Verás una nueva opción de **Online Squad** en el menú principal.
+  </Step>
+</Steps>
+
+<Callout type="warning" title="Copia de seguridad de datos">
+Siempre haz una copia de seguridad de tus archivos `persistentprogress1.dat` antes de cambiar a la rama beta. Aunque las versiones de 2026 son estables, las actualizaciones de la beta pueden causar ocasionalmente problemas de sincronización con los archivos de guardado locales.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Estrategia de combate y sinergia multijugador">
+
+En el **multijugador en línea de The Binding of Isaac: Repentance**, el meta cambia de la supervivencia individual a la sinergia basada en el equipo. Tener a cuatro jugadores en pantalla crea una cantidad masiva de desorden visual, pero también permite combinaciones que son imposibles en el juego en solitario. Por ejemplo, un jugador puede centrarse en construcciones de "cañón de cristal" de alto daño mientras otro se enfoca en objetos de utilidad como *The Jar* o *D20*.
+
+<CardGrid cols={3}>
+  <Card title="El Rol de Tanque">
+    - **Enfoque**: Vida alta y daño por contacto.
+    - **Objetos clave**: *The Wafer*, *Yum Heart*, *Infamy*.
+    - **Estrategia**: Bloquear proyectiles para los compañeros más frágiles.
+  </Card>
+  <Card title="El Cañón de Cristal">
+    - **Enfoque**: Daño por segundo (DPS) máximo y cadencia de lágrimas.
+    - **Objetos clave**: *Soy Milk*, *Brimstone*, *Sacred Heart*.
+    - **Estrategia**: Mantenerse en la retaguardia y derretir a los jefes rápidamente.
+  </Card>
+  <Card title="El Soporte">
+    - **Enfoque**: Generación de recursos y curación.
+    - **Objetos clave**: *Guppy's Paw*, *Book of Revelations*.
+    - **Estrategia**: Gestionar la salud del equipo y la economía de corazones de alma.
+  </Card>
+</CardGrid>
+
+<Callout type="info" title="Distribución de objetos">
+En el modo en línea de 2026, las Salas de Objetos suelen generar un objeto por jugador. Sin embargo, los objetos de la Sala del Jefe suelen soltar un solo objeto y el equipo debe decidir quién se lo queda. ¡La comunicación es clave!
+</Callout>
+
+| Tipo de Sala | Mecánica de Objetos | Estrategia |
+| :--- | :--- | :--- |
+| **Sala del Tesoro** | 1 objeto por jugador | Asignar objetos a personajes específicos |
+| **Sala del Jefe** | 1 objeto en total | Entregar al jugador con el DPS más bajo |
+| **Tienda** | Inventario compartido | Reunir dinero para objetos valiosos como *Stop Watch* |
+| **Ángel/Demonio** | Basado en elección | Priorizar a jugadores que puedan costear la vida |
+
+</Section>
+
+<Section icon={Sparkles} title="Mecánicas avanzadas y reglas">
+
+Comprender las reglas subyacentes del **multijugador en línea de The Binding of Isaac: Repentance** es esencial para el juego de alto nivel. El juego maneja la muerte y la resurrección de forma diferente al juego base para evitar pantallas de "fin del juego" por el error de un solo jugador.
+
+Cuando un jugador muere, se convierte en un fantasma. Como fantasma, aún puede proporcionar una asistencia menor infligiendo un daño muy bajo y bloqueando ciertos proyectiles. Para reaparecer, los jugadores supervivientes deben limpiar el piso actual o encontrar un objeto de reanimación específico.
+
+**Reglas clave del multijugador:**
+- **Cámara compartida**: La cámara intenta mantener a todos los jugadores a la vista. Si un jugador se queda atrás, será "arrastrado" hacia el grupo.
+- **Gestión de salud**: Los corazones rojos son individuales, pero ciertos objetos de "mejora de todas las estadísticas" pueden proporcionar pequeñas mejoras a todo el equipo.
+- **Logros**: Puedes desbloquear personajes como *The Forgotten* o *Bethany* en multijugador, siempre que el anfitrión cumpla con los requisitos.
+
+<Callout type="success" title="Marcas de finalización">
+Todos los jugadores en la sala reciben la marca de finalización por el jefe derrotado. Esta es la forma más eficiente de ayudar a los amigos a desbloquear objetos difíciles como *Godhead* o *Mega Mush*.
+</Callout>
+
+| Tipo de Personaje | Ventaja en Multijugador | Desventaja en Multijugador |
+| :--- | :--- | :--- |
+| **Personajes Tainted** | Mecánicas únicas que pueden cargar al equipo | A menudo requieren una alta inversión de recursos |
+| **Lost/Tainted Lost** | Pactos con el Demonio gratis para el equipo | Extremadamente frágiles en salas caóticas de 4 jugadores |
+| **Isaac (D6)** | Puede relanzar objetos malos para todos | Requiere una gestión cuidadosa de las cargas |
+
+</Section>
+
+<Section icon={Shield} title="Lista de verificación de optimización y conectividad">
+
+Para asegurar una experiencia fluida en el **multijugador en línea de The Binding of Isaac: Repentance**, necesitas optimizar tanto tu hardware como tus ajustes dentro del juego. El netcode de rollback es excelente para ocultar la latencia, pero no puede solucionar una conexión fundamentalmente inestable.
+
+<Checklist
+  id="multiplayer-optimization"
+  title="Lista de estabilidad previa al juego:"
+  items={[
+    "Usa una conexión Ethernet por cable en lugar de Wi-Fi",
+    "Desactiva descargas pesadas en segundo plano (actualizaciones de Steam, etc.)",
+    "Asegúrate de que todos los jugadores estén en la misma región geográfica para un ping más bajo",
+    "Sincroniza los ajustes de 'Max Draw Distance' en el menú de opciones",
+    "Verifica que ningún jugador esté usando mods cosméticos conflictivos"
+  ]}
+/>
+
+<Callout type="warning" title="Compatibilidad de mods">
+A partir de julio de 2026, la mayoría de los mods puramente visuales (como *External Item Descriptions*) funcionan en multijugador, pero cualquier mod que altere el diseño de las salas o los grupos de objetos debe ser instalado por todos los jugadores para evitar errores de desincronización ("Desync").
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Preguntas frecuentes">
+
+Dominar los matices del sótano con amigos lleva tiempo. Aquí están las preguntas más comunes sobre la experiencia del **multijugador en línea de The Binding of Isaac: Repentance**.
+
+<FAQ items={[
+  {
+    question: "¿Puedo jugar al multijugador en línea con la versión de Epic Games Store?",
+    answer: "Actualmente, la beta nativa en línea es exclusiva de la versión de Steam del juego. Los usuarios de Epic Games aún deben depender de herramientas de terceros o esperar al lanzamiento completo en consolas/multiplataforma programado para finales de 2026."
+  },
+  {
+    question: "¿Cómo invito a amigos a mi escuadrón en línea?",
+    answer: "Una vez que estés en el menú 'Online Squad', puedes abrir tu lista de amigos de Steam (Shift+Tab) y hacer clic derecho en un amigo para seleccionar 'Invitar a la sala'. También puedes establecer un código de sala para que se unan jugadores públicos."
+  },
+  {
+    question: "¿Funcionan los mods en el multijugador en línea de The Binding of Isaac: Repentance?",
+    answer: "Sí, pero están 'deshabilitados parcialmente' por defecto en la beta para evitar desincronizaciones. Si deseas usarlos, cada jugador en la sala debe tener exactamente la misma lista de mods y versiones instaladas."
+  },
+  {
+    question: "¿Hay juego cruzado (cross-play) entre PC y consolas?",
+    answer: "A mediados de 2026, el juego cruzado no es compatible oficialmente. Los desarrolladores han insinuado que llegará con la actualización final 'Repentance+', pero por ahora, todos deben estar en la misma plataforma."
+  }
+]} />
+
+<Callout type="info" title="Consejo profesional final">
+Si la pantalla se vuelve demasiado desordenada con cuatro jugadores, intenta habilitar el modo de 'Alto Contraste' en los ajustes de accesibilidad. Esto añade un contorno sutil a los personajes y proyectiles, facilitando mucho el seguimiento de tu posición durante los segmentos intensos de lluvia de balas.
+</Callout>
+
+</Section>

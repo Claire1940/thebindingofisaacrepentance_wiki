@@ -1,0 +1,180 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "The Binding of Isaac: Repentance Switch 2: Guia de Portabilidade e Configuração",
+  description: "Otimize seu desempenho, domine as taxas de quadros e progrida rapidamente no Nintendo Switch 2. Descubra itens de nível S, caminhos de desbloqueio e configurações cooperativas.",
+  category: "Guia",
+  image: "https://placehold.co/800x400/1e1417/f4e9e7?text=Isaac+Repentance+Switch+2",
+  date: "2026-07-17",
+  author: "Equipe da Wiki de The Binding of Isaac: Repentance",
+  keywords: "isaac repentance, switch 2, guia, desempenho, itens s-tier, cooperativo online"
+}
+
+<Callout type="info" title="Guia Rápido">
+- **Desempenho no Switch 2**: Experimente uma jogabilidade impecável a 60 FPS, mesmo com sinergias que quebram o jogo e efeitos de partículas massivos.
+- **Tempos de Carregamento Instantâneos**: Transição entre andares em menos de um segundo, eliminando o atraso de renderização do hardware antigo.
+- **Estratégia de Progressão**: Foque primeiro nos desbloqueios de nível S para enriquecer sua pool de itens com itens passivos e ativos de alto impacto.
+- **Suporte para Cooperativo Online**: Conecte-se com até quatro jogadores no Steam ou redes de console para obter marcas de conclusão simultaneamente.
+</Callout>
+
+<Section icon={Sparkles} title="Melhorias de Desempenho para The Binding of Isaac: Repentance no Switch 2">
+
+A transição desta obra-prima roguelike sombria para o hardware de próxima geração da Nintendo traz atualizações técnicas massivas. Na plataforma antiga, sinergias complexas envolvendo itens como Brimstone, Tech X e Soy Milk frequentemente causavam quedas severas de quadros, travamentos de hardware ou falhas totais do jogo. O poder de processamento aprimorado do novo sistema resolve completamente essas limitações.
+
+Com largura de banda de memória aprimorada e uma arquitetura de GPU atualizada, o jogo mantém 60 FPS travados o tempo todo. Esse aumento de desempenho é particularmente perceptível durante lutas densas contra chefes, como as batalhas de múltiplas fases contra Hush, Mother e The Beast. Além disso, transições de andar, resets de sala e o layout massivo do Void são renderizados instantaneamente.
+
+| Métrica de Desempenho | Switch Antigo | Nintendo Switch 2 |
+| :--- | :--- | :--- |
+| **Resolução Portátil** | 720p Dinâmico | **1080p Nativo** |
+| **Resolução na Dock** | 1080p Nativo | **4K Ultra HD** |
+| **Taxa de Quadros Alvo** | 60 FPS (com quedas) | **60 FPS Travados (estável)** |
+| **Carregamento de Andar** | 3 - 5 Segundos | **Instantâneo (< 1 segundo)** |
+| **Processamento de Sinergias** | Risco de Travamento | **Processamento Impecável** |
+| **Desempenho no Co-op** | Atraso de Input Local | **Latência Zero Local/Online** |
+
+<Callout type="success" title="Melhoria de Fidelidade Visual">
+O aumento da resolução torna legíveis os detalhes finos, como as marcas de cruz tênues em pedras marcadas (tinted rocks) e os sinais sutis de padrões de projéteis. Ative o **Found HUD** e o **Extra HUD** no menu de opções para monitorar seus atributos exatos e histórico de itens sem impactar o desempenho do jogo.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="Primeiros Passos: Loop Principal e Etapas de Configuração">
+
+Ter sucesso neste roguelike desafiador requer um equilíbrio entre habilidade mecânica, gerenciamento de recursos e tomada de decisões estratégicas. Cada partida consiste em andares gerados aleatoriamente onde você deve limpar salas de combate, coletar recursos (moedas, chaves e bombas) e adquirir melhorias de itens para derrotar o chefe do andar e descer mais fundo.
+
+Para maximizar suas chances de vitória desde sua primeira partida no novo sistema, siga esta sequência otimizada de configuração e progressão.
+
+<Steps>
+  <Step num="1" title="Otimize as Configurações do Jogo">
+    Antes de iniciar uma partida, navegue até o menu de opções. Ative o **Found HUD** para exibir seus atributos numéricos exatos (como dano, cadência de tiro e sorte) no lado esquerdo da tela. Ative o **Extra HUD** para exibir seus itens coletados no lado direito. Por fim, defina a **Bullet Visibility** (Visibilidade de Projéteis) como alta para destacar claramente os projéteis inimigos contra as texturas escuras do chão.
+  </Step>
+  <Step num="2" title="Domine a Vida e Mecânicas de Acordos">
+    Entenda a diferença entre Corações Vermelhos, Corações de Alma (Soul Hearts) e Corações Pretos (Black Hearts). Receber dano em seus recipientes de Coração Vermelho reduz suas chances de gerar um Acordo com o Demônio (Devil Deal) ou uma Sala do Anjo (Angel Room) após a luta contra o chefe. Sempre priorize a coleta de Corações de Alma e Pretos, pois eles agem como um escudo defensivo que preserva suas porcentagens de geração de salas de acordo.
+  </Step>
+  <Step num="3" title="Limpe as Salas na Ordem Correta">
+    Ao entrar em um novo andar, não corra para a sala do chefe. Limpe as salas de combate padrão primeiro para acumular moedas, chaves e bombas. Localize a **Sala do Tesouro** (que contém um item gratuito) e a **Loja** (onde você pode comprar vida, chaves e itens utilitários). Só entre na Sala do Chefe depois de ter explorado totalmente o andar e gasto seus recursos com sabedoria.
+  </Step>
+  <Step num="4" title="Escolha seu Caminho de Acordo">
+    Após derrotar um chefe de andar a partir do 2º Andar, um Acordo com o Demônio ou Sala do Anjo pode aparecer. Nesta versão do jogo, pular o primeiro Acordo com o Demônio inteiramente garante que a próxima sala de acordo a aparecer será uma **Sala do Anjo**. As Salas do Anjo oferecem itens ofensivos e defensivos poderosos de forma totalmente gratuita, tornando-as altamente recomendadas para partidas consistentes.
+  </Step>
+</Steps>
+
+<Callout type="info" title="Dica de Recurso">
+Sempre mantenha pelo menos uma chave de reserva para a Sala do Tesouro do próximo andar. Entrar em um andar com zero chaves pode impedir seu acesso a uma melhoria de item vital, prejudicando severamente sua escala ofensiva.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Itens S-Tier e Sinergias de Personagens">
+
+Com mais de 700 itens disponíveis, saber quais itens podem vencer instantaneamente uma partida é crucial. Itens de nível S fornecem multiplicadores de dano massivos, comportamentos únicos de lágrimas ou utilidade inigualável que podem carregar uma build fraca até os capítulos finais.
+
+| Nome do Item | Pool Principal | Efeito Principal na Gameplay | Classificação |
+| :--- | :--- | :--- | :--- |
+| **Sacred Heart** | Sala do Anjo | **Multiplicador de dano massivo, lágrimas teleguiadas, vida** | 5 / 5 |
+| **C Section** | Sala do Tesouro | **Dispara fetos teleguiados que causam dano de contato** | 5 / 5 |
+| **Glitched Crown** | Sala Secreta | **Pedestais alternam rápido, permitindo escolher o item** | 5 / 5 |
+| **Spindown Dice** | Sala Secreta | **Rerola itens para o número de ID interno anterior** | 4.5 / 5 |
+| **R Key** | Sala Secreta | **Reinicia a partida no Basement I mantendo todos os itens** | 5 / 5 |
+| **Twisted Pair** | Sala do Demônio | **Dois familiares imitam sua direção de tiro e dano** | 4.5 / 5 |
+
+Para utilizar esses itens de forma eficaz, você deve combiná-los com personagens compatíveis. O jogo apresenta 34 estilos de jogo distintos divididos entre personagens normais e suas variantes Tainted.
+
+<CardGrid cols={3}>
+  <Card title="Isaac (Normal)">
+    - **Item Inicial**: O D6 (desbloqueado)
+    - **Mecânica**: Rerolar pedestais de itens indesejados
+    - **Estilo de Jogo**: Builds altamente controladas
+  </Card>
+  <Card title="Azazel (Normal)">
+    - **Configuração Inicial**: Voo e Brimstone de curto alcance
+    - **Mecânica**: Alto dano explosivo no início do jogo
+    - **Estilo de Jogo**: Combate agressivo de curto alcance
+  </Card>
+  <Card title="Tainted Keeper">
+    - **Configuração Inicial**: Arma de tiro quádruplo
+    - **Mecânica**: Inimigos soltam moedas temporárias
+    - **Estilo de Jogo**: Compras de alto risco e alta recompensa
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Destaque de Sinergia">
+Combine o **Sacred Heart** com itens de tiro múltiplo como **20/20** ou **Mutant Spider**. O efeito teleguiado anula completamente a penalidade de precisão de disparar várias lágrimas, garantindo que cada projétil atinja seu alvo para o dano máximo.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Roteiro de Progressão e Checklist de Desbloqueios">
+
+Para completar totalmente o jogo, você deve obter marcas de conclusão na nota de post-it de cada personagem derrotando os chefes principais no Modo Difícil (Hard Mode). Priorize desbloqueios que introduzam itens poderosos em sua pool global de itens, tornando as partidas subsequentes significativamente mais fáceis.
+
+| Fase | Requisito Alvo | Recompensa Desbloqueada | Nível de Prioridade |
+| :--- | :--- | :--- | :--- |
+| **Fase 1** | Derrotar Mom em Depths II | **Capítulo Womb, Final 1** | Essencial |
+| **Fase 2** | Derrotar Mom's Heart 11 vezes | **It Lives! (substitui o Coração)** | Essencial |
+| **Fase 3** | Derrotar Isaac (Cathedral) 5 vezes | **The Polaroid (desbloqueia Chest)** | Alto |
+| **Fase 4** | Derrotar Satan (Sheol) 5 vezes | **The Negative (desbloqueia Dark Room)** | Alto |
+| **Fase 5** | Completar o Desafio #2 | **Runa Jera (duplica consumíveis no chão)** | Alto |
+| **Fase 6** | Completar o Desafio #17 | **Death's Touch (lágrimas de foice, perfurantes)** | Médio |
+
+Use este checklist para acompanhar seus marcos essenciais em um novo arquivo de salvamento:
+
+<Checklist
+  id="switch2-milestones"
+  title="Marcos do Arquivo de Salvamento no Switch 2:"
+  items={[
+    "Derrote a Mom uma vez para abrir o Womb e desbloquear o primeiro final.",
+    "Derrote o Mom's Heart 11 vezes para desbloquear permanentemente o chefe It Lives!.",
+    "Desbloqueie o D6 para o Isaac derrotando Isaac como ??? (Blue Baby).",
+    "Doe 879 moedas para a Greed Machine para dar o Holy Mantle ao The Lost.",
+    "Derrote o Hush 3 vezes para desbloquear os caminhos secretos de andares alternativos."
+  ]}
+/>
+
+<Callout type="warning" title="Evite Diluir a Pool">
+Cuidado para não desbloquear itens fracos logo no início. Evite completar desafios ou conquistas que desbloqueiem itens ativos de baixo impacto ou pílulas prejudiciais, pois eles diluirão suas pools de itens e diminuirão a qualidade média de suas builds.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Configurações de Multiplayer e Cooperativo Online">
+
+O sistema cooperativo online integrado na atualização Repentance+ permite que até quatro jogadores se unam. Este recurso é totalmente suportado no novo hardware do console, oferecendo matchmaking sem lag e progressão compartilhada.
+
+Ao jogar online, todos os jogadores selecionam um personagem de sua própria lista de desbloqueados. Embora as reservas de vida, itens ativos e itens passivos permaneçam individuais, recursos consumíveis como moedas, bombas e chaves são compartilhados globalmente entre a equipe. Isso requer alta comunicação e distribuição justa de recursos.
+
+- **Partida com Amigos**: Hospede um lobby privado e convide jogadores diretamente da sua lista de amigos.
+- **Partida Pública**: Junte-se ou hospede um lobby aberto visível para toda a comunidade online.
+- **Progresso Compartilhado**: Todos os jogadores elegíveis ganham marcas de conclusão e conquistas com base no destino final da partida.
+- **Roda de Emotes**: Use o sistema de emotes integrado para marcar paredes de salas secretas, apontar pedras marcadas ou votar na distribuição de itens.
+
+<Callout type="info" title="Nota de Equilíbrio do Co-op">
+A vida dos chefes escala dinamicamente com o número de jogadores ativos. Para ter sucesso, atribua funções dentro da sua equipe; faça um jogador focar em alto dano de alvo único, enquanto outro foca em utilidade e defesa contra projéteis.
+</Callout>
+
+<FAQ items={[
+  {
+    question: "O jogo suporta compatibilidade com o Switch original?",
+    answer: "Sim, o jogo é totalmente compatível com versões anteriores. Você pode transferir seus dados de salvamento existentes, incluindo todos os personagens desbloqueados, itens e marcas de conclusão, diretamente para o novo console."
+  },
+  {
+    question: "Como desbloqueio personagens Tainted no Switch 2?",
+    answer: "Durante a rota de Ascensão (Ascent) para Home, deixe um trinket em qualquer Sala do Tesouro ou Sala de Chefe. No caminho de volta, esse trinket se transformará em uma Cracked Key. Use esta chave no armário do corredor vermelho em Home para desbloquear a versão Tainted do seu personagem atual."
+  },
+  {
+    question: "Qual é a vantagem de jogar no Modo Difícil (Hard Mode)?",
+    answer: "O Modo Difícil é necessário para obter as marcas de conclusão com borda vermelha na tela de seleção de personagens. Essas marcas são necessárias para desbloquear itens de fim de jogo como Godhead, Mega Mush e Death Certificate."
+  },
+  {
+    question: "O cooperativo online também suporta jogadores locais em tela dividida?",
+    answer: "Sim, você pode combinar o cooperativo local de sofá com o matchmaking online, permitindo que dois jogadores locais se juntem a dois jogadores online em uma única partida."
+  }
+]} />
+
+</Section>

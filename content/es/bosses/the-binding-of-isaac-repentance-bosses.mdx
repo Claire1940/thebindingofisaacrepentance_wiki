@@ -1,0 +1,186 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "Jefes de the binding of isaac repentance: Guía de Rutas y Patrones 2026",
+  description: "Domina a todos los jefes de the binding of isaac repentance con nuestra guía de 2026. Aprende patrones de ataque, requisitos de desbloqueo y las mejores rutas hacia la victoria.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/120B0D/F4E9E7?text=Boss+Strategy+Guide",
+  date: "2026-07-17",
+  author: "Equipo de la Wiki de the binding of isaac repentance",
+  keywords: "the binding of isaac repentance bosses, jefes isaac, guía de jefes isaac 2026, patrones de ataque, desbloqueos isaac"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **Jefes de the binding of isaac repentance**: Esta guía cubre todos los encuentros principales, desde Mamá hasta La Bestia (The Beast), centrándose en las estrategias del meta de 2026.
+- **Gestión de Rutas**: El éxito depende de elegir el camino correcto (Polaroid vs. Negative) y gestionar las puertas por tiempo para Hush.
+- **Armadura de Jefe**: Muchos jefes del final del juego utilizan escalado de daño, lo que significa que el daño de ráfaga alta suele ser menos efectivo que el DPS sostenido.
+- **Desbloqueos**: Derrotar a jefes específicos con diferentes personajes es la forma principal de expandir tu reserva de objetos y tu elenco de personajes.
+- **Preparación**: Prioriza la velocidad de movimiento y los objetos defensivos como Holy Mantle o Psy Fly para las fases de "bullet-hell".
+</Callout>
+
+<Section icon={Map} title="Progresión Principal: Los Jefes de la Rama Central">
+
+Navegar por la jerarquía de los **jefes de the binding of isaac repentance** requiere una comprensión clara de las rutas ramificadas del juego. Cada partida comienza con el objetivo de llegar a Mamá en las Profundidades (Depths), pero el camino a seguir se expande significativamente a medida que aseguras más victorias. En el meta de 2026, los jugadores deben equilibrar sus recursos de salud frente a los requisitos para entrar en la Catedral o el Sheol.
+
+| Nombre del Jefe | Ubicación | Requisito de Desbloqueo Principal | Tipo de HP |
+| :--- | :--- | :--- | :--- |
+| **Mamá (Mom)** | Depths II | Disponible por defecto | Estándar |
+| **Corazón de Mamá** | Womb II | Derrotar a Mamá 1 vez | Estándar |
+| **It Lives!** | Womb II | Derrotar al Corazón de Mamá 11 veces | Estándar |
+| **Isaac** | Catedral | Entrar en el haz de luz tras It Lives! | Escalado |
+| **Satán** | Sheol | Entrar en la trampilla tras It Lives! | Estándar |
+| **??? (Blue Baby)** | El Cofre | Llevar The Polaroid a la Catedral | Escalado |
+| **The Lamb** | Dark Room | Llevar The Negative al Sheol | Estándar |
+
+<Callout type="info" title="Explicación del Escalado de Daño">
+Varios jefes del final del juego, incluidos Isaac y Blue Baby, utilizan la **Armadura de Jefe (Boss Armor)**. Esta mecánica reduce el daño entrante en función de cuánto DPS estés infligiendo actualmente. Para contrarrestar esto, los objetos que proporcionan daño persistente o lágrimas de alta frecuencia suelen ser más fiables que los proyectiles de un solo disparo con mucho daño.
+</Callout>
+
+La transición del Corazón de Mamá a It Lives! es un momento crucial en tu progresión. Una vez desbloqueado It Lives!, obtienes acceso garantizado a la Catedral y al Sheol. Estos pisos representan el desafío del juego medio, donde los enemigos infligen un corazón completo de daño y los diseños de las salas se vuelven cada vez más complejos.
+
+</Section>
+
+<Section icon={Target} title="La Ruta Alternativa: Llegar a Mother">
+
+La expansión Repentance introdujo la ruta más compleja en la historia del juego. Llegar a Mother requiere una serie de acciones específicas a través de los pisos alternativos: Downpour, Mines y Mausoleum. Este camino es significativamente más difícil que la ruta estándar, con enemigos con más salud y proyectiles más agresivos.
+
+<Steps>
+  <Step num="1" title="Entrar en la Salida Secreta">
+    Después de derrotar a Hush tres veces, aparecerá una puerta cerrada tras el jefe del primer piso. Usa una llave para entrar en Downpour o Dross.
+  </Step>
+  <Step num="2" title="El Mundo del Espejo">
+    En Downpour II, busca el fuego blanco y camina hacia él para convertirte en la forma de Lost. Entra en el espejo para encontrar la primera Pieza del Cuchillo en la Sala del Tesoro.
+  </Step>
+  <Step num="3" title="El Pozo de Mina Abandonado">
+    Entra en Mines o Ashpit II usando dos bombas. Presiona tres botones amarillos ocultos por todo el piso, luego entra en el pozo de la mina para escapar de la sombra de Great Gideon con la segunda Pieza del Cuchillo.
+  </Step>
+  <Step num="4" title="La Puerta de Carne">
+    En Mausoleum II, derrota a la versión alternativa de Mamá. Usa el Cuchillo completado para apuñalar la puerta de carne roja, lo que lleva a una lucha contra la versión alternativa del Corazón de Mamá.
+  </Step>
+</Steps>
+
+| Piso Alternativo | Coste de Entrada | Objeto Clave Encontrado | Peligro Único |
+| :--- | :--- | :--- | :--- |
+| **Downpour / Dross** | 1 Llave | Pieza de Cuchillo 1 | Mundo Espejo / Forma Lost |
+| **Mines / Ashpit** | 2 Bombas | Pieza de Cuchillo 2 | Secuencia de Persecución |
+| **Mausoleum / Gehenna** | 2 Corazones Llenos | N/A | Trampas de Teletransporte |
+| **Corpse** | N/A | N/A | Enemigos Putrefactos |
+
+<Callout type="warning" title="Riesgo en el Mundo del Espejo">
+Mientras estés en el Mundo del Espejo como Lost, cualquier golpe resultará en un fin de partida inmediato a menos que tengas desbloqueado el Holy Mantle. Prioriza la seguridad sobre limpiar todas las salas en este estado.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="El Desafío Final: Dogma y La Bestia">
+
+La ruta "Home" representa el verdadero final de la historia de the binding of isaac repentance. Este camino es único porque involucra la mecánica de "Ascenso" (Ascent), donde viajas hacia atrás a través de los pisos que limpiaste previamente. Esta ruta culmina en una pelea de jefes de múltiples fases que pone a prueba la resistencia de tu build y tus habilidades para esquivar proyectiles.
+
+<CardGrid cols={2}>
+  <Card title="Fase 1: Dogma">
+    - **Forma de Televisión**: Usa rayos de estática y halos giratorios.
+    - **Forma de Ángel**: Cargas rápidas y ráfagas de plumas.
+    - **Estrategia**: Mantén la distancia durante la fase giratoria y vigila los telégrafos de los rayos de luz.
+  </Card>
+  <Card title="Fase 2: Ultra Jinetes">
+    - **Hambre/Peste**: Concéntrate en esquivar horizontalmente.
+    - **Guerra/Muerte**: Cargas a alta velocidad y patrones de guadañas.
+    - **Estrategia**: Cada Jinete tiene una reserva de salud limitada; concéntrate en un DPS constante.
+  </Card>
+  <Card title="Fase 3: La Bestia (The Beast)">
+    - **Persecución de Lava**: Salta sobre los anillos de fuego y evita las estalactitas.
+    - **Inhalación**: Cuidado con el aliento de fuego y los escombros succionados.
+    - **Estrategia**: Quédate hacia el lado izquierdo de la pantalla para maximizar el tiempo de reacción.
+  </Card>
+  <Card title="El Ascenso (The Ascent)">
+    - **Dad's Note**: Recoger esto activa la secuencia de pisos invertida.
+    - **Personajes Tainted**: Deja un trinket en una Sala del Tesoro para encontrar una Cracked Key para los desbloqueos.
+    - **Estrategia**: Reserva tu salud para la pelea final contra Dogma; las salas del Ascenso son relativamente fáciles.
+  </Card>
+</CardGrid>
+
+| Fase del Jefe | Tipo de Ataque | Estrategia de Contraataque |
+| :--- | :--- | :--- |
+| **Dogma (Ángel)** | Halo Giratorio | Muévete en un círculo amplio |
+| **Ultra Muerte** | Lanzamiento de Guadaña | Quédate en el centro vertical |
+| **La Bestia** | Aliento de Fuego | Escóndete tras las estalactitas o sube alto |
+| **Ultra Guerra** | Lluvia de Bombas | Observa las sombras en el suelo |
+
+<Callout type="tip" title="La Cama de Mamá">
+Antes de luchar contra Dogma en el capítulo Home, puedes dormir en la cama de Mamá para restaurar completamente tu salud. Si tienes la Red Key o una Cracked Key, revisa el armario del pasillo para desbloquear la versión Tainted de tu personaje actual.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Superjefes: Hush y Delirium">
+
+Hush y Delirium son encuentros opcionales que proporcionan algunos de los desbloqueos más poderosos del juego. Hush es un encuentro por tiempo, que requiere que derrotes al Corazón de Mamá en menos de 30 minutos. Delirium se encuentra en The Void (El Vacío), un piso que tiene una probabilidad de aparecer tras derrotar a cualquier jefe importante del final del juego.
+
+| Superjefe | Salud (HP) | Mecánica de Armadura | Mejor Tipo de Build |
+| :--- | :--- | :--- | :--- |
+| **Hush** | 6,666 | Escalado Extremo | Alta Cadencia de Fuego / Escudos |
+| **Delirium** | 10,000 | Escalado Variable | Teledirigido / Alta Velocidad |
+
+**Puntos Clave de la Estrategia contra Hush:**
+- **Lágrimas Continuum**: Estas lágrimas envuelven la pantalla. Encuentra un "punto seguro" donde el patrón no se solape y quédate quieto.
+- **Moscas de Hush**: Elimínalas de inmediato, ya que pueden arruinar tu posicionamiento.
+- **Preparación en el Blue Womb**: Usa los cuatro cofres y las dos salas de objetos en el Blue Womb para finalizar tu build.
+
+**Puntos Clave de la Estrategia contra Delirium:**
+- **Cambio de Forma**: Delirium se transforma en jefes que ya has derrotado. Hereda sus patrones, pero a menudo se mueve mucho más rápido.
+- **Telefragging**: Delirium es famoso por teletransportarse directamente sobre el jugador. La alta velocidad de movimiento es esencial para evitar estos casos.
+- **The Void**: Explora todo el piso antes de entrar en la sala del jefe. Hay múltiples salas de jefe, pero solo una contiene a Delirium.
+
+<Callout type="success" title="Marcas de Completado">
+Derrotar a Hush y Delirium en Modo Difícil proporciona marcas únicas "manchadas de sangre" en la nota de tu personaje. Estas son necesarias para el logro "Dead God" y desbloquean algunos de los mejores objetos del juego, como el D-Infinity.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Objetivos y Lista de Verificación">
+
+Para dominar por completo a los **jefes de the binding of isaac repentance**, debes rastrear tu progreso con todos los personajes. Cada victoria desbloquea nuevos objetos que pueden facilitar las partidas futuras. Usa la lista de verificación a continuación para priorizar tus objetivos finales en 2026.
+
+<Checklist
+  id="boss-completion-goals"
+  title="Hitos de Jefes del Final del Juego:"
+  items={[
+    "Derrota al Corazón de Mamá 11 veces para desbloquear It Lives!",
+    "Derrota a Hush 3 veces para desbloquear la Salida Secreta (Ruta Alternativa)",
+    "Derrota a Mother para desbloquear la ruta Home y los personajes Tainted",
+    "Derrota a La Bestia (The Beast) para ver el final de la historia",
+    "Derrota a Delirium para desbloquear las marcas de 'Papel Rasgado' específicas de cada personaje",
+    "Completa a Mega Satán para desbloquear al personaje Apollyon"
+  ]}
+/>
+
+</Section>
+
+<Section icon={Swords} title="Preguntas Frecuentes">
+
+<FAQ items={[
+  {
+    question: "¿Por qué no puedo encontrar la puerta hacia Hush?",
+    answer: "La puerta al Blue Womb solo aparece si derrotas al Corazón de Mamá o It Lives! dentro de los primeros 30 minutos de tu partida. Si el temporizador supera los 30:00, la puerta no aparecerá a menos que tengas objetos específicos como Mama Mega."
+  },
+  {
+    question: "¿Cómo lidio con la Armadura de Jefe en los jefes de the binding of isaac repentance?",
+    answer: "La Armadura de Jefe reduce el daño en función de tu DPS. Para saltarte esto, usa objetos que apliquen estados alterados (veneno, sangrado) o familiares que inflijan daño de contacto constante. Una alta cadencia de fuego suele ser mejor que un solo disparo de gran daño contra jefes con armadura."
+  },
+  {
+    question: "¿Cuál es la mejor ruta para principiantes?",
+    answer: "Los principiantes deben centrarse en la ruta de 'The Polaroid' (Catedral a El Cofre). Por lo general, es más permisiva que la ruta del Sheol y proporciona más objetos en el piso final para ayudar a derrotar a los jefes."
+  },
+  {
+    question: "¿Cómo desbloqueo a Mega Satán?",
+    answer: "Debes recoger dos Piezas de Llave bombardeando las estatuas de ángeles en las Salas de Ángel y derrotando a los ángeles Uriel y Gabriel. Una vez que tengas ambas piezas, aparecerá una puerta dorada en la sala inicial de El Cofre o el Dark Room."
+  }
+]} />
+
+</Section>

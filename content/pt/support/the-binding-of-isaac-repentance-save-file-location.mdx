@@ -1,0 +1,174 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Localização do Arquivo de Save de The Binding of Isaac Repentance: Guia 2026",
+  description: "Localize o diretório do seu save de The Binding of Isaac Repentance no Windows e Steam Cloud. Aprenda a fazer backup, transferir e proteger seu progresso Dead God.",
+  category: "Guia",
+  image: "https://placehold.co/800x400/120B0D/E24133?text=Save+File+Location+Guide",
+  date: "2026-07-17",
+  author: "Equipe Wiki de The Binding of Isaac Repentance",
+  keywords: "localização do arquivo de save de the binding of isaac repentance, backup de save isaac, steam cloud isaac, pasta de save repentance"
+}
+
+<Callout type="info" title="Guia Rápido">
+- **Palavra-chave principal**: Encontrar a **localização do arquivo de save de the binding of isaac repentance** é essencial para fazer backup de seus desbloqueios e personagens.
+- **Caminho da Steam Cloud**: Geralmente localizado na pasta userdata da Steam sob o AppID **250900**.
+- **Caminho Local**: Encontrado na pasta Documentos do Windows em **My Games** para backups de versões antigas.
+- **Prioridade de Backup**: Sempre copie os arquivos **persistentprogress.dat** antes de modificar arquivos do jogo ou instalar mods grandes.
+- **Problemas de Sincronização**: Se ocorrerem conflitos na Steam Cloud, o arquivo local `options.ini` pode ser usado para forçar uma nova sincronização.
+</Callout>
+
+<Section icon={Map} title="Diretórios Padrão para o Repentance">
+
+Entender a **localização do arquivo de save de the binding of isaac repentance** requer distinguir entre onde o jogo lê ativamente os dados e onde ele armazena os backups. Em 2026, a expansão Repentance utiliza um sistema de armazenamento duplo para garantir que os jogadores não percam seu progresso "Dead God" devido a falhas de hardware. A maioria dos jogadores encontrará seus dados de save ativos dentro do diretório de instalação da Steam, enquanto os arquivos de configuração local residem no perfil do usuário.
+
+A tabela abaixo descreve os principais diretórios usados pelo jogo em diferentes tipos de instalação.
+
+| Plataforma | Tipo de Armazenamento | Caminho do Diretório |
+| :--- | :--- | :--- |
+| **Steam Windows** | **Nuvem Ativa** | `C:\Program Files (x86)\Steam\userdata\[User_ID]\250900\remote` |
+| **Steam Windows** | **Backup Local** | `C:\Users\[User]\Documents\My Games\The Binding of Isaac Repentance` |
+| **Steam Mac** | **Nuvem Ativa** | `~/Library/Application Support/Steam/userdata/[User_ID]/250900/remote` |
+| **Epic Games** | **Save Local** | `%AppData%\The Binding of Isaac Repentance` |
+| **Legado** | **Afterbirth+** | `C:\Users\[User]\Documents\My Games\The Binding of Isaac Afterbirth+` |
+
+<Callout type="warning" title="Pastas Ocultas">
+Se você não conseguir ver a pasta `AppData`, deve habilitar "Mostrar arquivos, pastas e unidades ocultas" nas opções do Explorador de Arquivos do Windows. A pasta `userdata` na Steam também é exclusiva para o ID da sua conta; se várias pessoas usarem o PC, procure pela pasta com o "Data de Modificação" mais recente.
+</Callout>
+
+Ao navegar até a **localização do arquivo de save de the binding of isaac repentance**, você notará arquivos chamados `rep_persistentgamedata1.dat`, `rep_persistentgamedata2.dat` e `rep_persistentgamedata3.dat`. Estes correspondem aos seus três slots de save no jogo. Se você deseja transferir um save de um amigo ou um backup, estes são os arquivos específicos que você precisa substituir.
+
+</Section>
+
+<Section icon={Shield} title="Mecânicas de Steam Cloud vs Armazenamento Local">
+
+A interação entre a Steam Cloud e sua unidade local é a causa mais comum de confusão em relação à **localização do arquivo de save de the binding of isaac repentance**. A Steam Cloud é projetada para priorizar a versão de arquivo mais recente, mas podem surgir conflitos se você jogar offline ou em vários dispositivos. O Repentance lida com os dados de forma diferente do jogo Rebirth base para acomodar o aumento massivo de itens desbloqueáveis e personagens Tainted.
+
+<CardGrid cols={2}>
+  <Card title="Armazenamento Steam Cloud">
+    - **Prós**: Sincronização automática entre PCs, seguro contra falhas no disco rígido.
+    - **Contras**: Pode sobrescrever o progresso local se ocorrerem erros de sincronização; mais difícil de editar manualmente.
+    - **ID**: Usa o AppID **250900** para todas as versões de Isaac.
+  </Card>
+  <Card title="Armazenamento em Documentos Locais">
+    - **Prós**: Fácil acesso para backups manuais e modding.
+    - **Contras**: Não atualiza automaticamente se a Sincronização em Nuvem estiver ativada; propenso a perda de dados.
+    - **Função**: Frequentemente armazena os arquivos `options.ini` e `logs.txt`.
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Correção de Conflito de Nuvem">
+Se a Steam perguntar qual arquivo usar durante um conflito de sincronização, verifique o tamanho dos arquivos. Um save "Dead God" é significativamente maior do que um save novo. Sempre escolha a versão com a data mais recente e o maior tamanho de arquivo para evitar perder centenas de horas de progresso.
+</Callout>
+
+Para gerenciar esses locais de forma eficaz, os jogadores devem entender o papel do arquivo `options.ini`. Este arquivo, encontrado na **localização do arquivo de save de the binding of isaac repentance** local (Documents/My Games), contém uma linha intitulada `SteamCloud=1`. Mudar isso para `0` forçará o jogo a ignorar a Steam Cloud e ler apenas da pasta local "My Games". Este é um passo crucial para jogadores que preferem o gerenciamento manual de saves ou que estão enfrentando erros persistentes de sincronização.
+
+| Nome do Arquivo | Propósito | Importância |
+| :--- | :--- | :--- |
+| **rep_persistentgamedata1.dat** | Dados do slot de save principal 1 | **Crítica** |
+| **options.ini** | Configurações do jogo e alternância de Nuvem | Alta |
+| **logs.txt** | Informações de depuração para travamentos | Média |
+| **inputvalues.ini** | Vinculações personalizadas de controle e teclas | Baixa |
+
+</Section>
+
+<Section icon={Target} title="Passo a Passo: Fazendo Backup do Seu Save">
+
+Backups manuais são a única maneira 100% confiável de proteger seu progresso ao experimentar mods ou mudar para um novo PC. Siga estes passos para localizar e duplicar seus dados com segurança a partir da **localização do arquivo de save de the binding of isaac repentance**.
+
+<Steps>
+  <Step num="1" title="Localize seu UserID da Steam">
+    Navegue até `C:\Program Files (x86)\Steam\userdata`. Se houver apenas uma pasta, esse é o seu ID. Se houver várias, entre na Steam, vá em "Inventário", clique em "Propostas de Troca", depois em "Quem pode me enviar Propostas de Troca". Seu ID é o número no meio da sua URL de Troca.
+  </Step>
+  <Step num="2" title="Acesse a Pasta Remote">
+    Entre na pasta do seu ID e encontre a pasta chamada `250900`. Dentro dela, abra a pasta `remote`. Este é o coração da sua **localização do arquivo de save de the binding of isaac repentance**.
+  </Step>
+  <Step num="3" title="Copie os Arquivos .dat">
+    Selecione `rep_persistentgamedata1.dat` (e os slots 2/3, se usados). Clique com o botão direito e selecione "Copiar".
+  </Step>
+  <Step num="4" title="Crie um Arquivo Seguro">
+    Crie uma nova pasta na sua Área de Trabalho ou em uma unidade na nuvem (como o Google Drive) chamada "Isaac_Backup_2026". Cole os arquivos lá. Recomendamos adicionar a data atual ao nome do arquivo para maior clareza.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Verificação">
+Para verificar se o seu backup está funcionando, você pode checar a coluna "Data de Modificação" no Windows. Ela deve atualizar toda vez que você fechar o jogo após uma partida. Se não atualizar, o jogo pode estar salvando em um diretório diferente ou a Sincronização em Nuvem pode estar interferindo nas gravações locais.
+</Callout>
+
+Se você estiver migrando do Afterbirth+ para o Repentance, o jogo geralmente tenta uma migração automática. No entanto, se o seu save parecer vazio, você pode copiar manualmente seu `persistentgamedata1.dat` da pasta Afterbirth+, renomeá-lo com o prefixo `rep_` e colocá-lo na **localização do arquivo de save de the binding of isaac repentance**. Esta substituição manual salvou muitos jogadores de reiniciar seus saves de 1.000.000%.
+
+</Section>
+
+<Section icon={Trophy} title="Modding e Integridade do Save">
+
+O uso de mods é uma parte central da experiência de Isaac, especialmente com o mod "External Item Descriptions". No entanto, os mods às vezes podem corromper os dados dentro da **localização do arquivo de save de the binding of isaac repentance**. Antes de instalar expansões de conteúdo pesado como o Fiend Folio, você deve garantir que a integridade do seu save seja alta.
+
+<Checklist
+  id="save-safety-checklist"
+  title="Checklist para Modding Seguro:"
+  items={[
+    "Crie um backup manual da pasta remote",
+    "Desative a Steam Cloud no options.ini para testes",
+    "Verifique conflitos entre vários mods que alteram o save",
+    "Verifique os arquivos do jogo através das propriedades da Steam após a desinstalação",
+    "Mantenha um backup 'Vanilla' do seu save Dead God"
+  ]}
+/>
+
+<Callout type="tip" title="Desbloqueio de Conquistas">
+Lembre-se de que no Repentance, as conquistas e a progressão do save ficam desativadas até você derrotar a Mom pela primeira vez naquele arquivo de save. Depois que ela for derrotada uma vez, você poderá ativar mods sem bloquear seu progresso na **localização do arquivo de save de the binding of isaac repentance**.
+</Callout>
+
+Ao usar o Steam Workshop, os mods são armazenados em um diretório separado (`SteamLibrary\steamapps\workshop\content\250900`), mas seu impacto é sentido diretamente no seu arquivo de save. Se um mod causar um travamento, o arquivo `logs.txt` na sua **localização do arquivo de save de the binding of isaac repentance** listará a entidade ou script específico que falhou. Ler esses logs é a maneira mais rápida de solucionar problemas em uma partida interrompida.
+
+| Tipo de Mod | Nível de Risco | Impacto no Save |
+| :--- | :--- | :--- |
+| **Visual/HUD** | Baixo | Nenhum |
+| **Ajustes de Itens** | Médio | Pequenas alterações de dados |
+| **Novos Personagens** | Alto | Pode quebrar os slots de save |
+| **Revisões de Conteúdo** | Muito Alto | Modificação permanente do save |
+
+</Section>
+
+<Section icon={Swords} title="Solução de Problemas e FAQ">
+
+Mesmo com a **localização do arquivo de save de the binding of isaac repentance** correta, erros como "Save Corrompido" ou "Conflito de Sincronização em Nuvem" podem ocorrer. A maioria desses problemas está relacionada a como o jogo lida com a transição entre a pasta `remote` e a pasta de backup `My Games`.
+
+<Callout type="warning" title="Aviso de Perda de Dados">
+Nunca exclua sua pasta `250900` a menos que tenha um backup confirmado em outro lugar. Excluir esta pasta enquanto a Steam Cloud está ativa pode resultar na sincronização da "exclusão" pela Steam, apagando efetivamente seu progresso dos servidores da nuvem também.
+</Callout>
+
+| Problema | Solução Potencial |
+| :--- | :--- |
+| **Save Não Encontrado** | Verifique a configuração `SteamCloud=1` no `options.ini` |
+| **Reset de Progresso** | Renomeie `rep_persistentgamedata` para corresponder ao slot atual |
+| **Conflito de Sincronização** | Escolha "Upload para Steam Cloud" se o local for mais novo |
+| **Crash por Mod** | Exclua a pasta `mods` no diretório local |
+
+<FAQ items={[
+  {
+    question: "Onde fica a localização do arquivo de save de the binding of isaac repentance para a versão da Epic Games Store?",
+    answer: "A versão da Epic Games geralmente armazena os saves em %AppData%\\The Binding of Isaac Repentance, em vez da pasta userdata da Steam."
+  },
+  {
+    question: "Posso mover meu save de uma versão pirata para a versão oficial da Steam?",
+    answer: "Sim. Localize os arquivos .dat na pasta da versão anterior e mova-os para a pasta 'remote' da Steam. Você pode precisar renomeá-los para 'rep_persistentgamedata1.dat' para que o jogo os reconheça."
+  },
+  {
+    question: "Como corrijo um erro de 'Save Corrompido' no Repentance?",
+    answer: "Vá para a pasta 'My Games' do Isaac Repentance. Você verá uma pasta 'save_backups'. Pegue o backup mais recente, renomeie-o para 'rep_persistentgamedata1.dat' e substitua o arquivo na sua localização de save ativa."
+  },
+  {
+    question: "Excluir o jogo apaga meus arquivos de save?",
+    answer: "Não. A Steam Cloud e a pasta local 'My Games' são mantidas separadas dos arquivos de instalação do jogo. No entanto, backups manuais ainda são recomendados."
+  }
+]} />
+
+</Section>

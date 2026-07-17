@@ -1,0 +1,185 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "Como Corrigir Tela Preta em The Binding of Isaac Repentance: 5 Soluções",
+  description: "Resolva travamentos na inicialização e bugs de exibição com nosso guia passo a passo para corrigir a tela preta de The Binding of Isaac Repentance para jogadores do Steam.",
+  category: "Guia",
+  image: "https://placehold.co/800x400/1e1417/fff?text=Black+Screen+Fix",
+  date: "2026-07-17",
+  author: "Equipe do Wiki de The Binding of Isaac Repentance"
+}
+
+<Callout type="info" title="Guia Rápido">
+- **Solução principal**: Modifique o arquivo de configuração local para desativar mods corrompidos.
+- **Arquivo-chave**: Acesse o arquivo `options.ini` localizado no seu diretório de documentos locais.
+- **Conflito de sistema**: Desative overlays de terceiros, como Discord ou GeForce Experience.
+- **Verificação crítica**: Verifique a integridade dos arquivos do jogo diretamente pela sua biblioteca Steam.
+- **Modo de exibição**: Alterne as configurações de tela cheia para forçar o motor gráfico a renderizar corretamente.
+</Callout>
+
+<Section icon={Shield} title="Solução de Problemas Inicial para o Bug da Tela Preta">
+
+Se você está com dificuldades para iniciar suas partidas de roguelike, encontrar uma solução confiável para a **tela preta de The Binding of Isaac Repentance** é essencial para colocar seu progresso de volta nos trilhos. Esse problema geralmente ocorre imediatamente após iniciar o jogo pelo Steam. A janela do aplicativo se abre, mas em vez de exibir a introdução cinematográfica ou o menu principal, os jogadores se deparam com uma tela preta que não responde. Essa falha de renderização costuma ser causada por drivers de vídeo desatualizados, arquivos de jogo corrompidos ou mods incompatíveis da oficina (Workshop).
+
+Para iniciar a solução de problemas, devemos isolar se o problema se origina dos próprios arquivos do jogo ou da configuração de hardware do seu sistema. A tabela abaixo descreve as causas mais comuns desse bug de inicialização e as ações imediatas necessárias para resolvê-los.
+
+| Problema | Causa | Ação Direta |
+| --- | --- | --- |
+| **Cache do Jogo Corrompido** | Arquivos executáveis ausentes ou danificados | Verificar integridade via Steam |
+| **Driver de Vídeo Desatualizado** | Falha de renderização da API na inicialização | Instalação limpa dos drivers da GPU |
+| **Mods Incompatíveis da Oficina** | Conflitos de script durante a inicialização | Desativar mods via options.ini |
+| **Interferência de Overlay** | Conflitos de gancho (hooking) com Discord ou Steam | Desativar overlays ativos |
+| **Incompatibilidade de Modo de Exibição** | Problemas de dimensionamento de resolução não resolvidos | Forçar modo janela |
+
+<Callout type="warning" title="Aviso Importante">
+Antes de modificar qualquer arquivo do jogo ou excluir diretórios, certifique-se de fazer um backup dos seus dados salvos. Embora o Steam Cloud geralmente preserve seu progresso, alterações manuais nos arquivos de configuração podem ocasionalmente levar a problemas de sincronização local.
+</Callout>
+
+Quando o motor gráfico tenta carregar, ele inicializa vários subsistemas, incluindo o driver de áudio, o renderizador gráfico e a API do Steam Workshop. Se algum desses sistemas não responder dentro da janela de inicialização designada, o pipeline de renderização é interrompido, deixando você com uma tela em branco. Ao abordar sistematicamente cada ponto potencial de falha, você pode identificar o gargalo exato que está impedindo o seu jogo de rodar.
+
+</Section>
+
+<Section icon={Map} title="Como Aplicar a Correção de Tela Preta em The Binding of Isaac Repentance">
+
+Para resolver esse problema permanentemente, você deve seguir um processo de configuração estruturado. A correção mais comum e eficaz para a **tela preta de The Binding of Isaac Repentance** envolve a edição manual das configurações locais do jogo. Isso ignora a sequência de inicialização corrompida sem a necessidade de uma reinstalação completa do jogo.
+
+Siga estas instruções passo a passo para localizar seus arquivos de configuração, ajustar as propriedades de renderização e desativar mods problemáticos antes de iniciar o jogo novamente.
+
+<Steps>
+  <Step num="1" title="Localize seu Diretório de Documentos">
+    Navegue até os arquivos locais do seu sistema. Abra o explorador de arquivos e vá para `Documentos\My Games\The Binding of Isaac Repentance`. Esta pasta contém os backups dos seus salvamentos locais e o arquivo de configuração principal.
+  </Step>
+  <Step num="2" title="Edite o Arquivo de Opções">
+    Encontre o arquivo chamado `options.ini` dentro da pasta. Clique com o botão direito no arquivo e escolha abri-lo com um editor de texto padrão, como o Bloco de Notas. Não use processadores de texto avançados, pois eles podem corromper a formatação do arquivo.
+  </Step>
+  <Step num="3" title="Desative os Mods Ativos">
+    Role o arquivo para baixo até encontrar a linha que diz `EnableMods=1`. Altere esse valor para `EnableMods=0`. Isso diz ao motor do jogo para ignorar todo o conteúdo do Steam Workshop durante a próxima sequência de inicialização.
+  </Step>
+  <Step num="4" title="Ajuste as Configurações de Exibição">
+    Localize as linhas para `Fullscreen` and `Size`. Defina `Fullscreen=0` para forçar o jogo a iniciar no modo janela. Isso evita conflitos de renderização causados por resoluções de tela incompatíveis.
+  </Step>
+  <Step num="5" title="Salve e Teste a Inicialização">
+    Salve suas alterações no `options.ini` e feche o editor de texto. Inicie o jogo a partir da sua biblioteca Steam para verificar se o menu principal carrega com sucesso sem a tela preta.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Dica de Sucesso">
+Se o jogo iniciar com sucesso após alterar esses valores, você poderá reativar os mods individualmente com segurança a partir do menu do jogo para identificar qual item específico da oficina estava causando o travamento na inicialização.
+</Callout>
+
+Ajustar esses valores de inicialização garante que o motor do jogo inicialize usando seus parâmetros padrão e seguros. A tabela abaixo detalha as variáveis específicas dentro do arquivo de configuração que afetam diretamente a renderização do jogo na inicialização.
+
+| Parâmetro | Valor Padrão | Valor Recomendado | Objetivo |
+| --- | --- | --- | --- |
+| **EnableMods** | 1 | 0 | Desativa todos os scripts personalizados durante a inicialização |
+| **Fullscreen** | 1 | 0 | Força o jogo a entrar no modo janela |
+| **VSync** | 1 | 0 | Evita o descompasso de tela (screen tearing) e o atraso na inicialização |
+| **MaxRenderScale** | 4 | 2 | Reduz a carga da GPU em sistemas mais antigos |
+| **ControllerHotplug** | 1 | 0 | Evita travamentos causados por hardware externo |
+
+</Section>
+
+<Section icon={Target} title="Drivers de Vídeo e Configurações de Exibição">
+
+A compatibilidade do hardware gráfico é outro fator importante na resolução de erros de inicialização. Sistemas operacionais modernos e monitores com alta taxa de atualização às vezes podem entrar em conflito com o motor de renderização mais antigo do jogo. Essa incompatibilidade impede que o aplicativo seja dimensionado corretamente, resultando em uma tela que não responde.
+
+Para garantir que seu hardware seja totalmente compatível com o jogo, você deve avaliar o modo de exibição atual e as configurações do painel de controle da sua placa de vídeo.
+
+<CardGrid cols={3}>
+  <Card title="Modo Janela">
+    - **Alta compatibilidade**
+    - Ignora bugs de dimensionamento de resolução
+    - Recomendado para solução de problemas
+  </Card>
+  <Card title="Janela sem Bordas">
+    - **Desempenho equilibrado**
+    - Suporte suave para multitarefas
+    - Elimina o atraso de transição
+  </Card>
+  <Card title="Tela Cheia Exclusiva">
+    - **Desempenho máximo**
+    - Menor latência de entrada
+    - Propenso a travamentos na inicialização
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Dica de Profissional">
+Se você usa uma placa de vídeo NVIDIA ou AMD, abra o respectivo painel de controle e desative qualquer nitidez de imagem forçada ou perfis personalizados de anti-aliasing para o arquivo executável do jogo.
+</Callout>
+
+Além dos modos de exibição, as configurações de taxa de atualização devem ser configuradas para corresponder às capacidades nativas do seu monitor. A sincronização vertical forçada por softwares externos pode entrar em conflito com o limitador de quadros interno, levando a uma tela preta na inicialização. Use as seguintes configurações básicas de hardware para maximizar a estabilidade.
+
+| Configuração | Ajuste | Status |
+| --- | --- | --- |
+| **Resolução da Área de Trabalho** | Nativa (ex: 1920x1080) | **Obrigatório** |
+| **Taxa de Atualização do Monitor** | 60Hz - 144Hz | **Recomendado** |
+| **Dimensionamento da GPU** | Proporção de Tela (Executado na GPU) | **Altamente Estável** |
+| **Versão do DirectX** | DirectX 11 ou mais recente | **Obrigatório** |
+| **Cabo de Vídeo** | DisplayPort ou HDMI | **Padrão** |
+
+</Section>
+
+<Section icon={Sparkles} title="Resolvendo Conflitos de Mods e Travamentos da Oficina">
+
+O Steam Workshop oferece milhares de criações da comunidade que aprimoram sua experiência de jogo. No entanto, desde o lançamento da expansão Repentance, muitos mods mais antigos tornaram-se obsoletos ou incompatíveis com a base de código atualizada. Quando o jogo tenta carregar scripts desatualizados, isso pode fazer com que o pipeline de renderização congele completamente.
+
+Se a desativação dos mods no arquivo de configuração resolveu sua tela preta, você deve limpar suas inscrições da oficina para evitar que o problema ocorra novamente.
+
+<Checklist
+  id="mod-cleanup"
+  title="Lista de Verificação para Otimização de Mods:"
+  items={[
+    "Cancele a inscrição de todos os mods desatualizados ou abandonados no Steam Workshop",
+    "Exclua a pasta local da oficina para remover arquivos de script em cache",
+    "Instale o mod External Item Descriptions para verificar a estabilidade",
+    "Ative seus mods preferidos um de cada vez, testando a inicialização após cada um",
+    "Mantenha sua contagem de mods abaixo de cinquenta para evitar limites de alocação de memória"
+  ]}
+/>
+
+<Callout type="warning" title="Aviso">
+Nunca instale mods que modifiquem o executável principal do jogo ou substituam arquivos compartilhados manualmente fora da interface oficial do Steam Workshop, as quais podem corromper permanentemente o seu diretório de instalação.
+</Callout>
+
+Ao solucionar problemas de mods, é útil entender quais categorias de conteúdo da oficina têm maior probabilidade de causar travamentos na inicialização. A tabela abaixo categoriza os mods por seu nível de risco relativo e impacto na sequência de inicialização do jogo.
+
+| Categoria do Mod | Nível de Risco | Problema Comum |
+| --- | --- | --- |
+| **Overlays de Interface (UI) e HUD** | Baixo | Pequenos bugs visuais, raramente trava |
+| **Personagens Personalizados** | Médio | Pode travar se sprites estiverem ausentes |
+| **Expansões de Pacotes de Itens** | Alto | Conflitos de script com itens oficiais |
+| **Modificações Completas (Total Overhauls)** | Muito Alto | Conflitos graves com o código do jogo base |
+| **Substituições de Trilha Sonora** | Baixo | Falhas de áudio, raramente telas pretas |
+
+</Section>
+
+<Section icon={Trophy} title="Perguntas Frequentes e Resoluções Finais">
+
+Esta seção aborda perguntas frequentes sobre problemas de inicialização, caminhos de arquivos e solução geral de problemas do sistema para o jogo.
+
+<FAQ items={[
+  {
+    question: "Onde posso encontrar o arquivo options.ini no meu sistema?",
+    answer: "O arquivo options.ini está localizado na sua pasta de documentos locais em Documentos\\My Games\\The Binding of Isaac Repentance. Se você não conseguir encontrar essa pasta, certifique-se de ter iniciado o jogo pelo menos uma vez para que o motor gráfico possa gerar o diretório."
+  },
+  {
+    question: "Aplicar esta correção de tela preta excluirá meus arquivos de salvamento?",
+    answer: "Não, modificar o arquivo options.ini ou verificar os arquivos do seu jogo através do Steam não excluirá o progresso do seu salvamento. Seus arquivos de save são armazenados separadamente e têm backup feito pelo Steam Cloud."
+  },
+  {
+    question: "O que devo fazer se o arquivo options.ini estiver faltando?",
+    answer: "Se o arquivo estiver faltando, exclua toda a pasta The Binding of Isaac Repentance no seu diretório My Games e, em seguida, verifique os arquivos do jogo no Steam. Isso força o motor gráfico a recriar a estrutura de pastas padrão."
+  },
+  {
+    question: "Drivers de vídeo desatualizados podem causar uma tela preta na inicialização?",
+    answer: "Sim, drivers de vídeo desatualizados ou corrompidos podem impedir que o motor do jogo inicialize a tela. Sempre realize uma instalação limpa dos drivers da sua GPU para garantir a compatibilidade com APIs modernas."
+  }
+]} />
+
+</Section>

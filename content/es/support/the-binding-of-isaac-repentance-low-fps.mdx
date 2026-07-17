@@ -1,0 +1,182 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "Bajos FPS en The Binding of Isaac Repentance: Guía de Optimización 2026",
+  description: "Soluciona los bajos FPS, tirones y lag en The Binding of Isaac: Repentance con nuestros pasos de optimización de rendimiento de 2026, ajustes de options.ini y correcciones de GPU.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/1e1417/fff?text=Low+FPS+Fix+Guide",
+  date: "2026-07-17",
+  author: "Equipo de la Wiki de The Binding of Isaac Repentance",
+  keywords: "The Binding of Isaac, Repentance, bajos FPS, optimización, lag, GPU, options.ini, rendimiento"
+}
+
+<Callout type="info" title="Soluciones Rápidas">
+- **Soluciona los bajos FPS en The Binding of Isaac Repentance** ajustando los archivos de configuración y la configuración del hardware.
+- **Desactiva VSync** en los archivos de configuración para desbloquear una entrega de fotogramas más fluida y eliminar el retraso de entrada (input lag).
+- **Fuerza el uso de la GPU dedicada** a través de los paneles de control de gráficos en portátiles y sistemas con múltiples GPU.
+- **Desactiva la Interfaz de Steam (Overlay)** y las interfaces de Discord para detener los conflictos de renderizado en segundo plano.
+- **Limita los mods activos** durante las limpiezas de salas complejas para evitar cálculos pesados del motor del juego.
+</Callout>
+
+<Section icon={Shield} title="Optimización de Hardware y Ajustes de GPU">
+
+Las caídas de rendimiento en este shooter roguelike a menudo se deben a que el motor del juego no utiliza correctamente los recursos principales de tu hardware. A pesar de su estética pixel-art, el juego utiliza cálculos físicos complejos, efectos de partículas y capas de iluminación que pueden abrumar a los procesadores de gráficos integrados. Esto es especialmente común en portátiles modernos para juegos o sistemas de escritorio con varias GPU, donde el sistema operativo puede asignar incorrectamente el juego al chip de gráficos integrados de bajo consumo en lugar de a la tarjeta gráfica dedicada de alto rendimiento.
+
+Para asegurar que tu sistema asigne los recursos necesarios al juego, debes configurar manualmente tu panel de control de gráficos. Para los usuarios de NVIDIA, esto implica abrir el Panel de Control de NVIDIA, ir a Controlar la configuración 3D, seleccionar la pestaña Configuración de programa, buscar el ejecutable del juego y establecer el procesador de gráficos preferido en Procesador NVIDIA de alto rendimiento. Los usuarios de AMD pueden lograr un resultado similar configurando los Ajustes de aplicaciones de gráficos intercambiables dentro de la interfaz de Radeon Software.
+
+<CardGrid cols={3}>
+  <Card title="Gráficos Integrados">
+    - **Bajo consumo de energía**
+    - Alta latencia de renderizado de fotogramas
+    - Caídas severas de rendimiento durante sinergias pesadas
+  </Card>
+  <Card title="GPU Dedicada">
+    - **Máxima asignación de potencia**
+    - Tasas de fotogramas estables en altas resoluciones
+    - Renderizado fluido de miles de partículas en pantalla
+  </Card>
+  <Card title="Procesos en Segundo Plano">
+    - **Alto consumo de ciclos de CPU**
+    - Micro-tirones durante las transiciones de sala
+    - Alto riesgo de caídas repentinas de fotogramas
+  </Card>
+</CardGrid>
+
+<Callout type="warning" title="Modos de Ahorro de Energía en Portátiles">
+Asegúrate de que tu portátil esté conectado a una fuente de alimentación y configurado en modo de Alto Rendimiento. Los perfiles de ahorro de batería limitan la velocidad máxima de reloj tanto de tu CPU como de tu GPU, lo que provoca inmediatamente caídas de rendimiento severas en salas con muchas partículas.
+</Callout>
+
+Windows 11 y Windows 10 también cuentan con herramientas integradas de programación de gráficos que anulan las configuraciones a nivel de controlador. Abre la Configuración de Windows, ve a Sistema, haz clic en Pantalla y selecciona Gráficos. Haz clic en Examinar, busca la carpeta de instalación de tu juego, añade el ejecutable del juego, haz clic en Opciones y selecciona Alto Rendimiento. Esta asignación directa del sistema operativo omite los algoritmos de detección automática y obliga al sistema a ejecutar el juego en tu hardware gráfico dedicado.
+
+</Section>
+
+<Section icon={Sparkles} title="Ajustes en Options.ini para los Bajos FPS de Isaac Repentance">
+
+El método más efectivo para eliminar los problemas de **bajos FPS en The Binding of Isaac Repentance** es editar el archivo de configuración local. El motor del juego lee los ajustes de un archivo de inicialización llamado `options.ini` cada vez que se lanza la aplicación. Varias variables de renderizado ocultas dentro de este archivo están configuradas con valores que causan problemas de rendimiento en monitores modernos o hardware de gama media.
+
+Para localizar este archivo, navega a tu directorio de usuario local. Por defecto, la ruta es `C:\Usuarios\TuNombreDeUsuario\Documentos\My Games\Binding of Isaac Repentance`. Dentro de esta carpeta, encontrarás `options.ini`. Abre este archivo usando un editor de texto estándar como el Bloc de notas para modificar los parámetros del motor directamente.
+
+<Steps>
+  <Step num="1" title="Localiza la Carpeta de Configuración">
+    Navega a la carpeta My Games en tu directorio de Documentos y abre la carpeta específica del juego.
+  </Step>
+  <Step num="2" title="Crea un Archivo de Respaldo">
+    Copia el archivo options.ini existente y pégalo en una carpeta de seguridad antes de realizar cualquier cambio.
+  </Step>
+  <Step num="3" title="Modifica los Ajustes de Renderizado">
+    Abre options.ini con el Bloc de notas y cambia los valores específicos de VSync, MaxRenderScale y ControllerHotplug.
+  </Step>
+  <Step num="4" title="Guarda y Bloquea el Archivo">
+    Guarda los cambios y establece las propiedades del archivo en Solo Lectura si el juego intenta sobrescribir tus modificaciones.
+  </Step>
+</Steps>
+
+La siguiente tabla detalla las variables críticas en el archivo de configuración que impactan directamente en el rendimiento del renderizado y los tiempos de respuesta de entrada.
+
+| Ajuste | Valor por Defecto | Valor Recomendado | Impacto en el Rendimiento |
+| :--- | :--- | :--- | :--- |
+| **VSync** | 1 | 0 | Elimina los bloqueos de fotogramas por hardware y el retraso de entrada |
+| **MaxRenderScale** | 3 | 1 | Reduce la resolución de renderizado interna sin cambiar la resolución de pantalla |
+| **ControllerHotplug** | 1 | 0 | Detiene el escaneo constante de puertos USB en busca de nuevos mandos |
+| **FadingCooldown** | 120 | 30 | Acelera la limpieza de renderizado de los sprites de enemigos derrotados |
+| **EnableColorCorrection** | 1 | 0 | Desactiva filtros de pantalla que causan sobrecarga en la GPU en sistemas antiguos |
+| **EnableLighting** | 1 | 1 | Mantener activado a menos que haya cuello de botella en CPU; poner en 0 para iluminación plana |
+
+<Callout type="tip" title="Desbloquear la Tasa de Fotogramas de Forma Segura">
+Configurar VSync en 0 en el archivo de configuración mientras fuerzas VSync Rápido o VSync Adaptativo en los ajustes de tu controlador de GPU permite que el motor del juego funcione a máxima velocidad sin causar desgarros de pantalla (tearing) ni problemas de aceleración de la velocidad del juego.
+</Callout>
+
+El ajuste `MaxRenderScale` es particularmente importante. Un valor de 3 obliga al motor del juego a renderizar los activos internos hasta tres veces la resolución nativa de tu monitor antes de reducirlos. En monitores 4K o pantallas de alta densidad de píxeles, esto puede causar una sobrecarga de renderizado masiva. Bajar este valor a 1 o 2 mantiene el pixel art nítido mientras reduce la carga de renderizado en tu tarjeta gráfica hasta en un setenta por ciento.
+
+</Section>
+
+<Section icon={Swords} title="Gestión de Mods y Sinergias de Muchas Partículas">
+
+La inclusión de soporte para Steam Workshop permite a los jugadores personalizar su experiencia, pero ejecutar mods mal optimizados es una de las causas principales de las caídas de rendimiento. Las revisiones visuales pesadas, las animaciones de personajes personalizados y las superposiciones complejas de descripción de objetos ejecutan constantemente scripts en segundo plano que interrumpen el bucle principal del juego. Cuando estos scripts chocan con sinergias complejas dentro del juego, la tasa de fotogramas puede caer a un solo dígito.
+
+Para aislar los problemas de rendimiento relacionados con los mods, debes desactivar todos los mods activos y probar el juego en su estado original (vanilla). Si la tasa de fotogramas se estabiliza, puedes volver a activar tus mods en pequeños grupos para identificar el mod específico que causa el cuello de botella.
+
+| Elemento | Tipo | Impacto en el Rendimiento | Estrategia de Mitigación |
+| :--- | :--- | :--- | :--- |
+| **External Item Descriptions** | Mod | Moderado | Configurar intervalos de actualización menos frecuentes |
+| **Fiend Folio Reheated** | Mod | Alto | Desactivar decoraciones de fondo de salas en los ajustes del mod |
+| **Soy Milk + Parasite** | Sinergia | Alto | Bajar MaxRenderScale para reducir la carga de partículas |
+| **Brimstone + Tech X** | Sinergia | Alto | Limitar el renderizado de láseres mediante ajustes del controlador |
+| **Custom Stage API** | Framework | Alto | Asegurarse de que no haya frameworks de escenarios duplicados activos |
+
+<Callout type="info" title="Rendimiento del Motor de Scripts">
+El motor del juego procesa los scripts de Lua de forma secuencial. Si un solo mod contiene un bucle no optimizado o un error de script, retrasará el renderizado del siguiente fotograma, causando tirones visibles incluso en sistemas de gama alta.
+</Callout>
+
+Cuando uses mods populares como External Item Descriptions, abre el Mod Config Menu para ajustar las opciones de renderizado. Desactivar los cálculos en tiempo real para objetos complejos como Spindown Dice o Bag of Crafting cuando no están activos en pantalla puede liberar valiosos ciclos de CPU. Además, evita apilar múltiples expansiones de contenido grandes como Fiend Folio y Revelations simultáneamente, ya que sus activos de salas y comportamientos de enemigos personalizados pueden saturar los límites de asignación de memoria del motor.
+
+</Section>
+
+<Section icon={Map} title="Eliminar el Stuttering de Interfaz y el Lag del Mando">
+
+Las aplicaciones en segundo plano que se vinculan al proceso de renderizado del juego son culpables comunes de los micro-tirones (micro-stuttering) y las caídas repentinas de rendimiento. La Interfaz de Steam, Discord y GeForce Experience comparten contextos de renderizado con el juego, lo que puede interrumpir los tiempos de presentación de los fotogramas. Esto resulta en tirones incluso cuando los contadores de FPS muestran sesenta fotogramas por segundo sólidos.
+
+Además, el sistema de manejo de entrada del juego es muy sensible al sondeo (polling) de hardware. Si usas un mando inalámbrico o tienes instalados varios controladores de mando virtuales, el motor del juego puede experimentar tirones relacionados con la entrada al intentar sondear los dispositivos activos.
+
+| Fuente de Conflicto | Síntoma | Acción de Resolución | Prioridad |
+| :--- | :--- | :--- | :--- |
+| **Interfaz de Steam** | Micro-tirones | Desactivar la Interfaz de Steam en las propiedades del juego | Alta |
+| **Interfaz de Discord** | Caída de FPS durante voz | Desactivar la superposición de juego en ajustes de Discord | Media |
+| **Sondeo del Mando** | Congelación repentina al pulsar | Desactivar ControllerHotplug en options.ini | Alta |
+| **Steam Input** | Retraso de entrada | Forzar la desactivación de Steam Input para el ejecutable | Media |
+| **Xbox Game Bar** | Caídas constantes de FPS | Desactivar Game DVR y grabación de fondo en Windows | Alta |
+
+<Checklist
+  id="optimization-milestones"
+  title="Pasos de Verificación de Rendimiento:"
+  items={[
+    "Verificar la asignación de la GPU dedicada en los ajustes de gráficos",
+    "Aplicar optimizaciones en options.ini para VSync y MaxRenderScale",
+    "Desactivar todas las interfaces (overlays) de aplicaciones en segundo plano",
+    "Configurar los ajustes del mando para evitar tirones por sondeo USB",
+    "Probar el rendimiento en una sala con muchas partículas y sinergias activas"
+  ]}
+/>
+
+<Callout type="success" title="Verificación de Rendimiento Fluido">
+Una vez completados estos pasos, inicia una partida de prueba como Azazel o usa una semilla con objetos de muchas partículas para confirmar que el juego mantiene sesenta fotogramas por segundo estables durante secuencias de combate intensas.
+</Callout>
+
+Para resolver los tirones relacionados con el mando, desactiva Steam Input para el juego haciendo clic derecho en el juego en tu biblioteca, seleccionando Propiedades, navegando a la pestaña Mando y seleccionando Desactivar Steam Input. Esto obliga al juego a leer los datos directos de XInput de tu mando, omitiendo la capa de traducción que puede causar caídas de rendimiento. Además, asegúrate de que tu mando esté conectado mediante cable o un adaptador inalámbrico dedicado en lugar de Bluetooth estándar para minimizar la latencia de entrada.
+
+</Section>
+
+<Section icon={Trophy} title="Preguntas Frecuentes sobre Solución de Problemas de Rendimiento">
+
+Para ayudarte a resolver rápidamente problemas específicos de rendimiento, hemos recopilado respuestas a las preguntas más comunes sobre la optimización del juego y la gestión de la tasa de fotogramas.
+
+<Callout type="tip" title="Mantén los Controladores de Hardware Actualizados">
+Asegúrate siempre de que los controladores de tu tarjeta gráfica y del chipset del sistema estén actualizados a sus últimas versiones de 2026. Las actualizaciones de los fabricantes a menudo incluyen perfiles de optimización específicos para motores de juegos y resuelven conflictos de renderizado.
+</Callout>
+
+<FAQ items={[
+  {
+    question: "¿Por qué el juego funciona a cámara lenta cuando caen los FPS?",
+    answer: "El motor del juego vincula sus cálculos físicos directamente a la tasa de fotogramas. Cuando tu sistema experimenta caídas de rendimiento, la velocidad de todo el juego se ralentiza para coincidir con los fotogramas renderizados, resultando en un efecto de cámara lenta en lugar de saltarse fotogramas."
+  },
+  {
+    question: "¿Cómo soluciono los tirones que ocurren solo al entrar en una nueva sala?",
+    answer: "Esto suele deberse a que el juego carga activos desde tu disco duro o compila sombreadores (shaders). Instalar el juego en un SSD rápido y desactivar mods pesados en segundo plano eliminará estos tirones de transición."
+  },
+  {
+    question: "¿Desactivar los efectos de iluminación en options.ini romperá el estilo visual del juego?",
+    answer: "Configurar EnableLighting en 0 elimina las sombras dinámicas y las capas de oscuridad de las salas. Aunque aumenta significativamente el rendimiento en sistemas antiguos, hace que los pisos oscuros como el Útero (Womb) o las Profundidades (Depths) sean totalmente visibles, lo que altera la atmósfera pretendida."
+  },
+  {
+    question: "¿Por qué el juego da tirones cuando conecto o desconecto un mando?",
+    answer: "El motor del juego escanea constantemente los cambios de estado del mando. Si ControllerHotplug está activado en options.ini, cualquier conexión USB floja o caída de señal inalámbrica hará que el juego se congele por una fracción de segundo mientras reconstruye su mapa de entrada."
+  }
+]} />
+
+</Section>

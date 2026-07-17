@@ -1,0 +1,186 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "Solución para la pantalla negra de The Binding of Isaac Repentance: 5 soluciones de configuración",
+  description: "Resuelve los cuelgues al iniciar y los errores de pantalla con nuestra guía paso a paso para solucionar la pantalla negra en The Binding of Isaac Repentance para jugadores de Steam.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/1e1417/fff?text=Black+Screen+Fix",
+  date: "2026-07-17",
+  author: "Equipo de la Wiki de The Binding of Isaac: Repentance",
+  keywords: "pantalla negra, the binding of isaac repentance, solucionar error, steam, crash"
+}
+
+<Callout type="info" title="Guía rápida">
+- **Solución principal**: Modifica el archivo de configuración local para desactivar los mods corruptos.
+- **Archivo clave**: Accede al archivo `options.ini` ubicado en tu directorio local de documentos.
+- **Conflicto del sistema**: Desactiva las superposiciones (overlays) de terceros como Discord o GeForce Experience.
+- **Comprobación crítica**: Verifica la integridad de los archivos del juego directamente a través de tu biblioteca de Steam.
+- **Modo de pantalla**: Cambia los ajustes de pantalla completa para forzar al motor a renderizar correctamente.
+</Callout>
+
+<Section icon={Shield} title="Solución de problemas inicial para el error de pantalla negra">
+
+Si tienes problemas para iniciar tus partidas de roguelike, encontrar una **solución para la pantalla negra de The Binding of Isaac Repentance** que sea confiable es esencial para volver a la acción. Este problema suele ocurrir inmediatamente al iniciar el juego desde Steam. La ventana de la aplicación se abre, pero en lugar de mostrar la cinemática de introducción o el menú principal, los jugadores se encuentran con una pantalla negra que no responde. Este fallo de renderizado suele deberse a controladores gráficos desactualizados, archivos del juego corruptos o mods de la workshop incompatibles.
+
+Para comenzar con la solución de problemas, debemos aislar si el error proviene de los propios archivos del juego o de la configuración de hardware de tu sistema. La siguiente tabla describe las causas más comunes de este error de inicio y las acciones inmediatas necesarias para resolverlas.
+
+| Problema | Causa | Acción directa |
+| --- | --- | --- |
+| **Caché de juego corrupto** | Archivos ejecutables faltantes o dañados | Verificar integridad a través de Steam |
+| **Controlador gráfico desactualizado** | Fallo de renderizado de la API al iniciar | Instalación limpia de controladores de GPU |
+| **Mods de la Workshop incompatibles** | Conflictos de scripts durante la inicialización | Desactivar mods mediante options.ini |
+| **Interferencia de superposición** | Conflictos de acoplamiento con Discord o Steam | Desactivar superposiciones activas |
+| **Desajuste del modo de pantalla** | Problemas de escalado de resolución no resueltos | Forzar modo ventana |
+
+<Callout type="warning" title="Advertencia importante">
+Antes de modificar cualquier archivo del juego o eliminar directorios, asegúrate de haber realizado una copia de seguridad de tus datos de guardado. Aunque Steam Cloud suele conservar tu progreso, los cambios manuales en los archivos de configuración pueden provocar ocasionalmente problemas de sincronización local.
+</Callout>
+
+Cuando el motor intenta cargarse, inicializa varios subsistemas, incluidos el controlador de audio, el renderizador gráfico y la API de Steam Workshop. Si alguno de estos sistemas no responde dentro del tiempo de inicio establecido, el proceso de renderizado se detiene, dejándote con una pantalla en blanco. Al abordar sistemáticamente cada posible punto de fallo, podrás identificar el cuello de botella exacto que impide que tu juego se ejecute.
+
+</Section>
+
+<Section icon={Map} title="Cómo aplicar la solución para la pantalla negra de The Binding of Isaac Repentance">
+
+Para resolver este problema de forma permanente, debes seguir un proceso de configuración estructurado. La **solución para la pantalla negra de The Binding of Isaac Repentance** más común y efectiva consiste en editar manualmente los ajustes de configuración local del juego. Esto evita la secuencia de inicialización corrupta sin necesidad de reinstalar completamente el juego.
+
+Sigue estas instrucciones paso a paso para localizar tus archivos de configuración, ajustar las propiedades de renderizado y desactivar los mods problemáticos antes de volver a iniciar el juego.
+
+<Steps>
+  <Step num="1" title="Localiza tu directorio de documentos">
+    Navega por los archivos locales de tu sistema. Abre el explorador de archivos e ingresa a `Documentos\My Games\The Binding of Isaac Repentance`. Esta carpeta contiene tus copias de seguridad de guardado local y el archivo de configuración principal.
+  </Step>
+  <Step num="2" title="Edita el archivo de opciones">
+    Busca el archivo llamado `options.ini` dentro de la carpeta. Haz clic derecho sobre él y selecciona abrirlo con un editor de texto estándar como el Bloc de notas. No utilices procesadores de texto avanzados, ya que pueden corromper el formato del archivo.
+  </Step>
+  <Step num="3" title="Desactiva los mods activos">
+    Desplázate hacia abajo en el archivo hasta encontrar la línea que dice `EnableMods=1`. Cambia este valor a `EnableMods=0`. Esto le indica al motor del juego que ignore todo el contenido de Steam Workshop durante la siguiente secuencia de inicio.
+  </Step>
+  <Step num="4" title="Ajusta la configuración de pantalla">
+    Busca las líneas de `Fullscreen` y `Size`. Establece `Fullscreen=0` para forzar al juego a iniciarse en modo ventana. Esto evita conflictos de renderizado causados por desajustes en la resolución del escritorio.
+  </Step>
+  <Step num="5" title="Guarda y prueba el inicio">
+    Guarda los cambios en `options.ini` y cierra el editor de texto. Inicia el juego desde tu biblioteca de Steam para comprobar si el menú principal se carga correctamente sin la pantalla negra.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Consejo de éxito">
+Si el juego se inicia correctamente después de cambiar estos valores, puedes volver a activar los mods de forma segura e individual desde el menú del juego para identificar qué elemento específico de la workshop estaba causando el fallo de inicio.
+</Callout>
+
+Ajustar estos valores de inicialización garantiza que el motor del juego se inicie utilizando sus parámetros predeterminados y seguros. La siguiente tabla detalla las variables específicas dentro del archivo de configuración que afectan directamente a cómo se renderiza el juego al iniciar.
+
+| Parámetro | Valor predeterminado | Valor recomendado | Propósito |
+| --- | --- | --- | --- |
+| **EnableMods** | 1 | 0 | Desactiva todos los scripts personalizados durante el inicio |
+| **Fullscreen** | 1 | 0 | Fuerza el juego a ejecutarse en modo ventana |
+| **VSync** | 1 | 0 | Evita el desgarro de pantalla (screen tearing) y el lag de inicio |
+| **MaxRenderScale** | 4 | 2 | Reduce la carga de la GPU en sistemas más antiguos |
+| **ControllerHotplug** | 1 | 0 | Evita cuelgues provocados por hardware externo |
+
+</Section>
+
+<Section icon={Target} title="Controladores gráficos y configuraciones de pantalla">
+
+La compatibilidad del hardware gráfico es otro factor importante para resolver los errores de inicio. Los sistemas operativos modernos y los monitores con alta tasa de refresco a veces pueden entrar en conflicto con el motor de renderizado antiguo del juego. Este desajuste impide que la aplicación se escale correctamente, lo que resulta en una pantalla que no responde.
+
+Para asegurarte de que tu hardware sea totalmente compatible con el juego, debes evaluar tu modo de pantalla actual y la configuración del panel de control de tus gráficos.
+
+<CardGrid cols={3}>
+  <Card title="Modo ventana">
+    - **Alta compatibilidad**
+    - Evita los errores de escalado de resolución
+    - Recomendado para la solución de problemas
+  </Card>
+  <Card title="Ventana sin bordes">
+    - **Rendimiento equilibrado**
+    - Soporte fluido para multitarea
+    - Elimina el lag de transición
+  </Card>
+  <Card title="Pantalla completa exclusiva">
+    - **Máximo rendimiento**
+    - Menor latencia de entrada
+    - Propenso a cuelgues en el inicio
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Consejo profesional">
+Si utilizas una tarjeta gráfica NVIDIA o AMD, abre su respectivo panel de control y desactiva cualquier nitidez de imagen forzada o perfil de suavizado de líneas (anti-aliasing) personalizado para el archivo ejecutable del juego.
+</Callout>
+
+Además de los modos de pantalla, la tasa de refresco debe configurarse para que coincida con las capacidades nativas de tu monitor. La sincronización vertical forzada desde un software externo puede entrar en conflicto con el limitador de fotogramas interno, provocando una pantalla negra al iniciar. Utiliza la siguiente configuración de hardware básica para maximizar la estabilidad.
+
+| Ajuste | Configuración | Estado |
+| --- | --- | --- |
+| **Resolución de escritorio** | Nativa (ej. 1920x1080) | **Requerido** |
+| **Tasa de refresco del monitor** | 60Hz - 144Hz | **Recomendado** |
+| **Escalado de GPU** | Relación de aspecto (realizado en la GPU) | **Altamente estable** |
+| **Versión de DirectX** | DirectX 11 o posterior | **Requerido** |
+| **Cable de pantalla** | DisplayPort o HDMI | **Estándar** |
+
+</Section>
+
+<Section icon={Sparkles} title="Resolución de conflictos de mods y cuelgues de la Workshop">
+
+Steam Workshop ofrece miles de creaciones de la comunidad que mejoran tu experiencia de juego. Sin embargo, desde el lanzamiento de la expansión Repentance, muchos mods antiguos se han vuelto obsoletos o incompatibles con el código actualizado. Cuando el juego intenta cargar scripts desactualizados, puede hacer que el proceso de renderizado se congele por completo.
+
+Si desactivar los mods en el archivo de configuración resolvió tu pantalla negra, debes limpiar tus suscripciones de la workshop para evitar que el problema vuelva a ocurrir.
+
+<Checklist
+  id="mod-cleanup"
+  title="Lista de optimización de mods:"
+  items={[
+    "Anular la suscripción de todos los mods desactualizados o abandonados en Steam Workshop",
+    "Eliminar la carpeta local de la workshop para borrar los archivos de script almacenados en caché",
+    "Instalar el mod External Item Descriptions para verificar la estabilidad",
+    "Activar tus mods preferidos uno a uno, probando el inicio después de cada uno",
+    "Mantener la cantidad de mods por debajo de cincuenta para evitar límites de asignación de memoria"
+  ]}
+/>
+
+<Callout type="warning" title="Advertencia">
+Nunca instales mods que modifiquen el ejecutable principal del juego o que reemplacen archivos compartidos manualmente fuera de la interfaz oficial de Steam Workshop, ya que esto puede corromper permanentemente tu directorio de instalación.
+</Callout>
+
+Al solucionar problemas con los mods, resulta útil comprender qué categorías de contenido de la workshop tienen más probabilidades de causar fallos de inicio. La siguiente tabla clasifica los mods según su nivel de riesgo relativo y su impacto en la secuencia de inicialización del juego.
+
+| Categoría del mod | Nivel de riesgo | Problema común |
+| --- | --- | --- |
+| **Superposiciones de IU y HUD** | Bajo | Errores visuales menores, rara vez se cuelga |
+| **Personajes personalizados** | Medio | Puede colgarse si faltan sprites |
+| **Expansiones de paquetes de objetos** | Alto | Conflictos de scripts con objetos oficiales |
+| **Modificaciones totales (Overhauls)** | Muy alto | Conflictos graves con el código del juego base |
+| **Reemplazos de banda sonora** | Bajo | Fallos de audio, rara vez pantallas negras |
+
+</Section>
+
+<Section icon={Trophy} title="Preguntas frecuentes y resoluciones finales">
+
+Esta sección responde a las preguntas más frecuentes sobre problemas de inicio, rutas de archivos y resolución general de problemas del sistema para el juego.
+
+<FAQ items={[
+  {
+    question: "¿Dónde puedo encontrar el archivo options.ini en mi sistema?",
+    answer: "El archivo options.ini se encuentra en tu carpeta de documentos locales en Documentos\\My Games\\The Binding of Isaac Repentance. Si no encuentras esta carpeta, asegúrate de haber iniciado el juego al menos una vez para que el motor pueda generar el directorio."
+  },
+  {
+    question: "¿Aplicar esta solución de pantalla negra borrará mis archivos de guardado?",
+    answer: "No, modificar el archivo options.ini o verificar los archivos del juego a través de Steam no borrará tu progreso de guardado. Tus archivos de guardado se almacenan por separado y están respaldados por Steam Cloud."
+  },
+  {
+    question: "¿Qué debo hacer si falta el archivo options.ini?",
+    answer: "Si el archivo no está, elimina toda la carpeta The Binding of Isaac Repentance en tu directorio My Games y luego verifica los archivos del juego en Steam. Esto obligará al motor a recrear la estructura de carpetas predeterminada."
+  },
+  {
+    question: "¿Pueden los controladores gráficos desactualizados causar una pantalla negra al iniciar?",
+    answer: "Sí, los controladores gráficos desactualizados o corruptos pueden impedir que el motor del juego inicialice la pantalla. Realiza siempre una instalación limpia de los controladores de tu GPU para garantizar la compatibilidad con las API modernas."
+  }
+]} />
+
+</Section>

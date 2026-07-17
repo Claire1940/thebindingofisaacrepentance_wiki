@@ -1,0 +1,196 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, Laptop } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "The Binding of Isaac Repentance Mac: Guia de Instalação e Como Jogar",
+  description: "Aprenda como instalar e otimizar The Binding of Isaac: Repentance no Mac (M1/M2/M3 e Intel) usando Porting Kit, Whisky ou CrossOver em 2026.",
+  category: "Guia",
+  image: "https://placehold.co/800x400/1e1417/f4e9e7?text=Mac+Setup+Guide",
+  date: "2026-07-17",
+  author: "Equipe do Wiki de The Binding of Isaac Repentance"
+}
+
+<Callout type="info" title="Guia Rápido">
+- **Compatibilidade com Mac**: A DLC Repentance requer camadas de compatibilidade do Windows como **Porting Kit**, **Whisky** ou **CrossOver** no macOS.
+- **Ajuste de Desempenho**: Ative o **Found HUD** e ajuste as configurações de renderização para manter 60 FPS estáveis no Apple Silicon.
+- **Prioridade Máxima de Mods**: Instale o **External Item Descriptions** via Oficina Steam para identificar instantaneamente mais de 700 itens.
+- **Objetivo de Progressão**: Foque em derrotar a Mom (Mamãe) e o Mom's Heart (Coração da Mamãe) para desbloquear as rotas do Womb (Útero), Cathedral (Catedral) e Sheol.
+</Callout>
+
+<Section icon={Map} title="Rodando The Binding of Isaac Repentance no Mac">
+
+Se você está tentando jogar **the binding of isaac repentance mac** em 2026, provavelmente se deparou com problemas de compatibilidade, já que a DLC é nativa apenas para Windows. Embora o lançamento original do *Rebirth* tivesse suporte nativo para macOS, a expansão *Repentance* exige um ambiente Windows. Felizmente, as camadas de compatibilidade modernas tornam incrivelmente fácil rodar o jogo com desempenho perfeito tanto em máquinas Mac com Apple Silicon (M1/M2/M3) quanto com processadores Intel.
+
+Para escolher a melhor abordagem para o seu sistema, compare as principais ferramentas de compatibilidade abaixo:
+
+| Método | Custo | Desempenho | Dificuldade de Configuração | Ideal Para |
+| :--- | :--- | :--- | :--- | :--- |
+| **Porting Kit** | Grátis | Alto | Média | Configuração gratuita no Intel e Apple Silicon |
+| **Whisky** | Grátis | Alto | Fácil | Usuários de Apple Silicon (M1/M2/M3) |
+| **CrossOver** | Pago | Excelente | Muito Fácil | Usuários que querem suporte premium e atualizações |
+| **Parallels** | Pago | Médio | Fácil | Entusiastas de máquinas virtuais |
+
+Usar uma camada de compatibilidade como o Porting Kit ou o Whisky traduz as chamadas de sistema do Windows para o macOS em tempo real. Isso garante que você não sofra a degradação típica de desempenho associada a máquinas virtuais pesadas. O jogo roda a 60 FPS cravados, com suporte nativo para controles e mods da Oficina Steam diretamente do instalador.
+
+<Callout type="warning" title="Nota sobre Suporte Nativo">
+Não tente baixar o cliente Steam nativo do macOS para jogar o Repentance. O cliente nativo do Mac carregará apenas o jogo base (Rebirth) e não reconhecerá nem instalará a DLC Repentance. Você deve instalar a versão de Windows do Steam dentro de um ambiente de tradução.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Guia de Instalação Passo a Passo no Mac">
+
+Configurar o jogo através do Porting Kit é o método gratuito mais confiável tanto para Macs Intel quanto Apple Silicon. Esta ferramenta configura automaticamente um wrapper Wine personalizado projetado especificamente para rodar a versão de Windows do Steam.
+
+Siga estes passos para concluir a instalação:
+
+<Steps>
+  <Step num="1" title="Baixe e Instale o Porting Kit">
+    Visite o site oficial do Porting Kit e baixe a versão mais recente para macOS. Arraste o aplicativo para a sua pasta Aplicativos e inicie-o. Conceda as permissões de sistema necessárias durante a primeira inicialização.
+  </Step>
+  <Step num="2" title="Instale o Wrapper do Steam para Windows">
+    Dentro do Porting Kit, navegue até a aba **Library** (Biblioteca) e pesquise por **Steam**. Selecione a opção Windows Steam e clique em **Install** (Instalar). O programa baixará automaticamente as dependências do Wine e criará um contêiner Windows dedicado no seu disco.
+  </Step>
+  <Step num="3" title="Faça Login e Baixe o Jogo">
+    Assim que a instalação terminar, inicie o Steam através do Porting Kit. Faça login na sua conta Steam, encontre *The Binding of Isaac: Rebirth* na sua biblioteca e certifique-se de que a DLC *Repentance* está marcada no painel de gerenciamento de DLCs. Clique em instalar para baixar os arquivos do Windows.
+  </Step>
+  <Step num="4" title="Configure o Controle e Inicie">
+    Conecte seu controle via Bluetooth ou USB. Nas configurações de controle do Steam, ative o **Steam Input** para o seu controle específico (Xbox, PlayStation ou Switch Pro). Inicie o jogo para confirmar que os comandos e os dados de salvamento estão sincronizando corretamente.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Sincronização com a Nuvem Steam">
+Como você está rodando a versão oficial de Windows do Steam dentro do wrapper, seus salvamentos na nuvem serão sincronizados perfeitamente. Se você já jogou o Repentance em um PC com Windows, seu progresso, personagens e desbloqueios serão transferidos imediatamente.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Otimizando o Desempenho e Usando Mods no Mac">
+
+Depois que o jogo estiver rodando, você deve otimizar suas configurações para garantir taxas de quadros estáveis durante as fases intensas de bullet-hell. O motor gráfico é bastante responsivo, mas as camadas de tradução podem ocasionalmente introduzir uma leve latência nos comandos ou quedas de quadros se as configurações em segundo plano estiverem mal ajustadas.
+
+### Configurações Recomendadas no Jogo
+- **Found HUD**: Ative isso no menu de opções para exibir seus atributos numéricos exatos no lado esquerdo da tela.
+- **Extra HUD**: Ative isso para mostrar seus itens ativos atuais, itens passivos e bugigangas (trinkets) no lado direito da tela.
+- **Fullscreen Mode**: Se você tiver problemas de screen tearing (tela cortada), alterne entre os modos Janela e Tela Cheia Sem Bordas (Borderless Fullscreen) para encontrar o modo mais fluido para a sua tela específica.
+
+O uso de mods é uma parte fundamental da experiência da comunidade. A Oficina Steam funciona totalmente dentro do Porting Kit e do CrossOver. Inscrever-se em um mod no cliente Steam irá baixá-lo e aplicá-lo automaticamente ao seu jogo.
+
+<CardGrid cols={3}>
+  <Card title="External Item Descriptions">
+    - **Categoria de Interface**
+    - Exibe atributos e efeitos detalhados para mais de 700 itens.
+    - Crucial para aprender as sinergias dos itens sem precisar sair do jogo.
+  </Card>
+  <Card title="GoodTrip [Fixed]">
+    - **Categoria de Qualidade de Vida**
+    - Permite viagem rápida entre salas limpas através do minimapa.
+    - Elimina o tédio de voltar caminhos longos em andares grandes.
+  </Card>
+  <Card title="Enhanced Boss Bars">
+    - **Categoria Visual**
+    - Substitui as barras de vida padrão dos chefes por designs segmentados personalizados.
+    - Muito útil para acompanhar confrontos com múltiplos chefes.
+  </Card>
+</CardGrid>
+
+Para manter a estabilidade, evite instalar mods em excesso na sua configuração inicial. Use a matriz de compatibilidade abaixo para planejar seus mods:
+
+| Nome do Mod | Compatibilidade com Mac | Framework Necessário | Conflito Principal |
+| :--- | :--- | :--- | :--- |
+| **External Item Descriptions** | Alta | Nenhum | Evite mods de HUD duplicados |
+| **GoodTrip [Fixed]** | Alta | Nenhum | Conflitos de sobreposição no controle do minimapa |
+| **Enhanced Boss Bars** | Alta | Mod Config Menu | Outras substituições de barra de chefe |
+| **Planetarium Chance** | Alta | Nenhum | Sobrecargas pesadas de HUD personalizado |
+
+<Callout type="tip" title="Solucionando Falhas de Mods (Crashes)">
+Se o seu jogo fechar sozinho (crash) ao iniciar após a instalação de mods, navegue até os arquivos locais dentro do Steam, localize a pasta `mods` e exclua as pastas baixadas mais recentemente. Reinicie o Steam dentro do seu wrapper para redefinir a lista de mods.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Roteiro de Progressão Principal e Desbloqueios Chave">
+
+Depois de configurar o jogo com sucesso no seu Mac, seu objetivo de longo prazo é trabalhar em direção à marca de conclusão definitiva: **Dead God**. A progressão no Repentance não é linear, desbloqueando andares alternativos, personagens secretos e itens que mudam o jogo conforme você derrota os chefes principais.
+
+Use este roteiro para guiar suas partidas de forma eficiente:
+
+| Fase | Requisito | Desbloqueios | Prioridade |
+| :--- | :--- | :--- | :--- |
+| **1. Primeiro Final** | Derrotar a Mom no Depths II | Capítulo Womb, Final 1 | Essencial |
+| **2. It Lives!** | Derrotar o Mom's Heart 11 vezes | Acesso a Cathedral e Sheol | Essencial |
+| **3. As Fotos** | Derrotar Isaac e Satan 5 vezes cada | Polaroid e Negative | Alta |
+| **4. Caminho Alternativo** | Derrotar Hush 3 vezes | Downpour, Mines, Mausoleum | Alta |
+| **5. Home & Beast** | Derrotar Mother uma vez | Strange Door, Ascent, personagens Tainted | Essencial |
+
+Para facilitar significativamente suas próximas partidas, priorize estes marcos:
+
+<Checklist
+  id="progression-milestones"
+  title="Marcos de Progressão de Alta Prioridade:"
+  items={[
+    "Derrote Isaac como ??? para desbloquear o item ativo D6 para o Isaac.",
+    "Derrote Satan como Isaac para desbloquear a Mom's Knife, um dos itens de dano mais fortes.",
+    "Doe 879 moedas na Greed Machine para dar ao The Lost o Holy Mantle inicial.",
+    "Desbloqueie o Tainted Isaac e a Tainted Lilith para obter mecânicas poderosas que mudam o jogo.",
+    "Conclua o Desafio #2 (High Brow) para desbloquear a Rune of Jera."
+  ]}
+/>
+
+<Callout type="success" title="A Estratégia do D6">
+Desbloquear o item ativo inicial do Isaac, **The D6**, deve ser sua prioridade absoluta. Ele permite que você mude os itens de baixo valor nos pedestais das salas de Tesouro, Anjo e Demônio, aumentando drasticamente a qualidade média da sua build.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Desafios de Alta Prioridade e Recompensas">
+
+O jogo apresenta 45 desafios predefinidos. Embora alguns sejam incrivelmente difíceis, concluí-los é obrigatório para desbloquear runas, cartas e itens poderosos que passam a aparecer nas suas partidas padrão.
+
+Foque em concluir estes desafios de alto valor logo no início:
+
+| Nº | Desafio | Objetivo | Recompensa | Estratégia Chave |
+| :--- | :--- | :--- | :--- | :--- |
+| **2** | **High Brow** | Mom | Rune of Jera | Use Petrified Poop para farmar recursos no início |
+| **6** | **Solar System** | Mom's Heart | Rune of Perthro | Use o voo para pairar com segurança sobre obstáculos |
+| **9** | **Demo Man** | Mom's Heart | Chaos Card | Mantenha distância e detone as bombas do Dr. Fetus com cuidado |
+| **17** | **Waka Waka** | Mom | Death's Touch | Toque no botão de atirar rapidamente em vez de segurá-lo para evitar acúmulos |
+| **39** | **Isaac's Awakening** | Mother | Spirit Sword | Use o giro da espada para eliminar as ondas de projéteis inimigos |
+
+<Callout type="info" title="Restrições de Venda nos Olhos (Blindfold)">
+Em desafios com venda nos olhos (blindfold) como o **Solar System**, seu personagem não pode disparar lágrimas normais. Você deve confiar inteiramente em seus orbitais familiares ou itens ativos para causar dano. Foque em aprender os padrões de movimento dos inimigos para posicionar seus orbitais de forma eficaz.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Perguntas Frequentes">
+
+<FAQ items={[
+  {
+    question: "Posso jogar The Binding of Isaac Repentance no Mac de forma nativa?",
+    answer: "Não. O suporte nativo para macOS foi descontinuado após o jogo base Rebirth. Para jogar a DLC Repentance, você deve usar uma camada de compatibilidade do Windows como Porting Kit, Whisky ou CrossOver."
+  },
+  {
+    question: "Os salvamentos na nuvem do Steam funcionam ao rodar o jogo no Mac?",
+    answer: "Sim. Como as camadas de compatibilidade rodam a versão oficial para Windows do Steam, seus salvamentos na nuvem serão sincronizados perfeitamente entre o seu Mac e qualquer PC com Windows."
+  },
+  {
+    question: "Como corrijo problemas de detecção de controle no macOS?",
+    answer: "Certifique-se de que seu controle está conectado ao seu Mac antes de iniciar o Porting Kit ou o Steam. Nas configurações de controle do Steam, ative o Steam Input para forçar a compatibilidade."
+  },
+  {
+    question: "Posso instalar mods da Oficina Steam no Mac?",
+    answer: "Sim. Você pode se inscrever em mods através da interface da Oficina Steam dentro da sua camada de compatibilidade. Eles serão baixados e ativados automaticamente, assim como no Windows."
+  }
+]} />
+
+<Callout type="tip" title="Dica Final de Desempenho">
+Se você notar travamentos ocasionais no Apple Silicon, abra as configurações da sua camada de compatibilidade e certifique-se de que o **DXVK** ou o **MSync** esteja ativado. Essas opções otimizam a renderização do Direct3D para as APIs gráficas do macOS.
+</Callout>
+
+</Section>

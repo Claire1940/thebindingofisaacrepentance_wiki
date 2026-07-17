@@ -1,0 +1,155 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "The Binding of Isaac Repentance Não Abre: Correções Passo a Passo 2026",
+  description: "Resolva o problema do The Binding of Isaac Repentance não abrir no Steam. Siga nosso guia de diagnóstico passo a passo para corrigir conflitos de mods, saves corrompidos e erros de travamento.",
+  category: "Tutorial",
+  image: "https://placehold.co/800x400/120b0d/f4e9e7?text=Repentance+Not+Launching+Fix",
+  date: "2026-07-17",
+  author: "Equipe da Wiki de The Binding of Isaac Repentance",
+  keywords: "the binding of isaac repentance não abre, erro de inicialização, mods isaac, corrigir crash isaac"
+}
+
+<Callout type="info" title="Guia Rápido">
+- **Problema Principal**: O jogo trava na inicialização, exibe uma tela preta ou não abre via Steam.
+- **Principal Culpado**: Mods da Oficina Steam desatualizados, arquivos de save locais corrompidos ou dependências de DirectX/C++ ausentes.
+- **Correção Mais Rápida**: Desative os mods manualmente via arquivo de configuração do jogo ou verifique a integridade dos arquivos no Steam.
+- **Arquivo Crítico**: O arquivo `options.ini` localizado no seu diretório de documentos local controla a ativação de mods no boot.
+- **Ação Recomendada**: Faça um backup da sua pasta de save antes de deletar arquivos ou reinstalar o jogo.
+</Callout>
+
+<Section icon={Target} title="The Binding of Isaac Repentance Não Abre: Visão Geral da Solução de Problemas">
+
+Enfrentar o problema do **the binding of isaac repentance não abrir** é uma frustração comum para jogadores que retornam ao Porão. Este problema geralmente se apresenta como um breve status de "Executando" no Steam que reverte imediatamente para "Jogar", um travamento repentino para a área de trabalho sem mensagem de erro, ou uma tela preta infinita ao iniciar. 
+
+A maioria das falhas de inicialização na expansão Repentance decorre de mods da Oficina Steam desatualizados, arquivos de configuração corrompidos ou conflitos de compatibilidade com os drivers de vídeo e runtimes do seu sistema operacional. Como o Repentance introduz mudanças significativas na engine em comparação ao Afterbirth+, arquivos antigos frequentemente causam travamentos fatais durante a sequência inicial de boot do jogo.
+
+| Sintoma de Inicialização | Causa Principal | Ação Imediata |
+| :--- | :--- | :--- |
+| **Travamento instantâneo para desktop** | Mods corrompidos ou desatualizados | Defina EnableMods=0 no options.ini |
+| **Steam mostra Executando e para** | Pacotes C++ Redistributables ausentes | Instale os pacotes Microsoft VC++ mais recentes |
+| **Tela preta infinita no boot** | options.ini corrompido ou Overlay do Discord | Delete o options.ini e desative sobreposições |
+| **Trava após a cinemática inicial** | Dados de save corrompidos | Renomeie a pasta de save local para forçar o cloud sync |
+| **Erro de executável ausente** | Falso positivo do antivírus | Adicione a pasta do Isaac às exceções do antivírus |
+
+<Callout type="warning" title="Falsos Positivos de Antivírus">
+Alguns softwares de segurança sinalizam o executável atualizado do Repentance como um falso positivo. Se o Steam exibir um erro de "Executável Ausente", desative temporariamente seu antivírus ou adicione o caminho de instalação do Steam do jogo à sua lista de exclusões.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="Guia Passo a Passo para Resolver Travamentos na Inicialização">
+
+Para resolver sistematicamente os problemas de inicialização, siga esta progressão estruturada. Estas etapas abordam os pontos de falha mais frequentes, do mais simples ao mais avançado.
+
+<Steps>
+  <Step num="1" title="Desativar Mods via options.ini">
+    Navegue até o diretório de documentos local: `Documents\My Games\Binding of Isaac Repentance`. Abra o arquivo `options.ini` usando um editor de texto padrão. Localize a linha que diz `EnableMods=1` e altere para `EnableMods=0`. Salve o arquivo e tente iniciar o jogo. Isso desativa todos os mods da Oficina Steam sem precisar cancelar a inscrição neles, permitindo ignorar scripts quebrados.
+  </Step>
+  <Step num="2" title="Verificar Integridade dos Arquivos do Jogo">
+    Abra sua Biblioteca Steam, clique com o botão direito em *The Binding of Isaac: Rebirth* e selecione **Propriedades**. Navegue até a aba **Arquivos Instalados** e clique em **Verificar integridade dos arquivos do jogo**. O Steam escaneará sua instalação local contra os servidores oficiais e baixará automaticamente quaisquer arquivos principais ausentes ou corrompidos.
+  </Step>
+  <Step num="3" title="Limpar o Cache de Shaders">
+    Navegue até a pasta principal de instalação do jogo (geralmente em `Steam\steamapps\common\The Binding of Isaac Rebirth`). Procure por uma pasta chamada `resources` ou verifique as configurações do painel de controle da sua GPU. Caches de shader corrompidos podem impedir que a engine de renderização do jogo inicialize corretamente. Limpe o cache de shader da Nvidia ou AMD para forçar o sistema a reconstruir os ativos gráficos limpos.
+  </Step>
+  <Step num="4" title="Reinstalar Pacotes Visual C++ Redistributable">
+    Repentance depende fortemente de pacotes específicos do Microsoft Visual C++ Redistributable. Baixe e instale as versões x86 e x64 do Visual C++ Redistributable para Visual Studio 2015–2022 no portal oficial de suporte da Microsoft. Reinicie seu computador após a instalação para aplicar as alterações.
+  </Step>
+  <Step num="5" title="Executar como Administrador e Definir Compatibilidade">
+    Clique com o botão direito em `isaac-ng.exe` no diretório de instalação do jogo, selecione **Propriedades** e vá para a aba **Compatibilidade**. Marque a caixa **Executar este programa como administrador**. Além disso, você pode tentar executar o programa em modo de compatibilidade para Windows 8 para contornar problemas de escala do sistema operacional moderno.
+  </Step>
+</Steps>
+
+<Callout type="tip" title="Localizando a Pasta do Steam">
+Se você não conseguir encontrar sua pasta de instalação, clique com o botão direito no jogo no Steam, passe o mouse sobre **Gerenciar** e selecione **Explorar arquivos locais** para abrir o diretório correto instantaneamente.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Gerenciando Conflitos de Mods e Inscrições da Oficina">
+
+Os mods da Oficina Steam são a principal causa do **the binding of isaac repentance não abrir** após grandes atualizações do jogo. Quando a engine do jogo recebe patches oficiais, mods complexos baseados em scripts como o *External Item Descriptions* ou *Fiend Folio* podem falhar ao inicializar, causando travamentos imediatos.
+
+| Categoria do Mod | Nível de Risco | Comportamento Comum de Erro | Alternativa Segura |
+| :--- | :--- | :--- | :--- |
+| **UI & Overlays** | Médio | Telas pretas, desalinhamento de HUD | Use opções de UI nativas do Repentance+ |
+| **Revisões de Conteúdo** | Alto | Travamento instantâneo no boot ou transição | Execute isoladamente em saves novos |
+| **Personagens Customizados** | Alto | Trava ao abrir o menu de seleção | Verifique as notas de compatibilidade do autor |
+| **Substituição de Trilha Sonora** | Baixo | Áudio ausente, raros congelamentos | Use o framework Music Mod Callback |
+
+Se desativar os mods no `options.ini` permitir que o jogo inicie com sucesso, você deve isolar o mod problemático. Em vez de cancelar a inscrição de tudo de uma vez, use a grade de cartões abaixo para avaliar sua estratégia de gerenciamento de mods.
+
+<CardGrid cols={3}>
+  <Card title="Isolar por Lotes">
+    Ative seus mods em grupos de cinco. Inicie o jogo após ativar cada lote para identificar rapidamente qual inscrição desencadeia o travamento.
+  </Card>
+  <Card title="Verificar Dependências">
+    Certifique-se de que mods complexos tenham seus frameworks necessários ativados. Por exemplo, muitas fases customizadas exigem o *Custom Stage API*.
+  </Card>
+  <Card title="Limpar Cache da Oficina">
+    Delete o conteúdo do diretório `Steam\steamapps\workshop\content\250900` para forçar o Steam a baixar versões limpas e atualizadas dos seus mods.
+  </Card>
+</CardGrid>
+
+<Callout type="info" title="Aviso sobre Mods Repentance+">
+A atualização online mais recente do Repentance+ altera a forma como o jogo lida com a memória interna. Certifique-se de que qualquer mod que você use esteja explicitamente atualizado para a versão atual do jogo para evitar falhas de alocação de memória no boot.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Corrupção de Arquivo de Save e Recuperação via Cloud Sync">
+
+Às vezes, o jogo não inicia porque seu arquivo de save local foi corrompido. Isso pode acontecer durante quedas repentinas de energia, travamentos do jogo enquanto salva ou sincronização incorreta na nuvem entre computadores diferentes.
+
+Para diagnosticar e reparar com segurança um arquivo de save corrompido sem perder suas marcas de conclusão arduamente conquistadas, siga esta lista de verificação.
+
+<Checklist
+  id="save-recovery"
+  title="Checklist de Recuperação de Dados Salvos:"
+  items={[
+    "Localize sua pasta de save em Documents/My Games/Binding of Isaac Repentance.",
+    "Copie a pasta inteira e cole em um local de backup seguro na sua área de trabalho.",
+    "Delete os arquivos de save originais no diretório ativo (ex: persistentgamedata1.dat).",
+    "Inicie o jogo para ver se um arquivo de save novo e vazio permite o boot com sucesso.",
+    "Se funcionar, renomeie um dos backups automáticos do jogo da pasta remota para substituir o arquivo deletado."
+  ]}
+/>
+
+O jogo mantém um histórico dos seus saves dentro da pasta `resources/save backups` ou no diretório remoto do Steam Cloud. Restaurar um backup de um dia anterior aos problemas de inicialização geralmente fará você voltar ao jogo com perda mínima de progresso.
+
+<Callout type="success" title="Steam Cloud Sync">
+Se você perder seus dados de save locais, pode sincronizar suas conquistas de volta para o jogo. Navegue até o menu Stats dentro do jogo e pressione **Alt + F2** para forçar o jogo a desbloquear todas as marcas de conclusão correspondentes às suas conquistas do Steam.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Perguntas Frequentes">
+
+Nossa comunidade frequentemente encontra cenários específicos ao solucionar falhas de inicialização. Abaixo estão as soluções mais confiáveis para essas situações.
+
+<FAQ items={[
+  {
+    question: "Por que meu jogo trava instantaneamente quando clico em Jogar no Steam?",
+    answer: "Isso é quase sempre causado por um mod quebrado ou uma dependência de sistema ausente. Tente definir EnableMods=0 no seu arquivo options.ini. Se isso falhar, instale os pacotes Microsoft Visual C++ Redistributable mais recentes (formatos x86 e x64) e reinicie seu PC."
+  },
+  {
+    question: "Vou perder minhas conquistas se deletar meus arquivos de save para corrigir o problema?",
+    answer: "Não. Suas conquistas estão armazenadas permanentemente na sua conta Steam. Mesmo que você precise deletar seus arquivos de save locais para resolver um travamento por corrupção, você pode restaurar seu progresso no jogo indo até a tela Stats e pressionando Alt + F2."
+  },
+  {
+    question: "Desativei a Sobreposição do Discord, mas o jogo ainda não abre. O que mais posso fazer?",
+    answer: "Outros programas com sobreposições ativas, como GeForce Experience, MSI Afterburner, OBS ou o próprio Steam, podem interferir na engine de renderização do Isaac. Tente desativar essas aplicações uma por uma para encontrar o conflito."
+  },
+  {
+    question: "Como corrijo o Repentance não abrindo no Steam Deck?",
+    answer: "No Steam Deck, force o jogo a rodar usando uma versão específica do Proton. Feche o jogo, vá em Propriedades > Compatibilidade, marque 'Forçar o uso de uma ferramenta de compatibilidade específica do Steam Play' e selecione Proton Experimental ou Proton Hotfix."
+  }
+]} />
+
+</Section>

@@ -1,0 +1,187 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, Wifi, Users } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "The Binding of Isaac: Repentance Multiplayer Online: Guia de Configuração e Dicas",
+  description: "Domine o multiplayer online de The Binding of Isaac: Repentance com nosso guia de 2026. Saiba como entrar no beta, gerenciar itens e otimizar suas partidas coop.",
+  category: "Guia",
+  image: "https://placehold.co/800x400/4a148c/fff?text=Online+Multiplayer+Guide",
+  date: "2026-07-17",
+  author: "Equipe da Wiki de The Binding of Isaac: Repentance"
+}
+
+<Callout type="info" title="Guia Rápido">
+- **Recurso Principal**: O **multiplayer online de The Binding of Isaac: Repentance** permite que até quatro jogadores enfrentem o porão juntos de forma nativa.
+- **Método de Acesso**: Os jogadores devem ativar a **ramificação Beta do Steam** usando um código de acesso específico fornecido pelos desenvolvedores.
+- **Mecânica de Itens**: Geralmente, os itens são compartilhados ou distribuídos por meio de um sistema de votação/seleção, dependendo do tipo de sala.
+- **Progressão**: As marcas de conclusão são obtidas para todos os jogadores simultaneamente, tornando-o ideal para completar desbloqueios difíceis.
+- **Conectividade**: É necessária uma conexão estável com a internet, pois o jogo usa um netcode do tipo rollback para minimizar o atraso de comandos (input lag).
+</Callout>
+
+<Section icon={Map} title="Primeiros Passos no Isaac Online">
+
+A chegada do **multiplayer online nativo de The Binding of Isaac: Repentance** mudou fundamentalmente a forma como a comunidade interage com o porão. Ao contrário das soluções anteriores como o "Remote Play Together", o modo online integrado oferece uma interface dedicada, melhor sincronização e um sistema de lobby simplificado. A partir de 2026, o recurso passou de um alfa restrito para um beta amplamente acessível, permitindo que os fãs experimentem o caos de Repentance com amigos ao redor do mundo.
+
+**Destaques do Vídeo:**
+- Visão geral visual da jogabilidade caótica do multiplayer.
+- Demonstração de sinergias de itens de alta velocidade em grupo.
+- Exemplos de como vários jogadores interagem com os padrões dos chefes.
+
+<YouTubeEmbed videoId="I4LacitlqU4" title="thebindingofisaacrepentance.exe" />
+
+<Callout type="tip" title="Dica de Acesso ao Beta">
+Antes de tentar hospedar um jogo, certifique-se de que seu cliente Steam esteja atualizado. O modo online está atualmente vinculado às versões `v1.9.5` (ou posterior) encontradas na aba "betas" das propriedades do jogo.
+</Callout>
+
+| Recurso | Coop Local | Multiplayer Online (2026) |
+| :--- | :--- | :--- |
+| **Limite de Jogadores** | 4 Jogadores | 4 Jogadores |
+| **Atraso de Comandos (Input Lag)** | Zero (Local) | Baixo (Rollback Netcode) |
+| **Progressão de Salve** | Apenas o Hospedeiro | Todos os Participantes |
+| **Suporte a Mods** | Completo | Limitado (Sincronização Necessária) |
+| **Sistema de Lobby** | Nenhum | Lobbies Públicos e Privados |
+
+</Section>
+
+<Section icon={Target} title="Como Ativar o Multiplayer Online">
+
+Configurar o **multiplayer online de The Binding of Isaac: Repentance** requer alguns passos específicos dentro da interface do Steam. Como o modo ainda está tecnicamente em sua fase de "Beta Online" em 2026, ele não vem ativado por padrão na ramificação padrão do jogo.
+
+<Steps>
+  <Step num="1" title="Acessar as Propriedades no Steam">
+    Clique com o botão direito em *The Binding of Isaac: Rebirth* na sua Biblioteca Steam e selecione **Propriedades**.
+  </Step>
+  <Step num="2" title="Navegar até Betas">
+    Clique na aba **Betas** no lado esquerdo da janela de propriedades.
+  </Step>
+  <Step num="3" title="Inserir o Código do Beta">
+    Na caixa de texto "Betas privados", digite o código de acesso atual (historicamente `be Isaac online!`) e clique em **Verificar código**.
+  </Step>
+  <Step num="4" title="Selecionar a Ramificação">
+    No menu suspenso acima, selecione **online_beta**. O Steam iniciará um pequeno download para atualizar os arquivos do seu jogo.
+  </Step>
+  <Step num="5" title="Iniciar o Jogo">
+    Assim que o download for concluído, inicie o jogo. Você verá uma nova opção **Online Squad** no menu principal.
+  </Step>
+</Steps>
+
+<Callout type="warning" title="Backup de Dados Salvos">
+Sempre faça backup dos seus arquivos `persistentprogress1.dat` antes de mudar para a ramificação beta. Embora as versões de 2026 sejam estáveis, as atualizações do beta podem ocasionalmente causar problemas de sincronização com os arquivos de salvamento locais.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Combate Multiplayer e Estratégia de Sinergia">
+
+No **multiplayer online de The Binding of Isaac: Repentance**, o meta muda da sobrevivência individual para a sinergia em equipe. Ter quatro jogadores na tela cria uma quantidade enorme de poluição visual, mas também permite combinações impossíveis no modo solo. Por exemplo, um jogador pode se concentrar em builds de alto dano estilo "canhão de vidro" enquanto outro foca em itens utilitários como *The Jar* ou *D20*.
+
+<CardGrid cols={3}>
+  <Card title="O Papel de Tanque">
+    - **Foco**: Vida alta e dano de contato.
+    - **Itens-Chave**: *The Wafer*, *Yum Heart*, *Infamy*.
+    - **Estratégia**: Bloquear projéteis para companheiros de equipe mais frágeis.
+  </Card>
+  <Card title="O Canhão de Vidro">
+    - **Foco**: DPS máximo e cadência de lágrimas (tear rate).
+    - **Itens-Chave**: *Soy Milk*, *Brimstone*, *Sacred Heart*.
+    - **Estratégia**: Ficar na linha de trás e derreter os chefes rapidamente.
+  </Card>
+  <Card title="O Suporte">
+    - **Foco**: Geração de recursos e cura.
+    - **Itens-Chave**: *Guppy's Paw*, *Book of Revelations*.
+    - **Estratégia**: Gerenciar a vida da equipe e a economia de corações de alma.
+  </Card>
+</CardGrid>
+
+<Callout type="info" title="Distribuição de Itens">
+No modo online de 2026, as Salas de Itens (Item Rooms) geralmente geram um item por jogador. No entanto, os itens da Sala do Chefe (Boss Room) costumam dropar apenas um único item que a equipe deve decidir quem pega. A comunicação é fundamental!
+</Callout>
+
+| Tipo de Sala | Mecânica de Item | Estratégia |
+| :--- | :--- | :--- |
+| **Sala do Tesouro** | 1 Item por Jogador | Combinar itens com builds de personagens específicos |
+| **Sala do Chefe** | 1 Item no Total | Dar para o jogador com o menor DPS |
+| **Loja** | Pool Compartilhado | Juntar dinheiro para itens de alto valor como *Stop Watch* |
+| **Anjo/Demônio** | Baseado em Escolha | Priorizar jogadores que podem pagar o custo de vida |
+
+</Section>
+
+<Section icon={Sparkles} title="Mecânicas Avançadas e Regras">
+
+Compreender as regras subjacentes do **multiplayer online de The Binding of Isaac: Repentance** é essencial para jogar em alto nível. O jogo lida com a morte e a ressurreição de forma diferente do jogo base para evitar telas de "fim de jogo" devido ao erro de um único jogador.
+
+Quando um jogador morre, ele se transforma em um fantasma. Como fantasma, ele ainda pode fornecer uma pequena ajuda, causando um dano muito baixo e bloqueando certos projéteis. Para reaparecer (respawn), os jogadores sobreviventes devem limpar o andar atual ou encontrar um item específico de ressurreição.
+
+**Regras Principais do Multiplayer:**
+- **Câmera Compartilhada**: A câmera tenta manter todos os jogadores à vista. Se um jogador ficar para trás, ele será "arrastado" em direção ao grupo.
+- **Gerenciamento de Vida**: Os corações vermelhos são individuais, mas certos itens de "Aumento de Todos os Atributos" (All Stats Up) podem fornecer pequenas melhorias para toda a equipe.
+- **Conquistas**: Você pode desbloquear personagens como *The Forgotten* ou *Bethany* no multiplayer, desde que o hospedeiro atenda aos requisitos.
+
+<Callout type="success" title="Marcas de Conclusão">
+Todos os jogadores no lobby recebem a marca de conclusão do chefe derrotado. Esta é a maneira mais eficiente de ajudar amigos a desbloquear itens difíceis como *Godhead* ou *Mega Mush*.
+</Callout>
+
+| Tipo de Personagem | Vantagem no Multiplayer | Desvantagem no Multiplayer |
+| :--- | :--- | :--- |
+| **Personagens Tainted** | Mecânicas exclusivas podem carregar a equipe | Frequentemente exigem alto investimento de recursos |
+| **Lost/Tainted Lost** | Acordos com o Demônio grátis para a equipe | Extremamente frágeis em salas caóticas de 4 jogadores |
+| **Isaac (D6)** | Pode rolar novamente itens ruins para todos | Requer gerenciamento cuidadoso de carga |
+
+</Section>
+
+<Section icon={Shield} title="Lista de Verificação de Otimização e Conectividade">
+
+Para garantir uma experiência tranquila no **multiplayer online de The Binding of Isaac: Repentance**, você precisa otimizar tanto o seu hardware quanto as configurações do jogo. O netcode de rollback é excelente para mascarar a latência, mas não pode consertar uma conexão fundamentalmente instável.
+
+<Checklist
+  id="multiplayer-optimization"
+  title="Lista de Verificação de Estabilidade Pré-Jogo:"
+  items={[
+    "Use uma conexão Ethernet cabeada em vez de Wi-Fi",
+    "Desative downloads pesados em segundo plano (atualizações do Steam, etc.)",
+    "Certifique-se de que todos os jogadores estejam na mesma região geográfica para obter o menor ping",
+    "Combine as configurações de 'Distância Máxima de Renderização' (Max Draw Distance) no menu de opções",
+    "Verifique se nenhum jogador está usando mods cosméticos conflitantes"
+  ]}
+/>
+
+<Callout type="warning" title="Compatibilidade de Mods">
+A partir de julho de 2026, a maioria dos mods puramente visuais (como o *External Item Descriptions*) funciona no multiplayer, mas qualquer mod que altere o layout das salas ou as pools de itens deve ser instalado por todos os jogadores para evitar erros de dessincronização ("Desync").
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Perguntas Frequentes">
+
+Dominar as nuances do porão com amigos leva tempo. Aqui estão as perguntas mais comuns sobre a experiência do **multiplayer online de The Binding of Isaac: Repentance**.
+
+<FAQ items={[
+  {
+    question: "Posso jogar o multiplayer online com a versão da Epic Games Store?",
+    answer: "Atualmente, o beta online nativo é exclusivo para a versão Steam do jogo. Os usuários da Epic Games ainda devem depender de ferramentas de terceiros ou aguardar o lançamento completo para consoles/multiplataforma agendado para o final de 2026."
+  },
+  {
+    question: "Como faço para convidar amigos para o meu squad online?",
+    answer: "Quando estiver no menu 'Online Squad', você pode abrir sua Lista de Amigos do Steam (Shift+Tab), clicar com o botão direito em um amigo e selecionar 'Convidar para o Lobby'. Você também pode definir um Código de Sala (Room Code) para jogadores públicos entrarem."
+  },
+  {
+    question: "Os mods funcionam no multiplayer online de The Binding of Isaac: Repentance?",
+    answer: "Sim, mas eles ficam 'Desativados de forma suave' (Soft-Disabled) por padrão no beta para evitar dessincronizações. Se você deseja usá-los, todos os jogadores no lobby devem ter exatamente a mesma lista de mods e versões instaladas."
+  },
+  {
+    question: "Existe cross-play entre PC e Consoles?",
+    answer: "Até meados de 2026, o cross-play não é suportado oficialmente. Os desenvolvedores deram pistas sobre isso para a atualização final 'Repentance+', mas por enquanto, todos devem estar na mesma plataforma."
+  }
+]} />
+
+<Callout type="info" title="Dica de Profissional Final">
+Se a tela ficar muito poluída com quatro jogadores, tente ativar o modo 'Alto Contraste' (High Contrast) nas configurações de acessibilidade. Isso adiciona um contorno sutil aos personagens e projéteis, tornando muito mais fácil rastrear sua posição durante segmentos intensos de bullet-hell.
+</Callout>
+
+</Section>

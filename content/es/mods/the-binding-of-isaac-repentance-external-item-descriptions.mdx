@@ -1,0 +1,188 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, Settings, Info } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "External Item Descriptions para The Binding of Isaac Repentance: Guía de Instalación del Mod",
+  description: "Aprende a instalar y configurar el mod External Item Descriptions para The Binding of Isaac: Repentance para ver estadísticas de objetos, sinergias y recetas.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/120B0D/E24133?text=External+Item+Descriptions+Guide",
+  date: "2026-07-17",
+  author: "Equipo de la Wiki de The Binding of Isaac: Repentance"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **The Binding of Isaac Repentance External Item Descriptions** es el mod de interfaz más esencial para hacer el seguimiento de más de 700 objetos.
+- **Información en tiempo real** que muestra los nombres de los objetos, sus efectos, niveles de calidad y el progreso de las transformaciones directamente en tu pantalla.
+- **Soporte para Bag of Crafting** que proporciona a los jugadores de Tainted Cain recetas dinámicas basadas en los consumibles que se encuentran actualmente en la sala.
+- **Compatibilidad** total con Repentance, Repentance+ y grandes expansiones de contenido creadas por la comunidad como Fiend Folio.
+- **Personalización** que requiere el Mod Config Menu para ajustar el tamaño del texto, el idioma y las posiciones de visualización.
+</Callout>
+
+<Section icon={Settings} title="Instalación del mod External Item Descriptions para The Binding of Isaac Repentance">
+
+Instalar el mod **the binding of isaac repentance external item descriptions** (EID) es un proceso sencillo a través de la Steam Workshop. Este mod funciona como una superposición en tiempo real que lee la memoria interna del juego para proporcionar datos precisos sin desactivar los logros (siempre que hayas derrotado a Mom al menos una vez). Para los jugadores que buscan el logro Dead God, EID es indispensable para identificar qué objetos contribuyen a transformaciones específicas o tienen peligrosas anti-sinergias.
+
+<Callout type="success" title="Seguridad de Logros">
+En Repentance, los mods no desactivan los logros ni las marcas de finalización, siempre y cuando hayas derrotado al jefe Mom en Depths al menos una vez en ese archivo de guardado.
+</Callout>
+
+<Steps>
+  <Step num="1" title="Accede a la Steam Workshop">
+    Abre tu biblioteca de Steam, selecciona The Binding of Isaac: Rebirth y haz clic en la pestaña Workshop. Asegúrate de tener instalado el DLC Repentance, ya que las versiones modernas de EID están optimizadas para esta versión.
+  </Step>
+  <Step num="2" title="Busca y Suscríbete">
+    Busca \"External Item Descriptions\" del autor Wayu. Haz clic en el botón verde Suscribirse. Steam descargará automáticamente los archivos necesarios en tu directorio local.
+  </Step>
+  <Step num="3" title="Actívalo en el Menú del Juego">
+    Inicia el juego y dirígete al menú de Mods desde la pantalla de título. Asegúrate de que \"External Item Descriptions\" esté resaltado y activado. Si el texto aparece en gris, presiona la tecla Tab para activar los mods de manera global.
+  </Step>
+  <Step num="4" title="Instala Mod Config Menu">
+    Para disfrutar de la mejor experiencia, suscríbete también a \"Mod Config Menu - Pure\" en la Workshop. Esto te permitirá cambiar los ajustes de EID, como el idioma o el tamaño de la fuente, mientras juegas.
+  </Step>
+</Steps>
+
+| Característica | Requisito de Steam Workshop | Funcionalidad |
+| :--- | :--- | :--- |
+| **EID Core** | Obligatorio | Proporciona la superposición básica para objetos y trinkets |
+| **Mod Config Menu** | Recomendado | Permite el ajuste en tiempo real de los elementos de la interfaz |
+| **Repentance+** | Opcional | Añade soporte para la revelación de objetos en el nuevo modo cooperativo en línea |
+| **REPENTOGON** | Opcional | Mejora el rendimiento y añade un seguimiento interno profundo |
+
+</Section>
+
+<Section icon={Info} title="Características Principales y Mecánicas de Visualización">
+
+La función principal del mod **the binding of isaac repentance external item descriptions** es eliminar la necesidad de buscar constantemente en wikis externas. Cuando Isaac se encuentra cerca de un pedestal con un objeto, aparece un cuadro de texto en la parte izquierda de la pantalla. Este cuadro contiene el nombre del objeto, su calidad (clasificada de 0 a 4) y un desglose detallado de sus efectos mecánicos.
+
+<Callout type="tip" title="La Calidad Importa">
+Los objetos se clasifican desde Calidad 0 (débiles/situacionales) hasta Calidad 4 (definitorios para la partida). EID muestra este número de forma destacada, ayudándote a decidir si coger un objeto o usar una herramienta de reroll como el D6.
+</Callout>
+
+Más allá de los pedestales simples, EID realiza un seguimiento de varios otros elementos críticos del juego:
+- **Trinkets (Amuletos):** Muestra el efecto pasivo del amuleto equipado o que se encuentra en el suelo.
+- **Cartas y Runas:** Explica exactamente qué hace una carta antes de usarla, incluyendo las cartas de tarot invertidas.
+- **Píldoras:** Una vez que se identifica una píldora, EID muestra su efecto. También puede mostrar los efectos de píldoras no identificadas si tienes los objetos \"PHD\" o \"False PHD\".
+- **Transformaciones:** Muestra un pequeño icono que indica si un objeto contribuye a transformaciones como Guppy, Beelzebub o Conjoined.
+
+| Elemento de Visualización | Descripción | Indicador Visual |
+| :--- | :--- | :--- |
+| **Nombre del Objeto** | El nombre oficial del coleccionable | Encabezado en negrita |
+| **Texto de Efecto** | Cambios en las estadísticas (Daño, Lágrimas, etc.) | Lista con viñetas |
+| **Calidad** | Nivel de poder del 0 al 4 | Número de color |
+| **Pool de Objetos** | De dónde proviene el objeto (Ángel, Demonio, etc.) | Etiqueta de texto |
+| **Origen del Mod** | Indica si el objeto proviene de un mod de la comunidad | Subtexto |
+
+</Section>
+
+<Section icon={Target} title="Funcionalidad Avanzada para Personajes Tainted">
+
+Para los jugadores avanzados, el mod **the binding of isaac repentance external item descriptions** proporciona herramientas especializadas para personajes complejos. Tainted Cain, por ejemplo, depende completamente de la Bag of Crafting. EID lee los consumibles (monedas, bombas, llaves, corazones) que se encuentran actualmente en el suelo de la sala y genera una lista de los posibles objetos que puedes fabricar.
+
+<Callout type="warning" title="Recetas de Bag of Crafting">
+En la versión actual de Repentance, muchas recetas de Bag of Crafting se aleatorizan según la semilla de tu partida. EID las calcula localmente, asegurando que las recetas mostradas sean precisas para tu partida específica.
+</Callout>
+
+Otra interacción muy potente es con el **Spindown Dice**. Cuando sostienes el Spindown Dice, EID mostrará en qué se convertirá el objeto del pedestal actual tras un solo uso. Esto es vital para conseguir objetos de gran valor como Death Certificate o Sacred Heart al \"reducir\" (spinning down) objetos de menor nivel con números de ID específicos.
+
+<CardGrid cols={3}>
+  <Card title="Tainted Cain">
+    - **Recetas en tiempo real**
+    - Detección de consumibles
+    - Clasificación de recetas por calidad
+  </Card>
+  <Card title="Tainted Isaac">
+    - **Gestión de inventario**
+    - Vista previa de ciclos
+    - Predicción de cambios en estadísticas
+  </Card>
+  <Card title="Spindown Dice">
+    - **Seguimiento de la cadena de IDs**
+    - Vista previa del resultado
+    - Planificación de múltiples giros
+  </Card>
+</CardGrid>
+
+</Section>
+
+<Section icon={Shield} title="Configuración y Optimización">
+
+Para sacar el máximo partido al mod **the binding of isaac repentance external item descriptions**, debes personalizar la pantalla para que se adapte a tu resolución. Por defecto, el texto podría solaparse con las funciones \"HUD de objetos encontrados\" o \"HUD extra\" integradas en el juego.
+
+| Categoría de Ajuste | Valor Recomendado | Impacto en el Juego |
+| :--- | :--- | :--- |
+| **Idioma** | Español (o nativo) | Cambia las descripciones a tu idioma preferido |
+| **Escala del Texto** | 0.8x a 1.0x | Evita que la interfaz sature la pantalla |
+| **Modo de Visualización** | Detallado | Muestra los cambios numéricos exactos de las estadísticas |
+| **Transparencia** | 0.5 | Te permite ver a los enemigos detrás del cuadro de texto |
+
+<Callout type="info" title="Alineación del HUD">
+Si usas una relación de aspecto 4:3 o juegas en la Steam Deck, utiliza el Mod Config Menu para mover la ventana de EID al lado derecho o al centro para evitar que bloquee tu barra de salud.
+</Callout>
+
+El mod también es compatible con \"Iconos Indicadores\" para tipos de salas especiales. Por ejemplo, en una Sala de Sacrificio, EID puede mostrarte las recompensas por cada pinchazo sucesivo en los pinchos, como la probabilidad del sexto golpe de teletransportarte a la Sala del Ángel o la probabilidad del séptimo golpe de darte un objeto de Ángel.
+
+</Section>
+
+<Section icon={Sparkles} title="Objetos de Gran Valor y Sinergias con EID">
+
+Aunque EID ayuda con todos los objetos, es especialmente útil para identificar aquellos que definen partidas y sinergias complejas. La siguiente tabla destaca los objetos de nivel S (S-Tier) que EID rastrea con especial detalle, incluyendo sus sub-efectos ocultos que no son obvios a simple vista por su texto descriptivo en el juego.
+
+| Nombre del Objeto | Calidad | Efectos Destacados por EID | Nota de Sinergia |
+| :--- | :--- | :--- | :--- |
+| **Sacred Heart** | 4 | **Multiplicador de daño x2.3**, Homing (Teledirigido), +1 de salud | Mejor con alta cadencia de fuego |
+| **C Section** | 4 | Proyectiles de feto, Homing, Daño por segundo elevado | Hereda muchos efectos de lágrimas |
+| **Glitched Crown** | 4 | Alterna 5 objetos por pedestal | Recogida basada en la sincronización |
+| **R Key** | 4 | Reinicia la partida en Basement I | Conserva todos los objetos |
+| **Sacred Orb** | 4 | Rerollea objetos de Calidad 0 y 1 | Mejora las futuras pools de objetos |
+
+<Callout type="success" title="Detección de Sinergias">
+EID se puede configurar para mostrar un icono de \"Sinergia\" si un objeto del suelo tiene una interacción única con un objeto que ya posees, como Brimstone y Soy Milk.
+</Callout>
+
+<Checklist
+  id="eid-setup-goals"
+  title="Lista de Verificación de Configuración de EID:"
+  items={[
+    "Activar descripciones 'Detalladas' para un cálculo matemático exacto de estadísticas",
+    "Activar 'Mostrar Calidad' para identificar rápidamente objetos de primer nivel",
+    "Activar las recetas de 'Bag of Crafting' para Tainted Cain",
+    "Establecer la vista previa de 'Spindown Dice' en 'Activado'",
+    "Descargar 'Mod Config Menu' para realizar ajustes sobre la marcha"
+  ]}
+/>
+
+</Section>
+
+<Section icon={Swords} title="Resolución de Problemas y Preguntas Frecuentes">
+
+Incluso los mejores mods pueden experimentar problemas, especialmente tras una actualización importante del juego o el lanzamiento del parche cooperativo en línea Repentance+. La mayoría de los problemas con el mod **the binding of isaac repentance external item descriptions** se pueden solucionar verificando los archivos del juego o comprobando si hay conflictos entre mods.
+
+<Callout type="warning" title="Conflictos de Mods">
+Evita usar varios mods de descripción de objetos simultáneamente. Si tienes tanto \"Detailed Descriptions\" como \"External Item Descriptions\" activos, los textos se solaparán y resultará imposible leerlos.
+</Callout>
+
+<FAQ items={[
+  {
+    question: "¿Por qué no aparece el texto de External Item Descriptions?",
+    answer: "Asegúrate de que el mod esté activado en el menú 'Mods' dentro del juego. Si estás jugando una 'Daily Run' (Partida Diaria), el juego desactiva automáticamente todos los mods para garantizar la igualdad de condiciones."
+  },
+  {
+    question: "¿Funciona EID en el modo cooperativo en línea (Online Co-op)?",
+    answer: "Sí, las últimas versiones de EID son compatibles con la actualización en línea de Repentance+. Mostrará las descripciones de los objetos para todos los jugadores, aunque algunos elementos de la interfaz de usuario se compartirán."
+  },
+  {
+    question: "¿Puedo cambiar el idioma de las descripciones?",
+    answer: "Sí. Utiliza el Mod Config Menu para navegar a los ajustes de EID. El mod admite más de 10 idiomas, incluidos el ruso, el español y el chino."
+  },
+  {
+    question: "¿Este mod me impide conseguir el logro Dead God?",
+    answer: "No. Siempre y cuando hayas derrotado a Mom al menos una vez en tu archivo de guardado, los mods no desactivarán los logros. Puedes alcanzar el 100% de progreso de forma segura con EID activo."
+  }
+]} />
+
+</Section>

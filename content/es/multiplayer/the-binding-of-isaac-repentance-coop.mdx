@@ -1,0 +1,203 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, Users, Settings, Info } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Cooperativo de The Binding of Isaac Repentance: Guía de Configuración y Sinergias 2026",
+  description: "Domina el juego local y en línea en el cooperativo de The Binding of Isaac Repentance. Aprende sobre recursos compartidos, sinergias de personajes y las funciones en línea de Repentance+.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/120B0D/F4E9E7?text=Repentance+Coop+Guide",
+  date: "2026-07-17",
+  author: "Equipo de la Wiki de the binding of isaac repentance",
+  keywords: "the binding of isaac repentance, cooperativo, multijugador, guía, sinergias, repentance+"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **El cooperativo de The Binding of Isaac Repentance** soporta hasta cuatro jugadores tanto en modo local como en modo en línea integrado.
+- **Los recursos compartidos** incluyen monedas, bombas y llaves, mientras que la salud y los objetos son individuales por personaje.
+- **Repentance+** es el DLC específico requerido para el emparejamiento nativo de Steam e invitaciones de amigos.
+- **Las marcas de completado** las obtienen todos los jugadores elegibles simultáneamente, lo que lo convierte en una forma eficiente de desbloquear objetos.
+- **La sinergia de equipo** es vital; equilibrar personajes de alto daño con personajes de utilidad o tanques asegura la estabilidad de la partida.
+</Callout>
+
+<Section icon={Users} title="Local vs En línea: La evolución del cooperativo en The Binding of Isaac Repentance">
+
+El cooperativo de The Binding of Isaac Repentance ha revolucionado por completo la forma en que los jugadores descienden al sótano. Atrás quedaron los días de los limitados "bebés cooperativos" que simplemente flotaban junto a Isaac. En el meta actual de 2026, el multijugador permite hasta cuatro personajes completos, cada uno con sus propios objetos, contenedores de salud y habilidades únicas. Ya sea que estés sentado en el mismo sofá o conectándote a través del sistema en línea de Repentance+, el ciclo principal sigue siendo una prueba de coordinación y gestión de recursos.
+
+Entender la diferencia entre los dos modos principales es esencial para configurar una sesión exitosa. El cooperativo local es de conectar y jugar, mientras que el juego en línea requiere la propiedad de DLC específicos y la coincidencia de versiones.
+
+| Característica | Cooperativo Local | Cooperativo en Línea (Repentance+) |
+| :--- | :--- | :--- |
+| **Límite de Jugadores** | Hasta 4 jugadores | Hasta 4 jugadores |
+| **Control de Personaje** | Personajes completos | Personajes completos |
+| **Emparejamiento** | Ninguno (Solo local) | Público, Privado y Partida Rápida |
+| **DLC Requerido** | Repentance | Repentance + Repentance+ (Gratis) |
+| **Progreso de Guardado** | Solo el guardado del anfitrión | Progreso de guardado individual |
+| **Método de Entrada** | Múltiples mandos/Teclado | Entradas individuales basadas en Steam |
+
+<Callout type="tip" title="Consejo Pro: Prioridad del Mando">
+Al jugar en cooperativo local, asegúrate de que todos los mandos estén conectados antes de comenzar la partida. Los jugadores pueden unirse al inicio del primer piso presionando el botón 'Start' en sus respectivos dispositivos.
+</Callout>
+
+</Section>
+
+<Section icon={Settings} title="Mecánicas principales y gestión de recursos">
+
+En **el cooperativo de the binding of isaac repentance**, la dificultad del juego escala dinámicamente según el número de jugadores. Los jefes obtienen salud adicional y los diseños de las salas pueden volverse más concurridos para compensar el aumento de la potencia de fuego de un equipo de cuatro personas. El cambio más significativo, sin embargo, es cómo se manejan los recursos. A diferencia del juego en solitario donde Isaac lo acapara todo, el cooperativo requiere un enfoque democrático para el botín.
+
+Los recursos se categorizan en dos tipos: compartidos e individuales. Gestionarlos correctamente suele ser la diferencia entre una partida de Dead God y un viaje rápido de vuelta al menú principal.
+
+| Tipo de Recurso | Compartido o Individual | Impacto en la Estrategia |
+| :--- | :--- | :--- |
+| **Monedas** | **Compartido** | El grupo debe decidir las compras en la Tienda juntos. |
+| **Bombas** | **Compartido** | Úsalas con moderación para Salas Secretas y Rocas Marcadas. |
+| **Llaves** | **Compartido** | Prioriza las Salas del Tesoro sobre los cofres cerrados. |
+| **Objetos (Pedestales)** | **Individual** | Recogido por un jugador; beneficia solo a ese personaje. |
+| **Salud (Corazones)** | **Individual** | Los jugadores gestionan sus propios corazones rojos/de alma/negros. |
+| **Trinkets/Cartas/Píldoras** | **Individual** | Llevado por un jugador; puede soltarse para otros. |
+
+<Callout type="warning" title="Aviso de Agotamiento de Recursos">
+Debido a que las llaves y las bombas se comparten, un equipo de cuatro jugadores puede quedarse sin recursos cuatro veces más rápido. Siempre verifica si un compañero necesita una recolección específica antes de usar la última bomba en una roca al azar.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Mejores sinergias de personajes para 2026">
+
+El éxito en **el cooperativo de the binding of isaac repentance** depende en gran medida de la composición del equipo. No quieres cuatro "Cañones de Cristal" como The Lost, ni quieres cuatro tanques de bajo daño como Magdalene. Un equipo equilibrado permite a los jugadores cubrir las debilidades de los demás. Por ejemplo, un personaje con vuelo puede agarrar objetos sobre fosos para compañeros terrestres, mientras que un personaje con mucha salud puede jugar en las Salas de Sacrificio para el grupo.
+
+<CardGrid cols={3}>
+  <Card title="El Dúo de Apoyo">
+    - **Magdalene e Isaac**
+    - Magdalene proporciona curación a través de Yum Heart.
+    - Isaac usa el D6 para cambiar objetos débiles para el equipo.
+    - Se enfoca en la supervivencia y la calidad de los objetos.
+  </Card>
+  <Card title="El Motor de Recursos">
+    - **Tainted Keeper y Cain**
+    - Tainted Keeper genera un flujo masivo de monedas.
+    - Cain usa Lucky Foot para mejores píldoras y cofres.
+    - Ideal para romper la economía de la Tienda temprano.
+  </Card>
+  <Card title="La Potencia de Daño">
+    - **Azazel y Tainted Lilith**
+    - Azazel proporciona vuelo al inicio del juego y alto DPS.
+    - Tainted Lilith ofrece un alcance masivo y daño de látigo.
+    - Diseñado para limpiar salas rápido y derretir jefes.
+  </Card>
+</CardGrid>
+
+<Callout type="success" title="Consejo de Sinergia: La Estrategia del D6">
+Si un jugador es Isaac con el D6, deja que entre primero en la Sala del Tesoro. Si el objeto es malo, puede cambiarlo antes de que otro jugador lo recoja. Esto duplica efectivamente las opciones de objetos para todo el equipo.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Paso a paso: Configuración del cooperativo en línea de Repentance+">
+
+La introducción del DLC Repentance+ trajo soporte en línea nativo a Steam, eliminando la necesidad de herramientas de terceros como Remote Play Together. Configurar una sesión es sencillo pero requiere que todos los participantes tengan sus versiones del juego sincronizadas. Sigue estos pasos para comenzar tu primera partida en línea.
+
+<Steps>
+  <Step num="1" title="Verificación de DLC">
+    Asegúrate de que todos los jugadores posean Rebirth, Afterbirth, Afterbirth+ y Repentance. Luego, descarga el DLC gratuito **Repentance+** de la página de la tienda de Steam.
+  </Step>
+  <Step num="2" title="Creación de Sala">
+    Desde el menú principal, selecciona 'Online Play'. Elige 'Host' para crear una sala privada o 'Quick Match' para unirte a jugadores aleatorios.
+  </Step>
+  <Step num="3" title="Invitar Amigos">
+    En la pantalla de la sala, usa el botón 'Invite' para abrir tu lista de amigos de Steam. Una vez que tus amigos se unan, verás sus avatares en la sala.
+  </Step>
+  <Step num="4" title="Selección de Personaje">
+    Cada jugador selecciona su personaje. Ten en cuenta que los jugadores solo pueden elegir personajes que ya hayan desbloqueado en su propio archivo de guardado.
+  </Step>
+  <Step num="5" title="Iniciando el Descenso">
+    El anfitrión elige la dificultad (Normal, Difícil o Greedier). Una vez que todos estén 'Ready', el anfitrión comienza la partida.
+  </Step>
+</Steps>
+
+<Callout type="info" title="Latencia en Línea">
+El cooperativo en línea es de igual a igual (peer-to-peer). Para la mejor experiencia, el jugador con la conexión a internet más estable debe actuar como anfitrión para minimizar el retraso de entrada (input lag) para los demás.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Progresión, Desbloqueos y Mecánicas de Muerte">
+
+Uno de los mayores beneficios de **el cooperativo de the binding of isaac repentance** es el sistema de progresión compartida. Cuando un jefe es derrotado, la marca de completado se añade a la nota adhesiva de cada personaje presente en la partida. Esto permite a los jugadores ayudarse mutuamente a terminar personajes difíciles como Tainted Lost o Jacob y Esau proporcionando una "red de seguridad" de jugadores extra.
+
+Sin embargo, la muerte funciona de manera diferente en el multijugador. Si un jugador muere, no termina la partida inmediatamente. En su lugar, se convierte en un fantasma con interacción limitada.
+
+<Checklist
+  id="coop-death-rules"
+  title="Qué sucede cuando mueres:"
+  items={[
+    "Te transformas en un pequeño fantasma con daño reducido.",
+    "Los fantasmas aún pueden disparar lágrimas débiles para ayudar a los compañeros.",
+    "Revives al inicio del siguiente piso con medio corazón.",
+    "Si todos los jugadores mueren simultáneamente, la partida termina de inmediato.",
+    "Los objetos recolectados mientras eres un fantasma se pierden al revivir."
+  ]}
+/>
+
+| Interacción tras la Muerte | Efecto |
+| :--- | :--- |
+| **Lágrimas de Fantasma** | Inflige 1.0 de daño; ignora la mayoría de los efectos de objetos. |
+| **Salud al Revivir** | Siempre revive con salud mínima (usualmente 0.5 corazones). |
+| **Pedestales de Objetos** | Los fantasmas no pueden recoger nuevos objetos de pedestal. |
+| **Marcas de Completado** | Aún ganas la marca incluso si terminas el piso como fantasma. |
+
+<Callout type="warning" title="Advertencia del Modo Difícil">
+En el Modo Difícil, las apariciones de salud son más raras. Si un jugador muere temprano, el equipo debe sobrevivir el resto del piso con un personaje menos a plena potencia. ¡Protege a tus compañeros!
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Consejos avanzados para partidas de cuatro jugadores">
+
+Jugar con cuatro personas es caótico. La pantalla se llenará de lágrimas, familiares y explosiones. Para mantener el orden y asegurar la victoria, los jugadores veteranos usan tácticas específicas de comunicación y movimiento.
+
+- **Gestión del desorden en pantalla:** Evita que todos tomen objetos con mucha carga visual como Soy Milk o Tiny Planet simultáneamente. Se vuelve imposible ver los proyectiles enemigos.
+- **El sistema de gestos:** Usa la rueda de gestos integrada (por defecto 'Q' o 'Stick Derecho') para señalar Rocas Marcadas, Salas Secretas o para sugerir quién debería tomar un objeto.
+- **Distribución de salud:** Si un jugador está usando un personaje que depende de Corazones de Alma (como ???), dale prioridad en las rocas marcadas. Si un jugador tiene un efecto "al recibir daño" (como Samson), deja que reciba el golpe ocasional.
+- **Desconexiones estratégicas:** En el juego en línea, si un jugador se desconecta, su personaje se convierte en una IA o espera a la reconexión. El anfitrión puede pausar para esperarlo.
+
+| Estrategia | Ideal para | Efectividad |
+| :--- | :--- | :--- |
+| **Fuego Concentrado** | Derretir jefes rápidamente | ★★★★★ |
+| **Kiteo** | Mantener la distancia de enemigos cuerpo a cuerpo | ★★★★☆ |
+| **Acumulación de Recursos** | Comprar objetos caros de la Tienda como Birthright | ★★★★★ |
+| **Motor de Sacrificio** | Un jugador recibe daño de pinchos por recompensas grupales | ★★★☆☆ |
+
+<Callout type="tip" title="Consejo Pro: El comando 'Wait'">
+Si encuentras un pedestal de elección (donde tomar uno elimina el otro), alinea a dos jugadores junto a los objetos. Si los recogen exactamente en el mismo frame, a veces ambos jugadores pueden obtener un objeto. ¡Este es un truco de alta habilidad que requiere precisión de frame!
+</Callout>
+
+</Section>
+
+<Section icon={Info} title="FAQ: Cooperativo de The Binding of Isaac Repentance">
+
+<FAQ items={[
+  {
+    question: "¿Puedo obtener logros en el cooperativo de The Binding of Isaac Repentance?",
+    answer: "¡Sí! Todos los jugadores obtienen logros y marcas de completado para sus respectivos personajes siempre que estén presentes cuando el jefe es derrotado."
+  },
+  {
+    question: "¿Todos necesitan tener el DLC Repentance+ para jugar en línea?",
+    answer: "Sí, para la función nativa de cooperativo en línea de Steam, cada jugador debe tener instalado el DLC Repentance+ y estar en la misma versión del juego."
+  },
+  {
+    question: "¿Qué pasa con los objetos si un jugador abandona la partida?",
+    answer: "En el cooperativo local, el personaje suele desaparecer y sus objetos se pierden. En Repentance+ en línea, el personaje puede permanecer en la sala como una entidad 'desconectada' hasta que el jugador se vuelva a unir o termine el piso."
+  },
+  {
+    question: "¿Hay fuego amigo en el cooperativo de Isaac?",
+    answer: "Generalmente, no. Tus lágrimas y bombas no dañan a tus compañeros. Sin embargo, ciertos objetos o mecánicas 'troll' aún podrían causar daño indirecto, ¡así que mantente alerta!"
+  }
+]} />
+
+</Section>

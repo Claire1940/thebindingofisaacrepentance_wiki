@@ -1,0 +1,187 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Como Instalar Mods no The Binding of Isaac Repentance: Guia de Configuração",
+  description: "Aprenda como instalar mods no The Binding of Isaac Repentance usando a Oficina Steam ou métodos manuais, configurar diretórios e manter as conquistas ativas.",
+  category: "Tutorial",
+  image: "https://placehold.co/800x400/3a0f0f/fff?text=Install+Mods+Guide",
+  date: "2026-07-17",
+  author: "Equipe da Wiki de The Binding of Isaac Repentance"
+}
+
+<Callout type="info" title="Guia Rápido">
+- **Instalação principal**: Use a Oficina Steam para se inscrever facilmente nas modificações desejadas.
+- **Regra de conquistas**: Derrote a Mom (Mamãe) uma vez em uma partida para continuar obtendo conquistas com mods ativos.
+- **Requisito de reinicialização**: Reinicie o cliente do jogo após se inscrever para garantir que os arquivos sejam carregados corretamente.
+- **Backup manual**: Mantenha backups dos diretórios ao instalar arquivos externos fora do cliente Steam.
+</Callout>
+
+<Section icon={Sparkles} title="Como Instalar Mods no The Binding of Isaac Repentance via Steam">
+
+The Binding of Isaac Repentance oferece uma quantidade massiva de conteúdo, mas as modificações criadas pela comunidade elevam a experiência de jogo. Aprender **como instalar mods no The Binding of Isaac Repentance** permite que você acesse milhares de personagens personalizados, itens, ajustes gráficos e melhorias de qualidade de vida. O processo é simples, especialmente se você possui o jogo na Steam, mas existem algumas regras essenciais que você precisa seguir para garantir que seus mods funcionem sem problemas e não bloqueiem o progresso do seu jogo.
+
+Usar a Oficina Steam é o método mais eficiente e confiável para gerenciar suas modificações. A Steam lida automaticamente com o download, instalação e atualização dos arquivos sempre que os criadores dos mods lançam novos patches. Isso minimiza problemas de compatibilidade e garante que o cliente do seu jogo permaneça estável.
+
+**Destaques do Vídeo:**
+- Abra a Steam e navegue até a seção da Oficina do jogo.
+- Procure por mods populares como Better Character Menu e inscreva-se neles.
+- Reinicie o jogo completamente para permitir que os arquivos sejam carregados.
+- Verifique o status ativo das modificações instaladas na tela de seleção de personagens.
+
+<YouTubeEmbed videoId="EXKfpfGG0fQ" title="Como Instalar Mods no The Binding of Isaac Repentance – Guia Passo a Passo" />
+
+Para começar com o processo de instalação automatizado, siga estes passos simples para configurar o cliente do seu jogo:
+
+<Steps>
+  <Step num="1" title="Acesse a Oficina Steam">
+    Abra o cliente Steam, navegue até sua Biblioteca e selecione o jogo. Clique na aba Central da Comunidade e selecione a opção Oficina na barra de navegação.
+  </Step>
+  <Step num="2" title="Encontre e Inscreva-se nos Mods">
+    Use a barra de pesquisa ou navegue pela seção de arquivos populares para encontrar modificações. Clique no botão verde Inscrever-se na página do mod para iniciar o download.
+  </Step>
+  <Step num="3" title="Reinicie o Cliente do Jogo">
+    Se o jogo estiver aberto, feche-o completamente. Inicie o jogo novamente para permitir que o cliente descompacte e integre os arquivos recém-baixados da Oficina.
+  </Step>
+  <Step num="4" title="Ative os Mods no Menu Principal">
+    Navegue até o menu Mods a partir da tela principal. Certifique-se de que os mods estejam ativados (o texto deve aparecer brilhante em vez de cinza).
+  </Step>
+</Steps>
+
+| Métrica | Método da Oficina Steam | Método de Instalação Manual |
+| --- | --- | --- |
+| Recursos | Sincronização com a Nuvem Steam, Atualizações automáticas | Compatibilidade offline, Recursos personalizados |
+| Facilidade de Uso | Alta | Moderada |
+| Risco de Perda de Arquivos | Muito Baixo | Baixo |
+
+<Callout type="success" title="Instalação Verificada">
+Depois de concluir esses passos, as modificações estarão ativas imediatamente. Você pode confirmar isso iniciando uma nova partida e verificando se as mudanças visuais ou elementos de interface personalizados aparecem na sua tela.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Instalação Manual de Mods e Caminhos de Diretório">
+
+Para jogadores que usam versões não-Steam do jogo ou que preferem baixar recursos personalizados diretamente de sites de terceiros da comunidade, a instalação manual é necessária. Este método exige que você localize a estrutura de diretórios correta no seu dispositivo de armazenamento local e coloque os arquivos na pasta específica designada para modificações.
+
+O caminho do diretório varia dependendo do seu sistema operacional. É importante notar que criar um backup dos seus arquivos de salvamento antes de modificar os diretórios do jogo manualmente é uma medida de segurança altamente recomendada para evitar a corrupção de dados.
+
+| Sistema Operacional | Caminho Padrão do Diretório de Instalação |
+| --- | --- |
+| Windows | `Documents\My Games\Binding of Isaac Repentance\mods` |
+| macOS | `~/Library/Application Support/Binding of Isaac Repentance/mods` |
+| Linux (Steam Deck) | `~/.local/share/Steam/steamapps/compatdata/250900/pfx/` |
+
+Ao instalar mods manualmente, você deve extrair os arquivos compactados (geralmente no formato ZIP ou RAR) diretamente na pasta listada acima. Certifique-se de que cada modificação tenha sua própria pasta distinta dentro do diretório principal para evitar que os arquivos se sobrescrevam.
+
+<Callout type="warning" title="Criação de Diretório">
+Se você não vir o diretório de mods em suas pastas locais, pode ser necessário iniciar o jogo pelo menos uma vez ou criar o diretório manualmente usando a grafia exata em letras minúsculas.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Mods Iniciais Recomendados e Configuração">
+
+A comunidade de modding criou milhares de adições exclusivas, que variam de pequenas mudanças cosméticas a reformulações completas de jogabilidade. Para jogadores novatos na modificação de seus jogos, começar com ajustes de qualidade de vida é altamente recomendado para preservar a experiência principal enquanto melhora a usabilidade.
+
+Abaixo estão três das modificações mais populares e bem avaliadas que se integram perfeitamente com a expansão Repentance sem alterar o equilíbrio fundamental do jogo.
+
+<CardGrid cols={3}>
+  <Card title="External Item Descriptions">
+    - **Exibe estatísticas detalhadas dos itens**
+    - Mostra sinergias e transformações
+    - Opções de layout altamente personalizáveis
+  </Card>
+  <Card title="Better Character Menu">
+    - **Melhora a tela de seleção de personagens**
+    - Adiciona sprites coloridos detalhados
+    - Fornece um feedback visual mais claro
+  </Card>
+  <Card title="Pog for Good Items">
+    - **Adiciona animações divertidas aos personagens**
+    - Ativa quando itens de alto nível aparecem
+    - Puramente cosmético e leve para o desempenho
+  </Card>
+</CardGrid>
+
+Essas modificações foram projetadas para funcionar simultaneamente sem causar conflitos ou travamentos no jogo. Ao escolher quais arquivos instalar, verifique as notas de compatibilidade para evitar problemas com personagens personalizados ou layouts de salas customizados.
+
+| Nome do Mod | Impacto no Desempenho | Compatibilidade de Versão do Jogo | Configuração Recomendada |
+| --- | --- | --- | --- |
+| External Item Descriptions | Muito Baixo | Repentance v1.7.9+ | Ativado (Padrão) |
+| Better Character Menu | Muito Baixo | Repentance v1.7.9+ | Ativado (Padrão) |
+| Pog for Good Items | Baixo | Repentance v1.7.9+ | Opcional |
+
+<Callout type="tip" title="Prioridade de Mods">
+Se você tiver problemas visuais, tente desativar outros mods gráficos um por um. Modificações de interface que alteram o layout do HUD são as fontes mais comuns de conflito.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Guia de Solução de Problemas e Conquistas">
+
+Uma preocupação comum entre os jogadores é se a utilização de modificações desativará as conquistas da Steam ou bloqueará o progresso para desbloquear os finais. Na expansão Repentance, os desenvolvedores implementaram um sistema de regras específico para equilibrar o uso de mods com um progresso justo.
+
+Para evitar trapaças, as conquistas são inicialmente desativadas quando qualquer modificação está ativa. No entanto, você pode contornar essa restrição ao atingir um marco de jogabilidade específico na versão sem mods do jogo.
+
+| Condição da Regra | Status das Conquistas | Progresso Permitido |
+| --- | --- | --- |
+| Mods Ativos (Mom não Derrotada) | Desativado | Não |
+| Mods Ativos (Mom Derrotada uma Vez) | Ativado | Sim |
+| Sem Mods Ativos (Qualquer Progresso) | Ativado | Sim |
+
+Depois de derrotar a chefe Mom (Mamãe) em um arquivo de salvamento limpo e sem mods, o jogo desbloqueia permanentemente a capacidade de obter conquistas ao usar mods. Você saberá que isso está ativo porque o ícone do troféu com um risco vermelho não aparecerá mais na sua tela durante as partidas.
+
+<Checklist
+  id="troubleshooting-steps"
+  title="Lista de Verificação para Solução de Problemas Comuns:"
+  items={[
+    "Confirme se você derrotou a Mom pelo menos uma vez no arquivo de salvamento atual",
+    "Verifique a integridade dos arquivos do jogo através do menu de propriedades da biblioteca Steam",
+    "Desative modificações de interface de usuário conflitantes no menu do jogo",
+    "Verifique se há atualizações recentes nos arquivos do mod na página da Oficina"
+  ]}
+/>
+
+<Callout type="info" title="Segurança do Arquivo de Salvamento">
+Sempre copie seus arquivos persistentes de dados de jogo (gamedata) para um diretório separado antes de instalar grandes reformulações de jogabilidade. Isso garante que você possa restaurar seu progresso se ocorrer um conflito de arquivos.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Gerenciamento de Mods e Melhores Práticas">
+
+Gerenciar uma grande coleção de modificações exige manutenção regular para evitar a degradação do desempenho e travamentos do jogo. À medida que o jogo recebe atualizações oficiais, modificações mais antigas podem se tornar desatualizadas e causar instabilidade.
+
+Para manter uma instalação saudável, revise regularmente seus itens inscritos e limpe os arquivos que você não usa mais. Desativar os mods no menu geralmente é suficiente, mas cancelar a inscrição completamente é a maneira mais segura de garantir que eles não sejam carregados na memória do sistema.
+
+<FAQ items={[
+  {
+    question: "Como uso o guia de como instalar mods do The Binding of Isaac Repentance para o Steam Deck?",
+    answer: "Você pode usar a Oficina Steam diretamente no Steam Deck inscrevendo-se nos mods através do painel da Steam. Os arquivos serão baixados e instalados automaticamente em segundo plano, assim como em um computador desktop."
+  },
+  {
+    question: "Por que minhas conquistas estão desativadas mesmo eu tendo me inscrito em mods visuais simples?",
+    answer: "Você deve derrotar a chefe Mom pelo menos uma vez naquele arquivo de salvamento específico sem nenhum mod ativado. Assim que concluir esse marco, você poderá ativar qualquer mod sem bloquear as conquistas."
+  },
+  {
+    question: "Posso instalar mods manualmente se comprei o jogo na Epic Games Store?",
+    answer: "Sim, você pode instalá-los manualmente baixando os arquivos do mod de sites externos da comunidade e colocando-os no diretório local de mods localizado na sua pasta Documentos."
+  },
+  {
+    question: "O que devo fazer se meu jogo travar imediatamente ao iniciar após instalar um novo mod?",
+    answer: "Localize seu diretório local de mods e exclua a pasta do mod instalado mais recentemente, ou cancele a inscrição dele na Oficina Steam para impedir que ele seja carregado."
+  }
+]} />
+
+<Callout type="warning" title="Aviso de Limite de Mods">
+Executar dezenas de modificações gráficas pesadas simultaneamente pode causar quedas na taxa de quadros, especialmente durante lutas intensas contra chefes com muitos projéteis na tela. Mantenha sua lista ativa otimizada para a melhor experiência.
+</Callout>
+
+</Section>

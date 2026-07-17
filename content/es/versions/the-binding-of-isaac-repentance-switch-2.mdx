@@ -1,0 +1,179 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "The Binding of Isaac: Repentance en Switch 2: Guía de Port y Configuración",
+  description: "Optimiza tu rendimiento, domina los fotogramas por segundo y progresa rápido en Nintendo Switch 2. Descubre objetos de nivel S, rutas de desbloqueo y configuraciones cooperativas.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/1e1417/f4e9e7?text=Isaac+Repentance+Switch+2",
+  date: "2026-07-17",
+  author: "Equipo de la Wiki de The Binding of Isaac: Repentance"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **Rendimiento en Switch 2**: Disfruta de una jugabilidad impecable a 60 FPS, incluso con sinergias extremas y efectos de partículas masivos.
+- **Tiempos de Carga Instantáneos**: Transición entre pisos en menos de un segundo, eliminando el retraso de renderizado del hardware anterior.
+- **Estrategia de Progresión**: Concéntrate primero en los desbloqueos de nivel S para enriquecer tu grupo de objetos con elementos pasivos y activos de gran impacto.
+- **Soporte Cooperativo en Línea**: Conéctate con hasta cuatro jugadores en Steam o redes de consolas para obtener marcas de finalización simultáneamente.
+</Callout>
+
+<Section icon={Sparkles} title="Mejoras de Rendimiento para The Binding of Isaac: Repentance en Switch 2">
+
+La transición de esta oscura obra maestra de los roguelike a la consola de próxima generación de Nintendo trae consigo enormes mejoras técnicas. En la plataforma anterior, las sinergias complejas que involucraban objetos como Brimstone, Tech X y Soy Milk causaban con frecuencia caídas severas de fotogramas, tirones de hardware o incluso bloqueos del juego. La potencia de procesamiento mejorada del nuevo sistema resuelve estas limitaciones por completo.
+
+Con un ancho de banda de memoria mejorado y una arquitectura de GPU actualizada, el juego mantiene unos 60 FPS estables en todo momento. Este aumento de rendimiento es especialmente notable durante las peleas intensas contra jefes, como las batallas multifase contra Hush, Mother y The Beast. Además, las transiciones de piso, los reinicios de salas y el enorme diseño de The Void se renderizan al instante.
+
+| Métrica de Rendimiento | Switch Anterior | Nintendo Switch 2 |
+| :--- | :--- | :--- |
+| **Resolución en Modo Portátil** | 720p Dinámico | **1080p Nativo** |
+| **Resolución en Modo Dock** | 1080p Nativo | **4K Ultra HD** |
+| **Tasa de Fotogramas Objetivo** | 60 FPS (con caídas) | **60 FPS Estables (fijos)** |
+| **Tiempos de Carga de Pisos** | 3 - 5 Segundos | **Instantáneos (< 1 segundo)** |
+| **Manejo de Sinergias** | Riesgo de tirones / bloqueos | **Procesamiento Impecable** |
+| **Rendimiento Cooperativo** | Retraso de entrada en local | **Latencia Cero Local/En línea** |
+
+<Callout type="success" title="Mejora de Fidelidad Visual">
+La mayor resolución hace que los detalles finos sean legibles, como las tenues marcas de cruz en las rocas marcadas (tinted rocks) y los sutiles indicios de los patrones de proyectiles. Activa el **Found HUD** y el **Extra HUD** en el menú de opciones para monitorear tus estadísticas exactas y el historial de objetos sin afectar el rendimiento del juego.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="Primeros Pasos: Bucle Principal y Pasos de Configuración">
+
+Tener éxito en este desafiante roguelike requiere un equilibrio entre habilidad mecánica, gestión de recursos y toma de decisiones estratégicas. Cada partida consiste en pisos generados aleatoriamente donde debes limpiar salas de combate, recolectar recursos (monedas, llaves y bombas) y adquirir mejoras de objetos para derrotar al jefe del piso y descender más profundo.
+
+Para maximizar tus posibilidades de ganar desde tu primera partida en el nuevo sistema, sigue esta configuración optimizada y secuencia de progresión.
+
+<Steps>
+  <Step num="1" title="Optimizar la Configuración del Juego">
+    Antes de comenzar una partida, ve al menú de opciones. Activa **Found HUD** para mostrar tus estadísticas numéricas exactas (como daño, cadencia de fuego y suerte) en el lado izquierdo de la pantalla. Activa **Extra HUD** para mostrar los objetos que has recolectado en el lado derecho. Finalmente, establece **Bullet Visibility** en alto para que los proyectiles enemigos resalten claramente contra las texturas oscuras del suelo.
+  </Step>
+  <Step num="2" title="Dominar la Salud y las Mecánicas de Pactos">
+    Comprende la diferencia entre los Corazones Rojos, Corazones de Alma (azules) y Corazones Negros. Recibir daño en tus contenedores de Corazones Rojos reduce tus posibilidades de que aparezca una Sala del Demonio (Devil Deal) o una Sala del Ángel (Angel Room) después de una pelea de jefe. Prioriza siempre recolectar Corazones de Alma y Corazones Negros, ya que actúan como un escudo defensivo que preserva tus porcentajes de aparición de salas de pacto.
+  </Step>
+  <Step num="3" title="Limpiar las Salas en el Orden Correcto">
+    Al entrar a un nuevo piso, no corras hacia la sala del jefe. Limpia primero las salas de combate estándar para acumular monedas, llaves y bombas. Localiza la **Sala del Tesoro** (que contiene un objeto gratuito) y la **Tienda** (donde puedes comprar salud, llaves y objetos de utilidad). Entra en la sala del jefe solo cuando hayas explorado por completo el piso y gastado tus recursos de manera inteligente.
+  </Step>
+  <Step num="4" title="Elegir tu Ruta de Pactos">
+    Después de derrotar a un jefe a partir del Piso 2, puede aparecer una Sala del Demonio o una Sala del Ángel. En esta versión del juego, saltarse por completo el primer pacto con el demonio garantiza que la próxima sala de pacto que aparezca sea una **Sala del Ángel**. Las Salas del Ángel ofrecen poderosos objetos ofensivos y defensivos de forma completamente gratuita, lo que las hace muy recomendables para partidas consistentes.
+  </Step>
+</Steps>
+
+<Callout type="info" title="Consejo de Recursos">
+Mantén siempre al menos una llave de reserva para la Sala del Tesoro del siguiente piso. Entrar a un piso con cero llaves puede dejarte sin acceso a una mejora de objeto vital, lo que dificultará gravemente tu escalado ofensivo.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Objetos de Nivel S y Sinergias de Personajes">
+
+Con más de 700 objetos disponibles, saber cuáles pueden ganar una partida al instante es crucial. Los objetos de nivel S proporcionan multiplicadores de daño masivos, comportamientos de lágrimas únicos o una utilidad inigualable que puede llevar una build débil hasta los capítulos finales.
+
+| Nombre del Objeto | Pool Principal | Efecto de Juego Principal | Calificación de Calidad |
+| :--- | :--- | :--- | :--- |
+| **Sacred Heart** | Sala del Ángel | **Multiplicador de daño masivo, lágrimas teledirigidas, salud** | 5 / 5 |
+| **C Section** | Sala del Tesoro | **Dispara fetos proyectiles teledirigidos que infligen daño por contacto** | 5 / 5 |
+| **Glitched Crown** | Sala Secreta | **Los pedestales ciclan rápidamente, permitiéndote elegir tu objeto** | 5 / 5 |
+| **Spindown Dice** | Sala Secreta | **Vuelve a rodar (reroll) los objetos al número de ID interno anterior** | 4.5 / 5 |
+| **R Key** | Sala Secreta | **Reinicia la partida en Basement I conservando todos los objetos** | 5 / 5 |
+| **Twisted Pair** | Sala del Demonio | **Dos familiares imitan tu dirección de disparo y daño** | 4.5 / 5 |
+
+Para utilizar estos objetos de manera efectiva, debes combinarlos con personajes compatibles. El juego cuenta con 34 estilos de juego distintos divididos entre personajes normales y sus variantes Tainted (Corrompidos).
+
+<CardGrid cols={3}>
+  <Card title="Isaac (Normal)">
+    - **Objeto inicial**: The D6 (desbloqueado)
+    - **Mecánica**: Volver a rodar pedestales de objetos no deseados
+    - **Estilo de juego**: Builds altamente controladas
+  </Card>
+  <Card title="Azazel (Normal)">
+    - **Configuración inicial**: Vuelo y Brimstone corto
+    - **Mecánica**: Alto daño de ráfaga en el juego temprano
+    - **Estilo de juego**: Combate agresivo a corta distancia
+  </Card>
+  <Card title="Tainted Keeper">
+    - **Configuración inicial**: Arma de disparo cuádruple
+    - **Mecánica**: Los enemigos sueltan monedas temporales
+    - **Estilo de juego**: Compras de alto riesgo y alta recompensa
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Foco en Sinergias">
+Combina **Sacred Heart** con objetos de disparo múltiple como **20/20** o **Mutant Spider**. El efecto teledirigido anula por completo la penalización de precisión al disparar múltiples lágrimas, asegurando que cada proyectil golpee a tu objetivo para infligir el máximo daño.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Hoja de Ruta de Progresión y Lista de Desbloqueos">
+
+Para completar el juego por completo, debes obtener marcas de finalización en la nota de cada personaje derrotando a los jefes principales en el Modo Difícil (Hard Mode). Prioriza los desbloqueos que introducen objetos poderosos en tu grupo global de objetos, facilitando significativamente las partidas posteriores.
+
+| Fase | Requisito Objetivo | Recompensa Desbloqueada | Nivel de Prioridad |
+| :--- | :--- | :--- | :--- |
+| **Fase 1** | Derrotar a Mom en Depths II | **Capítulo del Útero (Womb), Final 1** | Esencial |
+| **Fase 2** | Derrotar a Mom's Heart 11 veces | **It Lives! (reemplaza al Corazón)** | Esencial |
+| **Fase 3** | Derrotar a Isaac (Catedral) 5 veces | **The Polaroid (desbloquea Chest)** | Alta |
+| **Fase 4** | Derrotar a Satan (Sheol) 5 veces | **The Negative (desbloquea Dark Room)** | Alta |
+| **Fase 5** | Completar el Desafío #2 | **Runa Jera (duplica los consumibles del suelo)** | Alta |
+| **Fase 6** | Completar el Desafío #17 | **Death's Touch (lágrimas de guadaña, perforantes)** | Media |
+
+Usa esta lista de verificación para realizar un seguimiento de tus hitos esenciales en un archivo de guardado nuevo:
+
+<Checklist
+  id="switch2-milestones"
+  title="Hitos del Archivo de Guardado en Switch 2:"
+  items={[
+    "Derrota a Mom una vez para abrir el Útero (Womb) y desbloquear el primer final.",
+    "Derrota a Mom's Heart 11 veces para desbloquear permanentemente al jefe It Lives!.",
+    "Desbloquea el D6 para Isaac derrotando a Isaac como ??? (Blue Baby).",
+    "Dona 879 monedas a la Máquina de la Codicia (Greed Machine) para darle a The Lost el Holy Mantle (Manto Sagrado).",
+    "Derrota a Hush 3 veces para desbloquear las rutas secretas de pisos alternativos."
+  ]}
+/>
+
+<Callout type="warning" title="Evita la Dilución de Objetos">
+Ten cuidado de no desbloquear objetos débiles al principio. Evita completar desafíos o logros que desbloqueen objetos activos de bajo impacto o píldoras perjudiciales, ya que diluirán tus grupos de objetos y reducirán la calidad promedio de tus builds.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Configuración de Multijugador y Cooperativo en Línea">
+
+El sistema cooperativo en línea integrado en la actualización Repentance+ permite que hasta cuatro jugadores se unan en equipo. Esta función es totalmente compatible con el nuevo hardware de la consola, ofreciendo emparejamiento sin lag y progresión compartida.
+
+Al jugar en línea, todos los jugadores seleccionan un personaje de su propia lista de desbloqueados. Aunque la salud, los objetos activos y los objetos pasivos siguen siendo individuales, los recursos consumibles como monedas, bombas y llaves se comparten globalmente entre el equipo. Esto requiere una gran comunicación y una distribución justa de los recursos.
+
+- **Partida de Amigos**: Crea un lobby privado e invita a jugadores directamente desde tu lista de amigos.
+- **Partida Pública**: Únete o crea un lobby abierto visible para toda la comunidad en línea.
+- **Progreso Compartido**: Todos los jugadores elegibles obtienen marcas de finalización y logros según el destino final de la partida.
+- **Rueda de Emoticonos**: Usa el sistema de emoticonos integrado para marcar paredes de salas secretas, señalar rocas marcadas o votar sobre la distribución de objetos.
+
+<Callout type="info" title="Nota de Equilibrio Cooperativo">
+La salud de los jefes escala dinámicamente con el número de jugadores activos. Para tener éxito, asigna roles dentro de tu equipo; haz que un jugador se concentre en un alto daño a un solo objetivo, mientras que otro se enfoca en la utilidad y la defensa contra proyectiles.
+</Callout>
+
+<FAQ items={[
+  {
+    question: "¿El juego es compatible con versiones anteriores de la Switch original?",
+    answer: "Sí, el juego es totalmente retrocompatible. Puedes transferir tus datos de guardado existentes, incluidos todos los personajes desbloqueados, objetos y marcas de finalización, directamente a la nueva consola."
+  },
+  {
+    question: "¿Cómo desbloqueo personajes Tainted (Corrompidos) en Switch 2?",
+    answer: "Durante la ruta de Ascenso (Ascent) hacia el Hogar (Home), deja un trinket (baratija) en cualquier Sala del Tesoro o Sala del Jefe. En tu camino de regreso, ese trinket se transformará en una Cracked Key (Llave Agrietada). Usa esta llave en el armario rojo del pasillo en Home para desbloquear la versión Tainted de tu personaje actual."
+  },
+  {
+    question: "¿Cuál es el beneficio de jugar en Modo Difícil (Hard Mode)?",
+    answer: "El Modo Difícil es obligatorio para obtener las marcas de finalización con borde rojo en la pantalla de selección de personaje. Estas marcas son necesarias para desbloquear objetos del juego tardío como Godhead, Mega Mush y Death Certificate."
+  },
+  {
+    question: "¿El cooperativo en línea también admite jugadores locales en pantalla dividida?",
+    answer: "Sí, puedes combinar el cooperativo local en el sofá con el emparejamiento en línea, lo que permite que dos jugadores locales se unan a dos jugadores en línea en una sola partida."
+  }
+]} />
+
+</Section>

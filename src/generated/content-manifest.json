@@ -180,6 +180,10 @@
   "es": {
     "bosses": [
       {
+        "slug": "the-binding-of-isaac-repentance-bosses",
+        "file": "the-binding-of-isaac-repentance-bosses"
+      },
+      {
         "slug": "the-binding-of-isaac-repentance-dogma-and-the-beast",
         "file": "the-binding-of-isaac-repentance-dogma-and-the-beast"
       },
@@ -202,12 +206,152 @@
         "file": "the-binding-of-isaac-repentance-beginner-guide"
       },
       {
+        "slug": "the-binding-of-isaac-repentance-how-to-play",
+        "file": "the-binding-of-isaac-repentance-how-to-play"
+      },
+      {
         "slug": "the-binding-of-isaac-repentance-walkthrough",
         "file": "the-binding-of-isaac-repentance-walkthrough"
       },
       {
+        "slug": "the-binding-of-isaac-repentance-what-is",
+        "file": "the-binding-of-isaac-repentance-what-is"
+      },
+      {
         "slug": "the-binding-of-isaac-repentance-worth-it",
         "file": "the-binding-of-isaac-repentance-worth-it"
+      }
+    ],
+    "items": [
+      {
+        "slug": "the-binding-of-isaac-repentance-all-items",
+        "file": "the-binding-of-isaac-repentance-all-items"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-item-tier-list",
+        "file": "the-binding-of-isaac-repentance-item-tier-list"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-pills",
+        "file": "the-binding-of-isaac-repentance-pills"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-spindown-dice-list",
+        "file": "the-binding-of-isaac-repentance-spindown-dice-list"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-trinkets",
+        "file": "the-binding-of-isaac-repentance-trinkets"
+      }
+    ],
+    "mods": [
+      {
+        "slug": "the-binding-of-isaac-repentance-best-mods",
+        "file": "the-binding-of-isaac-repentance-best-mods"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-external-item-descriptions",
+        "file": "the-binding-of-isaac-repentance-external-item-descriptions"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-how-to-install-mods",
+        "file": "the-binding-of-isaac-repentance-how-to-install-mods"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-mods",
+        "file": "the-binding-of-isaac-repentance-mods"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-repentogon",
+        "file": "the-binding-of-isaac-repentance-repentogon"
+      }
+    ],
+    "multiplayer": [
+      {
+        "slug": "the-binding-of-isaac-repentance-coop",
+        "file": "the-binding-of-isaac-repentance-coop"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-local-coop",
+        "file": "the-binding-of-isaac-repentance-local-coop"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-online-multiplayer",
+        "file": "the-binding-of-isaac-repentance-online-multiplayer"
+      }
+    ],
+    "support": [
+      {
+        "slug": "the-binding-of-isaac-repentance-black-screen-fix",
+        "file": "the-binding-of-isaac-repentance-black-screen-fix"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-low-fps",
+        "file": "the-binding-of-isaac-repentance-low-fps"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-no-chinese-language",
+        "file": "the-binding-of-isaac-repentance-no-chinese-language"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-not-launching",
+        "file": "the-binding-of-isaac-repentance-not-launching"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-save-file-location",
+        "file": "the-binding-of-isaac-repentance-save-file-location"
+      }
+    ],
+    "unlocks": [
+      {
+        "slug": "the-binding-of-isaac-repentance-achievements",
+        "file": "the-binding-of-isaac-repentance-achievements"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-dead-god",
+        "file": "the-binding-of-isaac-repentance-dead-god"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-how-to-unlock-all-characters",
+        "file": "the-binding-of-isaac-repentance-how-to-unlock-all-characters"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-item-unlocks",
+        "file": "the-binding-of-isaac-repentance-item-unlocks"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-tainted-unlocks",
+        "file": "the-binding-of-isaac-repentance-tainted-unlocks"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-unlock-guide",
+        "file": "the-binding-of-isaac-repentance-unlock-guide"
+      }
+    ],
+    "versions": [
+      {
+        "slug": "the-binding-of-isaac-repentance-mac",
+        "file": "the-binding-of-isaac-repentance-mac"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-plus",
+        "file": "the-binding-of-isaac-repentance-plus"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-steam",
+        "file": "the-binding-of-isaac-repentance-steam"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-switch-2",
+        "file": "the-binding-of-isaac-repentance-switch-2"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-switch",
+        "file": "the-binding-of-isaac-repentance-switch"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-vs-rebirth",
+        "file": "the-binding-of-isaac-repentance-vs-rebirth"
       }
     ]
   },
@@ -236,12 +380,156 @@
     ],
     "guide": [
       {
+        "slug": "the-binding-of-isaac-repentance-beginner-guide",
+        "file": "the-binding-of-isaac-repentance-beginner-guide"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-how-to-play",
+        "file": "the-binding-of-isaac-repentance-how-to-play"
+      },
+      {
         "slug": "the-binding-of-isaac-repentance-walkthrough",
         "file": "the-binding-of-isaac-repentance-walkthrough"
       },
       {
+        "slug": "the-binding-of-isaac-repentance-what-is",
+        "file": "the-binding-of-isaac-repentance-what-is"
+      },
+      {
         "slug": "the-binding-of-isaac-repentance-worth-it",
         "file": "the-binding-of-isaac-repentance-worth-it"
+      }
+    ],
+    "items": [
+      {
+        "slug": "the-binding-of-isaac-repentance-all-items",
+        "file": "the-binding-of-isaac-repentance-all-items"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-item-tier-list",
+        "file": "the-binding-of-isaac-repentance-item-tier-list"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-pills",
+        "file": "the-binding-of-isaac-repentance-pills"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-spindown-dice-list",
+        "file": "the-binding-of-isaac-repentance-spindown-dice-list"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-trinkets",
+        "file": "the-binding-of-isaac-repentance-trinkets"
+      }
+    ],
+    "mods": [
+      {
+        "slug": "the-binding-of-isaac-repentance-best-mods",
+        "file": "the-binding-of-isaac-repentance-best-mods"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-external-item-descriptions",
+        "file": "the-binding-of-isaac-repentance-external-item-descriptions"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-how-to-install-mods",
+        "file": "the-binding-of-isaac-repentance-how-to-install-mods"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-mods",
+        "file": "the-binding-of-isaac-repentance-mods"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-repentogon",
+        "file": "the-binding-of-isaac-repentance-repentogon"
+      }
+    ],
+    "multiplayer": [
+      {
+        "slug": "the-binding-of-isaac-repentance-coop",
+        "file": "the-binding-of-isaac-repentance-coop"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-local-coop",
+        "file": "the-binding-of-isaac-repentance-local-coop"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-online-multiplayer",
+        "file": "the-binding-of-isaac-repentance-online-multiplayer"
+      }
+    ],
+    "support": [
+      {
+        "slug": "the-binding-of-isaac-repentance-black-screen-fix",
+        "file": "the-binding-of-isaac-repentance-black-screen-fix"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-low-fps",
+        "file": "the-binding-of-isaac-repentance-low-fps"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-no-chinese-language",
+        "file": "the-binding-of-isaac-repentance-no-chinese-language"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-not-launching",
+        "file": "the-binding-of-isaac-repentance-not-launching"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-save-file-location",
+        "file": "the-binding-of-isaac-repentance-save-file-location"
+      }
+    ],
+    "unlocks": [
+      {
+        "slug": "the-binding-of-isaac-repentance-achievements",
+        "file": "the-binding-of-isaac-repentance-achievements"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-dead-god",
+        "file": "the-binding-of-isaac-repentance-dead-god"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-how-to-unlock-all-characters",
+        "file": "the-binding-of-isaac-repentance-how-to-unlock-all-characters"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-item-unlocks",
+        "file": "the-binding-of-isaac-repentance-item-unlocks"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-tainted-unlocks",
+        "file": "the-binding-of-isaac-repentance-tainted-unlocks"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-unlock-guide",
+        "file": "the-binding-of-isaac-repentance-unlock-guide"
+      }
+    ],
+    "versions": [
+      {
+        "slug": "the-binding-of-isaac-repentance-mac",
+        "file": "the-binding-of-isaac-repentance-mac"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-plus",
+        "file": "the-binding-of-isaac-repentance-plus"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-steam",
+        "file": "the-binding-of-isaac-repentance-steam"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-switch-2",
+        "file": "the-binding-of-isaac-repentance-switch-2"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-switch",
+        "file": "the-binding-of-isaac-repentance-switch"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-vs-rebirth",
+        "file": "the-binding-of-isaac-repentance-vs-rebirth"
       }
     ]
   },
@@ -274,12 +562,152 @@
         "file": "the-binding-of-isaac-repentance-beginner-guide"
       },
       {
+        "slug": "the-binding-of-isaac-repentance-how-to-play",
+        "file": "the-binding-of-isaac-repentance-how-to-play"
+      },
+      {
         "slug": "the-binding-of-isaac-repentance-walkthrough",
         "file": "the-binding-of-isaac-repentance-walkthrough"
       },
       {
+        "slug": "the-binding-of-isaac-repentance-what-is",
+        "file": "the-binding-of-isaac-repentance-what-is"
+      },
+      {
         "slug": "the-binding-of-isaac-repentance-worth-it",
         "file": "the-binding-of-isaac-repentance-worth-it"
+      }
+    ],
+    "items": [
+      {
+        "slug": "the-binding-of-isaac-repentance-all-items",
+        "file": "the-binding-of-isaac-repentance-all-items"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-item-tier-list",
+        "file": "the-binding-of-isaac-repentance-item-tier-list"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-pills",
+        "file": "the-binding-of-isaac-repentance-pills"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-spindown-dice-list",
+        "file": "the-binding-of-isaac-repentance-spindown-dice-list"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-trinkets",
+        "file": "the-binding-of-isaac-repentance-trinkets"
+      }
+    ],
+    "mods": [
+      {
+        "slug": "the-binding-of-isaac-repentance-best-mods",
+        "file": "the-binding-of-isaac-repentance-best-mods"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-external-item-descriptions",
+        "file": "the-binding-of-isaac-repentance-external-item-descriptions"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-how-to-install-mods",
+        "file": "the-binding-of-isaac-repentance-how-to-install-mods"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-mods",
+        "file": "the-binding-of-isaac-repentance-mods"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-repentogon",
+        "file": "the-binding-of-isaac-repentance-repentogon"
+      }
+    ],
+    "multiplayer": [
+      {
+        "slug": "the-binding-of-isaac-repentance-coop",
+        "file": "the-binding-of-isaac-repentance-coop"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-local-coop",
+        "file": "the-binding-of-isaac-repentance-local-coop"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-online-multiplayer",
+        "file": "the-binding-of-isaac-repentance-online-multiplayer"
+      }
+    ],
+    "support": [
+      {
+        "slug": "the-binding-of-isaac-repentance-black-screen-fix",
+        "file": "the-binding-of-isaac-repentance-black-screen-fix"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-low-fps",
+        "file": "the-binding-of-isaac-repentance-low-fps"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-no-chinese-language",
+        "file": "the-binding-of-isaac-repentance-no-chinese-language"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-not-launching",
+        "file": "the-binding-of-isaac-repentance-not-launching"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-save-file-location",
+        "file": "the-binding-of-isaac-repentance-save-file-location"
+      }
+    ],
+    "unlocks": [
+      {
+        "slug": "the-binding-of-isaac-repentance-achievements",
+        "file": "the-binding-of-isaac-repentance-achievements"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-dead-god",
+        "file": "the-binding-of-isaac-repentance-dead-god"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-how-to-unlock-all-characters",
+        "file": "the-binding-of-isaac-repentance-how-to-unlock-all-characters"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-item-unlocks",
+        "file": "the-binding-of-isaac-repentance-item-unlocks"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-tainted-unlocks",
+        "file": "the-binding-of-isaac-repentance-tainted-unlocks"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-unlock-guide",
+        "file": "the-binding-of-isaac-repentance-unlock-guide"
+      }
+    ],
+    "versions": [
+      {
+        "slug": "the-binding-of-isaac-repentance-mac",
+        "file": "the-binding-of-isaac-repentance-mac"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-plus",
+        "file": "the-binding-of-isaac-repentance-plus"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-steam",
+        "file": "the-binding-of-isaac-repentance-steam"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-switch-2",
+        "file": "the-binding-of-isaac-repentance-switch-2"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-switch",
+        "file": "the-binding-of-isaac-repentance-switch"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-vs-rebirth",
+        "file": "the-binding-of-isaac-repentance-vs-rebirth"
       }
     ]
   }

@@ -1,0 +1,166 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "the binding of isaac repentance repentogon: Guia de Instalação",
+  description: "Otimize seu jogo com o extensor de script the binding of isaac repentance repentogon. Aprenda sobre instalação, compatibilidade e solução de problemas.",
+  category: "Tutorial",
+  image: "https://placehold.co/800x400/120b0d/f4e9e7?text=Repentogon+Setup+Guide",
+  date: "2026-07-17",
+  author: "Equipe da Wiki de the binding of isaac repentance"
+}
+
+<Callout type="info" title="Guia Rápido">
+- **Framework Principal**: O extensor de script otimiza o desempenho e expande as capacidades de modding.
+- **Mecânica Chave**: Ignora os gargalos tradicionais da API Lua usando hooks nativos da engine em C++.
+- **Melhor Estratégia**: Sempre faça backup dos seus jogos salvos antes de instalar qualquer modificação executável nativa.
+- **Dica Crítica**: Mantenha o framework atualizado para corresponder à versão atual do jogo na Steam.
+- **Melhor Escolha**: Essencial para modpacks pesados como Fiend Folio e sobreposições de interface avançadas.
+</Callout>
+
+<Section icon={Sparkles} title="Entendendo o Framework the binding of isaac repentance repentogon">
+
+O modding sempre foi uma das bases da longevidade para os jogadores. No entanto, à medida que os mods se tornaram mais complexos, a API Lua integrada começou a apresentar graves limitações de desempenho. A introdução do **the binding of isaac repentance repentogon** mudou completamente o cenário de modding. Esta ferramenta é um extensor de script nativo e aprimorador de engine que se conecta diretamente ao executável do jogo, permitindo que os desenvolvedores de mods acessem funções profundas da engine que antes eram completamente inacessíveis.
+
+Ao contrário dos mods padrão do Steam Workshop que rodam estritamente dentro do sandbox restrito de Lua, este framework opera em nível nativo. Ele otimiza a alocação de memória, reduz quedas de quadros causadas por sinergias complexas de itens e introduz pipelines de renderização personalizados. Para jogadores que utilizam dezenas de mods simultaneamente, instalar este framework é a maneira mais eficaz de estabilizar as taxas de quadros e evitar travamentos diretos para a área de trabalho.
+
+| Recurso | API Lua Padrão | Extensor Repentogon |
+| :--- | :--- | :--- |
+| **Nível de Execução** | Interpretador Lua em Sandbox | Hooking executável em C++ nativo |
+| **Renderização de Interface** | Restrita a camadas básicas de sprites | Elementos de interface e shaders personalizados |
+| **Desempenho** | Alto uso de CPU com cargas massivas de mods | Memória e chamadas de desenho altamente otimizadas |
+| **Correções de Bugs da Engine** | Nenhuma (requer soluções manuais nos mods) | Aplicação direta de patches na engine |
+| **Estabilidade do Arquivo de Salve** | Vulnerável a corrupção por limites de mods | Serialização robusta de salvamento personalizado |
+
+<Callout type="tip" title="Compatibilidade com Conquistas">
+O uso deste framework nativo não desativa as conquistas da Steam, desde que você tenha derrotado a Mom pelo menos uma vez no seu arquivo de salvamento sem mods ativos ativados primeiro.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Requisitos de Sistema e Compatibilidade">
+
+Antes de tentar instalar o framework, é vital garantir que seu sistema e a versão do jogo sejam totalmente compatíveis. Como esta ferramenta se conecta diretamente ao espaço de memória do jogo, ela é altamente sensível a incompatibilidades de versão. Ela foi projetada especificamente para o lançamento oficial da expansão Repentance na Steam e não funcionará corretamente com cópias desatualizadas, sem DRM ou não autorizadas do jogo.
+
+O framework suporta ambientes Windows e Linux, incluindo o Steam Deck. Em plataformas baseadas em Linux, ele utiliza camadas de compatibilidade do Proton para injetar as bibliotecas necessárias de forma suave. A compatibilidade com outros mods importantes é altamente estável, pois o framework foi projetado para cooperar com o Steam Workshop em vez de substituí-lo inteiramente.
+
+<CardGrid cols={3}>
+  <Card title="Sistemas Windows">
+    - **Windows 10 ou 11** (64 bits)
+    - Versão Steam de Repentance
+    - Visual C++ Redistributable instalado
+  </Card>
+  <Card title="Linux e Steam Deck">
+    - **Proton Experimental** ou Proton 8.0+
+    - Opções de inicialização personalizadas configuradas
+    - Acesso ao modo de área de trabalho padrão
+  </Card>
+  <Card title="Impacto no Hardware">
+    - **Zero uso adicional de CPU**
+    - Uso de RAM reduzido durante sinergias pesadas
+    - Melhor gerenciamento de coleta de lixo (garbage collection)
+  </Card>
+</CardGrid>
+
+| Plataforma | Status de Compatibilidade | Passos Necessários |
+| :--- | :--- | :--- |
+| **Steam (Windows)** | Totalmente Suportado | Instalação direta por arrastar e soltar |
+| **Steam (Linux/Steam Deck)** | Totalmente Suportado | Requer ajuste nas opções de inicialização do Proton |
+| **Epic Games Store** | Instável | Injeção manual necessária |
+| **GOG / Sem DRM** | Não Suportado | Hooks nativos falham ao localizar a API da Steam |
+
+<Callout type="warning" title="Correspondência de Versão">
+Certifique-se sempre de que seu jogo esteja totalmente atualizado na Steam antes de instalar o framework. Uma versão incompatível do executável fará com que o jogo feche imediatamente ao iniciar.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="Como Instalar o Repentogon">
+
+O processo de instalação é simples, mas requer a colocação manual dos arquivos, já que injetores de código nativo não podem ser distribuídos diretamente através do Steam Workshop padrão. Siga estes passos cuidadosamente para garantir uma configuração limpa sem arriscar o progresso do seu save atual.
+
+<Steps>
+  <Step num="1" title="Fazer Backup dos Dados de Salvamento">
+    Localize sua pasta de salvamento, normalmente encontrada no diretório de dados do usuário da Steam ou na pasta Meus Jogos (My Games) no Windows. Copie a pasta inteira para um local de backup seguro na sua área de trabalho.
+  </Step>
+  <Step num="2" title="Baixar o Pacote de Lançamento">
+    Visite o repositório oficial do GitHub para o projeto e baixe o arquivo zip compilado mais recente. Certifique-se de baixar apenas arquivos de fontes oficiais verificadas para evitar riscos de segurança.
+  </Step>
+  <Step num="3" title="Extrair Arquivos para o Diretório Raiz">
+    Abra sua biblioteca da Steam, clique com o botão direito no jogo, selecione Gerenciar e clique em Explorar Arquivos Locais. Extraia o conteúdo do zip baixado diretamente nesta pasta raiz, ao lado do executável principal.
+  </Step>
+  <Step num="4" title="Verificar a Instalação">
+    Inicie o jogo através da Steam. Olhe para o menu principal; uma string de versão personalizada ou um logotipo sobreposto deve aparecer no canto, confirmando que o hook nativo foi carregado com sucesso.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Instalação Verificada">
+Assim que o logotipo personalizado aparecer no menu principal, o framework estará ativo. Você pode agora se inscrever com segurança em mods avançados do Steam Workshop que exigem este extensor.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Mods Otimizados e Gerenciamento de Saves">
+
+Com o framework nativo ativo, você pode desbloquear todo o potencial de vários mods de alto perfil. Muitos ajustes complexos de interface e mods de conversão total agora exigem esta ferramenta como uma dependência obrigatória. Por exemplo, sobreposições avançadas de descrição de itens utilizam os hooks nativos para exibir cálculos de sinergia em tempo real e rastreamento preciso da lista de itens (item pool).
+
+Gerenciar a ordem de carregamento dos seus mods também se torna significativamente mais fácil. O framework resolve automaticamente conflitos comuns de recursos que antes causavam erros silenciosos ou listas de itens quebradas durante jogadas longas.
+
+| Nome do Mod | Categoria | Benefício do Repentogon |
+| :--- | :--- | :--- |
+| **External Item Descriptions** | Interface | Prévias em tempo real do Spindown Dice e receitas do Bag of Crafting |
+| **Soundtrack Menu** | Áudio | Mixagem de música dinâmica andar por andar sem atraso de áudio |
+| **Fiend Folio: Reheated** | Expansão de Conteúdo | Tempos de carregamento drasticamente reduzidos e limites de entidades personalizadas estabilizados |
+
+<Checklist
+  id="post-install-verification"
+  title="Lista de Verificação Pós-Instalação:"
+  items={[
+    "Verifique se os arquivos de salvamento foram carregados corretamente sem perder as marcas de conclusão",
+    "Confirme se o console do desenvolvedor abre usando a tecla til",
+    "Teste uma partida com sinergias de alto processamento para verificar a estabilidade da taxa de quadros",
+    "Ative o verificador de atualização automática no arquivo de configuração"
+  ]}
+/>
+
+<Callout type="info" title="Configurando Ajustes">
+Você pode personalizar o comportamento do framework editando o arquivo de configuração gerado no diretório do seu jogo. Isso permite que você ative ou desative correções de bugs específicas da engine.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Solução de Problemas Comuns">
+
+Se o seu jogo não iniciar ou travar frequentemente após a instalação, a causa geralmente é um erro simples de configuração ou um conflito com sobreposições de terceiros desatualizadas. A maioria dos problemas pode ser resolvida verificando os arquivos do jogo ou atualizando as bibliotecas de tempo de execução (runtime) no seu sistema operacional.
+
+Se você tiver problemas persistentes no Linux ou Steam Deck, verifique novamente as opções de inicialização do Proton. O comando de substituição de DLL deve ser escrito exatamente como especificado na documentação oficial para force o ambiente Wine a carregar a biblioteca injetada.
+
+<Callout type="warning" title="Conflitos de Sobreposição">
+Desative sobreposições de monitoramento de hardware, como RivaTuner, MSI Afterburner ou compartilhamento de tela do Discord se você tiver travamentos aleatórios ao carregar uma partida.
+</Callout>
+
+<FAQ items={[
+  {
+    question: "O que é o the binding of isaac repentance repentogon e ele é seguro de usar?",
+    answer: "É um extensor de script nativo desenvolvido pela comunidade que se conecta à engine do jogo para melhorar o desempenho e as capacidades de modding. É totalmente de código aberto, seguro e livre de malware."
+  },
+  {
+    question: "O uso deste framework corromperá meus arquivos de salvamento existentes?",
+    answer: "Não, ele não altera a estrutura de salvamento padrão (vanilla). No entanto, como ele permite que os mods salvem dados mais complexos, fazer backup dos seus salvamentos antes da instalação é altamente recomendado."
+  },
+  {
+    question: "Como atualizo o extensor de script quando uma nova atualização do jogo for lançada?",
+    answer: "Você deve baixar o pacote de lançamento atualizado do repositório oficial e substituir os arquivos existentes no diretório do seu jogo. As atualizações padrão do Steam Workshop não atualizarão os arquivos nativos automaticamente."
+  },
+  {
+    question: "Posso jogar co-op online com este framework ativado?",
+    answer: "Sim, mas todos os jogadores no lobby online devem ter exatamente a mesma versão del framework e a mesma lista de mods instalados para evitar erros de sincronização."
+  }
+]} />
+
+</Section>

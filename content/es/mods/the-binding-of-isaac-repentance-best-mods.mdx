@@ -1,0 +1,180 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "Los mejores mods para The Binding of Isaac Repentance: Selecciones de QoL y contenido de 2026",
+  description: "Descubre los mejores mods para The Binding of Isaac Repentance en 2026. Explora mods esenciales de calidad de vida (QoL), interfaz y contenido para mejorar tu experiencia roguelike.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/120B0D/F4E9E7?text=Best+Repentance+Mods",
+  date: "2026-07-17",
+  author: "Equipo de la Wiki de The Binding of Isaac Repentance",
+  keywords: "The Binding of Isaac Repentance, mejores mods, QoL, External Item Descriptions, Fiend Folio, guía de mods"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **Los mejores mods para The Binding of Isaac Repentance** se centran en mejorar la claridad de la información, eliminar el tedioso backtracking y expandir la variedad del endgame.
+- **External Item Descriptions** es el mod de interfaz más esencial, ya que proporciona estadísticas en tiempo real para cada objeto coleccionable y consumible.
+- **GoodTrip** y **Enhanced Boss Bars** son las mejores opciones de calidad de vida para agilizar la navegación y el seguimiento del combate.
+- **Fiend Folio: Reheated** sigue siendo la expansión de contenido principal para jugadores veteranos que buscan miles de nuevas salas y enemigos.
+</Callout>
+
+<Section icon={Map} title="Los mejores mods para The Binding of Isaac Repentance: Conceptos Básicos">
+
+El modding es una parte fundamental de la longevidad de este oscuro roguelike. Mientras que el juego base ofrece cientos de horas de contenido, la Steam Workshop permite a los jugadores personalizar su experiencia, desde pequeños ajustes visuales hasta revisiones masivas. Al buscar **los mejores mods para The Binding of Isaac Repentance**, es crucial entender la distinción entre las diferentes ramas del juego. La mayoría de los mods modernos están diseñados para las versiones Repentance o Repentance+, y el uso de mods obsoletos de la era Afterbirth+ puede provocar cierres inesperados (crashes) frecuentes o sinergias rotas.
+
+La comunidad ha desarrollado un "set" estándar de mods que la mayoría de los jugadores consideran esenciales para una partida moderna. Estos van desde superposiciones de información que evitan que arruines accidentalmente una build, hasta frameworks que te permiten mezclar y combinar diferentes bandas sonoras. Antes de profundizar en mods específicos, consulta la tabla siguiente para ver cómo se comparan las principales categorías de mods en términos de impacto en el juego.
+
+| Categoría | Nivel de Impacto | Enfoque Principal | Mejor Caso de Uso |
+| :--- | :--- | :--- | :--- |
+| **Interfaz** | **Alto** | Información y HUD | Aprender objetos y rastrear salud |
+| **Calidad de Vida** | **Medio** | Mecánicas de ahorro de tiempo | Eliminar backtracking y practicar |
+| **Música/Visual** | **Bajo** | Personalización estética | Refrescar la atmósfera |
+| **Contenido** | **Extremo** | Nuevos elementos de juego | Expansión del endgame tras Dead God |
+
+<Callout type="warning" title="Seguridad de los Datos de Guardado">
+Realiza siempre una copia de seguridad de tus datos de guardado antes de instalar grandes expansiones de contenido como Fiend Folio. Aunque Steam Cloud suele ser fiable, los mods de gran tamaño pueden ocasionalmente alterar las flags de guardado o causar conflictos durante las actualizaciones del juego.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Mejores Mods de Interfaz e Información">
+
+La información es poder en un juego con más de 700 objetos. Los mods más populares de la comunidad son aquellos que brindan claridad sin alterar el equilibrio subyacente del juego. Estas herramientas ayudan a los jugadores a tomar decisiones informadas sobre qué objetos tomar, cuáles relanzar con el D6 y cuáles evitar por completo para preservar una sinergia específica.
+
+<CardGrid cols={3}>
+  <Card title="External Item Descriptions">
+    El estándar de oro absoluto del modding. Muestra texto detallado para cada objeto, trinket y carta en pantalla, incluyendo estadísticas ocultas como multiplicadores de daño y retrasos de lágrimas.
+  </Card>
+  <Card title="Enhanced Boss Bars">
+    Reemplaza la barra de salud estándar por barras individuales y estilizadas para salas con múltiples jefes. Es esencial para rastrear la salud en combates caóticos con varios objetivos.
+  </Card>
+  <Card title="Planetarium Chance">
+    Añade un simple porcentaje a tu HUD que muestra la probabilidad de que aparezca un Planetario en el piso actual, ayudándote a decidir si saltarte las Salas del Tesoro.
+  </Card>
+</CardGrid>
+
+Más allá de las descripciones básicas de objetos, estos mods a menudo incluyen soporte para mecánicas específicas de personajes. Por ejemplo, External Item Descriptions (EID) puede mostrarte exactamente en qué se convertirá un objeto si usas el Spindown Dice o qué recetas están disponibles al usar el Bag of Crafting de Tainted Cain. Este nivel de detalle es la razón por la que EID siempre encabeza las listas de **los mejores mods para The Binding of Isaac Repentance**.
+
+| Nombre del Mod | Característica Clave | Compatibilidad | Requisito |
+| :--- | :--- | :--- | :--- |
+| **EID** | Texto detallado de objetos | Repentance+ | Ninguno |
+| **Enhanced Boss Bars** | Salud de múltiples objetivos | Repentance | Mod Config Menu |
+| **Planetarium Chance** | Porcentaje en el HUD | Repentance+ | DLC Repentance |
+
+<Callout type="tip" title="Consejo Pro de Información">
+Usa el "Mod Config Menu" para personalizar la posición de estos elementos del HUD. Si juegas en una pantalla pequeña, puedes reducir el tamaño del texto de External Item Descriptions para mantener el centro de la pantalla despejado para esquivar proyectiles.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Mejoras de Calidad de Vida y Navegación">
+
+Los mods de calidad de vida están diseñados para respetar el tiempo del jugador. Una de las quejas más comunes en el juego base es la cantidad de backtracking (volver sobre tus pasos) necesario después de limpiar un piso grande como el Útero (Womb) o el Cofre (Chest). Estos mods abordan estas frustraciones manteniendo intactos el combate y la dificultad central.
+
+El más destacado en esta categoría es **GoodTrip [Fixed]**. Este mod te permite hacer clic en cualquier sala previamente limpiada en el minimapa para teletransportarte allí instantáneamente. Esto es particularmente útil para regresar a una Tienda, una Sala de Sacrificio o un objeto olvidado después de derrotar al jefe del piso. No permite teletransportarse a salas no exploradas, asegurando que el desafío de la exploración se preserve.
+
+<Steps>
+  <Step num="1" title="Eliminación de Backtracking">
+    Instala GoodTrip para habilitar el teletransporte instantáneo entre salas limpias, ahorrando minutos de caminata por cada partida.
+  </Step>
+  <Step num="2" title="Entrenamiento de Patrones de Jefes">
+    Usa el Practice Mode para enfrentarte a jefes del endgame como Mother o The Beast con una build estandarizada para aprender sus fases sin arriesgar una partida de 40 minutos.
+  </Step>
+  <Step num="3" title="Pruebas en Sandbox">
+    Utiliza Da Rules para crear escenarios personalizados, probar sinergias de objetos o generar enemigos específicos para comprender sus patrones de movimiento.
+  </Step>
+</Steps>
+
+| Mod | Beneficio | Riesgo de Conflicto | Calificación |
+| :--- | :--- | :--- | :--- |
+| **GoodTrip** | Ahorra 5-10 min por partida | Bajo | ★★★★★ |
+| **Practice Mode** | Crecimiento de habilidad rápido | Ninguno | ★★★★☆ |
+| **Da Rules** | Experimentación infinita | Alto | ★★★★☆ |
+
+<Callout type="success" title="Ganancia de Eficiencia">
+Al usar GoodTrip, puedes reducir significativamente el "tiempo muerto" en una partida, lo que te permite encajar más intentos en una sola sesión de juego. Esto es especialmente útil cuando intentas conseguir marcas de finalización difíciles con personajes como Tainted Lost.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Personalización Musical y Estética">
+
+La atmósfera del juego es icónica, pero después de miles de partidas, la banda sonora puede volverse repetitiva. La comunidad de modding ha creado frameworks robustos que te permiten cambiar la música por las pistas originales de Flash Isaac, la banda sonora de Antibirth o incluso packs de música completamente personalizados.
+
+Para gestionar estos cambios, **Soundtrack Menu** es una utilidad esencial. Proporciona una interfaz dentro del juego para cambiar entre los packs de música instalados sobre la marcha. Esto evita la necesidad de activar o desactivar mods manualmente en el menú principal. La mayoría de los mods de música de alta calidad, como **Antibirth Music+++**, requieren un framework como **Music Mod Callback** para funcionar correctamente, asegurando que las transiciones musicales sean fluidas entre salas y fases de jefes.
+
+| Framework | Ideal para | Requisito |
+| :--- | :--- | :--- |
+| **Soundtrack Menu** | Mezclar múltiples packs | REPENTOGON o Callback |
+| **Music Mod Callback** | Comportamiento avanzado de pistas | Independiente |
+| **Antibirth Music+++** | Revisión completa de audio | Music Mod Callback |
+
+<Callout type="info" title="Frameworks de Audio">
+Si estás utilizando el nuevo extensor de scripts REPENTOGON, comprueba si tus mods de música se han actualizado. REPENTOGON ofrece hooks de audio más estables que el antiguo Music Mod Callback, lo que resulta en menos sonidos de "chasquido" durante las transiciones de piso.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Expansiones de Contenido para Veteranos">
+
+Si ya has conseguido el logro "Dead God" y buscas un nuevo desafío, las expansiones de contenido son el camino a seguir. Estos mods añaden nuevos objetos, enemigos y variantes de pisos que igualan la calidad de los DLC oficiales.
+
+**Fiend Folio: Reheated** es el mod de contenido más importante disponible actualmente. Añade más de 500 nuevos monstruos y docenas de jefes, revitalizando por completo los pisos iniciales y medios. Debido a que añade tantos recursos, es mucho más exigente para tu hardware que los simples mods de QoL. Otra herramienta poderosa es **Da Rules**, que funciona como un menú sandbox. Aunque puede usarse para hacer trampas, la comunidad lo utiliza principalmente para crear "Challenge Runs" o para practicar contra combinaciones específicas de enemigos que causan problemas en el juego base.
+
+| Nombre del Mod | Contenido Nuevo | Complejidad | Impacto en Rendimiento |
+| :--- | :--- | :--- | :--- |
+| **Fiend Folio** | +500 Enemigos, +140 Objetos | Muy Alta | Significativo |
+| **Da Rules** | Motor de reglas personalizadas | Alta | Mínimo |
+| **Revelations** | Nuevas etapas y jefes | Alta | Moderado |
+
+<Callout type="warning" title="Advertencia de Compatibilidad">
+Los mods de contenido grande como Fiend Folio a menudo reescriben la lógica de generación de salas. Evita combinar varios "Mega Mods" (como Fiend Folio + Revelations) a menos que hayas verificado los parches de compatibilidad de la comunidad, ya que es probable que causen que el juego se cierre al iniciarse.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Lista de Verificación de Configuración y Mantenimiento">
+
+Instalar **los mejores mods para The Binding of Isaac Repentance** es sencillo a través de Steam Workshop, pero mantener un juego estable requiere un poco de disciplina. Los conflictos suelen surgir cuando dos mods intentan modificar el mismo elemento de la interfaz de usuario o cuando falta un framework.
+
+<Checklist
+  id="mod-setup-checklist"
+  title="Mejores Prácticas de Modding:"
+  items={[
+    "Suscríbete primero a 'Mod Config Menu' para habilitar los ajustes de otros mods.",
+    "Verifica tu versión del juego (Repentance vs Repentance+) antes de suscribirte.",
+    "Instala frameworks como 'Music Mod Callback' o 'Custom Stage API' solo cuando sea necesario.",
+    "Desactiva todos los mods antes de intentar un Daily Run para evitar cierres inesperados.",
+    "Reinicia el juego después de activar un mod que añada nuevos gráficos o música."
+  ]}
+/>
+
+<Callout type="tip" title="Solución de Cierres Inesperados">
+Si tu juego se cierra al iniciarse después de una actualización de mod, navega a tu carpeta de mods de Isaac (usualmente en `Documents/My Games/Binding of Isaac Repentance/mods`) y elimina la carpeta del mod actualizado más recientemente. Esto obliga a Steam a descargarlo de nuevo limpio.
+</Callout>
+
+<FAQ items={[
+  {
+    question: "¿Los mods desactivan los logros en Repentance?",
+    answer: "No, siempre y cuando hayas derrotado a Mom al menos una vez en ese archivo de guardado. Después de la primera muerte de Mom, puedes usar mods y seguir ganando marcas de finalización y logros."
+  },
+  {
+    question: "¿Cuáles son los mejores mods absolutos para principiantes?",
+    answer: "External Item Descriptions y GoodTrip son los dos mods más recomendados para nuevos jugadores, ya que proporcionan información esencial y ahorran tiempo sin cambiar la dificultad del juego."
+  },
+  {
+    question: "¿Puedo usar mods en el Cooperativo Online?",
+    answer: "La mayoría de los mods están actualmente desactivados o son inestables en el matchmaking oficial de Repentance+. Se recomienda usar una instalación limpia y sin mods al jugar online para evitar errores de sincronización."
+  },
+  {
+    question: "¿Cómo soluciono elementos de la interfaz que se superponen de diferentes mods?",
+    answer: "La mayoría de los mods de interfaz incluyen ajustes de posicionamiento en el Mod Config Menu. Puedes ajustar manualmente las coordenadas X e Y de los elementos del HUD, como la pantalla de Probabilidad de Planetario, para evitar que se superpongan con tus estadísticas."
+  }
+]} />
+
+</Section>

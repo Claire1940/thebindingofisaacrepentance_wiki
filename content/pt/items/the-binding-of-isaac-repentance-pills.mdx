@@ -1,0 +1,179 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "Pílulas de The Binding of Isaac Repentance: Guia de Identificação",
+  description: "Domine a lista de pílulas em The Binding of Isaac: Repentance. Aprenda os efeitos das pílulas, estratégias de identificação e sinergias de itens para otimizar suas runs.",
+  category: "Guia",
+  image: "https://placehold.co/800x400/120b0d/fff?text=Pills+Identification+Guide",
+  date: "2026-07-17",
+  author: "Equipe da Wiki de The Binding of Isaac: Repentance"
+}
+
+<Callout type="info" title="Guia Rápido de Pílulas">
+- **Mecânicas de Pílulas**: Aprenda como as **pílulas de The Binding of Isaac: Repentance** são randomizadas a cada run.
+- **Lista de Pílulas**: Identifique efeitos positivos, negativos e neutros para minimizar riscos.
+- **Principais Sinergias**: Utilize itens como **PHD** e **False PHD** para manipular a lista de pílulas.
+- **Mitigação de Riscos**: Evite testar pílulas às cegas quando sua vida estiver criticamente baixa.
+- **Horse Pills**: Maximize runs de alto rendimento compreendendo as variações de pílulas amplificadas.
+</Callout>
+
+<Section icon={Sparkles} title="Entendendo as Pílulas de The Binding of Isaac Repentance">
+
+Em qualquer run, as **pílulas de The Binding of Isaac: Repentance** representam uma das mecânicas de risco-recompensa mais voláteis do jogo. Ao contrário das cartas ou runas, que exibem seus efeitos exatos imediatamente ao serem coletadas, as pílulas começam como mistérios não identificados. Suas cores visuais são randomizadas no início de cada run, o que significa que uma pílula vermelha e branca pode conceder uma valiosa melhoria de atributo em uma tentativa, mas esvaziar um de seus contêineres de coração na próxima.
+
+Para vencer runs de forma consistente no meta de 2026, os jogadores devem entender como a lista de pílulas é gerada, como identificá-las com segurança e como itens específicos podem remover completamente o risco de efeitos negativos. Quando uma pílula é consumida, seu efeito é revelado pelo restante daquela run específica, permitindo que você planeje o consumo futuro com absoluta certeza.
+
+| Item | Tipo | Modificador de Efeito de Pílula Principal | Estratégia de Run |
+|---|---|---|---|
+| **PHD** | Passivo | Identifica todas as pílulas, converte efeitos negativos em positivos | Priorize em Lojas iniciais para garantir melhorias limpas de atributos |
+| **False PHD** | Passivo | Identifica todas as pílulas, converte efeitos positivos em negativos | Use para ganhar buffs permanentes de dano ao consumir pílulas de redução de atributos |
+| **Lucky Foot** | Passivo | Converte pílulas negativas em equivalentes positivas ou neutras | Excelente para runs com Cain; permite testar pílulas às cegas sem preocupações |
+| **Virgo** | Passivo | Converte pílulas negativas em equivalentes positivas | Combina defesa com identificação segura de pílulas |
+
+<Callout type="info" title="Regra de Rotação de Cores">
+Existem 49 efeitos de pílulas distintos na expansão Repentance, mas apenas 13 combinações de cores visuais são selecionadas para a lista ativa em uma única run. Isso significa que você nunca encontrará todos os efeitos de pílula em uma única partida, limitando a lista e tornando o rastreamento baseado em memória altamente eficaz.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Efeitos de Pílulas Positivas de Alto Impacto">
+
+Garantir efeitos positivos de pílulas pode transformar uma build fraca em uma run vitoriosa. Pílulas de melhoria de atributos fornecem bônus permanentes aos seus status, frequentemente ultrapassando os limites padrão (soft caps). Para personagens que dependem de alta cadência de tiro (tears) ou grande quantidade de corações, identificar esses efeitos cedo é fundamental para a vitória.
+
+Além das melhorias de atributos padrão, as pílulas utilitárias podem alterar completamente a navegação pelas salas, fornecer opções defensivas de emergência ou gerar recursos valiosos do nada. Quando amplificados em Horse Pills (Pílulas Gigantes), esses efeitos dobram de força, fornecendo bônus massivos que podem carregar você por caminhos alternativos difíceis.
+
+| Efeito da Pílula | Benefício Base de Gameplay | Efeito Amplificado (Horse Pill) |
+|---|---|---|
+| **Tears Up** | Concede um bônus permanente de +0.35 de Tears (Cadência de Tiro) | Concede um bônus permanente de +0.70 de Tears |
+| **Health Up** | Adiciona um contêiner de Coração Vermelho vazio | Adiciona dois contêineres de Coração Vermelho vazios |
+| **Balls of Steel** | Concede dois Corações de Alma (Soul Hearts) | Concede quatro Corações de Alma |
+| **Pretty Fly** | Invoca uma mosca orbital defensiva que bloqueia projéteis | Invoca uma mosca orbital grande que bloqueia projéteis maiores |
+| **48 Hour Energy** | Derruba duas baterias e carrega totalmente os itens ativos | Derruba quatro baterias e carrega totalmente os itens ativos |
+| **Hematemesis** | Esvazia a vida vermelha para meio coração, gerando de 1 a 4 corações vermelhos | Esvazia a vida vermelha para meio coração, gerando de 2 a 8 corações vermelhos |
+
+<Callout type="success" title="Min-Maxing de Pílulas de Atributos">
+Sempre espere para usar pílulas de modificação de atributos até ter limpado as ameaças imediatas de um andar. Se você encontrar uma pílula de Tears Up ou Speed Up cedo, consumi-la imediatamente não há problema, mas pílulas utilitárias como Hematemesis devem ser guardadas para salas com máquinas de doação ou espinhos de sacrifício para maximizar a conversão de recursos.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Gerenciando Pílulas Negativas e Neutras">
+
+Embora as pílulas positivas possam garantir uma vitória, as pílulas negativas podem arruinar facilmente uma run promissora se tomadas no momento errado. Pílulas de redução de atributos diminuem seus status permanentemente, a menos que sejam neutralizadas por itens específicos. Pílulas neutras não prejudicam diretamente seus atributos, mas podem desorientar seu movimento, teletransportar você para salas aleatórias ou causar distorções visuais que tornam o desvio de projéteis significativamente mais difícil.
+
+Aprender a mitigar esses riscos sem a ajuda de itens de identificação é uma habilidade crucial para o jogo de alto nível. Se você não possui o PHD ou o Lucky Foot, deve exercer extrema cautela ao testar pílulas não identificadas, especialmente ao navegar por rotas difíceis de fim de jogo.
+
+| Efeito da Pílula | Nível de Ameaça | Impacto Estratégico na Gameplay |
+|---|---|---|
+| **Tears Down** | Alto | Reduz permanentemente a cadência de tiro (Tears); altamente prejudicial para o dano geral |
+| **Health Down** | Alto | Remove um contêiner de Coração Vermelho; perigoso para builds com pouca vida |
+| **Bad Trip** | Médio | Causa um coração inteiro de dano; converte-se em Full Health (Vida Cheia) se você estiver com pouca vida |
+| **Amnesia** | Médio | Oculta o minimapa do andar atual; dificulta a busca por salas secretas |
+| **Telepills** | Baixo | Teleporta Isaac para uma sala aleatória; pequena chance de entrar na Sala de Erro (I AM ERROR) |
+| **Bad Gas** | Baixo | Dispara uma nuvem de veneno ao redor de Isaac; útil para eliminar inimigos próximos |
+
+<Callout type="warning" title="Aviso Crítico de Vida">
+Nunca teste pílulas não identificadas quando estiver com exatamente um contêiner de coração. Se a pílula for uma Bad Trip, ela causará dano e potencialmente encerrará sua run. No entanto, se você estiver com meio coração ou menos, uma pílula de Bad Trip se converte automaticamente em uma pílula de Full Health (Vida Cheia), tornando-a segura de consumir em emergências absolutas.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Estratégia Passo a Passo de Identificação de Pílulas">
+
+Para construir seu banco de dados de pílulas com segurança durante uma run sem depender de sorte cega, siga uma metodologia de teste estruturada. Este processo passo a passo minimiza os riscos associados a efeitos ruins de pílulas enquanto maximiza suas chances de garantir melhorias permanentes de atributos.
+
+<Steps>
+  <Step num="1" title="Garanta o Andar Primeiro">
+    Limpe todas as salas de combate no andar atual antes de testar qualquer pílula não identificada. Isso garante que efeitos negativos como Amnesia, Range Down ou Speed Down não atrapalhem sua habilidade de desviar de ataques inimigos durante o combate ativo.
+  </Step>
+  <Step num="2" title="Avalie Sua Vida Atual">
+    Certifique-se de ter pelo menos dois contêineres de coração cheios antes de consumir uma pílula aleatória. Isso protege você de morrer devido a um efeito de Bad Trip. Se você estiver com apenas meio coração, também poderá testar com segurança, pois Bad Trip se converterá em Full Health.
+  </Step>
+  <Step num="3" title="Verifique Sinergias na Loja e de Itens">
+    Antes de testar, verifique a Loja do andar atual em busca de PHD ou procure por Lucky Foot. Se esses itens estiverem disponíveis, compre-os imediatamente antes de consumir qualquer pílula para garantir que todos os efeitos negativos sejam convertidos em melhorias positivas.
+  </Step>
+  <Step num="4" title="Consuma Perto de Salas Úteis">
+    Fique perto da entrada de uma Sala de Maldição (Curse Room), Fliperama (Arcade) ou Sala Super Secreta ao testar. Se você consumir uma Telepills, poderá ignorar portas trancadas ou acessar listas de itens raros sem gastar chaves ou bombas.
+  </Step>
+</Steps>
+
+<Callout type="tip" title="Mod External Item Descriptions">
+Se você estiver jogando no PC com mods ativados, o mod External Item Descriptions é altamente recomendado. Embora ele não identifique pílulas aleatórias de forma automática, ele exibirá os efeitos das pílulas identificadas no chão e mostrará as conversões exatas de atributos quando você possuir o PHD.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Principais Itens de Sinergia com Pílulas">
+
+Certos itens em Repentance transformam as pílulas de uma aposta arriscada em sua principal fonte de poder. Ao alterar o comportamento das pílulas, a frequência com que aparecem ou como seus efeitos são ativados, essas sinergias podem facilmente quebrar o equilíbrio do jogo.
+
+<CardGrid cols={3}>
+  <Card title="PHD">
+    - **Identificação Automática**: Revela instantaneamente todos os efeitos das pílulas ao avistá-las.
+    - **Conversão de Pílulas**: Converte todas as pílulas negativas da lista em equivalentes positivas.
+    - **Recursos Extras**: Gera uma moeda de ouro e aumenta a chance de aparição de futuras pílulas.
+  </Card>
+  <Card title="False PHD">
+    - **Escalonamento de Dano**: Converte pílulas de atributos positivas em negativas, mas concede um aumento permanente de +0.6 de Dano para cada pílula de redução de atributo consumida.
+    - **Geração de Corações Pretos**: Gera Corações Pretos (Black Hearts) quando pílulas de vida negativas são consumidas.
+    - **Poder de Alto Risco**: Ideal para jogadores experientes que desejam trocar utilidade por puro dano ofensivo.
+  </Card>
+  <Card title="Placebo">
+    - **Efeitos Repetíveis**: Copie o efeito da pílula que você está segurando atualmente usando um item ativo de 4 cargas.
+    - **Escalonamento Infinito**: Permite a geração infinita de Tears Up, Health Up ou Balls of Steel.
+    - **Sinergia com Baterias**: Combina perfeitamente com 48 Hour Energy para cargas ilimitadas de itens ativos.
+  </Card>
+</CardGrid>
+
+<Callout type="info" title="The Placebo Break">
+Se você tiver uma pílula de 48 Hour Energy e o item ativo Placebo, consumir a carga derrubará baterias que recarregam totalmente o Placebo. Isso cria um loop infinito, permitindo que você gere infinitas baterias, carregue totalmente qualquer item ativo secundário e quebre completamente a economia da run.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="Checklist de Segurança de Pílulas e FAQ">
+
+Antes de descer para andares mais profundos como a Útero (Womb) ou a rota alternativa do Cadáver (Corpse), certifique-se de estar utilizando seu inventário de pílulas de forma eficiente. Use o seguinte checklist para verificar seus protocolos de segurança com pílulas.
+
+<Checklist
+  id="pill-safety"
+  title="Regras de Segurança de Pílulas:"
+  items={[
+    "Nunca consuma pílulas não identificadas durante uma luta de chefe difícil.",
+    "Solte pílulas inúteis em salas limpas para evitar acumular itens desnecessários no seu slot ativo de inventário.",
+    "Priorize Cain ou Magdalene se quiser focar em estratégias baseadas em pílulas desde o início.",
+    "Guarde pílulas não identificadas para a rota de Ascensão (Ascent), onde voltar pelo caminho é mais fácil.",
+    "Sempre verifique os inventários das Lojas em busca de baterias quando estiver segurando o Placebo."
+  ]}
+/>
+
+<Callout type="tip" title="Estratégia Final de Pílulas">
+Lembre-se de que as pílulas são uma ferramenta de consistência ao longo de runs longas. Embora uma única pílula ruim possa parecer frustrante, os ganhos de atributos a longo prazo ao identificar pílulas de Tears Up e Health Up superam em muito os contratempos temporários de um Speed Down ou Range Down. Jogue com inteligência, verifique sua vida e priorize itens de identificação.
+</Callout>
+
+<FAQ items={[
+  {
+    question: "As pílulas têm a mesma aparência em todas as runs?",
+    answer: "Não, as combinações de cores visuais das pílulas são completamente randomizadas no início de cada run. Uma cor que representa Tears Up em uma run pode representar Tears Down na próxima."
+  },
+  {
+    question: "Como o Lucky Foot afeta a lista de pílulas?",
+    answer: "O Lucky Foot converte todos os efeitos negativos de pílulas na lista da run atual em efeitos positivos ou neutros, tornando totalmente seguro testar às cegas qualquer pílula que você encontrar."
+  },
+  {
+    question: "Uma pílula de Bad Trip pode me matar?",
+    answer: "Não, uma pílula de Bad Trip se converterá automaticamente em uma pílula de Full Health se você estiver com meio coração ou menos, evitando uma eliminação acidental."
+  },
+  {
+    question: "O que são as Horse Pills em Repentance?",
+    answer: "Horse Pills são versões maiores e mais barulhentas das pílulas normais que ativam efeitos amplificados (por exemplo, concedendo dois contêineres de coração em vez de um) quando consumidas."
+  }
+]} />
+
+</Section>

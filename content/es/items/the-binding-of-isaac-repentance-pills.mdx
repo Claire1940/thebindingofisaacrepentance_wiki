@@ -1,0 +1,180 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "Píldoras de The Binding of Isaac Repentance: Guía de Identificación",
+  description: "Domina el conjunto de píldoras en The Binding of Isaac: Repentance. Aprende los efectos de las píldoras, estrategias de identificación y sinergias de objetos para optimizar tus partidas.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/120b0d/fff?text=Pills+Identification+Guide",
+  date: "2026-07-17",
+  author: "Equipo de la Wiki de The Binding of Isaac Repentance",
+  keywords: "the binding of isaac repentance, píldoras, guía de identificación, efectos de píldoras, PHD, False PHD, estrategias isaac"
+}
+
+<Callout type="info" title="Guía Rápida de Píldoras">
+- **Mecánicas de Píldoras**: Aprende cómo las **píldoras de The Binding of Isaac Repentance** se aleatorizan en cada partida.
+- **Conjunto de Píldoras**: Identifica efectos positivos, negativos y neutrales para minimizar riesgos.
+- **Sinergias Clave**: Utiliza objetos como **PHD** y **False PHD** para manipular el conjunto de píldoras.
+- **Mitigación de Riesgos**: Evita probar píldoras a ciegas cuando tu salud sea críticamente baja.
+- **Píldoras Gigantes (Horse Pills)**: Maximiza partidas de alto rendimiento comprendiendo las variaciones amplificadas.
+</Callout>
+
+<Section icon={Sparkles} title="Comprendiendo las Píldoras en The Binding of Isaac Repentance">
+
+En cualquier partida, las **píldoras de The Binding of Isaac Repentance** representan una de las mecánicas de riesgo-recompensa más volátiles del juego. A diferencia de las cartas o runas, que muestran sus efectos exactos inmediatamente al recogerlas, las píldoras comienzan como misterios sin identificar. Sus colores visuales se aleatorizan al inicio de cada partida, lo que significa que una píldora roja y blanca podría otorgar una valiosa mejora de estadísticas en un intento, pero agotar un contenedor de salud en el siguiente.
+
+Para ganar partidas de forma consistente en el meta de 2026, los jugadores deben entender cómo se genera el conjunto de píldoras, cómo identificarlas de forma segura y cómo objetos específicos pueden eliminar por completo el riesgo de efectos negativos. Cuando se consume una píldora, su efecto se revela para el resto de esa partida específica, lo que te permite planificar el consumo futuro con absoluta certeza.
+
+| Objeto | Tipo | Modificador Principal de Efecto | Estrategia de Partida |
+|---|---|---|---|
+| **PHD** | Pasivo | Identifica todas las píldoras, convierte efectos negativos en positivos | Priorizar en tiendas tempranas para asegurar mejoras limpias |
+| **False PHD** | Pasivo | Identifica todas las píldoras, convierte efectos positivos en negativos | Usar para ganar aumentos permanentes de daño con píldoras de reducción |
+| **Lucky Foot** | Pasivo | Convierte píldoras negativas en contrapartes positivas o neutrales | Excelente para Cain; permite probar píldoras a ciegas sin miedo |
+| **Virgo** | Pasivo | Convierte píldoras negativas en sus contrapartes positivas | Combina defensa con una identificación segura de píldoras |
+
+<Callout type="info" title="Regla de Rotación de Colores">
+Existen 49 efectos de píldora distintos en la expansión Repentance, pero solo se seleccionan 13 combinaciones de colores visuales para el conjunto activo en una sola partida. Esto significa que nunca encontrarás todos los efectos de píldora en un solo recorrido, lo que limita el conjunto y hace que el seguimiento basado en la memoria sea muy efectivo.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Efectos de Píldoras Positivas de Alto Impacto">
+
+Asegurar efectos de píldoras positivas puede convertir una build mediocre en una potencia dominante. Las píldoras de mejora de estadísticas proporcionan bonificaciones permanentes a tus atributos, a menudo superando los límites estándar (soft caps). Para los personajes que dependen de altas cadencias de fuego o grandes reservas de salud, identificar estos efectos temprano es fundamental para la victoria.
+
+Además de las mejoras estándar, las píldoras de utilidad pueden alterar completamente la navegación por las habitaciones, proporcionar opciones defensivas de emergencia o generar recursos valiosos de la nada. Cuando se amplifican en Píldoras Gigantes (Horse Pills), estos efectos duplican su fuerza, proporcionando aumentos masivos que pueden ayudarte a superar las difíciles rutas alternativas.
+
+| Efecto de Píldora | Beneficio Base de Juego | Efecto Mejorado (Horse Pill) |
+|---|---|---|
+| **Tears Up** | Otorga un bono permanente de +0.35 a la Cadencia de Fuego | Otorga un bono permanente de +0.70 a la Cadencia de Fuego |
+| **Health Up** | Añade un contenedor de Corazón Rojo vacío | Añade dos contenedores de Corazón Rojo vacíos |
+| **Balls of Steel** | Otorga dos Corazones de Alma | Otorga cuatro Corazones de Alma |
+| **Pretty Fly** | Genera una mosca orbital defensiva que bloquea proyectiles | Genera una mosca orbital grande que bloquea disparos mayores |
+| **48 Hour Energy** | Suelta dos baterías y recarga completamente los objetos activos | Suelta cuatro baterías y recarga completamente los objetos activos |
+| **Hematemesis** | Vacía la salud roja a medio corazón, generando 1-4 corazones rojos | Vacía la salud roja a medio corazón, generando 2-8 corazones rojos |
+
+<Callout type="success" title="Min-Maxing de Píldoras de Estadísticas">
+Espera siempre a usar píldoras modificadoras de estadísticas hasta que hayas despejado las amenazas inmediatas de un piso. Si encuentras una píldora de Tears Up o Speed Up temprano, consumirla de inmediato está bien, pero las píldoras de utilidad como Hematemesis deben guardarse para habitaciones con máquinas de donación o pinchos de sacrificio para maximizar la conversión de recursos.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Gestión de Píldoras Negativas y Neutrales">
+
+Si bien las píldoras positivas pueden asegurar una victoria, las píldoras negativas pueden arruinar fácilmente una partida prometedora si se toman en el momento equivocado. Las píldoras de reducción de estadísticas disminuyen tus atributos de forma permanente a menos que sean neutralizadas por objetos específicos. Las píldoras neutrales no dañan directamente tus estadísticas, pero pueden desorientar tu movimiento, teletransportarte a habitaciones aleatorias o provocar distorsiones visuales que dificultan esquivar proyectiles.
+
+Aprender a mitigar estos riesgos sin la ayuda de objetos de identificación es una habilidad crucial para el juego de alto nivel. Si no posees PHD o Lucky Foot, debes tener extrema precaución al probar píldoras no identificadas, especialmente al navegar por rutas difíciles del final del juego.
+
+| Efecto de Píldora | Nivel de Amenaza | Impacto Estratégico en el Juego |
+|---|---|---|
+| **Tears Down** | Alto | Reduce permanentemente la Cadencia de Fuego; muy perjudicial para el daño |
+| **Health Down** | Alto | Elimina un contenedor de Corazón Rojo; peligroso en builds de baja salud |
+| **Bad Trip** | Medio | Inflige un corazón completo de daño; se convierte en Full Health si tienes poca salud |
+| **Amnesia** | Medio | Oculta el minimapa del piso actual; dificulta la búsqueda de salas secretas |
+| **Telepills** | Bajo | Teletransporta a Isaac a una sala aleatoria; baja probabilidad de entrar en la Error Room |
+| **Bad Gas** | Bajo | Activa una nube de veneno alrededor de Isaac; útil para limpiar enemigos cercanos |
+
+<Callout type="warning" title="Advertencia de Salud Crítica">
+Nunca pruebes píldoras no identificadas cuando tengas exactamente un contenedor de corazón. Si la píldora es un Bad Trip, te infligirá daño y podría terminar tu partida. Sin embargo, si estás a medio corazón o menos, una píldora de Bad Trip se convierte automáticamente en una píldora de Full Health, lo que hace que sea seguro tragarla en emergencias absolutas.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Estrategia de Identificación de Píldoras Paso a Paso">
+
+Para construir de forma segura tu base de datos de píldoras durante una partida sin depender de la suerte ciega, sigue una metodología de prueba estructurada. Este proceso paso a paso minimiza los riesgos asociados con los efectos negativos de las píldoras y maximiza tus posibilidades de asegurar mejoras permanentes de estadísticas.
+
+<Steps>
+  <Step num="1" title="Asegura el Piso Primero">
+    Limpia todas las habitaciones de combate en el piso actual antes de probar cualquier píldora no identificada. Esto garantiza que los efectos negativos como Amnesia, Range Down o Speed Down no dificulten tu capacidad para esquivar ataques enemigos durante el combate activo.
+  </Step>
+  <Step num="2" title="Evalúa tu Reserva de Salud Actual">
+    Asegúrate de tener al menos dos contenedores de corazón llenos antes de tragar una píldora aleatoria. Esto te protege de morir por un efecto de Bad Trip. Si estás a medio corazón, también puedes probar con seguridad, ya que Bad Trip se convertirá en Full Health.
+  </Step>
+  <Step num="3" title="Busca Sinergias en Tiendas y Objetos">
+    Antes de probar, revisa la Tienda del piso actual en busca de PHD o busca Lucky Foot. Si estos objetos están disponibles, cómpralos inmediatamente antes de consumir cualquier píldora para garantizar que todos los efectos negativos se conviertan en mejoras positivas.
+  </Step>
+  <Step num="4" title="Consúmelas Cerca de Habitaciones Útiles">
+    Ponte cerca de la entrada de una Sala de Maldición (Curse Room), Recreativos (Arcade) o Sala Súper Secreta al probarlas. Si tragas una Telepills, podrías saltarte puertas cerradas o acceder a conjuntos de objetos raros sin gastar llaves o bombas.
+  </Step>
+</Steps>
+
+<Callout type="tip" title="Mod de Descripciones Externas">
+Si juegas en PC con mods activados, el mod "External Item Descriptions" es muy recomendable. Aunque no identificará las píldoras aleatorias automáticamente, mostrará los efectos de las píldoras identificadas en el suelo y mostrará las conversiones exactas de estadísticas una vez que tengas PHD.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Mejores Objetos de Sinergia con Píldoras">
+
+Ciertos objetos en Repentance convierten las píldoras de una apuesta arriesgada en tu fuente principal de poder. Al alterar cómo se comportan las píldoras, con qué frecuencia aparecen o cómo se activan sus efectos, estas sinergias pueden romper fácilmente el equilibrio del juego.
+
+<CardGrid cols={3}>
+  <Card title="PHD">
+    - **Identificación Automática**: Revela instantáneamente todos los efectos de las píldoras al verlas.
+    - **Conversión de Píldoras**: Convierte todas las píldoras negativas del conjunto en contrapartes positivas.
+    - **Recursos Extra**: Genera una moneda de oro y mejora la aparición de futuras píldoras.
+  </Card>
+  <Card title="False PHD">
+    - **Escalado de Daño**: Convierte píldoras de estadísticas positivas en negativas, pero otorga una mejora permanente de +0.6 de Daño por cada píldora de reducción consumida.
+    - **Generación de Corazones Negros**: Genera Corazones Negros cuando se tragan píldoras de salud negativas.
+    - **Poder de Alto Riesgo**: Ideal para jugadores experimentados que buscan cambiar utilidad por daño ofensivo puro.
+  </Card>
+  <Card title="Placebo">
+    - **Efectos Repetibles**: Copia el efecto de la píldora que sostienes actualmente usando un objeto activo de 4 cargas.
+    - **Escalado Infinito**: Permite generar infinitos Tears Up, Health Up o Balls of Steel.
+    - **Sinergia de Baterías**: Combina perfectamente con 48 Hour Energy para obtener cargas ilimitadas de objetos activos.
+  </Card>
+</CardGrid>
+
+<Callout type="info" title="La Ruptura con Placebo">
+Si tienes una píldora de 48 Hour Energy y el objeto activo Placebo, al consumir la carga soltarás baterías que recargarán completamente el Placebo. Esto crea un bucle infinito, permitiéndote generar infinitas baterías, recargar completamente cualquier objeto activo secundario y romper por completo la economía de la partida.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="Lista de Verificación de Seguridad y FAQ">
+
+Antes de descender a pisos más profundos como el Útero (Womb) o la ruta alternativa del Cadáver (Corpse), asegúrate de utilizar tu inventario de píldoras de manera eficiente. Usa la siguiente lista para verificar tus protocolos de seguridad con las píldoras.
+
+<Checklist
+  id="pill-safety"
+  title="Reglas de Seguridad con Píldoras:"
+  items={[
+    "Nunca consumas píldoras no identificadas durante una pelea difícil contra un jefe.",
+    "Suelta las píldoras inútiles en habitaciones despejadas para evitar saturar tu espacio de objeto activo.",
+    "Prioriza a Cain o Magdalene si quieres usar estrategias centradas en píldoras desde el principio.",
+    "Guarda las píldoras no identificadas para la ruta de Ascenso (Ascent), donde volver atrás es más fácil.",
+    "Revisa siempre el inventario de las Tiendas en busca de baterías cuando tengas Placebo."
+  ]}
+/>
+
+<Callout type="tip" title="Estrategia Final de Píldoras">
+Recuerda que las píldoras son una herramienta de consistencia a lo largo de partidas largas. Aunque una sola píldora mala puede ser frustrante, las ganancias de estadísticas a largo plazo al identificar Tears Up y Health Up superan con creces los contratiempos temporales de un Speed Down o Range Down. Juega con inteligencia, revisa tu salud y prioriza los objetos de identificación.
+</Callout>
+
+<FAQ items={[
+  {
+    question: "¿Las píldoras se ven iguales en todas las partidas?",
+    answer: "No, las combinaciones de colores visuales de las píldoras se aleatorizan por completo al comienzo de cada partida. Un color que representa Tears Up en una partida podría representar Tears Down en la siguiente."
+  },
+  {
+    question: "¿Cómo afecta Lucky Foot al conjunto de píldoras?",
+    answer: "Lucky Foot convierte todos los efectos de píldoras negativas en el conjunto de la partida actual en efectos positivos o neutrales, lo que hace que sea completamente seguro probar cualquier píldora que encuentres."
+  },
+  {
+    question: "¿Puede matarme una píldora de Bad Trip?",
+    answer: "No, una píldora de Bad Trip se convertirá automáticamente en una píldora de Full Health si tienes medio corazón o menos, evitando la eliminación accidental."
+  },
+  {
+    question: "¿Qué son las Horse Pills en Repentance?",
+    answer: "Las Horse Pills (Píldoras Gigantes) son versiones más grandes y ruidosas de las píldoras normales que activan efectos amplificados (por ejemplo, otorgando dos contenedores de corazón en lugar de uno) al ser consumidas."
+  }
+]} />
+
+</Section>
