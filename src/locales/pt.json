@@ -2081,7 +2081,7 @@
           "conflicts": "Pacotes grandes de salas, inimigos, estágios e conteúdo podem se sobrepor; teste este mod com uma carga pequena antes de adicionar mais reformulações."
         },
         {
-          "id": "instalacao-e-ativacao",
+          "id": "installation-and-activation",
           "name": "Instalação e Ativação",
           "category": "Configuração",
           "best_for": "Uma primeira configuração limpa de mods",
@@ -2091,7 +2091,7 @@
           "conflicts": "Não se inscreva em substituições obsoletas e mantidas ao mesmo tempo."
         },
         {
-          "id": "ordem-de-carregamento-e-solucao-de-problemas",
+          "id": "load-order-and-troubleshooting",
           "name": "Ordem de Carregamento e Solução de Problemas",
           "category": "Configuração",
           "best_for": "Corrigindo travamentos, menus ausentes, HUDs duplicados e áudio corrompido",

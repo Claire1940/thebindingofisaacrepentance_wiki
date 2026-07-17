@@ -2081,7 +2081,7 @@
           "conflicts": "Los packs grandes de habitaciones, enemigos, etapas y contenido pueden solaparse; prueba este mod con una carga pequeña antes de añadir más revisiones."
         },
         {
-          "id": "instalacion-y-activacion",
+          "id": "installation-and-activation",
           "name": "Instalación y activación",
           "category": "Configuración",
           "best_for": "Una configuración limpia de mods por primera vez",
@@ -2091,7 +2091,7 @@
           "conflicts": "No te suscribas a reemplazos obsoletos y mantenidos al mismo tiempo."
         },
         {
-          "id": "orden-de-carga-y-resolucion-de-problemas",
+          "id": "load-order-and-troubleshooting",
           "name": "Orden de carga y resolución de problemas",
           "category": "Configuración",
           "best_for": "Solución de cierres inesperados, menús faltantes, HUDs duplicados y audio roto",
