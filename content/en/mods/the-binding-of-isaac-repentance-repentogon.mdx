@@ -1,0 +1,166 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "the binding of isaac repentance repentogon: Setup Guide",
+  description: "Optimize your game with the binding of isaac repentance repentogon script extender. Learn installation, compatibility, and troubleshooting.",
+  category: "Tutorial",
+  image: "https://placehold.co/800x400/120b0d/f4e9e7?text=Repentogon+Setup+Guide",
+  date: "2026-07-17",
+  author: "the binding of isaac repentance Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **Primary Framework**: The script extender optimizes performance and expands modding capabilities.
+- **Key Mechanic**: Bypasses traditional Lua API bottlenecks using native C++ engine hooks.
+- **Best Strategy**: Always backup your game saves before installing any native executable modifications.
+- **Critical Tip**: Keep the framework updated to match the current Steam version of the game.
+- **Top Choice**: Essential for heavy modpacks like Fiend Folio and advanced UI overlays.
+</Callout>
+
+<Section icon={Sparkles} title="Understanding the binding of isaac repentance repentogon Framework">
+
+Modding has always been a cornerstone of longevity for players. However, as mods became more complex, the built-in Lua API began to show severe performance limitations. The introduction of **the binding of isaac repentance repentogon** has completely changed the modding landscape. This tool is a native script extender and engine enhancer that hooks directly into the game executable, allowing mod developers to access deep engine functions that were previously completely unreachable.
+
+Unlike standard Steam Workshop mods that run strictly within the restricted Lua sandbox, this framework operates at a native level. It optimizes memory allocation, reduces frame drops caused by complex item synergies, and introduces custom rendering pipelines. For players running dozens of mods simultaneously, installing this framework is the single most effective way to stabilize frame rates and prevent hard desktop crashes.
+
+| Feature | Standard Lua API | Repentogon Extender |
+| :--- | :--- | :--- |
+| **Execution Level** | Sandboxed Lua interpreter | Native C++ executable hooking |
+| **UI Rendering** | Restricted to basic sprite layers | Custom UI elements and shaders |
+| **Performance** | High CPU overhead with massive mod loads | Highly optimized memory and draw calls |
+| **Engine Bug Fixes** | None (requires manual mod workarounds) | Direct hardcoded engine patch application |
+| **Save File Stability** | Vulnerable to corruption from mod limits | Robust custom save serialization |
+
+<Callout type="tip" title="Achievement Compatibility">
+Using this native framework does not disable Steam achievements, provided you have defeated Mom at least once on your save file without active mods enabled first.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="System Requirements and Compatibility">
+
+Before attempting to install the framework, it is vital to ensure your system and game version are fully compatible. Because this tool hooks directly into the game's memory space, it is highly sensitive to version mismatches. It is designed specifically for the official Steam release of the Repentance expansion and will not work correctly with outdated, DRM-free, or unauthorized copies of the game.
+
+The framework supports both Windows and Linux environments, including the Steam Deck. On Linux-based platforms, it utilizes Proton compatibility layers to inject the necessary libraries smoothly. Compatibility with other major mods is highly stable, as the framework is designed to cooperate with the Steam Workshop rather than replace it entirely.
+
+<CardGrid cols={3}>
+  <Card title="Windows Systems">
+    - **Windows 10 or 11** (64-bit)
+    - Steam version of Repentance
+    - Visual C++ Redistributable installed
+  </Card>
+  <Card title="Linux & Steam Deck">
+    - **Proton Experimental** or Proton 8.0+
+    - Custom launch launch options configured
+    - Standard desktop mode access
+  </Card>
+  <Card title="Hardware Impact">
+    - **Zero additional CPU overhead**
+    - Reduced RAM usage during heavy synergies
+    - Improved garbage collection handling
+  </Card>
+</CardGrid>
+
+| Platform | Compatibility Status | Required Steps |
+| :--- | :--- | :--- |
+| **Steam (Windows)** | Fully Supported | Direct drag-and-drop installation |
+| **Steam (Linux/Steam Deck)** | Fully Supported | Requires Proton launch options tweak |
+| **Epic Games Store** | Unstable | Manual injection required |
+| **GOG / DRM-Free** | Not Supported | Native hooks fail to locate Steam API |
+
+<Callout type="warning" title="Version Matching">
+Always ensure your game is fully updated on Steam before installing the framework. A mismatched executable version will cause the game to crash immediately upon startup.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="How to Install Repentogon">
+
+The installation process is straightforward but requires manual file placement since native code injectors cannot be distributed directly through the standard Steam Workshop. Follow these steps carefully to ensure a clean setup without risking your existing save progress.
+
+<Steps>
+  <Step num="1" title="Backup Save Data">
+    Locate your save folder, typically found in the Steam user data directory or the My Games folder on Windows. Copy the entire folder to a secure backup location on your desktop.
+  </Step>
+  <Step num="2" title="Download the Release Package">
+    Visit the official GitHub repository for the project and download the latest compiled zip archive. Ensure you only download files from verified official sources to avoid security risks.
+  </Step>
+  <Step num="3" title="Extract Files to Root Directory">
+    Open your Steam library, right-click the game, select Manage, and click Browse Local Files. Extract the contents of the downloaded zip directly into this root folder next to the main executable.
+  </Step>
+  <Step num="4" title="Verify the Installation">
+    Launch the game through Steam. Look at the main menu; a custom version string or logo overlay should appear in the corner, confirming the native hook has loaded successfully.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Installation Verified">
+Once the custom logo appears on the main menu, the framework is active. You can now safely subscribe to advanced Steam Workshop mods that require this extender.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Optimized Mods and Save Management">
+
+With the native framework active, you can unlock the full potential of several high-profile mods. Many complex interface adjustments and total conversion mods now require this tool as a mandatory dependency. For instance, advanced item description overlays utilize the native hooks to display real-time synergy calculations and accurate item pool tracking.
+
+Managing your mod load order becomes significantly easier as well. The framework automatically resolves common resource conflicts that previously caused silent errors or broken item pools during extended runs.
+
+| Mod Name | Category | Repentogon Benefit |
+| :--- | :--- | :--- |
+| **External Item Descriptions** | Interface | Real-time Spindown Dice previews and Bag of Crafting recipes |
+| **Soundtrack Menu** | Audio | Dynamic floor-by-floor music mixing without audio lag |
+| **Fiend Folio: Reheated** | Content Expansion | Drastically reduced loading times and stabilized custom entity limits |
+
+<Checklist
+  id="post-install-verification"
+  title="Post-Installation Checklist:"
+  items={[
+    "Verify the save files loaded correctly without losing completion marks",
+    "Confirm the developer console opens using the tilde key",
+    "Test a run with high-overhead synergies to check frame rate stability",
+    "Enable the automatic update checker in the configuration file"
+  ]}
+/>
+
+<Callout type="info" title="Configuring Settings">
+You can customize the framework's behavior by editing the generated configuration file in your game directory. This allows you to toggle specific engine bug fixes on or off.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Troubleshooting Common Errors">
+
+If your game fails to launch or crashes frequently after installation, the cause is usually a simple configuration error or a conflict with outdated third-party overlays. Most issues can be resolved by verifying your game files or updating the runtime libraries on your operating system.
+
+If you experience persistent issues on Linux or Steam Deck, double-check your Proton launch options. The DLL override command must be written exactly as specified in the official documentation to force the Wine environment to load the injected library.
+
+<Callout type="warning" title="Overlay Conflicts">
+Disable hardware monitoring overlays such as RivaTuner, MSI Afterburner, or Discord screenshare if you experience random crashes when loading into a run.
+</Callout>
+
+<FAQ items={[
+  {
+    question: "What is the binding of isaac repentance repentogon and is it safe to use?",
+    answer: "It is a community-developed native script extender that hooks into the game engine to improve performance and modding capabilities. It is completely open-source, safe, and free of malware."
+  },
+  {
+    question: "Will using this framework corrupt my existing save files?",
+    answer: "No, it does not alter your vanilla save structure. However, because it allows mods to save more complex data, backing up your saves before installation is highly recommended."
+  },
+  {
+    question: "How do I update the script extender when a new game patch is released?",
+    answer: "You must download the updated release package from the official repository and overwrite the existing files in your game directory. Standard Steam Workshop updates will not update native files automatically."
+  },
+  {
+    question: "Can I play online co-op with this framework enabled?",
+    answer: "Yes, but all players in the online lobby must have the exact same version of the framework and the same mod loadout installed to prevent synchronization errors."
+  }
+]} />
+
+</Section>

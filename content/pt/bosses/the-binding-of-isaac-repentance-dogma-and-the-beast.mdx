@@ -1,0 +1,183 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Guia de Chefes de The Binding of Isaac Repentance: Dogma e The Beast",
+  description: "Domine a rota final em The Binding of Isaac: Repentance. Aprenda a derrotar o Dogma, os Ultra Cavaleiros e The Beast com nosso guia de chefes de 2026.",
+  category: "Guia",
+  image: "https://placehold.co/800x400/1e1417/f4e9e7?text=Dogma+and+The+Beast+Guide",
+  date: "2026-07-17",
+  author: "Equipe da Wiki de The Binding of Isaac: Repentance"
+}
+
+<Callout type="info" title="Guia Rápido">
+- **Rota do Chefe Final**: Para enfrentar **the binding of isaac repentance dogma and the beast**, você deve primeiro derrotar Mother uma vez para desbloquear a Strange Door (Porta Estranha) em Depths II (Profundezas II).
+- **A Porta Estranha**: Requer a Polaroid ou o Negative (Negativo) para abrir. Use um efeito de teletransporte (como a carta The Fool de uma caveira marcada) após derrotar Mom para retornar à sala inicial.
+- **A Ascensão**: Uma sequência de andares invertidos que leva de volta ao andar Home (Lar), onde o confronto final começa.
+- **Desafio de Chefes**: O final consiste em três fases distintas: Dogma, os quatro Ultra Horsemen (Ultra Cavaleiros) e, finalmente, The Beast (A Besta).
+- **Dica de Sobrevivência**: A gestão de vida é crítica, pois não há salas de itens padrão ou lojas durante a Ascensão ou na sequência de batalhas finais.
+</Callout>
+
+<Section icon={Map} title="Desbloqueando a Rota Final: A Porta Estranha">
+
+Alcançar o verdadeiro final de **the binding of isaac repentance dogma and the beast** requer um conjunto específico de ações que diferem significativamente das rodadas padrão. Este caminho só fica disponível depois que você derrotar com sucesso a Mother no andar Corpse II (Cadáver II) pelo menos uma vez. Assim que esse pré-requisito for atendido, uma "Strange Door" (Porta Estranha) aparecerá na sala inicial de Depths II em todas as rodadas subsequentes.
+
+Navegar por esta rota exige um planejamento cuidadoso de seus recursos, especificamente seus itens ativos e cartas. Você não pode simplesmente passar pela porta; você deve ter a chave correta e uma maneira de retornar à sala inicial após a luta contra a Mom.
+
+| Requisito | Descrição | Como Obter |
+| :--- | :--- | :--- |
+| **Derrotar Mother** | Desbloqueio permanente para a rota | Derrote Mother em Corpse II |
+| **A Porta Estranha** | Entrada para Mausoleum II / Home | Localizada na sala inicial de Depths II |
+| **Polaroid/Negative** | A "Chave" para a Porta Estranha | Derrote Mom em Depths II |
+| **Teletransporte** | Necessário para sair da sala de chefe da Mom | Exploda com uma bomba a caveira com um pequeno X em Depths II |
+| **Dad's Note** | Ativa a sequência da Ascensão | Encontrada na sala de chefe de Mausoleum II |
+
+<Callout type="warning" title="Requisito Crítico">
+Não se esqueça de explodir a caveira marcada (tinted skull) em Depths II. É garantido que ela deixará cair a carta **The Fool** (O Louco), que é a sua única maneira confiável de se teletransportar para fora da sala de chefe da Mom após pegar a Polaroid ou o Negative. Sem isso, você não conseguirá alcançar a Strange Door.
+</Callout>
+
+</Section>
+
+<Section icon={Steps} title="Passo a Passo: A Jornada para Casa">
+
+A transição de uma rodada padrão para o confronto final é conhecida como a Ascensão. Durante esta fase, você viaja de volta pelos andares que limpou anteriormente, encontrando versões "Tainted" (Corrompidas) dos inimigos padrão.
+
+<Steps>
+  <Step num="1" title="Limpe Depths II e Teletransporte-se">
+    Avance por Depths II normalmente. Localize a caveira marcada, pegue a carta The Fool e derrote a Mom. Pegue a Polaroid ou o Negative e use a carta The Fool imediatamente para retornar ao início.
+  </Step>
+  <Step num="2" title="Abra a Porta Estranha">
+    Caminhe até a Strange Door no topo da sala inicial. Isso consumirá sua Polaroid/Negative e transportará você para uma versão especial de Mausoleum II.
+  </Step>
+  <Step num="3" title="Recupere a Dad's Note">
+    Limpe Mausoleum II até chegar à sala do chefe. Em vez de um chefe padrão, você encontrará a **Dad's Note** em um pedestal. Pegar este item ativa a Ascensão e muda a música para uma trilha sonora sombria e cinematográfica.
+  </Step>
+  <Step num="4" title="A Sequência da Ascensão">
+    Viaje através dos feixes de luz na sala inicial de cada andar. Você se moverá de Mausoleum para Depths, Caves e Basement. Note que as Salas do Tesouro (Treasure Rooms) e Lojas (Shops) no caminho de subida conterão itens apenas se você os tiver deixado sem coletar na descida.
+  </Step>
+  <Step num="5" title="Chegada ao Home">
+    Após o feixe de luz final em Basement I, você chega ao andar Home (Lar). Esta é uma área segura sem inimigos. Explore os quartos para encontrar a Cama da Mom (que cura você completamente) e um baú no quarto da Mom.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Desbloqueio de Personagem Tainted">
+Em sua primeira viagem ao Home, o baú no quarto da Mom contém a **Red Key** (Chave Vermelha). Em rodadas subsequentes, se você deixar um trinket (bugiganga) em uma Sala do Tesouro ou Sala do Chefe durante a descida, ele se transformará em uma **Cracked Key** (Chave Rachada) durante a Ascensão. Use qualquer uma das chaves no armário oculto no corredor em Home para desbloquear a versão Tainted do seu personagem atual.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Fase 1: Derrotando o Dogma">
+
+A luta contra **the binding of isaac repentance dogma and the beast** começa na sala de estar do andar Home. Depois de assistir à estática da televisão, o Dogma surge. Este chefe tem duas fases distintas e depende muito de projéteis com tema de estática e movimentos de alta velocidade.
+
+<CardGrid cols={2}>
+  <Card title="Fase 1: A Televisão">
+    - **Orbes de Estática**: Dispara projéteis que permanecem na tela e explodem em faíscas menores.
+    - **Feixe de Brimstone**: Um laser massivo e contínuo que persegue Isaac. Você deve circular o chefe para evitá-lo.
+    - **Esmagador de Tela**: O Dogma mergulha no chão e emerge em outro lugar, causando dano de contato.
+  </Card>
+  <Card title="Fase 2: A Forma Angélica">
+    - **Halos Giratórios**: O Dogma gira rapidamente, liberando um anel de halos de luz que ricocheteiam nas paredes.
+    - **Chuva de Penas**: Dispara uma onda densa de penas em um arco amplo.
+    - **Sopro de Deus**: Um feixe de luz sagrada que varre a sala.
+  </Card>
+</CardGrid>
+
+| Fase | Tipo de Vida | Perigo Principal | Estratégia |
+| :--- | :--- | :--- | :--- |
+| **Fase 1** | Estacionário | Feixe Perseguidor | Mantenha-se em movimento e circule o chefe |
+| **Fase 2** | Móvel | Investidas de alta velocidade | Fique atento à animação de rotação |
+
+<Callout type="info" title="O Item Dogma">
+Derrotar o Dogma concede automaticamente o item **Dogma**. Este é um item passivo especial que fornece voo, um aumento de dano e um efeito de Holy Mantle (Manto Sagrado) de uso único. Isso é essencial para a batalha final de rolagem de tela contra The Beast.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Fase 2: O Desafio dos Ultra Cavaleiros">
+
+Imediatamente após a queda do Dogma, Isaac é transportado para uma arena de rolagem horizontal sobre um mar de fogo. Você deve enfrentar os quatro Ultra Horsemen em sequência. Cada cavaleiro tem um padrão de ataque único que requer posicionamento preciso.
+
+| Cavaleiro | Ataque Assinatura | Melhor Resposta |
+| :--- | :--- | :--- |
+| **Ultra Famine** | Voa e realiza ataques de investida | Fique no extremo esquerdo da tela |
+| **Ultra Pestilence** | Bombas de veneno explosivas | Mantenha distância para evitar nuvens de gás |
+| **Ultra War** | Bolas de fogo e bombas teleguiadas | Desvie entre os projéteis em queda |
+| **Ultra Death** | Golpes de foice e caveiras | Foque na trajetória das foices |
+
+<Callout type="tip" title="Dica de Combate Pro">
+Durante a fase do Ultra Death, ele ocasionalmente invocará quatro grandes foices que giram pela tela. Posicionar-se na área centro-esquerda geralmente oferece mais tempo para reagir aos seus padrões de movimento.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Fase 3: A Batalha Final Contra The Beast">
+
+O clímax de **the binding of isaac repentance dogma and the beast** é a batalha contra a própria The Beast. Este é um chefe massivo que permanece no lado direito da tela enquanto o cenário rola. A luta é um teste de resistência e desvio de projéteis.
+
+**Padrões de Ataque de The Beast:**
+- **Anéis de Fogo**: The Beast inspira profundamente, puxando Isaac em direção à sua boca, e depois expira grandes anéis de fogo. Você deve voar através das aberturas nos anéis.
+- **Estalactites de Lava**: Conforme The Beast se move, rochas caem do teto. Elas criam respingos de fogo ao atingirem o chão.
+- **A Perseguição**: The Beast mergulha na água e persegue Isaac pela esquerda. Você deve voar por cima ou por baixo do chefe enquanto desvia de jatos de fogo.
+- **O Rugido**: Um grito que ocupa toda a tela, empurrando Isaac de volta e liberando uma enxurrada de projéteis.
+
+<Checklist
+  id="beast-survival"
+  title="Preparação para a Luta Final:"
+  items={[
+    "Certifique-se de ter pelo menos 6+ corações antes de sair de Home",
+    "Priorize itens que forneçam tiros teleguiados ou alta cadência de tiro",
+    "Use a Cama da Mom em Home para restaurar todos os Corações Vermelhos",
+    "Guarde quaisquer cartas de invulnerabilidade (como Algiz) para a fase dos anéis de fogo",
+    "Foque no movimento horizontal para ficar fora do alcance de inspiração de The Beast"
+  ]}
+/>
+
+<Callout type="warning" title="Perigo de Inspiração">
+Quando The Beast começar a inspirar, ela puxará quaisquer itens soltos ou bombas. Não solte bombas durante esta fase, a menos que queira que elas sejam sugadas pelo chefe, o que causa dano significativo, mas coloca você em risco de ser puxado também.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Recompensas e Marcas de Conclusão">
+
+Derrotar The Beast é o objetivo final para cada personagem em Repentance. Isso desbloqueia o final verdadeiro (Final 22) e fornece alguns dos itens mais poderosos do jogo.
+
+| Personagem | Recompensa de Desbloqueio | Tipo de Item |
+| :--- | :--- | :--- |
+| **Lilith** | C Section | Passivo (S-Tier) |
+| **Tainted Isaac** | Glitched Crown | Passivo (S-Tier) |
+| **Tainted Lilith** | Twisted Pair | Familiar |
+| **Tainted Lost** | Sacred Orb | Passivo |
+| **Isaac** | Options? | Passivo |
+
+<Callout type="success" title="Vitória Final">
+Completar a rota de The Beast com todos os personagens (incluindo as versões Tainted) é um requisito para a conquista **Dead God** (Deus Morto). Este caminho representa a conclusão narrativa da jornada de Isaac, então aproveite o final cinematográfico!
+</Callout>
+
+<FAQ items={[
+  {
+    question: "Como abro a Strange Door em Repentance?",
+    answer: "Você deve derrotar a Mom em Depths II, pegar a Polaroid ou o Negative e usar um efeito de teletransporte (como a carta The Fool de uma caveira marcada) para retornar à sala inicial onde a porta está localizada."
+  },
+  {
+    question: "Qual é a melhor maneira de se preparar para a luta contra o Dogma?",
+    answer: "Limpe o andar Home completamente e durma na Cama da Mom por último. Isso garante que você entre na luta com a vida cheia. Se você tiver Corações de Alma (Soul Hearts) ou Corações Negros (Black Hearts), tente preservá-los para a fase dos Ultra Cavaleiros."
+  },
+  {
+    question: "Posso usar a Red Key na luta contra The Beast?",
+    answer: "Não, a Red Key é usada especificamente no andar Home para desbloquear personagens Tainted. Ela não tem nenhum efeito especial durante as batalhas reais contra o Dogma ou The Beast."
+  },
+  {
+    question: "The Beast tem armadura de chefe (boss armor)?",
+    answer: "Sim, como muitos chefes de fim de jogo em The Binding of Isaac: Repentance, o Dogma e The Beast têm escalonamento de dano (armadura de chefe), o que significa que acertos únicos de alto dano são menos eficazes do que builds consistentes de alta cadência de tiro."
+  }
+]} />
+
+</Section>

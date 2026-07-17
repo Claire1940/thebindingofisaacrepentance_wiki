@@ -1,0 +1,181 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Guía para principiantes de The Binding of Isaac: Repentance - Estrategias paso a paso para ganar",
+  description: "Domina los conceptos básicos de The Binding of Isaac: Repentance con nuestra guía para principiantes de 2026. Aprende sobre gestión de salud, sinergias de objetos y la mejor ruta hacia Mamá.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/120b0d/f4e9e7?text=Repentance+Beginner+Guide",
+  date: "2026-07-17",
+  author: "Equipo de la Wiki de The Binding of Isaac: Repentance"
+}
+
+<Callout type="info" title="Guía rápida">
+- **Guía para principiantes de The Binding of Isaac: Repentance**: Aprende a equilibrar la salud, los recursos y las sinergias de objetos para asegurar tu primera victoria.
+- **Bucle principal**: Limpia habitaciones, recoge consumibles, derrota al jefe del piso y desciende más profundo en el sótano.
+- **Gestión de salud**: Protege tus Corazones de Alma para garantizar altas probabilidades de salas del Ángel y del Demonio.
+- **Prioridad de recursos**: Usa llaves para las Salas del Tesoro y Tiendas, y reserva las bombas para Rocas Marcadas (Tinted Rocks) o Salas Secretas.
+- **HUD Encontrado (Found HUD)**: Activa siempre el Found HUD en las opciones para realizar un seguimiento de tus estadísticas numéricas durante la partida.
+</Callout>
+
+<Section icon={Map} title="Dominando el movimiento y los controles básicos">
+
+Comenzar tu viaje en el sótano puede ser abrumador. La habilidad más fundamental en esta **guía para principiantes de The Binding of Isaac: Repentance** es el movimiento y el disparo independientes. La mayoría de los enemigos en Repentance apuntan a tu posición actual, lo que significa que se requiere un movimiento constante y deliberado para sobrevivir. A diferencia de otros juegos de disparos, a menudo necesitarás anticipar tus disparos, ya que la inercia de tu personaje se transfiere a tus lágrimas.
+
+Antes de sumergirte en estrategias complejas, asegúrate de optimizar tus ajustes. Las opciones "Found HUD" (HUD Encontrado) y "Extra HUD" son esenciales para ver tu daño exacto, cadencia de fuego y estadísticas de suerte, así como para realizar un seguimiento de los objetos que has recolectado.
+
+| Estadística | Función | Importancia |
+| :--- | :--- | :--- |
+| **Daño** | Determina cuánta vida pierden los enemigos por golpe | Alta |
+| **Cadencia de fuego** | Controla cuántas lágrimas disparas por segundo | Alta |
+| **Rango** | Determina qué tan lejos viajan tus lágrimas | Media |
+| **Velocidad de disparo** | Qué tan rápido se mueven tus proyectiles por el aire | Media |
+| **Velocidad** | Tu velocidad de movimiento (el límite es 2.0) | Alta |
+| **Suerte** | Afecta a las apariciones de objetos en salas y a la probabilidad de activación de ciertos objetos | Media |
+
+<Callout type="tip" title="Consejo profesional de movimiento">
+Evita pararte contra las paredes. La mayoría de los jefes tienen daño de área o proyectiles que rebotan, y quedar atrapado en una esquina es una forma garantizada de perder salud. Mantente hacia el centro de la habitación para conservar el máximo espacio para esquivar.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Mecánicas de salud y estrategias de supervivencia">
+
+Sobrevivir en Repentance no se trata solo de tener mucha salud; se trata de tener el *tipo correcto* de salud. El juego distingue entre varios tipos de corazones, y cada uno cumple un propósito específico en la economía de tu partida.
+
+<CardGrid cols={3}>
+  <Card title="Corazones Rojos">
+    - Contenedores **rellenables**
+    - Se usan para pagar Pactos con el Demonio
+    - Recibir daño en los Corazones Rojos reduce las probabilidades de Pacto
+  </Card>
+  <Card title="Corazones de Alma">
+    - Salud azul **temporal**
+    - Protegen tus contenedores de Corazón Rojo
+    - Preservan las tasas de aparición de Salas del Ángel/Demonio
+  </Card>
+  <Card title="Corazones Negros">
+    - Salud temporal **ofensiva**
+    - Infligen 40 de daño a todos los enemigos al perderse
+    - Funcionan como los Corazones de Alma para protección
+  </Card>
+</CardGrid>
+
+<Callout type="warning" title="Penalización crítica">
+Recibir daño de Corazón Rojo en un piso reduce significativamente tu probabilidad de que aparezca una Sala del Demonio o del Ángel después del jefe. Prioriza siempre recoger Corazones de Alma para que actúen como un amortiguador para tus porcentajes de "Pacto".
+</Callout>
+
+Para maximizar tu supervivencia, debes entender cómo reponer estos recursos. Más allá de las apariciones estándar en las habitaciones, busca las **Rocas Marcadas (Tinted Rocks)**: rocas de un color ligeramente diferente marcadas con una pequeña "X". Explotarlas a menudo otorga Corazones de Alma, llaves o incluso el objeto "Small Rock" (Pequeña Roca).
+
+| Recurso | Fuente principal | Mejor uso |
+| :--- | :--- | :--- |
+| **Monedas** | Limpieza de habitaciones / Cacas | Comprar objetos en la Tienda |
+| **Bombas** | Cofres / Rocas Marcadas | Encontrar Salas Secretas / Daño a jefes |
+| **Llaves** | Tienda / Cofres | Abrir Salas del Tesoro / Cofres dorados |
+
+</Section>
+
+<Section icon={Target} title="Gasto de recursos y prioridad de habitaciones">
+
+Gestionar tus llaves y bombas limitadas marca la diferencia entre una partida fallida y una build completamente rota. En los primeros pisos (Sótano I y II), tus recursos son escasos. Esta **guía para principiantes de The Binding of Isaac: Repentance** recomienda una lista de prioridad estricta para gastar tus recursos.
+
+<Steps>
+  <Step num="1" title="La Sala del Tesoro">
+    Cada piso (excepto los finales) contiene una Sala del Tesoro. La mayoría requiere una llave. Esta es tu fuente principal de objetos pasivos y activos. Visítala siempre primero.
+  </Step>
+  <Step num="2" title="La Tienda">
+    Las Tiendas requieren una llave y 15 monedas para un objeto importante. Proporcionan utilidad como Corazones de Alma, mapas y baterías. Entra solo si tienes al menos 15 monedas o una necesidad desesperada de salud.
+  </Step>
+  <Step num="3" title="Salas Secretas">
+    Usa bombas para encontrar Salas Secretas. Una Sala Secreta normal suele estar adyacente a 3 o 4 habitaciones normales. Las Salas Súper Secretas suelen estar cerca de la sala del Jefe y tocan solo una pared.
+  </Step>
+  <Step num="4" title="Salas del Demonio y del Ángel">
+    Aparecen después de una pelea contra un jefe y ofrecen los objetos más poderosos del juego. Las Salas del Demonio cuestan contenedores de corazón, mientras que las Salas del Ángel son gratuitas pero requieren que omitas el primer Pacto con el Demonio.
+  </Step>
+</Steps>
+
+<Callout type="info" title="Estrategia de gasto">
+Si solo tienes una llave y ves tanto una Tienda como una Sala del Tesoro, elige siempre la Sala del Tesoro. El potencial de una mejora de daño supera la utilidad de la Tienda al principio de la partida.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="La ruta de la primera partida hacia Mamá">
+
+Tu objetivo inicial es llegar y derrotar a Mamá en las Profundidades II (Depths II). Esto desbloquea la siguiente etapa del juego, incluyendo el Útero (Womb) y varios objetos nuevos. Seguir una ruta constante es clave para que los principiantes acumulen fuerza antes de que la dificultad aumente abruptamente.
+
+| Capítulo | Pisos | Objetivo clave | Dificultad |
+| :--- | :--- | :--- | :--- |
+| **Sótano (Basement)** | I y II | Recoger más de 2 objetos, encontrar Corazones de Alma | Fácil |
+| **Cuevas (Caves)** | I y II | Aumentar el daño, visitar la Tienda | Media |
+| **Profundidades (Depths)** | I y II | Finalizar la build, derrotar a Mamá | Difícil |
+| **Útero (Womb)** | I y II | Sobrevivir al daño de un corazón completo | Muy difícil |
+
+<Checklist
+  id="boss-prep"
+  title="Lista de preparación antes de Mamá:"
+  items={[
+    "Asegúrate de tener al menos 3 o 4 contenedores de corazón en total",
+    "Identifica al menos una mejora de Daño o de Cadencia de fuego",
+    "Ten al menos 2 bombas para la pelea contra Mamá",
+    "Busca la Biblia en la Tienda (mata instantáneamente a Mamá)"
+  ]}
+/>
+
+<Callout type="success" title="Condición de victoria">
+Derrotar a Mamá por primera vez desbloquea "El Útero". Las victorias posteriores desbloquearán el "Corazón de Mamá", que debe ser derrotado 11 veces para desbloquear las verdaderas rutas del final del juego, como la Catedral y el Sheol.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Mejores personajes para principiantes y desbloqueos">
+
+No todos los personajes son iguales. Para tus primeras partidas, algunos personajes ofrecen mucha más tolerancia que otros. A medida que progreses, desbloquearás las variantes "Tainted" (Corrompidas), pero concentrarse en el elenco principal es esencial para aprender las mecánicas.
+
+| Personaje | Salud inicial | Ventaja única | Requisito de desbloqueo |
+| :--- | :--- | :--- | :--- |
+| **Isaac** | 3 Corazones Rojos | Estadísticas equilibradas (más adelante obtiene el D6) | Disponible desde el inicio |
+| **Magdalena** | 4 Corazones Rojos | Alta salud y curación | Tener 7 o más contenedores de corazón |
+| **Caín** | 2 Corazones Rojos | Alto daño y Suerte | Tener 55 o más monedas |
+| **Azazel** | 3 Corazones Negros | Vuelo y Brimstone de corto alcance | Realizar 3 Pactos con el Demonio en una sola partida |
+
+<Callout type="tip" title="La mejor opción para empezar">
+**Azazel** es ampliamente considerado el mejor personaje para principiantes. Su capacidad para volar le permite esquivar obstáculos y alcanzar consumibles detrás de fosas, mientras que su rayo Brimstone inflige un daño masivo a los jefes de los primeros pisos.
+</Callout>
+
+Según las [Guías oficiales de la comunidad de Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2221730030), priorizar los desbloqueos de Azazel desde el principio puede ayudarte a comprender las mecánicas de movimiento del juego sin la frustración de tener un daño bajo.
+
+</Section>
+
+<Section icon={Sparkles} title="Preguntas frecuentes: The Binding of Isaac Repentance">
+
+<FAQ items={[
+  {
+    question: "¿Cómo desbloqueo el nuevo contenido de Repentance?",
+    answer: "Para acceder a las rutas alternativas y a los nuevos jefes en Repentance, primero debes derrotar a Hush tres veces. Esto abre la 'Salida Secreta' que conduce a Downpour (Aguacero), Mines (Minas) y el Mausoleum (Mausoleo)."
+  },
+  {
+    question: "¿Debería elegir Pactos con el Demonio o Salas del Ángel?",
+    answer: "Para los principiantes, las Salas del Ángel suelen ser mejores porque son gratuitas. Para garantizar una Sala del Ángel, no entres en la primera Sala del Demonio que aparezca en el Piso 2. La siguiente aparición de pacto tendrá entonces un 100% de probabilidad de ser una Sala del Ángel."
+  },
+  {
+    question: "¿Cuál es el mejor objeto para un principiante?",
+    answer: "Objetos como 'Sacred Heart' (daño masivo + disparos teledirigidos) y 'Holy Mantle' (bloquea un golpe por habitación) son de primer nivel. Para una guía de principiantes, 'The Revelations' también es excelente, ya que proporciona vuelo y un rayo sagrado."
+  },
+  {
+    question: "¿Por qué sigo muriendo en el Útero?",
+    answer: "En el Útero y en todos los capítulos posteriores, cada golpe inflige un corazón completo de daño en lugar de medio corazón. Esto hace que la gestión de la salud y el esquivar sean aún más críticos a medida que desciendes."
+  }
+]} />
+
+<Callout type="info" title="Consejo final">
+No te desanimes por la muerte. The Binding of Isaac: Repentance es un juego de conocimiento. Cada muerte te enseña el patrón de un enemigo o una sinergia de objetos que hará que tu próxima partida sea más exitosa.
+</Callout>
+
+</Section>

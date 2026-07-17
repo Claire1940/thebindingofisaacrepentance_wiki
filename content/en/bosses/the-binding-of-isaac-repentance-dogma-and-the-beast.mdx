@@ -1,0 +1,183 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "The Binding of Isaac Repentance Dogma and the Beast: Boss Guide",
+  description: "Master the final route in The Binding of Isaac: Repentance. Learn how to defeat Dogma, the Ultra Horsemen, and The Beast with our 2026 boss guide.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/1e1417/f4e9e7?text=Dogma+and+The+Beast+Guide",
+  date: "2026-07-17",
+  author: "the binding of isaac repentance Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **Final Boss Route**: To encounter **the binding of isaac repentance dogma and the beast**, you must first defeat Mother once to unlock the Strange Door in Depths II.
+- **The Strange Door**: Requires the Polaroid or Negative to open. Use a teleportation effect (like The Fool from a marked skull) after defeating Mom to return to the starting room.
+- **The Ascension**: A reverse-floor sequence leading back to Home where the final encounter begins.
+- **Boss Gauntlet**: The finale consists of three distinct stages: Dogma, the four Ultra Horsemen, and finally The Beast.
+- **Survival Tip**: Health management is critical as there are no standard item rooms or shops during the Ascension or the final fight sequence.
+</Callout>
+
+<Section icon={Map} title="Unlocking the Final Route: The Strange Door">
+
+Reaching the true final ending of **the binding of isaac repentance dogma and the beast** requires a specific set of actions that differ significantly from standard runs. This path is only available after you have successfully defeated Mother in the Corpse II floor at least once. Once this prerequisite is met, a "Strange Door" will appear in the starting room of Depths II on every subsequent run.
+
+Navigating this route requires careful planning of your resources, specifically your active items and cards. You cannot simply walk through the door; you must have the correct key and a way to return to the starting room after the Mom fight.
+
+| Requirement | Description | How to Obtain |
+| :--- | :--- | :--- |
+| **Mother Defeat** | Permanent unlock for the route | Defeat Mother in Corpse II |
+| **The Strange Door** | Entrance to the Mausoleum II / Home | Located in the Depths II starting room |
+| **Polaroid/Negative** | The "Key" for the Strange Door | Defeat Mom in Depths II |
+| **Teleportation** | Necessary to exit the Mom boss room | Bomb the skull with a small X in Depths II |
+| **Dad's Note** | Triggers the Ascension sequence | Found in the boss room of Mausoleum II |
+
+<Callout type="warning" title="Critical Requirement">
+Do not forget to bomb the tinted skull in Depths II. It is guaranteed to drop **The Fool** card, which is your only reliable way to teleport out of the Mom boss room after picking up the Polaroid or Negative. Without this, you cannot reach the Strange Door.
+</Callout>
+
+</Section>
+
+<Section icon={Steps} title="Step-by-Step: The Journey to Home">
+
+The transition from a standard run to the final confrontation is known as the Ascension. During this phase, you travel backward through the floors you previously cleared, encountering "Tainted" versions of standard enemies.
+
+<Steps>
+  <Step num="1" title="Clear Depths II and Teleport">
+    Progress to Depths II normally. Locate the tinted skull, pick up the Fool card, and defeat Mom. Take either the Polaroid or the Negative, then use the Fool card immediately to return to the start.
+  </Step>
+  <Step num="2" title="Open the Strange Door">
+    Walk into the Strange Door at the top of the starting room. This will consume your Polaroid/Negative and transport you to a special version of Mausoleum II.
+  </Step>
+  <Step num="3" title="Retrieve Dad's Note">
+    Clear Mausoleum II until you reach the boss room. Instead of a standard boss, you will find **Dad's Note** on a pedestal. Picking this up triggers the Ascension and changes the music to a somber, cinematic track.
+  </Step>
+  <Step num="4" title="The Ascension Sequence">
+    Travel through the light beams in the starting room of each floor. You will move from Mausoleum to Depths, Caves, and Basement. Note that Treasure Rooms and Shops on the way up contain items only if you left them uncollected on the way down.
+  </Step>
+  <Step num="5" title="Arrival at Home">
+    After the final light beam in Basement I, you arrive at the Home floor. This is a safe area with no enemies. Explore the rooms to find Mom's Bed (which fully heals you) and a chest in Mom's room.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Tainted Character Unlock">
+On your first trip to Home, the chest in Mom's room contains the **Red Key**. On subsequent runs, if you leave a trinket in a Treasure Room or Boss Room during the descent, it will transform into a **Cracked Key** during the Ascension. Use either key on the hidden closet in the hallway at Home to unlock the Tainted version of your current character.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Phase 1: Defeating Dogma">
+
+The fight against **the binding of isaac repentance dogma and the beast** begins in the living room of the Home floor. After watching the television static, Dogma emerges. This boss has two distinct phases and relies heavily on static-themed projectiles and high-speed movement.
+
+<CardGrid cols={2}>
+  <Card title="Phase 1: The Television">
+    - **Static Orbs**: Fires projectiles that linger and explode into smaller sparks.
+    - **Brimstone Beam**: A massive, continuous laser that tracks Isaac. You must circle the boss to avoid it.
+    - **Screen Smasher**: Dogma dives into the floor and emerges elsewhere, dealing contact damage.
+  </Card>
+  <Card title="Phase 2: The Angelic Form">
+    - **Spinning Halos**: Dogma spins rapidly, releasing a ring of light halos that bounce off walls.
+    - **Feather Spread**: Fires a dense wave of feathers in a wide arc.
+    - **God's Breath**: A holy light beam that sweeps across the room.
+  </Card>
+</CardGrid>
+
+| Phase | Health Type | Primary Danger | Strategy |
+| :--- | :--- | :--- | :--- |
+| **Phase 1** | Stationary | Tracking Beam | Stay mobile and circle-strafe |
+| **Phase 2** | Mobile | High-speed charges | Watch for the spinning animation |
+
+<Callout type="info" title="The Dogma Item">
+Defeating Dogma automatically grants you the **Dogma** item. This is a special passive that provides flight, a damage boost, and a one-time Holy Mantle effect. This is essential for the final scrolling battle against The Beast.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Phase 2: The Ultra Horsemen Gauntlet">
+
+Immediately after Dogma falls, Isaac is transported to a horizontal scrolling arena over a sea of fire. You must face the four Ultra Horsemen in sequence. Each horseman has a unique attack pattern that requires precise positioning.
+
+| Horseman | Signature Attack | Best Counter |
+| :--- | :--- | :--- |
+| **Ultra Famine** | Flies and dash attacks | Stay on the far left of the screen |
+| **Ultra Pestilence** | Explosive poison bombs | Keep distance to avoid gas clouds |
+| **Ultra War** | Fireballs and homing bombs | Weave between the falling projectiles |
+| **Ultra Death** | Scythe sweeps and skulls | Focus on the scythe's trajectory |
+
+<Callout type="tip" title="Pro Combat Tip">
+During the Ultra Death phase, he will occasionally summon four large scythes that spin across the screen. Positioning yourself in the center-left area usually provides the most time to react to their movement patterns.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Phase 3: The Beast Final Battle">
+
+The climax of **the binding of isaac repentance dogma and the beast** is the battle against The Beast itself. This is a massive boss that stays on the right side of the screen while the background scrolls. The fight is a test of endurance and projectile dodging.
+
+**The Beast's Attack Patterns:**
+- **Fire Rings**: The Beast inhales deeply, pulling Isaac toward its mouth, then exhales massive rings of fire. You must fly through the gaps in the rings.
+- **Lava Stalactites**: As The Beast moves, rocks fall from the ceiling. These create splashes of fire when they hit the bottom.
+- **The Chase**: The Beast dives underwater and chases Isaac from the left. You must fly over or under the boss while dodging fire geysers.
+- **The Roar**: A screen-wide scream that pushes Isaac back and releases a flurry of projectiles.
+
+<Checklist
+  id="beast-survival"
+  title="Final Fight Preparation:"
+  items={[
+    "Ensure you have at least 6+ hearts before leaving Home",
+    "Prioritize items that provide homing or high fire rate",
+    "Use Mom's Bed in Home to restore all Red Hearts",
+    "Save any invulnerability cards (like Algiz) for the fire ring phase",
+    "Focus on horizontal movement to stay out of the Beast's inhale range"
+  ]}
+/>
+
+<Callout type="warning" title="Inhale Hazard">
+When The Beast starts inhaling, it will pull in any loose pickups or bombs. Do not drop bombs during this phase unless you want them to be sucked into the boss, which deals significant damage but puts you at risk of being pulled in as well.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Rewards and Completion Marks">
+
+Defeating The Beast is the ultimate goal for every character in Repentance. It unlocks the final ending (Ending 22) and provides some of the most powerful items in the game.
+
+| Character | Unlock Reward | Item Type |
+| :--- | :--- | :--- |
+| **Lilith** | C Section | Passive (S-Tier) |
+| **Tainted Isaac** | Glitched Crown | Passive (S-Tier) |
+| **Tainted Lilith** | Twisted Pair | Familiar |
+| **Tainted Lost** | Sacred Orb | Passive |
+| **Isaac** | Options? | Passive |
+
+<Callout type="success" title="Final Victory">
+Completing the Beast route with every character (including Tainted versions) is a requirement for the **Dead God** achievement. This path represents the narrative conclusion of Isaac's journey, so enjoy the cinematic ending!
+</Callout>
+
+<FAQ items={[
+  {
+    question: "How do I open the Strange Door in Repentance?",
+    answer: "You must defeat Mom in Depths II, pick up the Polaroid or Negative, and then use a teleportation effect (like The Fool card from a tinted skull) to return to the starting room where the door is located."
+  },
+  {
+    question: "What is the best way to prepare for the Dogma fight?",
+    answer: "Clear the Home floor entirely and sleep in Mom's Bed last. This ensures you enter the fight with full health. If you have any Soul Hearts or Black Hearts, try to preserve them for the Ultra Horsemen phase."
+  },
+  {
+    question: "Can I use the Red Key in the Beast fight?",
+    answer: "No, the Red Key is used specifically in the Home floor to unlock Tainted characters. It has no special effect during the actual boss battles with Dogma or The Beast."
+  },
+  {
+    question: "Does the Beast have boss armor?",
+    answer: "Yes, like many late-game bosses in the binding of isaac repentance, Dogma and The Beast have damage scaling (boss armor), which means high-damage single hits are less effective than consistent, high-fire-rate builds."
+  }
+]} />
+
+</Section>

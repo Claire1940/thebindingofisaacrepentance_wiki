@@ -1,0 +1,202 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, Users, Settings, Info } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "The Binding of Isaac Repentance Coop: 2026 Setup & Synergy Guide",
+  description: "Master local and online play in The Binding of Isaac Repentance coop. Learn about shared resources, character synergies, and Repentance+ online features.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/120B0D/F4E9E7?text=Repentance+Coop+Guide",
+  date: "2026-07-17",
+  author: "the binding of isaac repentance Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **The Binding of Isaac Repentance coop** supports up to four players in both local and integrated online modes.
+- **Shared resources** include coins, bombs, and keys, while health and items are individual per character.
+- **Repentance+** is the specific DLC required for native Steam online matchmaking and friend invites.
+- **Completion marks** are earned by all eligible players simultaneously, making it an efficient way to unlock items.
+- **Team synergy** is vital; balancing high-damage characters with utility or tanky characters ensures run stability.
+</Callout>
+
+<Section icon={Users} title="Local vs Online: The Binding of Isaac Repentance Coop Evolution">
+
+The Binding of Isaac Repentance coop has completely revolutionized the way players descend into the basement. Gone are the days of limited "co-op babies" that merely floated alongside Isaac. In the current 2026 meta, multiplayer allows for up to four full characters, each with their own items, health pools, and unique abilities. Whether you are sitting on the same couch or connecting via the Repentance+ online system, the core loop remains a test of coordination and resource management.
+
+Understanding the difference between the two primary modes is essential for setting up a successful session. Local co-op is plug-and-play, whereas online play requires specific DLC ownership and version matching.
+
+| Feature | Local Co-op | Online Co-op (Repentance+) |
+| :--- | :--- | :--- |
+| **Player Limit** | Up to 4 players | Up to 4 players |
+| **Character Control** | Full characters | Full characters |
+| **Matchmaking** | None (Local only) | Public, Private, and Quick Match |
+| **DLC Required** | Repentance | Repentance + Repentance+ (Free) |
+| **Save Progression** | Host's save only | Individual save progression |
+| **Input Method** | Multiple controllers/KB | Steam-based individual inputs |
+
+<Callout type="tip" title="Pro Tip: Controller Priority">
+When playing local co-op, ensure all controllers are connected before starting the run. Players can join at the start of the first floor by pressing the 'Start' button on their respective devices.
+</Callout>
+
+</Section>
+
+<Section icon={Settings} title="Core Mechanics and Resource Management">
+
+In **the binding of isaac repentance coop**, the game's difficulty scales dynamically based on the number of players. Bosses gain additional health, and room layouts may become more crowded to compensate for the increased fire power of a four-man team. The most significant change, however, is how resources are handled. Unlike solo play where Isaac hoards everything, co-op requires a democratic approach to loot.
+
+Resources are categorized into two types: shared and individual. Managing these correctly is often the difference between a Dead God run and a quick trip back to the main menu.
+
+| Resource Type | Shared or Individual | Impact on Strategy |
+| :--- | :--- | :--- |
+| **Coins** | **Shared** | Group must decide on Shop purchases together. |
+| **Bombs** | **Shared** | Use sparingly for Secret Rooms and Tinted Rocks. |
+| **Keys** | **Shared** | Prioritize Treasure Rooms over locked chests. |
+| **Items (Pedestals)** | **Individual** | Picked up by one player; benefits that character only. |
+| **Health (Hearts)** | **Individual** | Players manage their own red/soul/black hearts. |
+| **Trinkets/Cards/Pills** | **Individual** | Held by one player; can be dropped for others. |
+
+<Callout type="warning" title="Resource Depletion Warning">
+Because keys and bombs are shared, a four-player team can run out of resources four times faster. Always check if a teammate needs a specific pickup before using the last bomb on a random rock.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Best Character Synergies for 2026">
+
+Success in **the binding of isaac repentance coop** depends heavily on team composition. You don't want four "Glass Cannons" like The Lost, nor do you want four low-damage tanks like Magdalene. A balanced team allows players to cover each other's weaknesses. For instance, a character with flight can grab items over pits for grounded teammates, while a character with high health can play Sacrifice Rooms for the group.
+
+<CardGrid cols={3}>
+  <Card title="The Support Duo">
+    - **Magdalene & Isaac**
+    - Magdalene provides healing via Yum Heart.
+    - Isaac uses the D6 to reroll weak items for the team.
+    - Focuses on survivability and item quality.
+  </Card>
+  <Card title="The Resource Engine">
+    - **Tainted Keeper & Cain**
+    - Tainted Keeper generates massive coin flow.
+    - Cain uses Lucky Foot for better pills and chests.
+    - Ideal for breaking the Shop economy early.
+  </Card>
+  <Card title="The Damage Powerhouse">
+    - **Azazel & Tainted Lilith**
+    - Azazel provides early-game flight and high DPS.
+    - Tainted Lilith offers massive range and whip damage.
+    - Designed for fast room clears and boss melting.
+  </Card>
+</CardGrid>
+
+<Callout type="success" title="Synergy Tip: The D6 Strategy">
+If one player is Isaac with the D6, let them enter the Treasure Room first. If the item is bad, they can reroll it before another player picks it up. This effectively doubles the item options for the entire team.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Step-by-Step: Setting Up Repentance+ Online Coop">
+
+The introduction of the Repentance+ DLC brought native online support to Steam, removing the need for third-party tools like Remote Play Together. Setting up a session is straightforward but requires all participants to have their game versions synchronized. Follow these steps to start your first online run.
+
+<Steps>
+  <Step num="1" title="DLC Verification">
+    Ensure all players own Rebirth, Afterbirth, Afterbirth+, and Repentance. Then, download the free **Repentance+** DLC from the Steam store page.
+  </Step>
+  <Step num="2" title="Lobby Creation">
+    From the main menu, select 'Online Play'. Choose 'Host' to create a private lobby or 'Quick Match' to join random players.
+  </Step>
+  <Step num="3" title="Inviting Friends">
+    In the lobby screen, use the 'Invite' button to open your Steam Friends list. Once your friends join, you will see their avatars in the lobby.
+  </Step>
+  <Step num="4" title="Character Selection">
+    Each player selects their character. Note that players can only pick characters they have already unlocked on their own save file.
+  </Step>
+  <Step num="5" title="Starting the Descent">
+    The host chooses the difficulty (Normal, Hard, or Greedier). Once everyone is 'Ready', the host starts the run.
+  </Step>
+</Steps>
+
+<Callout type="info" title="Online Latency">
+Online co-op is peer-to-peer. For the best experience, the player with the most stable internet connection should act as the host to minimize input lag for others.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Progression, Unlocks, and Death Mechanics">
+
+One of the greatest benefits of **the binding of isaac repentance coop** is the shared progression system. When a boss is defeated, the completion mark is added to the post-it note of every character present in the run. This allows players to help each other finish difficult characters like Tainted Lost or Jacob and Esau by providing a "safety net" of extra players.
+
+However, death works differently in multiplayer. If a player dies, they don't immediately end the run. Instead, they turn into a ghost with limited interaction.
+
+<Checklist
+  id="coop-death-rules"
+  title="What Happens When You Die:"
+  items={[
+    "You transform into a small ghost with reduced damage.",
+    "Ghosts can still fire weak tears to assist teammates.",
+    "You revive at the start of the next floor with half a heart.",
+    "If all players die simultaneously, the run ends immediately.",
+    "Items collected while a ghost are lost upon revival."
+  ]}
+/>
+
+| Death Interaction | Effect |
+| :--- | :--- |
+| **Ghost Tears** | Deals 1.0 damage; ignores most item effects. |
+| **Revival Health** | Always revives with minimum health (usually 0.5 hearts). |
+| **Item Pedestals** | Ghosts cannot pick up new pedestal items. |
+| **Completion Marks** | You still earn the mark even if you finish the floor as a ghost. |
+
+<Callout type="warning" title="Hard Mode Warning">
+In Hard Mode, the health drops are rarer. If a player dies early, the team must survive the rest of the floor with one less full-strength character. Protect your teammates!
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Advanced Tips for Four-Player Runs">
+
+Playing with four people is chaotic. The screen will be filled with tears, familiars, and explosions. To maintain order and ensure a win, veteran players use specific communication and movement tactics.
+
+- **Screen Clutter Management:** Avoid everyone taking "visual-heavy" items like Soy Milk or Tiny Planet simultaneously. It becomes impossible to see enemy projectiles.
+- **The Emote System:** Use the built-in emote wheel (default 'Q' or 'Right Stick') to point out Tinted Rocks, Secret Rooms, or to suggest who should take an item.
+- **Health Distribution:** If a player is playing a character that relies on Soul Hearts (like ???), give them priority on tinted rocks. If a player has a "on-hit" effect (like Samson), let them take the occasional hit.
+- **Strategic Disconnects:** In online play, if a player disconnects, their character becomes an AI or waits for reconnection. The host can pause to wait for them.
+
+| Strategy | Best For | Effectiveness |
+| :--- | :--- | :--- |
+| **Focus Fire** | Melting bosses quickly | ★★★★★ |
+| **Kiting** | Keeping distance from melee enemies | ★★★★☆ |
+| **Resource Pooling** | Buying expensive Shop items like Birthright | ★★★★★ |
+| **Sacrifice Engine** | One player tanks spikes for group rewards | ★★★☆☆ |
+
+<Callout type="tip" title="Pro Tip: The 'Wait' Command">
+If you find a choice pedestal (where taking one removes the other), line up two players next to the items. If you pick them up at the exact same frame, sometimes both players can get an item. This is a high-skill frame-perfect trick!
+</Callout>
+
+</Section>
+
+<Section icon={Info} title="FAQ: The Binding of Isaac Repentance Coop">
+
+<FAQ items={[
+  {
+    question: "Can I earn achievements in The Binding of Isaac Repentance coop?",
+    answer: "Yes! All players earn achievements and completion marks for their respective characters as long as they are present when the boss is defeated."
+  },
+  {
+    question: "Does everyone need to own the Repentance+ DLC for online play?",
+    answer: "Yes, for the native Steam online co-op feature, every player must have the Repentance+ DLC installed and be on the same game version."
+  },
+  {
+    question: "What happens to the items if a player leaves the game?",
+    answer: "In local co-op, the character usually disappears and their items are lost. In online Repentance+, the character may stay in the room as a 'disconnected' entity until the player rejoins or the floor ends."
+  },
+  {
+    question: "Is there friendly fire in Isaac co-op?",
+    answer: "Generally, no. Your tears and bombs do not damage your teammates. However, certain items or 'troll' mechanics might still cause indirect harm, so stay alert!"
+  }
+]} />
+
+</Section>

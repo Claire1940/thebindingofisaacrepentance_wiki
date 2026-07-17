@@ -1,0 +1,188 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, Settings, Info } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "The Binding of Isaac Repentance External Item Descriptions: Mod Setup Guide",
+  description: "Learn how to install and configure the External Item Descriptions mod for The Binding of Isaac: Repentance to see item stats, synergies, and recipes.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/120B0D/E24133?text=External+Item+Descriptions+Guide",
+  date: "2026-07-17",
+  author: "the binding of isaac repentance Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **The Binding of Isaac Repentance External Item Descriptions** is the most essential UI mod for tracking over 700 items.
+- **Real-time information** displays item names, effects, quality levels, and transformation progress directly on your screen.
+- **Bag of Crafting support** provides Tainted Cain players with dynamic recipes based on the pickups currently in the room.
+- **Compatibility** is fully maintained for Repentance, Repentance+, and major content overhauls like Fiend Folio.
+- **Customization** requires the Mod Config Menu to adjust text size, language, and display positions.
+</Callout>
+
+<Section icon={Settings} title="Installing the Binding of Isaac Repentance External Item Descriptions Mod">
+
+Installing the **the binding of isaac repentance external item descriptions** (EID) mod is a straightforward process through the Steam Workshop. This mod functions as a real-time overlay, reading the game's internal memory to provide accurate data without disabling achievements (provided you have defeated Mom at least once). For players aiming for the Dead God achievement, EID is indispensable for identifying which items contribute to specific transformations or have dangerous anti-synergies.
+
+<Callout type="success" title="Achievement Safety">
+In Repentance, mods do not disable achievements or completion marks as long as you have defeated the Mom boss in the Depths at least once on that save file.
+</Callout>
+
+<Steps>
+  <Step num="1" title="Access the Steam Workshop">
+    Open your Steam Library, select The Binding of Isaac: Rebirth, and click on the Workshop tab. Ensure you have the Repentance DLC installed, as modern versions of EID are optimized for this branch.
+  </Step>
+  <Step num="2" title="Search and Subscribe">
+    Search for "External Item Descriptions" by the author Wayu. Click the green Subscribe button. Steam will automatically download the required files to your local directory.
+  </Step>
+  <Step num="3" title="Enable in Game Menu">
+    Launch the game and navigate to the Mods menu from the title screen. Ensure "External Item Descriptions" is highlighted and enabled. If the text is grayed out, press the Tab key to enable mods globally.
+  </Step>
+  <Step num="4" title="Install Mod Config Menu">
+    For the best experience, also subscribe to "Mod Config Menu - Pure" in the Workshop. This allows you to change EID settings, such as language or font size, while the game is running.
+  </Step>
+</Steps>
+
+| Feature | Steam Workshop Requirement | Functionality |
+| :--- | :--- | :--- |
+| **EID Core** | Mandatory | Provides the base overlay for items and trinkets |
+| **Mod Config Menu** | Recommended | Allows real-time adjustment of UI elements |
+| **Repentance+** | Optional | Adds support for new online co-op item reveals |
+| **REPENTOGON** | Optional | Increases performance and adds deep internal tracking |
+
+</Section>
+
+<Section icon={Info} title="Core Features and Display Mechanics">
+
+The primary function of the **the binding of isaac repentance external item descriptions** mod is to eliminate the need for external wiki searches. When Isaac stands near a pedestal item, a text box appears on the left side of the screen. This box contains the item's name, its quality (ranked 0 to 4), and a detailed breakdown of its mechanical effects.
+
+<Callout type="tip" title="Quality Matters">
+Items are ranked from Quality 0 (weak/situational) to Quality 4 (run-defining). EID displays this number prominently, helping you decide whether to take an item or use a reroll tool like the D6.
+</Callout>
+
+Beyond simple pedestals, EID tracks several other critical gameplay elements:
+- **Trinkets:** Displays the passive effect of the held or floor-bound trinket.
+- **Cards and Runes:** Explains exactly what a card does before you use it, including reversed tarot cards.
+- **Pills:** Once a pill is identified, EID shows its effect. It can also show effects for unidentified pills if you have the "PHD" or "False PHD" items.
+- **Transformations:** Shows a small icon indicating if an item contributes to transformations like Guppy, Beelzebub, or Conjoined.
+
+| Display Element | Description | Visual Indicator |
+| :--- | :--- | :--- |
+| **Item Name** | The official name of the collectible | Bold Header |
+| **Effect Text** | Stat changes (Damage, Tears, etc.) | Bulleted List |
+| **Quality** | Power level from 0 to 4 | Colored Number |
+| **Item Pool** | Where the item originated (Angel, Devil, etc.) | Text Label |
+| **Mod Source** | Indicates if the item is from a mod | Subtext |
+
+</Section>
+
+<Section icon={Target} title="Advanced Functionality for Tainted Characters">
+
+For advanced players, the **the binding of isaac repentance external item descriptions** mod provides specialized tools for complex characters. Tainted Cain, for example, relies entirely on the Bag of Crafting. EID reads the pickups (coins, bombs, keys, hearts) currently on the floor of the room and generates a list of possible items you can craft.
+
+<Callout type="warning" title="Bag of Crafting Recipes">
+In the current version of Repentance, many Bag of Crafting recipes are randomized based on your run's seed. EID calculates these locally, ensuring the recipes displayed are accurate for your specific game.
+</Callout>
+
+Another powerful interaction is with the **Spindown Dice**. When you hold the Spindown Dice, EID will display what the current pedestal item will turn into after one use. This is vital for targeting high-value items like Death Certificate or Sacred Heart by "spinning down" lower-tier items with specific ID numbers.
+
+<CardGrid cols={3}>
+  <Card title="Tainted Cain">
+    - **Real-time recipes**
+    - Pickup detection
+    - Recipe sorting by quality
+  </Card>
+  <Card title="Tainted Isaac">
+    - **Inventory management**
+    - Cycle preview
+    - Stat change prediction
+  </Card>
+  <Card title="Spindown Dice">
+    - **ID chain tracking**
+    - Result preview
+    - Multi-spin planning
+  </Card>
+</CardGrid>
+
+</Section>
+
+<Section icon={Shield} title="Configuration and Optimization">
+
+To get the most out of the **the binding of isaac repentance external item descriptions** mod, you should customize the display to fit your resolution. By default, the text might overlap with the "Found HUD" or the "Extra HUD" features built into the game.
+
+| Setting Category | Recommended Value | Impact on Gameplay |
+| :--- | :--- | :--- |
+| **Language** | English (or Native) | Changes descriptions to your preferred tongue |
+| **Text Scale** | 0.8x to 1.0x | Prevents the UI from cluttering the screen |
+| **Display Mode** | Detailed | Shows exact numerical stat changes |
+| **Transparency** | 0.5 | Allows you to see enemies behind the text box |
+
+<Callout type="info" title="HUD Alignment">
+If you use a 4:3 aspect ratio or play on the Steam Deck, use the Mod Config Menu to move the EID window to the right side or center to avoid blocking your health bar.
+</Callout>
+
+The mod also supports "Indicator Icons" for special room types. For example, in a Sacrifice Room, EID can show you the rewards for each subsequent spike hit, such as the 6th hit's chance for a teleport to the Angel Room or the 7th hit's chance for an Angel item.
+
+</Section>
+
+<Section icon={Sparkles} title="High-Value Items and EID Synergy">
+
+While EID helps with every item, it is particularly useful for identifying "Run-Definers" and complex synergies. The following table highlights S-Tier items that EID tracks with special detail, including their hidden sub-effects that are not immediately obvious from their in-game flavor text.
+
+| Item Name | Quality | EID Highlighted Effects | Synergy Note |
+| :--- | :--- | :--- | :--- |
+| **Sacred Heart** | 4 | **x2.3 Damage Multiplier**, Homing, +1 Health | Best with high fire rate |
+| **C Section** | 4 | Fetus projectiles, Homing, High DPS | Inherits many tear effects |
+| **Glitched Crown** | 4 | Cycles 5 items per pedestal | Timing-based pickup |
+| **R Key** | 4 | Restarts run at Basement I | Preserves all items |
+| **Sacred Orb** | 4 | Rerolls Quality 0-1 items | Improves future pools |
+
+<Callout type="success" title="Synergy Detection">
+EID can be configured to show a "Synergy" icon if a floor item has a unique interaction with an item you are already holding, such as Brimstone and Soy Milk.
+</Callout>
+
+<Checklist
+  id="eid-setup-goals"
+  title="EID Configuration Checklist:"
+  items={[
+    "Enable 'Detailed' descriptions for exact stat math",
+    "Toggle 'Show Quality' to quickly identify top-tier items",
+    "Activate 'Bag of Crafting' recipes for Tainted Cain",
+    "Set 'Spindown Dice' preview to 'Enabled'",
+    "Download 'Mod Config Menu' for on-the-fly adjustments"
+  ]}
+/>
+
+</Section>
+
+<Section icon={Swords} title="Troubleshooting and FAQ">
+
+Even the best mods can encounter issues, especially after a major game update or the release of the Repentance+ online co-op patch. Most problems with the **the binding of isaac repentance external item descriptions** mod can be solved by verifying game files or checking for mod conflicts.
+
+<Callout type="warning" title="Mod Conflicts">
+Avoid using multiple item description mods simultaneously. If you have "Detailed Descriptions" and "External Item Descriptions" both active, the text will overlap and become unreadable.
+</Callout>
+
+<FAQ items={[
+  {
+    question: "Why is the External Item Descriptions text not appearing?",
+    answer: "Ensure the mod is enabled in the in-game 'Mods' menu. If you are playing a 'Daily Run,' all mods are automatically disabled by the game to ensure a level playing field."
+  },
+  {
+    question: "Does EID work in Online Co-op?",
+    answer: "Yes, the latest versions of EID are compatible with the Repentance+ online update. It will show item descriptions for all players, though some UI elements may be shared."
+  },
+  {
+    question: "Can I change the language of the descriptions?",
+    answer: "Yes. Use the Mod Config Menu to navigate to the EID settings. The mod supports over 10 languages, including Russian, Spanish, and Chinese."
+  },
+  {
+    question: "Does this mod prevent me from getting the Dead God achievement?",
+    answer: "No. As long as you have defeated Mom once on your save file, mods do not disable achievements. You can safely reach 100% completion with EID active."
+  }
+]} />
+
+</Section>

@@ -1,0 +1,196 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "The Binding of Isaac Repentance Steam: Setup & Mod Guide",
+  description: "Learn how to install, optimize, and mod The Binding of Isaac: Repentance on Steam. Fix launch issues and set up co-op multiplayer.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/1e293b/fff?text=Steam+Setup+Guide",
+  date: "2026-07-17",
+  author: "the binding of isaac repentance Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **Installation setup**: Launch **the binding of isaac repentance steam** files by running the main executable as an administrator.
+- **Antivirus troubleshooting**: Exclude the game directory from real-time scans to prevent launch crashes.
+- **Performance optimization**: Disable VSync in the config file if experiencing input lag or frame drops.
+- **Modding access**: Subscribe to community mods directly via the Steam Workshop after defeating Mom once.
+</Callout>
+
+<Section icon={Map} title="Installing the Binding of Isaac Repentance Steam Version">
+
+Setting up **the binding of isaac repentance steam** version correctly ensures a smooth, crash-free experience right from the start. Whether you are installing the game for the first time or updating to the latest 2026 build, following the correct extraction and administrative steps is essential for the game client to interface properly with Steam.
+
+**Video Highlights:**
+- Extracting game files using WinRAR or similar archive software.
+- Logging into the Steam client before launching the game.
+- Running the game executable with administrative privileges.
+- Adding the game directory to antivirus exclusions to prevent launch errors.
+
+<YouTubeEmbed videoId="DWM3rp3YBk8" title="How To Play The Binding of Isaac Repentance on PC" />
+
+To ensure all files are correctly mapped and read by your operating system, follow this structured installation sequence:
+
+<Steps>
+  <Step num="1" title="Extract the Game Files">
+    Locate your downloaded game archive. Right-click the file and select "Extract Here" using WinRAR or 7-Zip. Ensure the files are extracted to a dedicated directory on your local drive.
+  </Step>
+  <Step num="2" title="Log Into Steam">
+    Open your Steam client and log into your account. The game requires an active Steam session running in the background to initialize achievements and cloud saves.
+  </Step>
+  <Step num="3" title="Run as Administrator">
+    Navigate to the extracted folder. Right-click on the `isaac-ng.exe` file and select "Run as administrator" to launch the game with full system permissions.
+  </Step>
+  <Step num="4" title="Configure Antivirus Exclusions">
+    If your security software flags the game, temporarily disable real-time protection or add the game directory to your antivirus exclusion list.
+  </Step>
+</Steps>
+
+<Callout type="warning" title="Antivirus False Positives">
+Security programs frequently flag custom game executables. Adding the entire folder to your exclusions list prevents the antivirus from deleting critical game files during launch.
+</Callout>
+
+Below is a breakdown of the core files found in the directory and the action required for each:
+
+| File/Folder | Purpose | Action Required |
+|---|---|---|
+| isaac-ng.exe | Main game executable | Run as administrator |
+| resources | Core asset directory | Do not modify manually |
+| options.ini | Configuration settings | Edit for custom performance |
+
+</Section>
+
+<Section icon={Sparkles} title="Optimizing Steam Workshop Mods">
+
+The Steam Workshop offers thousands of community-made mods that enhance the user interface, add new items, and adjust gameplay mechanics. Managing these mods correctly prevents save file corruption and ensures compatibility with the latest game updates.
+
+To utilize mods without disabling your progress, you must meet specific in-game milestones. By default, enabling mods before defeating the first major boss will lock achievement progression.
+
+| Mod Name | Core Function | Impact Level |
+|---|---|---|
+| External Item Descriptions | Displays item stats and pools | High |
+| Pog for Good Items | Visual cosmetic reactions | Low |
+| Detailed Stat Sheet | Expanded HUD information | Medium |
+
+<Callout type="tip" title="Unlocking Achievements with Mods">
+You must defeat Mom at least once on a clean, unmodded run. Once you achieve this milestone, you can enable any Steam Workshop mods without blocking achievements.
+</Callout>
+
+To subscribe to mods, navigate to the Steam Workshop page for the game, click "Subscribe" on the desired mod, and allow Steam to download the files. You can enable or disable them in-game via the main menu's "Mods" section.
+
+</Section>
+
+<Section icon={Shield} title="System Requirements & Performance Tweaks">
+
+While the game is not graphically demanding, performance issues can occur on systems lacking dedicated hardware. Players using integrated graphics cards may experience slow gameplay or input lag during intensive room clears.
+
+Optimizing your configuration files can significantly improve frame rates on low-end systems. Adjusting settings directly in the game's initialization files bypasses default engine limitations.
+
+| Hardware | Minimum Requirement | Recommended Specification |
+|---|---|---|
+| OS | Windows 7 | Windows 10 / 11 |
+| Processor | Intel Core i3 | Intel Core i7 |
+| Memory | 4 GB RAM | 8 GB RAM |
+| Graphics | Dedicated GPU | Nvidia GTX 960 or higher |
+
+<Callout type="info" title="Config File Location">
+Locate your `options.ini` file in the `My Documents/My Games/Binding of Isaac Repentance` directory to manually adjust hardware settings.
+</Callout>
+
+To resolve frame drops, open the configuration file and set `VSync=0`. This disables vertical synchronization, reducing input latency and improving performance on older graphics cards.
+
+</Section>
+
+<Section icon={Swords} title="Multiplayer and Co-op Configuration">
+
+Repentance introduces native cooperative play, allowing multiple players to explore dungeons together. You can set up multiplayer sessions locally or online using Steam's built-in sharing features.
+
+Co-op play alters the game balance by sharing the item pools and health containers among all active players. Understanding the different connection methods helps you choose the best setup for your group.
+
+<CardGrid cols={3}>
+  <Card title="Local Co-op">
+    - Connect up to four controllers to a single PC.
+    - Press start on additional controllers in the starting room.
+    - Share a single screen locally.
+  </Card>
+  <Card title="Steam Remote Play">
+    - Invite friends via your Steam friends list.
+    - Only the host needs to own the game.
+    - Stream gameplay to remote users.
+  </Card>
+  <Card title="Native Online Beta">
+    - Opt into the multiplayer beta via Steam properties.
+    - Play with independent screen views.
+    - Requires stable internet connections.
+  </Card>
+</CardGrid>
+
+<Callout type="success" title="Remote Play Optimization">
+When using Steam Remote Play Together, ensure the host has a wired ethernet connection to minimize latency for connected guests.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Troubleshooting Common Steam Issues">
+
+Launch failures, black screens, and cloud synchronization issues can interrupt your gameplay. Most errors stem from corrupt configuration files or missing system dependencies.
+
+Following a systematic verification process resolves the majority of these technical issues without requiring a full reinstallation of the game.
+
+| Issue | Potential Cause | Recommended Fix |
+|---|---|---|
+| Crash on Startup | Corrupt options.ini | Delete options.ini to regenerate |
+| Missing DLL Error | Missing VC++ Redistributable | Install latest Microsoft Visual C++ |
+| Cloud Sync Error | Steam Cloud mismatch | Restart Steam and verify game files |
+
+<Checklist
+  id="troubleshooting-checklist"
+  title="Verification Checklist:"
+  items={[
+    "Verify integrity of game files via Steam properties.",
+    "Update graphics drivers to the latest 2026 versions.",
+    "Ensure Steam is running in administrator mode.",
+    "Clear the game's shader cache folder."
+  ]}
+/>
+
+<Callout type="warning" title="Save File Backups">
+Always create a backup copy of your save files located in the Steam userdata directory before deleting configuration files or opting into beta branches.
+</Callout>
+
+For official updates and patch notes, visit the [Steam Community Hub](https://steamcommunity.com/app/250900) (accessed in 2026) to stay informed about recent stability fixes.
+
+</Section>
+
+<Section icon={Target} title="Steam FAQ and Community Support">
+
+<Callout type="tip" title="Community Guides">
+Consult the Steam community guides section for detailed character build strategies and item synergy charts created by veteran players.
+</Callout>
+
+<FAQ items={[
+  {
+    question: "How do I run the binding of isaac repentance steam version if it crashes on startup?",
+    answer: "Right-click the game executable in your installation folder, select properties, and check the option to run as an administrator. Additionally, verify that your antivirus is not blocking the game files."
+  },
+  {
+    question: "Can I play the game without a dedicated graphics card?",
+    answer: "Yes, but you may experience slow gameplay. To improve performance, open the options.ini file and disable VSync, or lower the game resolution."
+  },
+  {
+    question: "Do mods disable achievements on Steam?",
+    answer: "Mods only disable achievements if you have not defeated Mom on that save file. Once you defeat Mom for the first time without mods, you can safely enable them."
+  },
+  {
+    question: "How do I access the online multiplayer mode on Steam?",
+    answer: "Right-click the game in your Steam library, select Properties, go to the Betas tab, and select the multiplayer beta branch from the dropdown menu."
+  }
+]} />
+
+</Section>

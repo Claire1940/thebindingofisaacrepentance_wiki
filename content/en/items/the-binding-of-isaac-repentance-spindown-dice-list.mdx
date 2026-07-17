@@ -1,0 +1,187 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "the binding of isaac repentance spindown dice list: Guide",
+  description: "Master the Spindown Dice in The Binding of Isaac: Repentance. Learn the best item conversion paths, top tier rerolls, and transition strategies.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/1e1417/f4e9e7?text=Spindown+Dice+List",
+  date: "2026-07-17",
+  author: "the binding of isaac repentance Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **Primary Resource**: Use the **the binding of isaac repentance spindown dice list** to predict your exact rerolls.
+- **Core Mechanic**: The Spindown Dice reduces any pedestal item's internal ID by exactly 1 per charge.
+- **Best Targets**: Spin Toothpicks into Sacred Heart, Bot Fly into C Section, and Glass Eye into Glitched Crown.
+- **Skip Rule**: Locked items are automatically skipped, rolling down to the next unlocked item ID instead.
+- **Top Synergy**: Car Battery spins items down by 2 IDs instantly, saving charge time.
+</Callout>
+
+<Section icon={Sparkles} title="the binding of isaac repentance spindown dice list: Core Mechanics">
+
+The Spindown Dice is a tier-S active item in The Binding of Isaac: Repentance. Unlike the classic D6, which rerolls pedestal items randomly based on the current room's item pool, the Spindown Dice operates on a completely deterministic system. Every item in the game has a hidden numerical ID. When activated, the Spindown Dice subtracts exactly 1 from the ID of any pedestal item in the room. This allows players to plan their build with absolute certainty, turning mediocre items into run-winning masterpieces.
+
+To make the most of this powerful active item, players must consult the **the binding of isaac repentance spindown dice list** to trace the exact lineage of their current items. Because the reroll path is fixed, you can strategically leave items on the ground, collect charges, and spin them down multiple times until they reach your desired target. This mechanic bypasses the standard item pool restrictions, allowing you to obtain Secret Room or Angel Room items from common Boss Room drops.
+
+| Metric | Detail | Impact |
+| **Item Pool** | Secret Room pool | Hard to find naturally, highly prioritized |
+| **Charge Time** | 6 Rooms | Requires battery support for multiple spins |
+| **Reroll Target** | ID minus 1 | Completely deterministic, ignores room pools |
+| **Locked Items** | Skipped entirely | Automatically rolls to the next unlocked ID |
+
+<Callout type="warning" title="Locked Items Warning">
+If you have not unlocked a specific item in the conversion chain, the Spindown Dice will skip its ID and decrement to the next unlocked item. Always ensure your desired target's prerequisites are completed on your save file.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="High-Value Conversion Paths">
+
+Finding a top-tier item like Sacred Heart, C Section, or Death Certificate can instantly win a run. With the Spindown Dice, you do not need to rely on the low spawn rates of Angel or Secret Rooms. Instead, you can search for common items that sit just above these legendary items in the numerical registry.
+
+For example, Toothpicks is a common boss room reward. Its ID is 183. Activating the Spindown Dice once turns it into Sacred Heart (ID 182), giving you a massive damage multiplier and homing tears. Similarly, Bot Fly (ID 635) spins down directly into C Section (ID 634), replacing your tears with homing, high-damage fetus projectiles. This makes low-tier items highly valuable starting points for your conversion chains.
+
+| Starting Item | Starting ID | Target Item | Target ID | Required Spins |
+| **Toothpicks** | 183 | **Sacred Heart** | 182 | 1 Spin |
+| **Bot Fly** | 635 | **C Section** | 634 | 1 Spin |
+| **Glass Eye** | 712 | **Glitched Crown** | 711 | 1 Spin |
+| **Blood Bag** | 119 | **Brimstone** | 118 | 1 Spin |
+| **Lazarus' Rags** | 332 | **Godhead** | 331 | 1 Spin |
+| **Sharp Key** | 662 | **Death Certificate** | 661 | 1 Spin |
+| **Alabaster Box** | 583 | **The Stairway** | 582 | 1 Spin |
+| **Quarter** | 146 | **Abaddon** | 145 | 1 Spin |
+
+<Callout type="success" title="Easy Blood Bag Farm">
+You can easily obtain Blood Bag by using a Blood Donation Machine in the Arcade. Once you get the Blood Bag pedestal, spin it down once to secure Brimstone, even if you are on an Angel Room path!
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Step-by-Step Reroll Strategy">
+
+Executing a successful Spindown break requires careful planning and resource management. You cannot simply spin every item you see; you must manage your active item charges, map out your floor, and decide which items are worth keeping and which should be converted. Follow this structured approach to maximize your efficiency during a run.
+
+<Steps>
+  <Step num="1" title="Locate the Dice">
+    Acquire the Spindown Dice from the Secret Room pool, or craft it using Tainted Cain. If you find it early, prioritize buying batteries from the Shop to keep your active charge full.
+  </Step>
+  <Step num="2" title="Scan and Map Pedestals">
+    Clear the entire floor before using any charges. Note down all available pedestal items and check their IDs against the **the binding of isaac repentance spindown dice list** to identify potential targets.
+  </Step>
+  <Step num="3" title="Gather Battery Resources">
+    Look for battery pickups, Lil Battery familiars, or 4.5 Volt in the Shop. If you have enough coins, buy out the Shop's battery inventory to facilitate multiple spins on a single high-value pedestal.
+  </Step>
+  <Step num="4" title="Execute the Spins">
+    Bring the Spindown Dice to the chosen pedestal. Activate it the exact number of times required to reach your target. Be careful not to over-spin, as you cannot reverse the process.
+  </Step>
+</Steps>
+
+<Callout type="info" title="No Backtracking Rule">
+Since the Spindown Dice only decrements IDs, you cannot go back up the list. If you accidentally spin past a target item, you will have to find another pedestal to start the chain again.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Essential Synergies and Break Combinations">
+
+The Spindown Dice is incredibly strong on its own, but certain items turn it into an unstoppable force. Battery-related items are the most valuable synergies, as they directly reduce the time and room clears required to perform multiple spins on a single pedestal.
+
+<CardGrid cols={3}>
+  <Card title="Car Battery">
+    - **Double Spin Effect**
+    - Subtracts 2 IDs per charge
+    - Greatly speeds up long chains
+  </Card>
+  <Card title="4.5 Volt">
+    - **Damage-Based Charges**
+    - Invaluable during boss rushes
+    - Allows infinite spins on bosses
+  </Card>
+  <Card title="The Battery">
+    - **Double Charge Capacity**
+    - Store up to 12 charges
+    - Allows consecutive spins instantly
+  </Card>
+</CardGrid>
+
+Beyond battery items, passive items that generate extra pedestals or change how items are spawned will give you more opportunities to find starting points for your conversion chains. Items like Option and More Options are highly recommended.
+
+| Synergy Item | Synergy Type | In-Game Effect with Spindown Dice |
+| **Car Battery** | Active Modifier | Double spins items, subtracting 2 IDs per single use |
+| **4.5 Volt** | Charge Modifier | Generates charges by dealing damage, enabling boss-fight spins |
+| **The Battery** | Charge Modifier | Allows storing an extra full charge for up to 12 total slots |
+| **Sharp Plug** | Charge Modifier | Trades half a heart for 1 active charge, enabling rapid spins |
+| **Schoolbag** | Inventory | Allows holding Spindown Dice alongside another high-tier active |
+| **Moving Box** | Utility | Pack up pedestals and move them to a single room for mass spins |
+
+<Callout type="tip" title="Car Battery Warning">
+While Car Battery is excellent for skipping long paths, it makes odd-numbered spins impossible unless you drop Car Battery first. Keep this in mind when aiming for a specific ID.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Spindown Checklist and Common Traps">
+
+To ensure you do not ruin a promising run, you should follow a strict checklist before activating your Spindown Dice. Many players make the mistake of spinning items without checking their unlock status or understanding how special item pools interact with the deterministic reroll mechanic.
+
+<Checklist
+  id="spindown-run-checklist"
+  title="Pre-Reroll Verification Checklist:"
+  items={[
+    "Verify the target item is fully unlocked on your current save file",
+    "Calculate the exact number of charges needed for the conversion",
+    "Check for Car Battery or other double-activation effects in your inventory",
+    "Ensure you do not need the current item's utility before spinning it away",
+    "Clear the rest of the floor to maximize available battery pickups"
+  ]}
+/>
+
+Additionally, some items behave strangely when spun down. For instance, active items that are spun down will retain their charge state, and certain story-related items cannot be spun down at all.
+
+| Item Type / Scenario | Behavior | Strategic Advice |
+| **Unlocks Check** | Skips locked IDs | Avoid attempting a chain if the target is locked |
+| **Active Items** | Retains charge level | Spun-down active items keep their current charge |
+| **Story Items** | Cannot be spun down | Key Pieces and Knife Pieces ignore Spindown Dice |
+| **Glitch Items** | Chaotic results | TMTRAINER items spin into glitched variants |
+| **Co-op Runs** | Individual saves | Unlocks are checked against the host's save file |
+
+<Callout type="success" title="Co-op Advantage">
+In online co-op runs, the Spindown Dice checks unlocks based on the host's save. Use this to your advantage to obtain items that other players in your lobby have not unlocked yet!
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="FAQ">
+
+Understanding the finer details of the Spindown Dice can elevate your gameplay from casual to expert. Below are the most common questions players ask when referencing the **the binding of isaac repentance spindown dice list** during their runs.
+
+<FAQ items={[
+  {
+    question: "What happens if I use Spindown Dice on item ID 1?",
+    answer: "Using the Spindown Dice on Sad Onion (ID 1) will roll it down to the highest item ID in the game, which is Death Certificate (ID 661) or the latest added item ID depending on your DLC version. This is one of the most powerful loops in the game."
+  },
+  {
+    question: "Does the room's item pool affect Spindown Dice results?",
+    answer: "No. The Spindown Dice completely ignores the room's item pool. It strictly follows the numerical order of the item IDs, making it 100% deterministic regardless of whether you are in a Treasure Room, Devil Room, or Secret Room."
+  },
+  {
+    question: "How does Spindown Dice interact with Tainted Isaac?",
+    answer: "Tainted Isaac can use the Spindown Dice to cycle through his limited inventory. However, because Tainted Isaac can only hold 8 passive items, you must be careful not to drop an essential item while performing your conversion chains."
+  },
+  {
+    question: "Can I spin down trinkets or pocket items?",
+    answer: "No. The Spindown Dice only affects pedestal items (collectibles). It has no effect on trinkets, cards, pills, runes, or chest drops left on the ground."
+  }
+]} />
+
+<Callout type="tip" title="Sad Onion Loop">
+Always keep an eye out for Sad Onion in your Treasure Rooms. It is the easiest and most reliable way to obtain Death Certificate via Spindown Dice, instantly breaking your run.
+</Callout>
+
+</Section>

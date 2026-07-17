@@ -1,0 +1,154 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "The Binding of Isaac Repentance Not Launching: 2026 Step-by-Step Fixes",
+  description: "Resolve The Binding of Isaac Repentance not launching on Steam. Follow our step-by-step diagnostic guide to fix mod conflicts, corrupted saves, and crash errors.",
+  category: "Tutorial",
+  image: "https://placehold.co/800x400/120b0d/f4e9e7?text=Repentance+Not+Launching+Fix",
+  date: "2026-07-17",
+  author: "the binding of isaac repentance Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **Primary Issue**: Game crashes on startup, displays a black screen, or fails to open via Steam.
+- **Main Culprit**: Outdated Steam Workshop mods, corrupted local save files, or missing DirectX/C++ dependencies.
+- **Fastest Fix**: Disable mods manually via the game's configuration file or verify Steam game integrity.
+- **Critical File**: The `options.ini` file located in your local documents directory controls mod activation on boot.
+- **Recommended Action**: Back up your save folder before deleting files or reinstalling the game.
+</Callout>
+
+<Section icon={Target} title="The Binding of Isaac Repentance Not Launching: Troubleshooting Overview">
+
+Experiencing **the binding of isaac repentance not launching** is a common frustration for players returning to the Basement. This issue typically presents itself as a brief "Running" status in Steam that immediately reverts to "Play," a sudden crash to desktop without an error message, or an infinite black screen upon startup. 
+
+Most startup failures in the Repentance expansion stem from outdated Steam Workshop mods, corrupted configuration files, or compatibility conflicts with your operating system's graphics drivers and runtimes. Because Repentance introduces significant engine overhauls compared to Afterbirth+, older files frequently cause fatal crashes during the game's initial boot sequence.
+
+| Startup Symptom | Primary Cause | Immediate Action |
+| :--- | :--- | :--- |
+| **Instant crash to desktop** | Corrupted or outdated mods | Set EnableMods to 0 in options.ini |
+| **Steam shows Running then stops** | Missing C++ Redistributables | Install latest Microsoft VC++ packages |
+| **Infinite black screen on boot** | Corrupted options.ini or Discord Overlay | Delete options.ini and disable overlays |
+| **Crash after intro cinematic** | Corrupted save file data | Rename local save folder to force cloud sync |
+| **Missing executable error** | Antivirus false positive | Add Isaac folder to antivirus exceptions |
+
+<Callout type="warning" title="Anti-Virus False Positives">
+Some security software flags the updated Repentance executable as a false positive. If Steam displays a "Missing Executable" error, temporarily disable your antivirus or add the entire Steam installation path for the game to your exclusion list.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="Step-by-Step Guide to Resolve Startup Crashes">
+
+To systematically resolve startup issues, follow this structured troubleshooting progression. These steps address the most frequent points of failure from simplest to most advanced.
+
+<Steps>
+  <Step num="1" title="Disable Mods via options.ini">
+    Navigate to your local documents directory: `Documents\My Games\Binding of Isaac Repentance`. Open the `options.ini` file using a standard text editor. Locate the line that reads `EnableMods=1` and change it to `EnableMods=0`. Save the file and attempt to launch the game. This disables all Steam Workshop mods without unsubscribing from them, allowing you to bypass broken scripts.
+  </Step>
+  <Step num="2" title="Verify Integrity of Game Files">
+    Open your Steam Library, right-click on *The Binding of Isaac: Rebirth*, and select **Properties**. Navigate to the **Installed Files** tab and click on **Verify integrity of game files**. Steam will scan your local installation against the official servers and automatically download any missing or corrupted core files.
+  </Step>
+  <Step num="3" title="Clear the Shader Cache">
+    Navigate to the main game installation folder (usually under `Steam\steamapps\common\The Binding of Isaac Rebirth`). Look for a folder named `resources` or check your GPU control panel settings. Corrupted shader caches can prevent the game's rendering engine from initializing properly. Clear your Nvidia or AMD shader cache to force the system to rebuild clean graphical assets.
+  </Step>
+  <Step num="4" title="Reinstall Visual C++ Redistributables">
+    Repentance relies heavily on specific Microsoft Visual C++ Redistributable packages. Download and install both the x86 and x64 versions of the Visual C++ Redistributable for Visual Studio 2015–2022 from the official Microsoft support portal. Restart your computer after installation to apply the changes.
+  </Step>
+  <Step num="5" title="Run as Administrator and Set Compatibility">
+    Right-click `isaac-ng.exe` in the game's installation directory, select **Properties**, and go to the **Compatibility** tab. Check the box to **Run this program as an administrator**. Additionally, you can try running the program in compatibility mode for Windows 8 to bypass modern OS scaling issues.
+  </Step>
+</Steps>
+
+<Callout type="tip" title="Locating the Steam Folder">
+If you cannot find your installation folder, right-click the game in Steam, hover over **Manage**, and select **Browse local files** to open the correct directory instantly.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Managing Mod Conflicts and Workshop Subscriptions">
+
+Steam Workshop mods are the leading cause of **the binding of isaac repentance not launching** after major game updates. When the game engine receives official patches, complex script-based mods like *External Item Descriptions* or *Fiend Folio* may fail to initialize, causing immediate crashes.
+
+| Mod Category | Risk Level | Common Crash Behavior | Safe Alternative |
+| :--- | :--- | :--- | :--- |
+| **UI & Overlays** | Medium | Black screens, HUD misalignment | Use built-in Repentance+ UI options |
+| **Content Overhauls** | High | Instant crash on startup or floor transition | Run standalone on fresh save files |
+| **Custom Characters** | High | Crashes upon opening the character select menu | Verify mod creator's compatibility notes |
+| **Soundtrack Replacements** | Low | Missing audio, rare startup freezes | Use Music Mod Callback framework |
+
+If disabling mods in `options.ini` successfully launches the game, you must isolate the problematic mod. Rather than unsubscribing from everything at once, use the following card grid to evaluate your mod management strategy.
+
+<CardGrid cols={3}>
+  <Card title="Isolate by Batches">
+    Enable your mods in groups of five. Launch the game after enabling each batch to quickly pinpoint which subscription triggers the startup crash.
+  </Card>
+  <Card title="Check Dependencies">
+    Ensure complex mods have their required frameworks enabled. For example, many custom stages require the *Custom Stage API* to run.
+  </Card>
+  <Card title="Clear Workshop Cache">
+    Delete the contents of your `Steam\steamapps\workshop\content\250900` directory to force Steam to redownload clean, updated versions of your mods.
+  </Card>
+</CardGrid>
+
+<Callout type="info" title="Repentance+ Mod Notice">
+The newer Repentance+ online update changes how the game handles internal memory. Ensure any mod you use is explicitly updated for the current version of the game to avoid memory allocation failures on boot.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Save File Corruption and Cloud Sync Recovery">
+
+Sometimes, the game fails to boot because your local save file has become corrupted. This can happen during sudden power outages, game crashes while saving, or improper cloud synchronization between different computers.
+
+To safely diagnose and repair a corrupted save file without losing your hard-earned completion marks, follow this checklist.
+
+<Checklist
+  id="save-recovery"
+  title="Save Data Recovery Checklist:"
+  items={[
+    "Locate your save folder in Documents/My Games/Binding of Isaac Repentance.",
+    "Copy the entire folder and paste it to a safe backup location on your desktop.",
+    "Delete the original save files in the active directory (e.g., persistentgamedata1.dat).",
+    "Launch the game to see if a fresh, empty save file allows a successful boot.",
+    "If successful, rename one of the game's automatic backups from the remote folder to replace the deleted file."
+  ]}
+/>
+
+The game maintains a history of your saves inside the `resources/save backups` folder or the Steam Cloud remote directory. Restoring a backup from a day prior to the launch issues will usually get you back into the game with minimal progress loss.
+
+<Callout type="success" title="Steam Cloud Sync">
+If you lose your local save data, you can sync your achievements back into the game. Navigate to the Stats menu in-game and press **Alt + F2** to force the game to unlock all completion marks matching your Steam achievements.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Frequently Asked Questions">
+
+Our community frequently encounters specific scenarios when troubleshooting startup failures. Below are the most reliable solutions for these situations.
+
+<FAQ items={[
+  {
+    question: "Why does my game crash instantly when I click Play on Steam?",
+    answer: "This is almost always caused by a broken mod or a missing system dependency. Try setting EnableMods=0 in your options.ini file. If that fails, install the latest Microsoft Visual C++ Redistributable packages (both x86 and x64 formats) and restart your PC."
+  },
+  {
+    question: "Will I lose my achievements if I delete my save files to fix the launch issue?",
+    answer: "No. Your achievements are permanently stored on your Steam account. Even if you must delete your local save files to resolve a corruption crash, you can restore your in-game progress by navigating to the Stats screen and pressing Alt + F2."
+  },
+  {
+    question: "I disabled Discord Overlay but the game still won't launch. What else can I do?",
+    answer: "Other programs with active overlays, such as GeForce Experience, MSI Afterburner, OBS, or Steam itself, can interfere with Isaac's rendering engine. Try disabling these applications one by one to find the conflict."
+  },
+  {
+    question: "How do I fix the binding of isaac repentance not launching on Steam Deck?",
+    answer: "On Steam Deck, force the game to run using a specific version of Proton. Force-close the game, go to Properties > Compatibility, check 'Force the use of a specific Steam Play compatibility tool', and select Proton Experimental or Proton Hotfix."
+  }
+]} />
+
+</Section>

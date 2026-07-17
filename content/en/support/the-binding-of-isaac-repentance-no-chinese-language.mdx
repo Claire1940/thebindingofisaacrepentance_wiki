@@ -1,0 +1,170 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "the binding of isaac repentance no chinese language: Fixes",
+  description: "How to fix the missing Chinese language issue in The Binding of Isaac: Repentance using Steam settings, workshop mods, and configuration files.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/1e1417/f4e9e7?text=Chinese+Language+Fix+Guide",
+  date: "2026-07-17",
+  author: "the binding of isaac repentance Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **Language Issue**: Out of the box, players face **the binding of isaac repentance no chinese language** support in the official settings.
+- **Primary Cause**: The official localization configuration only enables English, Russian, Spanish, and Portuguese.
+- **Best Solution**: Use highly rated Steam Workshop translation mods and External Item Descriptions in Chinese.
+- **Progression Lock**: Note that mods only work safely without disabling achievements after you defeat Mom at least once.
+- **Alternative Path**: Learn how to configure local localization files for stable offline play.
+</Callout>
+
+<Section icon={Shield} title="Understanding the Language Limitations in Repentance">
+
+Many players are frustrated when they launch the game and realize there is **the binding of isaac repentance no chinese language** option available in the default menus. The game features a deep, item-heavy progression system where understanding item descriptions is vital to securing a winning build. Without proper translation, identifying over 700 items, trinkets, and cards becomes an incredibly difficult task for Chinese-speaking players.
+
+The default game files restrict official localization to a select few languages. According to the internal game configurations, the developers prioritized specific regions based on active player statistics and review volume. The localized options are limited, leaving Chinese players to rely on community-made solutions.
+
+| Language | Official Status | Integration Level | Community Support |
+| :--- | :--- | :--- | :--- |
+| **English** | Full Support | Native | Default |
+| **Russian** | Full Support | Native | High |
+| **Spanish** | Full Support | Native | High |
+| **Portuguese** | Full Support | Native | Moderate |
+| **Chinese** | No Support | None | Extremely High |
+
+<Callout type="warning" title="Localization Warning">
+Attempting to force unsupported language codes directly in the default configuration files without the proper mod files can cause the game client to crash on startup or corrupt your active save file.
+</Callout>
+
+While the official localization framework skips Chinese, the Steam Workshop features an active community that has fully translated the game, including all expansion content like Repentance and the newer Repentance+ multiplayer updates.
+
+</Section>
+
+<Section icon={Map} title="Resolving the binding of isaac repentance no chinese language Issue">
+
+To successfully fix the missing language issue, you must utilize the Steam Workshop. Because the developers did not include native Chinese translation files, community localization mods are the most reliable and safest way to play the game in your preferred language. 
+
+Follow these steps to configure your game client and install the necessary translation files.
+
+<Steps>
+  <Step num="1" title="Beat Mom Once to Enable Achievements with Mods">
+    Before installing any mods, you must complete at least one successful run and defeat the boss Mom in Depths II on a clean, mod-free save file. Enabling mods before defeating Mom will disable your ability to earn Steam achievements and unlock new characters or items.
+  </Step>
+  <Step num="2" title="Subscribe to the Chinese Language Pack Mod">
+    Open your Steam client, navigate to the Steam Workshop for the game, and search for the highly rated community translation mod. Click the Subscribe button to automatically download the localization assets.
+  </Step>
+  <Step num="3" title="Subscribe to External Item Descriptions (Chinese)">
+    Search for the Chinese version of the External Item Descriptions mod in the Steam Workshop. This mod is essential as it displays real-time item properties, synergies, and quality ratings directly on your screen in Chinese.
+  </Step>
+  <Step num="4" title="Enable Mods in the In-Game Menu">
+    Launch the game, select Mods from the main menu, and ensure both the Chinese Language Pack and the External Item Descriptions mod are enabled. Restart your game client to apply the font and text changes.
+  </Step>
+</Steps>
+
+<Callout type="tip" title="Achievement Check">
+You can verify if achievements are enabled by checking the left side of your screen during a run. If you see a trophy icon with a red diagonal line through it, your achievements are disabled, and you must disable mods until you defeat Mom.
+</Callout>
+
+Once enabled, these mods will translate the main menu, character selection screens, item descriptions, and completion marks, fully resolving the language barrier.
+
+</Section>
+
+<Section icon={Sparkles} title="Best Mods for Chinese Localization & Item Info">
+
+To get the best possible experience when playing with community translations, you should select compatible mods that do not conflict with each other. Using too many overlapping UI mods can cause visual glitches or gameplay crashes.
+
+We have categorized the most reliable localization and utility mods below to help you select a stable loadout.
+
+<CardGrid cols={3}>
+  <Card title="Chinese Language Pack">
+    - **Translates all UI menus**
+    - Translates character names
+    - Stable with Repentance+
+  </Card>
+  <Card title="EID Chinese Version">
+    - **Real-time item stats**
+    - Shows item pool details
+    - Displays active synergies
+  </Card>
+  <Card title="Custom Chinese Fonts">
+    - **Improves text readability**
+    - Matches the game art style
+    - Prevents pixelated text
+  </Card>
+</CardGrid>
+
+<Callout type="success" title="Mod Compatibility Success">
+The Chinese Language Pack and the Chinese version of External Item Descriptions are fully compatible and designed to run together without causing performance drops or UI overlapping.
+</Callout>
+
+To ensure your game runs smoothly, use the following comparison table to understand the features and requirements of each community tool.
+
+| Mod Name | Category | Main Feature | Workshop Rating |
+| :--- | :--- | :--- | :--- |
+| **Chinese Localization** | Translation | Full menu and UI translation | **★★★★★** |
+| **External Item Descriptions (ZH)** | UI Overlay | Detailed item and card descriptions | **★★★★★** |
+| **Chinese Boss Names** | Visual | Translates boss introduction screens | **★★★★☆** |
+| **Mod Config Menu** | Utility | Allows in-game customization of mods | **★★★★★** |
+
+If you experience issues where text displays as empty boxes, it is usually because the game is failing to load the custom Chinese font files. This can be resolved by verifying your game cache or re-subscribing to the font mod.
+
+| Issue | Potential Cause | Recommended Solution |
+| :--- | :--- | :--- |
+| **Empty text boxes** | Missing font files | Re-subscribe to the Chinese Language Pack |
+| **Game crashes on startup** | Outdated mod version | Disable outdated mods in the mods folder |
+| **Achievements locked** | Mom not defeated yet | Disable all mods and defeat Mom once |
+
+</Section>
+
+<Section icon={Swords} title="Multiplayer Co-op and Repentance+ Compatibility">
+
+The release of the Repentance+ DLC introduced integrated online co-op matchmaking. When playing online, the host and the clients must manage their mods carefully to avoid synchronization errors or matchmaking bans.
+
+If you are using community localization mods to solve the language issue, you must understand how mods interact with online lobbies.
+
+<Checklist
+  id="coop-localization"
+  title="Online Co-op Mod Checklist:"
+  items={[
+    "Ensure your translation mods are updated to the latest Repentance+ version",
+    "Disable gameplay-altering mods, keeping only client-side localization mods active",
+    "Verify that your co-op partners have matching client configurations",
+    "Back up your save files before joining public matchmaking lobbies"
+  ]}
+/>
+
+<Callout type="warning" title="Daily Runs Notice">
+You must disable all mods, including localization and description mods, before participating in Daily Runs. Failing to do so will block you from entering the daily leaderboard challenge.
+</Callout>
+
+Client-side visual mods like translation packs and External Item Descriptions generally do not interfere with online matches, allowing you to enjoy translated item descriptions while playing with players from other regions.
+
+</Section>
+
+<Section icon={Trophy} title="Frequently Asked Questions">
+
+<FAQ items={[
+  {
+    question: "Why is there the binding of isaac repentance no chinese language option officially?",
+    answer: "The developers focused official localization on the regions with the highest initial sales and feedback, which included English, Russian, Spanish, and Portuguese. Chinese localization was left to the Steam Workshop community."
+  },
+  {
+    question: "Will using translation mods disable my Steam achievements?",
+    answer: "Only if you have not defeated Mom once on that save file. Once you defeat Mom in Depths II without mods, you can safely enable translation mods and continue earning achievements."
+  },
+  {
+    question: "What should I do if the Chinese text displays as broken question marks or boxes?",
+    answer: "This is a font rendering issue. You need to subscribe to a compatible Chinese Font mod on the Steam Workshop, enable it in your mods menu, and restart the game client."
+  },
+  {
+    question: "Can I use Chinese localization mods in online co-op matches?",
+    answer: "Yes, client-side localization and description mods are generally allowed in online co-op lobbies, but you must ensure they are compatible with the latest Repentance+ patch."
+  }
+]} />
+
+</Section>

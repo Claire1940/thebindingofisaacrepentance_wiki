@@ -1,0 +1,185 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "Chefes de the binding of isaac repentance: Guia de Rotas e Padrões 2026",
+  description: "Domine todos os chefes de the binding of isaac repentance com nosso guia de 2026. Aprenda padrões de ataque, requisitos de desbloqueio e as melhores rotas para a vitória.",
+  category: "Guia",
+  image: "https://placehold.co/800x400/120B0D/F4E9E7?text=Boss+Strategy+Guide",
+  date: "2026-07-17",
+  author: "Equipe da Wiki de the binding of isaac repentance"
+}
+
+<Callout type="info" title="Guia Rápido">
+- **Chefes de the binding of isaac repentance**: Este guia cobre todos os principais encontros, de Mom até The Beast, focando nas estratégias da meta de 2026.
+- **Gerenciamento de Rotas**: O sucesso depende da escolha do caminho correto (Polaroid vs. Negative) e do gerenciamento das portas de tempo para o Hush.
+- **Armadura de Chefe**: Muitos chefes de fim de jogo utilizam escalonamento de dano, o que significa que o dano de explosão (burst) alto é frequentemente menos eficaz do que o DPS sustentado.
+- **Desbloqueios**: Derrotar chefes específicos com diferentes personagens é a principal maneira de expandir seu conjunto de itens e elenco de personagens.
+- **Preparação**: Priorize velocidade de movimento e itens defensivos como Holy Mantle ou Psy Fly para fases de bullet-hell.
+</Callout>
+
+<Section icon={Map} title="Progressão Principal: Os Chefes da Rota Principal">
+
+Navegar pela hierarquia dos **chefes de the binding of isaac repentance** requer uma compreensão clara dos caminhos ramificados do jogo. Cada partida começa com o objetivo de alcançar Mom em Depths, mas o caminho à frente se expande significativamente à medida que você garante mais vitórias. Na meta de 2026, os jogadores devem equilibrar seus recursos de vida com os requisitos para entrar na Cathedral ou Sheol.
+
+| Nome do Chefe | Localização | Requisito Principal de Desbloqueio | Tipo de HP |
+| :--- | :--- | :--- | :--- |
+| **Mom** | Depths II | Disponível por padrão | Padrão |
+| **Mom's Heart** | Womb II | Derrote Mom 1 vez | Padrão |
+| **It Lives!** | Womb II | Derrote Mom's Heart 11 vezes | Padrão |
+| **Isaac** | Cathedral | Entre no feixe de luz após It Lives! | Escalonamento |
+| **Satan** | Sheol | Entre no alçapão após It Lives! | Padrão |
+| **??? (Blue Baby)** | The Chest | Leve The Polaroid para a Cathedral | Escalonamento |
+| **The Lamb** | Dark Room | Leve The Negative para Sheol | Padrão |
+
+<Callout type="info" title="Escalonamento de Dano Explicado">
+Vários chefes de fim de jogo, incluindo Isaac e Blue Baby, utilizam a **Armadura de Chefe**. Esta mecânica reduz o dano recebido com base em quanto DPS você está causando no momento. Para combater isso, itens que fornecem dano persistente ou lágrimas de alta frequência são frequentemente mais confiáveis do que projéteis únicos de alto dano.
+</Callout>
+
+A transição de Mom's Heart para It Lives! é um momento crucial na sua progressão. Assim que It Lives! é desbloqueado, você ganha acesso garantido à Cathedral e Sheol. Esses andares representam o desafio do meio do jogo, onde os inimigos causam um coração inteiro de dano e os layouts das salas tornam-se cada vez mais complexos.
+
+</Section>
+
+<Section icon={Target} title="A Rota Alternativa: Chegando à Mother">
+
+A expansão Repentance introduziu a rota mais complexa da história do jogo. Chegar à Mother requer uma série de ações específicas através dos andares alternativos: Downpour, Mines e Mausoleum. Este caminho é significativamente mais difícil do que a rota padrão, apresentando inimigos com mais vida e projéteis mais agressivos.
+
+<Steps>
+  <Step num="1" title="Entre na Saída Secreta">
+    Após derrotar o Hush três vezes, uma porta trancada aparece após o chefe do primeiro andar. Use uma chave para entrar em Downpour ou Dross.
+  </Step>
+  <Step num="2" title="O Mundo do Espelho">
+    Em Downpour II, encontre o fogo branco e caminhe sobre ele para se tornar o personagem em forma de Lost. Entre no espelho para encontrar a primeira Peça da Faca (Knife Piece) na Sala do Tesouro.
+  </Step>
+  <Step num="3" title="O Poço de Mina Abandonado">
+    Entre em Mines ou Ashpit II usando duas bombas. Pressione três botões amarelos escondidos pelo andar e, em seguida, entre no poço da mina para escapar da sombra do Great Gideon com a segunda Peça da Faca.
+  </Step>
+  <Step num="4" title="A Porta de Carne">
+    Em Mausoleum II, derrote a versão alternativa da Mom. Use a Faca completa para esfaquear a porta de carne vermelha, levando a uma luta com o Mom's Heart alternativo.
+  </Step>
+</Steps>
+
+| Andar Alternativo | Custo de Entrada | Item Chave Encontrado | Perigo Único |
+| :--- | :--- | :--- | :--- |
+| **Downpour / Dross** | 1 Chave | Knife Piece 1 | Mundo do Espelho / Forma Lost |
+| **Mines / Ashpit** | 2 Bombas | Knife Piece 2 | Sequência de Perseguição |
+| **Mausoleum / Gehenna** | 2 Corações Cheios | N/A | Armadilhas de Teletransporte |
+| **Corpse** | N/A | N/A | Inimigos em Decomposição |
+
+<Callout type="warning" title="Risco do Mundo do Espelho">
+Enquanto estiver no Mundo do Espelho como o Lost, qualquer golpe resultará em um game over imediato, a menos que você tenha o desbloqueio do Holy Mantle. Priorize a segurança em vez de limpar todas as salas neste estado.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="O Desafio Final: Dogma e The Beast">
+
+A rota "Home" representa o verdadeiro final da história de the binding of isaac repentance. Este caminho é único porque envolve a mecânica de "Ascensão" (Ascent), onde você viaja de volta pelos andares que limpou anteriormente. Esta rota culmina em uma luta de chefe de várias fases que testa a resistência da sua build e suas habilidades de esquiva de projéteis.
+
+<CardGrid cols={2}>
+  <Card title="Fase 1: Dogma">
+    - **Forma de Televisão**: Usa feixes estáticos e halos giratórios.
+    - **Forma de Anjo**: Investidas rápidas e espalhamento de penas.
+    - **Estratégia**: Mantenha distância durante a fase giratória e observe os sinais dos feixes de luz.
+  </Card>
+  <Card title="Fase 2: Ultra Cavaleiros">
+    - **Famine/Pestilence**: Foque na esquiva horizontal.
+    - **War/Death**: Investidas de alta velocidade e padrões de foice.
+    - **Estratégia**: Cada Cavaleiro tem uma reserva de vida limitada; foque em um DPS consistente.
+  </Card>
+  <Card title="Fase 3: The Beast">
+    - **Perseguição na Lava**: Pule sobre anéis de fogo e evite estalactites.
+    - **Inalação**: Cuidado com o sopro de fogo e os detritos sugados.
+    - **Estratégia**: Fique no lado esquerdo da tela para maximizar o tempo de reação.
+  </Card>
+  <Card title="A Ascensão (The Ascent)">
+    - **Dad's Note**: Pegar este item ativa a sequência de andares reversos.
+    - **Personagens Tainted**: Deixe um berloque (trinket) em uma Sala do Tesouro para encontrar uma Cracked Key para desbloqueios.
+    - **Estratégia**: Economize sua vida para a luta final contra o Dogma; as salas da Ascensão são relativamente fáceis.
+  </Card>
+</CardGrid>
+
+| Fase do Chefe | Tipo de Ataque | Estratégia de Contra-ataque |
+| :--- | :--- | :--- |
+| **Dogma (Anjo)** | Halo Giratório | Mova-se em um círculo amplo |
+| **Ultra Death** | Arremesso de Foice | Fique no centro vertical |
+| **The Beast** | Sopro de Fogo | Esconda-se atrás de estalactites ou suba |
+| **Ultra War** | Chuva de Bombas | Observe as sombras no chão |
+
+<Callout type="tip" title="Cama da Mamãe">
+Antes de lutar contra o Dogma no capítulo Home, você pode dormir na cama da Mom para restaurar totalmente sua vida. Se você tiver a Red Key ou uma Cracked Key, verifique o armário do corredor para desbloquear a versão Tainted do seu personagem atual.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Superchefes: Hush e Delirium">
+
+Hush e Delirium são encontros opcionais que fornecem alguns dos desbloqueios mais poderosos do jogo. Hush é um encontro com tempo limitado, exigindo que você derrote Mom's Heart em 30 minutos. Delirium é encontrado no The Void, um andar que tem a chance de aparecer após derrotar qualquer grande chefe final.
+
+| Superchefe | Vida (HP) | Mecânica de Armadura | Melhor Tipo de Build |
+| :--- | :--- | :--- | :--- |
+| **Hush** | 6.666 | Escalonamento Extremo | Alta Cadência de Tiro / Escudos |
+| **Delirium** | 10.000 | Escalonamento Variável | Teleguiado / Alta Velocidade de Movimento |
+
+**Destaques da Estratégia contra Hush:**
+- **Lágrimas de Continuum**: Estas lágrimas dão a volta na tela. Encontre um "ponto seguro" onde o padrão não se sobreponha e fique parado.
+- **Moscas do Hush**: Limpe-as imediatamente, pois elas podem sobrecarregar seu posicionamento.
+- **Preparação no Blue Womb**: Use os quatro baús e as duas salas de itens no Blue Womb para finalizar sua build.
+
+**Destaques da Estratégia contra Delirium:**
+- **Mudança de Forma**: Delirium se transforma em chefes que você já derrotou. Ele herda seus padrões, mas frequentemente se move muito mais rápido.
+- **Telefragging**: Delirium é notório por se teletransportar diretamente para cima do jogador. Alta velocidade de movimento é essencial para evitar esses casos.
+- **The Void**: Explore todo o andar antes de entrar na sala do chefe. Existem várias salas de chefe, mas apenas uma contém Delirium.
+
+<Callout type="success" title="Marcas de Conclusão">
+Derrotar Hush e Delirium no Modo Difícil fornece marcas exclusivas "manchadas de sangue" no post-it do seu personagem. Elas são necessárias para a conquista "Dead God" e desbloqueiam alguns dos melhores itens do jogo, como o D-Infinity.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Objetivos e Checklist">
+
+Para dominar completamente os **chefes de the binding of isaac repentance**, você deve acompanhar seu progresso em todos os personagens. Cada vitória desbloqueia novos itens que podem facilitar as partidas futuras. Use o checklist abaixo para priorizar seus alvos de fim de jogo em 2026.
+
+<Checklist
+  id="boss-completion-goals"
+  title="Marcos de Chefes de Fim de Jogo:"
+  items={[
+    "Derrote Mom's Heart 11 vezes para desbloquear It Lives!",
+    "Derrote Hush 3 vezes para desbloquear a Saída Secreta (Rota Alternativa)",
+    "Derrote Mother para desbloquear a rota Home e personagens Tainted",
+    "Derrote The Beast para ver o final da história",
+    "Derrote Delirium para desbloquear as marcas de 'Papel Rasgado' específicas de cada personagem",
+    "Complete Mega Satan para desbloquear o personagem Apollyon"
+  ]}
+/>
+
+</Section>
+
+<Section icon={Swords} title="Perguntas Frequentes">
+
+<FAQ items={[
+  {
+    question: "Por que não consigo encontrar a porta para o Hush?",
+    answer: "A porta para o Blue Womb só aparece se você derrotar Mom's Heart ou It Lives! dentro de 30 minutos após o início da partida. Se o cronômetro exceder 30:00, a porta não aparecerá, a menos que você tenha itens específicos como Mama Mega."
+  },
+  {
+    question: "Como lidar com a Armadura de Chefe nos chefes de the binding of isaac repentance?",
+    answer: "A Armadura de Chefe reduz o dano com base no seu DPS. Para contornar isso, use itens que aplicam efeitos de status (veneno, sangramento) ou familiares que causam dano de contato constante. Uma alta cadência de tiro é geralmente melhor do que um único tiro de alto dano contra chefes blindados."
+  },
+  {
+    question: "Qual é a melhor rota para iniciantes?",
+    answer: "Iniciantes devem focar na rota 'Polaroid' (Cathedral para Chest). Geralmente é mais permissiva do que a rota Sheol e fornece mais itens no andar final para ajudar a derrotar os chefes."
+  },
+  {
+    question: "Como desbloqueio o Mega Satan?",
+    answer: "Você deve coletar duas Peças de Chave (Key Pieces) explodindo as Estátuas de Anjo em Salas de Anjo e derrotando os anjos Uriel e Gabriel. Assim que tiver ambas as peças, uma porta dourada aparecerá na sala inicial de The Chest ou Dark Room."
+  }
+]} />
+
+</Section>

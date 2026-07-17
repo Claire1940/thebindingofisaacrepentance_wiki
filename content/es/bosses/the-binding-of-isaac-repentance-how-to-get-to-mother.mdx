@@ -1,0 +1,186 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "Guía de ruta: Cómo llegar a Mother en The Binding of Isaac: Repentance",
+  description: "Domina la ruta alternativa en The Binding of Isaac: Repentance para llegar a Mother con nuestra guía de 2026 que cubre las piezas del cuchillo, costos de pisos y tácticas contra jefes.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/120B0D/E24133?text=How+to+Get+to+Mother+Route",
+  date: "2026-07-17",
+  author: "Equipo de la Wiki de The Binding of Isaac: Repentance",
+  keywords: "the binding of isaac repentance, como llegar a mother, piezas del cuchillo, ruta alternativa"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **Requisito Principal**: Debes derrotar a **Hush** tres veces para desbloquear las puertas de la ruta alternativa.
+- **Piezas del Cuchillo**: Recoge la **Pieza del Cuchillo 1** en el Mundo del Espejo y la **Pieza del Cuchillo 2** en el Pozo de la Mina.
+- **Secuencia de Pisos**: Navega a través de **Downpour/Dross**, **Mines/Ashpit** y **Mausoleum/Gehenna**.
+- **Destino Final**: Usa el cuchillo completado en la **Puerta de Carne** después de derrotar a Mom en Mausoleum II.
+- **El Jefe**: Derrota a **Mother** en Corpse II para obtener la marca de completado del cuchillo y desbloquear el camino a Home.
+</Callout>
+
+<Section icon={Map} title="Prerrequisitos para la Ruta de Mother">
+
+Llegar al jefe final de la expansión Repentance requiere más que solo habilidad; requiere un conjunto específico de desbloqueos permanentes. En **The Binding of Isaac: Repentance**, tu viaje comienza mucho antes de entrar al primer piso. El juego bloquea este contenido tras el logro "A Secret Exit" (Una salida secreta), que solo se activa después de haber derrotado con éxito a Hush tres veces con cualquier personaje.
+
+Una vez desbloqueado, aparecerán puertas especiales con un tinte azul en las salas de jefe de Basement, Caves y Depths. Estas puertas sirven como portales a los pisos alternativos. A diferencia de los pisos estándar, estas versiones alternativas presentan enemigos únicos, diseños de salas más difíciles y una misión específica que involucra la construcción de un cuchillo de sacrificio.
+
+| Requisito | Descripción | Estado |
+| :--- | :--- | :--- |
+| **Muertes de Hush** | Derrota a Hush 3 veces en cualquier archivo de guardado | **Obligatorio** |
+| **A Secret Exit** | Logro desbloqueado tras la tercera muerte de Hush | **Obligatorio** |
+| **Reserva de Llaves** | Se necesita al menos 1 llave para entrar en Downpour I | **Recomendado** |
+| **Reserva de Bombas** | Se necesitan al menos 2 bombas para entrar en Mines I | **Recomendado** |
+| **Salud** | 2 corazones completos de salud para la puerta de Mausoleum | **Obligatorio** |
+
+<Callout type="warning" title="Gestión de Recursos">
+La ruta alternativa consume significativamente más recursos que la ruta estándar. Asegúrate siempre de tener un excedente de llaves y bombas antes de descender, ya que perder una pieza del cuchillo puede invalidar toda la partida.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Construyendo el Cuchillo: Pieza Uno">
+
+El primer paso en tu búsqueda es obtener la **Pieza del Cuchillo 1**. Esto ocurre en **Downpour II** o **Dross II**. Debes localizar una chimenea blanca y un espejo dentro del mismo piso. Tocar el fuego blanco convierte a Isaac en una forma de The Lost, lo que le permite atravesar el espejo hacia una versión reflejada del piso.
+
+<Steps>
+  <Step num="1" title="Encuentra el Fuego Blanco">
+    Localiza la chimenea blanca en Downpour II. No inflige daño, pero te transformará en The Lost.
+  </Step>
+  <Step num="2" title="Entra en el Espejo">
+    Atraviesa el espejo mientras estás en forma de Lost. Ten cuidado, ya que morirás de un solo golpe en este estado.
+  </Step>
+  <Step num="3" title="Recupera la Pieza">
+    Dirígete a la Sala del Tesoro en el mundo del espejo. El pedestal contendrá la Pieza del Cuchillo 1.
+  </Step>
+  <Step num="4" title="Regresa a Salvo">
+    Sal de la Sala del Tesoro y vuelve a cruzar el espejo para recuperar tu forma y salud originales.
+  </Step>
+</Steps>
+
+<Callout type="tip" title="Protección de Holy Mantle">
+Si has desbloqueado el Holy Mantle para The Lost (vía la Máquina de Greed), se aplicará a tu estado transformado en el mundo del espejo, proporcionando un golpe gratuito de protección.
+</Callout>
+
+<CardGrid cols={2}>
+  <Card title="Downpour/Dross I">
+    - Requiere 1 llave para entrar.
+    - Incremento de dificultad estándar.
+    - Enfoque en la recolección de recursos.
+  </Card>
+  <Card title="Downpour/Dross II">
+    - Contiene el Espejo y el Fuego Blanco.
+    - La **Pieza del Cuchillo 1** se encuentra aquí.
+    - La pelea contra el jefe debe completarse para progresar.
+  </Card>
+</CardGrid>
+
+</Section>
+
+<Section icon={Swords} title="El Pozo de Mina Abandonado: Pieza Dos">
+
+Después de completar la secuencia de Downpour/Dross, debes entrar en **Mines I** o **Ashpit I** usando dos bombas en la puerta tapiada en la sala del jefe. Tu objetivo aquí es llegar a **Mines II** o **Ashpit II** para encontrar el segundo componente del cuchillo. Esta sección involucra un rompecabezas ambiental único y una secuencia de persecución guionizada.
+
+| Elemento del Puzzle | Función | Ubicación |
+| :--- | :--- | :--- |
+| **Botones Amarillos** | Presiona los 3 para completar la vía del carro | Mines II / Ashpit II |
+| **Vagoneta** | Se usa para atravesar la entrada tapiada | Mines II / Ashpit II |
+| **Pozo Abandonado** | Sub-área que contiene la pieza del cuchillo | Piso Interno |
+| **Sombra de Mother** | Perseguidor invulnerable durante el escape | Piso Interno |
+
+<Callout type="success" title="Estrategia de Combate">
+La Sombra de Mother no puede ser derrotada. Enfócate totalmente en el movimiento y la velocidad. Objetos como **Transcendence** o **Lord of the Pit** son invaluables aquí, ya que te permiten volar sobre los obstáculos durante la persecución.
+</Callout>
+
+<Steps>
+  <Step num="1" title="Activa la Vía">
+    Busca y pisa los tres botones amarillos dispersos por el piso de Mines II.
+  </Step>
+  <Step num="2" title="Sube a la Vagoneta">
+    Localiza la habitación con la vagoneta y el pozo tapiado. Salta al carro para entrar en el área oculta.
+  </Step>
+  <Step num="3" title="Recoge la Pieza del Cuchillo 2">
+    Camina hasta el final del camino lineal para recoger la pieza. Esto activará la persecución de la Sombra de Mother.
+  </Step>
+  <Step num="4" title="El Gran Escape">
+    Corre de regreso a través de las salas, usando bombas para despejar barricadas, hasta que salgas de nuevo al piso principal.
+  </Step>
+</Steps>
+
+</Section>
+
+<Section icon={Shield} title="Mausoleo y la Puerta de Carne">
+
+Con ambas piezas recolectadas, se combinarán en un familiar poderoso que actúa como proyectil. Tu próximo destino es **Mausoleum I** o **Gehenna I**. Para entrar, debes pagar dos corazones completos de salud en la puerta que se encuentra en la sala del jefe de Mines II. Este piso es la etapa final antes de llegar a Corpse.
+
+En **Mausoleum II**, te enfrentarás a una versión mejorada de la pelea contra Mom. Una vez derrotada, aparecerá una extraña y palpitante "Puerta de Carne" en la sala del jefe. Aquí es donde tu cuchillo construido se vuelve esencial.
+
+<Callout type="warning" title="Costo de la Puerta">
+La puerta de Mausoleum inflige dos corazones completos de daño. Si juegas con personajes como **The Lost** o **Tainted Judas**, asegúrate de tener suficientes Soul Hearts o frames de invulnerabilidad para sobrevivir a la transición.
+</Callout>
+
+**Peligros del Piso Mausoleum:**
+- **Enemigos Teletransportadores**: Muchos enemigos en esta área pueden evadir tu línea de visión.
+- **Baldosas con Trampa**: Cuidado con los pinchos y cuchillas móviles que infligen un corazón completo de daño.
+- **Jefes Mejorados**: Espera versiones campeonas de jefes estándar con mayor cantidad de vida.
+
+| Variante de Jefe | Estilo de Ataque | Preparación |
+| :--- | :--- | :--- |
+| **Alt Mom** | Pisotones y rayos oculares | Mantente móvil, vigila las sombras |
+| **Alt Mom's Heart** | Patrones de bullet hell | Alta cadencia de fuego u orbitales |
+| **Mother (Fase 1)** | Lanzamiento de cuchillos y larvas | Mantén la distancia, limpia enemigos menores |
+| **Mother (Fase 2)** | Cargas rápidas y desgarros de pared | Daño de ráfaga y escudos |
+
+</Section>
+
+<Section icon={Sparkles} title="Preparación Final para Mother">
+
+Corpse es el capítulo final de la ruta alternativa. Consta de dos pisos, culminando en la batalla contra Mother. Esta pelea es una de las más difíciles del juego, con dos fases distintas y barras de salud masivas (blindaje de jefe).
+
+<Checklist
+  id="mother-prep"
+  title="Lista de Verificación para el Jefe Final:"
+  items={[
+    "Asegúrate de que tu estadística de Velocidad sea de al menos 1.5 para esquivar cargas",
+    "Trae un objeto activo de alto daño como The Book of Belial o Mega Mush",
+    "Consigue orbitales defensivos o el Holy Mantle si es posible",
+    "Guarda cualquier efecto de 'I'm Drowsy' o 'Power Pill' para la Fase 2",
+    "Ten al menos 6+ corazones (Rojos o Azules) antes de entrar a la arena"
+  ]}
+/>
+
+<Callout type="tip" title="Recomendación de Sinergia">
+Los objetos que proporcionan **Homing** (como Sacred Heart) o **Piercing** (como Death's Touch) son excepcionalmente efectivos contra Mother, ya que su hitbox es grande y a menudo invoca enemigos más pequeños para bloquear tus disparos.
+</Callout>
+
+Durante la pelea, Mother usará una variedad de ataques que llenan la pantalla. En la Fase 1, enfócate en sus manos y en las larvas que genera. En la Fase 2, se vuelve mucho más agresiva, cargando a través de la pantalla y disparando líneas densas de proyectiles. El éxito depende de reconocer sus señales temprano y tener suficiente daño sostenido para superar su armadura.
+
+</Section>
+
+<Section icon={Trophy} title="Preguntas Frecuentes">
+
+<FAQ items={[
+  {
+    question: "¿Puedo llegar a Mother si pierdo una Pieza del Cuchillo?",
+    answer: "No. Se requieren tanto la Pieza del Cuchillo 1 como la Pieza del Cuchillo 2 para crear el cuchillo que abre la Puerta de Carne en Mausoleum II. Si te falta alguna, no podrás entrar en Corpse."
+  },
+  {
+    question: "¿Tengo que ir a Downpour I o puedo saltar a Downpour II?",
+    answer: "Puedes entrar en la ruta alternativa en cualquier etapa (de Basement a Downpour, de Caves a Mines), pero debes visitar la versión 'II' de cada piso para obtener la pieza del cuchillo correspondiente."
+  },
+  {
+    question: "¿Qué sucede después de derrotar a Mother por primera vez?",
+    answer: "Derrotar a Mother por primera vez desbloquea la 'Strange Door' (Puerta Extraña) en Depths II, que es la entrada a la ruta de Home y al jefe final The Beast."
+  },
+  {
+    question: "¿Es la ruta de Mother más difícil que la de Mega Satan?",
+    answer: "Generalmente, sí. La ruta de Mother requiere navegar por pisos más difíciles y una misión más compleja, mientras que Mega Satan requiere principalmente piezas de llave y llegar a Chest/Dark Room."
+  }
+]} />
+
+</Section>

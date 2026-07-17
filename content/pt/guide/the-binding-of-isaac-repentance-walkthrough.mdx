@@ -1,0 +1,158 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, BookOpen } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Detonado de The Binding of Isaac: Repentance: Guia de Estratégia 2026",
+  description: "Domine The Binding of Isaac: Repentance com nosso detonado especializado. Aprenda tiers de itens, desbloqueios de personagens e estratégias de chefes para uma run de sucesso.",
+  category: "Guia",
+  image: "https://placehold.co/800x400/881337/fff?text=Repentance+Walkthrough",
+  date: "2026-07-17",
+  author: "Equipe da Wiki de The Binding of Isaac: Repentance",
+  keywords: "The Binding of Isaac, Repentance, guia, estratégia, itens, desbloqueios"
+}
+
+<Callout type="info" title="Guia Rápido">
+- **The Binding of Isaac: Repentance** é um roguelike complexo que recompensa a **gestão cuidadosa de recursos** e a **esquiva de dano**.
+- Priorize **pactos de salas de Anjo ou Demônio** cedo para garantir itens que definem a build e escalam para o final do jogo (late game).
+- Siga um **roteiro de desbloqueio** consistente para melhorar a pool de itens e ganhar acesso a personagens poderosos como o **Isaac Corrompido (Tainted Isaac)**.
+- Domine o **direcionamento pelos andares (routing)** para garantir que você alcance salas essenciais como Lojas e Salas do Tesouro antes da luta contra o chefe.
+</Callout>
+
+<Section icon={Map} title="Ciclo de Gameplay Principal e Progressão">
+
+O sucesso em The Binding of Isaac: Repentance depende da sua habilidade de encadear andares enquanto maximiza seu nível de poder através da descoberta de salas especiais. Iniciantes devem focar nos fundamentos de movimentação e controle de sala em vez de buscar as sinergias mais complexas imediatamente.
+
+**Destaques do Vídeo:**
+- Técnicas essenciais de movimentação para limpeza de salas.
+- Uso eficiente de bombas e chaves para otimização de recursos.
+- Padrões de chefes do início do jogo e zonas seguras.
+
+<YouTubeEmbed videoId="700_plus_items_guide" title="Estratégia para Iniciantes em The Binding of Isaac: Repentance" />
+
+O fluxo de uma run bem-sucedida envolve limpar salas de combate para ganhar recursos, visitar a Sala do Tesouro para upgrades gratuitos e decidir entre pactos com o Demônio ou Anjo.
+
+| Tipo de Sala | Benefício Principal | Prioridade Estratégica |
+| :--- | :--- | :--- |
+| **Sala do Tesouro** | Item de pedestal grátis | Visite todos os andares |
+| **Loja** | Consumíveis/Upgrades | Requer 15+ moedas |
+| **Sala do Demônio** | Alto risco/Alta recompensa | Troque vida por poder |
+| **Sala de Anjo** | Itens defensivos/utilitários | Melhor para builds de sobrevivência |
+
+<Callout type="tip" title="Dica de Profissional">
+Sempre ative o "Found HUD" no seu menu de opções. Saber suas mudanças exatas de atributos ajuda a avaliar se um item vale o custo de vida ou o potencial de reroll.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Visão Geral de Tiers de Itens">
+
+Nem todos os itens são criados iguais. Entender a pool interna de itens e como passivas específicas interagem é a marca registrada de um jogador veterano. A tabela a seguir categoriza os itens com base em sua confiabilidade geral entre todos os personagens.
+
+| Nome do Item | Tier | Resumo do Efeito | Melhor Pool |
+| :--- | :--- | :--- | :--- |
+| **Sacred Heart** | S | Multiplicador de dano/Teleguiado | Sala de Anjo |
+| **C Section** | S | Projéteis de feto teleguiados | Sala do Tesouro |
+| **Brimstone** | A | Laser perfurante carregado | Sala do Demônio |
+| **Mom's Knife** | A | Faca corpo a corpo de alto dano | Sala do Demônio |
+| **Holy Mantle** | B | Um acerto grátis por sala | Tesouro/Anjo |
+
+<CardGrid cols={3}>
+  <Card title="Potências Tier S">
+    - **Sacred Heart**
+    - **Glitched Crown**
+    - **Spindown Dice**
+    - Vencedores de run instantâneos com pouca preparação.
+  </Card>
+  <Card title="Essenciais Tier A">
+    - **Brimstone**
+    - **Tech X**
+    - **Incubus**
+    - Causadores de dano extremamente confiáveis.
+  </Card>
+  <Card title="Utilitários Tier B">
+    - **Satanic Bible**
+    - **Book of Virtues**
+    - **Diplopia**
+    - Cruciais para a gestão de recursos a longo prazo.
+  </Card>
+</CardGrid>
+
+<Callout type="warning" title="Alerta de Anti-Sinergia">
+Tenha cuidado com o "Atrator Estranho" (Strange Attractor). Embora ele puxe inimigos para sua linha de fogo, muitas vezes arrasta projéteis perigosos e inimigos diretamente para o seu hitbox.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Roteiro de Desbloqueios">
+
+A progressão em Repentance é bloqueada por marcas de conclusão específicas. Seguir uma ordem de desbloqueio ideal evita esforços desperdiçados em objetivos de baixo impacto.
+
+<Steps>
+  <Step num="1" title="Finais Iniciais">
+    Derrote a Mãe (Mom) 11 vezes para desbloquear permanentemente "It Lives!" e acessar as rotas da Catedral e Sheol.
+  </Step>
+  <Step num="2" title="Evidência Fotográfica">
+    Derrote Isaac 5 vezes para obter A Polaroid e Satan 5 vezes para obter O Negativo (The Negative) para abrir os capítulos finais.
+  </Step>
+  <Step num="3" title="Caminhos Alternativos">
+    Derrote Hush 3 vezes para desbloquear o caminho para o Cadáver (Corpse) e a luta contra a chefe Mãe (Mother).
+  </Step>
+  <Step num="4" title="Ascensão Final">
+    Desbloqueie o capítulo "Home" usando a Porta Estranha em Depths II para enfrentar A Besta (The Beast).
+  </Step>
+</Steps>
+
+<Checklist
+  id="progression-checklist"
+  title="Desbloqueios Essenciais para seu Save:"
+  items={[
+    "Derrote Isaac como ??? para desbloquear o D6 para o Isaac",
+    "Doe 879 moedas para a Máquina de Greed para o Manto Sagrado (Holy Mantle)",
+    "Derrote A Besta como Isaac Corrompido para a Coroa Bugada (Glitched Crown)",
+    "Complete o Desafio #2 (High Brow) para a runa Jera"
+  ]}
+/>
+
+</Section>
+
+<Section icon={Shield} title="Comparação de Personagens">
+
+Escolher o personagem certo para uma marca de conclusão específica é vital. Alguns personagens se destacam em boss rushes, enquanto outros são feitos para resistência.
+
+| Personagem | Dificuldade | Mecânica Principal | Rota Recomendada |
+| :--- | :--- | :--- | :--- |
+| **Isaac** | Fácil | Reroll do D6 | Qualquer uma |
+| **Azazel** | Muito Fácil | Enxofre de curto alcance | Pressa no early game |
+| **The Lost** | Muito Difícil | Sem vida/Voo | Builds de alto dano |
+| **Bethany** | Moderada | Cargas de Fogo-fátuo | Builds de itens ativos |
+
+<Callout type="success" title="Recomendação para Iniciantes">
+Comece sua jornada com **Magdalene**. Sua alta reserva de vida inicial oferece uma margem significativa para aprender os padrões dos inimigos sem encerrar sua run prematuramente.
+</Callout>
+
+</Section>
+
+<Section icon={BookOpen} title="Perguntas Frequentes (FAQ)">
+
+<FAQ items={[
+  {
+    question: "Como chego à Sala de Anjo em vez da Sala do Demônio?",
+    answer: "Em Repentance, recusar-se a entrar na primeira Sala do Demônio garante que a próxima sala de pacto será uma Sala de Anjo. Além disso, evitar dano em corações vermelhos ajuda a manter altas as chances de pacto."
+  },
+  {
+    question: "Qual é a melhor maneira de farmar moedas para a Máquina de Greed?",
+    answer: "Alterne entre diferentes personagens. Cada personagem tem uma porcentagem única de chance de travamento, então jogar com uma variedade de personagens mantém a máquina aberta por mais tempo."
+  },
+  {
+    question: "Os mods são seguros para usar em conquistas?",
+    answer: "Sim, depois de derrotar a Mãe pelo menos uma vez, você pode usar mods. No entanto, os mods são desativados para Corridas Diárias e partidas online para garantir a justiça."
+  }
+]} />
+
+</Section>

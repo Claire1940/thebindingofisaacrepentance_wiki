@@ -1,0 +1,183 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "The Binding of Isaac: Repentance - Cómo llegar a The Beast: Pasos",
+  description: "Domina la ruta del Ascenso en The Binding of Isaac: Repentance. Aprende cómo llegar a The Beast, abrir la Puerta Extraña y desbloquear personajes Tainted.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/120b0d/fff?text=Get+to+The+Beast",
+  date: "2026-07-17",
+  author: "Equipo de la Wiki de The Binding of Isaac: Repentance",
+  keywords: "the binding of isaac repentance, the beast, ascenso, personajes tainted, guía, dogma"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **La ruta de The Beast**: Domina **cómo llegar a The Beast** derrotando primero a Mother.
+- **Entrada por la Puerta Extraña**: Telepórtate fuera de la sala del jefe de Mamá en Depths II y usa la Polaroid para entrar en Mausoleum.
+- **La subida del Ascenso**: Recoge la **Nota de Papá** para ascender de nuevo a través de los pisos invertidos hasta llegar a Home.
+- **Desbloqueos Tainted**: Deja un **trinket** (baratija) al principio de la partida para convertirlo en una **Cracked Key** (Llave Agrietada).
+- **Desafío final de jefes**: Duerme en la cama de Mamá y luego toca la televisión para enfrentarte a **Dogma** y **The Beast**.
+</Callout>
+
+<Section icon={Shield} title="Prerrequisitos y desbloqueos para la ruta de The Beast">
+
+Para completar con éxito una partida y dominar **cómo llegar a The Beast**, los jugadores deben desbloquear primero varios hitos de progresión avanzada. Esta no es una ruta disponible para principiantes en sus primeras partidas. El juego requiere que demuestres tus habilidades conquistando la ruta alternativa antes de abrir el capítulo final.
+
+El primer paso absoluto es desbloquear la ruta de pisos alternativos derrotando a Hush tres veces. Una vez desbloqueada, debes embarcarte en la compleja misión de las piezas del cuchillo (Knife Pieces) para llegar al piso Corpse y derrotar a Mother. Derrotar a Mother es el requisito indispensable; hasta que ella caiga, la Puerta Extraña en Depths II no aparecerá, y el camino hacia el jefe final permanecerá sellado.
+
+| Ruta | Requisito de Acceso | Jefe Final | Recompensa Clave |
+|---|---|---|---|
+| **Cathedral** | Derrota a It Lives! y entra en el haz de luz | Isaac | Polaroid / Final 13 |
+| **Sheol** | Derrota a It Lives! y entra en la trampilla | Satan | Negative / Final 12 |
+| **Corpse** | Completa el puzle de Knife Piece 1 y 2 | Mother | Puerta Extraña / Jacob & Esau |
+| **Home** | Abre la Puerta Extraña en Depths II | The Beast | Personajes Tainted / Final 22 |
+
+Después de derrotar a Mother, las partidas posteriores incluirán una misteriosa puerta gris resplandeciente en la sala inicial de Depths II (o Gehenna II si estás en la ruta alternativa). Esta es la Puerta Extraña, y sirve como entrada a la secuencia final.
+
+<Callout type="warning" title="Aviso de Prerrequisito">
+No puedes acceder a la Puerta Extraña ni a la Nota de Papá hasta que hayas derrotado a Mother en el piso Corpse II al menos una vez en tu archivo de guardado.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="Cómo llegar a The Beast: Ruta paso a paso">
+
+Una vez que hayas desbloqueado el camino, llegar al jefe final requiere una secuencia de acciones muy específica durante una partida estándar. Sigue estos pasos cuidadosamente para asegurarte de no quedar fuera del Ascenso.
+
+<Steps>
+  <Step num="1" title="Localiza la calavera marcada en Depths II">
+    Cuando llegues a Depths II, busca en el piso una calavera marcada con una pequeña y tenue cruz blanca. Bombardear esta calavera específica garantiza la obtención de una carta de **The Fool** (El Loco). No uses esta carta inmediatamente; guárdala para después de la pelea con el jefe.
+  </Step>
+  <Step num="2" title="Derrota a Mamá y reclama la Foto">
+    Entra en la sala del jefe y derrota a Mamá. Una vez derrotada, elige **The Polaroid** o **The Negative**. Ambas funcionan igual de bien para abrir la Puerta Extraña, así que selecciona la que mejor se adapte a tu build actual o sinergias activas.
+  </Step>
+  <Step num="3" title="Telepórtate fuera y abre la Puerta Extraña">
+    Con la foto en tu poder, usa la carta **The Fool** (o cualquier otro objeto/carta de teletransporte) para escapar de la sala del jefe de Mamá. Camina de regreso a la sala inicial del piso. Acércate a la Puerta Extraña de color gris brillante; tu foto será consumida y la puerta se abrirá.
+  </Step>
+  <Step num="4" title="Desciende y recoge la Nota de Papá">
+    Atraviesa la puerta para descender a Mausoleum II (o Gehenna II). Este es un piso corto sin sala del tesoro. Dirígete a la sala del jefe, donde encontrarás un único pedestal con la **Nota de Papá**. Recogerla activará inmediatamente el Ascenso.
+  </Step>
+  <Step num="5" title="Asciende a través de los pisos invertidos">
+    La dirección del juego se invierte. Subirás de nuevo a través de cada piso que completaste anteriormente en la partida. La sala del jefe de cada piso contendrá un haz de luz que conduce hacia arriba. Los jefes son reemplazados por enemigos únicos y agresivos del Ascenso.
+  </Step>
+</Steps>
+
+<Callout type="tip" title="Teletransporte Garantizado">
+Si accidentalmente usas tu carta The Fool antes de tiempo, otros objetos de teletransporte como Teleport!, Card Against Humanity (con una trampilla) o cartas de estrellas aún pueden salvar tu partida. Asegura siempre un método de teletransporte antes de entrar en la pelea contra Mamá.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="El Ascenso y el desbloqueo de personajes Tainted">
+
+El Ascenso no es solo una fase de transición; es tu única oportunidad para desbloquear la variante Tainted de tu personaje actual. Para hacer esto, debes interactuar con una mecánica única de conversión de objetos que comienza mucho antes en tu partida.
+
+Mientras juegas a través de los pisos normales (desde Basement hasta Depths), debes dejar deliberadamente un trinket (baratija) en cualquier Sala del Tesoro o Sala del Jefe. Durante el Ascenso, cuando regreses a esa sala exacta, el trinket que dejaste se habrá transformado en un consumible de un solo uso llamado **Cracked Key**.
+
+<CardGrid cols={3}>
+  <Card title="Tainted Isaac">
+    - **Mecánica**: Límite de 8 ranuras pasivas, pero los objetos alternan entre dos opciones.
+    - **Desbloqueo S-Tier**: Derrotar a Beast desbloquea **Glitched Crown** y **Spindown Dice**.
+    - **Estilo de juego**: Calidad de build altamente optimizada.
+  </Card>
+  <Card title="Tainted Lilith">
+    - **Mecánica**: Ataque de látigo fetal que inflige un daño de contacto masivo al inicio.
+    - **Desbloqueo S-Tier**: Derrotar a Beast desbloquea **Twisted Pair**, un familiar de nivel S increíble.
+    - **Estilo de juego**: Limpieza de salas fácil y posicionamiento seguro.
+  </Card>
+  <Card title="Tainted Keeper">
+    - **Mecánica**: Los enemigos sueltan monedas que desaparecen; los objetos cuestan dinero.
+    - **Desbloqueo S-Tier**: Derrotar a Beast desbloquea **Soul of Keeper** y tiendas de alto rendimiento.
+    - **Estilo de juego**: Economía de alto riesgo y alta recompensa.
+  </Card>
+</CardGrid>
+
+Una vez que llegues al último piso, Home, navega por los pasillos hasta encontrar la habitación de Mamá. Fuera de su habitación hay un contorno rojo de una puerta en la pared. Al pararte cerca de este contorno y usar la Cracked Key (o la Red Key permanente si la tienes) se abrirá un armario oculto. Entra para tocar al personaje encadenado y desbloquear permanentemente su variante Tainted.
+
+| Objeto Original | Equivalente en el Ascenso | Efecto en el Juego |
+|---|---|---|
+| **Trinket dejado** | Cracked Key | Red Key de un solo uso para desbloquear personajes Tainted |
+| **Pedestal de Sala del Tesoro** | Objeto Eliminado | No hay objetos presentes en la ruta del Ascenso |
+| **Pedestal de Sala del Jefe** | Objeto de Jefe | Los jefes son reemplazados por enemigos únicos del Ascenso |
+
+<Callout type="info" title="Consejo de Colocación de Trinkets">
+Solo deja trinkets en Salas del Tesoro o Salas del Jefe. Los trinkets que dejes en pasillos de combate estándar, tiendas o bibliotecas no se convertirán en Cracked Keys durante el Ascenso.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Sobrevivir al desafío final: Dogma y The Beast">
+
+Al ascender hasta lo más alto, llegarás a Home. Este piso no contiene enemigos inicialmente. Explora las habitaciones, abre el cofre de Mamá para obtener la Red Key (en tu primera visita) y dirígete a la cama de Mamá para dormir. Dormir restaura completamente tu salud y transforma el piso en su estado oscuro y embrujado.
+
+Entra en la sala de estar y acércate al televisor. Tocar la pantalla con estática activa el desafío final de jefes. Esta es una batalla de resistencia de múltiples fases que pone a prueba tu movimiento defensivo y tu capacidad de daño sostenido.
+
+| Fase | Nombre del Jefe | Patrones de Ataque Clave | Estrategia Defensiva |
+|---|---|---|---|
+| **1** | Dogma (TV) | Rayos estáticos, plumas teledirigidas | Mantente en movimiento, evita las esquinas |
+| **2** | Ultra Horsemen | Famine, Pestilence, War, Death en secuencia | Céntrate en esquivar los anillos de balas |
+| **3** | The Beast | Aliento de fuego, barridos de lava, estalactitas | Mantén el movimiento vertical |
+
+Dogma es una pelea muy mecánica. En la fase uno, evita el haz de luz que barre la habitación. En la fase dos, ten cuidado con sus cargas giratorias rápidas. Derrotar a Dogma te otorga el objeto pasivo **Dogma**, que proporciona vuelo permanente, recuperación de salud y un escudo protector, preparándote para la transición final.
+
+La arena cambia a una perspectiva de desplazamiento lateral. Debes derrotar a los cuatro Ultra Jinetes en secuencia. Famine dispara líneas de proyectiles, Pestilence genera nubes tóxicas, War lanza bombas dirigidas y Death invoca guadañas. Una vez que los jinetes caen, The Beast emergerá de la lava. Esquiva su aliento de fuego masivo y salta sobre las estalactitas para asegurar la victoria.
+
+<Callout type="warning" title="Curación de Dogma">
+Dormir en la cama de Mamá en Home cura completamente tus contenedores de corazones rojos y otorga corazones de alma. Haz esto *antes* de tocar la televisión para comenzar la pelea.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Lista de verificación para una partida exitosa contra The Beast">
+
+Para asegurarte de que tu equipo sea lo suficientemente fuerte para sobrevivir al Ascenso y derrotar a los jefes finales, usa esta lista de preparación antes de comprometerte con la ruta.
+
+<Checklist
+  id="beast-run-prep"
+  title="Lista de verificación para The Beast:"
+  items={[
+    "Verifica que Mother haya sido derrotada al menos una vez en el archivo de guardado actual",
+    "Asegura un método de teletransporte fiable antes de entrar en la pelea contra Mamá en Depths II",
+    "Deja un trinket en una Sala del Tesoro o de Jefe temprana para generar una Cracked Key",
+    "Prioriza el vuelo, la alta velocidad de movimiento y objetos defensivos como Holy Mantle",
+    "Cúrate por completo en la cama de Mamá antes de iniciar la pelea de la televisión contra Dogma"
+  ]}
+/>
+
+<Callout type="success" title="Marca de Completado">
+Derrotar a The Beast otorga la codiciada **marca de finalización de la Nota de Papá** (representada por un pequeño dibujo de una nota en el post-it de tu personaje).
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Preguntas Frecuentes">
+
+<FAQ items={[
+  {
+    question: "¿Cuáles son los prerrequisitos para llegar a The Beast en The Binding of Isaac: Repentance?",
+    answer: "Primero debes desbloquear la ruta alternativa derrotando a Hush tres veces, luego completar la misión de las piezas del cuchillo para llegar al piso Corpse y derrotar a Mother al menos una vez en tu archivo de guardado."
+  },
+  {
+    question: "¿Puedo llegar a The Beast sin una carta de teletransporte?",
+    answer: "Técnicamente no, debes tener una forma de escapar de la sala del jefe de Mamá después de recoger la Polaroid o el Negative. Sin embargo, el juego garantiza una calavera marcada que contiene una carta de The Fool en Depths II para asegurar que siempre tengas una opción."
+  },
+  {
+    question: "¿Qué pasa si olvido dejar un trinket durante el Ascenso?",
+    answer: "Si no dejas un trinket en una Sala del Tesoro o de Jefe antes de llegar a Depths II, no aparecerá ninguna Cracked Key durante el Ascenso y no podrás desbloquear al personaje Tainted en esa partida."
+  },
+  {
+    question: "¿Derrotar a The Beast desbloquea algo especial?",
+    answer: "Sí, derrotar a The Beast con cualquier personaje desbloquea poderosos objetos de final de juego, marcas de finalización y escenas finales únicas. También desbloquea personajes Tainted si usas una Cracked Key en Home."
+  }
+]} />
+
+<Callout type="info" title="Nota Final">
+La ruta de The Beast es la prueba definitiva de escalado de build y habilidad mecánica. ¡Buena suerte, superviviente!
+</Callout>
+
+</Section>

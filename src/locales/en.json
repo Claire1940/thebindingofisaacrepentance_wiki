@@ -10,7 +10,16 @@
       "twitterDescription": "Explore The Binding of Isaac: Repentance items, characters, unlocks, bosses, challenges, seeds, and mods with clear guides for every run."
     }
   },
-  "nav": {},
+  "nav": {
+    "guide": "Guide",
+    "items": "Items",
+    "mods": "Mods",
+    "unlocks": "Unlocks",
+    "bosses": "Bosses",
+    "multiplayer": "Multiplayer",
+    "versions": "Versions",
+    "support": "Support"
+  },
   "common": {
     "home": "Home",
     "more": "More",
@@ -2267,6 +2276,26 @@
     "disclaimer": "Unofficial fan-made resource website."
   },
   "pages": {
+    "guide": {
+      "title": "The Binding of Isaac Repentance Guide",
+      "description": "Beginner walkthroughs, how-to-play basics, floor progression, and core mechanics for new and returning players of The Binding of Isaac: Repentance.",
+      "metaTitle": "The Binding of Isaac Repentance Guide - Beginner Walkthrough & Tips",
+      "metaDescription": "Learn how to play The Binding of Isaac: Repentance with beginner walkthroughs, floor progression, core mechanics, controls, and essential tips for every run.",
+      "categoryLabel": "GUIDES & WALKTHROUGHS",
+      "whatIs": "What is the Guide?",
+      "whatIsDescription": "A complete entry point into The Binding of Isaac: Repentance covering how runs work, what the game is, whether it is worth playing, and the step-by-step path from your first basement floor to the late endings.",
+      "why": "Why read the guide?",
+      "whySteps": {
+        "step1Title": "Learn the Basics",
+        "step1Description": "Understand movement, tears, items, rooms, devil deals, and floor progression",
+        "step2Title": "Plan Your Run",
+        "step2Description": "Follow a clear walkthrough from the Basement through Depths and beyond",
+        "step3Title": "Avoid Beginner Mistakes",
+        "step3Description": "Pick the right items, manage health and keys, and survive early floors"
+      },
+      "featured": "Featured & Essential",
+      "all": "All Guides"
+    },
     "items": {
       "title": "The Binding of Isaac Repentance Items",
       "description": "Detailed item guides covering passives, active items, familiars, trinkets, cards, runes, and synergies for The Binding of Isaac: Repentance.",
@@ -2286,106 +2315,6 @@
       },
       "featured": "Featured & Essential",
       "all": "All Items"
-    },
-    "characters": {
-      "title": "The Binding of Isaac Repentance Characters",
-      "description": "Every normal and Tainted character ranked by unlock, starting tools, core mechanic, strengths, weaknesses, and difficulty.",
-      "metaTitle": "The Binding of Isaac Repentance Characters - Normal & Tainted Ranked",
-      "metaDescription": "Compare all 17 normal characters and 17 Tainted characters in The Binding of Isaac: Repentance by unlock method, starting items, mechanics, and difficulty.",
-      "categoryLabel": "CHARACTERS",
-      "whatIs": "What are Characters?",
-      "whatIsDescription": "Guides to every playable character in The Binding of Isaac: Repentance, including Tainted variants unlocked through the Home closet and the Strange Door route.",
-      "why": "Why compare characters?",
-      "whySteps": {
-        "step1Title": "Find Your Style",
-        "step1Description": "Pick beginner-friendly characters or specialist picks that match your skill",
-        "step2Title": "Plan Unlocks",
-        "step2Description": "Target the character marks that reward high-impact items",
-        "step3Title": "Master Mechanics",
-        "step3Description": "Learn health, reroll, and dual-control systems for harder characters"
-      },
-      "featured": "Featured & Essential",
-      "all": "All Characters"
-    },
-    "unlocks": {
-      "title": "The Binding of Isaac Repentance Unlocks",
-      "description": "A progression roadmap from Mom to Dead God covering floors, endings, completion marks, items, and challenges.",
-      "metaTitle": "The Binding of Isaac Repentance Unlock Guide - Mom to Dead God",
-      "metaDescription": "Follow a full progression roadmap for The Binding of Isaac: Repentance unlocking endings, characters, items, alternate floors, and final completion marks.",
-      "categoryLabel": "UNLOCK ROADMAP",
-      "whatIs": "What are Unlocks?",
-      "whatIsDescription": "A prioritized unlock order for The Binding of Isaac: Repentance that opens the strongest items, characters, and alternate paths before low-impact goals.",
-      "why": "Why follow an unlock order?",
-      "whySteps": {
-        "step1Title": "Improve the Pool",
-        "step1Description": "Unlock high-impact items early so future runs get stronger",
-        "step2Title": "Open Routes",
-        "step2Description": "Reach alternate floors, Mother, and The Beast through key milestones",
-        "step3Title": "Reach Dead God",
-        "step3Description": "Collect every Hard Mode, Greedier, and Tainted completion mark"
-      },
-      "featured": "Featured & Essential",
-      "all": "All Unlocks"
-    },
-    "routes": {
-      "title": "The Binding of Isaac Repentance Routes",
-      "description": "Boss routes, alternate floors, Knife Pieces, Key Pieces, and the Strange Door path to Home and The Beast.",
-      "metaTitle": "The Binding of Isaac Repentance Routes - Boss Paths & Endings",
-      "metaDescription": "Master every route in The Binding of Isaac: Repentance from Mom's Heart to The Beast, including Cathedral, Sheol, Blue Womb, the Void, and alternate floors.",
-      "categoryLabel": "RUN ROUTES",
-      "whatIs": "What are Routes?",
-      "whatIsDescription": "Guides to every major branch in The Binding of Isaac: Repentance, including the Polaroid, Negative, Key Pieces, Knife Pieces, and the Strange Door.",
-      "why": "Why plan routes?",
-      "whySteps": {
-        "step1Title": "Choose a Branch",
-        "step1Description": "Pick Cathedral, Sheol, Blue Womb, Void, or the alternate path before Mom",
-        "step2Title": "Collect Key Items",
-        "step2Description": "Gather Polaroid, Negative, Key Pieces, and Knife Pieces for deeper routes",
-        "step3Title": "Earn Endings",
-        "step3Description": "Clear superbosses for completion marks and character rewards"
-      },
-      "featured": "Featured & Essential",
-      "all": "All Routes"
-    },
-    "bosses": {
-      "title": "The Binding of Isaac Repentance Bosses",
-      "description": "Boss attack patterns, preparation, and routes to Mom's Heart, Isaac, Satan, Mega Satan, Hush, Delirium, Mother, Dogma, and The Beast.",
-      "metaTitle": "The Binding of Isaac Repentance Bosses - Attack Patterns & Routes",
-      "metaDescription": "Defeat every major boss in The Binding of Isaac: Repentance with attack patterns, preparation tips, and the routes and requirements to reach each superboss.",
-      "categoryLabel": "BOSSES & ENDINGS",
-      "whatIs": "What are Bosses?",
-      "whatIsDescription": "Guides to every major boss and superboss in The Binding of Isaac: Repentance, including access requirements, signature attacks, and the endings they award.",
-      "why": "Why study bosses?",
-      "whySteps": {
-        "step1Title": "Read Patterns",
-        "step1Description": "Recognize attack tells and safe lanes for each superboss",
-        "step2Title": "Prepare Builds",
-        "step2Description": "Bring the right damage, defense, and movement for long fights",
-        "step3Title": "Unlock Endings",
-        "step3Description": "Earn completion marks and route access from each victory"
-      },
-      "featured": "Featured & Essential",
-      "all": "All Bosses"
-    },
-    "challenges": {
-      "title": "The Binding of Isaac Repentance Challenges",
-      "description": "All 45 challenges with starting setups, restrictions, destinations, difficulty, and unlock rewards.",
-      "metaTitle": "The Binding of Isaac Repentance Challenges - All 45 Runs & Rewards",
-      "metaDescription": "Complete guide to all 45 challenges in The Binding of Isaac: Repentance with starting items, restrictions, destinations, difficulty, and unlock rewards.",
-      "categoryLabel": "CHALLENGES",
-      "whatIs": "What are Challenges?",
-      "whatIsDescription": "Preset runs in The Binding of Isaac: Repentance with special starting items and rules. Completing each destination unlocks a rune, card, item, trinket, or character upgrade.",
-      "why": "Why complete challenges?",
-      "whySteps": {
-        "step1Title": "Unlock Rewards",
-        "step1Description": "Earn runes, cards, and items that improve normal runs",
-        "step2Title": "Learn Mechanics",
-        "step2Description": "Practice unusual item combinations and blindfolded strategies",
-        "step3Title": "Prioritize Value",
-        "step3Description": "Clear high-impact challenges like High Brow and Solar System first"
-      },
-      "featured": "Featured & Essential",
-      "all": "All Challenges"
     },
     "mods": {
       "title": "The Binding of Isaac Repentance Mods",
@@ -2407,25 +2336,105 @@
       "featured": "Featured & Essential",
       "all": "All Mods"
     },
-    "seeds": {
-      "title": "The Binding of Isaac Repentance Seeds",
-      "description": "Seed mechanics, special seeds, daily runs, and how to share or reproduce runs in The Binding of Isaac: Repentance.",
-      "metaTitle": "The Binding of Isaac Repentance Seeds - Daily Runs & Special Seeds",
-      "metaDescription": "Understand seeds and daily runs in The Binding of Isaac: Repentance, including how layouts are generated, shared, and reproduced for practice and competition.",
-      "categoryLabel": "SEEDS & DAILIES",
-      "whatIs": "What are Seeds?",
-      "whatIsDescription": "Seeds determine the floor layouts, item placements, and room generation in The Binding of Isaac: Repentance. Daily Runs use a shared seed so every player faces the same run.",
-      "why": "Why use seeds?",
+    "unlocks": {
+      "title": "The Binding of Isaac Repentance Unlocks",
+      "description": "A progression roadmap from Mom to Dead God covering floors, endings, completion marks, items, and challenges.",
+      "metaTitle": "The Binding of Isaac Repentance Unlock Guide - Mom to Dead God",
+      "metaDescription": "Follow a full progression roadmap for The Binding of Isaac: Repentance unlocking endings, characters, items, alternate floors, and final completion marks.",
+      "categoryLabel": "UNLOCK ROADMAP",
+      "whatIs": "What are Unlocks?",
+      "whatIsDescription": "A prioritized unlock order for The Binding of Isaac: Repentance that opens the strongest items, characters, and alternate paths before low-impact goals.",
+      "why": "Why follow an unlock order?",
       "whySteps": {
-        "step1Title": "Reproduce Runs",
-        "step1Description": "Share or replay specific layouts and item placements",
-        "step2Title": "Compete Daily",
-        "step2Description": "Race the same Daily Run seed against other players",
-        "step3Title": "Practice Patterns",
-        "step3Description": "Revisit difficult floors and bosses to refine strategy"
+        "step1Title": "Improve the Pool",
+        "step1Description": "Unlock high-impact items early so future runs get stronger",
+        "step2Title": "Open Routes",
+        "step2Description": "Reach alternate floors, Mother, and The Beast through key milestones",
+        "step3Title": "Reach Dead God",
+        "step3Description": "Collect every Hard Mode, Greedier, and Tainted completion mark"
       },
       "featured": "Featured & Essential",
-      "all": "All Seeds"
+      "all": "All Unlocks"
+    },
+    "bosses": {
+      "title": "The Binding of Isaac Repentance Bosses",
+      "description": "Boss attack patterns, preparation, and routes to Mom's Heart, Isaac, Satan, Mega Satan, Hush, Delirium, Mother, Dogma, and The Beast.",
+      "metaTitle": "The Binding of Isaac Repentance Bosses - Attack Patterns & Routes",
+      "metaDescription": "Defeat every major boss in The Binding of Isaac: Repentance with attack patterns, preparation tips, and the routes and requirements to reach each superboss.",
+      "categoryLabel": "BOSSES & ENDINGS",
+      "whatIs": "What are Bosses?",
+      "whatIsDescription": "Guides to every major boss and superboss in The Binding of Isaac: Repentance, including access requirements, signature attacks, and the endings they award.",
+      "why": "Why study bosses?",
+      "whySteps": {
+        "step1Title": "Read Patterns",
+        "step1Description": "Recognize attack tells and safe lanes for each superboss",
+        "step2Title": "Prepare Builds",
+        "step2Description": "Bring the right damage, defense, and movement for long fights",
+        "step3Title": "Unlock Endings",
+        "step3Description": "Earn completion marks and route access from each victory"
+      },
+      "featured": "Featured & Essential",
+      "all": "All Bosses"
+    },
+    "multiplayer": {
+      "title": "The Binding of Isaac Repentance Multiplayer",
+      "description": "Coop setup for online and local play, including how online multiplayer, local couch coop, and babies work in The Binding of Isaac: Repentance.",
+      "metaTitle": "The Binding of Isaac Repentance Multiplayer - Online & Local Coop Guide",
+      "metaDescription": "Set up coop in The Binding of Isaac: Repentance with guides on online multiplayer, local couch coop, remote play, and how player babies share items and damage.",
+      "categoryLabel": "COOP & MULTIPLAYER",
+      "whatIs": "What is Multiplayer?",
+      "whatIsDescription": "Cooperative play in The Binding of Isaac: Repentance where extra players join as babies that share health, items, and tear control across online, remote play, and local couch coop.",
+      "why": "Why play coop?",
+      "whySteps": {
+        "step1Title": "Share the Run",
+        "step1Description": "Split movement, items, and damage with friends across the same floors",
+        "step2Title": "Revive and Recover",
+        "step2Description": "Use the extra baby lives to survive longer boss fights",
+        "step3Title": "Play Online or Couch",
+        "step3Description": "Connect through online multiplayer, Steam Remote Play, or local coop"
+      },
+      "featured": "Featured & Essential",
+      "all": "All Multiplayer Guides"
+    },
+    "versions": {
+      "title": "The Binding of Isaac Repentance Versions",
+      "description": "Platform and edition coverage for The Binding of Isaac: Repentance on Steam, Switch, Switch 2, Mac, the Plus update, and how it compares to Rebirth.",
+      "metaTitle": "The Binding of Isaac Repentance Versions - Steam, Switch, Switch 2 & Mac",
+      "metaDescription": "Compare every version of The Binding of Isaac: Repentance including Steam, Nintendo Switch, Switch 2, Mac, the Repentance Plus update, and the differences versus Rebirth.",
+      "categoryLabel": "VERSIONS & PLATFORMS",
+      "whatIs": "What are Versions?",
+      "whatIsDescription": "Platform and edition guides for The Binding of Isaac: Repentance covering Steam PC, Nintendo Switch and Switch 2, Mac, the free Repentance Plus content update, and how Repentance differs from Rebirth and Afterbirth+.",
+      "why": "Why compare versions?",
+      "whySteps": {
+        "step1Title": "Pick Your Platform",
+        "step1Description": "Choose between Steam, Switch, Switch 2, and Mac for your setup",
+        "step2Title": "Understand Repentance Plus",
+        "step2Description": "Learn what the free Plus update adds on top of the base DLC",
+        "step3Title": "See the Differences",
+        "step3Description": "Compare Repentance against Rebirth and Afterbirth+ before buying"
+      },
+      "featured": "Featured & Essential",
+      "all": "All Version Guides"
+    },
+    "support": {
+      "title": "The Binding of Isaac Repentance Support",
+      "description": "Fixes and troubleshooting for black screen, language settings, save file location, low FPS, and launch crashes in The Binding of Isaac: Repentance.",
+      "metaTitle": "The Binding of Isaac Repentance Support - Fixes, Crashes & Save Files",
+      "metaDescription": "Solve common problems in The Binding of Isaac: Repentance including black screen on launch, missing language options, save file location, low FPS, and the game not starting.",
+      "categoryLabel": "SUPPORT & FIXES",
+      "whatIs": "What is Support?",
+      "whatIsDescription": "Troubleshooting guides for The Binding of Isaac: Repentance that resolve black screen errors, language and localization setup, save file backup and location, low FPS, and startup crashes.",
+      "why": "Why use the support guides?",
+      "whySteps": {
+        "step1Title": "Fix Launch Issues",
+        "step1Description": "Resolve black screen, not launching, and crash on startup problems",
+        "step2Title": "Set Your Language",
+        "step2Description": "Enable and switch languages when options are missing",
+        "step3Title": "Back Up Saves",
+        "step3Description": "Locate and back up your save files before reinstalling or moving platforms"
+      },
+      "featured": "Featured & Essential",
+      "all": "All Support Guides"
     }
   }
 }

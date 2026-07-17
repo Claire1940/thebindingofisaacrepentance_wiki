@@ -1,0 +1,186 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "The Binding of Isaac: Repentance: Como chegar na Mother: Guia de Rota",
+  description: "Domine o caminho alternativo em The Binding of Isaac: Repentance: Como chegar na Mother com nosso guia de 2026, cobrindo peças da faca, custos de andares e táticas de chefes.",
+  category: "Guia",
+  image: "https://placehold.co/800x400/120B0D/E24133?text=How+to+Get+to+Mother+Route",
+  date: "2026-07-17",
+  author: "Equipe da Wiki de The Binding of Isaac: Repentance",
+  keywords: "the binding of isaac repentance, como chegar na mother, guia de rota, peças da faca, mother boss"
+}
+
+<Callout type="info" title="Guia Rápido">
+- **Requisito Principal**: Você deve derrotar o **Hush** três vezes para desbloquear as portas do caminho alternativo.
+- **Peças da Faca**: Colete a **Peça da Faca 1** no Mundo do Espelho e a **Peça da Faca 2** no Poço da Mina.
+- **Sequência de Andares**: Navegue por **Downpour/Dross**, **Mines/Ashpit** e **Mausoleum/Gehenna**.
+- **Destino Final**: Use a faca completa na **Porta de Carne** após derrotar a Mom em Mausoleum II.
+- **O Chefe**: Derrote a **Mother** em Corpse II para ganhar a marca de conclusão da faca e desbloquear o Home.
+</Callout>
+
+<Section icon={Map} title="Pré-requisitos para a Rota da Mother">
+
+Alcançar o chefe final da expansão Repentance exige mais do que apenas habilidade; requer um conjunto específico de desbloqueios permanentes. Em **The Binding of Isaac: Repentance: Como chegar na Mother**, sua jornada começa muito antes de você entrar no primeiro andar. O jogo bloqueia este conteúdo atrás da conquista "A Secret Exit", que só é ativada após você derrotar o Hush com sucesso três vezes com qualquer personagem.
+
+Uma vez desbloqueado, portas especiais com tons azuis aparecerão nas salas de chefes do Basement, Caves e Depths. Essas portas servem como portais para os andares alternativos. Ao contrário dos andares padrão, essas versões alternativas apresentam inimigos únicos, layouts de sala mais difíceis e uma missão específica que envolve a construção de uma faca de sacrifício.
+
+| Requisito | Descrição | Status |
+| :--- | :--- | :--- |
+| **Mortes do Hush** | Derrote o Hush 3 vezes em qualquer arquivo de salvamento | **Obrigatório** |
+| **A Secret Exit** | Conquista desbloqueada após a terceira morte do Hush | **Obrigatório** |
+| **Reserva de Chaves** | Pelo menos 1 chave é necessária para entrar em Downpour I | **Recomendado** |
+| **Reserva de Bombas** | Pelo menos 2 bombas são necessárias para entrar em Mines I | **Recomendado** |
+| **Vida** | 2 corações cheios de vida para a porta do Mausoleum | **Obrigatório** |
+
+<Callout type="warning" title="Gerenciamento de Recursos">
+O caminho alternativo consome significativamente mais recursos do que a rota padrão. Certifique-se sempre de ter um excedente de chaves e bombas antes de descer, pois perder uma peça da faca pode invalidar toda a partida.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Construindo a Faca: Peça Um">
+
+O primeiro passo em sua busca é obter a **Peça da Faca 1**. Isso ocorre em **Downpour II** ou **Dross II**. Você deve localizar uma fogueira branca e um espelho no mesmo andar. Tocar no fogo branco transforma Isaac em um personagem na forma do The Lost, permitindo que ele passe pelo espelho para uma versão espelhada do andar.
+
+<Steps>
+  <Step num="1" title="Encontre o Fogo Branco">
+    Localize a fogueira branca em Downpour II. Ela não causa dano, mas transformará você no The Lost.
+  </Step>
+  <Step num="2" title="Entre no Espelho">
+    Caminhe através do espelho enquanto estiver na forma de Lost. Tenha cuidado, pois você morrerá com um único golpe neste estado.
+  </Step>
+  <Step num="3" title="Recupere a Peça">
+    Navegue até a Sala do Tesouro no mundo do espelho. O pedestal conterá a Peça da Faca 1.
+  </Step>
+  <Step num="4" title="Retorne com Segurança">
+    Saia da Sala do Tesouro e volte pelo espelho para recuperar sua forma original e sua vida.
+  </Step>
+</Steps>
+
+<Callout type="tip" title="Proteção do Holy Mantle">
+Se você desbloqueou o Holy Mantle para o The Lost (através da Greed Machine), ele será aplicado ao seu estado transformado no mundo do espelho, fornecendo um golpe gratuito de proteção.
+</Callout>
+
+<CardGrid cols={2}>
+  <Card title="Downpour/Dross I">
+    - Requer 1 chave para entrar.
+    - Aumento de dificuldade padrão.
+    - Foco na coleta de recursos.
+  </Card>
+  <Card title="Downpour/Dross II">
+    - Contém o Espelho e o Fogo Branco.
+    - A **Peça da Faca 1** está localizada aqui.
+    - A luta contra o chefe deve ser concluída para progredir.
+  </Card>
+</CardGrid>
+
+</Section>
+
+<Section icon={Swords} title="O Poço da Mina Abandonado: Peça Dois">
+
+Após completar a sequência Downpour/Dross, você deve entrar em **Mines I** ou **Ashpit I** usando duas bombas na porta barricada na sala do chefe. Seu objetivo aqui é chegar a **Mines II** ou **Ashpit II** para encontrar o segundo componente da faca. Esta seção envolve um quebra-cabeça ambiental único e uma sequência de perseguição roteirizada.
+
+| Elemento do Puzzle | Função | Localização |
+| :--- | :--- | :--- |
+| **Botões Amarelos** | Pressione os 3 para completar o trilho do carrinho | Mines II / Ashpit II |
+| **Carrinho de Mina** | Usado para atravessar a entrada barricada | Mines II / Ashpit II |
+| **Poço da Mina Abandonado** | Sub-área que contém a peça da faca | Andar Interno |
+| **Besta das Sombras** | Perseguidor invulnerável durante a fuga | Andar Interno |
+
+<Callout type="success" title="Estratégia de Combate">
+A Besta das Sombras (Shadow Beast) não pode ser morta. Foque inteiramente na movimentação e velocidade. Itens como **Transcendence** ou **Lord of the Pit** são inestimáveis aqui, pois permitem que você voe sobre obstáculos durante a perseguição.
+</Callout>
+
+<Steps>
+  <Step num="1" title="Ative o Trilho">
+    Encontre e pise em todos os três botões amarelos espalhados pelo andar de Mines II.
+  </Step>
+  <Step num="2" title="Suba no Carrinho">
+    Localize a sala com o carrinho de mina e o poço barricado. Pule no carrinho para entrar na área escondida.
+  </Step>
+  <Step num="3" title="Pegue a Peça da Faca 2">
+    Caminhe até o final do caminho linear para coletar a peça. Isso ativará a perseguição da Besta das Sombras.
+  </Step>
+  <Step num="4" title="A Grande Fuga">
+    Corra de volta pelas salas, usando bombas para limpar barricadas, até sair de volta para o andar principal.
+  </Step>
+</Steps>
+
+</Section>
+
+<Section icon={Shield} title="Mausoleum e a Porta de Carne">
+
+Com ambas as peças coletadas, elas se combinarão em um seguidor poderoso que atua como um projétil. Seu próximo destino é **Mausoleum I** ou **Gehenna I**. Para entrar, você deve pagar dois corações cheios de vida na porta encontrada na sala do chefe de Mines II. Este andar é o estágio final antes do Corpse.
+
+Em **Mausoleum II**, você enfrentará uma versão aprimorada da luta contra a Mom. Assim que ela for derrotada, uma "Porta de Carne" pulsante e estranha aparecerá na sala do chefe. É aqui que sua faca construída se torna essencial.
+
+<Callout type="warning" title="Custo da Porta">
+A porta do Mausoleum causa dois corações cheios de dano. Se você estiver jogando com um personagem como **The Lost** ou **Tainted Judas**, certifique-se de ter Corações de Alma ou frames de invulnerabilidade suficientes para sobreviver à transição.
+</Callout>
+
+**Perigos do Andar Mausoleum:**
+- **Inimigos que Teleportam**: Muitos inimigos nesta área podem ignorar sua linha de visão.
+- **Pisos de Armadilha**: Cuidado com espinhos e lâminas móveis que causam um coração inteiro de dano.
+- **Chefes Aprimorados**: Espere versões campeãs de chefes padrão com barras de vida maiores.
+
+| Variante de Chefe | Estilo de Ataque | Preparação |
+| :--- | :--- | :--- |
+| **Alt Mom** | Pisadas e feixes de olhos | Mantenha-se móvel, observe as sombras |
+| **Alt Mom's Heart** | Padrões de bullet hell | Alta cadência de tiro ou orbitais |
+| **Mother (Fase 1)** | Arremessos de faca e larvas | Mantenha distância, limpe os lacaios |
+| **Mother (Fase 2)** | Investidas rápidas e rasgos na parede | Dano explosivo e escudos |
+
+</Section>
+
+<Section icon={Sparkles} title="Preparação Final para a Mother">
+
+O Corpse é o capítulo final da rota alternativa. Ele consiste em dois andares, culminando na batalha contra a Mother. Esta luta é uma das mais difíceis do jogo, apresentando duas fases distintas e barras de vida massivas (armadura de chefe).
+
+<Checklist
+  id="mother-prep"
+  title="Checklist do Chefe Final:"
+  items={[
+    "Certifique-se de que seu atributo de Velocidade seja de pelo menos 1.5 para desviar das investidas",
+    "Traga um item ativo de alto dano como The Book of Belial ou Mega Mush",
+    "Garanta orbitais defensivos ou o Holy Mantle, se possível",
+    "Guarde quaisquer efeitos de 'I'm Drowsy' ou 'Power Pill' para a Fase 2",
+    "Tenha pelo menos 6+ corações (Vermelhos ou de Alma) antes de entrar na arena"
+  ]}
+/>
+
+<Callout type="tip" title="Recomendação de Sinergia">
+Itens que fornecem tiros **Teleguiados** (como Sacred Heart) ou **Penetrantes** (como Death's Touch) são excepcionalmente eficazes contra a Mother, já que sua hitbox é grande e ela frequentemente invoca inimigos menores para bloquear seus tiros.
+</Callout>
+
+Durante a luta, a Mother usará uma variedade de ataques que preenchem a tela. Na Fase 1, foque em suas mãos e nas larvas que ela gera. Na Fase 2, ela se torna muito mais agressiva, investindo pela tela e disparando linhas densas de projéteis. O sucesso depende de reconhecer seus sinais precocemente e ter dano sustentado suficiente para ignorar sua armadura.
+
+</Section>
+
+<Section icon={Trophy} title="Perguntas Frequentes">
+
+<FAQ items={[
+  {
+    question: "Posso chegar na Mother se perder uma Peça da Faca?",
+    answer: "Não. Tanto a Peça da Faca 1 quanto a Peça da Faca 2 são necessárias para criar a faca que abre a Porta de Carne em Mausoleum II. Se você perder qualquer uma delas, não poderá entrar no Corpse."
+  },
+  {
+    question: "Eu tenho que ir para Downpour I ou posso pular para Downpour II?",
+    answer: "Você pode entrar no caminho alternativo em qualquer estágio (Basement para Downpour, Caves para Mines), mas deve visitar a versão 'II' de cada andar para obter a peça da faca correspondente."
+  },
+  {
+    question: "O que acontece depois que eu derroto a Mother pela primeira vez?",
+    answer: "Derrotar a Mother pela primeira vez desbloqueia a 'Porta Estranha' em Depths II, que é o portal para a rota Home e o chefe final The Beast."
+  },
+  {
+    question: "A rota da Mother é mais difícil que a rota do Mega Satan?",
+    answer: "Geralmente, sim. A rota da Mother exige navegar por andares mais difíceis e uma missão mais complexa, enquanto o Mega Satan exige principalmente peças de chave e chegar ao Chest/Dark Room."
+  }
+]} />
+
+</Section>

@@ -1,0 +1,157 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, BookOpen } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "The Binding of Isaac: Repentance Walkthrough: 2026 Strategy Guide",
+  description: "Master The Binding of Isaac: Repentance with our expert walkthrough. Learn item tiers, character unlocks, and boss strategies for a successful run.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/881337/fff?text=Repentance+Walkthrough",
+  date: "2026-07-17",
+  author: "the binding of isaac repentance Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **The Binding of Isaac: Repentance** is a complex roguelike that rewards **careful resource management** and **damage avoidance**.
+- Prioritize **Angel or Devil room deals** early to secure build-defining items that scale into the late game.
+- Follow a consistent **unlock roadmap** to improve the item pool and gain access to powerful characters like **Tainted Isaac**.
+- Master **floor routing** to ensure you reach essential rooms like Shops and Treasure Rooms before the boss fight.
+</Callout>
+
+<Section icon={Map} title="Core Gameplay Loop and Progression">
+
+Success in The Binding of Isaac: Repentance relies on your ability to chain floors while maximizing your power level through special room discoveries. Beginners should focus on the fundamentals of movement and room control rather than seeking the most complex synergies immediately.
+
+**Video Highlights:**
+- Essential movement techniques for room clearing.
+- Efficient usage of bombs and keys for resource optimization.
+- Early game boss fight patterns and safe zones.
+
+<YouTubeEmbed videoId="700_plus_items_guide" title="The Binding of Isaac: Repentance Beginner Strategy" />
+
+The flow of a successful run involves clearing combat rooms to gain resources, visiting the Treasure Room for free upgrades, and deciding between Devil or Angel deals.
+
+| Room Type | Primary Benefit | Strategic Priority |
+| :--- | :--- | :--- |
+| **Treasure Room** | Free pedestal item | Visit every floor |
+| **Shop** | Consumables/Upgrades | Requires 15+ coins |
+| **Devil Room** | High-risk/High-reward | Trade health for power |
+| **Angel Room** | Defensive/Utility items | Best for survival builds |
+
+<Callout type="tip" title="Pro Tip">
+Always enable "Found HUD" in your options menu. Knowing your exact stat changes helps you evaluate whether an item is worth the health cost or reroll potential.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Item Tier Overview">
+
+Not all items are created equal. Understanding the internal item pool and how specific passives interact is the hallmark of a veteran player. The following table categorizes items based on their general reliability across all characters.
+
+| Item Name | Tier | Effect Summary | Best Pool |
+| :--- | :--- | :--- | :--- |
+| **Sacred Heart** | S | Damage multiplier/Homing | Angel Room |
+| **C Section** | S | Homing fetus projectiles | Treasure Room |
+| **Brimstone** | A | Charged piercing laser | Devil Room |
+| **Mom's Knife** | A | High-damage melee knife | Devil Room |
+| **Holy Mantle** | B | One free hit per room | Treasure/Angel |
+
+<CardGrid cols={3}>
+  <Card title="S-Tier Powerhouses">
+    - **Sacred Heart**
+    - **Glitched Crown**
+    - **Spindown Dice**
+    - Instant run-winners with little setup.
+  </Card>
+  <Card title="A-Tier Staples">
+    - **Brimstone**
+    - **Tech X**
+    - **Incubus**
+    - Extremely reliable damage dealers.
+  </Card>
+  <Card title="B-Tier Utility">
+    - **Satanic Bible**
+    - **Book of Virtues**
+    - **Diplopia**
+    - Crucial for long-term resource management.
+  </Card>
+</CardGrid>
+
+<Callout type="warning" title="Anti-Synergy Alert">
+Be cautious with "Strange Attractor." While it pulls enemies into your line of fire, it often drags dangerous projectiles and enemies directly onto your hitbox.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Unlock Roadmap">
+
+Progression in Repentance is gated by specific completion marks. Following an optimal unlock order prevents wasted effort on low-impact objectives.
+
+<Steps>
+  <Step num="1" title="Initial Endings">
+    Defeat Mom 11 times to permanently unlock "It Lives!" and access the Cathedral and Sheol routes.
+  </Step>
+  <Step num="2" title="Photographic Evidence">
+    Defeat Isaac 5 times for The Polaroid and Satan 5 times for The Negative to open the final chapters.
+  </Step>
+  <Step num="3" title="Alternate Paths">
+    Defeat Hush 3 times to unlock the path to the Corpse and the Mother boss fight.
+  </Step>
+  <Step num="4" title="Final Ascent">
+    Unlock the "Home" chapter by using the Strange Door in Depths II to face The Beast.
+  </Step>
+</Steps>
+
+<Checklist
+  id="progression-checklist"
+  title="Essential Unlocks for Your Save File:"
+  items={[
+    "Defeat Isaac as ??? to unlock the D6 for Isaac",
+    "Donate 879 coins to the Greed Machine for Holy Mantle",
+    "Defeat The Beast as Tainted Isaac for Glitched Crown",
+    "Complete Challenge #2 (High Brow) for Jera rune"
+  ]}
+/>
+
+</Section>
+
+<Section icon={Shield} title="Character Comparison">
+
+Choosing the right character for a specific completion mark is vital. Some characters excel at boss rushes, while others are built for endurance.
+
+| Character | Difficulty | Core Mechanic | Recommended Route |
+| :--- | :--- | :--- | :--- |
+| **Isaac** | Easy | D6 Reroll | Any |
+| **Azazel** | Very Easy | Short-range Brimstone | Early game rush |
+| **The Lost** | Very Hard | No health/Flight | High-damage builds |
+| **Bethany** | Moderate | Wisp charges | Active item builds |
+
+<Callout type="success" title="Beginner Recommendation">
+Start your journey with **Magdalene**. Her high starting health pool provides a significant buffer for learning enemy patterns without ending your run prematurely.
+</Callout>
+
+</Section>
+
+<Section icon={BookOpen} title="FAQ">
+
+<FAQ items={[
+  {
+    question: "How do I get to the Angel Room instead of the Devil Room?",
+    answer: "In Repentance, refusing to enter the first Devil Room guarantees the next deal room will be an Angel Room. Additionally, avoiding red heart damage helps maintain high deal chances."
+  },
+  {
+    question: "What is the best way to farm coins for the Greed Machine?",
+    answer: "Rotate between different characters. Every character has a unique jam chance percentage, so playing as a variety of characters keeps the machine open longer."
+  },
+  {
+    question: "Are mods safe to use for achievements?",
+    answer: "Yes, once you have defeated Mom at least once, you can use mods. However, mods are disabled for Daily Runs and online matchmaking to ensure fairness."
+  }
+]} />
+
+</Section>

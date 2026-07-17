@@ -1,0 +1,196 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, Laptop } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "The Binding of Isaac Repentance Mac: Setup & Play Guide",
+  description: "Learn how to install and optimize The Binding of Isaac: Repentance on Mac (M1/M2/M3 & Intel) using Porting Kit, Whisky, or Crossover in 2026.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/1e1417/f4e9e7?text=Mac+Setup+Guide",
+  date: "2026-07-17",
+  author: "the binding of isaac repentance Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **Mac Compatibility**: The Repentance DLC requires Windows compatibility layers like **Porting Kit**, **Whisky**, or **Crossover** on macOS.
+- **Performance Tuning**: Enable **Found HUD** and adjust render settings to maintain 60 FPS on Apple Silicon.
+- **Top Mod Priority**: Install **External Item Descriptions** via Steam Workshop to identify over 700 items instantly.
+- **Progression Goal**: Focus on beating Mom and Mom's Heart to unlock Womb, Cathedral, and Sheol routes.
+</Callout>
+
+<Section icon={Map} title="Running the binding of isaac repentance mac">
+
+If you are trying to play **the binding of isaac repentance mac** in 2026, you have likely run into compatibility issues since the DLC is natively Windows-only. While the original *Rebirth* release supported macOS, the *Repentance* expansion requires a Windows environment. Fortunately, modern compatibility layers make it incredibly easy to run the game with flawless performance on both Apple Silicon (M1/M2/M3) and Intel-based Mac machines.
+
+To choose the right approach for your system, compare the leading translation tools below:
+
+| Method | Cost | Performance | Setup Difficulty | Best For |
+| :--- | :--- | :--- | :--- | :--- |
+| **Porting Kit** | Free | High | Medium | Free setup on Intel and Apple Silicon |
+| **Whisky** | Free | High | Easy | Apple Silicon (M1/M2/M3) users |
+| **CrossOver** | Paid | Excellent | Very Easy | Users wanting premium support and updates |
+| **Parallels** | Paid | Medium | Easy | Virtual machine enthusiasts |
+
+Using a compatibility layer like Porting Kit or Whisky translates Windows system calls to macOS on the fly. This ensures that you do not experience the typical performance degradation associated with heavy virtual machines. The game runs at a locked 60 FPS, supporting controller inputs and Steam Workshop mods out of the box.
+
+<Callout type="warning" title="Note on Native Support">
+Do not attempt to download the native macOS Steam client to play Repentance. The native Mac client will only load the base game (Rebirth) and will fail to recognize or install the Repentance DLC. You must install the Windows version of Steam inside a translation environment.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Step-by-Step Mac Installation Guide">
+
+Setting up the game via Porting Kit is the most reliable free method for both Intel and Apple Silicon Macs. This tool automatically configures a custom Wine wrapper designed specifically to run the Windows version of Steam.
+
+Follow these steps to complete your installation:
+
+<Steps>
+  <Step num="1" title="Download and Install Porting Kit">
+    Visit the official Porting Kit website and download the latest version for macOS. Drag the application into your Applications folder and launch it. Grant any necessary system permissions during the first startup.
+  </Step>
+  <Step num="2" title="Install the Windows Steam Wrapper">
+    Inside Porting Kit, navigate to the **Library** tab and search for **Steam**. Select the Windows Steam option and click **Install**. The program will automatically download Wine dependencies and create a dedicated Windows container on your drive.
+  </Step>
+  <Step num="3" title="Log In and Download the Game">
+    Once the installation finishes, launch Steam through Porting Kit. Log into your Steam account, find *The Binding of Isaac: Rebirth* in your library, and make sure the *Repentance* DLC is checked in the DLC management panel. Click install to download the Windows files.
+  </Step>
+  <Step num="4" title="Configure Controller and Launch">
+    Connect your controller via Bluetooth or USB. In Steam's controller settings, enable **Steam Input** for your specific gamepad (Xbox, PlayStation, or Switch Pro). Launch the game to confirm that inputs and save data are syncing correctly.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Steam Cloud Sync">
+Because you are running the official Windows version of Steam inside the wrapper, your cloud saves will sync perfectly. If you previously played Repentance on a Windows PC, your progress, characters, and unlocks will carry over immediately.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Optimizing Performance & Modding on Mac">
+
+Once the game is running, you should optimize your settings to ensure stable frame rates during dense bullet-hell phases. The engine is highly responsive, but translation layers can occasionally introduce minor input latency or frame drops if background settings are poorly configured.
+
+### Recommended In-Game Settings
+- **Found HUD**: Enable this in the options menu to display your exact numerical stats on the left side of the screen.
+- **Extra HUD**: Enable this to show your current active items, passive items, and trinkets on the right side of the screen.
+- **Fullscreen Mode**: If you experience screen tearing, toggle between Windowed and Borderless Fullscreen to find the smoothest mode for your specific display.
+
+Modding is a core part of the community experience. The Steam Workshop is fully functional within Porting Kit and Crossover. Subscribing to a mod in the Steam client will automatically download and apply it to your game.
+
+<CardGrid cols={3}>
+  <Card title="External Item Descriptions">
+    - **Interface Category**
+    - Displays detailed stats and effects for over 700 items.
+    - Crucial for learning item synergies without leaving the game.
+  </Card>
+  <Card title="GoodTrip [Fixed]">
+    - **Quality of Life Category**
+    - Enables fast-travel between cleared rooms via the minimap.
+    - Eliminates tedious backtracking on large floors.
+  </Card>
+  <Card title="Enhanced Boss Bars">
+    - **Visual Category**
+    - Replaces vanilla boss health bars with custom segmented designs.
+    - Highly useful for tracking multi-boss encounters.
+  </Card>
+</CardGrid>
+
+To maintain stability, avoid over-modding your initial setup. Use the following compatibility matrix to plan your layout:
+
+| Mod Name | Mac Compatibility | Required Framework | Main Conflict |
+| :--- | :--- | :--- | :--- |
+| **External Item Descriptions** | High | None | Avoid duplicate HUD mods |
+| **GoodTrip [Fixed]** | High | None | Minimap-control overlaps |
+| **Enhanced Boss Bars** | High | Mod Config Menu | Other boss-bar replacements |
+| **Planetarium Chance** | High | None | Heavy custom HUD overlays |
+
+<Callout type="tip" title="Troubleshooting Mod Crashes">
+If your game crashes on startup after installing mods, navigate to the local files inside Steam, locate the `mods` folder, and delete the most recently downloaded folders. Restart Steam inside your wrapper to reset the mod list.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Core Progression Roadmap & Key Unlocks">
+
+After successfully setting up the game on your Mac, your long-term goal is to work toward the ultimate completion mark: **Dead God**. Progression in Repentance is non-linear, unlocking alternate floors, secret characters, and game-changing items as you defeat major bosses.
+
+Use this roadmap to guide your runs efficiently:
+
+| Phase | Requirement | Unlocks | Priority |
+| :--- | :--- | :--- | :--- |
+| **1. First Ending** | Defeat Mom in Depths II | Womb chapter, Ending 1 | Essential |
+| **2. It Lives!** | Defeat Mom's Heart 11 times | Cathedral & Sheol access | Essential |
+| **3. The Photos** | Defeat Isaac & Satan 5 times each | Polaroid & Negative | High |
+| **4. Alternate Path** | Defeat Hush 3 times | Downpour, Mines, Mausoleum | High |
+| **5. Home & Beast** | Defeat Mother once | Strange Door, Ascent, Tainted characters | Essential |
+
+To make your future runs significantly easier, prioritize these milestones:
+
+<Checklist
+  id="progression-milestones"
+  title="High-Priority Progression Milestones:"
+  items={[
+    "Defeat Isaac as ??? to unlock the D6 active item for Isaac.",
+    "Defeat Satan as Isaac to unlock Mom's Knife, one of the strongest damage items.",
+    "Donate 879 coins to the Greed Machine to give The Lost the Holy Mantle.",
+    "Unlock Tainted Isaac and Tainted Lilith for powerful game-changing mechanics.",
+    "Complete Challenge #2 (High Brow) to unlock the Rune of Jera."
+  ]}
+/>
+
+<Callout type="success" title="The D6 Strategy">
+Unlocking Isaac's starting active item, **The D6**, should be your absolute highest priority. It allows you to reroll low-value item pedestals in Treasure, Angel, and Devil rooms, drastically increasing your average build quality.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="High-Priority Challenges and Rewards">
+
+The game features 45 preset challenge runs. While some are incredibly difficult, completing them is mandatory to unlock powerful runes, cards, and items that populate your standard run item pools.
+
+Focus on clearing these high-value challenges early:
+
+| No. | Challenge | Goal | Reward | Key Strategy |
+| :--- | :--- | :--- | :--- | :--- |
+| **2** | **High Brow** | Mom | Rune of Jera | Use Petrified Poop to farm early resources |
+| **6** | **Solar System** | Mom's Heart | Rune of Perthro | Use flight to hover safely over obstacles |
+| **9** | **Demo Man** | Mom's Heart | Chaos Card | Keep distance and detonate Dr. Fetus bombs carefully |
+| **17** | **Waka Waka** | Mom | Death's Touch | Tap fire quickly instead of holding it to avoid clusters |
+| **39** | **Isaac's Awakening** | Mother | Spirit Sword | Use the sword spin to delete enemy projectile waves |
+
+<Callout type="info" title="Blindfold Restrictions">
+In blindfolded challenges like **Solar System**, your character cannot fire normal tears. You must rely entirely on your orbital familiars or active items to deal damage. Focus on learning enemy movement patterns to position your orbitals effectively.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Frequently Asked Questions">
+
+<FAQ items={[
+  {
+    question: "Can I play the binding of isaac repentance mac natively?",
+    answer: "No. Native macOS support was dropped after the Rebirth base game. To play the Repentance DLC, you must use a Windows compatibility layer like Porting Kit, Whisky, or Crossover."
+  },
+  {
+    question: "Do Steam Cloud saves work when running the game on a Mac?",
+    answer: "Yes. Because compatibility layers run the official Windows version of Steam, your cloud saves will sync seamlessly between your Mac and any Windows PC."
+  },
+  {
+    question: "How do I fix controller detection issues on macOS?",
+    answer: "Make sure your controller is connected to your Mac before launching Porting Kit or Steam. In Steam's controller settings, enable Steam Input to force compatibility."
+  },
+  {
+    question: "Can I install Steam Workshop mods on a Mac?",
+    answer: "Yes. You can subscribe to mods via the Steam Workshop interface inside your compatibility layer. They will download and activate automatically just like on Windows."
+  }
+]} />
+
+<Callout type="tip" title="Final Performance Tip">
+If you experience occasional stuttering on Apple Silicon, open your compatibility layer settings and ensure that **DXVK** or **MSync** is enabled. These options optimize Direct3D rendering for macOS graphics APIs.
+</Callout>
+
+</Section>

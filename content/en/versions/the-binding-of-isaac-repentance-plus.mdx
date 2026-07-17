@@ -1,0 +1,208 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "The Binding of Isaac Repentance Plus: Online Co-op Guide",
+  description: "Master the new Repentance+ online multiplayer co-op mode. Learn connection setup, character synergies, shared progression rules, and patch updates.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/1e1417/f2786e?text=Repentance+Plus+Online+Co-op",
+  date: "2026-07-17",
+  author: "the binding of isaac repentance Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **Primary Keyword**: This guide covers the complete setup and strategy for **the binding of isaac repentance plus** online co-op mode.
+- **Key Mechanic**: Up to four players can join a single run with individual characters, sharing a single pool of keys, bombs, and coins.
+- **Best Strategy**: Coordinate character selection to balance damage dealers with defensive or utility-focused characters.
+- **Critical Tip**: Disable all Steam Workshop mods before attempting to join or host public match lobbies.
+- **Top Choice**: Pair normal Isaac with Tainted Isaac to maximize item rerolls and selection control.
+</Callout>
+
+<Section icon={Shield} title="The Binding of Isaac Repentance Plus: System Requirements">
+
+The release of the free expansion update introduces integrated online multiplayer matchmaking directly to Steam. This system allows up to four players to descend into the basement together. Unlike previous local co-op methods or remote play workarounds, this update establishes a dedicated netcode framework designed to sync game states, item pools, and progression across multiple distinct Steam accounts.
+
+To ensure a stable connection and prevent desynchronization errors during high-projectile boss fights, players must meet specific software requirements. Every participant in the lobby must own the complete DLC package on Steam, including Rebirth, Afterbirth, Afterbirth+, Repentance, and the free multiplayer update.
+
+| Requirement | Specification | Detail |
+| --- | --- | --- |
+| Platform | Steam PC | Dedicated online matchmaking is exclusive to Steam |
+| DLC Stack | Rebirth to Repentance | All previous expansions must be installed and active |
+| Player Limit | 2 to 4 Players | Supports matches from duos up to full four-player squads |
+| Input | Keyboard or Controller | Full rebinding supported for all connected clients |
+| Mod Status | Disabled | Workshop mods must be turned off for public matchmaking |
+
+<Callout type="warning" title="Mod Compatibility Warning">
+Running active Steam Workshop mods while attempting to use public matchmaking will result in connection failures or immediate lobby desynchronization. Always disable mods and restart the game client before hosting or joining.
+</Callout>
+
+The netcode relies heavily on the host player's connection stability. While client players will experience minor latency-compensating visual adjustments, the host machine processes the physics, room generation, and enemy AI. For the smoothest gameplay experience, the player with the highest hardware specifications and the most stable wired internet connection should host the lobby.
+
+</Section>
+
+<Section icon={Target} title="Step-by-Step Multiplayer Setup">
+
+Setting up an online lobby requires navigating the updated main menu interface. The system supports private matches with friends, public lobbies visible to the community, and quick matchmaking for solo players looking to join active groups. Follow these steps to establish a connection and configure your session.
+
+<Steps>
+  <Step num="1" title="Enable the Multiplayer DLC">
+    Ensure the expansion is properly installed in your Steam library. Check your downloadable content properties panel to verify that the multiplayer update is checked and active.
+  </Step>
+  <Step num="2" title="Access the Online Menu">
+    Launch the game and select the Online Co-op option from the main menu. If this option is grayed out, verify your Steam connection status and ensure the game is running in online mode.
+  </Step>
+  <Step num="3" title="Select Matchmaking Type">
+    Choose between Friend Match, Public Match, or Quick Match. Friend Match allows you to invite players directly from your Steam friends list into a private lobby.
+  </Step>
+  <Step num="4" title="Configure Game Rules">
+    The lobby host can select the game mode, including Normal, Hard, Greed, or Greedier. The host can also choose to run specific unlocked challenges or daily runs.
+  </Step>
+  <Step num="5" title="Lock in Characters">
+    Once all players have joined the lobby, each participant selects their character from their personal unlocked roster. When everyone is ready, the host starts the run.
+  </Step>
+</Steps>
+
+<Callout type="success" title="Matchmaking Tip">
+If you are playing with a premade group, use the Friend Match option. This bypasses the public lobby list entirely, allowing for fast reconnects if a player experiences a sudden network drop.
+</Callout>
+
+During character selection, players can only choose characters they have personally unlocked on their local save file. If a client player has not unlocked a specific character or tainted variant, they cannot select them, even if the host has completed 100% of the game achievements.
+
+</Section>
+
+<Section icon={Swords} title="Shared Progression and Co-op Mechanics">
+
+The multiplayer system introduces unique rules for resource distribution and progression tracking. Understanding how the game handles pickups, item pedestals, and completion marks is essential for planning successful deep runs.
+
+While players control individual characters with separate health bars and active items, the utility resources are completely shared. Coins, bombs, and keys go into a single unified counter visible at the top of the screen. Any player can spend these resources, requiring active communication before opening locked chests, purchasing shop items, or using bombs to search for secret rooms.
+
+| Resource Type | Distribution | Strategy |
+| --- | --- | --- |
+| Coins | Shared Pool | Save for shops, priority items, or key health purchases |
+| Bombs | Shared Pool | Prioritize tinted rocks, secret rooms, and boss damage |
+| Keys | Shared Pool | Always reserve at least one key for the next Treasure Room |
+| Health | Individual | Red, Soul, and Black hearts are picked up per character |
+| Pedestal Items | Single Pickup | Assign items to characters based on synergy value |
+
+<Callout type="tip" title="Resource Coordination">
+Because keys and bombs are shared, players must coordinate their spending. Avoid wasting bombs on basic obstacles if a future floor requires key access to a Planetarium or a locked vault.
+</Callout>
+
+Progression marks earned during an online co-op run apply to all eligible players in the lobby. If the group successfully defeats a major boss, such as Mother or The Beast, every player who survived the run receives the corresponding completion mark on their active save file, provided they selected a character that still needed that specific victory mark.
+
+| Boss Route | Unlock Reward Type | Target Priority |
+| --- | --- | --- |
+| Mom's Heart | Core Progression | Essential for unlocking alternative chapters |
+| Cathedral / Sheol | Chapter V Marks | Unlocks powerful character-specific passive items |
+| Chest / Dark Room | Endgame Items | Provides high-impact pool upgrades like the Polaroid |
+| Mega Satan | Golden Gate | Unlocks Apollyon and community-favorite trinkets |
+| The Beast | Tainted Variants | Unlocks the ultimate endgame character roster |
+
+This shared progression makes online co-op an excellent tool for helping friends complete difficult character post-it notes, such as those for Jacob and Esau or Tainted Lost. A skilled player can carry the run using a strong, reliable character while the other player focuses on survival to secure the completion mark.
+
+</Section>
+
+<Section icon={Sparkles} title="Best Character Synergies">
+
+Selecting complementary characters is the fastest way to break the game balance in multiplayer. Certain passive abilities and starting items interact in ways that are impossible to achieve in single-player mode.
+
+When building your team, aim to combine characters that generate resources with those that scale aggressively with high damage. Avoid running multiple characters that rely on the same rare health types, such as running Tainted Lost alongside Tainted Beth, as they will constantly compete for limited defensive resources.
+
+<CardGrid cols={3}>
+  <Card title="The Resource Engine">
+    - **Tainted Keeper & Magdalene**
+    - High coin generation heals Magdalene instantly.
+    - Allows aggressive blood donation machine farming.
+    - Excellent for breaking shop economies early.
+  </Card>
+  <Card title="The Item Controller">
+    - **Isaac & Tainted Isaac**
+    - Double the item options on every pedestal.
+    - Isaac rerolls unwanted items using the D6.
+    - Tainted Isaac cycles items to find perfect synergies.
+  </Card>
+  <Card title="The Ultimate DPS">
+    - **Azazel & Lilith**
+    - High early-game short-range damage output.
+    - Lilith provides consistent ranged familiar support.
+    - Safely clears early bosses without losing deal chances.
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Synergy Optimization">
+Use the emote wheel's built-in dice roll function to resolve disputes over high-tier items. Assigning items to the character that benefits most from the specific stat upgrade ensures higher team survival rates.
+</Callout>
+
+To further optimize your team composition, refer to the synergy ratings table below. This matrix highlights how different character archetypes perform when paired together in high-difficulty chapters like the Void or Home.
+
+| Archetype Pair | Synergy Rating | Primary Advantage |
+| --- | --- | --- |
+| Utility + DPS | ★★★★★ | Balanced damage output with consistent resource generation |
+| Double DPS | ★★★★☆ | Extremely fast room clears, but vulnerable to health starvation |
+| Support + Tank | ★★★★☆ | High survivability, but struggles against late-game boss armor |
+| Double Support | ★★☆☆☆ | Safe early floors, but lacks the damage needed for timed routes |
+
+</Section>
+
+<Section icon={Trophy} title="Troubleshooting and Patch Tracking">
+
+Even with dedicated server support, network latency and software conflicts can occur during multiplayer sessions. Follow this checklist to prepare your system for a stable online session.
+
+<Checklist
+  id="co-op-prep"
+  title="Pre-Flight Co-op Checklist:"
+  items={[
+    "Verify all players have disabled Steam Workshop mods completely.",
+    "Ensure the host has a wired ethernet connection active.",
+    "Confirm all clients are running the exact same game version.",
+    "Restart the Steam client to clear cached matchmaking lobby data.",
+    "Select the host player based on the highest hardware specifications."
+  ]}
+/>
+
+<Callout type="warning" title="Connection Dropped Recovery">
+If a client player disconnects mid-run, the host should pause the game immediately. The disconnected player can attempt to rejoin the active lobby directly through the Steam friends list overlay without losing run progress.
+</Callout>
+
+Official developers regularly release patches to address multiplayer bugs, improve connection synchronization, and adjust character balance for co-op play. Keeping track of these version changes ensures you are playing on the most stable build.
+
+| Version | Focus | Key Fixes |
+| --- | --- | --- |
+| 1.9.7.6 | Initial Online Launch | Introduced basic lobby system and friend matchmaking |
+| 1.9.7.8 | Netcode Stability | Reduced desync errors during high-projectile boss fights |
+| 1.9.7.11 | UI & Balance | Added visual indicators for shared resources and items |
+| 1.9.7.13 | Integrated Features | Added built-in item descriptions and improved matchmaking |
+
+</Section>
+
+<Section icon={Map} title="Frequently Asked Questions">
+
+<FAQ items={[
+  {
+    question: "Do unlock achievements count for everyone in the online lobby?",
+    answer: "Yes. Any completion marks, character unlocks, or item achievements earned during the run are credited to all players in the lobby, provided they have selected a character that qualifies for that specific unlock."
+  },
+  {
+    question: "How does the game handle item pedestals when multiple players are present?",
+    answer: "Most item pedestals can only be picked up by one player. However, certain special rooms, like double-pedestal choice rooms, allow multiple players to grab an item simultaneously if coordinated correctly."
+  },
+  {
+    question: "Can I use Steam Workshop mods while playing the binding of isaac repentance plus online?",
+    answer: "No. All Workshop mods must be completely disabled to ensure compatibility with the matchmaking servers and prevent desynchronization errors between different game clients."
+  },
+  {
+    question: "What happens when a player dies during an online co-op run?",
+    answer: "Dead players spawn as a ghost baby companion with limited damage capabilities. They will revive with half a heart at the start of the next floor, provided at least one other player successfully clears the current floor boss."
+  }
+]} />
+
+<Callout type="info" title="Community Resources">
+For real-time matchmaking partners, strategy discussions, and technical support, join the official community Discord or visit the dedicated subreddit channels.
+</Callout>
+
+</Section>

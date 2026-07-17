@@ -1,0 +1,157 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles, BookOpen } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Guía de The Binding of Isaac: Repentance: Estrategias para 2026",
+  description: "Domina The Binding of Isaac: Repentance con nuestra guía experta. Conoce los niveles de objetos, desbloqueos de personajes y estrategias de jefes para una partida exitosa.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/881337/fff?text=Repentance+Walkthrough",
+  date: "2026-07-17",
+  author: "Equipo de la Wiki de The Binding of Isaac: Repentance"
+}
+
+<Callout type="info" title="Guía Rápida">
+- **The Binding of Isaac: Repentance** es un roguelike complejo que premia la **gestión cuidadosa de recursos** y el **evitar recibir daño**.
+- Prioriza los **pactos de la sala del Ángel o del Demonio** al principio para asegurar objetos clave que escalen hacia el final de la partida.
+- Sigue una **ruta de desbloqueos** constante para mejorar la selección de objetos y acceder a personajes poderosos como **Tainted Isaac**.
+- Domina la **planificación de pisos** para asegurarte de visitar salas esenciales como Tiendas y Salas del Tesoro antes de la pelea contra el jefe.
+</Callout>
+
+<Section icon={Map} title="Bucle de Juego Principal y Progresión">
+
+El éxito en The Binding of Isaac: Repentance depende de tu habilidad para encadenar pisos mientras maximizas tu nivel de poder mediante el descubrimiento de salas especiales. Los principiantes deben centrarse en los fundamentos del movimiento y el control de salas en lugar de buscar las sinergias más complejas de inmediato.
+
+**Puntos Clave del Video:**
+- Técnicas de movimiento esenciales para limpiar salas.
+- Uso eficiente de bombas y llaves para la optimización de recursos.
+- Patrones de combate de jefes del juego temprano y zonas seguras.
+
+<YouTubeEmbed videoId="700_plus_items_guide" title="Estrategia para Principiantes de The Binding of Isaac: Repentance" />
+
+El flujo de una partida exitosa implica limpiar salas de combate para obtener recursos, visitar la Sala del Tesoro para conseguir mejoras gratuitas y decidir entre pactos con el Demonio o el Ángel.
+
+| Tipo de Sala | Beneficio Principal | Prioridad Estratégica |
+| :--- | :--- | :--- |
+| **Sala del Tesoro** | Objeto de pedestal gratuito | Visitar en cada piso |
+| **Tienda** | Consumibles/Mejoras | Requiere más de 15 monedas |
+| **Sala del Demonio** | Alto riesgo/Alta recompensa | Intercambiar vida por poder |
+| **Sala del Ángel** | Objetos defensivos/de utilidad | Ideal para construcciones de supervivencia |
+
+<Callout type="tip" title="Consejo Pro">
+Activa siempre el "HUD Encontrado" (Found HUD) en el menú de opciones. Conocer los cambios exactos de tus estadísticas te ayuda a evaluar si un objeto vale el costo de vida o el potencial de cambio (reroll).
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Resumen de Niveles de Objetos">
+
+No todos los objetos son iguales. Comprender la selección interna de objetos y cómo interactúan las pasivas específicas es la marca de un jugador veterano. La siguiente tabla clasifica los objetos según su fiabilidad general para todos los personajes.
+
+| Nombre del Objeto | Nivel | Resumen del Efecto | Mejor Selección (Pool) |
+| :--- | :--- | :--- | :--- |
+| **Sacred Heart** | S | Multiplicador de daño/Teledirigido | Sala del Ángel |
+| **C Section** | S | Proyectiles de feto teledirigidos | Sala del Tesoro |
+| **Brimstone** | A | Láser penetrante cargado | Sala del Demonio |
+| **Mom's Knife** | A | Cuchillo cuerpo a cuerpo de alto daño | Sala del Demonio |
+| **Holy Mantle** | B | Un golpe gratis por sala | Tesoro/Ángel |
+
+<CardGrid cols={3}>
+  <Card title="Poderosos de Nivel S">
+    - **Sacred Heart**
+    - **Glitched Crown**
+    - **Spindown Dice**
+    - Ganadores instantáneos de partidas con poca preparación.
+  </Card>
+  <Card title="Elementos Básicos de Nivel A">
+    - **Brimstone**
+    - **Tech X**
+    - **Incubus**
+    - Distribuidores de daño extremadamente confiables.
+  </Card>
+  <Card title="Utilidad de Nivel B">
+    - **Satanic Bible**
+    - **Book of Virtues**
+    - **Diplopia**
+    - Cruciales para la gestión de recursos a largo plazo.
+  </Card>
+</CardGrid>
+
+<Callout type="warning" title="Alerta de Anti-Sinergia">
+Ten cuidado con "Strange Attractor". Aunque atrae a los enemigos hacia tu línea de fuego, a menudo arrastra proyectiles peligrosos y enemigos directamente hacia tu hitbox.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Ruta de Desbloqueos">
+
+La progresión en Repentance está limitada por marcas de finalización específicas. Seguir un orden de desbloqueo óptimo evita el esfuerzo desperdiciado en objetivos de bajo impacto.
+
+<Steps>
+  <Step num="1" title="Finales Iniciales">
+    Derrota a Mamá 11 veces para desbloquear permanentemente "It Lives!" y acceder a las rutas de la Catedral y el Sheol.
+  </Step>
+  <Step num="2" title="Prueba Fotográfica">
+    Derrota a Isaac 5 veces para obtener The Polaroid y a Satán 5 veces para obtener The Negative para abrir los capítulos finales.
+  </Step>
+  <Step num="3" title="Rutas Alternativas">
+    Derrota a Hush 3 veces para desbloquear el camino al Corpse (Cadáver) y la pelea contra el jefe Mother (Madre).
+  </Step>
+  <Step num="4" title="Ascenso Final">
+    Desbloquea el capítulo "Home" (Hogar) usando la Puerta Extraña en Depths II (Profundidades II) para enfrentarte a The Beast (La Bestia).
+  </Step>
+</Steps>
+
+<Checklist
+  id="progression-checklist"
+  title="Desbloqueos Esenciales para tu Archivo de Guardado:"
+  items={[
+    "Derrota a Isaac como ??? para desbloquear el D6 para Isaac",
+    "Dona 879 monedas a la Máquina de Codicia para Holy Mantle",
+    "Derrota a The Beast como Tainted Isaac para Glitched Crown",
+    "Completa el Desafío #2 (High Brow) para la runa Jera"
+  ]}
+/>
+
+</Section>
+
+<Section icon={Shield} title="Comparación de Personajes">
+
+Elegir el personaje adecuado para una marca de finalización específica es vital. Algunos personajes sobresalen en las batallas contrarreloj contra jefes (boss rushes), mientras que otros están diseñados para la resistencia.
+
+| Personaje | Dificultad | Mecánica Central | Ruta Recomendada |
+| :--- | :--- | :--- | :--- |
+| **Isaac** | Fácil | Cambio de objeto con D6 | Cualquiera |
+| **Azazel** | Muy fácil | Brimstone de corto alcance | Avance rápido en juego temprano |
+| **The Lost** | Muy difícil | Sin vida/Vuelo | Construcciones de alto daño |
+| **Bethany** | Moderado | Cargas de fuego fatuo | Construcciones de objetos activos |
+
+<Callout type="success" title="Recomendación para Principiantes">
+Comienza tu viaje con **Magdalene**. Su alta cantidad de vida inicial proporciona un margen significativo para aprender los patrones de los enemigos sin terminar tu partida prematuramente.
+</Callout>
+
+</Section>
+
+<Section icon={BookOpen} title="FAQ">
+
+<FAQ items={[
+  {
+    question: "¿Cómo llego a la Sala del Ángel en lugar de la Sala del Demonio?",
+    answer: "En Repentance, negarse a entrar en la primera Sala del Demonio garantiza que la siguiente sala de pacto sea una Sala del Ángel. Además, evitar el daño a los corazones rojos ayuda a mantener altas las probabilidades de pacto."
+  },
+  {
+    question: "¿Cuál es la mejor manera de farmear monedas para la Máquina de Codicia?",
+    answer: "Rota entre diferentes personajes. Cada personaje tiene un porcentaje único de probabilidad de atasco, por lo que jugar con una variedad de personajes mantiene la máquina abierta por más tiempo."
+  },
+  {
+    question: "¿Es seguro usar mods para conseguir logros?",
+    answer: "Sí, una vez que hayas derrotado a Mamá al menos una vez, puedes usar mods. Sin embargo, los mods están desactivados para las Partidas Diarias y el emparejamiento en línea para garantizar la equidad."
+  }
+]} />
+
+</Section>

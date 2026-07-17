@@ -1,0 +1,179 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "The Binding of Isaac Repentance Pills: Identification Guide",
+  description: "Master the pill pool in The Binding of Isaac: Repentance. Learn pill effects, identification strategies, and item synergies to optimize your runs.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/120b0d/fff?text=Pills+Identification+Guide",
+  date: "2026-07-17",
+  author: "the binding of isaac repentance Wiki Team"
+}
+
+<Callout type="info" title="Quick Pill Guide">
+- **Pill Mechanics**: Learn how **the binding of isaac repentance pills** randomize every run.
+- **Pill Pools**: Identify positive, negative, and neutral effects to minimize risk.
+- **Key Synergies**: Utilize items like **PHD** and **False PHD** to manipulate pill pools.
+- **Risk Mitigation**: Avoid blind-testing pills when your health pool is critically low.
+- **Horse Pills**: Maximize high-yield runs by understanding amplified pill variations.
+</Callout>
+
+<Section icon={Sparkles} title="Understanding The Binding of Isaac Repentance Pills">
+
+In any given run, **the binding of isaac repentance pills** represent one of the most volatile risk-reward mechanics in the game. Unlike cards or runes, which display their exact effects immediately upon pickup, pills begin as unidentified mysteries. Their visual colors are randomized at the start of every run, meaning a red-and-white pill might grant a valuable stat upgrade in one attempt but deplete your health container in the next.
+
+To consistently win runs in the 2026 meta, players must understand how the pill pool is generated, how to identify them safely, and how specific items can completely remove the risk of negative effects. When a pill is consumed, its effect is revealed for the remainder of that specific run, allowing you to plan future consumption with absolute certainty.
+
+| Item | Type | Core Pill Effect Modifier | Run Strategy |
+|---|---|---|---|
+| **PHD** | Passive | Identifies all pills, converts negative effects to positive | Prioritize in early Shops to secure clean stat gains |
+| **False PHD** | Passive | Identifies all pills, converts positive effects to negative | Use to gain permanent damage buffs from stat-down pills |
+| **Lucky Foot** | Passive | Converts negative pills to positive or neutral counterparts | Excellent for Cain runs; permits reckless blind pill testing |
+| **Virgo** | Passive | Converts negative pills to positive counterparts | Combines defense with safe pill identification |
+
+<Callout type="info" title="Color Rotation Rule">
+There are 49 distinct pill effects in the Repentance expansion, but only 13 visual color combinations are selected for the active pool in any single run. This means you will never encounter every single pill effect in a single playthrough, limiting the pool and making memory-based tracking highly effective.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="High-Impact Positive Pill Effects">
+
+Securing positive pill effects can turn a struggling build into a run-defining powerhouse. Stat-upgrading pills provide permanent bonuses to your attributes, often pushing past standard soft caps. For characters who rely on high fire rates or massive health pools, identifying these effects early is paramount to victory.
+
+In addition to standard stat upgrades, utility pills can completely alter room navigation, provide emergency defensive options, or generate valuable resources out of thin air. When amplified into Horse Pills, these effects double in strength, providing massive boosts that can carry you through difficult alternate paths.
+
+| Pill Effect | Base Gameplay Benefit | Horse Pill Upgraded Effect |
+|---|---|---|
+| **Tears Up** | Grants a permanent +0.35 Fire Rate bonus | Grants a permanent +0.70 Fire Rate bonus |
+| **Health Up** | Adds one empty Red Heart container | Adds two empty Red Heart containers |
+| **Balls of Steel** | Grants two Soul Hearts | Grants four Soul Hearts |
+| **Pretty Fly** | Spawns a defensive orbital fly that blocks projectiles | Spawns a large orbital fly that blocks larger shots |
+| **48 Hour Energy** | Drops two battery pickups and fully charges active items | Drops four battery pickups and fully charges active items |
+| **Hematemesis** | Empties red health to one half-heart, spawning 1-4 red hearts | Empties red health to one half-heart, spawning 2-8 red hearts |
+
+<Callout type="success" title="Min-Maxing Stat Pills">
+Always wait to use stat-modifying pills until you have cleared the immediate threats on a floor. If you find a Tears Up or Speed Up pill early, consuming it immediately is fine, but utility pills like Hematemesis should be saved for rooms with donation machines or sacrifice spikes to maximize resource conversion.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Managing Negative and Neutral Pills">
+
+While positive pills can secure a win, negative pills can easily ruin a promising run if taken at the wrong moment. Stat-down pills reduce your attributes permanently unless neutralized by specific items. Neutral pills do not directly hurt your stats, but they can disorient your movement, teleport you to random rooms, or trigger visual distortions that make dodging projectiles significantly harder.
+
+Learning how to mitigate these risks without the help of identifying items is a crucial skill for high-level play. If you do not possess PHD or Lucky Foot, you must exercise extreme caution when testing unidentified pills, especially when navigating difficult endgame routes.
+
+| Pill Effect | Threat Level | Strategic Gameplay Impact |
+|---|---|---|
+| **Tears Down** | High | Permanently reduces Fire Rate; highly detrimental to damage output |
+| **Health Down** | High | Removes one Red Heart container; dangerous on low-health builds |
+| **Bad Trip** | Medium | Deals one full heart of damage; converts to Full Health if at low health |
+| **Amnesia** | Medium | Hides the minimap for the current floor; disrupts secret room searches |
+| **Telepills** | Low | Teleports Isaac to a random room; small chance to enter the Error Room |
+| **Bad Gas** | Low | Triggers a poison cloud around Isaac; useful for clearing close enemies |
+
+<Callout type="warning" title="Critical Health Warning">
+Never test unidentified pills when sitting at exactly one heart container. If the pill is a Bad Trip, it will deal damage and potentially end your run. However, if you are at one half-heart or lower, a Bad Trip pill automatically converts into a Full Health pill, making it safe to swallow in absolute emergencies.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Step-by-Step Pill Identification Strategy">
+
+To safely build your pill database during a run without relying on blind luck, follow a structured testing methodology. This step-by-step process minimizes the risks associated with bad pill effects while maximizing your chances of securing permanent stat upgrades.
+
+<Steps>
+  <Step num="1" title="Secure the Floor First">
+    Clear all combat rooms on the current floor before testing any unidentified pills. This ensures that negative effects like Amnesia, Range Down, or Speed Down do not hinder your ability to dodge enemy attacks during active combat.
+  </Step>
+  <Step num="2" title="Assess Your Current Health Pool">
+    Ensure you have at least two full heart containers before swallowing a random pill. This protects you from dying to a Bad Trip effect. If you are at a half-heart, you can also safely test, as Bad Trip will convert to Full Health.
+  </Step>
+  <Step num="3" title="Check for Shop and Item Synergies">
+    Before testing, check the current floor's Shop for PHD or look for Lucky Foot. If these items are available, purchase them immediately before consuming any pills to guarantee all negative effects are converted into positive upgrades.
+  </Step>
+  <Step num="4" title="Consume Near Useful Rooms">
+    Stand near a Curse Room, Arcade, or Super Secret Room entrance when testing. If you swallow a Telepills, you might bypass locked doors or access rare item pools without spending keys or bombs.
+  </Step>
+</Steps>
+
+<Callout type="tip" title="External Descriptions Mod">
+If you are playing on PC with mods enabled, the External Item Descriptions mod is highly recommended. While it won't identify randomized pills automatically, it will display the effects of identified pills on the ground and show exact stat conversions once PHD is held.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Top Pill Synergy Items">
+
+Certain items in Repentance turn pills from a risky gamble into your primary source of power. By altering how pills behave, how often they drop, or how their effects are triggered, these synergies can easily break the game's balance.
+
+<CardGrid cols={3}>
+  <Card title="PHD">
+    - **Automatic Identification**: Instantly reveals all pill effects on sight.
+    - **Pill Conversion**: Converts all negative pills in the pool to positive counterparts.
+    - **Extra Resources**: Spawns a gold coin and boosts the drops of future pills.
+  </Card>
+  <Card title="False PHD">
+    - **Damage Scaling**: Converts positive stat pills to negative ones, but grants a permanent +0.6 Damage upgrade for each stat-down pill consumed.
+    - **Black Heart Generation**: Spawns Black Hearts when negative health pills are swallowed.
+    - **High-Risk Power**: Ideal for experienced players looking to trade utility for raw offensive damage.
+  </Card>
+  <Card title="Placebo">
+    - **Repeatable Effects**: Copy the effect of your currently held pill using a 4-charge active item.
+    - **Infinite Scaling**: Allows for infinite Tears Up, Health Up, or Balls of Steel generation.
+    - **Battery Synergy**: Combines perfectly with 48 Hour Energy for unlimited active item charges.
+  </Card>
+</CardGrid>
+
+<Callout type="info" title="The Placebo Break">
+If you hold a 48 Hour Energy pill and the Placebo active item, consuming the charge drops batteries that fully recharge Placebo. This creates an infinite loop, allowing you to spawn infinite batteries, fully charge any secondary active items, and break the run's economy completely.
+</Callout>
+
+</Section>
+
+<Section icon={Map} title="Pill Safety Checklist & FAQ">
+
+Before descending into deeper floors like the Womb or the alternate Corpse route, ensure you are utilizing your pill inventory efficiently. Use the following checklist to verify your pill safety protocols.
+
+<Checklist
+  id="pill-safety"
+  title="Pill Safety Rules:"
+  items={[
+    "Never consume unidentified pills during a difficult boss fight.",
+    "Drop useless pills in cleared rooms to avoid cluttering your active inventory slot.",
+    "Prioritize Cain or Magdalene if you want to run pill-heavy strategies from the start.",
+    "Save unidentified pills for the Ascent route, where backtracking is easier.",
+    "Always check Shop inventories for battery pickups when holding Placebo."
+  ]}
+/>
+
+<Callout type="tip" title="Final Pill Strategy">
+Remember that pills are a tool of consistency over long runs. While a single bad pill can feel frustrating, the long-term stat gains from identifying Tears Up and Health Up pills far outweigh the temporary setbacks of a Speed Down or Range Down. Play smart, check your health, and prioritize identifying items.
+</Callout>
+
+<FAQ items={[
+  {
+    question: "Do pills look the same in every run?",
+    answer: "No, the visual color combinations of pills are completely randomized at the start of each run. A color that represents Tears Up in one run might represent Tears Down in the next."
+  },
+  {
+    question: "How does Lucky Foot affect the pill pool?",
+    answer: "Lucky Foot converts all negative pill effects in the current run's pool into positive or neutral effects, making it completely safe to blind-test any pill you find."
+  },
+  {
+    question: "Can a Bad Trip pill kill me?",
+    answer: "No, a Bad Trip pill will automatically convert into a Full Health pill if you are at one half-heart or lower, preventing accidental self-elimination."
+  },
+  {
+    question: "What are Horse Pills in Repentance?",
+    answer: "Horse Pills are larger, louder versions of normal pills that trigger amplified effects (e.g., granting two heart containers instead of one) when consumed."
+  }
+]} />
+
+</Section>

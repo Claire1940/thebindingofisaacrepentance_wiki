@@ -1,0 +1,181 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "the binding of isaac repentance beginner guide: Step-by-Step Winning Strategies",
+  description: "Master the basics of The Binding of Isaac: Repentance with our 2026 beginner guide. Learn health management, item synergies, and the best route to Mom.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/120b0d/f4e9e7?text=Repentance+Beginner+Guide",
+  date: "2026-07-17",
+  author: "the binding of isaac repentance Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **the binding of isaac repentance beginner guide**: Learn to balance health, resources, and item synergies to secure your first win.
+- **Core Loop**: Clear rooms, collect pickups, defeat the floor boss, and descend deeper into the basement.
+- **Health Management**: Protect your Soul Hearts to guarantee high chances for Devil and Angel Rooms.
+- **Resource Priority**: Use keys for Treasure Rooms and Shops, and save bombs for Tinted Rocks or Secret Rooms.
+- **Found HUD**: Always enable the Found HUD in options to track your numerical stats during a run.
+</Callout>
+
+<Section icon={Map} title="Mastering Movement and Core Controls">
+
+Starting your journey in the basement can be overwhelming. The most fundamental skill in this **the binding of isaac repentance beginner guide** is independent movement and firing. Most enemies in Repentance aim at your current position, meaning constant, deliberate movement is required to survive. Unlike other shooters, you often need to lead your shots, as your character's momentum is transferred to your tears.
+
+Before diving into deep strategies, ensure your settings are optimized. The "Found HUD" and "Extra HUD" options are essential for seeing your exact damage, fire rate, and luck stats, as well as tracking which items you have collected.
+
+| Stat | Function | Importance |
+| :--- | :--- | :--- |
+| **Damage** | Determines how much health enemies lose per hit | High |
+| **Fire Rate** | Controls how many tears you fire per second | High |
+| **Range** | Determines how far your tears travel | Medium |
+| **Shot Speed** | How quickly your projectiles move through the air | Medium |
+| **Speed** | Your movement velocity (Cap is 2.0) | High |
+| **Luck** | Affects room drops and certain item proc chances | Medium |
+
+<Callout type="tip" title="Pro Movement Tip">
+Avoid standing against walls. Most bosses have splash damage or projectiles that bounce, and being trapped in a corner is a guaranteed way to lose health. Stay toward the center of the room to maintain maximum dodging lanes.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Health Mechanics and Survival Strategies">
+
+Survival in Repentance isn't just about having a lot of health; it's about having the *right kind* of health. The game distinguishes between several types of hearts, each serving a specific purpose in your run's economy.
+
+<CardGrid cols={3}>
+  <Card title="Red Hearts">
+    - **Refillable** containers
+    - Used to pay for Devil Deals
+    - Taking Red Heart damage reduces Deal chances
+  </Card>
+  <Card title="Soul Hearts">
+    - **Temporary** blue health
+    - Protects your Red Heart containers
+    - Preserves Devil/Angel Room spawn rates
+  </Card>
+  <Card title="Black Hearts">
+    - **Offensive** temporary health
+    - Deals 40 damage to all enemies when lost
+    - Functions like Soul Hearts for protection
+  </Card>
+</CardGrid>
+
+<Callout type="warning" title="Critical Penalty">
+Taking Red Heart damage on a floor significantly lowers your chance of spawning a Devil or Angel Room after the boss. Always prioritize picking up Soul Hearts to act as a buffer for your "Deal" percentages.
+</Callout>
+
+To maximize your survivability, you must understand how to replenish these resources. Beyond standard room drops, look for **Tinted Rocks**—slightly off-color rocks marked with a small "X." Blowing these up often yields Soul Hearts, keys, or even the "Small Rock" item.
+
+| Resource | Primary Source | Best Use |
+| :--- | :--- | :--- |
+| **Coins** | Room clears / Poops | Buying items in the Shop |
+| **Bombs** | Chests / Tinted Rocks | Finding Secret Rooms / Boss damage |
+| **Keys** | Shop / Chests | Opening Treasure Rooms / Gold Chests |
+
+</Section>
+
+<Section icon={Target} title="Resource Spending and Room Priority">
+
+Managing your limited keys and bombs is the difference between a failed run and a "broken" build. In the early floors (Basement I & II), your resources are scarce. This **the binding of isaac repentance beginner guide** recommends a strict priority list for spending your items.
+
+<Steps>
+  <Step num="1" title="The Treasure Room">
+    Every floor (except the final ones) contains a Treasure Room. Most require one key. This is your primary source of passive and active items. Always visit this first.
+  </Step>
+  <Step num="2" title="The Shop">
+    Shops require a key and 15 coins for a major item. They provide utility like Soul Hearts, maps, and batteries. Only enter if you have at least 15 coins or a desperate need for health.
+  </Step>
+  <Step num="3" title="Secret Rooms">
+    Use bombs to find Secret Rooms. A regular Secret Room is usually adjacent to 3 or 4 normal rooms. Super Secret Rooms are typically near the Boss room and touch only one wall.
+  </Step>
+  <Step num="4" title="Devil and Angel Rooms">
+    Appearing after a boss fight, these rooms offer the most powerful items in the game. Devil Rooms cost heart containers, while Angel Rooms are free but require you to skip the first Devil Deal.
+  </Step>
+</Steps>
+
+<Callout type="info" title="Spending Strategy">
+If you have only one key and see both a Shop and a Treasure Room, always choose the Treasure Room. The potential for a damage upgrade outweighs the utility of the early-game Shop.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="The First-Playthrough Route to Mom">
+
+Your initial goal is to reach and defeat Mom in the Depths II. This unlocks the next stage of the game, including the Womb and several new items. Following a consistent route is key for beginners to build up their strength before the difficulty spikes.
+
+| Chapter | Floors | Key Objective | Difficulty |
+| :--- | :--- | :--- | :--- |
+| **Basement** | I & II | Collect 2+ items, find Soul Hearts | Easy |
+| **Caves** | I & II | Build damage, visit the Shop | Medium |
+| **Depths** | I & II | Finalize build, defeat Mom | Hard |
+| **Womb** | I & II | Survive full-heart damage | Very Hard |
+
+<Checklist
+  id="boss-prep"
+  title="Pre-Mom Checklist:"
+  items={[
+    "Ensure you have at least 3-4 total heart containers",
+    "Identify at least one Damage or Fire Rate upgrade",
+    "Have at least 2 bombs for the Mom fight",
+    "Check for a Bible in the Shop (Instantly kills Mom)"
+  ]}
+/>
+
+<Callout type="success" title="Victory Condition">
+Defeating Mom for the first time unlocks "The Womb." Subsequent victories will unlock "Mom's Heart," which must be defeated 11 times to unlock the true endgame paths like the Cathedral and Sheol.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Best Beginner Characters and Unlocks">
+
+Not all characters are created equal. For your first few runs, some characters offer significantly more forgiveness than others. As you progress, you will unlock "Tainted" variants, but focusing on the core cast is essential for learning the mechanics.
+
+| Character | Starting Health | Unique Advantage | Unlock Requirement |
+| :--- | :--- | :--- | :--- |
+| **Isaac** | 3 Red Hearts | Balanced stats (Later gets D6) | Available at start |
+| **Magdalene** | 4 Red Hearts | High health and healing | Have 7+ Heart Containers |
+| **Cain** | 2 Red Hearts | High damage and Luck | Hold 55+ Coins |
+| **Azazel** | 3 Black Hearts | Flight and short-range Brimstone | Take 3 Devil Deals in one run |
+
+<Callout type="tip" title="Best Starter Pick">
+**Azazel** is widely considered the best character for beginners. His ability to fly allows him to bypass obstacles and reach pickups behind pits, while his Brimstone beam deals massive damage to early-game bosses.
+</Callout>
+
+According to official [Steam Community Guides](https://steamcommunity.com/sharedfiles/filedetails/?id=2221730030), prioritizing Azazel's unlocks early on can help you understand the movement mechanics of the game without the frustration of low damage.
+
+</Section>
+
+<Section icon={Sparkles} title="FAQ: The Binding of Isaac Repentance">
+
+<FAQ items={[
+  {
+    question: "How do I unlock the new Repentance content?",
+    answer: "To access the alternate paths and new bosses in Repentance, you must first defeat Hush three times. This opens the 'Secret Exit' leading to Downpour, Mines, and the Mausoleum."
+  },
+  {
+    question: "Should I take Devil Deals or Angel Deals?",
+    answer: "For beginners, Angel Deals are often better because they are free. To guarantee an Angel Room, do not enter the first Devil Room that spawns on Floor 2. The next deal spawn will then have a 100% chance to be an Angel Room."
+  },
+  {
+    question: "What is the best item for a beginner?",
+    answer: "Items like 'Sacred Heart' (massive damage + homing) and 'Holy Mantle' (blocks one hit per room) are top-tier. For a beginner guide, 'The Revelations' is also excellent as it provides flight and a holy beam."
+  },
+  {
+    question: "Why do I keep dying in the Womb?",
+    answer: "In the Womb and all subsequent chapters, every hit deals a full heart of damage instead of a half-heart. This makes health management and dodging even more critical as you descend."
+  }
+]} />
+
+<Callout type="info" title="Final Advice">
+Don't be discouraged by death. The Binding of Isaac: Repentance is a game of knowledge. Every death teaches you an enemy pattern or an item synergy that will make your next run more successful.
+</Callout>
+
+</Section>

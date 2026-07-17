@@ -1,0 +1,183 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "The Binding of Isaac Repentance How to Install Mods: Setup Guide",
+  description: "Learn the binding of isaac repentance how to install mods using Steam Workshop or manual methods, configure directories, and keep achievements active.",
+  category: "Tutorial",
+  image: "https://placehold.co/800x400/3a0f0f/fff?text=Install+Mods+Guide",
+  date: "2026-07-17",
+  author: "the binding of isaac repentance Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **Primary installation**: Use Steam Workshop to subscribe to your desired modifications easily.
+- **Achievement rule**: Defeat Mom once in a run to keep earning achievements with active mods.
+- **Relaunch requirement**: Restart the game client after subscribing to ensure files load correctly.
+- **Manual backup**: Keep directory backups when installing external files outside of Steam client.
+</Callout>
+
+<Section icon={Sparkles} title="The Binding of Isaac Repentance How to Install Mods via Steam">
+
+The Binding of Isaac Repentance offers a massive amount of content, but the community-made modifications elevate the gameplay experience. Learning **the binding of isaac repentance how to install mods** allows you to access thousands of custom characters, items, graphical tweaks, and quality-of-life improvements. The process is straightforward, especially if you own the game on Steam, but there are a few essential rules you need to follow to ensure your mods run smoothly and do not block your game progress.
+
+Using the Steam Workshop is the most efficient and reliable method to manage your modifications. Steam automatically handles downloading, installing, and updating the files whenever the mod creators release new patches. This minimizes compatibility issues and ensures your game client remains stable.
+
+**Video Highlights:**
+- Open Steam and navigate to the Workshop section for the game.
+- Search for popular mods like Better Character Menu and subscribe to them.
+- Relaunch the game completely to allow the files to load.
+- Verify the active status of the installed modifications in the character select screen.
+
+<YouTubeEmbed videoId="EXKfpfGG0fQ" title="How To Install Mods in The Binding of Isaac Repentance – Step by Step Guide" />
+
+To get started with the automated installation process, follow these simple steps to configure your game client:
+
+<Steps>
+  <Step num="1" title="Access the Steam Workshop">
+    Open your Steam client, navigate to your Library, and select the game. Click on the Community Hub tab, then select the Workshop option from the navigation bar.
+  </Step>
+  <Step num="2" title="Find and Subscribe to Mods">
+    Use the search bar or browse the popular files section to find modifications. Click the green Subscribe button on the mod page to initiate the download.
+  </Step>
+  <Step num="3" title="Relaunch the Game Client">
+    If the game is currently running, close it completely. Launch the game again to allow the client to unpack and integrate the newly downloaded Workshop files.
+  </Step>
+  <Step num="4" title="Enable Mods in the Main Menu">
+    Navigate to the Mods menu from the main screen. Ensure that the mods are enabled by toggling them on (the text should appear bright instead of grayed out).
+  </Step>
+</Steps>
+
+| Metric | Steam Workshop Method | Manual Installation Method |
+| Weapon | Steam Cloud sync, Auto-updates | Offline compatibility, Custom assets |
+| Ease of Use | High | Moderate |
+| Risk of File Loss | Very Low | Low |
+
+<Callout type="success" title="Installation Verified">
+Once you complete these steps, the modifications will be active immediately. You can confirm this by starting a new run and checking if the visual changes or custom UI elements appear on your screen.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Manual Mod Installation and Directory Paths">
+
+For players using non-Steam versions of the game or those who prefer to download custom assets directly from third-party community sites, manual installation is necessary. This method requires you to locate the correct directory structure on your local storage device and place the files in the specific folder designated for modifications.
+
+The directory path varies depending on your operating system. It is important to note that creating a backup of your save files before modifying game directories manually is a highly recommended safety measure to prevent data corruption.
+
+| Operating System | Default Installation Directory Path |
+| Windows | `Documents\My Games\Binding of Isaac Repentance\mods` |
+| macOS | `~/Library/Application Support/Binding of Isaac Repentance/mods` |
+| Linux (Steam Deck) | `~/.local/share/Steam/steamapps/compatdata/250900/pfx/` |
+
+When installing mods manually, you must extract the compressed files (usually in ZIP or RAR format) directly into the folder listed above. Ensure that each modification has its own distinct folder inside the main directory to prevent files from overwriting each other.
+
+<Callout type="warning" title="Directory Creation">
+If you do not see the mods directory in your local folders, you may need to launch the game at least once or create the directory manually using the exact lowercase spelling.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Recommended Starting Mods and Configuration">
+
+The modding community has created thousands of unique additions, ranging from minor cosmetic changes to complete gameplay overhauls. For players who are new to modifying their game, starting with quality-of-life adjustments is highly recommended to preserve the core experience while improving usability.
+
+Below are three of the most popular and highly rated modifications that integrate seamlessly with the Repentance expansion without altering the fundamental balance of the game.
+
+<CardGrid cols={3}>
+  <Card title="External Item Descriptions">
+    - **Displays detailed item stats**
+    - Shows synergies and transformations
+    - Highly customizable layout options
+  </Card>
+  <Card title="Better Character Menu">
+    - **Improves character selection screen**
+    - Adds detailed colored sprites
+    - Provides clearer visual feedback
+  </Card>
+  <Card title="Pog for Good Items">
+    - **Adds fun character animations**
+    - Triggers when high-tier items appear
+    - Purely cosmetic and performance-friendly
+  </Card>
+</CardGrid>
+
+These modifications are designed to run concurrently without causing conflicts or game crashes. When choosing which files to install, check their compatibility notes to avoid issues with custom characters or custom room layouts.
+
+| Mod Name | Performance Impact | Game Version Compatibility | Recommended Setting |
+| External Item Descriptions | Very Low | Repentance v1.7.9+ | Enabled (Default) |
+| Better Character Menu | Very Low | Repentance v1.7.9+ | Enabled (Default) |
+| Pog for Good Items | Low | Repentance v1.7.9+ | Optional |
+
+<Callout type="tip" title="Mod Priority">
+If you experience visual glitches, try disabling other graphical mods one by one. UI modifications that change the HUD layout are the most common sources of conflict.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Troubleshooting and Achievement Guide">
+
+A common concern among players is whether utilizing modifications will disable Steam achievements or block progression toward unlocking final endings. In the Repentance expansion, the developers implemented a specific rule system to balance mod usage with fair progression.
+
+To prevent cheating, achievements are initially disabled when any modification is active. However, you can bypass this restriction by meeting a specific gameplay milestone within the unmodded version of the game.
+
+| Rule Condition | Status of Achievements | Progression Allowed |
+| Mods Active (Mom Not Defeated) | Disabled | No |
+| Mods Active (Mom Defeated Once) | Enabled | Yes |
+| No Mods Active (Any Progress) | Enabled | Yes |
+
+Once you defeat the Mom boss on a clean, unmodded save file, the game permanently unlocks the ability to earn achievements while using mods. You will know this is active because the trophy icon with a red slash through it will no longer appear on your screen during runs.
+
+<Checklist
+  id="troubleshooting-steps"
+  title="Common Troubleshooting Checklist:"
+  items={[
+    "Confirm that you have defeated Mom at least once on the current save file",
+    "Verify the integrity of game files through the Steam library properties menu",
+    "Disable conflicting user interface modifications in the in-game menu",
+    "Check for recent updates to the mod files on the Workshop page"
+  ]}
+/>
+
+<Callout type="info" title="Save File Security">
+Always copy your persistent gamedata files to a separate directory before installing major gameplay overhauls. This ensures that you can restore your progress if a file conflict occurs.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Mod Management and Best Practices">
+
+Managing a large collection of modifications requires regular maintenance to prevent performance degradation and game crashes. As the game receives official updates, older modifications may become outdated and cause instability.
+
+To maintain a healthy installation, regularly review your subscribed items and clean out files that you no longer use. Disabling mods in the menu is often sufficient, but completely unsubscribing from them is the safest way to ensure they do not load into the system memory.
+
+<FAQ items={[
+  {
+    question: "How do I use the binding of isaac repentance how to install mods guide for the Steam Deck?",
+    answer: "You can use the Steam Workshop directly on the Steam Deck by subscribing to mods via the Steam overlay. The files will download and install automatically in the background just like on a desktop computer."
+  },
+  {
+    question: "Why are my achievements disabled even though I subscribed to simple visual mods?",
+    answer: "You must defeat the Mom boss at least once on that specific save file without any mods enabled. Once you complete this milestone, you can activate any mod without locking achievements."
+  },
+  {
+    question: "Can I install mods manually if I purchased the game on Epic Games Store?",
+    answer: "Yes, you can install them manually by downloading the mod files from external community sites and placing them in the local mods directory located in your Documents folder."
+  },
+  {
+    question: "What should I do if my game crashes immediately upon startup after installing a new mod?",
+    answer: "Locate your local mods directory and delete the folder of the most recently installed mod, or unsubscribe from it in the Steam Workshop to stop it from loading."
+  }
+]} />
+
+<Callout type="warning" title="Mod Limit Warning">
+Running dozens of heavy graphical modifications simultaneously can cause frame rate drops, especially during intense boss fights with many projectiles on screen. Keep your active list optimized for the best experience.
+</Callout>
+
+</Section>

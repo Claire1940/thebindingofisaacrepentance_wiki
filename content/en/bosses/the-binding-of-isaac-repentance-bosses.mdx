@@ -1,0 +1,185 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+
+export const metadata = {
+  title: "the binding of isaac repentance bosses: 2026 Route & Pattern Guide",
+  description: "Master all the binding of isaac repentance bosses with our 2026 guide. Learn attack patterns, unlock requirements, and the best routes to victory.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/120B0D/F4E9E7?text=Boss+Strategy+Guide",
+  date: "2026-07-17",
+  author: "the binding of isaac repentance Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **the binding of isaac repentance bosses**: This guide covers all major encounters from Mom to The Beast, focusing on 2026 meta strategies.
+- **Route Management**: Success depends on choosing the correct path (Polaroid vs. Negative) and managing timed doors for Hush.
+- **Boss Armor**: Many endgame bosses utilize damage scaling, meaning high burst damage is often less effective than sustained DPS.
+- **Unlocks**: Defeating specific bosses with different characters is the primary way to expand your item pool and character roster.
+- **Preparation**: Prioritize movement speed and defensive items like Holy Mantle or Psy Fly for bullet-hell phases.
+</Callout>
+
+<Section icon={Map} title="Core Progression: The Main Branch Bosses">
+
+Navigating the hierarchy of **the binding of isaac repentance bosses** requires a clear understanding of the game's branching paths. Every run begins with the goal of reaching Mom in the Depths, but the path forward expands significantly as you secure more victories. In the 2026 meta, players must balance their health resources against the requirements for entering the Cathedral or Sheol.
+
+| Boss Name | Location | Primary Unlock Requirement | HP Type |
+| :--- | :--- | :--- | :--- |
+| **Mom** | Depths II | Available by default | Standard |
+| **Mom's Heart** | Womb II | Defeat Mom 1 time | Standard |
+| **It Lives!** | Womb II | Defeat Mom's Heart 11 times | Standard |
+| **Isaac** | Cathedral | Enter beam of light after It Lives! | Scaling |
+| **Satan** | Sheol | Enter trapdoor after It Lives! | Standard |
+| **??? (Blue Baby)** | The Chest | Carry The Polaroid to Cathedral | Scaling |
+| **The Lamb** | Dark Room | Carry The Negative to Sheol | Standard |
+
+<Callout type="info" title="Damage Scaling Explained">
+Several endgame bosses, including Isaac and Blue Baby, utilize **Boss Armor**. This mechanic reduces incoming damage based on how much DPS you are currently dealing. To counter this, items that provide lingering damage or high-frequency tears are often more reliable than single-shot high-damage projectiles.
+</Callout>
+
+The transition from Mom's Heart to It Lives! is a pivotal moment in your progression. Once It Lives! is unlocked, you gain guaranteed access to the Cathedral and Sheol. These floors represent the mid-game challenge, where enemies deal a full heart of damage and room layouts become increasingly complex.
+
+</Section>
+
+<Section icon={Target} title="The Alternate Path: Reaching Mother">
+
+The Repentance expansion introduced the most complex route in the game's history. Reaching Mother requires a series of specific actions across the alternate floors: Downpour, Mines, and Mausoleum. This path is significantly more difficult than the standard route, featuring enemies with higher health and more aggressive projectiles.
+
+<Steps>
+  <Step num="1" title="Enter the Secret Exit">
+    After defeating Hush three times, a locked door appears after the first floor boss. Use one key to enter Downpour or Dross.
+  </Step>
+  <Step num="2" title="The Mirror World">
+    In Downpour II, find the white fire and walk into it to become a lost-form character. Enter the mirror to find the first Knife Piece in the Treasure Room.
+  </Step>
+  <Step num="3" title="The Abandoned Mineshaft">
+    Enter Mines or Ashpit II using two bombs. Press three yellow buttons hidden throughout the floor, then enter the mineshaft to escape the Great Gideon's shadow with the second Knife Piece.
+  </Step>
+  <Step num="4" title="The Flesh Door">
+    In Mausoleum II, defeat the alternate version of Mom. Use the completed Knife to stab the red flesh door, leading to a fight with the alternate Mom's Heart.
+  </Step>
+</Steps>
+
+| Alt Floor | Entry Cost | Key Item Found | Unique Hazard |
+| :--- | :--- | :--- | :--- |
+| **Downpour / Dross** | 1 Key | Knife Piece 1 | Mirror World / Lost Form |
+| **Mines / Ashpit** | 2 Bombs | Knife Piece 2 | Chase Sequence |
+| **Mausoleum / Gehenna** | 2 Full Hearts | N/A | Teleportation Traps |
+| **Corpse** | N/A | N/A | Rotting Enemies |
+
+<Callout type="warning" title="Mirror World Risk">
+While in the Mirror World as the Lost, any single hit will result in an immediate game over unless you have the Holy Mantle unlock. Prioritize safety over clearing every room in this state.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="The Final Gauntlet: Dogma and The Beast">
+
+The "Home" route represents the true ending of the binding of isaac repentance story. This path is unique because it involves the "Ascent" mechanic, where you travel backward through the floors you previously cleared. This route culminates in a multi-phase boss fight that tests your build's endurance and projectile dodging skills.
+
+<CardGrid cols={2}>
+  <Card title="Phase 1: Dogma">
+    - **Television Form**: Uses static beams and spinning halos.
+    - **Angel Form**: Rapid charges and feather spreads.
+    - **Strategy**: Keep your distance during the spinning phase and watch for the light beam telegraphs.
+  </Card>
+  <Card title="Phase 2: Ultra Horsemen">
+    - **Famine/Pestilence**: Focus on horizontal dodging.
+    - **War/Death**: High-speed charges and scythe patterns.
+    - **Strategy**: Each Horseman has a limited health pool; focus on consistent DPS.
+  </Card>
+  <Card title="Phase 3: The Beast">
+    - **Lava Chase**: Jump over fire rings and avoid stalactites.
+    - **Inhale**: Watch for the fire breath and sucked-in debris.
+    - **Strategy**: Stay toward the left side of the screen to maximize reaction time.
+  </Card>
+  <Card title="The Ascent">
+    - **Dad's Note**: Picking this up triggers the reverse floor sequence.
+    - **Tainted Characters**: Leave a trinket in a Treasure Room to find a Cracked Key for unlocks.
+    - **Strategy**: Save your health for the final Dogma fight; the Ascent rooms are relatively easy.
+  </Card>
+</CardGrid>
+
+| Boss Phase | Attack Type | Counter Strategy |
+| :--- | :--- | :--- |
+| **Dogma (Angel)** | Spinning Halo | Move in a wide circle |
+| **Ultra Death** | Scythe Toss | Stay in the vertical center |
+| **The Beast** | Fire Breath | Hide behind stalactites or move high |
+| **Ultra War** | Bomb Rain | Watch the floor shadows |
+
+<Callout type="tip" title="Mom's Bed">
+Before fighting Dogma in the Home chapter, you can sleep in Mom's bed to fully restore your health. If you have the Red Key or a Cracked Key, check the hallway closet to unlock the Tainted version of your current character.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Superbosses: Hush and Delirium">
+
+Hush and Delirium are optional encounters that provide some of the most powerful unlocks in the game. Hush is a timed encounter, requiring you to defeat Mom's Heart within 30 minutes. Delirium is found in The Void, a floor that has a chance to appear after defeating any major endgame boss.
+
+| Superboss | Health (HP) | Armor Mechanic | Best Build Type |
+| :--- | :--- | :--- | :--- |
+| **Hush** | 6,666 | Extreme Scaling | High Fire Rate / Shielding |
+| **Delirium** | 10,000 | Variable Scaling | Homing / High Movement Speed |
+
+**Hush Strategy Highlights:**
+- **Continuum Tears**: These tears wrap around the screen. Find a "safe spot" where the pattern doesn't overlap and stand still.
+- **Hush Flies**: Clear these immediately as they can overwhelm your positioning.
+- **Blue Womb Prep**: Use the four chests and two item rooms in the Blue Womb to finalize your build.
+
+**Delirium Strategy Highlights:**
+- **Form Shifting**: Delirium transforms into bosses you've already defeated. It inherits their patterns but often moves much faster.
+- **Telefragging**: Delirium is notorious for teleporting directly onto the player. High movement speed is essential to avoid these instances.
+- **The Void**: Explore the entire floor before entering the boss room. There are multiple boss rooms, but only one contains Delirium.
+
+<Callout type="success" title="Completion Marks">
+Defeating Hush and Delirium on Hard Mode provides unique "blood-stained" marks on your character's post-it note. These are required for the "Dead God" achievement and unlock some of the best items in the game, such as the D-Infinity.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Goals and Checklist">
+
+To fully master **the binding of isaac repentance bosses**, you must track your progress across all characters. Each victory unlocks new items that can make future runs easier. Use the checklist below to prioritize your endgame targets in 2026.
+
+<Checklist
+  id="boss-completion-goals"
+  title="Endgame Boss Milestones:"
+  items={[
+    "Defeat Mom's Heart 11 times to unlock It Lives!",
+    "Defeat Hush 3 times to unlock the Secret Exit (Alt Path)",
+    "Defeat Mother to unlock the Home route and Tainted characters",
+    "Defeat The Beast to view the final story ending",
+    "Defeat Delirium to unlock character-specific 'Torn Paper' marks",
+    "Complete Mega Satan to unlock the Apollyon character"
+  ]}
+/>
+
+</Section>
+
+<Section icon={Swords} title="Frequently Asked Questions">
+
+<FAQ items={[
+  {
+    question: "Why can't I find the door to Hush?",
+    answer: "The door to the Blue Womb only appears if you defeat Mom's Heart or It Lives! within 30 minutes of starting your run. If the timer exceeds 30:00, the door will not spawn unless you have specific items like Mama Mega."
+  },
+  {
+    question: "How do I deal with the Boss Armor on the binding of isaac repentance bosses?",
+    answer: "Boss Armor reduces damage based on your DPS. To bypass this, use items that apply status effects (poison, bleed) or familiars that deal constant contact damage. High fire rate is generally better than a single high-damage shot against armored bosses."
+  },
+  {
+    question: "What is the best route for beginners?",
+    answer: "Beginners should focus on the 'Polaroid' route (Cathedral to Chest). It is generally more forgiving than the Sheol route and provides more items in the final floor to help defeat the bosses."
+  },
+  {
+    question: "How do I unlock Mega Satan?",
+    answer: "You must collect two Key Pieces by bombing the Angel Statues in Angel Rooms and defeating the Uriel and Gabriel angels. Once you have both pieces, a golden door will appear in the starting room of The Chest or Dark Room."
+  }
+]} />
+
+</Section>

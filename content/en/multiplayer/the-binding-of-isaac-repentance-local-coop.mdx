@@ -1,0 +1,207 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "the binding of isaac repentance local coop: Full Setup Guide",
+  description: "Master the binding of isaac repentance local coop with our 2026 guide. Learn 4-player setup, character synergies, shared unlocks, and resource management.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/120B0D/E24133?text=Local+Co-op+Guide",
+  date: "2026-07-17",
+  author: "the binding of isaac repentance Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **the binding of isaac repentance local coop** supports up to **four players** with full character control, replacing the old "baby" system.
+- **Shared Resources**: Coins, bombs, and keys are shared across the entire team, while health and items are individual.
+- **Progression**: Completion marks earned in local co-op count for all participating characters on the host's save file.
+- **Best Strategy**: Balance the team with one "carry" damage dealer and at least one utility or tank character like Magdalene.
+- **Setup Requirement**: Multiple controllers are required; the first player can use a keyboard, but additional players must use gamepads.
+</Callout>
+
+<Section icon={Swords} title="Evolution of the binding of isaac repentance local coop">
+
+Experience the ultimate dungeon-crawling challenge with friends using the **the binding of isaac repentance local coop**, a feature that transforms the brutal roguelike into a tactical 4-player experience. Unlike previous iterations of the game where additional players were limited to flying "co-op babies" with reduced health and damage, Repentance introduces "True Co-op." This means every player selects a unique character from the roster of 34 (including Tainted variants), each with their own health pool, active items, and passive synergies.
+
+In 2026, mastering this mode is essential for players looking to efficiently clear difficult completion marks for characters like The Lost or Jacob & Esau. By having a friend play a more durable character, you can protect fragile glass cannons while still reaping the rewards of a successful run.
+
+<CardGrid cols={3}>
+  <Card title="Player 1 (Host)">
+    - **Primary Control**: Keyboard or Controller
+    - **Camera Focus**: The camera centers on Player 1 by default
+    - **Role**: Typically the team leader and primary navigator
+  </Card>
+  <Card title="Additional Players">
+    - **Input**: Must use separate gamepads/controllers
+    - **Join Time**: Can join at the start of a run in the starting room
+    - **Role**: Combat support, resource management, and distraction
+  </Card>
+  <Card title="Shared Economy">
+    - **Coins/Bombs/Keys**: Fully shared pool for the team
+    - **Item Pedestals**: Usually one per room; team must decide who takes it
+    - **Shops**: Prices remain standard, but resources are limited
+  </Card>
+</CardGrid>
+
+<Callout type="tip" title="Pro Tip">
+If a player dies during a floor, they will respawn as a ghost. In this state, they can still provide minor assistance by dealing very low damage. They will fully respawn with half a heart after the floor boss is defeated, provided at least one player survived.
+</Callout>
+
+| Feature | Old Co-op (Babies) | True Co-op (Repentance) |
+| :--- | :--- | :--- |
+| **Max Players** | 2-4 (Limited) | **4 Full Characters** |
+| **Health Pool** | Taken from Player 1 | **Individual Health** |
+| **Item Usage** | Cannot pick up items | **Full Item Synergy** |
+| **Character Choice** | Random Baby | **Any Unlocked Character** |
+| **Unlocks** | Only P1 earns marks | **All P1-P4 earn marks** |
+
+</Section>
+
+<Section icon={Map} title="How to Set Up Local Co-op Sessions">
+
+Setting up a session for **the binding of isaac repentance local coop** is straightforward, but it requires specific hardware configurations to ensure the game recognizes multiple inputs. While the PC version is the most flexible, console versions (Switch, PS5, Xbox) offer native plug-and-play support for extra controllers.
+
+<Steps>
+  <Step num="1" title="Connect Controllers">
+    Ensure all gamepads are connected to your PC or console before launching the game. On PC, Steam Input usually handles the mapping, but third-party tools may be needed for older controllers.
+  </Step>
+  <Step num="2" title="Start a New Run">
+    Player 1 starts a standard run (Normal, Hard, or Greed mode). You must be in the very first room (Starting Room) to add additional players.
+  </Step>
+  <Step num="3" title="Join the Game">
+    Additional players must press the 'Start' or 'Options' button on their controllers. A character selection menu will appear for each new player.
+  </Step>
+  <Step num="4" title="Select Characters">
+    Each player chooses their character. Note that you cannot have duplicate characters (e.g., two Isaacs) unless using specific mods or glitches.
+  </Step>
+</Steps>
+
+<Callout type="warning" title="Hardware Limitation">
+On PC, Player 1 can use the keyboard, but Player 2, 3, and 4 **must** use controllers. The game generally does not support multiple keyboards for local play without complex external remapping software.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Mastering the binding of isaac repentance local coop Mechanics">
+
+Success in **the binding of isaac repentance local coop** hinges on resource distribution. Because the game does not scale the number of item drops based on the number of players, a four-player team will have the same number of items as a solo player. This creates a "diluted" power level where each player is individually weaker than a solo Isaac would be.
+
+To compensate, players must utilize character-specific strengths. For example, giving all HP Up items to Magdalene allows her to act as a tank for the team, while giving damage multipliers to Azazel ensures the team has enough DPS to clear bosses quickly.
+
+| Resource Type | Management Strategy | Priority Target |
+| :--- | :--- | :--- |
+| **Red Hearts** | Leave on floor for Magdalene/Samson | **Tanks / Self-Damagers** |
+| **Soul Hearts** | Protect Deal chances for the whole team | **Fragile Characters** |
+| **Passive Items** | Assign based on existing synergies | **Primary Damage Dealer** |
+| **Active Items** | Diversify (1 Healing, 1 Damage, 1 Utility) | **Support Characters** |
+| **Trinkets** | Swap often to maximize floor benefits | **Luck-based Characters** |
+
+<Callout type="success" title="Synergy Bonus">
+Items that affect the "entire room" or "all enemies" become significantly more valuable in co-op. Items like **The Relic** or **Book of Revelations** provide health that can be distributed to whoever needs it most, keeping the whole team alive.
+</Callout>
+
+</Section>
+
+<Section icon={Target} title="Best Character Combinations for Co-op">
+
+Choosing the right team composition can make the difference between a failed run in the Basement and defeating The Beast. Some characters are designed to support others, while some are pure powerhouses that need protection.
+
+<CardGrid cols={2}>
+  <Card title="The Medic & The Muscle">
+    - **Magdalene**: Uses Yum Heart to sustain the team.
+    - **Azazel**: Provides heavy short-range DPS to clear threats.
+    - **Result**: High survivability with fast room clears.
+  </Card>
+  <Card title="The Reroller & The Gambler">
+    - **Isaac (with D6)**: Rerolls weak items for the team.
+    - **Cain**: Uses high luck and Lucky Foot for better chest loot.
+    - **Result**: High-quality item builds across all players.
+  </Card>
+  <Card title="The Ghost & The Tank">
+    - **The Lost**: Takes free Devil Deals for the team.
+    - **Forgotten**: Blocks projectiles with his bone body.
+    - **Result**: Strategic item acquisition and projectile safety.
+  </Card>
+  <Card title="The Battery & The Wisp">
+    - **Bethany**: Generates wisps for offensive pressure.
+    - **Tainted Isaac**: Cycles items to find active item batteries.
+    - **Result**: Constant active item usage and screen coverage.
+  </Card>
+</CardGrid>
+
+| Character | Co-op Tier | Why They Excel |
+| :--- | :--- | :--- |
+| **Isaac (D6)** | **S-Tier** | Rerolls affect the shared item pool |
+| **Magdalene** | **A-Tier** | Essential for team healing |
+| **Tainted Lilith** | **S-Tier** | Massive damage without needing many items |
+| **Tainted Forgotten** | **B-Tier** | Can be thrown by allies for tactical positioning |
+| **Jacob & Esau** | **D-Tier** | Four hitboxes (P1 + P2) is a dodging nightmare |
+
+<Callout type="tip" title="Strategy Tip">
+When playing with **the binding of isaac repentance local coop**, always let the player with the highest **Luck** stat open chests and destroy poop/rocks. This maximizes the chance of finding extra consumables for the team.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Unlocks and Completion Marks in Co-op">
+
+One of the greatest benefits of **the binding of isaac repentance local coop** is the ability to earn completion marks for multiple characters simultaneously. If you reach and defeat a major boss like Delirium, every character currently alive (or in ghost form) will receive the completion mark on the host's save file.
+
+This is particularly useful for unlocking high-tier items that are locked behind difficult characters.
+
+<Checklist
+  id="coop-progression"
+  title="2026 Co-op Progression Goals:"
+  items={[
+    "Unlock Tainted characters for all players in the Home route",
+    "Defeat Mega Satan to unlock Apollyon using a balanced team",
+    "Complete Boss Rush within 20 minutes by splitting up in large rooms",
+    "Earn the 'Dead God' achievement by rotating characters each run",
+    "Beat Mother in the Corpse to unlock Jacob & Esau for P2"
+  ]}
+/>
+
+<Callout type="info" title="Important Note">
+While all characters earn marks, the game difficulty does not decrease. In fact, Bosses have "Boss Armor" (damage scaling) which can make them feel tankier if the team's total damage is split too thinly across four players.
+</Callout>
+
+| Boss Target | Unlock Priority | Reward Value |
+| :--- | :--- | :--- |
+| **Mom's Heart (11x)** | **Essential** | Unlocks 'It Lives' and Cathedral/Sheol |
+| **Isaac / Satan (5x)** | **High** | Unlocks Polaroid and Negative |
+| **Hush (3x)** | **High** | Unlocks the Alternate Path (Downpour/Mines) |
+| **The Beast** | **Extreme** | Unlocks Tainted variants for the team |
+
+</Section>
+
+<Section icon={Sparkles} title="Frequently Asked Questions">
+
+<FAQ items={[
+  {
+    question: "Does the binding of isaac repentance local coop work with Steam Remote Play Together?",
+    answer: "Yes! While it is technically local co-op, Steam users can use Remote Play Together to invite friends online to play as if they were sitting on the same couch. Only the host needs to own the game."
+  },
+  {
+    question: "How do items work if there are 4 players?",
+    answer: "Most rooms still only spawn one item. The team must decide who takes it. However, choice rooms (like Angel Rooms or the Alt Path Treasure Rooms) may allow players to time their pickups to grab multiple items simultaneously."
+  },
+  {
+    question: "Can we play as the same character?",
+    answer: "By default, no. Each player must select a unique character from the available roster. Tainted variants count as separate characters from their normal counterparts."
+  },
+  {
+    question: "What happens if Player 1 dies?",
+    answer: "As long as one player remains alive, the run continues. If all players die, the run ends. Surviving players can revive fallen teammates by defeating the floor boss."
+  }
+]} />
+
+<Callout type="tip" title="Final Advice">
+Communication is key. Before entering a Treasure Room or Shop, discuss who needs the next upgrade. A single powerful player is often better than four mediocre ones in the late-game stages like The Void or Home.
+</Callout>
+
+</Section>

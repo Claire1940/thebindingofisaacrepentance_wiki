@@ -1,1 +1,12 @@
-{}
+{
+  "nav": {
+    "guide": "Guías",
+    "items": "Objetos",
+    "mods": "Mods",
+    "unlocks": "Desbloqueos",
+    "bosses": "Jefes",
+    "multiplayer": "Multijugador",
+    "versions": "Versiones",
+    "support": "Soporte"
+  }
+}
