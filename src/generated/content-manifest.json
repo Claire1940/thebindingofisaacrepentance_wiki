@@ -14,18 +14,34 @@
         "file": "the-binding-of-isaac-repentance-endings"
       },
       {
+        "slug": "the-binding-of-isaac-repentance-enemies",
+        "file": "the-binding-of-isaac-repentance-enemies"
+      },
+      {
         "slug": "the-binding-of-isaac-repentance-how-to-get-to-mother",
         "file": "the-binding-of-isaac-repentance-how-to-get-to-mother"
       },
       {
         "slug": "the-binding-of-isaac-repentance-how-to-get-to-the-beast",
         "file": "the-binding-of-isaac-repentance-how-to-get-to-the-beast"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-hush",
+        "file": "the-binding-of-isaac-repentance-hush"
       }
     ],
     "guide": [
       {
+        "slug": "binding-of-isaac-repentance-sacred-orb",
+        "file": "binding-of-isaac-repentance-sacred-orb"
+      },
+      {
         "slug": "the-binding-of-isaac-repentance-beginner-guide",
         "file": "the-binding-of-isaac-repentance-beginner-guide"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-greed-mode",
+        "file": "the-binding-of-isaac-repentance-greed-mode"
       },
       {
         "slug": "the-binding-of-isaac-repentance-how-to-play",
@@ -50,6 +66,26 @@
         "file": "the-binding-of-isaac-repentance-all-items"
       },
       {
+        "slug": "the-binding-of-isaac-repentance-bag-lunch",
+        "file": "the-binding-of-isaac-repentance-bag-lunch"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-battery",
+        "file": "the-binding-of-isaac-repentance-battery"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-devil-room-items",
+        "file": "the-binding-of-isaac-repentance-devil-room-items"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-faded-polaroid",
+        "file": "the-binding-of-isaac-repentance-faded-polaroid"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-item-description-mod",
+        "file": "the-binding-of-isaac-repentance-item-description-mod"
+      },
+      {
         "slug": "the-binding-of-isaac-repentance-item-tier-list",
         "file": "the-binding-of-isaac-repentance-item-tier-list"
       },
@@ -70,6 +106,10 @@
       {
         "slug": "the-binding-of-isaac-repentance-best-mods",
         "file": "the-binding-of-isaac-repentance-best-mods"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-external-item-descriptions-mod",
+        "file": "the-binding-of-isaac-repentance-external-item-descriptions-mod"
       },
       {
         "slug": "the-binding-of-isaac-repentance-external-item-descriptions",
@@ -180,6 +220,14 @@
   "es": {
     "bosses": [
       {
+        "slug": "the-binding-of-isaac-repentance-boss-symbols",
+        "file": "the-binding-of-isaac-repentance-boss-symbols"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-boss",
+        "file": "the-binding-of-isaac-repentance-boss"
+      },
+      {
         "slug": "the-binding-of-isaac-repentance-bosses",
         "file": "the-binding-of-isaac-repentance-bosses"
       },
@@ -192,6 +240,10 @@
         "file": "the-binding-of-isaac-repentance-endings"
       },
       {
+        "slug": "the-binding-of-isaac-repentance-enemies",
+        "file": "the-binding-of-isaac-repentance-enemies"
+      },
+      {
         "slug": "the-binding-of-isaac-repentance-how-to-get-to-mother",
         "file": "the-binding-of-isaac-repentance-how-to-get-to-mother"
       },
@@ -201,6 +253,14 @@
       }
     ],
     "guide": [
+      {
+        "slug": "binding-of-isaac-repentance-knife",
+        "file": "binding-of-isaac-repentance-knife"
+      },
+      {
+        "slug": "binding-of-isaac-repentance-sacred-orb",
+        "file": "binding-of-isaac-repentance-sacred-orb"
+      },
       {
         "slug": "the-binding-of-isaac-repentance-beginner-guide",
         "file": "the-binding-of-isaac-repentance-beginner-guide"
@@ -226,6 +286,34 @@
       {
         "slug": "the-binding-of-isaac-repentance-all-items",
         "file": "the-binding-of-isaac-repentance-all-items"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-daily-run-achievements",
+        "file": "the-binding-of-isaac-repentance-daily-run-achievements"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-damocles",
+        "file": "the-binding-of-isaac-repentance-damocles"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-edens-soul",
+        "file": "the-binding-of-isaac-repentance-edens-soul"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-faded-polaroid",
+        "file": "the-binding-of-isaac-repentance-faded-polaroid"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-goat-head",
+        "file": "the-binding-of-isaac-repentance-goat-head"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-golden-horseshoe",
+        "file": "the-binding-of-isaac-repentance-golden-horseshoe"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-holy-mantle",
+        "file": "the-binding-of-isaac-repentance-holy-mantle"
       },
       {
         "slug": "the-binding-of-isaac-repentance-item-tier-list",
@@ -258,8 +346,20 @@
         "file": "the-binding-of-isaac-repentance-how-to-install-mods"
       },
       {
+        "slug": "the-binding-of-isaac-repentance-how-to-mod",
+        "file": "the-binding-of-isaac-repentance-how-to-mod"
+      },
+      {
         "slug": "the-binding-of-isaac-repentance-mods",
         "file": "the-binding-of-isaac-repentance-mods"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-qol-mods",
+        "file": "the-binding-of-isaac-repentance-qol-mods"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-quality-of-life-mods",
+        "file": "the-binding-of-isaac-repentance-quality-of-life-mods"
       },
       {
         "slug": "the-binding-of-isaac-repentance-repentogon",
@@ -312,6 +412,10 @@
         "file": "the-binding-of-isaac-repentance-dead-god"
       },
       {
+        "slug": "the-binding-of-isaac-repentance-ending-19",
+        "file": "the-binding-of-isaac-repentance-ending-19"
+      },
+      {
         "slug": "the-binding-of-isaac-repentance-how-to-unlock-all-characters",
         "file": "the-binding-of-isaac-repentance-how-to-unlock-all-characters"
       },
@@ -336,6 +440,10 @@
       {
         "slug": "the-binding-of-isaac-repentance-plus",
         "file": "the-binding-of-isaac-repentance-plus"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-release-date",
+        "file": "the-binding-of-isaac-repentance-release-date"
       },
       {
         "slug": "the-binding-of-isaac-repentance-steam",
@@ -358,6 +466,14 @@
   "pt": {
     "bosses": [
       {
+        "slug": "the-binding-of-isaac-repentance-boss-symbols",
+        "file": "the-binding-of-isaac-repentance-boss-symbols"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-boss",
+        "file": "the-binding-of-isaac-repentance-boss"
+      },
+      {
         "slug": "the-binding-of-isaac-repentance-bosses",
         "file": "the-binding-of-isaac-repentance-bosses"
       },
@@ -370,6 +486,10 @@
         "file": "the-binding-of-isaac-repentance-endings"
       },
       {
+        "slug": "the-binding-of-isaac-repentance-enemies",
+        "file": "the-binding-of-isaac-repentance-enemies"
+      },
+      {
         "slug": "the-binding-of-isaac-repentance-how-to-get-to-mother",
         "file": "the-binding-of-isaac-repentance-how-to-get-to-mother"
       },
@@ -379,6 +499,14 @@
       }
     ],
     "guide": [
+      {
+        "slug": "binding-of-isaac-repentance-knife",
+        "file": "binding-of-isaac-repentance-knife"
+      },
+      {
+        "slug": "binding-of-isaac-repentance-sacred-orb",
+        "file": "binding-of-isaac-repentance-sacred-orb"
+      },
       {
         "slug": "the-binding-of-isaac-repentance-beginner-guide",
         "file": "the-binding-of-isaac-repentance-beginner-guide"
@@ -404,6 +532,38 @@
       {
         "slug": "the-binding-of-isaac-repentance-all-items",
         "file": "the-binding-of-isaac-repentance-all-items"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-daily-run-achievements",
+        "file": "the-binding-of-isaac-repentance-daily-run-achievements"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-damocles",
+        "file": "the-binding-of-isaac-repentance-damocles"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-edens-soul",
+        "file": "the-binding-of-isaac-repentance-edens-soul"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-faded-polaroid",
+        "file": "the-binding-of-isaac-repentance-faded-polaroid"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-goat-head",
+        "file": "the-binding-of-isaac-repentance-goat-head"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-golden-horseshoe",
+        "file": "the-binding-of-isaac-repentance-golden-horseshoe"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-holy-mantle",
+        "file": "the-binding-of-isaac-repentance-holy-mantle"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-item-description-mod",
+        "file": "the-binding-of-isaac-repentance-item-description-mod"
       },
       {
         "slug": "the-binding-of-isaac-repentance-item-tier-list",
@@ -436,8 +596,20 @@
         "file": "the-binding-of-isaac-repentance-how-to-install-mods"
       },
       {
+        "slug": "the-binding-of-isaac-repentance-how-to-mod",
+        "file": "the-binding-of-isaac-repentance-how-to-mod"
+      },
+      {
         "slug": "the-binding-of-isaac-repentance-mods",
         "file": "the-binding-of-isaac-repentance-mods"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-qol-mods",
+        "file": "the-binding-of-isaac-repentance-qol-mods"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-quality-of-life-mods",
+        "file": "the-binding-of-isaac-repentance-quality-of-life-mods"
       },
       {
         "slug": "the-binding-of-isaac-repentance-repentogon",
@@ -490,6 +662,10 @@
         "file": "the-binding-of-isaac-repentance-dead-god"
       },
       {
+        "slug": "the-binding-of-isaac-repentance-ending-19",
+        "file": "the-binding-of-isaac-repentance-ending-19"
+      },
+      {
         "slug": "the-binding-of-isaac-repentance-how-to-unlock-all-characters",
         "file": "the-binding-of-isaac-repentance-how-to-unlock-all-characters"
       },
@@ -514,6 +690,10 @@
       {
         "slug": "the-binding-of-isaac-repentance-plus",
         "file": "the-binding-of-isaac-repentance-plus"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-release-date",
+        "file": "the-binding-of-isaac-repentance-release-date"
       },
       {
         "slug": "the-binding-of-isaac-repentance-steam",
@@ -536,6 +716,14 @@
   "ru": {
     "bosses": [
       {
+        "slug": "the-binding-of-isaac-repentance-boss-symbols",
+        "file": "the-binding-of-isaac-repentance-boss-symbols"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-boss",
+        "file": "the-binding-of-isaac-repentance-boss"
+      },
+      {
         "slug": "the-binding-of-isaac-repentance-bosses",
         "file": "the-binding-of-isaac-repentance-bosses"
       },
@@ -548,6 +736,10 @@
         "file": "the-binding-of-isaac-repentance-endings"
       },
       {
+        "slug": "the-binding-of-isaac-repentance-enemies",
+        "file": "the-binding-of-isaac-repentance-enemies"
+      },
+      {
         "slug": "the-binding-of-isaac-repentance-how-to-get-to-mother",
         "file": "the-binding-of-isaac-repentance-how-to-get-to-mother"
       },
@@ -557,6 +749,14 @@
       }
     ],
     "guide": [
+      {
+        "slug": "binding-of-isaac-repentance-knife",
+        "file": "binding-of-isaac-repentance-knife"
+      },
+      {
+        "slug": "binding-of-isaac-repentance-sacred-orb",
+        "file": "binding-of-isaac-repentance-sacred-orb"
+      },
       {
         "slug": "the-binding-of-isaac-repentance-beginner-guide",
         "file": "the-binding-of-isaac-repentance-beginner-guide"
@@ -582,6 +782,26 @@
       {
         "slug": "the-binding-of-isaac-repentance-all-items",
         "file": "the-binding-of-isaac-repentance-all-items"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-damocles",
+        "file": "the-binding-of-isaac-repentance-damocles"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-edens-soul",
+        "file": "the-binding-of-isaac-repentance-edens-soul"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-faded-polaroid",
+        "file": "the-binding-of-isaac-repentance-faded-polaroid"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-goat-head",
+        "file": "the-binding-of-isaac-repentance-goat-head"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-golden-horseshoe",
+        "file": "the-binding-of-isaac-repentance-golden-horseshoe"
       },
       {
         "slug": "the-binding-of-isaac-repentance-item-tier-list",
@@ -614,8 +834,20 @@
         "file": "the-binding-of-isaac-repentance-how-to-install-mods"
       },
       {
+        "slug": "the-binding-of-isaac-repentance-how-to-mod",
+        "file": "the-binding-of-isaac-repentance-how-to-mod"
+      },
+      {
         "slug": "the-binding-of-isaac-repentance-mods",
         "file": "the-binding-of-isaac-repentance-mods"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-qol-mods",
+        "file": "the-binding-of-isaac-repentance-qol-mods"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-quality-of-life-mods",
+        "file": "the-binding-of-isaac-repentance-quality-of-life-mods"
       },
       {
         "slug": "the-binding-of-isaac-repentance-repentogon",
@@ -692,6 +924,10 @@
       {
         "slug": "the-binding-of-isaac-repentance-plus",
         "file": "the-binding-of-isaac-repentance-plus"
+      },
+      {
+        "slug": "the-binding-of-isaac-repentance-release-date",
+        "file": "the-binding-of-isaac-repentance-release-date"
       },
       {
         "slug": "the-binding-of-isaac-repentance-steam",

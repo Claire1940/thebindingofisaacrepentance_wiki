@@ -1,0 +1,87 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Binding of Isaac: Repentance Sacred Orb Guide",
+  description: "Learn everything about the Sacred Orb in Binding of Isaac: Repentance, including its effects, interactions, and how to obtain it.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/059669/fff?text=Binding+of+Isaac:+Repentance+Sacred+Orb",
+  date: "2026-07-24",
+  author: "the binding of isaac repentance Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **Sacred Orb**: A passive item that prevents low-quality items from appearing.
+- **Effect**: Increases the quality of items received from all item pools.
+- **Set**: Part of the Seraphim set, collecting three items transforms Isaac into an angel.
+- **Interaction**: Prevents crafting quality 1 and 0 items, typically replaced by quality 2 items.
+</Callout>
+
+<Section icon={Map} title="Introduction to Sacred Orb">
+The Sacred Orb is a unique passive item introduced in _The Binding of Isaac: Repentance_. It is a part of the Seraphim set, which includes items that transform Isaac into an angel. The Sacred Orb has a significant impact on item quality and is highly sought after by players.
+</Section>
+
+<Section icon={Swords} title="Effects of Sacred Orb">
+The Sacred Orb has several notable effects:
+
+<Callout type="tip" title="Quality Boost">
+- Prevents low-quality items from appearing, greatly increasing the quality of items received from all item pools.
+</Callout>
+
+<Callout type="info" title="Reroll Mechanism">
+- Items with a quality of 0-1 are automatically rerolled.
+- Items with a quality of 2 have a 33% chance to be automatically rerolled.
+- Quest items cannot be rerolled.
+</Callout>
+</Section>
+
+<Section icon={Trophy} title="Interactions">
+The Sacred Orb interacts with other game elements in various ways:
+
+<Callout type="warning" title="Crafting Interaction">
+- Bag of Crafting: Sacred Orb prevents crafting quality 1 and 0 items, typically resulting in them being replaced by quality 2 items.
+</Callout>
+
+<Callout type="info" title="Food Interaction">
+- Binge Eater: The food item is not re-rolled.
+</Callout>
+</Section>
+
+<Section icon={Target} title="Obtaining Sacred Orb">
+The Sacred Orb can be obtained by collecting three items from the Seraphim set. The set includes:
+
+<Checklist
+  id="seraphim-set"
+  title="Seraphim Set Items:"
+  items={[
+    "Seraphim",
+    "Seraphim's Bow",
+    "Seraphim's Mantle"
+  ]}
+/>
+</Section>
+
+<Section icon={Sparkles} title="Conclusion">
+The Sacred Orb is a powerful item in _The Binding of Isaac: Repentance_ that significantly increases the quality of items received. Its interaction with other game elements and its role in the Seraphim set make it a highly sought-after item by players.
+</Section>
+
+<FAQ items={[
+  {
+    question: "How does the Sacred Orb affect item quality?",
+    answer: "The Sacred Orb prevents low-quality items from appearing, greatly increasing the quality of items received from all item pools."
+  },
+  {
+    question: "Is the Sacred Orb part of a set?",
+    answer: "Yes, the Sacred Orb is part of the Seraphim set, which includes items that transform Isaac into an angel."
+  },
+  {
+    question: "Can the Sacred Orb be crafted?",
+    answer: "No, the Sacred Orb cannot be crafted."
+  }
+]} />

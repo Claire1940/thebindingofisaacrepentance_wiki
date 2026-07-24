@@ -1,0 +1,112 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "The Binding of Isaac: Repentance - Devil Room Items Guide",
+  description: "A comprehensive guide to the items in The Binding of Isaac: Repentance's Devil Rooms, including their effects and strategies for obtaining them.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/059669/fff?text=Devil+Room+Items+Guide",
+  date: "2026-07-24",
+  author: "the binding of isaac repentance Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **Primary keyword**: Devil Room items in The Binding of Isaac: Repentance
+- **Key mechanic**: Obtaining and using items from Devil Rooms
+- **Best strategy**: Prioritize items that increase damage, health, or utility
+- **Critical tip**: Be aware of the risks associated with Devil Deals
+- **Top choice**: Items that offer a significant benefit for the health risk
+</Callout>
+
+<Section icon={Map} title="Introduction to Devil Rooms">
+
+ Devil Rooms are special rooms that can appear after bosses starting from the second floor. They offer powerful items for health in exchange for taking Red Heart damage. Players must carefully consider the risk vs. reward when deciding to enter a Devil Room.
+
+</Section>
+
+<Section icon={Swords} title="Common Devil Room Items">
+
+<CardGrid cols={3}>
+  <Card title="Brimstone">
+    - Replaces tears with charged, piercing blood lasers
+    - Excellent against groups and bosses
+    - Requires careful positioning
+  </Card>
+  <Card title="Mom's Knife">
+    - Replaces tears with a chargeable knife dealing high repeated contact damage
+    - Release the knife through bosses for additional hits
+    - Overrides many tear combinations
+  </Card>
+  <Card title="Tech X">
+    - Fires chargeable laser rings that pierce enemies and cover large areas
+    - Use medium or large rings for control; scales well with damage, homing, and multishot effects
+    - Very small rings can underperform
+  </Card>
+</CardGrid>
+
+</Section>
+
+<Section icon={Trophy} title="Strategies for Obtaining Devil Room Items">
+
+<Steps>
+  <Step num="1" title="Boss Rush">
+    - Focus on clearing floors quickly to reach Devil Rooms sooner
+    - Prioritize floors that contain powerful items and Devil Deals
+  </Step>
+  <Step num="2" title="Character Builds">
+    - Some characters are better suited for dealing with the risks of Devil Deals
+    - Consider characters with high health, damage, or defensive abilities
+  </Step>
+  <Step num="3" title="Risk Management">
+    - Be aware of the health risk associated with Devil Deals
+    - Use items that can help mitigate damage or heal quickly
+  </Step>
+</Steps>
+
+</Section>
+
+<Section icon={Target} title="FAQ">
+
+<FAQ items={[
+  {
+    question: "What are Devil Deals?",
+    answer: "Devil Deals are special offers in Devil Rooms where you can trade health for powerful items."
+  },
+  {
+    question: "Are all Devil Room items worth obtaining?",
+    answer: "Not all items are equally valuable, so prioritize those that offer the most significant benefits for the health risk."
+  },
+  {
+    question: "Can you die from taking a Devil Deal?",
+    answer: "Yes, taking a Devil Deal can lead to death if you are not careful."
+  }
+]} />
+
+</Section>
+
+```
+
+---
+
+重要提醒：
+1. ✅ 必须包含 import 语句和 export const metadata
+2. ✅ 不用代码块包裹文章
+3. ✅ 文章直接以 import 开头
+4. ✅ 使用美式英语
+5. ✅ 至少1-2个表格（使用标准 Markdown 表格，**但严格禁止多余空格、超长表格分隔线**）
+6. ✅ 每个章节用 Section 组件包裹
+7. ✅ 正确导入需要的 Lucide 图标
+8. ✅ 内容来自merged_data
+9. ✅ 以主编视角写作
+10. ✅ author 字段使用 "the binding of isaac repentance Wiki Team" 格式
+11. ✅ 表格单元格内容简洁（不超过 300 字符）
+12. ❌ 不编造数据
+13. ❌ 不用绝对化表达
+14. ❌ 不在表格中使用空格填充或过度对齐
+15. ❌ 不频繁提及来源

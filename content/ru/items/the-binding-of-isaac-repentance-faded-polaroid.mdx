@@ -1,0 +1,87 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react';
+import { Callout } from '@/components/mdx/Callout';
+import { Card, CardGrid } from '@/components/mdx/CardGrid';
+import { Checklist } from '@/components/mdx/Checklist';
+import { FAQ } from '@/components/mdx/FAQ';
+import { Steps, Step } from '@/components/mdx/Steps';
+import { Section } from '@/components/mdx/Section';
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed';
+
+export const metadata = {
+  title: "The Binding of Isaac: Repentance - Гайд по Faded Polaroid",
+  description: "Узнайте все о предмете Faded Polaroid в The Binding of Isaac: Repentance, включая его эффекты, синергии и советы по эффективному использованию.",
+  category: "Гайд",
+  image: "https://placehold.co/800x400/059669/fff?text=Faded+Polaroid+Guide",
+  date: "2026-07-24",
+  author: "Команда Wiki The Binding of Isaac: Repentance"
+};
+
+<Callout type="info" title="Краткое руководство">
+- **Основной ключевой слово**: Faded Polaroid
+- **Эффект**: Увеличивает урона игрока на 50% при атаке врагов с оружием, имеющим шанс критического удара.
+- **Синергия**: Хорошо работает с предметами, увеличивающими шанс критического удара или урон.
+- **Советы**: Фокусируйтесь на создании оружия с высоким шансом критического удара для максимальной эффективности.
+</Callout>
+
+<Section icon={Map} title="Введение в Faded Polaroid">
+
+Faded Polaroid — это амулет, добавленный в The Binding of Isaac: Afterbirth. Он предоставляет значительный прирост урона игроку при атаке врагов с оружием, имеющим шанс критического удара. Этот предмет очень ценится игроками, стремящимися увеличить свою эффективность в бою.
+
+</Section>
+
+<Section icon={Swords} title="Эффект и Синергия">
+
+Faded Polaroid имеет следующий эффект:
+
+- Увеличивает урон игрока на 50% при атаке врагов с оружием, имеющим шанс критического удара.
+
+Этот предмет хорошо синергизируется с:
+
+- Предметами, увеличивающими шанс критического удара, такими как Critical Strike или Critical Hit.
+- Предметами, увеличивающими урон, такими как Bullet Time или Bullet Sponge.
+
+</Section>
+
+<Section icon={Target} title="Как эффективно использовать Faded Polaroid">
+
+Чтобы эффективно использовать Faded Polaroid, следуйте этим шагам:
+
+1. **Фокусируйтесь на оружии с шансом критического удара**: Выберите оружие с высоким шансом критического удара, такое как Critical Shot или Critical Strike.
+2. **Комбинируйте с предметами, увеличивающими шанс критического удара**: Наденьте предметы, увеличивающие ваш шанс критического удара, чтобы максимизировать прирост урона от Faded Polaroid.
+3. **Избегайте оружия без шанса критического удара**: Поскольку Faded Polaroid только увеличивает урон против врагов с шансом критического удара, избегайте использования оружия, не имеющего этой черты.
+
+</Section>
+
+<Section icon={Trophy} title="Цели и Чеклист">
+
+<Checklist
+  id="faded-polaroid-goals"
+  title="Необходимые шаги для maîtrise Faded Polaroid:"
+  items={[
+    "Получите предмет Faded Polaroid",
+    "Выберите оружие с высоким шансом критического удара",
+    "Наденьте предметы, увеличивающие шанс критического удара",
+    "Используйте Faded Polaroid для повышения вашего урона"
+  ]}
+/>
+
+</Section>
+
+<Section icon={Shield} title="Частые вопросы">
+
+<FAQ items={[
+  {
+    question: "Что такое Faded Polaroid в The Binding of Isaac: Repentance?",
+    answer: "Faded Polaroid — это амулет, который увеличивает урон игрока на 50% при атаке врагов с оружием, имеющим шанс критического удара."
+  },
+  {
+    question: "Как Faded Polaroid синергизируется с другими предметами?",
+    answer: "Faded Polaroid хорошо синергизируется с предметами, увеличивающими шанс критического удара или урон, такими как Critical Strike или Bullet Sponge."
+  },
+  {
+    question: "Можно ли использовать Faded Polaroid с любым оружием?",
+    answer: "Нет, Faded Polaroid можно использовать только с оружием, имеющим шанс критического удара."
+  }
+]} />
+
+</Section>

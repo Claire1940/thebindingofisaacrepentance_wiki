@@ -1,0 +1,87 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "Guia do Orb Sagrado no Binding of Isaac: Repentance",
+  description: "Aprenda tudo sobre o Orb Sagrado no Binding of Isaac: Repentance, incluindo seus efeitos, interações e como obtê-lo.",
+  category: "Guia",
+  image: "https://placehold.co/800x400/059669/fff?text=Binding+of+Isaac:+Repentance+Sacred+Orb",
+  date: "2026-07-24",
+  author: "Equipe de Wiki do Binding of Isaac: Repentance"
+}
+
+<Callout type="info" title="Guia Rápido">
+- **Orb Sagrado**: Um item passivo que impede a aparição de itens de baixa qualidade.
+- **Efeito**: Aumenta a qualidade dos itens recebidos de todos os pools de itens.
+- **Conjunto**: Parte do conjunto Seraphim, coletar três itens transforma Isaac em um anjo.
+- **Interação**: Impede a criação de itens de qualidade 1 e 0, tipicamente substituídos por itens de qualidade 2.
+</Callout>
+
+<Section icon={Map} title="Introdução ao Orb Sagrado">
+O Orb Sagrado é um item passivo único introduzido em _The Binding of Isaac: Repentance_. Ele faz parte do conjunto Seraphim, que inclui itens que transformam Isaac em um anjo. O Orb Sagrado tem um impacto significativo na qualidade dos itens e é altamente procurado pelos jogadores.
+</Section>
+
+<Section icon={Swords} title="Efeitos do Orb Sagrado">
+O Orb Sagrado tem vários efeitos notáveis:
+
+<Callout type="tip" title="Aumento de Qualidade">
+- Impede a aparição de itens de baixa qualidade, aumentando significativamente a qualidade dos itens recebidos de todos os pools de itens.
+</Callout>
+
+<Callout type="info" title="Mecanismo de Re-rolagem">
+- Itens com qualidade de 0-1 são rerolados automaticamente.
+- Itens com qualidade de 2 têm 33% de chance de serem rerolados automaticamente.
+- Itens de missão não podem ser rerolados.
+</Callout>
+</Section>
+
+<Section icon={Trophy} title="Interações">
+O Orb Sagrado interage com outros elementos do jogo de várias maneiras:
+
+<Callout type="warning" title="Interação de Criação">
+- Sacola de Criação: O Orb Sagrado impede a criação de itens de qualidade 1 e 0, tipicamente resultando em sua substituição por itens de qualidade 2.
+</Callout>
+
+<Callout type="info" title="Interação de Alimento">
+- Binge Eater: O item de comida não é rerolado.
+</Callout>
+</Section>
+
+<Section icon={Target} title="Obtendo o Orb Sagrado">
+O Orb Sagrado pode ser obtido coletando três itens do conjunto Seraphim. O conjunto inclui:
+
+<Checklist
+  id="seraphim-set"
+  title="Itens do Conjunto Seraphim:"
+  items={[
+    "Seraphim",
+    "Arco do Seraphim",
+    "Manto do Seraphim"
+  ]}
+/>
+</Section>
+
+<Section icon={Sparkles} title="Conclusão">
+O Orb Sagrado é um item poderoso em _The Binding of Isaac: Repentance_ que aumenta significativamente a qualidade dos itens recebidos. Sua interação com outros elementos do jogo e seu papel no conjunto Seraphim o tornam um item altamente procurado pelos jogadores.
+</Section>
+
+<FAQ items={[
+  {
+    question: "Como o Orb Sagrado afeta a qualidade dos itens?",
+    answer: "O Orb Sagrado impede a aparição de itens de baixa qualidade, aumentando significativamente a qualidade dos itens recebidos de todos os pools de itens."
+  },
+  {
+    question: "O Orb Sagrado faz parte de um conjunto?",
+    answer: "Sim, o Orb Sagrado faz parte do conjunto Seraphim, que inclui itens que transformam Isaac em um anjo."
+  },
+  {
+    question: "O Orb Sagrado pode ser criado?",
+    answer: "Não, o Orb Sagrado não pode ser criado."
+  }
+]} />

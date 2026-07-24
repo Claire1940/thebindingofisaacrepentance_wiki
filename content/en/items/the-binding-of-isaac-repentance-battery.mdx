@@ -1,0 +1,104 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "The Binding of Isaac: Repentance - Comprehensive Guide",
+  description: "A comprehensive guide to The Binding of Isaac: Repentance, covering characters, items, and strategies for success.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/059669/fff?text=The+Binding+of+Isaac+Repentance+Guide",
+  date: "2026-07-24",
+  author: "the binding of isaac repentance Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **Primary Keyword**: The Binding of Isaac: Repentance
+- **Key Mechanic**: Item management and character progression
+- **Best Strategy**: Focus on building a strong item pool and mastering character abilities
+- **Critical Tip**: Experiment with different items and characters to find your preferred playstyle
+- **Top Choice**: The Stairway item for its ability to create a ladder to Angel Room items
+</Callout>
+
+<Section icon={Map} title="Introduction">
+The Binding of Isaac: Repentance is a challenging and rewarding roguelike game. In this guide, we'll cover the basics, character progression, and strategies to help you succeed.
+</Section>
+
+<Section icon={Swords} title="Character Progression">
+Character progression is a key aspect of The Binding of Isaac: Repentance. Each character has unique abilities and item pools that affect gameplay. Here's a breakdown of the progression system:
+</Section>
+
+<Steps>
+  <Step num="1" title="Choose a Character">
+    Select a character from the available pool. Each character has different starting items and abilities.
+  </Step>
+  <Step num="2" title="Unlock Characters">
+    Unlock new characters by completing specific challenges or achievements.
+  </Step>
+  <Step num="3" title="Master Abilities">
+    Learn and master each character's abilities to effectively use them in combat.
+  </Step>
+</Steps>
+
+<Section icon={Trophy} title="Item Management">
+Item management is crucial in The Binding of Isaac: Repentance. Here are some tips for managing your item pool:
+</Section>
+
+<CardGrid cols={3}>
+  <Card title="Build a Strong Pool">
+    Collect and combine items to build a strong item pool that suits your playstyle.
+  </Card>
+  <Card title="Prioritize Useful Items">
+    Prioritize items that enhance your character's abilities and help you survive.
+  </Card>
+  <Card title="Experiment with Synergies">
+    Experiment with different item synergies to find the best combination for your build.
+  </Card>
+</CardGrid>
+
+<Section icon={Target} title="Strategies for Success">
+To succeed in The Binding of Isaac: Repentance, follow these strategies:
+</Section>
+
+<Checklist
+  id="success-strategies"
+  title="Essential Strategies:"
+  items={[
+    "Understand the game mechanics and enemy patterns",
+    "Manage your health and resources wisely",
+    "Learn to use bombs and other utility items effectively",
+    "Plan your route through the levels to avoid dangerous encounters",
+    "Experiment with different item combinations and character builds"
+  ]}
+/>
+
+<Section icon={Shield} title="FAQ">
+<FAQ items={[
+  {
+    question: "How many characters are available in The Binding of Isaac: Repentance?",
+    answer: "There are 34 normal characters and 34 tainted characters available in The Binding of Isaac: Repentance."
+  },
+  {
+    question: "What is the best strategy for beginners?",
+    answer: "Start with a character that has a strong starting item pool and learn the basics of item management and character abilities."
+  },
+  {
+    question: "How do I unlock new characters?",
+    answer: "Unlock new characters by completing specific challenges or achievements, such as defeating a certain number of bosses or completing a challenge run."
+  }
+]} />
+</Section>
+
+<Section icon={Sparkles} title="Conclusion">
+The Binding of Isaac: Repentance is a challenging game that requires skill, strategy, and experimentation. By following this guide, you'll be well on your way to mastering the game and achieving success.
+</Section>
+
+<Section>
+<Callout type="warning" title="Remember">
+Always keep experimenting and learning to improve your skills and find the best playstyle for you.
+</Callout>
+</Section>

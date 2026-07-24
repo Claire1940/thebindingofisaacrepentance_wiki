@@ -1,0 +1,87 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react';
+import { Callout } from '@/components/mdx/Callout';
+import { Card, CardGrid } from '@/components/mdx/CardGrid';
+import { Checklist } from '@/components/mdx/Checklist';
+import { FAQ } from '@/components/mdx/FAQ';
+import { Steps, Step } from '@/components/mdx/Steps';
+import { Section } from '@/components/mdx/Section';
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed';
+
+export const metadata = {
+  title: "Guía del Orbe Sagrado en The Binding of Isaac: Repentance",
+  description: "Aprende todo sobre el Orbe Sagrado en The Binding of Isaac: Repentance, incluyendo sus efectos, interacciones y cómo obtenerlo.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/059669/fff?text=The+Binding+of+Isaac:+Repentance+Orbe+Sagrado",
+  date: "2026-07-24",
+  author: "Equipo de Wiki de The Binding of Isaac: Repentance Repentance"
+};
+
+<Callout type="info" title="Guía Rápida">
+- **Orbe Sagrado**: Un objeto pasivo que impide que aparezcan artículos de baja calidad.
+- **Efecto**: Aumenta la calidad de los artículos recibidos de todos los grupos de artículos.
+- ** Conjunto**: Parte del conjunto de los Serafines, recopilar tres artículos transforma a Isaac en un ángel.
+- **Interacción**: Impide la elaboración de artículos de calidad 1 y 0, generalmente reemplazados por artículos de calidad 2.
+</Callout>
+
+<Section icon={Map} title="Introducción al Orbe Sagrado">
+El Orbe Sagrado es un artículo pasivo único introducido en _The Binding of Isaac: Repentance_. Es parte del conjunto de los Serafines, que incluye artículos que transforman a Isaac en un ángel. El Orbe Sagrado tiene un impacto significativo en la calidad de los artículos y es muy codiciado por los jugadores.
+</Section>
+
+<Section icon={Swords} title="Efectos del Orbe Sagrado">
+El Orbe Sagrado tiene varios efectos notables:
+
+<Callout type="tip" title="Aumento de Calidad">
+- Impide que aparezcan artículos de baja calidad, aumentando considerablemente la calidad de los artículos recibidos de todos los grupos de artículos.
+</Callout>
+
+<Callout type="info" title="Mecanismo de Rejugada">
+- Los artículos con calidad 0-1 se rejugan automáticamente.
+- Los artículos con calidad 2 tienen un 33% de probabilidad de ser rejugados automáticamente.
+- Los artículos de misión no pueden ser rejugados.
+</Callout>
+</Section>
+
+<Section icon={Trophy} title="Interacciones">
+El Orbe Sagrado interactúa con otros elementos del juego de diversas maneras:
+
+<Callout type="warning" title="Interacción de Elaboración">
+- Bolsa de Elaboración: El Orbe Sagrado impide la elaboración de artículos de calidad 1 y 0, generalmente resultando en que sean reemplazados por artículos de calidad 2.
+</Callout>
+
+<Callout type="info" title="Interacción con Comida">
+- Binger Eater: El artículo de comida no se rejugará.
+</Callout>
+</Section>
+
+<Section icon={Target} title="Obtención del Orbe Sagrado">
+El Orbe Sagrado se puede obtener recopilando tres artículos del conjunto de los Serafines. El conjunto incluye:
+
+<Checklist
+  id="seraphim-set"
+  title="Artículos del Conjunto de los Serafines:"
+  items={[
+    "Serafín",
+    "Arco del Serafín",
+    "Mantel del Serafín"
+  ]}
+/>
+</Section>
+
+<Section icon={Sparkles} title="Conclusión">
+El Orbe Sagrado es un artículo poderoso en _The Binding of Isaac: Repentance_ que aumenta significativamente la calidad de los artículos recibidos. Su interacción con otros elementos del juego y su papel en el conjunto de los Serafines lo hacen un artículo muy codiciado por los jugadores.
+</Section>
+
+<FAQ items={[
+  {
+    question: "¿Cómo afecta el Orbe Sagrado a la calidad de los artículos?",
+    answer: "El Orbe Sagrado impide que aparezcan artículos de baja calidad, aumentando considerablemente la calidad de los artículos recibidos de todos los grupos de artículos."
+  },
+  {
+    question: "¿Es el Orbe Sagrado parte de un conjunto?",
+    answer: "Sí, el Orbe Sagrado es parte del conjunto de los Serafines, que incluye artículos que transforman a Isaac en un ángel."
+  },
+  {
+    question: "¿Se puede elaborar el Orbe Sagrado?",
+    answer: "No, el Orbe Sagrado no se puede elaborar."
+  }
+]} />

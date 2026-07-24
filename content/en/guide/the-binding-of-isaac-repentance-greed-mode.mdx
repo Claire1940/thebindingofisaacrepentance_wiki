@@ -1,0 +1,96 @@
+import { Map, Swords, Trophy, Target, Shield, Sparkles } from 'lucide-react'
+import { Callout } from '@/components/mdx/Callout'
+import { Card, CardGrid } from '@/components/mdx/CardGrid'
+import { Checklist } from '@/components/mdx/Checklist'
+import { FAQ } from '@/components/mdx/FAQ'
+import { Steps, Step } from '@/components/mdx/Steps'
+import { Section } from '@/components/mdx/Section'
+import { YouTubeEmbed } from '@/components/mdx/YouTubeEmbed'
+
+export const metadata = {
+  title: "The Binding of Isaac: Repentance - Complete Guide to Unlocking and Progressing",
+  description: "Discover the ultimate guide to unlocking and progressing in The Binding of Isaac: Repentance, including character unlocks, boss strategies, and more.",
+  category: "Guide",
+  image: "https://placehold.co/800x400/059669/fff?text=The+Binding+of+Isaac+Repentance+Guide",
+  date: "2026-07-24",
+  author: "the binding of isaac repentance Wiki Team"
+}
+
+<Callout type="info" title="Quick Guide">
+- **Unlocking Characters**: Complete specific challenges or defeat bosses to unlock new characters.
+- **Boss Strategies**: Learn the patterns and strategies to defeat each boss.
+- **Completion Marks**: Unlock new routes and endings by completing certain milestones.
+- **Mods**: Enhance your gameplay with useful mods and tools.
+- **Online Co-op**: Team up with friends to tackle challenges and progress together.
+</Callout>
+
+<Section icon={Map} title="Unlocking Characters">
+
+<Callout type="tip" title="Unlocking Characters">
+Unlock new characters by completing challenges, defeating bosses, or meeting specific conditions. Each character has unique abilities and playstyles, so experiment to find your favorite.
+</Callout>
+
+</Section>
+
+<Section icon={Swords} title="Boss Strategies">
+
+<Callout type="warning" title="Boss Strategies">
+Each boss has its own unique attack patterns and strategies. Learn the boss's moves and how to counter them to ensure your victory.
+</Callout>
+
+</Section>
+
+<Section icon={Trophy} title="Completion Marks">
+
+<Checklist
+  id="completion-marks"
+  title="Unlockable Completion Marks:"
+  items={[
+    "Defeat Mom's Heart 10 times to unlock the Blue Womb route.",
+    "Defeat Mom's Heart 11 times to unlock It Lives!",
+    "Defeat Isaac 5 times to unlock the Polaroid for future Mom fights.",
+    "Defeat Satan 5 times to unlock the Negative for future Mom fights.",
+    "Complete Chapter VI to defeat Angels and collect Key Pieces."
+  ]}
+/>
+
+</Section>
+
+<Section icon={Target} title="Mods and Tools">
+
+<Callout type="info" title="Mods and Tools">
+Enhance your gameplay with useful mods and tools. From item information overlays to boss readability improvements, there's a mod for every need.
+</Callout>
+
+</Section>
+
+<Section icon={Shield} title="Online Co-op">
+
+<Callout type="success" title="Online Co-op">
+Team up with friends to tackle challenges and progress together. Online co-op adds a new layer of fun and strategy to your gameplay.
+</Callout>
+
+</Section>
+
+<Section icon={Sparkles} title="Conclusion">
+
+<Callout type="tip" title="Conclusion">
+The Binding of Isaac: Repentance offers a deep and challenging experience. By unlocking characters, mastering boss strategies, and completing milestones, you'll be well on your way to mastering the game. Happy gaming!
+</Callout>
+
+<FAQ items={[
+  {
+    question: "How do I unlock a new character?",
+    answer: "Unlock new characters by completing challenges, defeating bosses, or meeting specific conditions. Each character has unique abilities and playstyles, so experiment to find your favorite."
+  },
+  {
+    question: "What are completion marks?",
+    answer: "Completion marks are milestones that you can complete to unlock new routes, endings, and other rewards. They include defeating bosses, completing challenges, and more."
+  },
+  {
+    question: "Can I play online with friends?",
+    answer: "Yes, The Binding of Isaac: Repentance offers online co-op, allowing you to team up with friends and tackle challenges together."
+  }
+]} />
+
+</Section>
